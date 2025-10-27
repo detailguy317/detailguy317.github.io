@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>DG317 — DetailGuy Racing Hub</title>
+<title>DETAILGUY317 Garage — Racing & Automotive News</title>
 <style>
   body {
     margin:0;
@@ -14,37 +14,44 @@
     min-height:100vh;
   }
 
-  /* bottom overlay text bar */
+  /* bottom floating text (no black bar) */
   .overlay {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 30px;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.55);
     text-align: center;
-    padding: 30px 20px;
     box-sizing: border-box;
+    opacity: 0;                        /* start invisible */
+    animation: fadeIn 3s ease forwards; /* fade in slowly over 3 seconds */
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 
   .overlay h1 {
-    font-size: 40px;
+    font-size: 42px;
     margin: 0 0 8px;
     color: #ff6a00;
     letter-spacing: 2px;
-    text-shadow: 0 0 12px rgba(255,106,0,0.5);
+    text-shadow: 0 0 15px rgba(255,106,0,0.7);
   }
 
   .overlay p {
-    font-size: 18px;
-    color: #c7d2e0;
+    font-size: 20px;
+    color: #e3e9f5;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
   }
 </style>
 </head>
 <body>
   <div class="overlay">
     <h1>DETAILGUY317 Garage</h1>
-    <p>Racing/Automotive News-Information</p>
+    <p>Racing / Automotive News and Information</p>
   </div>
 </body>
 </html>
+
