@@ -13,40 +13,7 @@ body{
   overflow:hidden;
 }
 
-/* === TRADINGVIEW TICKER BAR === */
-.top-bar{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  background:rgba(13,17,23,0.95);
-  padding:5px 10px;
-  position:fixed;
-  top:0;left:0;width:100%;
-  z-index:9999;
-  opacity:0;
-  transform:translateY(-20px);
-  transition:opacity 2s ease, transform 2s ease;
-}
-.top-bar.visible{
-  opacity:1;
-  transform:translateY(0);
-}
-.stock-list-button{
-  background:#ff6600;
-  color:#fff;
-  border:none;
-  border-radius:6px;
-  padding:8px 12px;
-  font-weight:600;
-  cursor:pointer;
-  transition:background .3s;
-}
-.stock-list-button:hover{
-  background:#ff8533;
-}
-body{padding-top:60px}
-
-/* === background & animations === */
+/* animated background — scrolls up to show car, then stops */
 #background{
   position:fixed;inset:0;
   background:url("./webback.jpg") center/cover no-repeat;
@@ -59,9 +26,9 @@ body{padding-top:60px}
   to{background-position:center -180px;}
 }
 
-/* === header === */
+/* top header animation */
 .overlay{
-  position:fixed;top:80px;left:50%;
+  position:fixed;top:60px;left:50%;
   transform:translateX(-50%);
   text-align:center;z-index:3;
   perspective:800px;
@@ -88,7 +55,7 @@ body{padding-top:60px}
   50%{transform:rotateX(5deg) translateZ(25px) scale(1.05);}
 }
 
-/* === icon capsules bottom === */
+/* bottom sleek capsules - anchored to bottom edge */
 .icon-row{
   position:fixed;
   bottom:0;left:50%;
@@ -110,9 +77,9 @@ body{padding-top:60px}
   box-shadow:0 0 25px #ff6600,0 0 40px rgba(255,102,0,0.5);
 }
 
-/* === side boxes === */
-.search-bar,.vin-box{
-  position:fixed;
+/* dark question box bottom-right */
+.search-bar{
+  position:fixed;right:40px;bottom:40px;
   width:320px;
   background:rgba(20,20,20,0.95);
   color:#fff;border:1px solid #ff6600;
@@ -120,90 +87,216 @@ body{padding-top:60px}
   box-shadow:0 0 25px rgba(255,102,0,0.3);
   z-index:4;
 }
-.search-bar{right:40px;bottom:40px;}
-.vin-box{left:40px;bottom:40px;}
 
-.search-bar label,.vin-box label{
-  font-weight:600;font-size:1.05em;color:#ff7f2a;
-  margin-bottom:9px;text-align:center;display:block;
+/* VIN lookup box bottom-left */
+.vin-box{
+  position:fixed;left:40px;bottom:40px;
+  width:320px;
+  background:rgba(20,20,20,0.95);
+  color:#fff;border:1px solid #ff6600;
+  border-radius:14px;padding:14px 18px;
+  box-shadow:0 0 25px rgba(255,102,0,0.3);
+  z-index:4;
 }
-.search-bar input,.vin-box input{
-  width:100%;padding:10px;border-radius:8px;
-  background:#111;color:#fff;border:1px solid #555;
-  margin-bottom:8px;outline:none;
+
+.search-bar label{
+  font-weight:600;font-size:1.05em;
+  color:#ff7f2a;margin-bottom:9px;
+  text-align:center;display:block;
 }
-.vin-box input{text-transform:uppercase;}
-.search-bar button,.vin-box button{
+.vin-box label{
+  font-weight:600;font-size:1.05em;
+  color:#ff7f2a;margin-bottom:9px;
+  text-align:center;display:block;
+}
+
+.search-bar input{
+  width:100%;padding:10px;
+  border-radius:8px;background:#111;color:#fff;
+  border:1px solid #555;margin-bottom:8px;outline:none;
+}
+.vin-box input{
+  width:100%;padding:10px;
+  border-radius:8px;background:#111;color:#fff;
+  border:1px solid #555;margin-bottom:8px;outline:none;
+  text-transform:uppercase;
+}
+
+.search-bar button{
   width:100%;padding:10px;border-radius:8px;
   border:none;background:#ff6600;color:#fff;
   cursor:pointer;font-size:1.05em;font-weight:600;
   transition:.3s;
 }
-.search-bar button:hover,.vin-box button:hover{
+.search-bar button:hover{
   background:#ff7f2a;
   box-shadow:0 0 20px rgba(255,102,0,0.6);
 }
-.faq-response,.vin-response{
+.vin-box button{
+  width:100%;padding:10px;border-radius:8px;
+  border:none;background:#ff6600;color:#fff;
+  cursor:pointer;font-size:1.05em;font-weight:600;
+  transition:.3s;
+}
+.vin-box button:hover{
+  background:#ff7f2a;
+  box-shadow:0 0 20px rgba(255,102,0,0.6);
+}
+
+.faq-response{
   background:#222;color:#fff;padding:8px;
   border-radius:6px;font-size:.95em;
-  margin-top:8px;
+  text-align:center;margin-top:8px;min-height:18px;
 }
 .vin-response{
-  text-align:left;min-height:18px;max-height:400px;overflow-y:auto;
+  background:#222;color:#fff;padding:12px;
+  border-radius:6px;font-size:.95em;
+  text-align:left;margin-top:8px;min-height:18px;
+  max-height:400px;overflow-y:auto;
 }
-.vin-response h3{color:#ff7f2a;margin-bottom:8px;font-size:1.1em;}
+.vin-response h3{
+  color:#ff7f2a;margin-bottom:8px;font-size:1.1em;
+}
 .vin-response .recall-item{
   background:#1a1a1a;padding:10px;
   border-left:3px solid #ff6600;
   margin-bottom:10px;border-radius:4px;
 }
 .vin-response .no-recall{
-  color:#4ade80;font-weight:600;text-align:center;padding:10px;
+  color:#4ade80;font-weight:600;
+  text-align:center;padding:10px;
 }
-.vin-response .warning{color:#fbbf24;font-weight:600;}
+.vin-response .warning{
+  color:#fbbf24;font-weight:600;
+}
 .vin-response button{
-  width:100%;padding:8px;margin-top:8px;border-radius:6px;
-  border:none;background:#ff6600;color:#fff;
-  cursor:pointer;font-weight:600;transition:.3s;
+  width:100%;padding:8px;margin-top:8px;
+  border-radius:6px;border:none;
+  background:#ff6600;color:#fff;
+  cursor:pointer;font-weight:600;
+  transition:.3s;
 }
 .vin-response button:hover{
-  background:#ff7f2a;box-shadow:0 0 15px rgba(255,102,0,0.5);
+  background:#ff7f2a;
+  box-shadow:0 0 15px rgba(255,102,0,0.5);
 }
-.vin-response .button-row{display:flex;gap:8px;margin-top:8px;}
-.vin-response .button-row button{flex:1;font-size:.9em;}
-footer{margin-top:8px;font-size:.8rem;color:#aaa;text-align:right;}
+.vin-response .button-row{
+  display:flex;gap:8px;margin-top:8px;
+}
+.vin-response .button-row button{
+  flex:1;font-size:.9em;
+}
+
+footer{
+  margin-top:8px;font-size:.8rem;
+  color:#aaa;text-align:right;
+}
+
+/* Easter egg headlight hotspots */
+.headlight-left, .headlight-right{
+  position:fixed;
+  width:80px;height:60px;
+  border-radius:50%;
+  cursor:pointer;
+  z-index:1;
+  transition:all .3s;
+}
+.headlight-left{
+  right:27%;top:58%;
+}
+.headlight-right{
+  right:42%;top:60%;
+}
+.headlight-flash{
+  box-shadow:0 0 60px rgba(255,255,255,1),0 0 100px rgba(135,206,250,0.8);
+  animation:flash .3s ease-in-out;
+}
+@keyframes flash{
+  0%,100%{opacity:0;}
+  50%{opacity:1;}
+}
+
+/* Door unlock glow */
+.door-area{
+  position:fixed;
+  right:18%;top:52%;
+  width:120px;height:180px;
+  border-radius:20px;
+  pointer-events:none;
+  z-index:1;
+  opacity:0;
+}
+.door-unlock{
+  opacity:1;
+  box-shadow:0 0 80px rgba(255,106,0,1),0 0 120px rgba(255,106,0,0.6);
+  animation:doorGlow 1s ease-in-out;
+}
+@keyframes doorGlow{
+  0%,100%{opacity:0;}
+  50%{opacity:1;}
+}
+
+/* Secret box */
+.secret-box{
+  position:fixed;
+  right:15%;top:50%;
+  transform:translateY(-50%) translateX(200%);
+  width:350px;
+  background:rgba(10,10,10,0.98);
+  border:2px solid #ff6600;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 0 40px rgba(255,102,0,0.6);
+  z-index:10;
+  transition:transform 1s ease-out;
+}
+.secret-box.show{
+  transform:translateY(-50%) translateX(0);
+}
+.secret-box h2{
+  color:#ff6600;
+  text-align:center;
+  margin-bottom:16px;
+  font-size:1.4em;
+}
+.secret-box p{
+  color:#ccc;
+  text-align:center;
+  margin-bottom:20px;
+  line-height:1.6;
+}
+.secret-box button{
+  width:100%;
+  padding:12px;
+  background:#ff6600;
+  border:none;
+  border-radius:8px;
+  color:#fff;
+  font-size:1.1em;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+.secret-box button:hover{
+  background:#ff7f2a;
+  box-shadow:0 0 20px rgba(255,102,0,0.8);
+}
 </style>
 </head>
 <body>
-<!-- === TICKER BAR BEGIN === -->
-<div class="top-bar" id="tickerBar">
-  <div class="tradingview-widget-container" style="flex:1;">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-    {
-      "symbols": [
-        { "proName": "NASDAQ:TSLA", "title": "Tesla" },
-        { "proName": "NYSE:F", "title": "Ford" },
-        { "proName": "NYSE:GM", "title": "General Motors" },
-        { "proName": "NASDAQ:RIVN", "title": "Rivian" },
-        { "proName": "NYSE:HMC", "title": "Honda Motor" },
-        { "proName": "NYSE:TM", "title": "Toyota Motor" }
-      ],
-      "colorTheme": "dark",
-      "isTransparent": false,
-      "displayMode": "adaptive",
-      "locale": "en",
-      "largeChartUrl": "https://your-website.com/stocks?symbol="
-    }
-    </script>
-  </div>
-  <button class="stock-list-button" onclick="window.location.href='stocks.html'">
-    View Stock Lists
-  </button>
-</div>
-<!-- === TICKER BAR END === -->
-
   <div id="background"></div>
+
+  <!-- Easter egg hotspots -->
+  <div class="headlight-left" id="leftHeadlight"></div>
+  <div class="headlight-right" id="rightHeadlight"></div>
+  <div class="door-area" id="doorArea"></div>
+
+  <!-- Secret box -->
+  <div class="secret-box" id="secretBox">
+    <h2>🔓 Secret Garage Unlocked!</h2>
+    <p>Welcome to the family vault. This is your private space for exclusive content, tutorials, and special messages.</p>
+    <button onclick="enterSecret()">Enter Secret Garage</button>
+  </div>
 
   <div class="overlay">
     <h1>DETAILGUY317 Garage</h1>
@@ -233,80 +326,237 @@ footer{margin-top:8px;font-size:.8rem;color:#aaa;text-align:right;}
   </div>
 
 <script>
-/* === Fade in ticker after delay === */
-window.addEventListener("load",()=>{
-  setTimeout(()=>{document.getElementById("tickerBar").classList.add("visible");},4000);
+// Easter egg sequence tracker
+let clickCount=0;
+let sequenceStage=0;
+
+// Car unlock sound (simple beep beep)
+function playUnlockSound(){
+  try{
+    const audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+    // First beep
+    const osc1=audioCtx.createOscillator();
+    const gain1=audioCtx.createGain();
+    osc1.connect(gain1);
+    gain1.connect(audioCtx.destination);
+    osc1.frequency.value=800;
+    gain1.gain.value=0.3;
+    osc1.start(audioCtx.currentTime);
+    osc1.stop(audioCtx.currentTime+0.1);
+    // Second beep
+    const osc2=audioCtx.createOscillator();
+    const gain2=audioCtx.createGain();
+    osc2.connect(gain2);
+    gain2.connect(audioCtx.destination);
+    osc2.frequency.value=800;
+    gain2.gain.value=0.3;
+    osc2.start(audioCtx.currentTime+0.15);
+    osc2.stop(audioCtx.currentTime+0.25);
+  }catch(e){
+    console.log('Audio not supported');
+  }
+}
+
+// Flash headlight
+function flashHeadlight(element,times){
+  let count=0;
+  const interval=setInterval(()=>{
+    element.classList.add('headlight-flash');
+    setTimeout(()=>element.classList.remove('headlight-flash'),300);
+    count++;
+    if(count>=times)clearInterval(interval);
+  },600);
+}
+
+// Easter egg click handler
+document.getElementById('leftHeadlight').addEventListener('click',()=>{
+  const leftHL=document.getElementById('leftHeadlight');
+  const rightHL=document.getElementById('rightHeadlight');
+  const door=document.getElementById('doorArea');
+  const secretBox=document.getElementById('secretBox');
+  
+  clickCount++;
+  
+  // Stage 1: Click left headlight 5 times
+  if(sequenceStage===0 && clickCount===5){
+    flashHeadlight(rightHL,2);
+    clickCount=0;
+    sequenceStage=1;
+  }
+  // Stage 2: Click left headlight 5 more times
+  else if(sequenceStage===1 && clickCount===5){
+    flashHeadlight(leftHL,2);
+    setTimeout(()=>flashHeadlight(rightHL,2),100);
+    setTimeout(()=>{
+      playUnlockSound();
+      door.classList.add('door-unlock');
+      setTimeout(()=>{
+        door.classList.remove('door-unlock');
+        secretBox.classList.add('show');
+      },1000);
+    },1500);
+    clickCount=0;
+    sequenceStage=2;
+  }
 });
 
-/* === search + vin handling === */
+// Enter secret garage
+function enterSecret(){
+  window.location.href='secret-garage.html';
+}
+
 function handleSearch(){
   const query=document.getElementById('queryInput').value.trim();
   const response=document.getElementById('faq-response');
-  if(!query){response.textContent="Please enter a question or code!";return;}
+  if(!query){
+    response.textContent="Please enter a question or code!";
+    return;
+  }
   response.textContent="You asked: "+query+" (Demo response — AI integration coming soon)";
 }
 
 function handleVIN(){
   const vin=document.getElementById('vinInput').value.trim().toUpperCase();
   const response=document.getElementById('vin-response');
-  if(!vin){response.innerHTML="<div style='text-align:center'>Please enter a VIN!</div>";return;}
-  if(vin.length!==17){response.innerHTML="<div style='text-align:center'>VIN must be exactly 17 characters!</div>";return;}
+  
+  if(!vin){
+    response.innerHTML="<div style='text-align:center'>Please enter a VIN!</div>";
+    return;
+  }
+  
+  if(vin.length!==17){
+    response.innerHTML="<div style='text-align:center'>VIN must be exactly 17 characters!</div>";
+    return;
+  }
+  
   response.innerHTML="<div style='text-align:center'>🔍 Checking NHTSA database...</div>";
+  
   fetch(`https://api.nhtsa.gov/recalls/recallsByVehicle?vin=${vin}`)
     .then(res=>res.json())
-    .then(data=>{displayRecalls(vin,data);})
-    .catch(()=>{response.innerHTML="<div style='text-align:center;color:#ef4444'>Error connecting to NHTSA. Please try again.</div>";});
+    .then(data=>{
+      displayRecalls(vin,data);
+    })
+    .catch(err=>{
+      response.innerHTML="<div style='text-align:center;color:#ef4444'>Error connecting to NHTSA. Please try again.</div>";
+    });
 }
 
 function displayRecalls(vin,data){
   const response=document.getElementById('vin-response');
   const wmi=vin.substring(0,3);
-  let recallUrl='',manufacturer='';
-  if(wmi.startsWith('1F')||wmi.startsWith('3F')){recallUrl='https://owner.ford.com/tools/account/maintenance/recalls.html';manufacturer='Ford';}
-  else if(wmi.startsWith('1G')||wmi.startsWith('3G')||wmi.startsWith('2G')){recallUrl='https://my.gm.com/recalls';manufacturer='GM';}
-  else if(wmi.startsWith('1C')||wmi.startsWith('3C')||wmi.startsWith('2C')){recallUrl='https://recalls.mopar.com/';manufacturer='Chrysler/Stellantis';}
-  else if(wmi.startsWith('4T')||wmi.startsWith('5T')||wmi.startsWith('JT')){recallUrl='https://www.toyota.com/recall';manufacturer='Toyota';}
-  else if(wmi.startsWith('1H')||wmi.startsWith('2H')||wmi.startsWith('JH')){recallUrl='https://owners.honda.com/service-maintenance/recalls';manufacturer='Honda';}
-  else if(wmi.startsWith('1N')||wmi.startsWith('3N')||wmi.startsWith('JN')){recallUrl='https://www.nissan-recalls.com/';manufacturer='Nissan';}
-  else if(wmi.startsWith('KM')||wmi.startsWith('5N')){recallUrl='https://autoservice.hyundaiusa.com/campaignhome';manufacturer='Hyundai';}
-  else if(wmi.startsWith('KN')){recallUrl='https://owners.kia.com/us/en/safety-recall.html';manufacturer='Kia';}
-  else if(wmi.startsWith('4S')||wmi.startsWith('JF')){recallUrl='https://www.subaru.com/vehicle-recalls.html';manufacturer='Subaru';}
-  else if(wmi.startsWith('JM')){recallUrl='https://www.mazdausa.com/owners/recalls';manufacturer='Mazda';}
-  else if(wmi.startsWith('WV')||wmi.startsWith('3V')){recallUrl='https://www.vw.com/recalls/';manufacturer='Volkswagen';}
-  else if(wmi.startsWith('WB')||wmi.startsWith('5U')){recallUrl='https://www.bmwusa.com/recall.html';manufacturer='BMW';}
-  else if(wmi.startsWith('WD')||wmi.startsWith('4J')){recallUrl='https://www.mbusa.com/en/owners/recalls';manufacturer='Mercedes-Benz';}
-  else{recallUrl='https://www.nhtsa.gov/recalls';manufacturer='Unknown';}
-
+  
+  let recallUrl='';
+  let manufacturer='';
+  
+  if(wmi.startsWith('1F') || wmi.startsWith('3F')){
+    recallUrl='https://owner.ford.com/tools/account/maintenance/recalls.html';
+    manufacturer='Ford';
+  }
+  else if(wmi.startsWith('1G') || wmi.startsWith('3G') || wmi.startsWith('2G')){
+    recallUrl='https://my.gm.com/recalls';
+    manufacturer='GM';
+  }
+  else if(wmi.startsWith('1C') || wmi.startsWith('3C') || wmi.startsWith('2C')){
+    recallUrl='https://recalls.mopar.com/';
+    manufacturer='Chrysler/Stellantis';
+  }
+  else if(wmi.startsWith('4T') || wmi.startsWith('5T') || wmi.startsWith('JT')){
+    recallUrl='https://www.toyota.com/recall';
+    manufacturer='Toyota';
+  }
+  else if(wmi.startsWith('1H') || wmi.startsWith('2H') || wmi.startsWith('JH')){
+    recallUrl='https://owners.honda.com/service-maintenance/recalls';
+    manufacturer='Honda';
+  }
+  else if(wmi.startsWith('1N') || wmi.startsWith('3N') || wmi.startsWith('JN')){
+    recallUrl='https://www.nissan-recalls.com/';
+    manufacturer='Nissan';
+  }
+  else if(wmi.startsWith('KM') || wmi.startsWith('5N')){
+    recallUrl='https://autoservice.hyundaiusa.com/campaignhome';
+    manufacturer='Hyundai';
+  }
+  else if(wmi.startsWith('KN')){
+    recallUrl='https://owners.kia.com/us/en/safety-recall.html';
+    manufacturer='Kia';
+  }
+  else if(wmi.startsWith('4S') || wmi.startsWith('JF')){
+    recallUrl='https://www.subaru.com/vehicle-recalls.html';
+    manufacturer='Subaru';
+  }
+  else if(wmi.startsWith('JM')){
+    recallUrl='https://www.mazdausa.com/owners/recalls';
+    manufacturer='Mazda';
+  }
+  else if(wmi.startsWith('WV') || wmi.startsWith('3V')){
+    recallUrl='https://www.vw.com/recalls/';
+    manufacturer='Volkswagen';
+  }
+  else if(wmi.startsWith('WB') || wmi.startsWith('5U')){
+    recallUrl='https://www.bmwusa.com/recall.html';
+    manufacturer='BMW';
+  }
+  else if(wmi.startsWith('WD') || wmi.startsWith('4J')){
+    recallUrl='https://www.mbusa.com/en/owners/recalls';
+    manufacturer='Mercedes-Benz';
+  }
+  else{
+    recallUrl='https://www.nhtsa.gov/recalls';
+    manufacturer='Unknown';
+  }
+  
   let html='<h3>VIN: '+vin+'</h3>';
-  if(manufacturer!=='Unknown'){html+='<div style="margin-bottom:10px;color:#aaa">Manufacturer: '+manufacturer+'</div>';}
-  const results=data.results||[];
+  
+  if(manufacturer!=='Unknown'){
+    html+='<div style="margin-bottom:10px;color:#aaa">Manufacturer: '+manufacturer+'</div>';
+  }
+  
+  const results=data.results || [];
+  
   if(results.length===0){
     html+='<div class="no-recall">✓ No Open Recalls Found</div>';
     html+='<div style="margin-top:12px;font-size:.85em;color:#aaa;text-align:center">Great news! No active recalls for this vehicle.</div>';
   }else{
     html+='<div class="warning">⚠️ '+results.length+' Recall'+(results.length>1?'s':'')+' Found</div>';
-    results.forEach(r=>{
+    
+    results.forEach((recall,idx)=>{
       html+='<div class="recall-item">';
-      html+='<strong>Recall #'+(r.NHTSACampaignNumber||'N/A')+'</strong><br>';
-      html+='<strong>Component:</strong> '+(r.Component||'N/A')+'<br>';
-      html+='<strong>Summary:</strong> '+(r.Summary||'N/A')+'<br>';
-      if(r.Consequence)html+='<strong>Risk:</strong> '+r.Consequence+'<br>';
-      if(r.Remedy)html+='<strong>Remedy:</strong> '+r.Remedy+'<br>';
+      html+='<strong>Recall #'+(recall.NHTSACampaignNumber || 'N/A')+'</strong><br>';
+      html+='<strong>Component:</strong> '+(recall.Component || 'N/A')+'<br>';
+      html+='<strong>Summary:</strong> '+(recall.Summary || 'N/A')+'<br>';
+      if(recall.Consequence){
+        html+='<strong>Risk:</strong> '+recall.Consequence+'<br>';
+      }
+      if(recall.Remedy){
+        html+='<strong>Remedy:</strong> '+recall.Remedy+'<br>';
+      }
       html+='</div>';
     });
   }
+  
   html+='<div class="button-row">';
   html+='<button onclick="copyVIN(\''+vin+'\')">📋 Copy VIN</button>';
-  if(manufacturer!=='Unknown'){html+='<button onclick="goToOEM(\''+recallUrl+'\',\''+manufacturer+'\')">View on '+manufacturer+' Site</button>';}
+  if(manufacturer!=='Unknown'){
+    html+='<button onclick="goToOEM(\''+recallUrl+'\',\''+manufacturer+'\')">View on '+manufacturer+' Site</button>';
+  }
   html+='</div>';
   html+='<div style="margin-top:8px;font-size:.8em;color:#888;text-align:center">Note: You\'ll need to paste your VIN on the manufacturer\'s website</div>';
+  
   response.innerHTML=html;
 }
 
-function copyVIN(vin){navigator.clipboard.writeText(vin).then(()=>{alert('VIN copied to clipboard!');}).catch(()=>{alert('VIN: '+vin);});}
-function goToOEM(url){window.open(url,'_blank');}
+function copyVIN(vin){
+  navigator.clipboard.writeText(vin).then(()=>{
+    alert('VIN copied to clipboard! You can now paste it on the manufacturer\'s page.');
+  }).catch(()=>{
+    alert('VIN: '+vin+'\n\nPlease copy this VIN manually.');
+  });
+}
 
-/* icon click demos */
+function goToOEM(url,manufacturer){
+  window.open(url,'_blank');
+}
+
 document.getElementById('estore').onclick=()=>alert("Opening eStore...");
 document.getElementById('racing').onclick=()=>alert("Loading racing news...");
 document.getElementById('auto').onclick=()=>alert("Accessing car info...");
