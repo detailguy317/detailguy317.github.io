@@ -11,9 +11,10 @@ body{
   color:#f3f6fb;
   background:#060b14;
   overflow:hidden;
-  padding-top:60px;
+  padding-top:98px; /* raised for double ticker */
 }
 
+/* TradingView Ticker Styles */
 .ticker-container{
   position:fixed;
   top:0;left:0;right:0;
@@ -22,7 +23,7 @@ body{
   border-bottom:2px solid #ff6600;
   display:flex;
   align-items:center;
-  z-index:100;
+  z-index:110;
   opacity:0;
   animation:fadeInTicker 2s ease-in-out 10s forwards;
 }
@@ -59,436 +60,43 @@ body{
   transform:scale(1.05);
 }
 
-.stock-modal{
+/* >>>>> Added Automotive News Ticker Styles <<<<< */
+.auto-news-ticker {
   position:fixed;
-  top:50%;left:50%;
-  transform:translate(-50%,-50%) scale(0);
-  width:90%;
-  max-width:600px;
-  max-height:80vh;
-  background:rgba(15,15,15,0.98);
-  border:2px solid #ff6600;
-  border-radius:16px;
-  padding:24px;
-  z-index:200;
-  transition:transform .3s ease;
-  overflow-y:auto;
-}
-.stock-modal.show{
-  transform:translate(-50%,-50%) scale(1);
-}
-.stock-modal h2{
-  color:#ff6600;
-  margin-bottom:20px;
-  text-align:center;
-  font-size:1.6em;
-}
-.stock-modal ul{
-  list-style:none;
-  color:#fff;
-}
-.stock-modal li{
-  padding:10px 14px;
-  margin:6px 0;
-  background:rgba(255,102,0,0.1);
-  border-left:4px solid #ff6600;
-  border-radius:6px;
-  font-size:15px;
-}
-.stock-modal .close-btn{
+  top:60px;
+  left:0; right:0;
   width:100%;
-  padding:12px;
-  margin-top:20px;
-  background:#ff6600;
-  border:none;
-  border-radius:8px;
-  color:#fff;
-  font-weight:600;
-  font-size:1.1em;
-  cursor:pointer;
-  transition:.3s;
-}
-.stock-modal .close-btn:hover{
-  background:#ff7f2a;
-  box-shadow:0 0 20px rgba(255,102,0,0.6);
-}
-
-.info-modal{
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%) scale(0);
-  width:90%;
-  max-width:700px;
-  max-height:85vh;
-  background:rgba(15,15,15,0.98);
-  border:2px solid #ff6600;
-  border-radius:16px;
-  padding:28px;
-  z-index:200;
-  transition:transform .3s ease;
-  overflow-y:auto;
-}
-.info-modal.show{
-  transform:translate(-50%,-50%) scale(1);
-}
-.info-modal h2{
-  color:#ff6600;
-  margin-bottom:24px;
-  text-align:center;
-  font-size:1.8em;
-}
-.info-modal .section{
-  margin-bottom:20px;
-}
-.info-modal .section h3{
-  color:#ff7f2a;
-  margin-bottom:12px;
-  font-size:1.3em;
+  background:rgba(10,10,10,0.96);
   border-bottom:2px solid #ff6600;
-  padding-bottom:6px;
-}
-.info-modal .link-list{
-  list-style:none;
-  color:#fff;
-}
-.info-modal .link-list li{
-  padding:10px 14px;
-  margin:6px 0;
-  background:rgba(255,102,0,0.1);
-  border-left:4px solid #ff6600;
-  border-radius:6px;
-  cursor:pointer;
-  transition:.3s;
-}
-.info-modal .link-list li:hover{
-  background:rgba(255,102,0,0.2);
-  transform:translateX(5px);
-}
-.info-modal .close-btn{
-  width:100%;
-  padding:14px;
-  margin-top:20px;
-  background:#ff6600;
-  border:none;
-  border-radius:8px;
-  color:#fff;
+  font-size:18px;
   font-weight:600;
-  font-size:1.1em;
-  cursor:pointer;
-  transition:.3s;
+  color:#ffe6cc;
+  height:38px;
+  display:flex; align-items:center; overflow:hidden;
+  z-index:109;
 }
-.info-modal .close-btn:hover{
-  background:#ff7f2a;
-  box-shadow:0 0 20px rgba(255,102,0,0.6);
+.auto-ticker-inner {
+  white-space:nowrap;
+  will-change:transform;
+  animation:autoNewsScroll 38s linear infinite;
+  padding-left:100vw;
+  display:block;
+  width:auto;
 }
+@keyframes autoNewsScroll {
+  0%   { transform: translateX(0);}
+  100% { transform: translateX(-100vw);}
+}
+/* <<<<< END Ticker Styles >>>>> */
 
-.carfax-tooltip{
-  display:inline-block;
-  background:#4ade80;
-  color:#000;
-  padding:4px 8px;
-  border-radius:4px;
-  font-size:.85em;
-  font-weight:600;
-  margin-left:8px;
-  animation:fadeOut 2s ease-in-out forwards;
-}
-@keyframes fadeOut{
-  0%{opacity:1;}
-  70%{opacity:1;}
-  100%{opacity:0;}
-}
-
-#background{
-  position:fixed;inset:0;
-  background:url("./webback.jpg") center/cover no-repeat;
-  filter:brightness(1.15) contrast(1.05);
-  animation:scrollBg 12s ease-out forwards;
-  z-index:0;
-}
-@keyframes scrollBg{
-  from{background-position:center 200px;}
-  to{background-position:center -180px;}
-}
-
-.overlay{
-  position:fixed;top:60px;left:50%;
-  transform:translateX(-50%);
-  text-align:center;z-index:3;
-  perspective:800px;
-}
-.overlay h1{
-  font-size:64px;font-weight:800;
-  color:#ff6a00;letter-spacing:4px;
-  text-shadow:0 0 30px rgba(255,106,0,1);
-  transform:rotateX(15deg) translateZ(30px);
-  animation:pulse3D 6s ease-in-out infinite;
-}
-.overlay p{
-  margin-top:8px;font-size:24px;
-  color:#ffe6cc;text-shadow:0 0 12px rgba(255,106,0,0.9);
-  transform:rotateX(10deg) translateZ(10px);
-  animation:pulse3DSoft 6s ease-in-out infinite;
-}
-@keyframes pulse3D{
-  0%,100%{transform:rotateX(15deg) translateZ(30px) scale(1);}
-  50%{transform:rotateX(5deg) translateZ(60px) scale(1.1);}
-}
-@keyframes pulse3DSoft{
-  0%,100%{transform:rotateX(10deg) translateZ(10px) scale(1);}
-  50%{transform:rotateX(5deg) translateZ(25px) scale(1.05);}
-}
-
-.icon-row{
-  position:fixed;
-  bottom:0;left:50%;
-  transform:translateX(-50%);
-  display:flex;gap:1.5rem;
-  z-index:2;padding-bottom:12px;
-}
-.icon{
-  min-width:130px;height:58px;
-  background:linear-gradient(145deg,#ff6a00,#ff3b00);
-  border-radius:40px;
-  box-shadow:0 0 15px rgba(255,102,0,0.5);
-  display:flex;align-items:center;justify-content:center;
-  color:#fff;font-weight:600;letter-spacing:1px;
-  cursor:pointer;transition:all .35s ease;
-}
-.icon:hover{
-  transform:translateY(-8px) scale(1.05);
-  box-shadow:0 0 25px #ff6600,0 0 40px rgba(255,102,0,0.5);
-}
-
-.search-bar{
-  position:fixed;right:40px;bottom:40px;
-  width:320px;
-  background:rgba(20,20,20,0.95);
-  color:#fff;border:1px solid #ff6600;
-  border-radius:14px;padding:14px 18px;
-  box-shadow:0 0 25px rgba(255,102,0,0.3);
-  z-index:4;
-}
-
-.vin-box{
-  position:fixed;left:40px;bottom:40px;
-  width:320px;
-  background:rgba(20,20,20,0.95);
-  color:#fff;border:1px solid #ff6600;
-  border-radius:14px;padding:14px 18px;
-  box-shadow:0 0 25px rgba(255,102,0,0.3);
-  z-index:4;
-}
-
-.search-bar label{
-  font-weight:600;font-size:1.05em;
-  color:#ff7f2a;margin-bottom:9px;
-  text-align:center;display:block;
-}
-.vin-box label{
-  font-weight:600;font-size:1.05em;
-  color:#ff7f2a;margin-bottom:9px;
-  text-align:center;display:block;
-}
-
-.search-bar input{
-  width:100%;padding:10px;
-  border-radius:8px;background:#111;color:#fff;
-  border:1px solid #555;margin-bottom:8px;outline:none;
-}
-.vin-box input{
-  width:100%;padding:10px;
-  border-radius:8px;background:#111;color:#fff;
-  border:1px solid #555;margin-bottom:8px;outline:none;
-  text-transform:uppercase;
-}
-
-.search-bar button{
-  width:100%;padding:10px;border-radius:8px;
-  border:none;background:#ff6600;color:#fff;
-  cursor:pointer;font-size:1.05em;font-weight:600;
-  transition:.3s;
-}
-.search-bar button:hover{
-  background:#ff7f2a;
-  box-shadow:0 0 20px rgba(255,102,0,0.6);
-}
-.vin-box button{
-  width:100%;padding:10px;border-radius:8px;
-  border:none;background:#ff6600;color:#fff;
-  cursor:pointer;font-size:1.05em;font-weight:600;
-  transition:.3s;
-}
-.vin-box button:hover{
-  background:#ff7f2a;
-  box-shadow:0 0 20px rgba(255,102,0,0.6);
-}
-
-.faq-response{
-  background:#222;color:#fff;padding:8px;
-  border-radius:6px;font-size:.95em;
-  text-align:center;margin-top:8px;min-height:18px;
-}
-.vin-response{
-  background:#222;color:#fff;padding:12px;
-  border-radius:6px;font-size:.95em;
-  text-align:left;margin-top:8px;min-height:18px;
-  max-height:400px;overflow-y:auto;
-}
-.vin-response h3{
-  color:#ff7f2a;margin-bottom:8px;font-size:1.1em;
-}
-.vin-response .recall-item{
-  background:#1a1a1a;padding:10px;
-  border-left:3px solid #ff6600;
-  margin-bottom:10px;border-radius:4px;
-}
-.vin-response .no-recall{
-  color:#4ade80;font-weight:600;
-  text-align:center;padding:10px;
-}
-.vin-response .warning{
-  color:#fbbf24;font-weight:600;
-}
-.vin-response button{
-  width:100%;padding:8px;margin-top:8px;
-  border-radius:6px;border:none;
-  background:#ff6600;color:#fff;
-  cursor:pointer;font-weight:600;
-  transition:.3s;
-}
-.vin-response button:hover{
-  background:#ff7f2a;
-  box-shadow:0 0 15px rgba(255,102,0,0.5);
-}
-.vin-response .button-row{
-  display:flex;gap:8px;margin-top:8px;
-}
-.vin-response .button-row button{
-  flex:1;font-size:.9em;
-}
-
-footer{
-  margin-top:8px;font-size:.8rem;
-  color:#aaa;text-align:right;
-}
-
-.headlight-left{
-  position:fixed;
-  width:80px;height:60px;
-  border-radius:50%;
-  cursor:pointer;
-  z-index:1;
-  transition:all .3s;
-  right:53%;top:81%;
-}
-.headlight-right{
-  position:fixed;
-  width:80px;height:60px;
-  border-radius:50%;
-  pointer-events:none;
-  z-index:1;
-  transition:all .3s;
-  right:76%;top:80%;
-}
-.headlight-flash{
-  box-shadow:0 0 60px rgba(255,255,255,1),0 0 100px rgba(135,206,250,0.8);
-  animation:flash .3s ease-in-out;
-}
-@keyframes flash{
-  0%,100%{opacity:0;}
-  50%{opacity:1;}
-}
-
-.door-area{
-  position:fixed;
-  right:18%;top:52%;
-  width:120px;height:180px;
-  border-radius:20px;
-  pointer-events:none;
-  z-index:1;
-  opacity:0;
-}
-.door-unlock{
-  opacity:1;
-  box-shadow:0 0 80px rgba(255,106,0,1),0 0 120px rgba(255,106,0,0.6);
-  animation:doorGlow 1s ease-in-out;
-}
-@keyframes doorGlow{
-  0%,100%{opacity:0;}
-  50%{opacity:1;}
-}
-
-.secret-box{
-  position:fixed;
-  right:15%;top:50%;
-  transform:translateY(-50%) translateX(200%);
-  width:350px;
-  background:rgba(10,10,10,0.98);
-  border:2px solid #ff6600;
-  border-radius:16px;
-  padding:24px;
-  box-shadow:0 0 40px rgba(255,102,0,0.6);
-  z-index:10;
-  transition:transform 1s ease-out;
-}
-.secret-box.show{
-  transform:translateY(-50%) translateX(0);
-}
-.secret-box .close-x{
-  position:absolute;
-  top:12px;
-  right:12px;
-  width:30px;
-  height:30px;
-  background:#ff6600;
-  border:none;
-  border-radius:50%;
-  color:#fff;
-  font-size:20px;
-  font-weight:bold;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transition:.3s;
-}
-.secret-box .close-x:hover{
-  background:#ff7f2a;
-  transform:rotate(90deg);
-}
-.secret-box h2{
-  color:#ff6600;
-  text-align:center;
-  margin-bottom:16px;
-  font-size:1.4em;
-}
-.secret-box p{
-  color:#ccc;
-  text-align:center;
-  margin-bottom:20px;
-  line-height:1.6;
-}
-.secret-box button{
-  width:100%;
-  padding:12px;
-  background:#ff6600;
-  border:none;
-  border-radius:8px;
-  color:#fff;
-  font-size:1.1em;
-  font-weight:600;
-  cursor:pointer;
-  transition:.3s;
-}
-.secret-box button:hover{
-  background:#ff7f2a;
-  box-shadow:0 0 20px rgba(255,102,0,0.8);
-}
+/* -- rest of your styles (unchanged from your code) -- */
+.stock-modal{ ... }
+.stock-modal.show{ ... }
+/* (include all your previous .stock-modal, .info-modal, .overlay, .icon, .search-bar, etc., styles here without change) */
 </style>
 </head>
 <body>
+  <!-- TradingView Stock Ticker (top) -->
   <div class="ticker-container">
     <div class="ticker-wrapper">
       <iframe src="https://www.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22NASDAQ%3ATSLA%22%2C%22title%22%3A%22Tesla%22%7D%2C%7B%22proName%22%3A%22NYSE%3AF%22%2C%22title%22%3A%22Ford%22%7D%2C%7B%22proName%22%3A%22NYSE%3AGM%22%2C%22title%22%3A%22GM%22%7D%2C%7B%22proName%22%3A%22NYSE%3ATM%22%2C%22title%22%3A%22Toyota%22%7D%2C%7B%22proName%22%3A%22NYSE%3ASTLA%22%2C%22title%22%3A%22Stellantis%22%7D%2C%7B%22proName%22%3A%22NYSE%3AHMC%22%2C%22title%22%3A%22Honda%22%7D%2C%7B%22proName%22%3A%22NYSE%3ARACE%22%2C%22title%22%3A%22Ferrari%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ARIVN%22%2C%22title%22%3A%22Rivian%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ALCID%22%2C%22title%22%3A%22Lucid%22%7D%2C%7B%22proName%22%3A%22NYSE%3ANIO%22%2C%22title%22%3A%22NIO%22%7D%2C%7B%22proName%22%3A%22NYSE%3AXPEV%22%2C%22title%22%3A%22XPeng%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ALI%22%2C%22title%22%3A%22Li%20Auto%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3AGT%22%2C%22title%22%3A%22Goodyear%22%7D%2C%7B%22proName%22%3A%22NYSE%3ABWA%22%2C%22title%22%3A%22BorgWarner%22%7D%2C%7B%22proName%22%3A%22NYSE%3AAPTV%22%2C%22title%22%3A%22Aptiv%22%7D%2C%7B%22proName%22%3A%22NYSE%3ALEA%22%2C%22title%22%3A%22Lear%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3AVC%22%2C%22title%22%3A%22Visteon%22%7D%2C%7B%22proName%22%3A%22NYSE%3AALV%22%2C%22title%22%3A%22Autoliv%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A60%2C%22utm_source%22%3A%22detailguy317.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22ticker-tape%22%7D" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
@@ -496,393 +104,53 @@ footer{
     <button class="ticker-btn" onclick="toggleStockModal()">📊 View Stocks</button>
   </div>
 
-  <div class="stock-modal" id="stockModal">
-    <h2>🚗 Auto Industry Stocks</h2>
-    <ul>
-      <li><strong>TSLA</strong> - Tesla Inc</li>
-      <li><strong>F</strong> - Ford Motor Company</li>
-      <li><strong>GM</strong> - General Motors</li>
-      <li><strong>TM</strong> - Toyota Motor Corp</li>
-      <li><strong>STLA</strong> - Stellantis (Chrysler/Dodge/Jeep/Ram)</li>
-      <li><strong>HMC</strong> - Honda Motor Co</li>
-      <li><strong>RACE</strong> - Ferrari N.V.</li>
-      <li><strong>RIVN</strong> - Rivian Automotive</li>
-      <li><strong>LCID</strong> - Lucid Group</li>
-      <li><strong>NIO</strong> - NIO Inc</li>
-      <li><strong>XPEV</strong> - XPeng Inc</li>
-      <li><strong>LI</strong> - Li Auto Inc</li>
-      <li><strong>GT</strong> - Goodyear Tire</li>
-      <li><strong>BWA</strong> - BorgWarner</li>
-      <li><strong>APTV</strong> - Aptiv PLC</li>
-      <li><strong>LEA</strong> - Lear Corporation</li>
-      <li><strong>VC</strong> - Visteon Corp</li>
-      <li><strong>ALV</strong> - Autoliv Inc</li>
-    </ul>
-    <p style="margin-top:16px;font-size:.9em;color:#aaa;text-align:center;">Note: Edit the iframe URL in code to add/remove stocks from ticker tape</p>
-    <button class="close-btn" onclick="toggleStockModal()">Close</button>
-  </div>
-
-  <div class="info-modal" id="racingModal">
-    <h2>🏁 Racing Calendar</h2>
-    <div class="section">
-      <h3>Ford Featured Races</h3>
-      <ul class="link-list">
-        <li onclick="openLink('https://www.nascar.com')">NASCAR Cup Series</li>
-        <li onclick="openLink('https://www.fiawec.com')">WEC - World Endurance Championship</li>
-        <li onclick="openLink('https://www.imsa.com')">IMSA SportsCar Championship</li>
-        <li onclick="openLink('https://global.rallycross.com')">World Rallycross Championship</li>
-        <li onclick="openLink('https://www.supercars.com')">Supercars Championship (Australia)</li>
-      </ul>
+  <!-- >>>>> Automotive News Ticker Box (below stocks) <<<<< -->
+  <div class="auto-news-ticker" id="autoNewsTicker">
+    <div class="auto-ticker-inner" id="autoTickerInner">
+      Loading automotive news...
     </div>
-    <div class="section">
-      <h3>Major Racing Series</h3>
-      <ul class="link-list">
-        <li onclick="openLink('https://www.formula1.com')">Formula 1</li>
-        <li onclick="openLink('https://www.indycar.com')">IndyCar Series</li>
-        <li onclick="openLink('https://www.24h-lemans.com/en')">24 Hours of Le Mans</li>
-        <li onclick="openLink('https://www.daytona500.com')">Daytona 500</li>
-      </ul>
-    </div>
-    <button class="close-btn" onclick="toggleRacingModal()">Close</button>
   </div>
+  <!-- <<<<< END News Ticker Box >>>>> -->
 
-  <div class="info-modal" id="autoInfoModal">
-    <h2>🔧 Auto Information Hub</h2>
-    <div class="section">
-      <h3>Repairs & Maintenance</h3>
-      <ul class="link-list">
-        <li onclick="openLink('https://www.youtube.com/results?search_query=car+repair+tutorial')">Car Repair Tutorials (YouTube)</li>
-        <li onclick="openLink('https://www.familyhandyman.com/list/car-maintenance-tips/')">DIY Maintenance Tips</li>
-        <li onclick="openLink('https://www.autozone.com/diy')">AutoZone DIY Guides</li>
-      </ul>
-    </div>
-    <div class="section">
-      <h3>Tips & Tricks</h3>
-      <ul class="link-list">
-        <li onclick="openLink('https://www.caranddriver.com/shopping-advice/')">Car Buying Tips</li>
-        <li onclick="openLink('https://www.consumerreports.org/cars/')">Consumer Reports - Cars</li>
-        <li onclick="openLink('https://www.edmunds.com/car-reviews/')">Vehicle Reviews</li>
-      </ul>
-    </div>
-    <div class="section">
-      <h3>Vehicle Specs & Data</h3>
-      <ul class="link-list">
-        <li onclick="openLink('https://www.caranddriver.com/research/')">Vehicle Specifications</li>
-        <li onclick="openLink('https://www.fueleconomy.gov/')">Fuel Economy Data</li>
-        <li onclick="openLink('https://www.iihs.org/ratings')">Safety Ratings (IIHS)</li>
-      </ul>
-    </div>
-    <div class="section">
-      <h3>YouTube Channels</h3>
-      <ul class="link-list">
-        <li onclick="openLink('https://www.youtube.com/@ChrisFix')">ChrisFix</li>
-        <li onclick="openLink('https://www.youtube.com/@engineeringexplained')">Engineering Explained</li>
-        <li onclick="openLink('https://www.youtube.com/@DonutMedia')">Donut Media</li>
-        <li onclick="openLink('https://www.youtube.com/@savagegeese')">Savage Geese</li>
-      </ul>
-    </div>
-    <button class="close-btn" onclick="toggleAutoInfoModal()">Close</button>
-  </div>
-
-  <div id="background"></div>
-
-  <div class="headlight-left" id="leftHeadlight"></div>
-  <div class="headlight-right" id="rightHeadlight"></div>
-  <div class="door-area" id="doorArea"></div>
-
-  <div class="secret-box" id="secretBox">
-    <button class="close-x" onclick="closeSecretBox()">×</button>
-    <h2>🔓 Secret Garage Unlocked!</h2>
-    <p>Welcome to the family vault. This is your private space for exclusive content, tutorials, and special messages.</p>
-    <button onclick="enterSecret()">Enter Secret Garage</button>
-  </div>
-
-  <div class="overlay">
-    <h1>DETAILGUY317 Garage</h1>
-    <p>Racing / Automotive News and Information</p>
-  </div>
-
-  <div class="icon-row">
-    <div class="icon" id="estore">E-Store</div>
-    <div class="icon" id="racing">Racing</div>
-    <div class="icon" id="auto">Auto Info</div>
-    <div class="icon" id="extra">TBD</div>
-  </div>
-
-  <div class="vin-box">
-    <label>Enter VIN Here for FREE Recall Check</label>
-    <input type="text" placeholder="Enter 17-digit VIN..." id="vinInput" maxlength="17" />
-    <button onclick="handleVIN()">Check Recalls</button>
-    <div class="vin-response" id="vin-response"></div>
-  </div>
-
-  <div class="search-bar">
-    <label>Ask A Car Question or Enter Trouble Code </label>
-    <input type="text" placeholder="Type your car question or DTC..." id="queryInput" />
-    <button onclick="handleSearch()">Get Answer</button>
-    <div class="faq-response" id="faq-response"></div>
-    <footer>© 2025 DetailGuy317.com | Made in U.S.A. by carguy for carfolks </footer>
-  </div>
+  <!-- ...rest of your original HTML below (modals, overlays, icon-rows, VIN box, search, etc.) ... -->
+  <!-- UNCHANGED from your code above, truncating for clarity. Paste unchanged content here! -->
 
 <script>
-function toggleStockModal(){
-  document.getElementById('stockModal').classList.toggle('show');
+// ... all your previous scripts here (modals, VIN, secret box, etc.), unchanged ...
+
+/*
+ * Automotive and Ford News Ticker Logic
+ *
+ * For demo, this is loaded with sample headlines.
+ * To connect to a dynamic server source, fetch the JSON as shown.
+ */
+function startAutoNewsTicker(newsArray) {
+  const ticker=document.getElementById('autoTickerInner');
+  ticker.innerHTML = newsArray.map(n=> 
+    `<a href="${n.link}" target="_blank" style="color:#ff9900;text-decoration:none;margin-right:48px;">${n.title}</a>`).join('');
 }
 
-function toggleRacingModal(){
-  document.getElementById('racingModal').classList.toggle('show');
-}
+// --- DEMO DATA, swap with dynamic fetch for live production ----
+const exampleNews = [
+  // TOP general auto news (replace with your scrape)
+  {title: "Ford CEO on UAW Deal: 'No Longer Disadvantaged by Tariffs'", link: "https://fordauthority.com/example-news-1"},
+  {title: "Ford F-150 Lightning Production Paused by Strike", link: "https://fordauthority.com/example-news-2"},
+  {title: "Mustang Mach-E Factory Sets Efficiency Record", link: "https://fordauthority.com/example-news-3"},
+  // FORD Racing/Repair top 3 (replace with scrape/fetch from fortracing/fordracing)
+  {title: "Forte Racing Heads to Circuit of the Americas", link: "https://forteracing.com/news/example-news-1"},
+  {title: "Forte Racing's McLaren Trophy America Partnership Announced", link: "https://forteracing.com/news/example-news-2"},
+  {title: "Ford Performance Reveals GT4 Evo For 2025", link: "https://forteracing.com/news/example-news-3"},
+];
+startAutoNewsTicker(exampleNews);
 
-function toggleAutoInfoModal(){
-  document.getElementById('autoInfoModal').classList.toggle('show');
-}
+/* // To fetch from your own hosted API:
+fetch('/auto_ticker_news.json')
+  .then(r=>r.json())
+  .then(newsArray=>startAutoNewsTicker(newsArray));
+*/
 
-function openLink(url){
-  window.open(url,'_blank');
-}
-
-function closeSecretBox(){
-  document.getElementById('secretBox').classList.remove('show');
-  clickCount=0;
-  sequenceStage=0;
-}
-
-let clickCount=0;
-let sequenceStage=0;
-
-function playUnlockSound(){
-  try{
-    const audioCtx=new (window.AudioContext||window.webkitAudioContext)();
-    const osc1=audioCtx.createOscillator();
-    const gain1=audioCtx.createGain();
-    osc1.connect(gain1);
-    gain1.connect(audioCtx.destination);
-    osc1.frequency.value=800;
-    gain1.gain.value=0.3;
-    osc1.start(audioCtx.currentTime);
-    osc1.stop(audioCtx.currentTime+0.1);
-    const osc2=audioCtx.createOscillator();
-    const gain2=audioCtx.createGain();
-    osc2.connect(gain2);
-    gain2.connect(audioCtx.destination);
-    osc2.frequency.value=800;
-    gain2.gain.value=0.3;
-    osc2.start(audioCtx.currentTime+0.15);
-    osc2.stop(audioCtx.currentTime+0.25);
-  }catch(e){
-    console.log('Audio not supported');
-  }
-}
-
-function flashHeadlight(element,times){
-  let count=0;
-  const interval=setInterval(function(){
-    element.classList.add('headlight-flash');
-    setTimeout(function(){element.classList.remove('headlight-flash');},300);
-    count++;
-    if(count>=times)clearInterval(interval);
-  },600);
-}
-
-document.getElementById('leftHeadlight').addEventListener('click',function(){
-  const leftHL=document.getElementById('leftHeadlight');
-  const rightHL=document.getElementById('rightHeadlight');
-  const door=document.getElementById('doorArea');
-  const secretBox=document.getElementById('secretBox');
-  
-  clickCount++;
-  
-  if(sequenceStage===0 && clickCount===5){
-    flashHeadlight(rightHL,2);
-    clickCount=0;
-    sequenceStage=1;
-  }
-  else if(sequenceStage===1 && clickCount===5){
-    flashHeadlight(leftHL,2);
-    setTimeout(function(){flashHeadlight(rightHL,2);},100);
-    setTimeout(function(){
-      playUnlockSound();
-      door.classList.add('door-unlock');
-      setTimeout(function(){
-        door.classList.remove('door-unlock');
-        secretBox.classList.add('show');
-      },1000);
-    },1500);
-    clickCount=0;
-    sequenceStage=2;
-  }
-});
-
-function enterSecret(){
-  window.location.href='secret-garage.html';
-}
-
-function handleSearch(){
-  const query=document.getElementById('queryInput').value.trim();
-  const response=document.getElementById('faq-response');
-  if(!query){
-    response.textContent="Please enter a question or code!";
-    return;
-  }
-  response.textContent="You asked: "+query+" (Demo response — AI integration coming soon)";
-}
-
-function handleVIN(){
-  const vin=document.getElementById('vinInput').value.trim().toUpperCase();
-  const response=document.getElementById('vin-response');
-  
-  if(!vin){
-    response.innerHTML="<div style='text-align:center'>Please enter a VIN!</div>";
-    return;
-  }
-  
-  if(vin.length!==17){
-    response.innerHTML="<div style='text-align:center'>VIN must be exactly 17 characters!</div>";
-    return;
-  }
-  
-  response.innerHTML="<div style='text-align:center'>🔍 Checking NHTSA database...</div>";
-  
-  fetch('https://api.nhtsa.gov/recalls/recallsByVehicle?vin='+vin)
-    .then(function(res){return res.json();})
-    .then(function(data){
-      displayRecalls(vin,data);
-    })
-    .catch(function(err){
-      response.innerHTML="<div style='text-align:center;color:#ef4444'>Error connecting to NHTSA. Please try again.</div>";
-    });
-}
-
-function displayRecalls(vin,data){
-  const response=document.getElementById('vin-response');
-  const wmi=vin.substring(0,3);
-  
-  let recallUrl='';
-  let manufacturer='';
-  
-  if(wmi.startsWith('1F') || wmi.startsWith('3F')){
-    recallUrl='https://owner.ford.com/tools/account/maintenance/recalls.html';
-    manufacturer='Ford';
-  }
-  else if(wmi.startsWith('1G') || wmi.startsWith('3G') || wmi.startsWith('2G')){
-    recallUrl='https://my.gm.com/recalls';
-    manufacturer='GM';
-  }
-  else if(wmi.startsWith('1C') || wmi.startsWith('3C') || wmi.startsWith('2C')){
-    recallUrl='https://recalls.mopar.com/';
-    manufacturer='Chrysler/Stellantis';
-  }
-  else if(wmi.startsWith('4T') || wmi.startsWith('5T') || wmi.startsWith('JT')){
-    recallUrl='https://www.toyota.com/recall';
-    manufacturer='Toyota';
-  }
-  else if(wmi.startsWith('1H') || wmi.startsWith('2H') || wmi.startsWith('JH')){
-    recallUrl='https://owners.honda.com/service-maintenance/recalls';
-    manufacturer='Honda';
-  }
-  else if(wmi.startsWith('1N') || wmi.startsWith('3N') || wmi.startsWith('JN')){
-    recallUrl='https://www.nissan-recalls.com/';
-    manufacturer='Nissan';
-  }
-  else if(wmi.startsWith('KM') || wmi.startsWith('5N')){
-    recallUrl='https://autoservice.hyundaiusa.com/campaignhome';
-    manufacturer='Hyundai';
-  }
-  else if(wmi.startsWith('KN')){
-    recallUrl='https://owners.kia.com/us/en/safety-recall.html';
-    manufacturer='Kia';
-  }
-  else if(wmi.startsWith('4S') || wmi.startsWith('JF')){
-    recallUrl='https://www.subaru.com/vehicle-recalls.html';
-    manufacturer='Subaru';
-  }
-  else if(wmi.startsWith('JM')){
-    recallUrl='https://www.mazdausa.com/owners/recalls';
-    manufacturer='Mazda';
-  }
-  else if(wmi.startsWith('WV') || wmi.startsWith('3V')){
-    recallUrl='https://www.vw.com/recalls/';
-    manufacturer='Volkswagen';
-  }
-  else if(wmi.startsWith('WB') || wmi.startsWith('5U')){
-    recallUrl='https://www.bmwusa.com/recall.html';
-    manufacturer='BMW';
-  }
-  else if(wmi.startsWith('WD') || wmi.startsWith('4J')){
-    recallUrl='https://www.mbusa.com/en/owners/recalls';
-    manufacturer='Mercedes-Benz';
-  }
-  else{
-    recallUrl='https://www.nhtsa.gov/recalls';
-    manufacturer='Unknown';
-  }
-  
-  let html='<h3>VIN: '+vin+'</h3>';
-  
-  if(manufacturer!=='Unknown'){
-    html+='<div style="margin-bottom:10px;color:#aaa">Manufacturer: '+manufacturer+'</div>';
-  }
-  
-  const results=data.results || [];
-  
-  if(results.length===0){
-    html+='<div class="no-recall">✓ No Open Recalls Found</div>';
-    html+='<div style="margin-top:12px;font-size:.85em;color:#aaa;text-align:center">Great news! No active recalls for this vehicle.</div>';
-  }else{
-    html+='<div class="warning">⚠️ '+results.length+' Recall'+(results.length>1?'s':'')+' Found</div>';
-    
-    results.forEach(function(recall,idx){
-      html+='<div class="recall-item">';
-      html+='<strong>Recall #'+(recall.NHTSACampaignNumber || 'N/A')+'</strong><br>';
-      html+='<strong>Component:</strong> '+(recall.Component || 'N/A')+'<br>';
-      html+='<strong>Summary:</strong> '+(recall.Summary || 'N/A')+'<br>';
-      if(recall.Consequence){
-        html+='<strong>Risk:</strong> '+recall.Consequence+'<br>';
-      }
-      if(recall.Remedy){
-        html+='<strong>Remedy:</strong> '+recall.Remedy+'<br>';
-      }
-      html+='</div>';
-    });
-  }
-  
-  html+='<div class="button-row">';
-  html+='<button onclick="copyVINAuto(\''+vin+'\')">📋 Copy VIN</button>';
-  if(manufacturer!=='Unknown'){
-    html+='<button onclick="goToOEM(\''+recallUrl+'\')">🔗 OEM Site</button>';
-  }
-  html+='<button onclick="checkCarfax(\''+vin+'\')">🚗 CarFax</button>';
-  html+='</div>';
-  html+='<div style="margin-top:8px;font-size:.8em;color:#888;text-align:center;">Tip: Use Ctrl+V to paste VIN on manufacturer site</div>';
-  
-  response.innerHTML=html;
-}
-
-function copyVINAuto(vin){
-  navigator.clipboard.writeText(vin).then(function(){
-    const response=document.getElementById('vin-response');
-    const tooltip=document.createElement('span');
-    tooltip.className='carfax-tooltip';
-    tooltip.textContent='✓ VIN Copied!';
-    response.appendChild(tooltip);
-    setTimeout(function(){tooltip.remove();},2000);
-  }).catch(function(){
-    alert('VIN: '+vin);
-  });
-}
-
-function checkCarfax(vin){
-  window.open('https://www.carfax.com/vehicle/'+vin,'_blank');
-}
-
-function goToOEM(url){
-  window.open(url,'_blank');
-}
-
-document.getElementById('estore').onclick=function(){alert("Opening eStore...");};
-document.getElementById('racing').onclick=function(){toggleRacingModal();};
-document.getElementById('auto').onclick=function(){toggleAutoInfoModal();};
-document.getElementById('extra').onclick=function(){alert("Future feature TBD...");};
+/* Repeat your prior script functions: toggleStockModal, toggleRacingModal,
+   VIN, search, etc., without changes, beneath this section. */
 </script>
 </body>
 </html>
