@@ -145,9 +145,42 @@ body{
   text-align:center;margin-top:8px;min-height:18px;
 }
 .vin-response{
-  background:#222;color:#fff;padding:8px;
+  background:#222;color:#fff;padding:12px;
   border-radius:6px;font-size:.95em;
-  text-align:center;margin-top:8px;min-height:18px;
+  text-align:left;margin-top:8px;min-height:18px;
+  max-height:400px;overflow-y:auto;
+}
+.vin-response h3{
+  color:#ff7f2a;margin-bottom:8px;font-size:1.1em;
+}
+.vin-response .recall-item{
+  background:#1a1a1a;padding:10px;
+  border-left:3px solid #ff6600;
+  margin-bottom:10px;border-radius:4px;
+}
+.vin-response .no-recall{
+  color:#4ade80;font-weight:600;
+  text-align:center;padding:10px;
+}
+.vin-response .warning{
+  color:#fbbf24;font-weight:600;
+}
+.vin-response button{
+  width:100%;padding:8px;margin-top:8px;
+  border-radius:6px;border:none;
+  background:#ff6600;color:#fff;
+  cursor:pointer;font-weight:600;
+  transition:.3s;
+}
+.vin-response button:hover{
+  background:#ff7f2a;
+  box-shadow:0 0 15px rgba(255,102,0,0.5);
+}
+.vin-response .button-row{
+  display:flex;gap:8px;margin-top:8px;
+}
+.vin-response .button-row button{
+  flex:1;font-size:.9em;
 }
 footer{
   margin-top:8px;font-size:.8rem;
@@ -201,97 +234,145 @@ function handleVIN(){
   const response=document.getElementById('vin-response');
   
   if(!vin){
-    response.textContent="Please enter a VIN!";
+    response.innerHTML="<div style='text-align:center'>Please enter a VIN!</div>";
     return;
   }
   
   if(vin.length!==17){
-    response.textContent="VIN must be exactly 17 characters!";
+    response.innerHTML="<div style='text-align:center'>VIN must be exactly 17 characters!</div>";
     return;
   }
   
-  // Get manufacturer from VIN (World Manufacturer Identifier)
+  response.innerHTML="<div style='text-align:center'>🔍 Checking NHTSA database...</div>";
+  
+  // Fetch recalls from NHTSA API
+  fetch(`https://api.nhtsa.gov/recalls/recallsByVehicle?vin=${vin}`)
+    .then(res=>res.json())
+    .then(data=>{
+      displayRecalls(vin,data);
+    })
+    .catch(err=>{
+      response.innerHTML="<div style='text-align:center;color:#ef4444'>Error connecting to NHTSA. Please try again.</div>";
+    });
+}
+
+function displayRecalls(vin,data){
+  const response=document.getElementById('vin-response');
   const wmi=vin.substring(0,3);
+  
+  // Determine manufacturer and recall URL
   let recallUrl='';
   let manufacturer='';
   
-  // Ford
   if(wmi.startsWith('1F') || wmi.startsWith('3F')){
     recallUrl='https://owner.ford.com/tools/account/maintenance/recalls.html';
     manufacturer='Ford';
   }
-  // GM (Chevrolet, GMC, Cadillac, Buick)
-  else if(wmi.startsWith('1G') || wmi.startsWith('3G') || wmi.startsWith('1C') || wmi.startsWith('2G')){
+  else if(wmi.startsWith('1G') || wmi.startsWith('3G') || wmi.startsWith('2G')){
     recallUrl='https://my.gm.com/recalls';
     manufacturer='GM';
   }
-  // Chrysler/Stellantis (Dodge, Ram, Jeep, Chrysler)
   else if(wmi.startsWith('1C') || wmi.startsWith('3C') || wmi.startsWith('2C')){
     recallUrl='https://recalls.mopar.com/';
     manufacturer='Chrysler/Stellantis';
   }
-  // Toyota
   else if(wmi.startsWith('4T') || wmi.startsWith('5T') || wmi.startsWith('JT')){
     recallUrl='https://www.toyota.com/recall';
     manufacturer='Toyota';
   }
-  // Honda
   else if(wmi.startsWith('1H') || wmi.startsWith('2H') || wmi.startsWith('JH')){
     recallUrl='https://owners.honda.com/service-maintenance/recalls';
     manufacturer='Honda';
   }
-  // Nissan
   else if(wmi.startsWith('1N') || wmi.startsWith('3N') || wmi.startsWith('JN')){
     recallUrl='https://www.nissan-recalls.com/';
     manufacturer='Nissan';
   }
-  // Hyundai
   else if(wmi.startsWith('KM') || wmi.startsWith('5N')){
     recallUrl='https://autoservice.hyundaiusa.com/campaignhome';
     manufacturer='Hyundai';
   }
-  // Kia
   else if(wmi.startsWith('KN')){
     recallUrl='https://owners.kia.com/us/en/safety-recall.html';
     manufacturer='Kia';
   }
-  // Subaru
   else if(wmi.startsWith('4S') || wmi.startsWith('JF')){
     recallUrl='https://www.subaru.com/vehicle-recalls.html';
     manufacturer='Subaru';
   }
-  // Mazda
   else if(wmi.startsWith('JM')){
     recallUrl='https://www.mazdausa.com/owners/recalls';
     manufacturer='Mazda';
   }
-  // Volkswagen
   else if(wmi.startsWith('WV') || wmi.startsWith('3V')){
     recallUrl='https://www.vw.com/recalls/';
     manufacturer='Volkswagen';
   }
-  // BMW
   else if(wmi.startsWith('WB') || wmi.startsWith('5U')){
     recallUrl='https://www.bmwusa.com/recall.html';
     manufacturer='BMW';
   }
-  // Mercedes
   else if(wmi.startsWith('WD') || wmi.startsWith('4J')){
     recallUrl='https://www.mbusa.com/en/owners/recalls';
     manufacturer='Mercedes-Benz';
   }
   else{
-    response.textContent="Manufacturer not recognized. Check NHTSA.gov for recalls.";
-    setTimeout(()=>{
-      window.open('https://www.nhtsa.gov/recalls','_blank');
-    },2000);
-    return;
+    recallUrl='https://www.nhtsa.gov/recalls';
+    manufacturer='Unknown';
   }
   
-  response.textContent="Opening "+manufacturer+" recall page...";
-  setTimeout(()=>{
-    window.open(recallUrl,'_blank');
-  },1500);
+  let html='<h3>VIN: '+vin+'</h3>';
+  
+  if(manufacturer!=='Unknown'){
+    html+='<div style="margin-bottom:10px;color:#aaa">Manufacturer: '+manufacturer+'</div>';
+  }
+  
+  // Check if recalls exist
+  const results=data.results || [];
+  
+  if(results.length===0){
+    html+='<div class="no-recall">✓ No Open Recalls Found</div>';
+    html+='<div style="margin-top:12px;font-size:.85em;color:#aaa;text-align:center">Great news! No active recalls for this vehicle.</div>';
+  }else{
+    html+='<div class="warning">⚠️ '+results.length+' Recall'+(results.length>1?'s':'')+' Found</div>';
+    
+    results.forEach((recall,idx)=>{
+      html+='<div class="recall-item">';
+      html+='<strong>Recall #'+(recall.NHTSACampaignNumber || 'N/A')+'</strong><br>';
+      html+='<strong>Component:</strong> '+(recall.Component || 'N/A')+'<br>';
+      html+='<strong>Summary:</strong> '+(recall.Summary || 'N/A')+'<br>';
+      if(recall.Consequence){
+        html+='<strong>Risk:</strong> '+recall.Consequence+'<br>';
+      }
+      if(recall.Remedy){
+        html+='<strong>Remedy:</strong> '+recall.Remedy+'<br>';
+      }
+      html+='</div>';
+    });
+  }
+  
+  // Add action buttons
+  html+='<div class="button-row">';
+  html+='<button onclick="copyVIN(\''+vin+'\')">📋 Copy VIN</button>';
+  if(manufacturer!=='Unknown'){
+    html+='<button onclick="goToOEM(\''+recallUrl+'\',\''+manufacturer+'\')">View on '+manufacturer+' Site</button>';
+  }
+  html+='</div>';
+  html+='<div style="margin-top:8px;font-size:.8em;color:#888;text-align:center">Note: You\'ll need to paste your VIN on the manufacturer\'s website</div>';
+  
+  response.innerHTML=html;
+}
+
+function copyVIN(vin){
+  navigator.clipboard.writeText(vin).then(()=>{
+    alert('VIN copied to clipboard! You can now paste it on the manufacturer\'s page.');
+  }).catch(()=>{
+    alert('VIN: '+vin+'\n\nPlease copy this VIN manually.');
+  });
+}
+
+function goToOEM(url,manufacturer){
+  window.open(url,'_blank');
 }
 
 document.getElementById('estore').onclick=()=>alert("Opening eStore...");
