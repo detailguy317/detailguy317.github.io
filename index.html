@@ -11,9 +11,108 @@ body{
   color:#f3f6fb;
   background:#060b14;
   overflow:hidden;
+  padding-top:60px;
 }
 
-/* animated background — scrolls up to show car, then stops */
+.ticker-container{
+  position:fixed;
+  top:0;left:0;right:0;
+  height:60px;
+  background:rgba(10,10,10,0.95);
+  border-bottom:2px solid #ff6600;
+  display:flex;
+  align-items:center;
+  z-index:100;
+  opacity:0;
+  animation:fadeInTicker 2s ease-in-out 10s forwards;
+}
+@keyframes fadeInTicker{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+.ticker-wrapper{
+  flex:1;
+  height:60px;
+}
+.ticker-wrapper iframe{
+  width:100%;
+  height:60px;
+  border:none;
+}
+.ticker-btn{
+  padding:10px 18px;
+  margin:0 12px;
+  background:#ff6600;
+  border:none;
+  border-radius:8px;
+  color:#fff;
+  font-weight:600;
+  font-size:14px;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:.3s;
+  box-shadow:0 0 15px rgba(255,102,0,0.4);
+}
+.ticker-btn:hover{
+  background:#ff7f2a;
+  box-shadow:0 0 20px rgba(255,102,0,0.7);
+  transform:scale(1.05);
+}
+
+.stock-modal{
+  position:fixed;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  width:90%;
+  max-width:600px;
+  max-height:80vh;
+  background:rgba(15,15,15,0.98);
+  border:2px solid #ff6600;
+  border-radius:16px;
+  padding:24px;
+  z-index:200;
+  transition:transform .3s ease;
+  overflow-y:auto;
+}
+.stock-modal.show{
+  transform:translate(-50%,-50%) scale(1);
+}
+.stock-modal h2{
+  color:#ff6600;
+  margin-bottom:20px;
+  text-align:center;
+  font-size:1.6em;
+}
+.stock-modal ul{
+  list-style:none;
+  color:#fff;
+}
+.stock-modal li{
+  padding:10px 14px;
+  margin:6px 0;
+  background:rgba(255,102,0,0.1);
+  border-left:4px solid #ff6600;
+  border-radius:6px;
+  font-size:15px;
+}
+.stock-modal .close-btn{
+  width:100%;
+  padding:12px;
+  margin-top:20px;
+  background:#ff6600;
+  border:none;
+  border-radius:8px;
+  color:#fff;
+  font-weight:600;
+  font-size:1.1em;
+  cursor:pointer;
+  transition:.3s;
+}
+.stock-modal .close-btn:hover{
+  background:#ff7f2a;
+  box-shadow:0 0 20px rgba(255,102,0,0.6);
+}
+
 #background{
   position:fixed;inset:0;
   background:url("./webback.jpg") center/cover no-repeat;
@@ -26,133 +125,11 @@ body{
   to{background-position:center -180px;}
 }
 
-/* top header animation */
 .overlay{
   position:fixed;top:60px;left:50%;
   transform:translateX(-50%);
   text-align:center;z-index:3;
   perspective:800px;
-}
-
-/* Stock ticker at top */
-.stock-ticker-container{
-  position:fixed;
-  top:0;left:0;right:0;
-  height:50px;
-  background:rgba(10,10,10,0.95);
-  border-bottom:1px solid #ff6600;
-  display:flex;
-  align-items:center;
-  z-index:5;
-  opacity:0;
-  animation:fadeInTicker 2s ease-in-out 10s forwards;
-}
-@keyframes fadeInTicker{
-  from{opacity:0;}
-  to{opacity:1;}
-}
-.ticker-wrapper{
-  flex:1;
-  overflow:hidden;
-  position:relative;
-}
-.ticker-tape{
-  display:flex;
-  animation:scroll-left 60s linear infinite;
-  white-space:nowrap;
-}
-@keyframes scroll-left{
-  from{transform:translateX(0);}
-  to{transform:translateX(-50%);}
-}
-.ticker-item{
-  display:inline-flex;
-  align-items:center;
-  padding:0 20px;
-  color:#fff;
-  font-size:14px;
-  font-weight:600;
-}
-.ticker-symbol{
-  color:#ff6600;
-  margin-right:8px;
-}
-.ticker-price{
-  color:#4ade80;
-  margin-right:8px;
-}
-.ticker-change-up{
-  color:#4ade80;
-}
-.ticker-change-down{
-  color:#ef4444;
-}
-.ticker-btn{
-  padding:8px 16px;
-  margin-right:10px;
-  background:#ff6600;
-  border:none;
-  border-radius:6px;
-  color:#fff;
-  font-weight:600;
-  cursor:pointer;
-  white-space:nowrap;
-  transition:.3s;
-}
-.ticker-btn:hover{
-  background:#ff7f2a;
-  box-shadow:0 0 15px rgba(255,102,0,0.6);
-}
-
-/* Stock list modal */
-.stock-list-modal{
-  position:fixed;
-  top:50%;left:50%;
-  transform:translate(-50%,-50%) scale(0);
-  width:500px;
-  max-height:600px;
-  background:rgba(15,15,15,0.98);
-  border:2px solid #ff6600;
-  border-radius:12px;
-  padding:20px;
-  z-index:100;
-  transition:transform .3s ease;
-  overflow-y:auto;
-}
-.stock-list-modal.show{
-  transform:translate(-50%,-50%) scale(1);
-}
-.stock-list-modal h2{
-  color:#ff6600;
-  margin-bottom:16px;
-  text-align:center;
-}
-.stock-list-modal ul{
-  list-style:none;
-  color:#fff;
-}
-.stock-list-modal li{
-  padding:8px 12px;
-  margin:4px 0;
-  background:rgba(255,102,0,0.1);
-  border-left:3px solid #ff6600;
-  border-radius:4px;
-  font-size:14px;
-}
-.stock-list-modal .close-btn{
-  width:100%;
-  padding:10px;
-  margin-top:16px;
-  background:#ff6600;
-  border:none;
-  border-radius:6px;
-  color:#fff;
-  font-weight:600;
-  cursor:pointer;
-  transition:.3s;
-}
-.stock-list-modal .close-btn:hover{
-  background:#ff7f2a;
 }
 .overlay h1{
   font-size:64px;font-weight:800;
@@ -176,7 +153,6 @@ body{
   50%{transform:rotateX(5deg) translateZ(25px) scale(1.05);}
 }
 
-/* bottom sleek capsules - anchored to bottom edge */
 .icon-row{
   position:fixed;
   bottom:0;left:50%;
@@ -198,7 +174,6 @@ body{
   box-shadow:0 0 25px #ff6600,0 0 40px rgba(255,102,0,0.5);
 }
 
-/* dark question box bottom-right */
 .search-bar{
   position:fixed;right:40px;bottom:40px;
   width:320px;
@@ -209,7 +184,6 @@ body{
   z-index:4;
 }
 
-/* VIN lookup box bottom-left */
 .vin-box{
   position:fixed;left:40px;bottom:40px;
   width:320px;
@@ -313,7 +287,6 @@ footer{
   color:#aaa;text-align:right;
 }
 
-/* Easter egg headlight hotspots */
 .headlight-left{
   position:fixed;
   width:80px;height:60px;
@@ -341,7 +314,6 @@ footer{
   50%{opacity:1;}
 }
 
-/* Door unlock glow */
 .door-area{
   position:fixed;
   right:18%;top:52%;
@@ -361,7 +333,6 @@ footer{
   50%{opacity:1;}
 }
 
-/* Secret box */
 .secret-box{
   position:fixed;
   right:15%;top:50%;
@@ -409,57 +380,44 @@ footer{
 </style>
 </head>
 <body>
-  <div id="background"></div>
-
-  <!-- Stock Ticker -->
-  <div class="stock-ticker-container">
+  <div class="ticker-container">
     <div class="ticker-wrapper">
-      <div class="ticker-tape" id="tickerTape"></div>
+      <iframe src="https://www.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22NASDAQ%3ATSLA%22%2C%22title%22%3A%22Tesla%22%7D%2C%7B%22proName%22%3A%22NYSE%3AF%22%2C%22title%22%3A%22Ford%22%7D%2C%7B%22proName%22%3A%22NYSE%3AGM%22%2C%22title%22%3A%22GM%22%7D%2C%7B%22proName%22%3A%22NYSE%3ATM%22%2C%22title%22%3A%22Toyota%22%7D%2C%7B%22proName%22%3A%22NYSE%3ASTLA%22%2C%22title%22%3A%22Stellantis%22%7D%2C%7B%22proName%22%3A%22NYSE%3AHMC%22%2C%22title%22%3A%22Honda%22%7D%2C%7B%22proName%22%3A%22NYSE%3ARACE%22%2C%22title%22%3A%22Ferrari%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ARIVN%22%2C%22title%22%3A%22Rivian%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ALCID%22%2C%22title%22%3A%22Lucid%22%7D%2C%7B%22proName%22%3A%22NYSE%3ANIO%22%2C%22title%22%3A%22NIO%22%7D%2C%7B%22proName%22%3A%22NYSE%3AXPEV%22%2C%22title%22%3A%22XPeng%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ALI%22%2C%22title%22%3A%22Li%20Auto%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3AGT%22%2C%22title%22%3A%22Goodyear%22%7D%2C%7B%22proName%22%3A%22NYSE%3ABWA%22%2C%22title%22%3A%22BorgWarner%22%7D%2C%7B%22proName%22%3A%22NYSE%3AAPTV%22%2C%22title%22%3A%22Aptiv%22%7D%2C%7B%22proName%22%3A%22NYSE%3ALEA%22%2C%22title%22%3A%22Lear%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3AVC%22%2C%22title%22%3A%22Visteon%22%7D%2C%7B%22proName%22%3A%22NYSE%3AALV%22%2C%22title%22%3A%22Autoliv%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A60%2C%22utm_source%22%3A%22detailguy317.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22ticker-tape%22%7D" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
     </div>
-    <button class="ticker-btn" onclick="toggleStockList()">📊 View Stocks</button>
+    <button class="ticker-btn" onclick="toggleStockModal()">📊 View Stocks</button>
   </div>
 
-  <!-- Stock List Modal -->
-  <div class="stock-list-modal" id="stockListModal">
+  <div class="stock-modal" id="stockModal">
     <h2>🚗 Auto Industry Stocks</h2>
     <ul>
+      <li><strong>TSLA</strong> - Tesla Inc</li>
       <li><strong>F</strong> - Ford Motor Company</li>
       <li><strong>GM</strong> - General Motors</li>
-      <li><strong>TSLA</strong> - Tesla Inc</li>
       <li><strong>TM</strong> - Toyota Motor Corp</li>
       <li><strong>STLA</strong> - Stellantis (Chrysler/Dodge/Jeep/Ram)</li>
       <li><strong>HMC</strong> - Honda Motor Co</li>
       <li><strong>RACE</strong> - Ferrari N.V.</li>
-      <li><strong>NSANY</strong> - Nissan Motor Co</li>
-      <li><strong>HYMTF</strong> - Hyundai Motor</li>
-      <li><strong>VLKAF</strong> - Volkswagen AG</li>
-      <li><strong>BMWYY</strong> - BMW AG</li>
-      <li><strong>MBGYY</strong> - Mercedes-Benz Group</li>
-      <li><strong>POAHY</strong> - Porsche</li>
-      <li><strong>FUJHY</strong> - Subaru (Fuji Heavy)</li>
-      <li><strong>MZDAY</strong> - Mazda Motor</li>
-      <li><strong>GT</strong> - Goodyear Tire</li>
-      <li><strong>DLPH</strong> - Delphi Technologies</li>
-      <li><strong>BWA</strong> - BorgWarner (Auto Parts)</li>
-      <li><strong>APTV</strong> - Aptiv PLC (Auto Tech)</li>
-      <li><strong>LEA</strong> - Lear Corporation (Auto Seating)</li>
-      <li><strong>VC</strong> - Visteon Corp (Auto Electronics)</li>
-      <li><strong>ALV</strong> - Autoliv Inc (Safety Systems)</li>
       <li><strong>RIVN</strong> - Rivian Automotive</li>
       <li><strong>LCID</strong> - Lucid Group</li>
-      <li><strong>NIO</strong> - NIO Inc (Chinese EV)</li>
-      <li><strong>XPEV</strong> - XPeng Inc (Chinese EV)</li>
-      <li><strong>LI</strong> - Li Auto Inc (Chinese EV)</li>
+      <li><strong>NIO</strong> - NIO Inc</li>
+      <li><strong>XPEV</strong> - XPeng Inc</li>
+      <li><strong>LI</strong> - Li Auto Inc</li>
+      <li><strong>GT</strong> - Goodyear Tire</li>
+      <li><strong>BWA</strong> - BorgWarner</li>
+      <li><strong>APTV</strong> - Aptiv PLC</li>
+      <li><strong>LEA</strong> - Lear Corporation</li>
+      <li><strong>VC</strong> - Visteon Corp</li>
+      <li><strong>ALV</strong> - Autoliv Inc</li>
     </ul>
-    <button class="close-btn" onclick="toggleStockList()">Close</button>
+    <button class="close-btn" onclick="toggleStockModal()">Close</button>
   </div>
 
-  <!-- Easter egg hotspots -->
+  <div id="background"></div>
+
   <div class="headlight-left" id="leftHeadlight"></div>
   <div class="headlight-right" id="rightHeadlight"></div>
   <div class="door-area" id="doorArea"></div>
 
-  <!-- Secret box -->
   <div class="secret-box" id="secretBox">
     <h2>🔓 Secret Garage Unlocked!</h2>
     <p>Welcome to the family vault. This is your private space for exclusive content, tutorials, and special messages.</p>
@@ -494,54 +452,16 @@ footer{
   </div>
 
 <script>
-// Stock ticker symbols - EDIT THIS ARRAY TO CUSTOMIZE!
-const stockSymbols=[
-  'F','GM','TSLA','TM','STLA','HMC','RACE','NSANY','HYMTF',
-  'VLKAF','BMWYY','MBGYY','POAHY','FUJHY','MZDAY','GT',
-  'DLPH','BWA','APTV','LEA','VC','ALV','RIVN','LCID','NIO','XPEV','LI'
-];
-
-// Initialize ticker tape
-function initTicker(){
-  const tape=document.getElementById('tickerTape');
-  // Create ticker items twice for seamless loop
-  const tickerHTML=stockSymbols.map(symbol=>
-    `<div class="ticker-item">
-      <span class="ticker-symbol">${symbol}</span>
-      <span class="ticker-price">$--</span>
-      <span class="ticker-change-up">▲ --%</span>
-    </div>`
-  ).join('');
-  tape.innerHTML=tickerHTML+tickerHTML; // Duplicate for infinite scroll
-  
-  // Fetch real prices (optional - uses demo data if API unavailable)
-  fetchStockPrices();
+function toggleStockModal(){
+  document.getElementById('stockModal').classList.toggle('show');
 }
 
-// Fetch stock prices (simplified - you can enhance this)
-function fetchStockPrices(){
-  // Demo data - replace with real API if you want live prices
-  // For now, just shows placeholder data
-  const prices={'F':11.23,'GM':36.45,'TSLA':245.67,'TM':178.90,'STLA':19.34,
-    'HMC':28.56,'RACE':389.12,'NSANY':8.45,'HYMTF':45.23,'VLKAF':98.76,
-    'BMWYY':87.34,'MBGYY':67.89,'POAHY':78.45,'FUJHY':7.23,'MZDAY':6.78,
-    'GT':14.56,'DLPH':23.45,'BWA':34.67,'APTV':89.23,'LEA':120.45,
-    'VC':67.89,'ALV':98.34,'RIVN':12.34,'LCID':3.45,'NIO':5.67,'XPEV':9.23,'LI':23.45};
-  
-  document.querySelectorAll('.ticker-item').forEach(item=>{
-    const symbol=item.querySelector('.ticker-symbol').textContent;
-    const priceEl=item.querySelector('.ticker-price');
-    const changeEl=item.querySelector('[class^="ticker-change"]');
-    if(prices[symbol]){
-      priceEl.textContent='
 let clickCount=0;
 let sequenceStage=0;
 
-// Car unlock sound (simple beep beep)
 function playUnlockSound(){
   try{
     const audioCtx=new (window.AudioContext||window.webkitAudioContext)();
-    // First beep
     const osc1=audioCtx.createOscillator();
     const gain1=audioCtx.createGain();
     osc1.connect(gain1);
@@ -550,7 +470,6 @@ function playUnlockSound(){
     gain1.gain.value=0.3;
     osc1.start(audioCtx.currentTime);
     osc1.stop(audioCtx.currentTime+0.1);
-    // Second beep
     const osc2=audioCtx.createOscillator();
     const gain2=audioCtx.createGain();
     osc2.connect(gain2);
@@ -564,19 +483,17 @@ function playUnlockSound(){
   }
 }
 
-// Flash headlight
 function flashHeadlight(element,times){
   let count=0;
-  const interval=setInterval(()=>{
+  const interval=setInterval(function(){
     element.classList.add('headlight-flash');
-    setTimeout(()=>element.classList.remove('headlight-flash'),300);
+    setTimeout(function(){element.classList.remove('headlight-flash');},300);
     count++;
     if(count>=times)clearInterval(interval);
   },600);
 }
 
-// Easter egg click handler
-document.getElementById('leftHeadlight').addEventListener('click',()=>{
+document.getElementById('leftHeadlight').addEventListener('click',function(){
   const leftHL=document.getElementById('leftHeadlight');
   const rightHL=document.getElementById('rightHeadlight');
   const door=document.getElementById('doorArea');
@@ -584,20 +501,18 @@ document.getElementById('leftHeadlight').addEventListener('click',()=>{
   
   clickCount++;
   
-  // Stage 1: Click left headlight 5 times
   if(sequenceStage===0 && clickCount===5){
     flashHeadlight(rightHL,2);
     clickCount=0;
     sequenceStage=1;
   }
-  // Stage 2: Click left headlight 5 more times
   else if(sequenceStage===1 && clickCount===5){
     flashHeadlight(leftHL,2);
-    setTimeout(()=>flashHeadlight(rightHL,2),100);
-    setTimeout(()=>{
+    setTimeout(function(){flashHeadlight(rightHL,2);},100);
+    setTimeout(function(){
       playUnlockSound();
       door.classList.add('door-unlock');
-      setTimeout(()=>{
+      setTimeout(function(){
         door.classList.remove('door-unlock');
         secretBox.classList.add('show');
       },1000);
@@ -607,7 +522,6 @@ document.getElementById('leftHeadlight').addEventListener('click',()=>{
   }
 });
 
-// Enter secret garage
 function enterSecret(){
   window.location.href='secret-garage.html';
 }
@@ -638,12 +552,12 @@ function handleVIN(){
   
   response.innerHTML="<div style='text-align:center'>🔍 Checking NHTSA database...</div>";
   
-  fetch(`https://api.nhtsa.gov/recalls/recallsByVehicle?vin=${vin}`)
-    .then(res=>res.json())
-    .then(data=>{
+  fetch('https://api.nhtsa.gov/recalls/recallsByVehicle?vin='+vin)
+    .then(function(res){return res.json();})
+    .then(function(data){
       displayRecalls(vin,data);
     })
-    .catch(err=>{
+    .catch(function(err){
       response.innerHTML="<div style='text-align:center;color:#ef4444'>Error connecting to NHTSA. Please try again.</div>";
     });
 }
@@ -726,7 +640,7 @@ function displayRecalls(vin,data){
   }else{
     html+='<div class="warning">⚠️ '+results.length+' Recall'+(results.length>1?'s':'')+' Found</div>';
     
-    results.forEach((recall,idx)=>{
+    results.forEach(function(recall,idx){
       html+='<div class="recall-item">';
       html+='<strong>Recall #'+(recall.NHTSACampaignNumber || 'N/A')+'</strong><br>';
       html+='<strong>Component:</strong> '+(recall.Component || 'N/A')+'<br>';
@@ -753,9 +667,9 @@ function displayRecalls(vin,data){
 }
 
 function copyVIN(vin){
-  navigator.clipboard.writeText(vin).then(()=>{
+  navigator.clipboard.writeText(vin).then(function(){
     alert('VIN copied to clipboard! You can now paste it on the manufacturer\'s page.');
-  }).catch(()=>{
+  }).catch(function(){
     alert('VIN: '+vin+'\n\nPlease copy this VIN manually.');
   });
 }
@@ -764,269 +678,10 @@ function goToOEM(url,manufacturer){
   window.open(url,'_blank');
 }
 
-document.getElementById('estore').onclick=()=>alert("Opening eStore...");
-document.getElementById('racing').onclick=()=>alert("Loading racing news...");
-document.getElementById('auto').onclick=()=>alert("Accessing car info...");
-document.getElementById('extra').onclick=()=>alert("Future feature TBD...");
-</script>
-</body>
-</html>+prices[symbol].toFixed(2);
-      const change=(Math.random()*4-2).toFixed(2);
-      if(change>=0){
-        changeEl.className='ticker-change-up';
-        changeEl.textContent='▲ '+change+'%';
-      }else{
-        changeEl.className='ticker-change-down';
-        changeEl.textContent='▼ '+Math.abs(change)+'%';
-      }
-    }
-  });
-}
-
-// Toggle stock list modal
-function toggleStockList(){
-  const modal=document.getElementById('stockListModal');
-  modal.classList.toggle('show');
-}
-
-// Initialize on load
-initTicker();
-
-// Easter egg sequence tracker
-let clickCount=0;
-let sequenceStage=0;
-
-// Car unlock sound (simple beep beep)
-function playUnlockSound(){
-  try{
-    const audioCtx=new (window.AudioContext||window.webkitAudioContext)();
-    // First beep
-    const osc1=audioCtx.createOscillator();
-    const gain1=audioCtx.createGain();
-    osc1.connect(gain1);
-    gain1.connect(audioCtx.destination);
-    osc1.frequency.value=800;
-    gain1.gain.value=0.3;
-    osc1.start(audioCtx.currentTime);
-    osc1.stop(audioCtx.currentTime+0.1);
-    // Second beep
-    const osc2=audioCtx.createOscillator();
-    const gain2=audioCtx.createGain();
-    osc2.connect(gain2);
-    gain2.connect(audioCtx.destination);
-    osc2.frequency.value=800;
-    gain2.gain.value=0.3;
-    osc2.start(audioCtx.currentTime+0.15);
-    osc2.stop(audioCtx.currentTime+0.25);
-  }catch(e){
-    console.log('Audio not supported');
-  }
-}
-
-// Flash headlight
-function flashHeadlight(element,times){
-  let count=0;
-  const interval=setInterval(()=>{
-    element.classList.add('headlight-flash');
-    setTimeout(()=>element.classList.remove('headlight-flash'),300);
-    count++;
-    if(count>=times)clearInterval(interval);
-  },600);
-}
-
-// Easter egg click handler
-document.getElementById('leftHeadlight').addEventListener('click',()=>{
-  const leftHL=document.getElementById('leftHeadlight');
-  const rightHL=document.getElementById('rightHeadlight');
-  const door=document.getElementById('doorArea');
-  const secretBox=document.getElementById('secretBox');
-  
-  clickCount++;
-  
-  // Stage 1: Click left headlight 5 times
-  if(sequenceStage===0 && clickCount===5){
-    flashHeadlight(rightHL,2);
-    clickCount=0;
-    sequenceStage=1;
-  }
-  // Stage 2: Click left headlight 5 more times
-  else if(sequenceStage===1 && clickCount===5){
-    flashHeadlight(leftHL,2);
-    setTimeout(()=>flashHeadlight(rightHL,2),100);
-    setTimeout(()=>{
-      playUnlockSound();
-      door.classList.add('door-unlock');
-      setTimeout(()=>{
-        door.classList.remove('door-unlock');
-        secretBox.classList.add('show');
-      },1000);
-    },1500);
-    clickCount=0;
-    sequenceStage=2;
-  }
-});
-
-// Enter secret garage
-function enterSecret(){
-  window.location.href='secret-garage.html';
-}
-
-function handleSearch(){
-  const query=document.getElementById('queryInput').value.trim();
-  const response=document.getElementById('faq-response');
-  if(!query){
-    response.textContent="Please enter a question or code!";
-    return;
-  }
-  response.textContent="You asked: "+query+" (Demo response — AI integration coming soon)";
-}
-
-function handleVIN(){
-  const vin=document.getElementById('vinInput').value.trim().toUpperCase();
-  const response=document.getElementById('vin-response');
-  
-  if(!vin){
-    response.innerHTML="<div style='text-align:center'>Please enter a VIN!</div>";
-    return;
-  }
-  
-  if(vin.length!==17){
-    response.innerHTML="<div style='text-align:center'>VIN must be exactly 17 characters!</div>";
-    return;
-  }
-  
-  response.innerHTML="<div style='text-align:center'>🔍 Checking NHTSA database...</div>";
-  
-  fetch(`https://api.nhtsa.gov/recalls/recallsByVehicle?vin=${vin}`)
-    .then(res=>res.json())
-    .then(data=>{
-      displayRecalls(vin,data);
-    })
-    .catch(err=>{
-      response.innerHTML="<div style='text-align:center;color:#ef4444'>Error connecting to NHTSA. Please try again.</div>";
-    });
-}
-
-function displayRecalls(vin,data){
-  const response=document.getElementById('vin-response');
-  const wmi=vin.substring(0,3);
-  
-  let recallUrl='';
-  let manufacturer='';
-  
-  if(wmi.startsWith('1F') || wmi.startsWith('3F')){
-    recallUrl='https://owner.ford.com/tools/account/maintenance/recalls.html';
-    manufacturer='Ford';
-  }
-  else if(wmi.startsWith('1G') || wmi.startsWith('3G') || wmi.startsWith('2G')){
-    recallUrl='https://my.gm.com/recalls';
-    manufacturer='GM';
-  }
-  else if(wmi.startsWith('1C') || wmi.startsWith('3C') || wmi.startsWith('2C')){
-    recallUrl='https://recalls.mopar.com/';
-    manufacturer='Chrysler/Stellantis';
-  }
-  else if(wmi.startsWith('4T') || wmi.startsWith('5T') || wmi.startsWith('JT')){
-    recallUrl='https://www.toyota.com/recall';
-    manufacturer='Toyota';
-  }
-  else if(wmi.startsWith('1H') || wmi.startsWith('2H') || wmi.startsWith('JH')){
-    recallUrl='https://owners.honda.com/service-maintenance/recalls';
-    manufacturer='Honda';
-  }
-  else if(wmi.startsWith('1N') || wmi.startsWith('3N') || wmi.startsWith('JN')){
-    recallUrl='https://www.nissan-recalls.com/';
-    manufacturer='Nissan';
-  }
-  else if(wmi.startsWith('KM') || wmi.startsWith('5N')){
-    recallUrl='https://autoservice.hyundaiusa.com/campaignhome';
-    manufacturer='Hyundai';
-  }
-  else if(wmi.startsWith('KN')){
-    recallUrl='https://owners.kia.com/us/en/safety-recall.html';
-    manufacturer='Kia';
-  }
-  else if(wmi.startsWith('4S') || wmi.startsWith('JF')){
-    recallUrl='https://www.subaru.com/vehicle-recalls.html';
-    manufacturer='Subaru';
-  }
-  else if(wmi.startsWith('JM')){
-    recallUrl='https://www.mazdausa.com/owners/recalls';
-    manufacturer='Mazda';
-  }
-  else if(wmi.startsWith('WV') || wmi.startsWith('3V')){
-    recallUrl='https://www.vw.com/recalls/';
-    manufacturer='Volkswagen';
-  }
-  else if(wmi.startsWith('WB') || wmi.startsWith('5U')){
-    recallUrl='https://www.bmwusa.com/recall.html';
-    manufacturer='BMW';
-  }
-  else if(wmi.startsWith('WD') || wmi.startsWith('4J')){
-    recallUrl='https://www.mbusa.com/en/owners/recalls';
-    manufacturer='Mercedes-Benz';
-  }
-  else{
-    recallUrl='https://www.nhtsa.gov/recalls';
-    manufacturer='Unknown';
-  }
-  
-  let html='<h3>VIN: '+vin+'</h3>';
-  
-  if(manufacturer!=='Unknown'){
-    html+='<div style="margin-bottom:10px;color:#aaa">Manufacturer: '+manufacturer+'</div>';
-  }
-  
-  const results=data.results || [];
-  
-  if(results.length===0){
-    html+='<div class="no-recall">✓ No Open Recalls Found</div>';
-    html+='<div style="margin-top:12px;font-size:.85em;color:#aaa;text-align:center">Great news! No active recalls for this vehicle.</div>';
-  }else{
-    html+='<div class="warning">⚠️ '+results.length+' Recall'+(results.length>1?'s':'')+' Found</div>';
-    
-    results.forEach((recall,idx)=>{
-      html+='<div class="recall-item">';
-      html+='<strong>Recall #'+(recall.NHTSACampaignNumber || 'N/A')+'</strong><br>';
-      html+='<strong>Component:</strong> '+(recall.Component || 'N/A')+'<br>';
-      html+='<strong>Summary:</strong> '+(recall.Summary || 'N/A')+'<br>';
-      if(recall.Consequence){
-        html+='<strong>Risk:</strong> '+recall.Consequence+'<br>';
-      }
-      if(recall.Remedy){
-        html+='<strong>Remedy:</strong> '+recall.Remedy+'<br>';
-      }
-      html+='</div>';
-    });
-  }
-  
-  html+='<div class="button-row">';
-  html+='<button onclick="copyVIN(\''+vin+'\')">📋 Copy VIN</button>';
-  if(manufacturer!=='Unknown'){
-    html+='<button onclick="goToOEM(\''+recallUrl+'\',\''+manufacturer+'\')">View on '+manufacturer+' Site</button>';
-  }
-  html+='</div>';
-  html+='<div style="margin-top:8px;font-size:.8em;color:#888;text-align:center">Note: You\'ll need to paste your VIN on the manufacturer\'s website</div>';
-  
-  response.innerHTML=html;
-}
-
-function copyVIN(vin){
-  navigator.clipboard.writeText(vin).then(()=>{
-    alert('VIN copied to clipboard! You can now paste it on the manufacturer\'s page.');
-  }).catch(()=>{
-    alert('VIN: '+vin+'\n\nPlease copy this VIN manually.');
-  });
-}
-
-function goToOEM(url,manufacturer){
-  window.open(url,'_blank');
-}
-
-document.getElementById('estore').onclick=()=>alert("Opening eStore...");
-document.getElementById('racing').onclick=()=>alert("Loading racing news...");
-document.getElementById('auto').onclick=()=>alert("Accessing car info...");
-document.getElementById('extra').onclick=()=>alert("Future feature TBD...");
+document.getElementById('estore').onclick=function(){alert("Opening eStore...");};
+document.getElementById('racing').onclick=function(){alert("Loading racing news...");};
+document.getElementById('auto').onclick=function(){alert("Accessing car info...");};
+document.getElementById('extra').onclick=function(){alert("Future feature TBD...");};
 </script>
 </body>
 </html>
