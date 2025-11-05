@@ -87,7 +87,23 @@ body{
   box-shadow:0 0 25px rgba(255,102,0,0.3);
   z-index:4;
 }
+
+/* VIN lookup box bottom-left */
+.vin-box{
+  position:fixed;left:40px;bottom:40px;
+  width:320px;
+  background:rgba(20,20,20,0.95);
+  color:#fff;border:1px solid #ff6600;
+  border-radius:14px;padding:14px 18px;
+  box-shadow:0 0 25px rgba(255,102,0,0.3);
+  z-index:4;
+}
 .search-bar label{
+  font-weight:600;font-size:1.05em;
+  color:#ff7f2a;margin-bottom:9px;
+  text-align:center;display:block;
+}
+.vin-box label{
   font-weight:600;font-size:1.05em;
   color:#ff7f2a;margin-bottom:9px;
   text-align:center;display:block;
@@ -96,6 +112,12 @@ body{
   width:100%;padding:10px;
   border-radius:8px;background:#111;color:#fff;
   border:1px solid #555;margin-bottom:8px;outline:none;
+}
+.vin-box input{
+  width:100%;padding:10px;
+  border-radius:8px;background:#111;color:#fff;
+  border:1px solid #555;margin-bottom:8px;outline:none;
+  text-transform:uppercase;
 }
 .search-bar button{
   width:100%;padding:10px;border-radius:8px;
@@ -107,7 +129,22 @@ body{
   background:#ff7f2a;
   box-shadow:0 0 20px rgba(255,102,0,0.6);
 }
+.vin-box button{
+  width:100%;padding:10px;border-radius:8px;
+  border:none;background:#ff6600;color:#fff;
+  cursor:pointer;font-size:1.05em;font-weight:600;
+  transition:.3s;
+}
+.vin-box button:hover{
+  background:#ff7f2a;
+  box-shadow:0 0 20px rgba(255,102,0,0.6);
+}
 .faq-response{
+  background:#222;color:#fff;padding:8px;
+  border-radius:6px;font-size:.95em;
+  text-align:center;margin-top:8px;min-height:18px;
+}
+.vin-response{
   background:#222;color:#fff;padding:8px;
   border-radius:6px;font-size:.95em;
   text-align:center;margin-top:8px;min-height:18px;
@@ -133,6 +170,13 @@ footer{
     <div class="icon" id="extra">TBD</div>
   </div>
 
+  <div class="vin-box">
+    <label>Enter VIN Here for FREE Recall Check</label>
+    <input type="text" placeholder="Enter 17-digit VIN..." id="vinInput" maxlength="17" />
+    <button onclick="handleVIN()">Check Recalls</button>
+    <div class="vin-response" id="vin-response"></div>
+  </div>
+
   <div class="search-bar">
     <label>Ask A Car Question or Enter Trouble Code </label>
     <input type="text" placeholder="Type your car question or DTC..." id="queryInput" />
@@ -151,6 +195,105 @@ function handleSearch(){
   }
   response.textContent="You asked: "+query+" (Demo response — AI integration coming soon)";
 }
+
+function handleVIN(){
+  const vin=document.getElementById('vinInput').value.trim().toUpperCase();
+  const response=document.getElementById('vin-response');
+  
+  if(!vin){
+    response.textContent="Please enter a VIN!";
+    return;
+  }
+  
+  if(vin.length!==17){
+    response.textContent="VIN must be exactly 17 characters!";
+    return;
+  }
+  
+  // Get manufacturer from VIN (World Manufacturer Identifier)
+  const wmi=vin.substring(0,3);
+  let recallUrl='';
+  let manufacturer='';
+  
+  // Ford
+  if(wmi.startsWith('1F') || wmi.startsWith('3F')){
+    recallUrl='https://owner.ford.com/tools/account/maintenance/recalls.html';
+    manufacturer='Ford';
+  }
+  // GM (Chevrolet, GMC, Cadillac, Buick)
+  else if(wmi.startsWith('1G') || wmi.startsWith('3G') || wmi.startsWith('1C') || wmi.startsWith('2G')){
+    recallUrl='https://my.gm.com/recalls';
+    manufacturer='GM';
+  }
+  // Chrysler/Stellantis (Dodge, Ram, Jeep, Chrysler)
+  else if(wmi.startsWith('1C') || wmi.startsWith('3C') || wmi.startsWith('2C')){
+    recallUrl='https://recalls.mopar.com/';
+    manufacturer='Chrysler/Stellantis';
+  }
+  // Toyota
+  else if(wmi.startsWith('4T') || wmi.startsWith('5T') || wmi.startsWith('JT')){
+    recallUrl='https://www.toyota.com/recall';
+    manufacturer='Toyota';
+  }
+  // Honda
+  else if(wmi.startsWith('1H') || wmi.startsWith('2H') || wmi.startsWith('JH')){
+    recallUrl='https://owners.honda.com/service-maintenance/recalls';
+    manufacturer='Honda';
+  }
+  // Nissan
+  else if(wmi.startsWith('1N') || wmi.startsWith('3N') || wmi.startsWith('JN')){
+    recallUrl='https://www.nissan-recalls.com/';
+    manufacturer='Nissan';
+  }
+  // Hyundai
+  else if(wmi.startsWith('KM') || wmi.startsWith('5N')){
+    recallUrl='https://autoservice.hyundaiusa.com/campaignhome';
+    manufacturer='Hyundai';
+  }
+  // Kia
+  else if(wmi.startsWith('KN')){
+    recallUrl='https://owners.kia.com/us/en/safety-recall.html';
+    manufacturer='Kia';
+  }
+  // Subaru
+  else if(wmi.startsWith('4S') || wmi.startsWith('JF')){
+    recallUrl='https://www.subaru.com/vehicle-recalls.html';
+    manufacturer='Subaru';
+  }
+  // Mazda
+  else if(wmi.startsWith('JM')){
+    recallUrl='https://www.mazdausa.com/owners/recalls';
+    manufacturer='Mazda';
+  }
+  // Volkswagen
+  else if(wmi.startsWith('WV') || wmi.startsWith('3V')){
+    recallUrl='https://www.vw.com/recalls/';
+    manufacturer='Volkswagen';
+  }
+  // BMW
+  else if(wmi.startsWith('WB') || wmi.startsWith('5U')){
+    recallUrl='https://www.bmwusa.com/recall.html';
+    manufacturer='BMW';
+  }
+  // Mercedes
+  else if(wmi.startsWith('WD') || wmi.startsWith('4J')){
+    recallUrl='https://www.mbusa.com/en/owners/recalls';
+    manufacturer='Mercedes-Benz';
+  }
+  else{
+    response.textContent="Manufacturer not recognized. Check NHTSA.gov for recalls.";
+    setTimeout(()=>{
+      window.open('https://www.nhtsa.gov/recalls','_blank');
+    },2000);
+    return;
+  }
+  
+  response.textContent="Opening "+manufacturer+" recall page...";
+  setTimeout(()=>{
+    window.open(recallUrl,'_blank');
+  },1500);
+}
+
 document.getElementById('estore').onclick=()=>alert("Opening eStore...");
 document.getElementById('racing').onclick=()=>alert("Loading racing news...");
 document.getElementById('auto').onclick=()=>alert("Accessing car info...");
