@@ -113,6 +113,93 @@ body{
   box-shadow:0 0 20px rgba(255,102,0,0.6);
 }
 
+.info-modal{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  width:90%;
+  max-width:700px;
+  max-height:85vh;
+  background:rgba(15,15,15,0.98);
+  border:2px solid #ff6600;
+  border-radius:16px;
+  padding:28px;
+  z-index:200;
+  transition:transform .3s ease;
+  overflow-y:auto;
+}
+.info-modal.show{
+  transform:translate(-50%,-50%) scale(1);
+}
+.info-modal h2{
+  color:#ff6600;
+  margin-bottom:24px;
+  text-align:center;
+  font-size:1.8em;
+}
+.info-modal .section{
+  margin-bottom:20px;
+}
+.info-modal .section h3{
+  color:#ff7f2a;
+  margin-bottom:12px;
+  font-size:1.3em;
+  border-bottom:2px solid #ff6600;
+  padding-bottom:6px;
+}
+.info-modal .link-list{
+  list-style:none;
+  color:#fff;
+}
+.info-modal .link-list li{
+  padding:10px 14px;
+  margin:6px 0;
+  background:rgba(255,102,0,0.1);
+  border-left:4px solid #ff6600;
+  border-radius:6px;
+  cursor:pointer;
+  transition:.3s;
+}
+.info-modal .link-list li:hover{
+  background:rgba(255,102,0,0.2);
+  transform:translateX(5px);
+}
+.info-modal .close-btn{
+  width:100%;
+  padding:14px;
+  margin-top:20px;
+  background:#ff6600;
+  border:none;
+  border-radius:8px;
+  color:#fff;
+  font-weight:600;
+  font-size:1.1em;
+  cursor:pointer;
+  transition:.3s;
+}
+.info-modal .close-btn:hover{
+  background:#ff7f2a;
+  box-shadow:0 0 20px rgba(255,102,0,0.6);
+}
+
+.carfax-tooltip{
+  display:inline-block;
+  background:#4ade80;
+  color:#000;
+  padding:4px 8px;
+  border-radius:4px;
+  font-size:.85em;
+  font-weight:600;
+  margin-left:8px;
+  animation:fadeOut 2s ease-in-out forwards;
+}
+@keyframes fadeOut{
+  0%{opacity:1;}
+  70%{opacity:1;}
+  100%{opacity:0;}
+}
+
 #background{
   position:fixed;inset:0;
   background:url("./webback.jpg") center/cover no-repeat;
@@ -349,6 +436,28 @@ footer{
 .secret-box.show{
   transform:translateY(-50%) translateX(0);
 }
+.secret-box .close-x{
+  position:absolute;
+  top:12px;
+  right:12px;
+  width:30px;
+  height:30px;
+  background:#ff6600;
+  border:none;
+  border-radius:50%;
+  color:#fff;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:.3s;
+}
+.secret-box .close-x:hover{
+  background:#ff7f2a;
+  transform:rotate(90deg);
+}
 .secret-box h2{
   color:#ff6600;
   text-align:center;
@@ -409,7 +518,70 @@ footer{
       <li><strong>VC</strong> - Visteon Corp</li>
       <li><strong>ALV</strong> - Autoliv Inc</li>
     </ul>
+    <p style="margin-top:16px;font-size:.9em;color:#aaa;text-align:center;">Note: Edit the iframe URL in code to add/remove stocks from ticker tape</p>
     <button class="close-btn" onclick="toggleStockModal()">Close</button>
+  </div>
+
+  <div class="info-modal" id="racingModal">
+    <h2>🏁 Racing Calendar</h2>
+    <div class="section">
+      <h3>Ford Featured Races</h3>
+      <ul class="link-list">
+        <li onclick="openLink('https://www.nascar.com')">NASCAR Cup Series</li>
+        <li onclick="openLink('https://www.fiawec.com')">WEC - World Endurance Championship</li>
+        <li onclick="openLink('https://www.imsa.com')">IMSA SportsCar Championship</li>
+        <li onclick="openLink('https://global.rallycross.com')">World Rallycross Championship</li>
+        <li onclick="openLink('https://www.supercars.com')">Supercars Championship (Australia)</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Major Racing Series</h3>
+      <ul class="link-list">
+        <li onclick="openLink('https://www.formula1.com')">Formula 1</li>
+        <li onclick="openLink('https://www.indycar.com')">IndyCar Series</li>
+        <li onclick="openLink('https://www.24h-lemans.com/en')">24 Hours of Le Mans</li>
+        <li onclick="openLink('https://www.daytona500.com')">Daytona 500</li>
+      </ul>
+    </div>
+    <button class="close-btn" onclick="toggleRacingModal()">Close</button>
+  </div>
+
+  <div class="info-modal" id="autoInfoModal">
+    <h2>🔧 Auto Information Hub</h2>
+    <div class="section">
+      <h3>Repairs & Maintenance</h3>
+      <ul class="link-list">
+        <li onclick="openLink('https://www.youtube.com/results?search_query=car+repair+tutorial')">Car Repair Tutorials (YouTube)</li>
+        <li onclick="openLink('https://www.familyhandyman.com/list/car-maintenance-tips/')">DIY Maintenance Tips</li>
+        <li onclick="openLink('https://www.autozone.com/diy')">AutoZone DIY Guides</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Tips & Tricks</h3>
+      <ul class="link-list">
+        <li onclick="openLink('https://www.caranddriver.com/shopping-advice/')">Car Buying Tips</li>
+        <li onclick="openLink('https://www.consumerreports.org/cars/')">Consumer Reports - Cars</li>
+        <li onclick="openLink('https://www.edmunds.com/car-reviews/')">Vehicle Reviews</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Vehicle Specs & Data</h3>
+      <ul class="link-list">
+        <li onclick="openLink('https://www.caranddriver.com/research/')">Vehicle Specifications</li>
+        <li onclick="openLink('https://www.fueleconomy.gov/')">Fuel Economy Data</li>
+        <li onclick="openLink('https://www.iihs.org/ratings')">Safety Ratings (IIHS)</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>YouTube Channels</h3>
+      <ul class="link-list">
+        <li onclick="openLink('https://www.youtube.com/@ChrisFix')">ChrisFix</li>
+        <li onclick="openLink('https://www.youtube.com/@engineeringexplained')">Engineering Explained</li>
+        <li onclick="openLink('https://www.youtube.com/@DonutMedia')">Donut Media</li>
+        <li onclick="openLink('https://www.youtube.com/@savagegeese')">Savage Geese</li>
+      </ul>
+    </div>
+    <button class="close-btn" onclick="toggleAutoInfoModal()">Close</button>
   </div>
 
   <div id="background"></div>
@@ -419,6 +591,7 @@ footer{
   <div class="door-area" id="doorArea"></div>
 
   <div class="secret-box" id="secretBox">
+    <button class="close-x" onclick="closeSecretBox()">×</button>
     <h2>🔓 Secret Garage Unlocked!</h2>
     <p>Welcome to the family vault. This is your private space for exclusive content, tutorials, and special messages.</p>
     <button onclick="enterSecret()">Enter Secret Garage</button>
@@ -454,6 +627,24 @@ footer{
 <script>
 function toggleStockModal(){
   document.getElementById('stockModal').classList.toggle('show');
+}
+
+function toggleRacingModal(){
+  document.getElementById('racingModal').classList.toggle('show');
+}
+
+function toggleAutoInfoModal(){
+  document.getElementById('autoInfoModal').classList.toggle('show');
+}
+
+function openLink(url){
+  window.open(url,'_blank');
+}
+
+function closeSecretBox(){
+  document.getElementById('secretBox').classList.remove('show');
+  clickCount=0;
+  sequenceStage=0;
 }
 
 let clickCount=0;
@@ -656,31 +847,41 @@ function displayRecalls(vin,data){
   }
   
   html+='<div class="button-row">';
-  html+='<button onclick="copyVIN(\''+vin+'\')">📋 Copy VIN</button>';
+  html+='<button onclick="copyVINAuto(\''+vin+'\')">📋 Copy VIN</button>';
   if(manufacturer!=='Unknown'){
-    html+='<button onclick="goToOEM(\''+recallUrl+'\',\''+manufacturer+'\')">View on '+manufacturer+' Site</button>';
+    html+='<button onclick="goToOEM(\''+recallUrl+'\')">🔗 OEM Site</button>';
   }
+  html+='<button onclick="checkCarfax(\''+vin+'\')">🚗 CarFax</button>';
   html+='</div>';
-  html+='<div style="margin-top:8px;font-size:.8em;color:#888;text-align:center">Note: You\'ll need to paste your VIN on the manufacturer\'s website</div>';
+  html+='<div style="margin-top:8px;font-size:.8em;color:#888;text-align:center;">Tip: Use Ctrl+V to paste VIN on manufacturer site</div>';
   
   response.innerHTML=html;
 }
 
-function copyVIN(vin){
+function copyVINAuto(vin){
   navigator.clipboard.writeText(vin).then(function(){
-    alert('VIN copied to clipboard! You can now paste it on the manufacturer\'s page.');
+    const response=document.getElementById('vin-response');
+    const tooltip=document.createElement('span');
+    tooltip.className='carfax-tooltip';
+    tooltip.textContent='✓ VIN Copied!';
+    response.appendChild(tooltip);
+    setTimeout(function(){tooltip.remove();},2000);
   }).catch(function(){
-    alert('VIN: '+vin+'\n\nPlease copy this VIN manually.');
+    alert('VIN: '+vin);
   });
 }
 
-function goToOEM(url,manufacturer){
+function checkCarfax(vin){
+  window.open('https://www.carfax.com/vehicle/'+vin,'_blank');
+}
+
+function goToOEM(url){
   window.open(url,'_blank');
 }
 
 document.getElementById('estore').onclick=function(){alert("Opening eStore...");};
-document.getElementById('racing').onclick=function(){alert("Loading racing news...");};
-document.getElementById('auto').onclick=function(){alert("Accessing car info...");};
+document.getElementById('racing').onclick=function(){toggleRacingModal();};
+document.getElementById('auto').onclick=function(){toggleAutoInfoModal();};
 document.getElementById('extra').onclick=function(){alert("Future feature TBD...");};
 </script>
 </body>
