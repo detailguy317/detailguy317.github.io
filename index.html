@@ -193,59 +193,23 @@ footer{
 }
 
 /* Easter egg headlight hotspots */
-.headlight-left, .headlight-right{
+.headlight-left{
   position:fixed;
   width:80px;height:60px;
   border-radius:50%;
   cursor:pointer;
   z-index:1;
   transition:all .3s;
-  /* VISIBLE FOR TESTING */
-  border:3px solid lime;
-  background:rgba(0,255,0,0.2);
-}
-.headlight-left{
-  right:27%;top:58%;
-}
-.headlight-left::after{
-  content:'LEFT';
-  position:absolute;
-  top:50%;left:50%;
-  transform:translate(-50%,-50%);
-  color:lime;font-weight:bold;font-size:12px;
+  right:53%;top:81%;
 }
 .headlight-right{
-  right:42%;top:60%;
-}
-.headlight-right::after{
-  content:'RIGHT';
-  position:absolute;
-  top:50%;left:50%;
-  transform:translate(-50%,-50%);
-  color:cyan;font-weight:bold;font-size:12px;
-}
-
-/* COORDINATE GRID */
-.coord-grid{
   position:fixed;
-  inset:0;
+  width:80px;height:60px;
+  border-radius:50%;
   pointer-events:none;
-  z-index:999;
-}
-.coord-grid-line{
-  position:absolute;
-  background:rgba(255,0,0,0.3);
-  pointer-events:none;
-}
-.coord-label{
-  position:absolute;
-  color:#ff0;
-  font-size:11px;
-  font-weight:bold;
-  background:rgba(0,0,0,0.7);
-  padding:2px 4px;
-  border-radius:3px;
-  text-shadow:0 0 3px #000;
+  z-index:1;
+  transition:all .3s;
+  right:76%;top:80%;
 }
 .headlight-flash{
   box-shadow:0 0 60px rgba(255,255,255,1),0 0 100px rgba(135,206,250,0.8);
@@ -326,9 +290,6 @@ footer{
 <body>
   <div id="background"></div>
 
-  <!-- COORDINATE GRID FOR MAPPING -->
-  <div class="coord-grid" id="coordGrid"></div>
-
   <!-- Easter egg hotspots -->
   <div class="headlight-left" id="leftHeadlight"></div>
   <div class="headlight-right" id="rightHeadlight"></div>
@@ -369,46 +330,6 @@ footer{
   </div>
 
 <script>
-// CREATE COORDINATE GRID
-function createGrid(){
-  const grid=document.getElementById('coordGrid');
-  // Vertical lines every 10%
-  for(let i=0;i<=100;i+=10){
-    const line=document.createElement('div');
-    line.className='coord-grid-line';
-    line.style.left=i+'%';
-    line.style.top='0';
-    line.style.width='1px';
-    line.style.height='100%';
-    grid.appendChild(line);
-    
-    const label=document.createElement('div');
-    label.className='coord-label';
-    label.textContent='L'+i+'%';
-    label.style.left=i+'%';
-    label.style.top='5px';
-    grid.appendChild(label);
-  }
-  // Horizontal lines every 10%
-  for(let i=0;i<=100;i+=10){
-    const line=document.createElement('div');
-    line.className='coord-grid-line';
-    line.style.top=i+'%';
-    line.style.left='0';
-    line.style.height='1px';
-    line.style.width='100%';
-    grid.appendChild(line);
-    
-    const label=document.createElement('div');
-    label.className='coord-label';
-    label.textContent='T'+i+'%';
-    label.style.top=i+'%';
-    label.style.left='5px';
-    grid.appendChild(label);
-  }
-}
-createGrid();
-
 // Easter egg sequence tracker
 let clickCount=0;
 let sequenceStage=0;
