@@ -591,31 +591,53 @@ function handleVIN(){
 
   response.innerHTML="<div style='text-align:center'>🔍 Checking NHTSA database...</div>";
   
-  // Fetch vehicle info AND recalls from NHTSA API
-  Promise.all([
-    fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVin/${vin}?format=json`).then(res=>res.json()),
-    fetch(`https://api.nhtsa.gov/recalls/recallsByVehicle?vin=${vin}`).then(res=>res.json())
-  ])
-  .then(([vehicleData, recallData])=>{
-    displayResults(vin, vehicleData, recallData);
-  })
-  .catch(err=>{
-    response.innerHTML="<div style='text-align:center;color:#ef4444'>Error connecting to NHTSA. Please try again.</div>";
-  });
+  // Fetch vehicle info first
+  fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVin/${vin}?format=json`)
+    .then(res=>res.json())
+    .then(vehicleData=>{
+      // Parse vehicle information
+      const results = vehicleData.Results || [];
+      let vehicleInfo = {};
+      results.forEach(item => {
+        if(item.Value && item.Value !== '' && item.Value !== 'Not Applicable'){
+          vehicleInfo[item.Variable] = item.Value;
+        }
+      });
+      
+      // Now fetch recalls using BOTH VIN and Make/Model/Year methods
+      const year = vehicleInfo.ModelYear;
+      const make = vehicleInfo.Make;
+      const model = vehicleInfo.Model;
+      
+      return Promise.all([
+        fetch(`https://api.nhtsa.gov/recalls/recallsByVehicle?vin=${vin}`).then(r=>r.json()),
+        year && make && model ? 
+          fetch(`https://api.nhtsa.gov/recalls/recallsByVehicle?make=${make}&model=${model}&modelYear=${year}`).then(r=>r.json()) :
+          Promise.resolve({results:[]})
+      ]).then(([vinRecalls, ymRecalls]) => {
+        // Combine and deduplicate recalls from both sources
+        const allRecalls = [...(vinRecalls.results || []), ...(ymRecalls.results || [])];
+        const uniqueRecalls = allRecalls.filter((recall, index, self) =>
+          index === self.findIndex(r => r.NHTSACampaignNumber === recall.NHTSACampaignNumber)
+        );
+        
+        return {
+          vehicleInfo: vehicleInfo,
+          recalls: uniqueRecalls
+        };
+      });
+    })
+    .then(data=>{
+      displayResults(vin, data.vehicleInfo, {results: data.recalls});
+    })
+    .catch(err=>{
+      response.innerHTML="<div style='text-align:center;color:#ef4444'>Error connecting to NHTSA. Please try again.</div>";
+    });
 }
 
-function displayResults(vin, vehicleData, recallData){
+function displayResults(vin, vehicleInfo, recallData){
   const response=document.getElementById('vin-response');
   const wmi=vin.substring(0,3);
-  
-  // Parse vehicle information
-  const results = vehicleData.Results || [];
-  let vehicleInfo = {};
-  results.forEach(item => {
-    if(item.Value && item.Value !== '' && item.Value !== 'Not Applicable'){
-      vehicleInfo[item.Variable] = item.Value;
-    }
-  });
 
   // Determine manufacturer and recall URL
   let recallUrl='';
@@ -712,7 +734,10 @@ function displayResults(vin, vehicleData, recallData){
   
   if(recalls.length===0){
     html+='<div class="no-recall">✅ NO ACTIVE RECALLS FOUND</div>';
-    html+='<div style="margin-top:12px;font-size:.85em;color:#aaa;text-align:center">Great news! No open recalls for this vehicle.</div>';
+    html+='<div style="margin-top:8px;padding:10px;background:#2a2008;border-left:3px solid #fbbf24;border-radius:4px">';
+    html+='<strong style="color:#fbbf24">⚠️ IMPORTANT:</strong> ';
+    html+='<span style="color:#ddd;font-size:.9em">NHTSA API data may be delayed. Always verify with the manufacturer site for the most current recall information, as newly announced recalls can take days or weeks to appear in the API.</span>';
+    html+='</div>';
     
     // CELEBRATION TIME! 🎉
     setTimeout(() => {
