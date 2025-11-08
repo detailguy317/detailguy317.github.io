@@ -4,6 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 <title>DETAILGUY317 Garage</title>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{
@@ -193,6 +194,40 @@ body{
 .search-bar button:hover, .vin-box button:hover{
   background:#ff7f2a;
   box-shadow:0 0 20px rgba(255,102,0,0.6);
+}
+
+.scan-vin-btn{
+  display:none;
+  width:100%;
+  padding:12px;
+  margin-bottom:8px;
+  border-radius:8px;
+  border:none;
+  background:#4ade80;
+  color:#000;
+  font-weight:600;
+  font-size:1em;
+  cursor:pointer;
+  transition:.3s;
+}
+.scan-vin-btn:hover{
+  background:#5ef590;
+  box-shadow:0 0 20px rgba(74,222,128,0.6);
+}
+
+.camera-input{
+  display:none;
+}
+
+.scan-status{
+  background:#1a1a1a;
+  color:#4ade80;
+  padding:10px;
+  border-radius:6px;
+  font-size:.9em;
+  text-align:center;
+  margin-bottom:8px;
+  display:none;
 }
 
 .faq-response{
@@ -441,7 +476,6 @@ footer{
     font-size: 14px;
   }
   
-  /* Stack boxes vertically on mobile */
   .vin-box {
     position: relative;
     left: auto;
@@ -458,6 +492,10 @@ footer{
     width: calc(100% - 20px);
     margin: 20px 10px 40px 10px;
     max-width: 100%;
+  }
+  
+  .scan-vin-btn {
+    display: block;
   }
   
   .vin-response {
@@ -512,7 +550,6 @@ footer{
   }
 }
 
-/* Extra small phones */
 @media screen and (max-width: 400px) {
   .overlay h1 {
     font-size: 28px;
@@ -538,7 +575,6 @@ footer{
   }
 }
 
-/* Landscape mode on phones */
 @media screen and (max-height: 500px) and (orientation: landscape) {
   .overlay h1 {
     font-size: 24px;
@@ -578,6 +614,9 @@ footer{
   </div>
   <div class="vin-box">
     <label>Enter VIN for Vehicle Info</label>
+    <button class="scan-vin-btn" onclick="triggerVINScan()">📷 Scan VIN with Camera</button>
+    <input type="file" accept="image/*" capture="environment" class="camera-input" id="cameraInput" onchange="processVINImage(event)">
+    <div class="scan-status" id="scanStatus"></div>
     <input type="text" placeholder="Enter 17-digit VIN..." id="vinInput" maxlength="17" />
     <button onclick="handleVIN()">Check Vehicle</button>
     <div class="vin-response" id="vin-response"></div>
@@ -655,6 +694,40 @@ footer{
   </div>
 </div>
 
+<!-- Camera Permission & Legal Disclaimer Modal -->
+<div class="stock-modal" id="cameraPermissionModal">
+  <div class="modal-content">
+    <h2>📷 Camera Access</h2>
+    <div style="color: #fff; text-align: left; line-height: 1.6;">
+      <p style="margin-bottom: 15px;"><strong style="color:#ff7f2a;">We need your permission to use your camera to scan your vehicle's VIN.</strong></p>
+      
+      <p style="margin-bottom: 15px;"><strong>What we do:</strong></p>
+      <ul style="margin-left: 20px; margin-bottom: 15px;">
+        <li>Process the image on YOUR device only</li>
+        <li>Extract text from the VIN plate</li>
+        <li>Auto-fill the VIN number for you</li>
+      </ul>
+      
+      <p style="margin-bottom: 15px;"><strong>What we DON'T do:</strong></p>
+      <ul style="margin-left: 20px; margin-bottom: 15px;">
+        <li>Store or save any photos</li>
+        <li>Upload images to our servers</li>
+        <li>Share your photos with anyone</li>
+        <li>Track or record camera usage</li>
+      </ul>
+      
+      <p style="margin-bottom: 15px; font-size: 0.9em; color: #aaa;"><strong>Privacy Notice:</strong> All image processing happens locally on your device. Photos are immediately discarded after text extraction. We do not collect, store, or transmit any camera data.</p>
+      
+      <p style="margin-bottom: 15px; font-size: 0.9em; color: #aaa;"><strong>Accuracy Notice:</strong> VIN scanning works best in good lighting. Always verify the VIN is correct before checking vehicle info. We are not responsible for any errors in VIN detection.</p>
+      
+      <div style="display:flex; gap:10px; margin-top:20px;">
+        <button onclick="acceptCameraPermission()" style="flex:1; background:#4ade80; color:#000;">Allow Camera Access</button>
+        <button onclick="denyCameraPermission()" style="flex:1; background:#ef4444;">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 function toggleStockModal(){
   document.getElementById('stockModal').classList.toggle('show');
@@ -680,6 +753,77 @@ function handleSearch(){
     return;
   }
   response.textContent="You asked: "+query+" (Demo response — AI integration coming soon)";
+}
+
+// VIN SCANNING FUNCTIONS
+function triggerVINScan(){
+  // Show permission modal first
+  document.getElementById('cameraPermissionModal').classList.add('show');
+}
+
+function acceptCameraPermission(){
+  document.getElementById('cameraPermissionModal').classList.remove('show');
+  // Trigger the hidden file input which opens camera
+  document.getElementById('cameraInput').click();
+}
+
+function denyCameraPermission(){
+  document.getElementById('cameraPermissionModal').classList.remove('show');
+  alert('Camera access denied. You can manually enter your VIN instead.');
+}
+
+function processVINImage(event){
+  const file = event.target.files[0];
+  if(!file) return;
+  
+  const scanStatus = document.getElementById('scanStatus');
+  scanStatus.style.display = 'block';
+  scanStatus.textContent = '📸 Processing image...';
+  scanStatus.style.color = '#4ade80';
+  
+  // Use Tesseract.js to extract text from image
+  Tesseract.recognize(
+    file,
+    'eng',
+    {
+      logger: info => {
+        if(info.status === 'recognizing text'){
+          scanStatus.textContent = '🔍 Scanning VIN... ' + Math.round(info.progress * 100) + '%';
+        }
+      }
+    }
+  ).then(({ data: { text } }) => {
+    // Extract potential VIN from text (17 alphanumeric characters)
+    const vinMatch = text.match(/[A-HJ-NPR-Z0-9]{17}/);
+    
+    if(vinMatch){
+      const detectedVIN = vinMatch[0];
+      document.getElementById('vinInput').value = detectedVIN;
+      scanStatus.textContent = '✅ VIN detected: ' + detectedVIN;
+      scanStatus.style.color = '#4ade80';
+      
+      // Auto-hide status after 3 seconds
+      setTimeout(() => {
+        scanStatus.style.display = 'none';
+      }, 3000);
+    } else {
+      scanStatus.textContent = '❌ No VIN found. Try again with better lighting or enter manually.';
+      scanStatus.style.color = '#fbbf24';
+      setTimeout(() => {
+        scanStatus.style.display = 'none';
+      }, 5000);
+    }
+  }).catch(err => {
+    scanStatus.textContent = '❌ Scan failed. Please enter VIN manually.';
+    scanStatus.style.color = '#ef4444';
+    console.error('VIN scan error:', err);
+    setTimeout(() => {
+      scanStatus.style.display = 'none';
+    }, 5000);
+  });
+  
+  // Reset file input so same image can be scanned again if needed
+  event.target.value = '';
 }
 
 function handleVIN(){
