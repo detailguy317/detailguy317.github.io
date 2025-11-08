@@ -382,6 +382,67 @@ footer{
   border: 2px solid #ff6600;
   border-radius: 8px;
 }
+
+/* Confetti and Alert Effects */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: #f0f;
+  position: fixed;
+  top: -10px;
+  z-index: 9999;
+  animation: confetti-fall 3s linear forwards;
+}
+
+@keyframes confetti-fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.emergency-flash {
+  animation: emergency-flasher 0.3s ease-in-out 5;
+}
+
+@keyframes emergency-flasher {
+  0%, 100% { 
+    border-color: #ff6600;
+    box-shadow: 0 0 25px rgba(255,102,0,0.3);
+  }
+  50% { 
+    border-color: #ff0000;
+    box-shadow: 0 0 40px rgba(255,0,0,0.8), 0 0 60px rgba(255,0,0,0.5);
+  }
+}
+
+.shake-alert {
+  animation: shake 0.5s ease-in-out 3;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.screen-flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.3);
+  z-index: 9998;
+  pointer-events: none;
+  animation: flash-screen 0.3s ease-in-out 4;
+}
+
+@keyframes flash-screen {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
 </style>
 </head>
 <body>
@@ -652,8 +713,20 @@ function displayResults(vin, vehicleData, recallData){
   if(recalls.length===0){
     html+='<div class="no-recall">✅ NO ACTIVE RECALLS FOUND</div>';
     html+='<div style="margin-top:12px;font-size:.85em;color:#aaa;text-align:center">Great news! No open recalls for this vehicle.</div>';
+    
+    // CELEBRATION TIME! 🎉
+    setTimeout(() => {
+      createConfetti();
+      playHappySound();
+    }, 100);
+    
   }else{
     html+='<div class="warning">⚠️ '+recalls.length+' ACTIVE RECALL'+(recalls.length>1?'S':'')+' FOUND</div>';
+    
+    // EMERGENCY ALERT! 🚨
+    setTimeout(() => {
+      triggerEmergencyAlert();
+    }, 100);
     
     recalls.forEach((recall,idx)=>{
       html+='<div class="recall-item">';
@@ -741,6 +814,141 @@ function toggleVINResults(){
   const response = document.getElementById('vin-response');
   response.classList.add('collapsed');
 }
+
+// Sound Effects
+function playHappySound(){
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  
+  // Whistle sound
+  const whistle = audioCtx.createOscillator();
+  const whistleGain = audioCtx.createGain();
+  whistle.connect(whistleGain);
+  whistleGain.connect(audioCtx.destination);
+  whistle.frequency.value = 800;
+  whistleGain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+  whistleGain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
+  whistle.start(audioCtx.currentTime);
+  whistle.stop(audioCtx.currentTime + 0.3);
+  
+  // Second whistle
+  setTimeout(() => {
+    const whistle2 = audioCtx.createOscillator();
+    const whistle2Gain = audioCtx.createGain();
+    whistle2.connect(whistle2Gain);
+    whistle2Gain.connect(audioCtx.destination);
+    whistle2.frequency.value = 1000;
+    whistle2Gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+    whistle2Gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
+    whistle2.start(audioCtx.currentTime);
+    whistle2.stop(audioCtx.currentTime + 0.3);
+  }, 200);
+  
+  // Clapping rhythm
+  setTimeout(() => {
+    for(let i = 0; i < 4; i++){
+      setTimeout(() => {
+        const clap = audioCtx.createOscillator();
+        const clapGain = audioCtx.createGain();
+        clap.connect(clapGain);
+        clapGain.connect(audioCtx.destination);
+        clap.type = 'square';
+        clap.frequency.value = 100;
+        clapGain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+        clapGain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.05);
+        clap.start(audioCtx.currentTime);
+        clap.stop(audioCtx.currentTime + 0.05);
+      }, i * 150);
+    }
+  }, 500);
+}
+
+function playAlertSiren(){
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  
+  // Emergency siren
+  for(let i = 0; i < 3; i++){
+    setTimeout(() => {
+      const siren = audioCtx.createOscillator();
+      const sirenGain = audioCtx.createGain();
+      siren.connect(sirenGain);
+      sirenGain.connect(audioCtx.destination);
+      siren.frequency.setValueAtTime(800, audioCtx.currentTime);
+      siren.frequency.linearRampToValueAtTime(400, audioCtx.currentTime + 0.25);
+      sirenGain.gain.value = 0.3;
+      siren.start(audioCtx.currentTime);
+      siren.stop(audioCtx.currentTime + 0.25);
+    }, i * 300);
+  }
+  
+  // Car horn honk
+  setTimeout(() => {
+    const horn = audioCtx.createOscillator();
+    const hornGain = audioCtx.createGain();
+    horn.connect(hornGain);
+    hornGain.connect(audioCtx.destination);
+    horn.frequency.value = 220;
+    hornGain.gain.value = 0.4;
+    horn.start(audioCtx.currentTime);
+    horn.stop(audioCtx.currentTime + 0.4);
+    
+    // Second honk
+    setTimeout(() => {
+      const horn2 = audioCtx.createOscillator();
+      const horn2Gain = audioCtx.createGain();
+      horn2.connect(horn2Gain);
+      horn2Gain.connect(audioCtx.destination);
+      horn2.frequency.value = 220;
+      horn2Gain.gain.value = 0.4;
+      horn2.start(audioCtx.currentTime);
+      horn2.stop(audioCtx.currentTime + 0.4);
+    }, 500);
+  }, 1000);
+}
+
+function createConfetti(){
+  const colors = ['#ff6600', '#ffd700', '#4ade80', '#60a5fa', '#f472b6', '#a78bfa'];
+  const confettiCount = 100;
+  
+  for(let i = 0; i < confettiCount; i++){
+    setTimeout(() => {
+      const confetti = document.createElement('div');
+      confetti.className = 'confetti';
+      confetti.style.left = Math.random() * 100 + '%';
+      confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.animationDelay = Math.random() * 0.5 + 's';
+      confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+      document.body.appendChild(confetti);
+      
+      setTimeout(() => confetti.remove(), 3500);
+    }, i * 20);
+  }
+}
+
+function triggerEmergencyAlert(){
+  // Screen flash effect
+  const flash = document.createElement('div');
+  flash.className = 'screen-flash';
+  document.body.appendChild(flash);
+  setTimeout(() => flash.remove(), 1500);
+  
+  // Play alert sounds
+  playAlertSiren();
+  
+  // Make VIN box shake and flash
+  const vinBox = document.querySelector('.vin-box');
+  vinBox.classList.add('emergency-flash', 'shake-alert');
+  setTimeout(() => {
+    vinBox.classList.remove('emergency-flash', 'shake-alert');
+  }, 1500);
+  
+  // Make results box shake
+  const response = document.getElementById('vin-response');
+  response.classList.add('shake-alert');
+  setTimeout(() => {
+    response.classList.remove('shake-alert');
+  }, 1500);
+}
+
 </script>
 
 </body>
