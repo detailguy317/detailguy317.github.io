@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 <title>DETAILGUY317 Garage</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -10,7 +10,7 @@ body{
   font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial;
   color:#f3f6fb;
   background:#060b14;
-  overflow:hidden;
+  overflow-x:hidden;
   padding-top:98px;
 }
 
@@ -85,7 +85,6 @@ body{
   100% { transform: translateX(-100vw);}
 }
 
-/* Background image */
 #background{
   position:fixed;inset:0;
   background:url("./webback.jpg") center/cover no-repeat;
@@ -254,24 +253,6 @@ body{
 .vin-response .vehicle-info strong{
   color:#4ade80;
 }
-.vin-response .recall-item{
-  background:#1a1a1a;padding:10px;
-  border-left:3px solid #ff6600;
-  margin-bottom:10px;border-radius:4px;
-}
-.vin-response .no-recall{
-  color:#4ade80;font-weight:600;
-  text-align:center;padding:10px;
-  font-size:1.1em;
-}
-.vin-response .warning{
-  color:#fbbf24;font-weight:600;
-  background:#2a2008;
-  padding:10px;
-  border-radius:6px;
-  text-align:center;
-  margin-bottom:12px;
-}
 .vin-response button{
   width:100%;padding:8px;margin-top:8px;
   border-radius:6px;border:none;
@@ -297,7 +278,6 @@ footer{
   color:#aaa;text-align:right;
 }
 
-/* Modal Styles */
 .stock-modal {
   display: none;
   position: fixed;
@@ -383,65 +363,195 @@ footer{
   border-radius: 8px;
 }
 
-/* Confetti and Alert Effects */
-.confetti {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background: #f0f;
-  position: fixed;
-  top: -10px;
-  z-index: 9999;
-  animation: confetti-fall 3s linear forwards;
-}
-
-@keyframes confetti-fall {
-  to {
-    transform: translateY(100vh) rotate(360deg);
-    opacity: 0;
+/* MOBILE RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 60px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .ticker-container {
+    height: 50px;
+    animation: fadeInTicker 1s ease-in-out 2s forwards;
+  }
+  
+  .ticker-wrapper {
+    height: 50px;
+  }
+  
+  .ticker-wrapper iframe {
+    height: 50px;
+  }
+  
+  .ticker-btn {
+    font-size: 11px;
+    padding: 6px 10px;
+    margin: 0 6px;
+  }
+  
+  .auto-news-ticker {
+    top: 50px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  #background {
+    background-position: center center;
+    animation: none;
+    position: absolute;
+    min-height: 100vh;
+  }
+  
+  .overlay {
+    position: relative;
+    top: 20px;
+    left: 0;
+    transform: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .overlay h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  
+  .overlay p {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  
+  .icon-row {
+    position: relative;
+    bottom: auto;
+    left: 0;
+    transform: none;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 20px 10px;
+    justify-content: center;
+  }
+  
+  .icon {
+    min-width: 110px;
+    height: 50px;
+    font-size: 14px;
+  }
+  
+  /* Stack boxes vertically on mobile */
+  .vin-box {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+    max-width: 100%;
+  }
+  
+  .search-bar {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: calc(100% - 20px);
+    margin: 20px 10px 40px 10px;
+    max-width: 100%;
+  }
+  
+  .vin-response {
+    max-height: 350px;
+  }
+  
+  .vin-box label,
+  .search-bar label {
+    font-size: 1em;
+  }
+  
+  .vin-box input,
+  .search-bar input,
+  .vin-box button,
+  .search-bar button {
+    font-size: 16px;
+    padding: 14px;
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px 15px;
+  }
+  
+  .modal-content h2 {
+    font-size: 1.4em;
+  }
+  
+  .modal-content iframe {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .modal-content button {
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .vin-response .button-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .vin-response .button-row button {
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .vin-response .vehicle-info {
+    font-size: 0.9em;
   }
 }
 
-.emergency-flash {
-  animation: emergency-flasher 0.3s ease-in-out 5;
-}
-
-@keyframes emergency-flasher {
-  0%, 100% { 
-    border-color: #ff6600;
-    box-shadow: 0 0 25px rgba(255,102,0,0.3);
+/* Extra small phones */
+@media screen and (max-width: 400px) {
+  .overlay h1 {
+    font-size: 28px;
   }
-  50% { 
-    border-color: #ff0000;
-    box-shadow: 0 0 40px rgba(255,0,0,0.8), 0 0 60px rgba(255,0,0,0.5);
+  
+  .overlay p {
+    font-size: 14px;
+  }
+  
+  .icon {
+    min-width: 90px;
+    height: 45px;
+    font-size: 13px;
+  }
+  
+  .ticker-btn {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+  
+  .modal-content h2 {
+    font-size: 1.2em;
   }
 }
 
-.shake-alert {
-  animation: shake 0.5s ease-in-out 3;
-}
-
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { transform: translateX(10px); }
-}
-
-.screen-flash {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 0, 0, 0.3);
-  z-index: 9998;
-  pointer-events: none;
-  animation: flash-screen 0.3s ease-in-out 4;
-}
-
-@keyframes flash-screen {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
+/* Landscape mode on phones */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .overlay h1 {
+    font-size: 24px;
+  }
+  
+  .overlay p {
+    font-size: 12px;
+  }
+  
+  .icon {
+    height: 40px;
+    min-width: 90px;
+  }
 }
 </style>
 </head>
@@ -467,9 +577,9 @@ footer{
     <div class="icon" id="extra">TBD</div>
   </div>
   <div class="vin-box">
-    <label>Enter VIN Here for FREE Recall Check</label>
+    <label>Enter VIN for Vehicle Info</label>
     <input type="text" placeholder="Enter 17-digit VIN..." id="vinInput" maxlength="17" />
-    <button onclick="handleVIN()">Check Recalls</button>
+    <button onclick="handleVIN()">Check Vehicle</button>
     <div class="vin-response" id="vin-response"></div>
   </div>
   <div class="search-bar">
@@ -480,7 +590,6 @@ footer{
     <footer>© 2025 DetailGuy317.com | Made in U.S.A. by carguy for carfolks </footer>
   </div>
 
-<!-- Stock Modal -->
 <div class="stock-modal" id="stockModal">
   <div class="modal-content">
     <span class="close-btn" onclick="toggleStockModal()">✖</span>
@@ -489,7 +598,6 @@ footer{
   </div>
 </div>
 
-<!-- Racing Modal -->
 <div class="stock-modal" id="racingModal">
   <div class="modal-content">
     <span class="close-btn" onclick="toggleRacingModal()">✖</span>
@@ -516,7 +624,6 @@ footer{
   </div>
 </div>
 
-<!-- Auto Info Modal -->
 <div class="stock-modal" id="autoInfoModal">
   <div class="modal-content">
     <span class="close-btn" onclick="toggleAutoInfoModal()">✖</span>
@@ -589,13 +696,11 @@ function handleVIN(){
     return;
   }
 
-  response.innerHTML="<div style='text-align:center'>🔍 Checking NHTSA database...</div>";
+  response.innerHTML="<div style='text-align:center'>🔍 Decoding VIN...</div>";
   
-  // Fetch vehicle info first
   fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVin/${vin}?format=json`)
     .then(res=>res.json())
     .then(vehicleData=>{
-      // Parse vehicle information
       const results = vehicleData.Results || [];
       let vehicleInfo = {};
       results.forEach(item => {
@@ -603,107 +708,68 @@ function handleVIN(){
           vehicleInfo[item.Variable] = item.Value;
         }
       });
-      
-      // Now fetch recalls using BOTH VIN and Make/Model/Year methods
-      const year = vehicleInfo.ModelYear;
-      const make = vehicleInfo.Make;
-      const model = vehicleInfo.Model;
-      
-      return Promise.all([
-        fetch(`https://api.nhtsa.gov/recalls/recallsByVehicle?vin=${vin}`).then(r=>r.json()),
-        year && make && model ? 
-          fetch(`https://api.nhtsa.gov/recalls/recallsByVehicle?make=${make}&model=${model}&modelYear=${year}`).then(r=>r.json()) :
-          Promise.resolve({results:[]})
-      ]).then(([vinRecalls, ymRecalls]) => {
-        // Combine and deduplicate recalls from both sources
-        const allRecalls = [...(vinRecalls.results || []), ...(ymRecalls.results || [])];
-        const uniqueRecalls = allRecalls.filter((recall, index, self) =>
-          index === self.findIndex(r => r.NHTSACampaignNumber === recall.NHTSACampaignNumber)
-        );
-        
-        return {
-          vehicleInfo: vehicleInfo,
-          recalls: uniqueRecalls
-        };
-      });
-    })
-    .then(data=>{
-      displayResults(vin, data.vehicleInfo, {results: data.recalls});
+      displayResults(vin, vehicleInfo);
     })
     .catch(err=>{
       response.innerHTML="<div style='text-align:center;color:#ef4444'>Error connecting to NHTSA. Please try again.</div>";
     });
 }
 
-function displayResults(vin, vehicleInfo, recallData){
+function displayResults(vin, vehicleInfo){
   const response=document.getElementById('vin-response');
   const wmi=vin.substring(0,3);
-
-  // Determine manufacturer and recall URL
+  
   let recallUrl='';
   let manufacturer='';
 
-  // Ford
   if(wmi.startsWith('1F') || wmi.startsWith('3F')){
     recallUrl='https://owner.ford.com/tools/account/maintenance/recalls.html';
     manufacturer='Ford';
   }
-  // GM (Chevrolet, GMC, Cadillac, Buick)
   else if(wmi.startsWith('1G') || wmi.startsWith('3G') || wmi.startsWith('2G')){
     recallUrl='https://my.gm.com/recalls';
     manufacturer='GM';
   }
-  // Chrysler/Stellantis (Dodge, Ram, Jeep, Chrysler)
   else if(wmi.startsWith('1C') || wmi.startsWith('3C') || wmi.startsWith('2C')){
     recallUrl='https://recalls.mopar.com/';
     manufacturer='Chrysler/Stellantis';
   }
-  // Toyota
   else if(wmi.startsWith('4T') || wmi.startsWith('5T') || wmi.startsWith('JT')){
     recallUrl='https://www.toyota.com/recall';
     manufacturer='Toyota';
   }
-  // Honda
   else if(wmi.startsWith('1H') || wmi.startsWith('2H') || wmi.startsWith('JH')){
     recallUrl='https://owners.honda.com/service-maintenance/recalls';
     manufacturer='Honda';
   }
-  // Nissan
   else if(wmi.startsWith('1N') || wmi.startsWith('3N') || wmi.startsWith('JN')){
     recallUrl='https://www.nissan-recalls.com/';
     manufacturer='Nissan';
   }
-  // Hyundai
   else if(wmi.startsWith('KM') || wmi.startsWith('5N')){
     recallUrl='https://autoservice.hyundaiusa.com/campaignhome';
     manufacturer='Hyundai';
   }
-  // Kia
   else if(wmi.startsWith('KN')){
     recallUrl='https://owners.kia.com/us/en/safety-recall.html';
     manufacturer='Kia';
   }
-  // Subaru
   else if(wmi.startsWith('4S') || wmi.startsWith('JF')){
     recallUrl='https://www.subaru.com/vehicle-recalls.html';
     manufacturer='Subaru';
   }
-  // Mazda
   else if(wmi.startsWith('JM')){
     recallUrl='https://www.mazdausa.com/owners/recalls';
     manufacturer='Mazda';
   }
-  // Volkswagen
   else if(wmi.startsWith('WV') || wmi.startsWith('3V')){
     recallUrl='https://www.vw.com/recalls/';
     manufacturer='Volkswagen';
   }
-  // BMW
   else if(wmi.startsWith('WB') || wmi.startsWith('5U')){
     recallUrl='https://www.bmwusa.com/recall.html';
     manufacturer='BMW';
   }
-  // Mercedes
   else if(wmi.startsWith('WD') || wmi.startsWith('4J')){
     recallUrl='https://www.mbusa.com/en/owners/recalls';
     manufacturer='Mercedes-Benz';
@@ -715,7 +781,6 @@ function displayResults(vin, vehicleInfo, recallData){
   
   let html='<h3>📋 VIN: '+vin+'</h3>';
   
-  // Display vehicle information
   html+='<div class="vehicle-info">';
   html+='<strong>🚗 Vehicle Information</strong><br>';
   if(vehicleInfo.ModelYear) html+='<strong>Year:</strong> '+vehicleInfo.ModelYear+'<br>';
@@ -729,73 +794,35 @@ function displayResults(vin, vehicleInfo, recallData){
   if(vehicleInfo.TransmissionStyle) html+='<strong>Transmission:</strong> '+vehicleInfo.TransmissionStyle+'<br>';
   html+='</div>';
   
-  // Check if recalls exist
-  const recalls=recallData.results || [];
+  html+='<div style="margin-top:12px;padding:12px;background:#2a1a08;border:2px solid #fbbf24;border-radius:6px">';
+  html+='<strong style="color:#fbbf24;font-size:1.05em">⚠️ CHECK FOR RECALLS:</strong><br>';
+  html+='<span style="color:#fff;font-size:.92em;line-height:1.5">';
+  html+='Click buttons below to check manufacturer & NHTSA sites for active recalls.';
+  html+='</span>';
+  html+='</div>';
   
-  if(recalls.length===0){
-    html+='<div class="no-recall">✅ NO ACTIVE RECALLS FOUND</div>';
-    html+='<div style="margin-top:8px;padding:10px;background:#2a2008;border-left:3px solid #fbbf24;border-radius:4px">';
-    html+='<strong style="color:#fbbf24">⚠️ IMPORTANT:</strong> ';
-    html+='<span style="color:#ddd;font-size:.9em">NHTSA API data may be delayed. Always verify with the manufacturer site for the most current recall information, as newly announced recalls can take days or weeks to appear in the API.</span>';
-    html+='</div>';
-    
-    // CELEBRATION TIME! 🎉
-    setTimeout(() => {
-      createConfetti();
-      playHappySound();
-    }, 100);
-    
-  }else{
-    html+='<div class="warning">⚠️ '+recalls.length+' ACTIVE RECALL'+(recalls.length>1?'S':'')+' FOUND</div>';
-    
-    // EMERGENCY ALERT! 🚨
-    setTimeout(() => {
-      triggerEmergencyAlert();
-    }, 100);
-    
-    recalls.forEach((recall,idx)=>{
-      html+='<div class="recall-item">';
-      html+='<strong style="color:#ff7f2a;font-size:1.05em">🔴 Recall #'+(recall.NHTSACampaignNumber || 'N/A')+'</strong><br><br>';
-      html+='<strong>Component:</strong> '+(recall.Component || 'N/A')+'<br>';
-      html+='<strong>Issue:</strong> '+(recall.Summary || 'N/A')+'<br>';
-      if(recall.Consequence){
-        html+='<strong>Risk:</strong> '+recall.Consequence+'<br>';
-      }
-      if(recall.Remedy){
-        html+='<strong>The Fix:</strong> '+recall.Remedy+'<br>';
-      }
-      if(recall.ReportReceivedDate){
-        html+='<strong>Reported:</strong> '+recall.ReportReceivedDate+'<br>';
-      }
-      html+='</div>';
-    });
-  }
-  
-  // Add action buttons
   html+='<div class="button-row">';
   html+='<button onclick="copyVIN(\''+vin+'\')">📋 Copy VIN</button>';
   if(manufacturer!=='Unknown'){
-    html+='<button onclick="goToOEM(\''+recallUrl+'\')">🏭 '+manufacturer+' Site</button>';
+    html+='<button onclick="goToOEM(\''+recallUrl+'\')">🏭 '+manufacturer+'</button>';
   }
   html+='</div>';
   
   html+='<div class="button-row">';
-  html+='<button onclick="goToCarfax(\''+vin+'\')">📊 CarFax Report</button>';
-  html+='<button onclick="goToNHTSA(\''+vin+'\')">🔍 NHTSA Details</button>';
+  html+='<button onclick="goToCarfax(\''+vin+'\')">📊 CarFax</button>';
+  html+='<button onclick="goToNHTSA(\''+vin+'\')">🔍 NHTSA</button>';
   html+='</div>';
   
-  html+='<div style="margin-top:8px;font-size:.75em;color:#888;text-align:center">Data provided by NHTSA • Always verify with manufacturer</div>';
+  html+='<div style="margin-top:8px;font-size:.7em;color:#888;text-align:center">Vehicle data from NHTSA</div>';
   
   response.innerHTML=html;
   
-  // Auto-copy VIN to clipboard when results load
   navigator.clipboard.writeText(vin).then(()=>{
-    console.log('VIN auto-copied to clipboard');
+    console.log('VIN auto-copied');
   }).catch(()=>{
     console.log('Auto-copy failed');
   });
   
-  // Add close button
   const closeBtn = document.createElement('div');
   closeBtn.className = 'vin-close-btn';
   closeBtn.innerHTML = '✕';
@@ -805,7 +832,6 @@ function displayResults(vin, vehicleInfo, recallData){
   };
   response.insertBefore(closeBtn, response.firstChild);
   
-  // Make collapsed box clickable to expand
   response.onclick = function(){
     if(response.classList.contains('collapsed')){
       response.classList.remove('collapsed');
@@ -813,11 +839,16 @@ function displayResults(vin, vehicleInfo, recallData){
   };
 }
 
+function toggleVINResults(){
+  const response = document.getElementById('vin-response');
+  response.classList.add('collapsed');
+}
+
 function copyVIN(vin){
   navigator.clipboard.writeText(vin).then(()=>{
-    alert('✅ VIN copied to clipboard!\n\n(Note: VIN was already auto-copied when results loaded)\n\nYou can now paste it on the manufacturer\'s recall page.');
+    alert('✅ VIN copied!\n\nPaste it on the manufacturer or NHTSA site to check for recalls.');
   }).catch(()=>{
-    alert('VIN: '+vin+'\n\nPlease copy this VIN manually.');
+    alert('VIN: '+vin+'\n\nPlease copy manually.');
   });
 }
 
@@ -826,154 +857,12 @@ function goToOEM(url){
 }
 
 function goToCarfax(vin){
-  // TODO: Replace this URL with your CarFax affiliate link when you get it
-  // Example: window.open('https://www.carfax.com/vehicle/'+vin+'?affiliate=YOUR_AFFILIATE_ID','_blank');
   window.open('https://www.carfax.com/vehicle/'+vin,'_blank');
 }
 
 function goToNHTSA(vin){
   window.open('https://www.nhtsa.gov/recalls?vin='+vin,'_blank');
 }
-
-function toggleVINResults(){
-  const response = document.getElementById('vin-response');
-  response.classList.add('collapsed');
-}
-
-// Sound Effects
-function playHappySound(){
-  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  
-  // Whistle sound
-  const whistle = audioCtx.createOscillator();
-  const whistleGain = audioCtx.createGain();
-  whistle.connect(whistleGain);
-  whistleGain.connect(audioCtx.destination);
-  whistle.frequency.value = 800;
-  whistleGain.gain.setValueAtTime(0.3, audioCtx.currentTime);
-  whistleGain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
-  whistle.start(audioCtx.currentTime);
-  whistle.stop(audioCtx.currentTime + 0.3);
-  
-  // Second whistle
-  setTimeout(() => {
-    const whistle2 = audioCtx.createOscillator();
-    const whistle2Gain = audioCtx.createGain();
-    whistle2.connect(whistle2Gain);
-    whistle2Gain.connect(audioCtx.destination);
-    whistle2.frequency.value = 1000;
-    whistle2Gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
-    whistle2Gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
-    whistle2.start(audioCtx.currentTime);
-    whistle2.stop(audioCtx.currentTime + 0.3);
-  }, 200);
-  
-  // Clapping rhythm
-  setTimeout(() => {
-    for(let i = 0; i < 4; i++){
-      setTimeout(() => {
-        const clap = audioCtx.createOscillator();
-        const clapGain = audioCtx.createGain();
-        clap.connect(clapGain);
-        clapGain.connect(audioCtx.destination);
-        clap.type = 'square';
-        clap.frequency.value = 100;
-        clapGain.gain.setValueAtTime(0.2, audioCtx.currentTime);
-        clapGain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.05);
-        clap.start(audioCtx.currentTime);
-        clap.stop(audioCtx.currentTime + 0.05);
-      }, i * 150);
-    }
-  }, 500);
-}
-
-function playAlertSiren(){
-  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  
-  // Emergency siren
-  for(let i = 0; i < 3; i++){
-    setTimeout(() => {
-      const siren = audioCtx.createOscillator();
-      const sirenGain = audioCtx.createGain();
-      siren.connect(sirenGain);
-      sirenGain.connect(audioCtx.destination);
-      siren.frequency.setValueAtTime(800, audioCtx.currentTime);
-      siren.frequency.linearRampToValueAtTime(400, audioCtx.currentTime + 0.25);
-      sirenGain.gain.value = 0.3;
-      siren.start(audioCtx.currentTime);
-      siren.stop(audioCtx.currentTime + 0.25);
-    }, i * 300);
-  }
-  
-  // Car horn honk
-  setTimeout(() => {
-    const horn = audioCtx.createOscillator();
-    const hornGain = audioCtx.createGain();
-    horn.connect(hornGain);
-    hornGain.connect(audioCtx.destination);
-    horn.frequency.value = 220;
-    hornGain.gain.value = 0.4;
-    horn.start(audioCtx.currentTime);
-    horn.stop(audioCtx.currentTime + 0.4);
-    
-    // Second honk
-    setTimeout(() => {
-      const horn2 = audioCtx.createOscillator();
-      const horn2Gain = audioCtx.createGain();
-      horn2.connect(horn2Gain);
-      horn2Gain.connect(audioCtx.destination);
-      horn2.frequency.value = 220;
-      horn2Gain.gain.value = 0.4;
-      horn2.start(audioCtx.currentTime);
-      horn2.stop(audioCtx.currentTime + 0.4);
-    }, 500);
-  }, 1000);
-}
-
-function createConfetti(){
-  const colors = ['#ff6600', '#ffd700', '#4ade80', '#60a5fa', '#f472b6', '#a78bfa'];
-  const confettiCount = 100;
-  
-  for(let i = 0; i < confettiCount; i++){
-    setTimeout(() => {
-      const confetti = document.createElement('div');
-      confetti.className = 'confetti';
-      confetti.style.left = Math.random() * 100 + '%';
-      confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
-      confetti.style.animationDelay = Math.random() * 0.5 + 's';
-      confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
-      document.body.appendChild(confetti);
-      
-      setTimeout(() => confetti.remove(), 3500);
-    }, i * 20);
-  }
-}
-
-function triggerEmergencyAlert(){
-  // Screen flash effect
-  const flash = document.createElement('div');
-  flash.className = 'screen-flash';
-  document.body.appendChild(flash);
-  setTimeout(() => flash.remove(), 1500);
-  
-  // Play alert sounds
-  playAlertSiren();
-  
-  // Make VIN box shake and flash
-  const vinBox = document.querySelector('.vin-box');
-  vinBox.classList.add('emergency-flash', 'shake-alert');
-  setTimeout(() => {
-    vinBox.classList.remove('emergency-flash', 'shake-alert');
-  }, 1500);
-  
-  // Make results box shake
-  const response = document.getElementById('vin-response');
-  response.classList.add('shake-alert');
-  setTimeout(() => {
-    response.classList.remove('shake-alert');
-  }, 1500);
-}
-
 </script>
 
 </body>
