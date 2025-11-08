@@ -248,7 +248,39 @@ footer{
 /* Modals, headlights, secret box, etc... (include all your previously defined CSS for these here, unchanged) */
 .stock-modal{ /* ... */ }
 .stock-modal.show{ /* ... */ }
-/* ... rest of modal and additional styles ... */
+.modal-content button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background: #ff6600;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+  text-align: left;
+}
+
+.modal-content button:hover {
+  background: #ff7f2a;
+  box-shadow: 0 0 20px rgba(255,102,0,0.6);
+  transform: translateX(5px);
+}
+
+.modal-content h3 {
+  color: #ff7f2a;
+  margin: 20px 0 10px 0;
+  font-size: 1.2em;
+}
+
+.modal-content iframe {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #ff6600;
+  border-radius: 8px;
+}/* ... rest of modal and additional styles ... */
 </style>
 </head>
 <body>
@@ -268,8 +300,8 @@ footer{
   </div>
   <div class="icon-row">
     <div class="icon" id="estore">E-Store</div>
-    <div class="icon" id="racing">Racing</div>
-    <div class="icon" id="auto">Auto Info</div>
+    <div class="icon" id="racing onclick="toggleRacingModal()">Racing</div>
+    <div class="icon" id="auto onclick="toggleAutoInfoModal()">Auto Info</div>
     <div class="icon" id="extra">TBD</div>
   </div>
   <div class="vin-box">
@@ -285,7 +317,55 @@ footer{
     <div class="faq-response" id="faq-response"></div>
     <footer>© 2025 DetailGuy317.com | Made in U.S.A. by carguy for carfolks </footer>
   </div>
+<!-- Racing Modal -->
+<div class="stock-modal" id="racingModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="toggleRacingModal()">✖</span>
+    <h2>🏁 Racing Videos & Content</h2>
+    
+    <div style="margin: 20px 0;">
+      <h3>Featured Video</h3>
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    
+    <div style="margin: 20px 0;">
+      <h3>Racing Links</h3>
+      <button onclick="openLink('https://www.youtube.com/@FordPerformance')">Ford Performance Channel</button>
+      <button onclick="openLink('https://www.youtube.com/results?search_query=mustang+racing')">Mustang Racing Videos</button>
+      <button onclick="openLink('https://www.nascar.com')">NASCAR Official</button>
+      <!-- Add more links as needed -->
+    </div>
+  </div>
+</div>
 
+<!-- Auto Info Modal -->
+<div class="stock-modal" id="autoInfoModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="toggleAutoInfoModal()">✖</span>
+    <h2>🔧 Automotive Information</h2>
+    
+    <div style="margin: 20px 0;">
+      <h3>Favorite Resources</h3>
+      <button onclick="openLink('https://www.motortrend.com')">MotorTrend</button>
+      <button onclick="openLink('https://www.caranddriver.com')">Car and Driver</button>
+      <button onclick="openLink('https://www.hagerty.com')">Hagerty</button>
+      <button onclick="openLink('https://www.thedrive.com')">The Drive</button>
+      <!-- Add more links as needed -->
+    </div>
+    
+    <div style="margin: 20px 0;">
+      <h3>Technical Resources</h3>
+      <button onclick="openLink('https://www.alldata.com')">ALLDATA</button>
+      <button onclick="openLink('https://www.identifix.com')">Identifix</button>
+      <!-- Add more links as needed -->
+    </div>
+  </div>
+</div>
   <!-- Your modals (stock-modal, info-modal, secret-box etc.) go here, unchanged -->
 
 <script>
