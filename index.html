@@ -206,28 +206,42 @@ body{
   border-radius:6px;font-size:.95em;
   text-align:left;margin-top:8px;min-height:18px;
   max-height:500px;overflow-y:auto;
-  transition:max-height 0.3s ease;
+  transition:all 0.3s ease;
+  position:relative;
 }
 .vin-response.collapsed{
-  max-height:60px;
+  max-height:45px;
   overflow:hidden;
-}
-.collapse-btn{
-  background:#333;
-  color:#ff7f2a;
-  padding:6px 12px;
-  border-radius:4px;
   cursor:pointer;
-  font-size:.85em;
-  font-weight:600;
-  text-align:center;
-  margin-top:8px;
-  border:1px solid #ff6600;
-  transition:.3s;
 }
-.collapse-btn:hover{
-  background:#444;
-  border-color:#ff7f2a;
+.vin-response.collapsed:hover{
+  background:#2a2a2a;
+  border:1px solid #ff6600;
+}
+.vin-close-btn{
+  position:absolute;
+  top:8px;
+  right:8px;
+  background:#ff6600;
+  color:#fff;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:bold;
+  transition:.3s;
+  z-index:10;
+}
+.vin-close-btn:hover{
+  background:#ff7f2a;
+  transform:scale(1.1);
+}
+.vin-response.collapsed .vin-close-btn{
+  display:none;
 }
 .vin-response h3{
   color:#ff7f2a;margin-bottom:8px;font-size:1.1em;
@@ -674,14 +688,37 @@ function displayResults(vin, vehicleData, recallData){
   
   html+='<div style="margin-top:8px;font-size:.75em;color:#888;text-align:center">Data provided by NHTSA • Always verify with manufacturer</div>';
   
-  html+='<div class="collapse-btn" onclick="toggleVINResults()">▲ Minimize Results</div>';
-  
   response.innerHTML=html;
+  
+  // Auto-copy VIN to clipboard when results load
+  navigator.clipboard.writeText(vin).then(()=>{
+    console.log('VIN auto-copied to clipboard');
+  }).catch(()=>{
+    console.log('Auto-copy failed');
+  });
+  
+  // Add close button
+  const closeBtn = document.createElement('div');
+  closeBtn.className = 'vin-close-btn';
+  closeBtn.innerHTML = '✕';
+  closeBtn.onclick = function(e){
+    e.stopPropagation();
+    toggleVINResults();
+  };
+  response.insertBefore(closeBtn, response.firstChild);
+  
+  // Make collapsed box clickable to expand
+  response.onclick = function(){
+    if(response.classList.contains('collapsed')){
+      response.classList.remove('collapsed');
+    }
+  };
+}
 }
 
 function copyVIN(vin){
   navigator.clipboard.writeText(vin).then(()=>{
-    alert('✅ VIN copied to clipboard!\n\nYou can now paste it on the manufacturer\'s recall page.');
+    alert('✅ VIN copied to clipboard!\n\n(Note: VIN was already auto-copied when results loaded)\n\nYou can now paste it on the manufacturer\'s recall page.');
   }).catch(()=>{
     alert('VIN: '+vin+'\n\nPlease copy this VIN manually.');
   });
@@ -703,15 +740,7 @@ function goToNHTSA(vin){
 
 function toggleVINResults(){
   const response = document.getElementById('vin-response');
-  const btn = response.querySelector('.collapse-btn');
-  
-  if(response.classList.contains('collapsed')){
-    response.classList.remove('collapsed');
-    btn.textContent = '▲ Minimize Results';
-  } else {
-    response.classList.add('collapsed');
-    btn.textContent = '▼ Expand Results';
-  }
+  response.classList.add('collapsed');
 }
 </script>
 
