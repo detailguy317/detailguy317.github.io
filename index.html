@@ -11,34 +11,9 @@ body{
   color:#f3f6fb;
   background:#060b14;
   overflow:hidden;
-  padding-top:98px; /* space for both tickers */
 }
 
-/* ======= TradingView + Automotive Tickers ======= */
-.ticker-container, .auto-news-ticker{
-  position:fixed;
-  left:0;right:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:rgba(5,5,5,0.9);
-  border-bottom:2px solid #ff6600;
-  z-index:110;
-}
-.ticker-container{top:0;height:60px;}
-.auto-news-ticker{top:60px;height:38px;overflow:hidden;}
-.auto-ticker-inner{
-  white-space:nowrap;
-  will-change:transform;
-  animation:autoNewsScroll 45s linear infinite;
-  padding-left:100vw;
-}
-@keyframes autoNewsScroll{
-  0%{transform:translateX(0);}
-  100%{transform:translateX(-100vw);}
-}
-
-/* ======= Background ======= */
+/* animated background — scrolls up to show car, then stops */
 #background{
   position:fixed;inset:0;
   background:url("./webback.jpg") center/cover no-repeat;
@@ -51,9 +26,9 @@ body{
   to{background-position:center -180px;}
 }
 
-/* ======= Overlay ======= */
+/* top header animation */
 .overlay{
-  position:fixed;top:120px;left:50%;
+  position:fixed;top:60px;left:50%;
   transform:translateX(-50%);
   text-align:center;z-index:3;
   perspective:800px;
@@ -62,13 +37,25 @@ body{
   font-size:64px;font-weight:800;
   color:#ff6a00;letter-spacing:4px;
   text-shadow:0 0 30px rgba(255,106,0,1);
+  transform:rotateX(15deg) translateZ(30px);
+  animation:pulse3D 6s ease-in-out infinite;
 }
 .overlay p{
   margin-top:8px;font-size:24px;
   color:#ffe6cc;text-shadow:0 0 12px rgba(255,106,0,0.9);
+  transform:rotateX(10deg) translateZ(10px);
+  animation:pulse3DSoft 6s ease-in-out infinite;
+}
+@keyframes pulse3D{
+  0%,100%{transform:rotateX(15deg) translateZ(30px) scale(1);}
+  50%{transform:rotateX(5deg) translateZ(60px) scale(1.1);}
+}
+@keyframes pulse3DSoft{
+  0%,100%{transform:rotateX(10deg) translateZ(10px) scale(1);}
+  50%{transform:rotateX(5deg) translateZ(25px) scale(1.05);}
 }
 
-/* ======= Bottom Icon Row ======= */
+/* bottom sleek capsules - anchored to bottom edge */
 .icon-row{
   position:fixed;
   bottom:0;left:50%;
@@ -90,199 +77,84 @@ body{
   box-shadow:0 0 25px #ff6600,0 0 40px rgba(255,102,0,0.5);
 }
 
-/* ======= VIN & Search Boxes ======= */
-.search-bar,.vin-box{
-  position:fixed;width:320px;
+/* dark question box bottom-right */
+.search-bar{
+  position:fixed;right:40px;bottom:40px;
+  width:320px;
   background:rgba(20,20,20,0.95);
   color:#fff;border:1px solid #ff6600;
   border-radius:14px;padding:14px 18px;
   box-shadow:0 0 25px rgba(255,102,0,0.3);
   z-index:4;
 }
-.search-bar{right:40px;bottom:40px;}
-.vin-box{left:40px;bottom:40px;}
-.search-bar label,.vin-box label{
+.search-bar label{
   font-weight:600;font-size:1.05em;
   color:#ff7f2a;margin-bottom:9px;
   text-align:center;display:block;
 }
-.search-bar input,.vin-box input{
+.search-bar input{
   width:100%;padding:10px;
   border-radius:8px;background:#111;color:#fff;
   border:1px solid #555;margin-bottom:8px;outline:none;
-  text-transform:uppercase;
 }
-.search-bar button,.vin-box button{
+.search-bar button{
   width:100%;padding:10px;border-radius:8px;
   border:none;background:#ff6600;color:#fff;
   cursor:pointer;font-size:1.05em;font-weight:600;
   transition:.3s;
 }
-.search-bar button:hover,.vin-box button:hover{
+.search-bar button:hover{
   background:#ff7f2a;
   box-shadow:0 0 20px rgba(255,102,0,0.6);
 }
-.vin-response{
-  background:#222;color:#fff;padding:12px;
-  border-radius:6px;font-size:.95em;text-align:left;
-  margin-top:8px;max-height:400px;overflow-y:auto;
+.faq-response{
+  background:#222;color:#fff;padding:8px;
+  border-radius:6px;font-size:.95em;
+  text-align:center;margin-top:8px;min-height:18px;
 }
-
-/* ======= Lights, Secret Box, Tooltip ======= */
-.headlight-left,.headlight-right{
-  position:fixed;width:80px;height:60px;border-radius:50%;
-  z-index:1;transition:.3s;
+footer{
+  margin-top:8px;font-size:.8rem;
+  color:#aaa;text-align:right;
 }
-.headlight-left{right:53%;top:81%;cursor:pointer;}
-.headlight-right{right:76%;top:80%;pointer-events:none;}
-.headlight-flash{box-shadow:0 0 60px #fff,0 0 100px rgba(135,206,250,0.8);}
-.secret-box{
-  position:fixed;right:15%;top:50%;
-  transform:translateY(-50%) translateX(200%);
-  width:350px;background:rgba(10,10,10,0.98);
-  border:2px solid #ff6600;border-radius:16px;padding:24px;
-  box-shadow:0 0 40px rgba(255,102,0,0.6);
-  z-index:10;transition:transform 1s ease-out;
-}
-.secret-box.show{transform:translateY(-50%) translateX(0);}
-.secret-box button{
-  width:100%;padding:12px;background:#ff6600;border:none;
-  border-radius:8px;color:#fff;font-size:18px;font-weight:600;
-  cursor:pointer;transition:.3s;
-}
-.secret-box button:hover{
-  background:#ff7f2a;box-shadow:0 0 20px rgba(255,102,0,0.8);
-  color:#ffe6cc;
-}
-.carfax-tooltip{
-  display:inline-block;background:#4ade80;color:#000;
-  padding:4px 8px;border-radius:4px;font-size:.85em;font-weight:600;
-  margin-left:8px;animation:fadeOut 2s ease-in-out forwards;
-}
-@keyframes fadeOut{0%,70%{opacity:1;}100%{opacity:0;}}
 </style>
 </head>
 <body>
+  <div id="background"></div>
 
-<!-- ======= TradingView Stock Ticker ======= -->
-<div class="ticker-container">
-  <iframe src="https://www.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22NASDAQ%3ATSLA%22%2C%22title%22%3A%22Tesla%22%7D%2C%7B%22proName%22%3A%22NYSE%3AF%22%2C%22title%22%3A%22Ford%22%7D%2C%7B%22proName%22%3A%22NYSE%3AGM%22%2C%22title%22%3A%22GM%22%7D%5D%2C%22colorTheme%22%3A%22dark%22%7D" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-</div>
+  <div class="overlay">
+    <h1>DETAILGUY317 Garage</h1>
+    <p>Racing / Automotive News and Information</p>
+  </div>
 
-<!-- ======= Automotive News Ticker ======= -->
-<div class="auto-news-ticker">
-  <div class="auto-ticker-inner" id="autoTickerInner">Loading automotive news...</div>
-</div>
+  <div class="icon-row">
+    <div class="icon" id="estore">E-Store</div>
+    <div class="icon" id="racing">Racing</div>
+    <div class="icon" id="auto">Auto Info</div>
+    <div class="icon" id="extra">TBD</div>
+  </div>
 
-<div id="background"></div>
-<div class="overlay">
-  <h1>DETAILGUY317 Garage</h1>
-  <p>Racing / Automotive News and Information</p>
-</div>
-
-<div class="icon-row">
-  <div class="icon" id="estore">E-Store</div>
-  <div class="icon" id="racing">Racing</div>
-  <div class="icon" id="auto">Auto Info</div>
-  <div class="icon" id="extra">TBD</div>
-</div>
-
-<div class="vin-box">
-  <label>Enter VIN Here for FREE Recall Check</label>
-  <input type="text" placeholder="Enter 17-digit VIN..." id="vinInput" maxlength="17" />
-  <button onclick="handleVIN()">Check Recalls</button>
-  <div class="vin-response" id="vin-response"></div>
-</div>
-
-<div class="search-bar">
-  <label>Ask A Car Question or Enter Trouble Code </label>
-  <input type="text" placeholder="Type your car question or DTC..." id="queryInput" />
-  <button onclick="handleSearch()">Get Answer</button>
-  <div class="faq-response" id="faq-response"></div>
-  <footer>© 2025 DetailGuy317.com | Made in U.S.A.</footer>
-</div>
+  <div class="search-bar">
+    <label>Ask A Car Question or Enter Trouble Code </label>
+    <input type="text" placeholder="Type your car question or DTC..." id="queryInput" />
+    <button onclick="handleSearch()">Get Answer</button>
+    <div class="faq-response" id="faq-response"></div>
+    <footer>© 2025 DetailGuy317.com | Made in U.S.A. by carguy for carfolks </footer>
+  </div>
 
 <script>
-function startAutoNewsTicker(newsArray){
-  const ticker=document.getElementById('autoTickerInner');
-  ticker.innerHTML=newsArray.map(n =>
-    `<a href="${n.link}" target="_blank" style="color:#ff9900;text-decoration:none;margin-right:48px;">${n.title} <span style="color:#999;">— ${n.source}</span></a>`
-  ).join('');
-}
-
-// Demo fallback
-const exampleNews=[
-  {title:"Ford Performance reveals GT4 Evo for 2025",link:"#",source:"FordRacing"},
-  {title:"F-150 Lightning wins 2025 Innovation Award",link:"#",source:"FordAuthority"},
-  {title:"Mustang Mach-E sets Nürburgring record",link:"#",source:"FordRacing"}
-];
-
-// Live RSS loader with 48h caching
-async function loadLiveFordNews(){
-  const cacheKey="fordNewsCache";
-  const cacheTimeKey="fordNewsTime";
-  const now=Date.now();
-  const last=localStorage.getItem(cacheTimeKey);
-  const twoDays=1000*60*60*24*2;
-
-  if(last && now-last<twoDays){
-    const cached=JSON.parse(localStorage.getItem(cacheKey)||"[]");
-    if(cached.length){startAutoNewsTicker(cached);return;}
-  }
-
-  const feeds=[
-    {source:"FordAuthority",url:"https://fordauthority.com/feed/"},
-    {source:"FordRacing",url:"https://performance.ford.com/content/fordracing/home/_jcr_content/feed.rss"}
-  ];
-
-  const headlines=[];
-  for(const f of feeds){
-    try{
-      const res=await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(f.url)}`);
-      const data=await res.json();
-      const parser=new DOMParser();
-      const xml=parser.parseFromString(data.contents,"text/xml");
-      const items=[...xml.querySelectorAll("item")].slice(0,3);
-      items.forEach(it=>{
-        const title=it.querySelector("title")?.textContent.trim();
-        const link=it.querySelector("link")?.textContent.trim();
-        if(title&&link) headlines.push({title,link,source:f.source});
-      });
-    }catch(e){console.warn("Feed error:",f.source,e);}
-  }
-  if(headlines.length){
-    localStorage.setItem(cacheKey,JSON.stringify(headlines));
-    localStorage.setItem(cacheTimeKey,now.toString());
-    startAutoNewsTicker(headlines);
-  }else startAutoNewsTicker(exampleNews);
-}
-loadLiveFordNews();
-
-// (Your VIN + button logic untouched)
 function handleSearch(){
-  const q=document.getElementById('queryInput').value.trim();
-  document.getElementById('faq-response').textContent=q?`You asked: ${q} (Demo response — AI integration coming soon)`:"Please enter a question or code!";
+  const query=document.getElementById('queryInput').value.trim();
+  const response=document.getElementById('faq-response');
+  if(!query){
+    response.textContent="Please enter a question or code!";
+    return;
+  }
+  response.textContent="You asked: "+query+" (Demo response — AI integration coming soon)";
 }
-function handleVIN(){
-  const vin=document.getElementById('vinInput').value.trim().toUpperCase();
-  const r=document.getElementById('vin-response');
-  if(!vin)return r.innerHTML="<div>Please enter a VIN!</div>";
-  if(vin.length!==17)return r.innerHTML="<div>VIN must be exactly 17 characters!</div>";
-  r.innerHTML="<div>🔍 Checking NHTSA database...</div>";
-  fetch('https://api.nhtsa.gov/recalls/recallsByVehicle?vin='+vin)
-    .then(res=>res.json()).then(data=>{
-      const results=data.results||[];
-      let html=`<h3>VIN: ${vin}</h3>`;
-      if(!results.length){html+='<div>✓ No Open Recalls Found</div>';}
-      else{
-        results.forEach(rec=>{
-          html+=`<div><strong>${rec.NHTSACampaignNumber||''}</strong>: ${rec.Component||''}<br>${rec.Summary||''}</div>`;
-        });
-      }
-      r.innerHTML=html;
-    })
-    .catch(()=>r.innerHTML="<div>Error connecting to NHTSA.</div>");
-}
+document.getElementById('estore').onclick=()=>alert("Opening eStore...");
+document.getElementById('racing').onclick=()=>alert("Loading racing news...");
+document.getElementById('auto').onclick=()=>alert("Accessing car info...");
+document.getElementById('extra').onclick=()=>alert("Future feature TBD...");
 </script>
 </body>
 </html>
