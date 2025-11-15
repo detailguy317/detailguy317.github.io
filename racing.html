@@ -83,6 +83,21 @@ button:hover {
 </head>
 <body>
 
+<script>
+// Read video URLs from URL parameters (passed from main page)
+const urlParams = new URLSearchParams(window.location.search);
+const vid1 = urlParams.get('v1');
+const vid2 = urlParams.get('v2');
+const vid3 = urlParams.get('v3');
+
+// Set video sources when page loads
+window.addEventListener('load', function() {
+  if(vid1) document.getElementById('racingVideo1').src = decodeURIComponent(vid1);
+  if(vid2) document.getElementById('racingVideo2').src = decodeURIComponent(vid2);
+  if(vid3) document.getElementById('racingVideo3').src = decodeURIComponent(vid3);
+});
+</script>
+
 <div class="racing-container">
   <div style="margin: 8px 0;">
     <!-- Top YouTube Player (centered, featured - wider) -->
