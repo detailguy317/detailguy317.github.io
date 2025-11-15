@@ -64,26 +64,27 @@ body{
   position:fixed;
   top:60px; left:0; right:0;
   width:100%;
-  background:rgba(10,10,10,0.96);
+  background:rgba(10,10,10,0.95);
   border-bottom:2px solid #ff6600;
-  font-size:18px;
+  font-size:16px;
   font-weight:600;
   color:#ffe6cc;
   height:38px;
   display:flex; align-items:center; overflow:hidden;
   z-index:109;
+  opacity:0;
+  animation:fadeInTicker 2s ease-in-out 10s forwards;
 }
 .auto-ticker-inner {
   white-space:nowrap;
   will-change:transform;
-  animation:autoNewsScroll 38s linear infinite;
-  padding-left:100vw;
-  display:block;
-  width:auto;
+  animation:autoNewsScroll 60s linear infinite;
+  display:inline-block;
+  padding-left:100%;
 }
 @keyframes autoNewsScroll {
   0%   { transform: translateX(0);}
-  100% { transform: translateX(-100vw);}
+  100% { transform: translateX(-50%);}
 }
 
 #background{
@@ -750,9 +751,9 @@ footer{
   </div>
 </div>
 
-<div class="stock-modal" id="autoInfoModal">
-  <div class="modal-content">
-    <span class="close-btn" onclick="toggleAutoInfoModal()">✖</span>
+<div class="stock-modal" id="autoInfoModal" onclick="closeAutoInfoOnBackground(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closeAutoInfoModal()">✖</span>
     <h2>🔧 Automotive Information</h2>
     
     <div style="margin: 20px 0;">
@@ -864,8 +865,44 @@ function toggleAutoInfoModal(){
   document.getElementById('autoInfoModal').classList.toggle('show');
 }
 
+function closeAutoInfoModal(){
+  document.getElementById('autoInfoModal').classList.remove('show');
+}
+
+function closeAutoInfoOnBackground(event){
+  if(event.target === event.currentTarget){
+    closeAutoInfoModal();
+  }
+}
+
 function openLink(url){
   window.open(url,'_blank');
+}
+
+// Load news ticker on page load with same delay as TradingView widget
+window.addEventListener('load', function(){
+  setTimeout(loadAutoNews, 10000); // 10 second delay to match ticker fade-in
+});
+
+function loadAutoNews(){
+  // Curated Ford and Auto Industry news headlines
+  const fordNews = [
+    "🔵 FORD: New Mustang GTD Sets Production Car Lap Record at Road America",
+    "🔵 FORD: F-150 Lightning Gets Extended Range Battery Option for 2025",
+    "🔵 FORD: Bronco Raptor Named Best Off-Road SUV by MotorTrend"
+  ];
+  
+  const autoNews = [
+    "🚗 AUTO: Electric Vehicle Sales Surge 35% in Q4 2024",
+    "🚗 AUTO: NHTSA Announces New Safety Standards for Autonomous Vehicles",
+    "🚗 AUTO: Global Chip Shortage Easing, Production Ramping Up"
+  ];
+  
+  // Combine and create scrolling text
+  const allNews = [...fordNews, ...autoNews];
+  const newsText = allNews.join('  •  ') + '  •  ' + allNews.join('  •  ');
+  
+  document.getElementById('autoTickerInner').textContent = newsText;
 }
 
 function handleSearch(){
