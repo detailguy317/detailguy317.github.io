@@ -787,6 +787,27 @@ footer{
       </div>
     </div>
     
+    <!-- Pop Out Button -->
+    <div style="text-align: center; margin: 15px 0;">
+      <button onclick="popOutRacingWindow()" style="
+        background: linear-gradient(145deg, #4ade80, #22c55e);
+        border: 2px solid #16a34a;
+        border-radius: 12px;
+        padding: 12px 35px;
+        color: #000;
+        font-weight: 700;
+        font-size: 1em;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.35s ease;
+        box-shadow: 0 0 20px rgba(74,222,128,0.5);
+        text-transform: uppercase;
+      " onmouseover="this.style.transform='translateY(-5px) scale(1.05)'; this.style.boxShadow='0 0 30px rgba(74,222,128,0.8)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 0 20px rgba(74,222,128,0.5)';">
+        🖥️ POP OUT TO SEPARATE WINDOW
+      </button>
+      <div style="font-size: 0.8em; color: #aaa; margin-top: 5px;">Drag to second monitor while browsing main site</div>
+    </div>
+
     <div style="margin: 20px 0;">
       <h3>Racing Links</h3>
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
@@ -875,9 +896,75 @@ function toggleStockModal(){
 }
 
 function toggleRacingModal(){
+  const modal = document.getElementById('racingModal');
+  const isOpening = !modal.classList.contains('show');
+  
+  if(isOpening){
+    // Load video sources when opening modal
+    loadRacingVideos();
+  }
+  
+  modal.classList.toggle('show');
+}
+
+function loadRacingVideos(){
+  // Set video sources when modal opens to ensure all load together
+  const video1 = document.getElementById('racingVideo1');
+  const video2 = document.getElementById('racingVideo2');
+  const video3 = document.getElementById('racingVideo3');
+  
+  // Load from data-src attribute
+  if(video1 && video1.dataset.src && video1.src !== video1.dataset.src){
+    video1.src = video1.dataset.src;
+  }
+  if(video2 && video2.dataset.src && video2.src !== video2.dataset.src){
+    video2.src = video2.dataset.src;
+  }
+  if(video3 && video3.dataset.src && video3.src !== video3.dataset.src){
+    video3.src = video3.dataset.src;
+  }
+}
+
+function closeRacingModal(){
+  // Stop all YouTube videos by resetting their src
+  stopAllRacingVideos();
+  document.getElementById('racingModal').classList.remove('show');
+}
+
+function closeRacingOnBackground(event){
+  // Only close if clicking on the background (not the modal content)
+  if(event.target === event.currentTarget){
+    closeRacingModal();
+  }
+}
+
+function stopAllRacingVideos(){
+  // Stop videos by temporarily removing and re-adding src
+  const video1 = document.getElementById('racingVideo1');
+  const video2 = document.getElementById('racingVideo2');
+  const video3 = document.getElementById('racingVideo3');
+  
+  if(video1){
+    const src1 = video1.src;
+    video1.src = '';
+    video1.src = src1;
+  }
+  if(video2){
+    const src2 = video2.src;
+    video2.src = '';
+    video2.src = src2;
+  }
+  if(video3){
+    const src3 = video3.src;
+    video3.src = '';
+    video3.src = src3;
+  }
+}
+
+function popOutRacingWindow(){
   // Open racing page in a new draggable window
-  const width = 850;
-  const height = 750;
+  const width = 950;
+  const height = 900;
   const left = (screen.width - width) / 2;
   const top = (screen.height - height) / 2;
   
@@ -886,22 +973,9 @@ function toggleRacingModal(){
     'RacingHQ',
     `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no`
   );
-}
-
-function loadRacingVideos(){
-  // No longer needed for popup window, but keeping for compatibility
-}
-
-function closeRacingModal(){
-  // No longer needed for popup window
-}
-
-function closeRacingOnBackground(event){
-  // No longer needed for popup window
-}
-
-function stopAllRacingVideos(){
-  // No longer needed for popup window
+  
+  // Close the overlay modal
+  closeRacingModal();
 }
 
 function toggleAutoInfoModal(){
