@@ -78,13 +78,13 @@ body{
 .auto-ticker-inner {
   white-space:nowrap;
   will-change:transform;
-  animation:autoNewsScroll 60s linear infinite;
+  animation:autoNewsScroll 120s linear infinite;
   display:inline-block;
   padding-left:100%;
 }
 @keyframes autoNewsScroll {
   0%   { transform: translateX(0);}
-  100% { transform: translateX(-50%);}
+  100% { transform: translateX(-75%);}
 }
 
 #background{
@@ -1015,9 +1015,12 @@ function loadAutoNews(){
     "🚗 AUTO: Global Chip Shortage Easing, Production Ramping Up"
   ];
   
-  // Combine and create scrolling text
+  // Combine stories
   const allNews = [...fordNews, ...autoNews];
-  const newsText = allNews.join('  •  ') + '  •  ' + allNews.join('  •  ');
+  const singlePass = allNews.join('  •  ') + '  •  ';
+  
+  // Duplicate the content multiple times for seamless infinite scroll
+  const newsText = singlePass + singlePass + singlePass + singlePass;
   
   document.getElementById('autoTickerInner').textContent = newsText;
 }
