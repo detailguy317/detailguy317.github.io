@@ -398,6 +398,38 @@ footer{
   border-radius: 8px;
 }
 
+/* Racing Link Buttons - Enhanced Hover Effects */
+.racing-link-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+  min-height: 50px;
+  background: linear-gradient(145deg, #ff6a00, #ff3b00) !important;
+  box-shadow: 0 0 15px rgba(255,102,0,0.5);
+  transition: all .35s ease !important;
+}
+
+.racing-link-btn:hover {
+  transform: translateY(-8px) scale(1.05) !important;
+  box-shadow: 0 0 25px #ff6600, 0 0 40px rgba(255,102,0,0.5) !important;
+  background: linear-gradient(145deg, #ff7f2a, #ff5500) !important;
+}
+
+/* Shimmer animation for DETAILGUY317 text */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Show DG317 logos on wider screens */
+@media screen and (min-width: 1100px) {
+  .dg317-logo-left,
+  .dg317-logo-right {
+    display: block !important;
+  }
+}
+
 /* MOBILE RESPONSIVE STYLES */
 @media screen and (max-width: 768px) {
   body {
@@ -548,6 +580,13 @@ footer{
   .vin-response .vehicle-info {
     font-size: 0.9em;
   }
+  
+  /* Racing modal responsive */
+  .racing-link-btn {
+    font-size: 12px !important;
+    padding: 10px 8px !important;
+    min-height: 45px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -637,28 +676,76 @@ footer{
   </div>
 </div>
 
-<div class="stock-modal" id="racingModal">
-  <div class="modal-content">
-    <span class="close-btn" onclick="toggleRacingModal()">✖</span>
-    <h2>🏁 Racing Videos & Content</h2>
+<div class="stock-modal" id="racingModal" onclick="closeRacingOnBackground(event)">
+  <div class="modal-content" style="max-width: 950px;" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closeRacingModal()">✖</span>
     
     <div style="margin: 20px 0;">
-      <h3>Featured Video</h3>
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/EfLmfytfDIQ?si=xz9tOVcECgJw5mPH" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allowfullscreen>
-      </iframe>
+      <!-- Top YouTube Player (centered, featured) -->
+      <div style="text-align: center; margin-bottom: 20px;">
+        <div style="display: inline-block; padding: 8px; background: linear-gradient(145deg, #ff6600, #ff3b00); border-radius: 12px; box-shadow: 0 0 30px rgba(255,102,0,0.5);">
+          <iframe id="racingVideo1" width="560" height="315" 
+            src="https://www.youtube.com/embed/EfLmfytfDIQ?enablejsapi=1" 
+            title="Featured Race" 
+            frameborder="0" 
+            style="border-radius: 8px; display: block;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      
+      <!-- Bottom two YouTube Players (side by side) -->
+      <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+        <div style="padding: 6px; background: linear-gradient(145deg, #ff7f2a, #ff5500); border-radius: 10px; box-shadow: 0 0 20px rgba(255,102,0,0.4);">
+          <iframe id="racingVideo2" width="280" height="158" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" 
+            title="Race Video 2" 
+            frameborder="0" 
+            style="border-radius: 6px; display: block;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div style="padding: 6px; background: linear-gradient(145deg, #ff7f2a, #ff5500); border-radius: 10px; box-shadow: 0 0 20px rgba(255,102,0,0.4);">
+          <iframe id="racingVideo3" width="280" height="158" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" 
+            title="Race Video 3" 
+            frameborder="0" 
+            style="border-radius: 6px; display: block;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cool DETAILGUY317 Branding Section -->
+    <div style="text-align: center; margin: 30px 0; padding: 20px 0; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, #ff6600, transparent); transform: translateY(-50%);"></div>
+      <div style="position: relative; display: inline-block; background: #1a1a1a; padding: 10px 30px;">
+        <div style="font-size: 2.2em; font-weight: 800; letter-spacing: 6px; background: linear-gradient(90deg, #ff3b00, #ff6600, #ff7f2a, #ffe6cc, #ff7f2a, #ff6600, #ff3b00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 3s ease-in-out infinite; background-size: 200% 100%;">
+          DETAILGUY317
+        </div>
+        <div style="font-size: 0.9em; color: #ffe6cc; letter-spacing: 4px; margin-top: 5px; text-shadow: 0 0 10px rgba(255,102,0,0.6);">
+          ⚡ SEE YA AT THE FINISH LINE ⚡
+        </div>
+      </div>
     </div>
     
     <div style="margin: 20px 0;">
       <h3>Racing Links</h3>
-      <button onclick="openLink('https://www.youtube.com/@FordPerformance')">🏎️ Ford Performance Channel</button>
-      <button onclick="openLink('https://www.youtube.com/results?search_query=mustang+racing')">🐎 Mustang Racing Videos</button>
-      <button onclick="openLink('https://www.nascar.com')">🏁 NASCAR Official</button>
-      <button onclick="openLink('https://www.imsa.com')">🏆 IMSA Racing</button>
-      <button onclick="openLink('https://www.youtube.com/@NHRA')">🔥 NHRA Drag Racing</button>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+        <button class="racing-link-btn" onclick="openLink('https://www.fordracing.com')">🏎️ Ford Racing</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.fiawec.com')">🌍 WEC</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.imsa.com')">🏆 IMSA</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.nhra.com')">🔥 NHRA</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.nascar.com')">🏁 NASCAR</button>
+        <button class="racing-link-btn" onclick="openLink('https://fordauthority.com')">📰 Ford Authority</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.scca.com')">🏎️ SCCA Racing</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.formula1.com')">🏎️ F1</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.nitrorallycross.com')">💨 Nitro Rally</button>
+      </div>
     </div>
   </div>
 </div>
@@ -735,6 +822,42 @@ function toggleStockModal(){
 
 function toggleRacingModal(){
   document.getElementById('racingModal').classList.toggle('show');
+}
+
+function closeRacingModal(){
+  // Stop all YouTube videos by resetting their src
+  stopAllRacingVideos();
+  document.getElementById('racingModal').classList.remove('show');
+}
+
+function closeRacingOnBackground(event){
+  // Only close if clicking on the background (not the modal content)
+  if(event.target === event.currentTarget){
+    closeRacingModal();
+  }
+}
+
+function stopAllRacingVideos(){
+  // Stop videos by temporarily removing and re-adding src
+  const video1 = document.getElementById('racingVideo1');
+  const video2 = document.getElementById('racingVideo2');
+  const video3 = document.getElementById('racingVideo3');
+  
+  if(video1){
+    const src1 = video1.src;
+    video1.src = '';
+    video1.src = src1;
+  }
+  if(video2){
+    const src2 = video2.src;
+    video2.src = '';
+    video2.src = src2;
+  }
+  if(video3){
+    const src3 = video3.src;
+    video3.src = '';
+    video3.src = src3;
+  }
 }
 
 function toggleAutoInfoModal(){
