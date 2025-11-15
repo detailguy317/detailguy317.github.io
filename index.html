@@ -962,14 +962,25 @@ function stopAllRacingVideos(){
 }
 
 function popOutRacingWindow(){
-  // Open racing page in a new draggable window
+  // Get current video URLs from the main page
+  const video1 = document.getElementById('racingVideo1');
+  const video2 = document.getElementById('racingVideo2');
+  const video3 = document.getElementById('racingVideo3');
+  
+  const vid1Url = video1.dataset.src || video1.src;
+  const vid2Url = video2.dataset.src || video2.src;
+  const vid3Url = video3.dataset.src || video3.src;
+  
+  // Open racing page in a new draggable window with video URLs as parameters
   const width = 950;
   const height = 900;
   const left = (screen.width - width) / 2;
   const top = (screen.height - height) / 2;
   
+  const popOutUrl = `racing.html?v1=${encodeURIComponent(vid1Url)}&v2=${encodeURIComponent(vid2Url)}&v3=${encodeURIComponent(vid3Url)}`;
+  
   window.open(
-    'racing.html',
+    popOutUrl,
     'RacingHQ',
     `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no`
   );
