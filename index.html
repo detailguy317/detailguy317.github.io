@@ -724,8 +724,8 @@ footer{
             allowfullscreen>
           </iframe>
         </div>
-        <!-- Featured Race Button -->
-        <div style="margin-top: 8px;">
+        <!-- Featured Race Button with Pop Out option -->
+        <div style="margin-top: 8px; display: flex; justify-content: center; align-items: center; gap: 15px;">
           <button onclick="openLink('https://score-international.com/')" style="
             background: linear-gradient(145deg, #8B4513, #D2691E);
             border: 2px solid #ff6600;
@@ -743,6 +743,23 @@ footer{
             display: inline-block;
           " onmouseover="this.style.transform='translateY(-3px) scale(1.03)'; this.style.boxShadow='0 0 25px rgba(255,102,0,0.8), inset 0 0 10px rgba(255,255,255,0.2)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 0 15px rgba(139,69,19,0.6), inset 0 0 10px rgba(255,255,255,0.1)';">
             THIS WEEK: 58TH BFGOODRICH SCORE-INTERNATIONAL BAJA 1000!!!
+          </button>
+          <!-- Pop Out Button - same style as Baja button -->
+          <button onclick="popOutRacingWindow()" style="
+            background: linear-gradient(145deg, #8B4513, #D2691E);
+            border: 2px solid #ff6600;
+            border-radius: 10px;
+            padding: 8px 15px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.35s ease;
+            box-shadow: 0 0 15px rgba(139,69,19,0.6), inset 0 0 10px rgba(255,255,255,0.1);
+            text-transform: uppercase;
+          " onmouseover="this.style.transform='translateY(-3px) scale(1.03)'; this.style.boxShadow='0 0 25px rgba(255,102,0,0.8), inset 0 0 10px rgba(255,255,255,0.2)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 0 15px rgba(139,69,19,0.6), inset 0 0 10px rgba(255,255,255,0.1)';">
+            🖥️ POP OUT
           </button>
         </div>
       </div>
@@ -787,27 +804,6 @@ footer{
       </div>
     </div>
     
-    <!-- Pop Out Button -->
-    <div style="text-align: center; margin: 15px 0;">
-      <button onclick="popOutRacingWindow()" style="
-        background: linear-gradient(145deg, #4ade80, #22c55e);
-        border: 2px solid #16a34a;
-        border-radius: 12px;
-        padding: 12px 35px;
-        color: #000;
-        font-weight: 700;
-        font-size: 1em;
-        letter-spacing: 1px;
-        cursor: pointer;
-        transition: all 0.35s ease;
-        box-shadow: 0 0 20px rgba(74,222,128,0.5);
-        text-transform: uppercase;
-      " onmouseover="this.style.transform='translateY(-5px) scale(1.05)'; this.style.boxShadow='0 0 30px rgba(74,222,128,0.8)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 0 20px rgba(74,222,128,0.5)';">
-        🖥️ POP OUT TO SEPARATE WINDOW
-      </button>
-      <div style="font-size: 0.8em; color: #aaa; margin-top: 5px;">Drag to second monitor while browsing main site</div>
-    </div>
-
     <div style="margin: 20px 0;">
       <h3>Racing Links</h3>
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
