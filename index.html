@@ -651,6 +651,270 @@ footer{
     min-width: 90px;
   }
 }
+
+/* STORE MODAL STYLES */
+.store-modal-overlay{
+  display:none;
+  position:fixed;
+  top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.85);
+  z-index:1000;
+  justify-content:center;
+  align-items:center;
+  animation:fadeIn 0.3s ease;
+  overflow-y:auto;
+  padding:20px;
+}
+.store-modal-overlay.show{
+  display:flex;
+}
+
+.store-modal{
+  background:rgba(20,20,20,0.98);
+  border:2px solid #ff6600;
+  border-radius:20px;
+  width:90%;
+  max-width:900px;
+  max-height:85vh;
+  overflow-y:auto;
+  box-shadow:0 0 50px rgba(255,102,0,0.5);
+  position:relative;
+  animation:slideIn 0.4s ease;
+  margin:auto;
+}
+
+@keyframes slideIn{
+  from{transform:translateY(-50px);opacity:0;}
+  to{transform:translateY(0);opacity:1;}
+}
+
+.store-close-btn{
+  position:absolute;
+  top:15px;
+  right:15px;
+  width:35px;
+  height:35px;
+  background:#ff6600;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  font-size:20px;
+  font-weight:bold;
+  z-index:10;
+  transition:.3s;
+  border:none;
+}
+.store-close-btn:hover{
+  background:#ff7f2a;
+  transform:scale(1.1) rotate(90deg);
+  box-shadow:0 0 20px rgba(255,102,0,0.7);
+}
+
+.store-header{
+  text-align:center;
+  padding:30px 20px 20px;
+  border-bottom:2px solid #ff6600;
+}
+
+.store-header h2{
+  font-size:42px;
+  color:#ff6a00;
+  text-shadow:0 0 20px rgba(255,106,0,0.8);
+  margin-bottom:10px;
+  letter-spacing:2px;
+}
+
+.store-header p{
+  font-size:16px;
+  color:#ffe6cc;
+  margin-top:8px;
+}
+
+.store-tabs{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:25px 20px;
+  background:rgba(10,10,10,0.5);
+}
+
+.store-tab-btn{
+  min-width:180px;
+  height:55px;
+  background:linear-gradient(145deg,#ff6a00,#ff3b00);
+  border-radius:40px;
+  box-shadow:0 0 15px rgba(255,102,0,0.5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:600;
+  letter-spacing:1px;
+  cursor:pointer;
+  transition:all .35s ease;
+  border:none;
+  font-size:18px;
+}
+
+.store-tab-btn:hover{
+  transform:translateY(-8px) scale(1.05);
+  box-shadow:0 0 25px #ff6600,0 0 40px rgba(255,102,0,0.5);
+}
+
+.store-tab-btn.active{
+  background:linear-gradient(145deg,#ff7f2a,#ff5500);
+  box-shadow:0 0 30px #ff6600,0 0 50px rgba(255,102,0,0.7);
+}
+
+.store-content{
+  padding:30px;
+}
+
+.store-section{
+  display:none;
+}
+
+.store-section.active{
+  display:block;
+}
+
+.store-item{
+  background:rgba(30,30,30,0.8);
+  border:1px solid #ff6600;
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:20px;
+  transition:.3s;
+}
+
+.store-item:hover{
+  box-shadow:0 0 20px rgba(255,102,0,0.3);
+  border-color:#ff7f2a;
+}
+
+.store-item-grid{
+  display:grid;
+  grid-template-columns:200px 1fr;
+  gap:20px;
+  align-items:center;
+}
+
+.store-item-image{
+  width:100%;
+  height:280px;
+  background:rgba(50,50,50,0.5);
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#888;
+  font-size:14px;
+  text-align:center;
+  padding:10px;
+  border:2px dashed #555;
+  overflow:hidden;
+}
+
+.store-item-image img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+
+.store-item-info h3{
+  color:#ff7f2a;
+  font-size:24px;
+  margin-bottom:12px;
+}
+
+.store-item-info p{
+  color:#ccc;
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+.store-item-price{
+  color:#4ade80;
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.store-item-btn{
+  padding:12px 30px;
+  background:#ff6600;
+  border:none;
+  border-radius:8px;
+  color:#fff;
+  font-weight:600;
+  font-size:16px;
+  cursor:pointer;
+  transition:.3s;
+  box-shadow:0 0 15px rgba(255,102,0,0.4);
+}
+
+.store-item-btn:hover{
+  background:#ff7f2a;
+  box-shadow:0 0 20px rgba(255,102,0,0.7);
+  transform:scale(1.05);
+}
+
+.store-item-btn:disabled{
+  background:#555;
+  cursor:not-allowed;
+  box-shadow:none;
+}
+
+.store-empty{
+  text-align:center;
+  padding:50px 20px;
+  color:#888;
+}
+
+.store-empty h3{
+  font-size:28px;
+  margin-bottom:15px;
+  color:#ff7f2a;
+}
+
+.store-empty p{
+  font-size:16px;
+  line-height:1.6;
+}
+
+/* Store Mobile responsiveness */
+@media (max-width: 768px){
+  .store-modal{
+    width:95%;
+    max-height:90vh;
+  }
+  
+  .store-header h2{
+    font-size:32px;
+  }
+  
+  .store-tabs{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+  }
+  
+  .store-tab-btn{
+    width:100%;
+    max-width:300px;
+  }
+  
+  .store-item-grid{
+    grid-template-columns:1fr;
+  }
+  
+  .store-item-image{
+    height:250px;
+  }
+}
 </style>
 </head>
 <body>
@@ -669,7 +933,7 @@ footer{
     <p>Racing / Automotive News and Information</p>
   </div>
   <div class="icon-row">
-    <div class="icon" id="estore">E-Store</div>
+    <div class="icon" id="estore" onclick="openStoreModal()">E-Store</div>
     <div class="icon" id="racing" onclick="toggleRacingModal()">Racing</div>
     <div class="icon" id="auto" onclick="toggleAutoInfoModal()">Auto Info</div>
     <div class="icon" id="extra">TBD</div>
@@ -909,10 +1173,153 @@ footer{
   </div>
 </div>
 
+<!-- Store Modal -->
+<div id="storeModal" class="store-modal-overlay">
+  <div class="store-modal">
+    <button class="store-close-btn" onclick="closeStoreModal()">✕</button>
+    
+    <div class="store-header">
+      <h2>🛒 DETAILGUY317 STORE</h2>
+      <p>Books, Merch, and More!</p>
+    </div>
+    
+    <div class="store-tabs">
+      <button class="store-tab-btn active" onclick="switchStoreTab(event, 'books')">
+        📚 BOOKS
+      </button>
+      <button class="store-tab-btn" onclick="switchStoreTab(event, 'merch')">
+        🎨 MERCH
+      </button>
+    </div>
+    
+    <div class="store-content">
+      <!-- Books Section -->
+      <div id="booksSection" class="store-section active">
+        <div class="store-item">
+          <div class="store-item-grid">
+            <div class="store-item-image">
+              <img src="" alt="Book Cover" onerror="this.parentElement.innerHTML='📖<br>Book Cover<br>Coming Soon!'" />
+            </div>
+            <div class="store-item-info">
+              <h3>My Automotive Journey</h3>
+              <p>Discover the secrets of professional detailing and automotive care in this comprehensive guide. Learn techniques used by the pros to keep your vehicle looking showroom-new.</p>
+              <div class="store-item-price">$19.99</div>
+              <button class="store-item-btn" disabled>Coming Soon to Amazon</button>
+              <p style="font-size:14px;color:#888;margin-top:10px;">
+                📝 Currently writing! Sign up for updates when the book launches on Amazon.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="store-empty">
+          <h3>📚 More Books Coming Soon!</h3>
+          <p>Stay tuned for upcoming releases covering detailing techniques, car maintenance, and automotive restoration.</p>
+        </div>
+      </div>
+      
+      <!-- Merch Section -->
+      <div id="merchSection" class="store-section">
+        <div class="store-item">
+          <div class="store-item-grid">
+            <div class="store-item-image">
+              <img src="" alt="T-Shirt" onerror="this.parentElement.innerHTML='👕<br>Product Image<br>Coming Soon!'" />
+            </div>
+            <div class="store-item-info">
+              <h3>DETAILGUY317 T-Shirt</h3>
+              <p>Premium quality t-shirt featuring the DETAILGUY317 Garage logo. Perfect for car enthusiasts and detailing professionals.</p>
+              <div class="store-item-price">$24.99</div>
+              <button class="store-item-btn" onclick="window.open('https://www.etsy.com/shop/YourShopName','_blank')">
+                View on Etsy
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="store-item">
+          <div class="store-item-grid">
+            <div class="store-item-image">
+              <img src="" alt="Hoodie" onerror="this.parentElement.innerHTML='🧥<br>Product Image<br>Coming Soon!'" />
+            </div>
+            <div class="store-item-info">
+              <h3>Garage Hoodie</h3>
+              <p>Stay warm in style with our premium hoodie. Features the iconic DETAILGUY317 branding and comfortable fleece lining.</p>
+              <div class="store-item-price">$44.99</div>
+              <button class="store-item-btn" onclick="window.open('https://www.etsy.com/shop/YourShopName','_blank')">
+                View on Etsy
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="store-item">
+          <div class="store-item-grid">
+            <div class="store-item-image">
+              <img src="" alt="Mug" onerror="this.parentElement.innerHTML='☕<br>Product Image<br>Coming Soon!'" />
+            </div>
+            <div class="store-item-info">
+              <h3>Coffee Mug</h3>
+              <p>Start your day right with our ceramic coffee mug. Dishwasher safe and perfect for your morning garage sessions.</p>
+              <div class="store-item-price">$14.99</div>
+              <button class="store-item-btn" onclick="window.open('https://www.etsy.com/shop/YourShopName','_blank')">
+                View on Etsy
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="store-empty">
+          <h3>🎨 More Merch Coming Soon!</h3>
+          <p>Check back regularly for new items including stickers, keychains, posters, and more!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 function toggleStockModal(){
   document.getElementById('stockModal').classList.toggle('show');
 }
+
+// STORE MODAL FUNCTIONS
+function openStoreModal(){
+  document.getElementById('storeModal').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+
+function closeStoreModal(){
+  document.getElementById('storeModal').classList.remove('show');
+  document.body.style.overflow='auto';
+}
+
+function switchStoreTab(event, tabName){
+  // Remove active class from all tabs and sections
+  document.querySelectorAll('.store-tab-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  document.querySelectorAll('.store-section').forEach(section => {
+    section.classList.remove('active');
+  });
+  
+  // Add active class to selected tab and section
+  event.target.classList.add('active');
+  
+  if(tabName === 'books'){
+    document.getElementById('booksSection').classList.add('active');
+  } else if(tabName === 'merch'){
+    document.getElementById('merchSection').classList.add('active');
+  }
+}
+
+// Close modal when clicking outside
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('storeModal').addEventListener('click', function(e){
+    if(e.target === this){
+      closeStoreModal();
+    }
+  });
+});
 
 function toggleRacingModal(){
   const modal = document.getElementById('racingModal');
