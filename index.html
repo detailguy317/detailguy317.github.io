@@ -1012,7 +1012,8 @@ footer{
     padding: 20px;
     width: 85%;
     max-width: 1200px;
-    height: 85%;
+    height: 90%;
+    max-height: 90vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1184,7 +1185,7 @@ footer{
 
         <!-- ===== SEARCH CENTER ===== -->
         <div class="dgCenterSearch">
-            <input id="dgSearchInput" placeholder="Type any ticker…">
+            <input id="dgSearchInput" placeholder="Type any ticker…" onkeypress="if(event.key==='Enter') dgSearchTicker()">
             <button onclick="dgSearchTicker()">GO ➜</button>
         </div>
 
@@ -1237,13 +1238,19 @@ async function loadDGStocks() {
     // AUTOMATICALLY BUILD SECTOR BUCKETS
     const buckets = {};
 
-    rows.forEach(r => {
+    rows.forEach((r, index) => {
         if (!r.c || !r.c[0]) return;
 
         let cat = r.c[0]?.v || "Other";
         let ticker = r.c[1]?.v || "";
         let name = r.c[2]?.v || "";
         let site = r.c[3]?.v || "";
+        
+        // Skip header row if it contains "Category" or "Ticker"
+        if (cat.toLowerCase() === 'category' || ticker.toLowerCase() === 'ticker') return;
+        
+        // Skip rows without a ticker symbol
+        if (!ticker) return;
 
         if (!buckets[cat]) buckets[cat] = [];
         buckets[cat].push({ ticker, name, site });
