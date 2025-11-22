@@ -981,13 +981,295 @@ footer{
     <footer>© 2025 M.O.D.S. L.L.C. D.B.A. detailguy317 | Made in U.S.A.  </footer>
   </div>
 
-<div class="stock-modal" id="stockModal">
-  <div class="modal-content">
-    <span class="close-btn" onclick="toggleStockModal()">✖</span>
-    <h2>📊 Stock Information</h2>
-    <p style="color: #fff; text-align: center;">Your stock content goes here</p>
-  </div>
+<!-- ========================= -->
+<!--  DETAILGUY317 STOCK SCANNER MODAL -->
+<!-- ========================= -->
+
+<style>
+/* Backdrop */
+#dgStockModal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    animation: fadeInModal 0.4s ease forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeInModal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Modal window core */
+#dgStockModal .dgModalWindow {
+    background: #0f0f0f;
+    border-radius: 14px;
+    padding: 20px;
+    width: 85%;
+    max-width: 1200px;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: fadeInScale 0.4s ease forwards;
+    overflow: hidden;
+}
+
+/* Scale fade */
+@keyframes fadeInScale {
+    from { transform: scale(0.92); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* TOP HEADER */
+.dgHeader {
+    background: linear-gradient(90deg, #ff6600, #ffaa55, #ff6600);
+    padding: 12px;
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+/* CLOSE BUTTON (X) */
+.dgClose {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* POP OUT BUTTON */
+.dgPopOut {
+    position: absolute;
+    top: 10px; left: 20px;
+    background: #ff6600;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+
+.dgPopOut:hover { background: #ffaa44; }
+
+/* CENTER SEARCH UI */
+.dgCenterSearch {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dgCenterSearch input {
+    width: 260px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ff6600;
+    background: #1a1a1a;
+    color: white;
+    font-size: 16px;
+}
+
+.dgCenterSearch button {
+    padding: 10px 14px;
+    margin-left: 8px;
+    background: #ff6600;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dgCenterSearch button:hover {
+    background: #ffaa44;
+}
+
+/* TABLE GRID */
+.dgTableGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 14px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* TABLE STYLING */
+.dgTable {
+    background: #161616;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.dgTable h3 {
+    color: #ff6600;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.dgTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dgTable th {
+    background: #262626;
+    color: #ff6600;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.dgTable td {
+    padding: 6px;
+    border-bottom: 1px solid #333;
+    font-size: 13px;
+}
+
+.dgBtn {
+    background: #ff6600;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #000;
+}
+
+.dgBtn:hover { background: #ffaa44; }
+
+/* MOBILE FULLSCREEN */
+@media (max-width: 768px) {
+    #dgStockModal .dgModalWindow {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .dgTableGrid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<!-- ===== MODAL STRUCTURE ===== -->
+<div id="dgStockModal">
+    <div class="dgModalWindow" onclick="event.stopPropagation();">
+
+        <div class="dgHeader">DETAILGUY317 — GLOBAL AUTO STOCK SCANNER</div>
+
+        <div class="dgClose" onclick="closeDGStockModal()">✖</div>
+
+        <button class="dgPopOut" onclick="popOutDGScanner()">POP OUT</button>
+
+        <!-- ===== SEARCH CENTER ===== -->
+        <div class="dgCenterSearch">
+            <input id="dgSearchInput" placeholder="Type any ticker…">
+            <button onclick="dgSearchTicker()">GO ➜</button>
+        </div>
+
+        <!-- ===== TABLE GRID ===== -->
+        <div class="dgTableGrid" id="dgTableGrid">
+            <!-- Populated by JS from Google Sheet -->
+        </div>
+
+    </div>
 </div>
+
+<script>
+// ======================
+// OPEN / CLOSE MODAL
+// ======================
+function openDGStockModal() {
+    document.getElementById("dgStockModal").style.display = "flex";
+}
+function closeDGStockModal() {
+    document.getElementById("dgStockModal").style.display = "none";
+}
+// click outside closes
+document.getElementById("dgStockModal").addEventListener("click", closeDGStockModal);
+
+// POP OUT WINDOW
+function popOutDGScanner() {
+    window.open(window.location.href + "#stocks", "_blank");
+}
+
+// TICKER SEARCH -> TRADINGVIEW
+function dgSearchTicker() {
+    let t = document.getElementById("dgSearchInput").value.trim().toUpperCase();
+    if (!t) return;
+    window.open("https://www.tradingview.com/symbols/" + t + "/", "_blank");
+}
+
+// ======================
+// GOOGLE SHEET LOADER
+// ======================
+const dgSheetID = "18APNvsu4z5Ot2i_fQQcdx45nQYIsGhLn7N8iSdJxCx8";
+const dgURL =
+  `https://docs.google.com/spreadsheets/d/${dgSheetID}/gviz/tq?tqx=out:json`;
+
+async function loadDGStocks() {
+    const res = await fetch(dgURL);
+    const txt = await res.text();
+    const json = JSON.parse(txt.substr(47).slice(0, -2));
+    const rows = json.table.rows;
+
+    // AUTOMATICALLY BUILD SECTOR BUCKETS
+    const buckets = {};
+
+    rows.forEach(r => {
+        if (!r.c || !r.c[0]) return;
+
+        let cat = r.c[0]?.v || "Other";
+        let ticker = r.c[1]?.v || "";
+        let name = r.c[2]?.v || "";
+        let site = r.c[3]?.v || "";
+
+        if (!buckets[cat]) buckets[cat] = [];
+        buckets[cat].push({ ticker, name, site });
+    });
+
+    // RENDER INTO GRID
+    const grid = document.getElementById("dgTableGrid");
+    grid.innerHTML = "";
+
+    Object.keys(buckets).forEach(cat => {
+        let html = `
+        <div class="dgTable">
+            <h3>${cat}</h3>
+            <table>
+                <tr><th>Ticker</th><th>Name</th><th>Links</th></tr>
+        `;
+
+        buckets[cat].forEach(s => {
+            html += `
+            <tr>
+                <td>${s.ticker}</td>
+                <td>${s.name}</td>
+                <td>
+                    <button class="dgBtn" onclick="window.open('https://www.tradingview.com/symbols/${s.ticker}/','_blank')">Chart</button>
+                    <button class="dgBtn" onclick="window.open('${s.site}','_blank')">Site</button>
+                </td>
+            </tr>`;
+        });
+
+        html += "</table></div>";
+        grid.innerHTML += html;
+    });
+}
+
+loadDGStocks();
+</script>
+
 
 <div class="stock-modal" id="racingModal" onclick="closeRacingOnBackground(event)">
   <div class="modal-content" style="max-width: 1200px;" onclick="event.stopPropagation()">
@@ -1122,6 +1404,8 @@ footer{
         <button class="racing-link-btn" onclick="openLink('https://www.scca.com')">🏎️ SCCA Racing</button>
         <button class="racing-link-btn" onclick="openLink('https://www.formula1.com')">🏎️ F1</button>
         <button class="racing-link-btn" onclick="openLink('https://www.nitrorallycross.com')">💨 Nitro Rally</button>
+        <button class="racing-link-btn" onclick="toggleAutoInfoModal()">📈 Automotive Stocks</button>
+
       </div>
     </div>
   </div>
