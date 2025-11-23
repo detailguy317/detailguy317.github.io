@@ -1702,17 +1702,17 @@ loadDGStocks();
     </div>
     
     <div class="store-tabs">
-      <button class="store-tab-btn active" onclick="switchStoreTab(event, 'books')">
-        📚 BOOKS
-      </button>
-      <button class="store-tab-btn" onclick="switchStoreTab(event, 'merch')">
+      <button class="store-tab-btn active" onclick="switchStoreTab(event, 'merch')">
         🎨 MERCH
+      </button>
+      <button class="store-tab-btn" onclick="switchStoreTab(event, 'books')">
+        📚 BOOKS
       </button>
     </div>
     
     <div class="store-content">
       <!-- Books Section -->
-      <div id="booksSection" class="store-section active">
+      <div id="booksSection" class="store-section">
         <div class="store-item">
           <div class="store-item-grid">
             <div class="store-item-image">
@@ -1736,7 +1736,7 @@ loadDGStocks();
       </div>
       
       <!-- Merch Section -->
-      <div id="merchSection" class="store-section">
+      <div id="merchSection" class="store-section active">
         <div class="store-item">
           <div class="store-item-grid">
             <div class="store-item-image" onclick="window.open('https://www.etsy.com/shop/detailguy317','_blank')">
