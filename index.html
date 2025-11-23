@@ -1227,9 +1227,15 @@ function popOutDGScanner() {
 }
 
 // TICKER SEARCH -> TRADINGVIEW POPUP
+// TICKER SEARCH -> TRADINGVIEW POPUP
 function dgSearchTicker() {
     let ticker = document.getElementById("dgSearchInput").value.trim().toUpperCase();
-    if (!ticker) return;
+    if (!ticker) {
+        alert("Please enter a ticker symbol!");
+        return;
+    }
+    
+    console.log("Searching for:", ticker);
     
     // Open a popup window with TradingView chart embedded
     const width = 1000;
@@ -1243,7 +1249,13 @@ function dgSearchTicker() {
         `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=no,toolbar=no,menubar=no,location=no,status=no`
     );
     
-    if(chartWindow) {
+    if(!chartWindow || chartWindow.closed || typeof chartWindow.closed == 'undefined') {
+        // Popup was blocked
+        alert("❌ Popup was blocked!\n\nPlease allow popups for this site, then try again.\n\nOr you can click the Chart button next to each stock instead.");
+        return;
+    }
+    
+    try {
         chartWindow.document.write(`
 <!DOCTYPE html>
 <html>
@@ -1386,6 +1398,10 @@ function dgSearchTicker() {
 </html>
         `);
         chartWindow.document.close();
+        console.log("Chart popup opened successfully for", ticker);
+    } catch(error) {
+        console.error("Error creating chart popup:", error);
+        alert("Error opening chart. Please try again.");
     }
 }
 
