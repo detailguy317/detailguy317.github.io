@@ -662,6 +662,191 @@ footer{
   }
 }
 
+/* ====================================== */
+/* NEW: POPUP SYSTEM FOR STOCK CHARTS */
+/* ====================================== */
+
+/* Stock Chart Search Popup (Right Side) */
+.stock-chart-popup {
+  position: fixed;
+  right: 20px;
+  top: 120px;
+  width: 480px;
+  height: 380px;
+  background: rgba(20, 20, 20, 0.98);
+  border: 2px solid #ff6600;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
+  z-index: 1000;
+  display: none;
+  animation: slideInRight 0.3s ease-out;
+}
+
+.stock-chart-popup.active {
+  display: block;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.stock-chart-popup .popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ff6600;
+  background: rgba(255, 102, 0, 0.1);
+}
+
+.stock-chart-popup .popup-title {
+  color: #ff7f2a;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.stock-chart-popup .popup-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.stock-chart-popup .popup-close:hover {
+  background: rgba(255, 102, 0, 0.3);
+  color: #ff7f2a;
+}
+
+.stock-chart-popup .popup-content {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+.stock-chart-popup iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Left Side Button Popups */
+.left-popup {
+  position: fixed;
+  width: 500px;
+  height: 400px;
+  background: rgba(20, 20, 20, 0.98);
+  border: 2px solid #ff6600;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
+  z-index: 999;
+  display: none;
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.left-popup.active {
+  display: block;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.left-popup .popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ff6600;
+  background: rgba(255, 102, 0, 0.1);
+}
+
+.left-popup .popup-title {
+  color: #ff7f2a;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.left-popup .popup-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.left-popup .popup-close:hover {
+  background: rgba(255, 102, 0, 0.3);
+  color: #ff7f2a;
+}
+
+.left-popup .popup-content {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+.left-popup iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Stacking for multiple left popups */
+#leftPopup1 {
+  left: 20px;
+  top: 120px;
+}
+
+#leftPopup2 {
+  left: 20px;
+  top: 540px;
+}
+
+/* Backdrop for popups */
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  display: none;
+}
+
+.popup-backdrop.active {
+  display: block;
+}
+
 /* STORE MODAL STYLES */
 .store-modal-overlay{
   display:none;
@@ -958,6 +1143,40 @@ footer{
     <h1>DETAILGUY317 Garage</h1>
     <p>Racing / Automotive News and Information</p>
   </div>
+
+  <!-- Stock Chart Search Popup (Right Side) -->
+  <div id="stockChartPopup" class="stock-chart-popup">
+    <div class="popup-header">
+      <div class="popup-title">Stock Chart</div>
+      <button class="popup-close" onclick="closeStockChartPopup()">×</button>
+    </div>
+    <div class="popup-content">
+      <iframe id="stockChartIframe" src=""></iframe>
+    </div>
+  </div>
+
+  <!-- Left Side Popups for Chart/Site Buttons -->
+  <div id="leftPopup1" class="left-popup">
+    <div class="popup-header">
+      <div class="popup-title" id="leftPopup1Title">Content</div>
+      <button class="popup-close" onclick="closeLeftPopup(1)">×</button>
+    </div>
+    <div class="popup-content">
+      <iframe id="leftPopup1Iframe" src=""></iframe>
+    </div>
+  </div>
+
+  <div id="leftPopup2" class="left-popup">
+    <div class="popup-header">
+      <div class="popup-title" id="leftPopup2Title">Content</div>
+      <button class="popup-close" onclick="closeLeftPopup(2)">×</button>
+    </div>
+    <div class="popup-content">
+      <iframe id="leftPopup2Iframe" src=""></iframe>
+    </div>
+  </div>
+
+  <div id="popupBackdrop" class="popup-backdrop" onclick="closeAllPopups()"></div>
   <div class="icon-row">
     <div class="icon" id="estore" onclick="openStoreModal()">E-Store</div>
     <div class="icon" id="racing" onclick="toggleRacingModal()">Racing</div>
@@ -1226,8 +1445,7 @@ function popOutDGScanner() {
     window.open(window.location.href + "#stocks", "_blank");
 }
 
-// TICKER SEARCH -> TRADINGVIEW POPUP
-// TICKER SEARCH -> TRADINGVIEW POPUP
+// TICKER SEARCH -> OPEN IN RIGHT POPUP
 function dgSearchTicker() {
     let ticker = document.getElementById("dgSearchInput").value.trim().toUpperCase();
     if (!ticker) {
@@ -1235,174 +1453,100 @@ function dgSearchTicker() {
         return;
     }
     
-    console.log("Searching for:", ticker);
-    
-    // Open a popup window with TradingView chart embedded
-    const width = 1000;
-    const height = 700;
-    const left = (screen.width - width) / 2;
-    const top = (screen.height - height) / 2;
-    
-    const chartWindow = window.open(
-        '',
-        'TradingViewChart_' + ticker,
-        `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=no,toolbar=no,menubar=no,location=no,status=no`
-    );
-    
-    if(!chartWindow || chartWindow.closed || typeof chartWindow.closed == 'undefined') {
-        // Popup was blocked
-        alert("❌ Popup was blocked!\n\nPlease allow popups for this site, then try again.\n\nOr you can click the Chart button next to each stock instead.");
-        return;
-    }
-    
-    try {
-        chartWindow.document.write(`
-<!DOCTYPE html>
-<html>
-<head>
-    <title>${ticker} - TradingView Chart</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Poppins', system-ui, Arial;
-            background: #0a0a0a;
-            color: #fff;
-            overflow: hidden;
-            padding: 8px;
-        }
-        
-        .window-wrapper {
-            border: 3px solid #ff6600;
-            border-radius: 16px;
-            overflow: hidden;
-            height: calc(100vh - 16px);
-            box-shadow: 0 0 30px rgba(255,102,0,0.6), inset 0 0 20px rgba(255,102,0,0.1);
-            background: #0a0a0a;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #ff3b00, #ff6600, #ff7f2a);
-            padding: 18px 20px;
-            text-align: center;
-            font-size: 26px;
-            font-weight: 800;
-            letter-spacing: 3px;
-            box-shadow: 0 4px 15px rgba(255,102,0,0.5);
-            position: relative;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .ticker-symbol {
-            color: #fff;
-            font-size: 32px;
-            font-weight: 900;
-            text-shadow: 0 0 10px rgba(255,255,255,0.5);
-        }
-        
-        .chart-label {
-            font-size: 14px;
-            color: #ffe6cc;
-            letter-spacing: 2px;
-            margin-top: 2px;
-        }
-        
-        .chart-container {
-            width: 100%;
-            height: calc(100vh - 92px);
-            background: #131722;
-            position: relative;
-        }
-        
-        .chart-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #ff6600, transparent);
-        }
-        
-        .close-btn {
-            position: absolute;
-            top: 12px;
-            right: 15px;
-            background: rgba(0,0,0,0.4);
-            border: 2px solid #fff;
-            color: #fff;
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 22px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10;
-        }
-        
-        .close-btn:hover {
-            background: #ef4444;
-            border-color: #ef4444;
-            transform: rotate(90deg) scale(1.1);
-            box-shadow: 0 0 15px rgba(239,68,68,0.8);
-        }
-        
-        .corner-accent {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            border: 3px solid #ff6600;
-        }
-        
-        .corner-tl {
-            top: 8px;
-            left: 8px;
-            border-right: none;
-            border-bottom: none;
-            border-radius: 12px 0 0 0;
-        }
-        
-        .corner-br {
-            bottom: 8px;
-            right: 8px;
-            border-left: none;
-            border-top: none;
-            border-radius: 0 0 12px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="corner-accent corner-tl"></div>
-    <div class="corner-accent corner-br"></div>
-    
-    <div class="window-wrapper">
-        <div class="header">
-            <div class="ticker-symbol">${ticker}</div>
-            <div class="chart-label">📊 LIVE CHART</div>
-            <button class="close-btn" onclick="window.close()">✕</button>
-        </div>
-        <div class="chart-container">
-            <iframe 
-            src="https://www.tradingview.com/embed-widget/advanced-chart/?symbol=${ticker}&theme=dark&style=1&locale=en&enable_publishing=false&withdateranges=true&hide_side_toolbar=false&allow_symbol_change=true&details=true&hotlist=true&calendar=true&studies=%5B%5D&show_popup_button=true&popup_width=1000&popup_height=650#%7B%22page-uri%22%3A%22detailguy317.com%22%7D"
-            style="width: 100%; height: 100%; border: none;"
-            frameborder="0"
-            allowtransparency="true"
-            scrolling="no">
-        </iframe>
-        </div>
-    </div>
-</body>
-</html>
-        `);
-        chartWindow.document.close();
-        console.log("Chart popup opened successfully for", ticker);
-    } catch(error) {
-        console.error("Error creating chart popup:", error);
-        alert("Error opening chart. Please try again.");
-    }
+    console.log("Opening chart popup for:", ticker);
+    openStockChartPopup(ticker);
+}
+
+// NEW: Stock Chart Popup Management (Right Side)
+function openStockChartPopup(symbol) {
+  const popup = document.getElementById('stockChartPopup');
+  const iframe = document.getElementById('stockChartIframe');
+  const backdrop = document.getElementById('popupBackdrop');
+  
+  // TradingView chart URL
+  const chartUrl = `https://www.tradingview.com/widgetembed/?frameElementId=tradingview_widget&symbol=${symbol}&interval=D&symboledit=1&saveimage=0&toolbarbg=0a0a0a&studies=%5B%5D&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&hideideas=1&locale=en`;
+  
+  iframe.src = chartUrl;
+  popup.classList.add('active');
+  backdrop.classList.add('active');
+}
+
+function closeStockChartPopup() {
+  const popup = document.getElementById('stockChartPopup');
+  const backdrop = document.getElementById('popupBackdrop');
+  popup.classList.remove('active');
+  
+  // Check if any other popups are open
+  const leftPopup1 = document.getElementById('leftPopup1');
+  const leftPopup2 = document.getElementById('leftPopup2');
+  if (!leftPopup1.classList.contains('active') && !leftPopup2.classList.contains('active')) {
+    backdrop.classList.remove('active');
+  }
+}
+
+// NEW: Left Popup Management for Chart/Site Buttons
+function openLeftPopup(url, title, type) {
+  // Find available popup slot (max 2)
+  let popupId, titleId, iframeId;
+  
+  const popup1 = document.getElementById('leftPopup1');
+  const popup2 = document.getElementById('leftPopup2');
+  
+  if (!popup1.classList.contains('active')) {
+    popupId = 'leftPopup1';
+    titleId = 'leftPopup1Title';
+    iframeId = 'leftPopup1Iframe';
+  } else if (!popup2.classList.contains('active')) {
+    popupId = 'leftPopup2';
+    titleId = 'leftPopup2Title';
+    iframeId = 'leftPopup2Iframe';
+  } else {
+    // Both slots full, close the first one and use it
+    closeLeftPopup(1);
+    popupId = 'leftPopup1';
+    titleId = 'leftPopup1Title';
+    iframeId = 'leftPopup1Iframe';
+  }
+  
+  const popup = document.getElementById(popupId);
+  const titleElement = document.getElementById(titleId);
+  const iframe = document.getElementById(iframeId);
+  const backdrop = document.getElementById('popupBackdrop');
+  
+  titleElement.textContent = title;
+  iframe.src = url;
+  popup.classList.add('active');
+  backdrop.classList.add('active');
+}
+
+function closeLeftPopup(popupNumber) {
+  const popup = document.getElementById(`leftPopup${popupNumber}`);
+  const backdrop = document.getElementById('popupBackdrop');
+  popup.classList.remove('active');
+  
+  // Check if any other popups are open
+  const stockPopup = document.getElementById('stockChartPopup');
+  const otherLeftPopup = document.getElementById(`leftPopup${popupNumber === 1 ? 2 : 1}`);
+  
+  if (!stockPopup.classList.contains('active') && !otherLeftPopup.classList.contains('active')) {
+    backdrop.classList.remove('active');
+  }
+}
+
+function closeAllPopups() {
+  closeStockChartPopup();
+  closeLeftPopup(1);
+  closeLeftPopup(2);
+}
+
+// Stock button click handlers for table buttons
+function openStockChart(ticker, name) {
+  const chartUrl = `https://www.tradingview.com/widgetembed/?frameElementId=tradingview_widget&symbol=${ticker}&interval=D&symboledit=1&saveimage=0&toolbarbg=0a0a0a&studies=%5B%5D&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&hideideas=1&locale=en`;
+  openLeftPopup(chartUrl, `${name} Chart`, 'chart');
+}
+
+function openStockSite(site, name) {
+  openLeftPopup(site, `${name} Info`, 'site');
 }
 
 // ======================
@@ -1458,8 +1602,8 @@ async function loadDGStocks() {
                 <td>${s.name}</td>
                 <td id="price-${s.ticker}" style="color:#4ade80; font-weight:600;">—</td>
                 <td>
-                    <button class="dgBtn" onclick="window.open('https://www.tradingview.com/symbols/${s.ticker}/','_blank')">Chart</button>
-                    <button class="dgBtn" onclick="window.open('${s.site}','_blank')">Site</button>
+                    <button class="dgBtn" onclick="openStockChart('${s.ticker}', '${s.name}')">Chart</button>
+                    <button class="dgBtn" onclick="openStockSite('${s.site}', '${s.name}')">Site</button>
                 </td>
             </tr>`;
         });
