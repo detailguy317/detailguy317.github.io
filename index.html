@@ -677,7 +677,7 @@ footer{
   border: 2px solid #ff6600;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
-  z-index: 100005;
+  z-index: 100008;
   display: none;
   animation: slideInRight 0.3s ease-out;
 }
@@ -753,7 +753,7 @@ footer{
   border: 2px solid #ff6600;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
-  z-index: 100004;
+  z-index: 100007;
   display: none;
   animation: slideInLeft 0.3s ease-out;
 }
@@ -820,7 +820,7 @@ footer{
   border-radius: 0 0 12px 12px;
 }
 
-/* Stacking for multiple left popups */
+/* Stacking for multiple left popups - NOW 3 SLOTS! */
 #leftPopup1 {
   left: 20px;
   top: 120px;
@@ -829,6 +829,11 @@ footer{
 #leftPopup2 {
   left: 20px;
   top: 540px;
+}
+
+#leftPopup3 {
+  left: 540px;
+  top: 120px;
 }
 
 /* Backdrop for popups */
@@ -1179,6 +1184,16 @@ footer{
     </div>
   </div>
 
+  <div id="leftPopup3" class="left-popup">
+    <div class="popup-header">
+      <div class="popup-title" id="leftPopup3Title">Content</div>
+      <button class="popup-close" onclick="closeLeftPopup(3)">×</button>
+    </div>
+    <div class="popup-content">
+      <iframe id="leftPopup3Iframe" src=""></iframe>
+    </div>
+  </div>
+
   <div id="popupBackdrop" class="popup-backdrop" onclick="closeAllPopups()"></div>
   <div class="icon-row">
     <div class="icon" id="estore" onclick="openStoreModal()">E-Store</div>
@@ -1217,7 +1232,7 @@ footer{
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 99999;
+    z-index: 100001;
     animation: fadeInModal 0.4s ease forwards;
 }
 
@@ -1491,14 +1506,16 @@ function closeStockChartPopup() {
   }
 }
 
-// NEW: Left Popup Management for Chart/Site Buttons
+// NEW: Left Popup Management for Chart/Site Buttons (3 SLOTS!)
 function openLeftPopup(url, title, type) {
-  // Find available popup slot (max 2)
+  // Find available popup slot (max 3)
   let popupId, titleId, iframeId;
   
   const popup1 = document.getElementById('leftPopup1');
   const popup2 = document.getElementById('leftPopup2');
+  const popup3 = document.getElementById('leftPopup3');
   
+  // Check for first available slot
   if (!popup1.classList.contains('active')) {
     popupId = 'leftPopup1';
     titleId = 'leftPopup1Title';
@@ -1507,8 +1524,12 @@ function openLeftPopup(url, title, type) {
     popupId = 'leftPopup2';
     titleId = 'leftPopup2Title';
     iframeId = 'leftPopup2Iframe';
+  } else if (!popup3.classList.contains('active')) {
+    popupId = 'leftPopup3';
+    titleId = 'leftPopup3Title';
+    iframeId = 'leftPopup3Iframe';
   } else {
-    // Both slots full, close the first one and use it
+    // All 3 slots full - close the first one and cycle
     closeLeftPopup(1);
     popupId = 'leftPopup1';
     titleId = 'leftPopup1Title';
@@ -1533,9 +1554,14 @@ function closeLeftPopup(popupNumber) {
   
   // Check if any other popups are open
   const stockPopup = document.getElementById('stockChartPopup');
-  const otherLeftPopup = document.getElementById(`leftPopup${popupNumber === 1 ? 2 : 1}`);
+  const leftPopup1 = document.getElementById('leftPopup1');
+  const leftPopup2 = document.getElementById('leftPopup2');
+  const leftPopup3 = document.getElementById('leftPopup3');
   
-  if (!stockPopup.classList.contains('active') && !otherLeftPopup.classList.contains('active')) {
+  if (!stockPopup.classList.contains('active') && 
+      !leftPopup1.classList.contains('active') && 
+      !leftPopup2.classList.contains('active') && 
+      !leftPopup3.classList.contains('active')) {
     backdrop.classList.remove('active');
   }
 }
@@ -1544,6 +1570,7 @@ function closeAllPopups() {
   closeStockChartPopup();
   closeLeftPopup(1);
   closeLeftPopup(2);
+  closeLeftPopup(3);
 }
 
 // Stock button click handlers for table buttons
