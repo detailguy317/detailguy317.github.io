@@ -847,17 +847,8 @@ footer{
   display: block;
 }
 
-/* Shrink main stock modal when popups are open */
-#dgStockModal.shrink .dgModalWindow {
-  width: 60%;
-  max-width: 800px;
-  margin: 0 auto;
-  transition: all 0.3s ease;
-}
-
-#dgStockModal.shrink .dgTableGrid {
-  grid-template-columns: 1fr;
-}
+/* Keep main stock modal at full size - no shrinking */
+/* Users can see center list + side popups all at once */
 
 /* STORE MODAL STYLES */
 .store-modal-overlay{
@@ -1450,7 +1441,6 @@ function openDGStockModal() {
 function closeDGStockModal() {
     const mainModal = document.getElementById("dgStockModal");
     mainModal.style.display = "none";
-    mainModal.classList.remove('shrink');
     stopPriceRefresh(); // Stop auto-refreshing when closed
     // Note: We don't close the side popups - they stay open!
 }
@@ -1479,7 +1469,6 @@ function openStockChartPopup(symbol) {
   const popup = document.getElementById('stockChartPopup');
   const iframe = document.getElementById('stockChartIframe');
   const backdrop = document.getElementById('popupBackdrop');
-  const mainModal = document.getElementById('dgStockModal');
   
   // TradingView chart URL
   const chartUrl = `https://www.tradingview.com/widgetembed/?frameElementId=tradingview_widget&symbol=${symbol}&interval=D&symboledit=1&saveimage=0&toolbarbg=0a0a0a&studies=%5B%5D&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&hideideas=1&locale=en`;
@@ -1487,17 +1476,11 @@ function openStockChartPopup(symbol) {
   iframe.src = chartUrl;
   popup.classList.add('active');
   backdrop.classList.add('active');
-  
-  // Shrink main modal if it's open
-  if (mainModal.style.display === 'flex') {
-    mainModal.classList.add('shrink');
-  }
 }
 
 function closeStockChartPopup() {
   const popup = document.getElementById('stockChartPopup');
   const backdrop = document.getElementById('popupBackdrop');
-  const mainModal = document.getElementById('dgStockModal');
   popup.classList.remove('active');
   
   // Check if any other popups are open
@@ -1505,7 +1488,6 @@ function closeStockChartPopup() {
   const leftPopup2 = document.getElementById('leftPopup2');
   if (!leftPopup1.classList.contains('active') && !leftPopup2.classList.contains('active')) {
     backdrop.classList.remove('active');
-    mainModal.classList.remove('shrink');
   }
 }
 
@@ -1516,7 +1498,6 @@ function openLeftPopup(url, title, type) {
   
   const popup1 = document.getElementById('leftPopup1');
   const popup2 = document.getElementById('leftPopup2');
-  const mainModal = document.getElementById('dgStockModal');
   
   if (!popup1.classList.contains('active')) {
     popupId = 'leftPopup1';
@@ -1543,17 +1524,11 @@ function openLeftPopup(url, title, type) {
   iframe.src = url;
   popup.classList.add('active');
   backdrop.classList.add('active');
-  
-  // Shrink main modal if it's open
-  if (mainModal.style.display === 'flex') {
-    mainModal.classList.add('shrink');
-  }
 }
 
 function closeLeftPopup(popupNumber) {
   const popup = document.getElementById(`leftPopup${popupNumber}`);
   const backdrop = document.getElementById('popupBackdrop');
-  const mainModal = document.getElementById('dgStockModal');
   popup.classList.remove('active');
   
   // Check if any other popups are open
@@ -1562,16 +1537,13 @@ function closeLeftPopup(popupNumber) {
   
   if (!stockPopup.classList.contains('active') && !otherLeftPopup.classList.contains('active')) {
     backdrop.classList.remove('active');
-    mainModal.classList.remove('shrink');
   }
 }
 
 function closeAllPopups() {
-  const mainModal = document.getElementById('dgStockModal');
   closeStockChartPopup();
   closeLeftPopup(1);
   closeLeftPopup(2);
-  mainModal.classList.remove('shrink');
 }
 
 // Stock button click handlers for table buttons
