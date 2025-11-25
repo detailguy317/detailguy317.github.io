@@ -1445,11 +1445,13 @@ footer{
 // ======================
 function openDGStockModal() {
     document.getElementById("dgStockModal").style.display = "flex";
+    startPriceRefresh(); // Start auto-refreshing prices
 }
 function closeDGStockModal() {
     const mainModal = document.getElementById("dgStockModal");
     mainModal.style.display = "none";
     mainModal.classList.remove('shrink');
+    stopPriceRefresh(); // Stop auto-refreshing when closed
     // Note: We don't close the side popups - they stay open!
 }
 // click outside closes
@@ -1633,7 +1635,7 @@ async function loadDGStocks() {
             <tr>
                 <td>${s.ticker}</td>
                 <td>${s.name}</td>
-                <td id="price-${s.ticker}" style="color:#4ade80; font-weight:600;">—</td>
+                <td id="price-${s.ticker}" style="color:#4ade80; font-weight:600;">...</td>
                 <td>
                     <button class="dgBtn" onclick="openStockChart('${s.ticker}', '${s.name}')">Chart</button>
                     <button class="dgBtn" onclick="openStockSite('${s.site}', '${s.name}')">Site</button>
@@ -1643,10 +1645,88 @@ async function loadDGStocks() {
 
         html += "</table></div>";
         grid.innerHTML += html;
+        
+        // Fetch prices for all stocks in this category
+        buckets[cat].forEach(s => {
+            fetchStockPrice(s.ticker);
+        });
     });
+}
+
+// NEW: Fetch stock price from Yahoo Finance
+async function fetchStockPrice(ticker) {
+    const priceCell = document.getElementById(`price-${ticker}`);
     
-    // Note: Prices will show as "—" (dash) initially
-    // Real-time prices require paid API, so we keep it simple
+    // Show loading state
+    priceCell.textContent = '...';
+    priceCell.style.color = '#888';
+    
+    try {
+        // Yahoo Finance API endpoint
+        const url = `https://query1.finance.yahoo.com/v8/finance/chart/${ticker}`;
+        const response = await fetch(url);
+        
+        if (!response.ok) throw new Error('API Error');
+        
+        const data = await response.json();
+        const result = data.chart.result[0];
+        
+        // Get current price
+        const price = result.meta.regularMarketPrice;
+        const previousClose = result.meta.chartPreviousClose;
+        const change = price - previousClose;
+        const changePercent = (change / previousClose) * 100;
+        
+        // Format price with 2 decimals
+        const formattedPrice = `$${price.toFixed(2)}`;
+        
+        // Color code based on change
+        if (change > 0) {
+            priceCell.style.color = '#4ade80'; // Green for up
+            priceCell.textContent = formattedPrice;
+            priceCell.title = `+${changePercent.toFixed(2)}% today`;
+        } else if (change < 0) {
+            priceCell.style.color = '#ef4444'; // Red for down
+            priceCell.textContent = formattedPrice;
+            priceCell.title = `${changePercent.toFixed(2)}% today`;
+        } else {
+            priceCell.style.color = '#fbbf24'; // Yellow for unchanged
+            priceCell.textContent = formattedPrice;
+            priceCell.title = 'Unchanged today';
+        }
+        
+    } catch (error) {
+        console.error(`Error fetching price for ${ticker}:`, error);
+        priceCell.textContent = '—';
+        priceCell.style.color = '#888';
+        priceCell.title = 'Price unavailable';
+    }
+}
+
+// NEW: Refresh all prices (call this every minute if you want)
+function refreshAllPrices() {
+    const priceCells = document.querySelectorAll('[id^="price-"]');
+    priceCells.forEach(cell => {
+        const ticker = cell.id.replace('price-', '');
+        if (ticker) {
+            fetchStockPrice(ticker);
+        }
+    });
+}
+
+// Optional: Auto-refresh prices every 60 seconds when modal is open
+let priceRefreshInterval = null;
+
+function startPriceRefresh() {
+    if (priceRefreshInterval) return; // Already running
+    priceRefreshInterval = setInterval(refreshAllPrices, 60000); // 60 seconds
+}
+
+function stopPriceRefresh() {
+    if (priceRefreshInterval) {
+        clearInterval(priceRefreshInterval);
+        priceRefreshInterval = null;
+    }
 }
 
 loadDGStocks();
