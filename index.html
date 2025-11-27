@@ -1287,20 +1287,41 @@ footer{
     color: #fff;
 }
 
-/* POP OUT BUTTON */
+/* POP OUT BUTTON - FANCY DETAILGUY317 STYLE */
 .dgPopOut {
     position: absolute;
     top: 10px; left: 20px;
-    background: #ff6600;
-    border: none;
-    padding: 6px 14px;
-    border-radius: 6px;
+    background: linear-gradient(145deg, #ff6a00, #ff3b00);
+    border: 2px solid #ff6600;
+    padding: 10px 20px;
+    border-radius: 12px;
     cursor: pointer;
-    color: #000;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(255,102,0,0.6), inset 0 0 10px rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+    animation: popOutPulse 2s ease-in-out infinite;
 }
 
-.dgPopOut:hover { background: #ffaa44; }
+.dgPopOut:hover { 
+    background: linear-gradient(145deg, #ff7f2a, #ff5500);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 30px rgba(255,102,0,0.9), 0 5px 20px rgba(255,102,0,0.4), inset 0 0 15px rgba(255,255,255,0.2);
+    letter-spacing: 2px;
+}
+
+.dgPopOut:active {
+    transform: translateY(-1px) scale(1.02);
+}
+
+@keyframes popOutPulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(255,102,0,0.6), inset 0 0 10px rgba(255,255,255,0.1); }
+    50% { box-shadow: 0 0 30px rgba(255,102,0,0.8), inset 0 0 15px rgba(255,255,255,0.15); }
+}
+
 
 /* CENTER SEARCH UI */
 .dgCenterSearch {
