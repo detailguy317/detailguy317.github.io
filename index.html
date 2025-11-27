@@ -677,7 +677,7 @@ footer{
   border: 2px solid #ff6600;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
-  z-index: 100008;
+  z-index: 100005;
   display: none;
   animation: slideInRight 0.3s ease-out;
 }
@@ -753,7 +753,7 @@ footer{
   border: 2px solid #ff6600;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
-  z-index: 100007;
+  z-index: 100005;
   display: none;
   animation: slideInLeft 0.3s ease-out;
 }
@@ -836,7 +836,7 @@ footer{
   top: 120px;
 }
 
-/* Backdrop for popups */
+/* Backdrop for popups - DISABLED */
 .popup-backdrop {
   position: fixed;
   top: 0;
@@ -844,12 +844,12 @@ footer{
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
-  z-index: 100003;
-  display: none;
+  z-index: -1;
+  display: none !important;
 }
 
 .popup-backdrop.active {
-  display: block;
+  display: none !important;
 }
 
 /* Keep main stock modal at full size - no shrinking */
@@ -1232,7 +1232,7 @@ footer{
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 100001;
+    z-index: 100005;
     animation: fadeInModal 0.4s ease forwards;
 }
 
@@ -1447,33 +1447,104 @@ footer{
 
 <script>
 // ======================
-// OPEN / CLOSE MODAL
+// OPEN / CLOSE MODAL WITH MEMORY
 // ======================
+
+// Memory for open charts
+let openChartMemory = {
+    rightChart: null,
+    leftCharts: [null, null, null]
+};
+
 function openDGStockModal() {
     document.getElementById("dgStockModal").style.display = "flex";
-    startPriceRefresh(); // Start auto-refreshing prices
+    startPriceRefresh();
+    
+    // Restore any charts that were open before
+    restoreOpenCharts();
 }
 
 function toggleDGStockModal() {
     const mainModal = document.getElementById("dgStockModal");
     if(mainModal.style.display === "flex"){
+        // Save current chart state before closing
+        saveOpenCharts();
         mainModal.style.display = "none";
         stopPriceRefresh();
     } else {
         mainModal.style.display = "flex";
         startPriceRefresh();
+        // Restore charts when opening
+        restoreOpenCharts();
     }
-    // NOTE: Charts stay open when modal closes/opens!
 }
 
 function closeDGStockModal() {
-    toggleDGStockModal();
+    // Save chart state
+    saveOpenCharts();
+    const mainModal = document.getElementById("dgStockModal");
+    mainModal.style.display = "none";
+    stopPriceRefresh();
+    // Keep charts visible - don't close them
 }
 
-// Clicking outside does NOT close the modal anymore
-// This allows charts to stay active while browsing
+// Save which charts are currently open
+function saveOpenCharts() {
+    // Save right chart
+    const rightPopup = document.getElementById('stockChartPopup');
+    if(rightPopup && rightPopup.classList.contains('active')) {
+        const iframe = document.getElementById('stockChartIframe');
+        openChartMemory.rightChart = iframe.src;
+    } else {
+        openChartMemory.rightChart = null;
+    }
+    
+    // Save left charts
+    for(let i = 1; i <= 3; i++) {
+        const popup = document.getElementById(`leftPopup${i}`);
+        if(popup && popup.classList.contains('active')) {
+            const iframe = document.getElementById(`leftPopup${i}Iframe`);
+            const title = document.getElementById(`leftPopup${i}Title`).textContent;
+            openChartMemory.leftCharts[i-1] = {
+                url: iframe.src,
+                title: title
+            };
+        } else {
+            openChartMemory.leftCharts[i-1] = null;
+        }
+    }
+}
+
+// Restore previously open charts
+function restoreOpenCharts() {
+    // Restore right chart
+    if(openChartMemory.rightChart) {
+        const popup = document.getElementById('stockChartPopup');
+        const iframe = document.getElementById('stockChartIframe');
+        iframe.src = openChartMemory.rightChart;
+        popup.classList.add('active');
+    }
+    
+    // Restore left charts
+    for(let i = 1; i <= 3; i++) {
+        if(openChartMemory.leftCharts[i-1]) {
+            const popup = document.getElementById(`leftPopup${i}`);
+            const iframe = document.getElementById(`leftPopup${i}Iframe`);
+            const titleEl = document.getElementById(`leftPopup${i}Title`);
+            
+            iframe.src = openChartMemory.leftCharts[i-1].url;
+            titleEl.textContent = openChartMemory.leftCharts[i-1].title;
+            popup.classList.add('active');
+        }
+    }
+}
+
+// Clicking background closes modal but remembers charts
 document.getElementById("dgStockModal").addEventListener("click", function(e) {
-    // Do nothing - removed the close on backdrop click
+    // Only close if clicking the dark background, not the modal content
+    if(e.target === this) {
+        closeDGStockModal();
+    }
 });
 
 // POP OUT WINDOW
@@ -1489,8 +1560,28 @@ function dgSearchTicker() {
         return;
     }
     
-    console.log("Opening chart popup for:", ticker);
-    openStockChartPopup(ticker);
+    // Handle different asset types and add appropriate exchange prefix if needed
+    let searchSymbol = ticker;
+    
+    // Check if user already included exchange (has a colon)
+    if(!ticker.includes(':')) {
+        // Futures patterns - add exchange prefix
+        if(ticker.match(/^(ES|NQ|YM|RTY|GC|SI|CL|NG|ZB|ZN|ZF|ZT)/)) {
+            // CME futures
+            searchSymbol = 'CME_MINI:' + ticker + '1!';
+        }
+        else if(ticker.match(/^(BTC|ETH|SOL|ADA|XRP|DOGE)/)) {
+            // Crypto - add USD pair
+            searchSymbol = 'COINBASE:' + ticker + 'USD';
+        }
+        else {
+            // Regular stocks - try NASDAQ first, TradingView will handle if it's actually NYSE
+            searchSymbol = 'NASDAQ:' + ticker;
+        }
+    }
+    
+    console.log("Opening chart popup for:", searchSymbol);
+    openStockChartPopup(searchSymbol);
 }
 
 // NEW: Stock Chart Popup Management (Right Side)
