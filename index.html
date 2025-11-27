@@ -1573,8 +1573,20 @@ document.getElementById("dgStockModal").addEventListener("click", function(e) {
 
 // POP OUT WINDOW
 function popOutDGScanner() {
-    window.open(window.location.href + "#stocks", "_blank");
+    // Open new window with stock modal auto-open trigger
+    const popoutWindow = window.open(window.location.href + "?autoOpenStocks=true", "_blank", "width=1200,height=900");
 }
+
+// Auto-open stock modal if URL parameter is set
+window.addEventListener('load', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.get('autoOpenStocks') === 'true') {
+        // Wait a moment for page to fully load, then open stock modal
+        setTimeout(function() {
+            openDGStockModal();
+        }, 500);
+    }
+});
 
 // TICKER SEARCH -> OPEN IN RIGHT POPUP
 function dgSearchTicker() {
