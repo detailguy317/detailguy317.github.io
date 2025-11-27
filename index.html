@@ -1575,6 +1575,9 @@ document.getElementById("dgStockModal").addEventListener("click", function(e) {
 function popOutDGScanner() {
     // Open new window with stock modal auto-open trigger
     const popoutWindow = window.open(window.location.href + "?autoOpenStocks=true", "_blank", "width=1200,height=900");
+    
+    // Close the modal on the main page so user can see all their charts
+    closeDGStockModal();
 }
 
 // Auto-open stock modal if URL parameter is set
