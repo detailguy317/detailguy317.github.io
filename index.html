@@ -1245,6 +1245,7 @@ footer{
 /* Modal window core */
 #dgStockModal .dgModalWindow {
     background: #0f0f0f;
+    border: 2px solid #ff6600;
     border-radius: 14px;
     padding: 20px;
     width: 85%;
@@ -1256,6 +1257,7 @@ footer{
     position: relative;
     animation: fadeInScale 0.4s ease forwards;
     overflow: hidden;
+    box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
 }
 
 /* Scale fade */
@@ -1290,7 +1292,7 @@ footer{
 /* POP OUT BUTTON - FANCY DETAILGUY317 STYLE */
 .dgPopOut {
     position: absolute;
-    top: 10px; left: 20px;
+    top: 80px; left: 20px;
     background: linear-gradient(145deg, #ff6a00, #ff3b00);
     border: 2px solid #ff6600;
     padding: 10px 20px;
@@ -1304,6 +1306,7 @@ footer{
     box-shadow: 0 0 20px rgba(255,102,0,0.6), inset 0 0 10px rgba(255,255,255,0.1);
     transition: all 0.3s ease;
     animation: popOutPulse 2s ease-in-out infinite;
+    z-index: 10;
 }
 
 .dgPopOut:hover { 
