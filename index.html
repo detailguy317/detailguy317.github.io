@@ -264,833 +264,2007 @@ body{
 }
 
 .faq-response{
-  margin-top:12px;padding:12px;
-  border-radius:8px;
-  background:rgba(30,30,30,0.92);
-  color:#ffe6cc;font-size:.95em;
-  border:1px solid #ff6600;
-  min-height:50px;
-  text-align:center;
+  background:#222;color:#fff;padding:8px;
+  border-radius:6px;font-size:.95em;
+  text-align:center;margin-top:8px;min-height:18px;
 }
-
 .vin-response{
-  margin-top:12px;padding:12px;
-  border-radius:8px;
-  background:rgba(30,30,30,0.92);
-  color:#ffe6cc;font-size:.92em;
-  border:1px solid #ff6600;
-  max-height:600px;
-  overflow-y:auto;
+  background:#222;color:#fff;padding:12px;
+  border-radius:6px;font-size:.95em;
+  text-align:left;margin-top:8px;min-height:18px;
+  max-height:500px;overflow-y:auto;
+  transition:all 0.3s ease;
   position:relative;
-  transition: all 0.3s ease;
 }
-
 .vin-response.collapsed{
-  max-height:50px;
+  max-height:45px;
   overflow:hidden;
   cursor:pointer;
 }
-
-.vin-response h3{
-  color:#ff7f2a;
-  font-size:1.1em;
-  margin-bottom:10px;
-  text-align:center;
-  padding-right:25px;
+.vin-response.collapsed:hover{
+  background:#2a2a2a;
+  border:1px solid #ff6600;
 }
-
-.vehicle-info{
-  padding:10px;
-  margin:8px 0;
-  background:rgba(255,102,0,0.1);
-  border-radius:6px;
-  line-height:1.8;
-}
-
-.button-row{
-  display:flex;
-  gap:8px;
-  margin-top:10px;
-}
-
-.button-row button{
-  flex:1;
-  padding:10px;
-  border-radius:6px;
-  border:none;
-  background:#ff6600;
-  color:#fff;
-  cursor:pointer;
-  font-size:.9em;
-  font-weight:600;
-  transition:.3s;
-}
-
-.button-row button:hover{
-  background:#ff7f2a;
-  box-shadow:0 0 15px rgba(255,102,0,0.5);
-}
-
 .vin-close-btn{
   position:absolute;
-  top:12px;
-  right:12px;
-  width:24px;
-  height:24px;
+  top:8px;
+  right:8px;
   background:#ff6600;
   color:#fff;
+  width:24px;
+  height:24px;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
   cursor:pointer;
-  font-size:14px;
+  font-size:16px;
   font-weight:bold;
   transition:.3s;
   z-index:10;
 }
-
 .vin-close-btn:hover{
   background:#ff7f2a;
   transform:scale(1.1);
 }
+.vin-response.collapsed .vin-close-btn{
+  display:none;
+}
+.vin-response h3{
+  color:#ff7f2a;margin-bottom:8px;font-size:1.1em;
+}
+.vin-response .vehicle-info{
+  background:#1a1a1a;padding:12px;
+  border-left:3px solid #4ade80;
+  margin-bottom:12px;border-radius:4px;
+}
+.vin-response .vehicle-info strong{
+  color:#4ade80;
+}
+.vin-response button{
+  width:100%;padding:8px;margin-top:8px;
+  border-radius:6px;border:none;
+  background:#ff6600;color:#fff;
+  cursor:pointer;font-weight:600;
+  transition:.3s;
+  font-size:.9em;
+}
+.vin-response button:hover{
+  background:#ff7f2a;
+  box-shadow:0 0 15px rgba(255,102,0,0.5);
+}
+.vin-response .button-row{
+  display:flex;gap:8px;margin-top:8px;
+}
+.vin-response .button-row button{
+  flex:1;font-size:.85em;
+  padding:10px 6px;
+}
 
-.camera-permission-modal{
+footer{
+  margin-top:8px;font-size:.8rem;
+  color:#aaa;text-align:right;
+}
+
+.stock-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.stock-modal.show {
+  display: block;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #ff6600;
+  position: relative;
+  box-shadow: 0 0 40px rgba(255, 102, 0, 0.4);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  color: #ff6600;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.close-btn:hover {
+  color: #ff7f2a;
+  transform: scale(1.2);
+}
+
+.modal-content h2 {
+  color: #ff6600;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.modal-content button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background: #ff6600;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+  text-align: left;
+}
+
+.modal-content button:hover {
+  background: #ff7f2a;
+  box-shadow: 0 0 20px rgba(255,102,0,0.6);
+  transform: translateX(5px);
+}
+
+.modal-content h3 {
+  color: #ff7f2a;
+  margin: 20px 0 10px 0;
+  font-size: 1.2em;
+}
+
+.modal-content iframe {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #ff6600;
+  border-radius: 8px;
+}
+
+/* Racing Link Buttons - Enhanced Hover Effects */
+.racing-link-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+  min-height: 50px;
+  background: linear-gradient(145deg, #ff6a00, #ff3b00) !important;
+  box-shadow: 0 0 15px rgba(255,102,0,0.5);
+  transition: all .35s ease !important;
+}
+
+.racing-link-btn:hover {
+  transform: translateY(-8px) scale(1.05) !important;
+  box-shadow: 0 0 25px #ff6600, 0 0 40px rgba(255,102,0,0.5) !important;
+  background: linear-gradient(145deg, #ff7f2a, #ff5500) !important;
+}
+
+/* Shimmer animation for DETAILGUY317 text */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Show DG317 logos on wider screens */
+@media screen and (min-width: 1100px) {
+  .dg317-logo-left,
+  .dg317-logo-right {
+    display: block !important;
+  }
+}
+
+/* MOBILE RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 60px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .ticker-container {
+    height: 50px;
+    animation: fadeInTicker 1s ease-in-out 2s forwards;
+  }
+  
+  .ticker-wrapper {
+    height: 50px;
+  }
+  
+  .ticker-wrapper iframe {
+    height: 50px;
+  }
+  
+  .ticker-btn {
+    font-size: 11px;
+    padding: 6px 10px;
+    margin: 0 6px;
+  }
+  
+  .auto-news-ticker {
+    top: 50px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  #background {
+    background-position: center center;
+    animation: none;
+    position: absolute;
+    min-height: 100vh;
+  }
+  
+  .overlay {
+    position: relative;
+    top: 20px;
+    left: 0;
+    transform: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .overlay h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  
+  .overlay p {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  
+  .icon-row {
+    position: relative;
+    bottom: auto;
+    left: 0;
+    transform: none;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 20px 10px;
+    justify-content: center;
+  }
+  
+  .icon {
+    min-width: 110px;
+    height: 50px;
+    font-size: 14px;
+  }
+  
+  .vin-box {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+    max-width: 100%;
+  }
+  
+  .search-bar {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: calc(100% - 20px);
+    margin: 20px 10px 40px 10px;
+    max-width: 100%;
+  }
+  
+  .scan-vin-btn {
+    display: block;
+  }
+  
+  .vin-response {
+    max-height: 350px;
+  }
+  
+  .vin-box label,
+  .search-bar label {
+    font-size: 1em;
+  }
+  
+  .vin-box input,
+  .search-bar input,
+  .vin-box button,
+  .search-bar button {
+    font-size: 16px;
+    padding: 14px;
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px 15px;
+  }
+  
+  .modal-content h2 {
+    font-size: 1.4em;
+  }
+  
+  .modal-content iframe {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .modal-content button {
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .vin-response .button-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .vin-response .button-row button {
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .vin-response .vehicle-info {
+    font-size: 0.9em;
+  }
+  
+  /* Racing modal responsive */
+  .racing-link-btn {
+    font-size: 12px !important;
+    padding: 10px 8px !important;
+    min-height: 45px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .overlay h1 {
+    font-size: 28px;
+  }
+  
+  .overlay p {
+    font-size: 14px;
+  }
+  
+  .icon {
+    min-width: 90px;
+    height: 45px;
+    font-size: 13px;
+  }
+  
+  .ticker-btn {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+  
+  .modal-content h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .overlay h1 {
+    font-size: 24px;
+  }
+  
+  .overlay p {
+    font-size: 12px;
+  }
+  
+  .icon {
+    height: 40px;
+    min-width: 90px;
+  }
+}
+
+/* ====================================== */
+/* NEW: POPUP SYSTEM FOR STOCK CHARTS */
+/* ====================================== */
+
+/* Stock Chart Search Popup (Right Side) */
+.stock-chart-popup {
+  position: fixed;
+  right: 20px;
+  top: 120px;
+  width: 480px;
+  height: 380px;
+  background: rgba(20, 20, 20, 0.98);
+  border: 2px solid #ff6600;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
+  z-index: 100008;
+  display: none;
+  animation: slideInRight 0.3s ease-out;
+}
+
+.stock-chart-popup.active {
+  display: block;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.stock-chart-popup .popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ff6600;
+  background: rgba(255, 102, 0, 0.1);
+}
+
+.stock-chart-popup .popup-title {
+  color: #ff7f2a;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.stock-chart-popup .popup-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.stock-chart-popup .popup-close:hover {
+  background: rgba(255, 102, 0, 0.3);
+  color: #ff7f2a;
+}
+
+.stock-chart-popup .popup-content {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+.stock-chart-popup iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Left Side Button Popups */
+.left-popup {
+  position: fixed;
+  width: 500px;
+  height: 400px;
+  background: rgba(20, 20, 20, 0.98);
+  border: 2px solid #ff6600;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
+  z-index: 100007;
+  display: none;
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.left-popup.active {
+  display: block;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.left-popup .popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ff6600;
+  background: rgba(255, 102, 0, 0.1);
+}
+
+.left-popup .popup-title {
+  color: #ff7f2a;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.left-popup .popup-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.left-popup .popup-close:hover {
+  background: rgba(255, 102, 0, 0.3);
+  color: #ff7f2a;
+}
+
+.left-popup .popup-content {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+.left-popup iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Stacking for multiple left popups - NOW 3 SLOTS! */
+#leftPopup1 {
+  left: 20px;
+  top: 120px;
+}
+
+#leftPopup2 {
+  left: 20px;
+  top: 540px;
+}
+
+#leftPopup3 {
+  left: 540px;
+  top: 120px;
+}
+
+/* Backdrop for popups */
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100003;
+  display: none;
+}
+
+.popup-backdrop.active {
+  display: block;
+}
+
+/* Keep main stock modal at full size - no shrinking */
+/* Users can see center list + side popups all at once */
+
+/* STORE MODAL STYLES */
+.store-modal-overlay{
   display:none;
   position:fixed;
   top:0;left:0;right:0;bottom:0;
   background:rgba(0,0,0,0.85);
-  z-index:100000;
+  z-index:1000;
+  justify-content:center;
   align-items:center;
-  justify-content:center;
+  animation:fadeIn 0.3s ease;
+  overflow-y:auto;
+  padding:20px;
 }
-
-.camera-permission-modal.show{
+.store-modal-overlay.show{
   display:flex;
 }
 
-.permission-content{
-  background:#1a1a1a;
-  border:2px solid #ff6600;
-  border-radius:12px;
-  padding:30px;
-  max-width:400px;
-  text-align:center;
-  box-shadow:0 0 30px rgba(255,102,0,0.5);
-}
-
-.permission-content h3{
-  color:#ff7f2a;
-  font-size:1.3em;
-  margin-bottom:15px;
-}
-
-.permission-content p{
-  color:#fff;
-  margin-bottom:20px;
-  line-height:1.6;
-}
-
-.permission-buttons{
-  display:flex;
-  gap:12px;
-  justify-content:center;
-}
-
-.permission-buttons button{
-  padding:12px 24px;
-  border-radius:8px;
-  border:none;
-  font-weight:600;
-  cursor:pointer;
-  transition:.3s;
-}
-
-.permission-accept{
-  background:#4ade80;
-  color:#000;
-}
-
-.permission-accept:hover{
-  background:#5ef590;
-  box-shadow:0 0 15px rgba(74,222,128,0.5);
-}
-
-.permission-deny{
-  background:#555;
-  color:#fff;
-}
-
-.permission-deny:hover{
-  background:#666;
-}
-
-/* STOCK MODAL & CHART STYLES */
-.stock-modal-overlay{
-  position:fixed;
-  top:0;left:0;right:0;bottom:0;
-  background:rgba(0,0,0,0.7);
-  z-index:99998;
-  display:none;
-}
-
-.stock-modal-overlay.active{
-  display:block;
-}
-
-.stock-modal{
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  width:90%;
-  max-width:800px;
-  max-height:85vh;
+.store-modal{
   background:rgba(20,20,20,0.98);
   border:2px solid #ff6600;
-  border-radius:16px;
-  box-shadow:0 0 40px rgba(255,102,0,0.6);
-  padding:20px;
-  z-index:99999;
-  display:none;
+  border-radius:20px;
+  width:90%;
+  max-width:900px;
+  max-height:85vh;
   overflow-y:auto;
+  box-shadow:0 0 50px rgba(255,102,0,0.5);
+  position:relative;
+  animation:slideIn 0.4s ease;
+  margin:auto;
 }
 
-.stock-modal.active{
-  display:block;
+@keyframes slideIn{
+  from{transform:translateY(-50px);opacity:0;}
+  to{transform:translateY(0);opacity:1;}
 }
 
-.stock-modal-header{
+.store-close-btn{
+  position:absolute;
+  top:15px;
+  right:15px;
+  width:35px;
+  height:35px;
+  background:#ff6600;
+  color:#fff;
+  border-radius:50%;
   display:flex;
-  justify-content:space-between;
   align-items:center;
-  margin-bottom:20px;
-  padding-bottom:15px;
+  justify-content:center;
+  cursor:pointer;
+  font-size:20px;
+  font-weight:bold;
+  z-index:10;
+  transition:.3s;
+  border:none;
+}
+.store-close-btn:hover{
+  background:#ff7f2a;
+  transform:scale(1.1) rotate(90deg);
+  box-shadow:0 0 20px rgba(255,102,0,0.7);
+}
+
+.store-header{
+  text-align:center;
+  padding:30px 20px 20px;
   border-bottom:2px solid #ff6600;
 }
 
-.stock-modal-header h2{
-  color:#ff7f2a;
-  font-size:1.8em;
+.store-header h2{
+  font-size:42px;
+  color:#ff6a00;
+  text-shadow:0 0 20px rgba(255,106,0,0.8);
+  margin-bottom:10px;
+  letter-spacing:2px;
 }
 
-.stock-modal-close{
-  background:#ff6600;
-  border:none;
-  color:#fff;
-  font-size:24px;
-  width:36px;
-  height:36px;
-  border-radius:50%;
-  cursor:pointer;
+.store-header p{
+  font-size:16px;
+  color:#ffe6cc;
+  margin-top:8px;
+}
+
+.store-tabs{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:25px 20px;
+  background:rgba(10,10,10,0.5);
+}
+
+.store-tab-btn{
+  min-width:180px;
+  height:55px;
+  background:linear-gradient(145deg,#ff6a00,#ff3b00);
+  border-radius:40px;
+  box-shadow:0 0 15px rgba(255,102,0,0.5);
   display:flex;
   align-items:center;
   justify-content:center;
-  transition:.3s;
-}
-
-.stock-modal-close:hover{
-  background:#ff7f2a;
-  transform:scale(1.1);
-}
-
-.stock-search-container{
-  margin-bottom:20px;
-}
-
-.stock-search-input{
-  width:100%;
-  padding:12px;
-  background:#111;
-  border:1px solid #555;
-  border-radius:8px;
   color:#fff;
-  font-size:1em;
-  outline:none;
+  font-weight:600;
+  letter-spacing:1px;
+  cursor:pointer;
+  transition:all .35s ease;
+  border:none;
+  font-size:18px;
 }
 
-.stock-search-input:focus{
-  border-color:#ff6600;
+.store-tab-btn:hover{
+  transform:translateY(-8px) scale(1.05);
+  box-shadow:0 0 25px #ff6600,0 0 40px rgba(255,102,0,0.5);
 }
 
-.stock-categories{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
-  gap:15px;
-  margin-bottom:25px;
+.store-tab-btn.active{
+  background:linear-gradient(145deg,#ff7f2a,#ff5500);
+  box-shadow:0 0 30px #ff6600,0 0 50px rgba(255,102,0,0.7);
 }
 
-.stock-category{
-  background:rgba(255,102,0,0.1);
+.store-content{
+  padding:30px;
+}
+
+.store-section{
+  display:none;
+}
+
+.store-section.active{
+  display:block;
+}
+
+.store-item{
+  background:rgba(30,30,30,0.8);
   border:1px solid #ff6600;
-  border-radius:10px;
-  padding:15px;
-  cursor:pointer;
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:20px;
   transition:.3s;
-  text-align:center;
 }
 
-.stock-category:hover{
-  background:rgba(255,102,0,0.2);
-  transform:translateY(-3px);
-  box-shadow:0 5px 15px rgba(255,102,0,0.3);
+.store-item:hover{
+  box-shadow:0 0 20px rgba(255,102,0,0.3);
+  border-color:#ff7f2a;
 }
 
-.stock-category h3{
-  color:#ff7f2a;
-  font-size:1.1em;
-  margin-bottom:8px;
-}
-
-.stock-list{
+.store-item-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));
-  gap:10px;
+  grid-template-columns:200px 1fr;
+  gap:20px;
+  align-items:center;
 }
 
-.stock-item{
-  background:#1a1a1a;
-  border:1px solid #444;
+.store-item-image{
+  width:100%;
+  height:280px;
+  background:rgba(50,50,50,0.5);
   border-radius:8px;
-  padding:12px;
-  cursor:pointer;
-  transition:.3s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#888;
+  font-size:14px;
   text-align:center;
+  padding:10px;
+  border:2px dashed #555;
+  overflow:hidden;
+  cursor:pointer;
+  transition:all 0.4s ease;
+  position:relative;
 }
 
-.stock-item:hover{
-  background:#252525;
+.store-item-image:hover{
+  transform:scale(1.15) translateY(-10px);
+  box-shadow:0 0 30px rgba(255,102,0,0.6), 0 15px 40px rgba(0,0,0,0.4);
   border-color:#ff6600;
+  border-style:solid;
+  z-index:10;
+}
+
+.store-item-image img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+  transition:transform 0.4s ease;
+}
+
+.store-item-image:hover img{
   transform:scale(1.05);
 }
 
-.stock-item.selected{
-  background:rgba(255,102,0,0.2);
-  border-color:#ff6600;
-}
-
-.stock-symbol{
+.store-item-info h3{
   color:#ff7f2a;
+  font-size:24px;
+  margin-bottom:12px;
+}
+
+.store-item-info p{
+  color:#ccc;
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+.store-item-price{
+  color:#4ade80;
+  font-size:22px;
   font-weight:700;
-  font-size:1.1em;
-  margin-bottom:4px;
+  margin-bottom:15px;
 }
 
-.stock-name{
-  color:#aaa;
-  font-size:0.85em;
-}
-
-/* CHART CONTAINERS */
-.search-chart-container{
-  position:fixed;
-  top:120px;
-  right:20px;
-  width:600px;
-  height:500px;
-  background:rgba(20,20,20,0.98);
-  border:2px solid #ff6600;
-  border-radius:12px;
-  box-shadow:0 0 30px rgba(255,102,0,0.4);
-  z-index:50000;
-  display:none;
-  overflow:hidden;
-}
-
-.search-chart-container.active{
-  display:block;
-}
-
-.search-chart-header{
-  background:#1a1a1a;
-  padding:10px 15px;
-  border-bottom:2px solid #ff6600;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.search-chart-title{
-  color:#ff7f2a;
-  font-weight:700;
-  font-size:1.1em;
-}
-
-.search-chart-close{
+.store-item-btn{
+  padding:12px 30px;
   background:#ff6600;
   border:none;
+  border-radius:8px;
   color:#fff;
-  width:28px;
-  height:28px;
-  border-radius:50%;
+  font-weight:600;
+  font-size:16px;
   cursor:pointer;
-  font-size:18px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
   transition:.3s;
+  box-shadow:0 0 15px rgba(255,102,0,0.4);
 }
 
-.search-chart-close:hover{
+.store-item-btn:hover{
   background:#ff7f2a;
-  transform:scale(1.1);
+  box-shadow:0 0 20px rgba(255,102,0,0.7);
+  transform:scale(1.05);
 }
 
-.left-charts-container{
-  position:fixed;
-  top:120px;
-  left:20px;
-  width:550px;
-  display:flex;
-  flex-direction:column;
-  gap:20px;
-  z-index:50000;
+.store-item-btn:disabled{
+  background:#555;
+  cursor:not-allowed;
+  box-shadow:none;
 }
 
-.left-chart-box{
-  width:100%;
-  height:380px;
-  background:rgba(20,20,20,0.98);
-  border:2px solid #ff6600;
-  border-radius:12px;
-  box-shadow:0 0 30px rgba(255,102,0,0.4);
-  display:none;
-  overflow:hidden;
+.store-empty{
+  text-align:center;
+  padding:50px 20px;
+  color:#888;
 }
 
-.left-chart-box.active{
-  display:block;
-}
-
-.left-chart-header{
-  background:#1a1a1a;
-  padding:10px 15px;
-  border-bottom:2px solid #ff6600;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.left-chart-title{
+.store-empty h3{
+  font-size:28px;
+  margin-bottom:15px;
   color:#ff7f2a;
-  font-weight:700;
-  font-size:1.1em;
 }
 
-.left-chart-close{
-  background:#ff6600;
-  border:none;
-  color:#fff;
-  width:28px;
-  height:28px;
-  border-radius:50%;
-  cursor:pointer;
-  font-size:18px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transition:.3s;
+.store-empty p{
+  font-size:16px;
+  line-height:1.6;
 }
 
-.left-chart-close:hover{
-  background:#ff7f2a;
-  transform:scale(1.1);
+/* Store Mobile responsiveness */
+@media (max-width: 768px){
+  .store-modal{
+    width:95%;
+    max-height:90vh;
+  }
+  
+  .store-header h2{
+    font-size:32px;
+  }
+  
+  .store-tabs{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+  }
+  
+  .store-tab-btn{
+    width:100%;
+    max-width:300px;
+  }
+  
+  .store-item-grid{
+    grid-template-columns:1fr;
+  }
+  
+  .store-item-image{
+    height:250px;
+  }
 }
-
 </style>
 </head>
 <body>
-
-<div class="ticker-container">
-  <div class="ticker-wrapper">
-    <iframe src="https://s.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22S%26P%20500%22%2C%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%7D%2C%7B%22description%22%3A%22NASDAQ%22%2C%22proName%22%3A%22NASDAQ%3ANDX%22%7D%2C%7B%22description%22%3A%22DOW%22%2C%22proName%22%3A%22DJ%3ADJI%22%7D%2C%7B%22description%22%3A%22Tesla%22%2C%22proName%22%3A%22NASDAQ%3ATSLA%22%7D%2C%7B%22description%22%3A%22Apple%22%2C%22proName%22%3A%22NASDAQ%3AAAPL%22%7D%2C%7B%22description%22%3A%22Amazon%22%2C%22proName%22%3A%22NASDAQ%3AAMZN%22%7D%2C%7B%22description%22%3A%22NVIDIA%22%2C%22proName%22%3A%22NASDAQ%3ANVDA%22%7D%2C%7B%22description%22%3A%22Bitcoin%22%2C%22proName%22%3A%22COINBASE%3ABTCUSD%22%7D%2C%7B%22description%22%3A%22Ethereum%22%2C%22proName%22%3A%22COINBASE%3AETHUSD%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22colorTheme%22%3A%22dark%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A60%7D" frameborder="0"></iframe>
+  <div id="background"></div>
+  <div class="ticker-container">
+    <div class="ticker-wrapper">
+      <iframe src="https://www.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22NASDAQ%3ATSLA%22%2C%22title%22%3A%22Tesla%22%7D%2C%7B%22proName%22%3A%22NYSE%3AF%22%2C%22title%22%3A%22Ford%22%7D%2C%7B%22proName%22%3A%22NYSE%3AGM%22%2C%22title%22%3A%22GM%22%7D%2C%7B%22proName%22%3A%22NYSE%3ATM%22%2C%22title%22%3A%22Toyota%22%7D%2C%7B%22proName%22%3A%22NYSE%3ASTLA%22%2C%22title%22%3A%22Stellantis%22%7D%2C%7B%22proName%22%3A%22NYSE%3AHMC%22%2C%22title%22%3A%22Honda%22%7D%2C%7B%22proName%22%3A%22NYSE%3ARACE%22%2C%22title%22%3A%22Ferrari%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ARIVN%22%2C%22title%22%3A%22Rivian%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ALCID%22%2C%22title%22%3A%22Lucid%22%7D%2C%7B%22proName%22%3A%22NYSE%3ANIO%22%2C%22title%22%3A%22NIO%22%7D%2C%7B%22proName%22%3A%22NYSE%3AXPEV%22%2C%22title%22%3A%22XPeng%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ALI%22%2C%22title%22%3A%22Li%20Auto%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3AGT%22%2C%22title%22%3A%22Goodyear%22%7D%2C%7B%22proName%22%3A%22NYSE%3ABWA%22%2C%22title%22%3A%22BorgWarner%22%7D%2C%7B%22proName%22%3A%22NYSE%3AAPTV%22%2C%22title%22%3A%22Aptiv%22%7D%2C%7B%22proName%22%3A%22NYSE%3ALEA%22%2C%22title%22%3A%22Lear%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3AVC%22%2C%22title%22%3A%22Visteon%22%7D%2C%7B%22proName%22%3A%22NYSE%3AALV%22%2C%22title%22%3A%22Autoliv%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A60%2C%22utm_source%22%3A%22detailguy317.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22ticker-tape%22%7D" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+    </div>
+    <button class="ticker-btn" onclick="openDGStockModal()">📊 View Stocks</button>
   </div>
-  <button class="ticker-btn" onclick="toggleStockModal()">VIEW STOCKS</button>
+  <div class="auto-news-ticker" id="autoNewsTicker">
+    <div class="auto-ticker-inner" id="autoTickerInner">Loading automotive news...</div>
+  </div>
+  <div class="overlay">
+    <h1>DETAILGUY317 Garage</h1>
+    <p>Racing / Automotive News and Information</p>
+  </div>
+
+  <!-- Stock Chart Search Popup (Right Side) -->
+  <div id="stockChartPopup" class="stock-chart-popup">
+    <div class="popup-header">
+      <div class="popup-title">Stock Chart</div>
+      <button class="popup-close" onclick="closeStockChartPopup()">×</button>
+    </div>
+    <div class="popup-content">
+      <iframe id="stockChartIframe" src=""></iframe>
+    </div>
+  </div>
+
+  <!-- Left Side Popups for Chart/Site Buttons -->
+  <div id="leftPopup1" class="left-popup">
+    <div class="popup-header">
+      <div class="popup-title" id="leftPopup1Title">Content</div>
+      <button class="popup-close" onclick="closeLeftPopup(1)">×</button>
+    </div>
+    <div class="popup-content">
+      <iframe id="leftPopup1Iframe" src=""></iframe>
+    </div>
+  </div>
+
+  <div id="leftPopup2" class="left-popup">
+    <div class="popup-header">
+      <div class="popup-title" id="leftPopup2Title">Content</div>
+      <button class="popup-close" onclick="closeLeftPopup(2)">×</button>
+    </div>
+    <div class="popup-content">
+      <iframe id="leftPopup2Iframe" src=""></iframe>
+    </div>
+  </div>
+
+  <div id="leftPopup3" class="left-popup">
+    <div class="popup-header">
+      <div class="popup-title" id="leftPopup3Title">Content</div>
+      <button class="popup-close" onclick="closeLeftPopup(3)">×</button>
+    </div>
+    <div class="popup-content">
+      <iframe id="leftPopup3Iframe" src=""></iframe>
+    </div>
+  </div>
+
+  <div id="popupBackdrop" class="popup-backdrop" onclick="closeAllPopups()"></div>
+  <div class="icon-row">
+    <div class="icon" id="estore" onclick="openStoreModal()">E-Store</div>
+    <div class="icon" id="racing" onclick="toggleRacingModal()">Racing</div>
+    <div class="icon" id="auto" onclick="toggleAutoInfoModal()">Auto Info</div>
+    <div class="icon" id="extra">TBD</div>
+  </div>
+  <div class="vin-box">
+    <label>Enter VIN for Vehicle Info</label>
+    <button class="scan-vin-btn" onclick="triggerVINScan()">📷 Scan VIN with Camera</button>
+    <input type="file" accept="image/*" capture="environment" class="camera-input" id="cameraInput" onchange="processVINImage(event)">
+    <div class="scan-status" id="scanStatus"></div>
+    <input type="text" placeholder="Enter 17-digit VIN..." id="vinInput" maxlength="17" />
+    <button onclick="handleVIN()">Check Vehicle</button>
+    <div class="vin-response" id="vin-response"></div>
+  </div>
+  <div class="search-bar">
+    <label>Ask A Car Question or Enter Trouble Code </label>
+    <input type="text" placeholder="Type your car question or DTC..." id="queryInput" />
+    <button onclick="handleSearch()">Get Answer</button>
+    <div class="faq-response" id="faq-response"></div>
+    <footer>© 2025 M.O.D.S. L.L.C. D.B.A. detailguy317 | Made in U.S.A.  </footer>
+  </div>
+
+<!-- ========================= -->
+<!--  DETAILGUY317 STOCK SCANNER MODAL -->
+<!-- ========================= -->
+
+<style>
+/* Backdrop */
+#dgStockModal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100001;
+    animation: fadeInModal 0.4s ease forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeInModal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Modal window core */
+#dgStockModal .dgModalWindow {
+    background: #0f0f0f;
+    border-radius: 14px;
+    padding: 20px;
+    width: 85%;
+    max-width: 1200px;
+    height: 90%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: fadeInScale 0.4s ease forwards;
+    overflow: hidden;
+}
+
+/* Scale fade */
+@keyframes fadeInScale {
+    from { transform: scale(0.92); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* TOP HEADER */
+.dgHeader {
+    background: linear-gradient(90deg, #ff6600, #ffaa55, #ff6600);
+    padding: 12px;
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+/* CLOSE BUTTON (X) */
+.dgClose {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* POP OUT BUTTON */
+.dgPopOut {
+    position: absolute;
+    top: 10px; left: 20px;
+    background: #ff6600;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+
+.dgPopOut:hover { background: #ffaa44; }
+
+/* CENTER SEARCH UI */
+.dgCenterSearch {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dgCenterSearch input {
+    width: 260px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ff6600;
+    background: #1a1a1a;
+    color: white;
+    font-size: 16px;
+}
+
+.dgCenterSearch button {
+    padding: 10px 14px;
+    margin-left: 8px;
+    background: #ff6600;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dgCenterSearch button:hover {
+    background: #ffaa44;
+}
+
+/* TABLE GRID */
+.dgTableGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 14px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* TABLE STYLING */
+.dgTable {
+    background: #161616;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.dgTable h3 {
+    color: #ff6600;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.dgTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dgTable th {
+    background: #262626;
+    color: #ff6600;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.dgTable td {
+    padding: 6px;
+    border-bottom: 1px solid #333;
+    font-size: 13px;
+}
+
+.dgBtn {
+    background: #ff6600;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #000;
+}
+
+.dgBtn:hover { background: #ffaa44; }
+
+/* MOBILE FULLSCREEN */
+@media (max-width: 768px) {
+    #dgStockModal .dgModalWindow {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .dgTableGrid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<!-- ===== MODAL STRUCTURE ===== -->
+<div id="dgStockModal">
+    <div class="dgModalWindow" onclick="event.stopPropagation();">
+
+        <!-- Cool DETAILGUY317 Branding Section -->
+        <div style="text-align: center; margin: 12px 0 20px 0; padding: 10px 0; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, #ff6600, transparent); transform: translateY(-50%);"></div>
+            <div style="position: relative; display: inline-block; background: #0f0f0f; padding: 8px 50px;">
+                <div style="font-size: 2.4em; font-weight: 800; letter-spacing: 10px; background: linear-gradient(90deg, #ff3b00, #ff6600, #ff7f2a, #ffe6cc, #ff7f2a, #ff6600, #ff3b00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 3s ease-in-out infinite; background-size: 200% 100%;">
+                    DETAILGUY317
+                </div>
+                <div style="font-size: 0.9em; color: #ffe6cc; letter-spacing: 5px; margin-top: 3px; text-shadow: 0 0 10px rgba(255,102,0,0.6);">
+                    📊 GLOBAL AUTO STOCK SCANNER 📈
+                </div>
+            </div>
+        </div>
+
+        <div class="dgClose" onclick="toggleDGStockModal()">✖</div>
+
+        <button class="dgPopOut" onclick="popOutDGScanner()">POP OUT</button>
+
+        <!-- ===== SEARCH CENTER ===== -->
+        <div class="dgCenterSearch">
+            <input id="dgSearchInput" placeholder="Type any ticker…" onkeypress="if(event.key==='Enter') dgSearchTicker()">
+            <button onclick="dgSearchTicker()">GO ➜</button>
+        </div>
+
+        <!-- ===== TICKER TAPE ===== -->
+        <div style="width: 100%; height: 60px; margin: 15px 0; border-radius: 8px; overflow: hidden; border: 1px solid #ff6600;">
+            <iframe 
+                src="https://www.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22NASDAQ%3ATSLA%22%2C%22title%22%3A%22Tesla%22%7D%2C%7B%22proName%22%3A%22NYSE%3AF%22%2C%22title%22%3A%22Ford%22%7D%2C%7B%22proName%22%3A%22NYSE%3AGM%22%2C%22title%22%3A%22GM%22%7D%2C%7B%22proName%22%3A%22NYSE%3ATM%22%2C%22title%22%3A%22Toyota%22%7D%2C%7B%22proName%22%3A%22NYSE%3ASTLA%22%2C%22title%22%3A%22Stellantis%22%7D%2C%7B%22proName%22%3A%22NYSE%3AHMC%22%2C%22title%22%3A%22Honda%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ARIVN%22%2C%22title%22%3A%22Rivian%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ALCID%22%2C%22title%22%3A%22Lucid%22%7D%2C%7B%22proName%22%3A%22NYSE%3ANIO%22%2C%22title%22%3A%22NIO%22%7D%2C%7B%22proName%22%3A%22NYSE%3AXPEV%22%2C%22title%22%3A%22XPeng%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3ALI%22%2C%22title%22%3A%22Li%20Auto%22%7D%2C%7B%22proName%22%3A%22NYSE%3AALB%22%2C%22title%22%3A%22Albemarle%22%7D%2C%7B%22proName%22%3A%22NASDAQ%3AQS%22%2C%22title%22%3A%22QuantumScape%22%7D%2C%7B%22proName%22%3A%22NYSE%3AAPTV%22%2C%22title%22%3A%22Aptiv%22%7D%2C%7B%22proName%22%3A%22NYSE%3ALEA%22%2C%22title%22%3A%22Lear%22%7D%2C%7B%22proName%22%3A%22NYSE%3ABWA%22%2C%22title%22%3A%22BorgWarner%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A60%2C%22utm_source%22%3A%22detailguy317.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22ticker-tape%22%7D"
+                frameborder="0"
+                allowtransparency="true"
+                scrolling="no"
+                style="width: 100%; height: 60px; border: none;">
+            </iframe>
+        </div>
+
+        <!-- ===== TABLE GRID ===== -->
+        <div class="dgTableGrid" id="dgTableGrid">
+            <!-- Populated by JS from Google Sheet -->
+        </div>
+
+    </div>
 </div>
 
-<div class="auto-news-ticker">
-  <div class="auto-ticker-inner" id="autoTickerInner">
-    📰 Loading market news...
-  </div>
-</div>
+<script>
+// ======================
+// OPEN / CLOSE MODAL
+// ======================
+function openDGStockModal() {
+    document.getElementById("dgStockModal").style.display = "flex";
+    startPriceRefresh(); // Start auto-refreshing prices
+}
 
-<!-- Stock Modal Overlay -->
-<div class="stock-modal-overlay" id="stockModalOverlay" onclick="closeStockModal()"></div>
+function toggleDGStockModal() {
+    const mainModal = document.getElementById("dgStockModal");
+    if(mainModal.style.display === "flex"){
+        mainModal.style.display = "none";
+        stopPriceRefresh();
+    } else {
+        mainModal.style.display = "flex";
+        startPriceRefresh();
+    }
+    // NOTE: Charts stay open when modal closes/opens!
+}
 
-<!-- Stock Modal -->
-<div class="stock-modal" id="stockModal">
-  <div class="stock-modal-header">
-    <h2>📈 Stock Watchlist</h2>
-    <button class="stock-modal-close" onclick="closeStockModal()">×</button>
-  </div>
+function closeDGStockModal() {
+    toggleDGStockModal();
+}
+
+// Clicking outside does NOT close the modal anymore
+// This allows charts to stay active while browsing
+document.getElementById("dgStockModal").addEventListener("click", function(e) {
+    // Do nothing - removed the close on backdrop click
+});
+
+// POP OUT WINDOW
+function popOutDGScanner() {
+    window.open(window.location.href + "#stocks", "_blank");
+}
+
+// TICKER SEARCH -> OPEN IN RIGHT POPUP
+function dgSearchTicker() {
+    let ticker = document.getElementById("dgSearchInput").value.trim().toUpperCase();
+    if (!ticker) {
+        alert("Please enter a ticker symbol!");
+        return;
+    }
+    
+    console.log("Opening chart popup for:", ticker);
+    openStockChartPopup(ticker);
+}
+
+// NEW: Stock Chart Popup Management (Right Side)
+function openStockChartPopup(symbol) {
+  const popup = document.getElementById('stockChartPopup');
+  const iframe = document.getElementById('stockChartIframe');
+  const backdrop = document.getElementById('popupBackdrop');
   
-  <div class="stock-search-container">
-    <input type="text" class="stock-search-input" id="stockSearchInput" placeholder="Search stocks by symbol or name..." oninput="filterStocks()">
-  </div>
+  // TradingView chart URL
+  const chartUrl = `https://www.tradingview.com/widgetembed/?frameElementId=tradingview_widget&symbol=${symbol}&interval=D&symboledit=1&saveimage=0&toolbarbg=0a0a0a&studies=%5B%5D&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&hideideas=1&locale=en`;
   
-  <div class="stock-categories">
-    <div class="stock-category" onclick="showCategory('tech')">
-      <h3>💻 Tech Giants</h3>
-      <p style="font-size:0.85em;color:#aaa">FAANG+</p>
-    </div>
-    <div class="stock-category" onclick="showCategory('ev')">
-      <h3>🚗 EV & Auto</h3>
-      <p style="font-size:0.85em;color:#aaa">Electric Vehicles</p>
-    </div>
-    <div class="stock-category" onclick="showCategory('finance')">
-      <h3>💰 Finance</h3>
-      <p style="font-size:0.85em;color:#aaa">Banks & FinTech</p>
-    </div>
-    <div class="stock-category" onclick="showCategory('crypto')">
-      <h3>₿ Crypto</h3>
-      <p style="font-size:0.85em;color:#aaa">Digital Assets</p>
-    </div>
-    <div class="stock-category" onclick="showCategory('all')">
-      <h3>📊 All Stocks</h3>
-      <p style="font-size:0.85em;color:#aaa">Full List</p>
-    </div>
-  </div>
+  iframe.src = chartUrl;
+  popup.classList.add('active');
+  backdrop.classList.add('active');
+}
+
+function closeStockChartPopup() {
+  const popup = document.getElementById('stockChartPopup');
+  const backdrop = document.getElementById('popupBackdrop');
+  popup.classList.remove('active');
   
-  <div id="stockListContainer"></div>
-</div>
+  // Check if any other popups are open
+  const leftPopup1 = document.getElementById('leftPopup1');
+  const leftPopup2 = document.getElementById('leftPopup2');
+  if (!leftPopup1.classList.contains('active') && !leftPopup2.classList.contains('active')) {
+    backdrop.classList.remove('active');
+  }
+}
 
-<!-- Search Chart Container (from search bar) -->
-<div class="search-chart-container" id="searchChartContainer">
-  <div class="search-chart-header">
-    <span class="search-chart-title" id="searchChartTitle">Chart</span>
-    <button class="search-chart-close" onclick="closeSearchChart()">×</button>
-  </div>
-  <div id="searchChartWidget"></div>
-</div>
-
-<!-- Left Side Chart Boxes -->
-<div class="left-charts-container">
-  <div class="left-chart-box" id="leftChart1">
-    <div class="left-chart-header">
-      <span class="left-chart-title" id="leftChart1Title">Chart 1</span>
-      <button class="left-chart-close" onclick="closeLeftChart(1)">×</button>
-    </div>
-    <div id="leftChart1Widget"></div>
-  </div>
+// NEW: Left Popup Management for Chart/Site Buttons (3 SLOTS!)
+function openLeftPopup(url, title, type) {
+  // Find available popup slot (max 3)
+  let popupId, titleId, iframeId;
   
-  <div class="left-chart-box" id="leftChart2">
-    <div class="left-chart-header">
-      <span class="left-chart-title" id="leftChart2Title">Chart 2</span>
-      <button class="left-chart-close" onclick="closeLeftChart(2)">×</button>
+  const popup1 = document.getElementById('leftPopup1');
+  const popup2 = document.getElementById('leftPopup2');
+  const popup3 = document.getElementById('leftPopup3');
+  
+  // Check for first available slot
+  if (!popup1.classList.contains('active')) {
+    popupId = 'leftPopup1';
+    titleId = 'leftPopup1Title';
+    iframeId = 'leftPopup1Iframe';
+  } else if (!popup2.classList.contains('active')) {
+    popupId = 'leftPopup2';
+    titleId = 'leftPopup2Title';
+    iframeId = 'leftPopup2Iframe';
+  } else if (!popup3.classList.contains('active')) {
+    popupId = 'leftPopup3';
+    titleId = 'leftPopup3Title';
+    iframeId = 'leftPopup3Iframe';
+  } else {
+    // All 3 slots full - close the first one and cycle
+    closeLeftPopup(1);
+    popupId = 'leftPopup1';
+    titleId = 'leftPopup1Title';
+    iframeId = 'leftPopup1Iframe';
+  }
+  
+  const popup = document.getElementById(popupId);
+  const titleElement = document.getElementById(titleId);
+  const iframe = document.getElementById(iframeId);
+  const backdrop = document.getElementById('popupBackdrop');
+  
+  titleElement.textContent = title;
+  iframe.src = url;
+  popup.classList.add('active');
+  backdrop.classList.add('active');
+}
+
+function closeLeftPopup(popupNumber) {
+  const popup = document.getElementById(`leftPopup${popupNumber}`);
+  const backdrop = document.getElementById('popupBackdrop');
+  popup.classList.remove('active');
+  
+  // Check if any other popups are open
+  const stockPopup = document.getElementById('stockChartPopup');
+  const leftPopup1 = document.getElementById('leftPopup1');
+  const leftPopup2 = document.getElementById('leftPopup2');
+  const leftPopup3 = document.getElementById('leftPopup3');
+  
+  if (!stockPopup.classList.contains('active') && 
+      !leftPopup1.classList.contains('active') && 
+      !leftPopup2.classList.contains('active') && 
+      !leftPopup3.classList.contains('active')) {
+    backdrop.classList.remove('active');
+  }
+}
+
+function closeAllPopups() {
+  closeStockChartPopup();
+  closeLeftPopup(1);
+  closeLeftPopup(2);
+  closeLeftPopup(3);
+}
+
+// Stock button click handlers for table buttons
+function openStockChart(ticker, name) {
+  const chartUrl = `https://www.tradingview.com/widgetembed/?frameElementId=tradingview_widget&symbol=${ticker}&interval=D&symboledit=1&saveimage=0&toolbarbg=0a0a0a&studies=%5B%5D&theme=dark&style=1&timezone=Etc%2FUTC&withdateranges=1&hideideas=1&locale=en`;
+  openLeftPopup(chartUrl, `${name} Chart`, 'chart');
+}
+
+function openStockSite(site, name) {
+  openLeftPopup(site, `${name} Info`, 'site');
+}
+
+// ======================
+// GOOGLE SHEET LOADER
+// ======================
+const dgSheetID = "18APNvsu4z5Ot2i_fQQcdx45nQYIsGhLn7N8iSdJxCx8";
+const dgURL =
+  `https://docs.google.com/spreadsheets/d/${dgSheetID}/gviz/tq?tqx=out:json`;
+
+async function loadDGStocks() {
+    const res = await fetch(dgURL);
+    const txt = await res.text();
+    const json = JSON.parse(txt.substr(47).slice(0, -2));
+    const rows = json.table.rows;
+
+    // AUTOMATICALLY BUILD SECTOR BUCKETS
+    const buckets = {};
+
+    rows.forEach((r, index) => {
+        if (!r.c || !r.c[0]) return;
+
+        let cat = r.c[0]?.v || "Other";
+        let ticker = r.c[1]?.v || "";
+        let name = r.c[2]?.v || "";
+        let site = r.c[3]?.v || "";
+        
+        // Skip header row if it contains "Category" or "Ticker"
+        if (cat.toLowerCase() === 'category' || ticker.toLowerCase() === 'ticker') return;
+        
+        // Skip rows without a ticker symbol
+        if (!ticker) return;
+
+        if (!buckets[cat]) buckets[cat] = [];
+        buckets[cat].push({ ticker, name, site });
+    });
+
+    // RENDER INTO GRID
+    const grid = document.getElementById("dgTableGrid");
+    grid.innerHTML = "";
+
+    Object.keys(buckets).forEach(cat => {
+        let html = `
+        <div class="dgTable">
+            <h3>${cat}</h3>
+            <table>
+                <tr><th>Ticker</th><th>Name</th><th>Price</th><th>Links</th></tr>
+        `;
+
+        buckets[cat].forEach(s => {
+            html += `
+            <tr>
+                <td>${s.ticker}</td>
+                <td>${s.name}</td>
+                <td id="price-${s.ticker}" style="color:#4ade80; font-weight:600;">...</td>
+                <td>
+                    <button class="dgBtn" onclick="openStockChart('${s.ticker}', '${s.name}')">Chart</button>
+                    <button class="dgBtn" onclick="openStockSite('${s.site}', '${s.name}')">Site</button>
+                </td>
+            </tr>`;
+        });
+
+        html += "</table></div>";
+        grid.innerHTML += html;
+        
+        // Fetch prices for all stocks in this category
+        buckets[cat].forEach(s => {
+            fetchStockPrice(s.ticker);
+        });
+    });
+}
+
+// NEW: Fetch stock price from Yahoo Finance
+async function fetchStockPrice(ticker) {
+    const priceCell = document.getElementById(`price-${ticker}`);
+    
+    // Show loading state
+    priceCell.textContent = '...';
+    priceCell.style.color = '#888';
+    
+    try {
+        // Yahoo Finance API endpoint
+        const url = `https://query1.finance.yahoo.com/v8/finance/chart/${ticker}`;
+        const response = await fetch(url);
+        
+        if (!response.ok) throw new Error('API Error');
+        
+        const data = await response.json();
+        const result = data.chart.result[0];
+        
+        // Get current price
+        const price = result.meta.regularMarketPrice;
+        const previousClose = result.meta.chartPreviousClose;
+        const change = price - previousClose;
+        const changePercent = (change / previousClose) * 100;
+        
+        // Format price with 2 decimals
+        const formattedPrice = `$${price.toFixed(2)}`;
+        
+        // Color code based on change
+        if (change > 0) {
+            priceCell.style.color = '#4ade80'; // Green for up
+            priceCell.textContent = formattedPrice;
+            priceCell.title = `+${changePercent.toFixed(2)}% today`;
+        } else if (change < 0) {
+            priceCell.style.color = '#ef4444'; // Red for down
+            priceCell.textContent = formattedPrice;
+            priceCell.title = `${changePercent.toFixed(2)}% today`;
+        } else {
+            priceCell.style.color = '#fbbf24'; // Yellow for unchanged
+            priceCell.textContent = formattedPrice;
+            priceCell.title = 'Unchanged today';
+        }
+        
+    } catch (error) {
+        console.error(`Error fetching price for ${ticker}:`, error);
+        priceCell.textContent = '—';
+        priceCell.style.color = '#888';
+        priceCell.title = 'Price unavailable';
+    }
+}
+
+// NEW: Refresh all prices (call this every minute if you want)
+function refreshAllPrices() {
+    const priceCells = document.querySelectorAll('[id^="price-"]');
+    priceCells.forEach(cell => {
+        const ticker = cell.id.replace('price-', '');
+        if (ticker) {
+            fetchStockPrice(ticker);
+        }
+    });
+}
+
+// Optional: Auto-refresh prices every 60 seconds when modal is open
+let priceRefreshInterval = null;
+
+function startPriceRefresh() {
+    if (priceRefreshInterval) return; // Already running
+    priceRefreshInterval = setInterval(refreshAllPrices, 60000); // 60 seconds
+}
+
+function stopPriceRefresh() {
+    if (priceRefreshInterval) {
+        clearInterval(priceRefreshInterval);
+        priceRefreshInterval = null;
+    }
+}
+
+loadDGStocks();
+</script>
+
+
+<div class="stock-modal" id="racingModal" onclick="closeRacingOnBackground(event)">
+  <div class="modal-content" style="max-width: 1200px;" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closeRacingModal()">✖</span>
+    
+    <div style="margin: 8px 0;">
+      <!-- Top YouTube Player (centered, featured - wider) -->
+      <div style="text-align: center; margin-bottom: 10px;">
+        <div style="display: inline-block; padding: 5px; background: linear-gradient(145deg, #ff6600, #ff3b00); border-radius: 10px; box-shadow: 0 0 25px rgba(255,102,0,0.5);">
+          <iframe id="racingVideo1" width="720" height="320" 
+            src="about:blank"
+            data-src="https://www.youtube.com/embed/A2fznTE8pyY?si=2iUMfo04IWHFSkpt" 
+            title="Featured Race" 
+            frameborder="0" 
+            style="border-radius: 6px; display: block; background: #000;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <!-- Featured Race Button -->
+        <div style="margin-top: 8px;">
+          <button onclick="openLink('https://score-international.com/')" style="
+            background: linear-gradient(145deg, #8B4513, #D2691E);
+            border: 2px solid #ff6600;
+            border-radius: 10px;
+            padding: 8px 25px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95em;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.35s ease;
+            box-shadow: 0 0 15px rgba(139,69,19,0.6), inset 0 0 10px rgba(255,255,255,0.1);
+            text-transform: uppercase;
+            text-align: center;
+            display: inline-block;
+          " onmouseover="this.style.transform='translateY(-3px) scale(1.03)'; this.style.boxShadow='0 0 25px rgba(255,102,0,0.8), inset 0 0 10px rgba(255,255,255,0.2)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 0 15px rgba(139,69,19,0.6), inset 0 0 10px rgba(255,255,255,0.1)';">
+            THIS WEEK: 58TH BFGOODRICH SCORE-INTERNATIONAL BAJA 1000!!!
+          </button>
+          <button onclick="openLink('https://trackleaders.com/baja1k25f.php')" style="
+            background: linear-gradient(145deg, #8B4513, #D2691E);
+            border: 2px solid #ff6600;
+            border-radius: 10px;
+            padding: 8px 15px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.35s ease;
+            box-shadow: 0 0 15px rgba(139,69,19,0.6), inset 0 0 10px rgba(255,255,255,0.1);
+            text-transform: uppercase;
+            text-align: center;
+            display: inline-block;
+            margin-left: 10px;
+          " onmouseover="this.style.transform='translateY(-3px) scale(1.03)'; this.style.boxShadow='0 0 25px rgba(255,102,0,0.8), inset 0 0 10px rgba(255,255,255,0.2)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 0 15px rgba(139,69,19,0.6), inset 0 0 10px rgba(255,255,255,0.1)';">
+            📍 LIVE TRACKING
+          </button>
+        </div>
+        <!-- Pop Out Button - underneath Baja box, half the length -->
+        <div style="margin-top: 6px;">
+          <button onclick="popOutRacingWindow()" style="
+            background: linear-gradient(145deg, #8B4513, #D2691E);
+            border: 2px solid #ff6600;
+            border-radius: 10px;
+            padding: 8px 20px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.85em;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.35s ease;
+            box-shadow: 0 0 15px rgba(139,69,19,0.6), inset 0 0 10px rgba(255,255,255,0.1);
+            text-transform: uppercase;
+            text-align: center;
+            display: inline-block;
+          " onmouseover="this.style.transform='translateY(-3px) scale(1.03)'; this.style.boxShadow='0 0 25px rgba(255,102,0,0.8), inset 0 0 10px rgba(255,255,255,0.2)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 0 15px rgba(139,69,19,0.6), inset 0 0 10px rgba(255,255,255,0.1)';">
+            🖥️ POP OUT
+          </button>
+        </div>
+      </div>
+      
+      <!-- Bottom two YouTube Players (side by side, smaller) -->
+      <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+        <div style="padding: 5px; background: linear-gradient(145deg, #ff7f2a, #ff5500); border-radius: 8px; box-shadow: 0 0 15px rgba(255,102,0,0.4);">
+          <iframe id="racingVideo2" width="360" height="203" 
+            src="about:blank"
+            data-src="https://www.youtube.com/embed/mSgVbgnP220?si=ME6b0Fy6TakmUh97" 
+            title="Race Video 2" 
+            frameborder="0" 
+            style="border-radius: 5px; display: block; background: #000;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div style="padding: 5px; background: linear-gradient(145deg, #ff7f2a, #ff5500); border-radius: 8px; box-shadow: 0 0 15px rgba(255,102,0,0.4);">
+          <iframe id="racingVideo3" width="360" height="203" 
+            src="about:blank"
+            data-src="https://www.youtube.com/embed/c1WEYQMZjO8?si=0RlBe2vT6kGuVWsZ" 
+            title="Race Video 3" 
+            frameborder="0" 
+            style="border-radius: 5px; display: block; background: #000;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
     </div>
-    <div id="leftChart2Widget"></div>
+    
+    <!-- Cool DETAILGUY317 Branding Section -->
+    <div style="text-align: center; margin: 12px 0; padding: 10px 0; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, #ff6600, transparent); transform: translateY(-50%);"></div>
+      <div style="position: relative; display: inline-block; background: #1a1a1a; padding: 8px 50px;">
+        <div style="font-size: 2.4em; font-weight: 800; letter-spacing: 10px; background: linear-gradient(90deg, #ff3b00, #ff6600, #ff7f2a, #ffe6cc, #ff7f2a, #ff6600, #ff3b00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 3s ease-in-out infinite; background-size: 200% 100%;">
+          DETAILGUY317
+        </div>
+        <div style="font-size: 0.9em; color: #ffe6cc; letter-spacing: 5px; margin-top: 3px; text-shadow: 0 0 10px rgba(255,102,0,0.6);">
+          ⚡ SEE YA AT THE FINISH LINE ⚡
+        </div>
+      </div>
+    </div>
+    
+    <div style="margin: 20px 0;">
+      <h3>Racing Links</h3>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+        <button class="racing-link-btn" onclick="openLink('https://www.fordracing.com')">🏎️ Ford Racing</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.fiawec.com')">🌍 WEC</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.imsa.com')">🏆 IMSA</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.nhra.com')">🔥 NHRA</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.nascar.com')">🏁 NASCAR</button>
+        <button class="racing-link-btn" onclick="openLink('https://fordauthority.com')">📰 Ford Authority</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.scca.com')">🏎️ SCCA Racing</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.formula1.com')">🏎️ F1</button>
+        <button class="racing-link-btn" onclick="openLink('https://www.nitrorallycross.com')">💨 Nitro Rally</button>
+        <button class="racing-link-btn" onclick="toggleAutoInfoModal()">📈 Automotive Stocks</button>
+
+      </div>
+    </div>
   </div>
 </div>
 
-<div id="background"></div>
-
-<div class="overlay">
-  <h1>DETAILGUY317</h1>
-  <p>Your Premium Garage Experience</p>
+<div class="stock-modal" id="autoInfoModal" onclick="closeAutoInfoOnBackground(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closeAutoInfoModal()">✖</span>
+    <h2>🔧 Automotive Information</h2>
+    
+    <div style="margin: 20px 0;">
+      <h3>Favorite Auto News & Reviews</h3>
+      <button onclick="openLink('https://www.motortrend.com')">📰 MotorTrend</button>
+      <button onclick="openLink('https://www.caranddriver.com')">🚗 Car and Driver</button>
+      <button onclick="openLink('https://www.hagerty.com')">🏛️ Hagerty</button>
+      <button onclick="openLink('https://www.thedrive.com')">🛣️ The Drive</button>
+      <button onclick="openLink('https://www.roadandtrack.com')">🏎️ Road & Track</button>
+    </div>
+    
+    <div style="margin: 20px 0;">
+      <h3>Technical Resources</h3>
+      <button onclick="openLink('https://www.alldata.com')">🔧 ALLDATA</button>
+      <button onclick="openLink('https://www.identifix.com')">🛠️ Identifix</button>
+      <button onclick="openLink('https://www.rockauto.com')">🔩 RockAuto Parts</button>
+      <button onclick="openLink('https://www.summitracing.com')">⚙️ Summit Racing</button>
+    </div>
+    
+    <div style="margin: 20px 0;">
+      <h3>Ford Enthusiast Sites</h3>
+      <button onclick="openLink('https://www.fordperformance.com')">⚡ Ford Performance</button>
+      <button onclick="openLink('https://www.mustang6g.com')">🐎 Mustang6G Forum</button>
+      <button onclick="openLink('https://www.bronco6g.com')">🏔️ Bronco6G Forum</button>
+    </div>
+  </div>
 </div>
 
-<div class="icon-row">
-  <div class="icon" onclick="alert('Scheduling feature coming soon!')">SCHEDULE</div>
-  <div class="icon" onclick="alert('Contact feature coming soon!')">CONTACT</div>
-  <div class="icon" onclick="alert('Gallery feature coming soon!')">GALLERY</div>
+<!-- Camera Permission & Legal Disclaimer Modal -->
+<div class="stock-modal" id="cameraPermissionModal">
+  <div class="modal-content">
+    <h2>📷 Camera Access</h2>
+    <div style="color: #fff; text-align: left; line-height: 1.6;">
+      <p style="margin-bottom: 15px;"><strong style="color:#ff7f2a;">We need your permission to use your camera to scan your vehicle's VIN.</strong></p>
+      
+      <p style="margin-bottom: 15px;"><strong>What we do:</strong></p>
+      <ul style="margin-left: 20px; margin-bottom: 15px;">
+        <li>Process the image on YOUR device only</li>
+        <li>Extract text from the VIN plate</li>
+        <li>Auto-fill the VIN number for you</li>
+      </ul>
+      
+      <p style="margin-bottom: 15px;"><strong>What we DON'T do:</strong></p>
+      <ul style="margin-left: 20px; margin-bottom: 15px;">
+        <li>Store or save any photos</li>
+        <li>Upload images to our servers</li>
+        <li>Share your photos with anyone</li>
+        <li>Track or record camera usage</li>
+      </ul>
+      
+      <p style="margin-bottom: 15px; font-size: 0.9em; color: #aaa;"><strong>Privacy Notice:</strong> All image processing happens locally on your device. Photos are immediately discarded after text extraction. We do not collect, store, or transmit any camera data.</p>
+      
+      <p style="margin-bottom: 15px; font-size: 0.9em; color: #aaa;"><strong>Accuracy Notice:</strong> VIN scanning works best in good lighting. Always verify the VIN is correct before checking vehicle info. We are not responsible for any errors in VIN detection.</p>
+      
+      <div style="display:flex; gap:10px; margin-top:20px;">
+        <button onclick="acceptCameraPermission()" style="flex:1; background:#4ade80; color:#000;">Allow Camera Access</button>
+        <button onclick="denyCameraPermission()" style="flex:1; background:#ef4444;">Cancel</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="search-bar">
-  <label>FAQ & CODES</label>
-  <input id="queryInput" placeholder="Ask a question or enter code...">
-  <button onclick="handleSearch()">SEARCH</button>
-  <div id="faq-response" class="faq-response">Welcome! Enter a question or code above.</div>
-</div>
-
-<div class="vin-box">
-  <label>VIN DECODER</label>
-  <button class="scan-vin-btn" id="scanVINBtn" onclick="triggerVINScan()">📸 Scan VIN with Camera</button>
-  <div class="scan-status" id="scanStatus"></div>
-  <input type="file" accept="image/*" capture="environment" class="camera-input" id="cameraInput" onchange="processVINImage(event)">
-  <input id="vinInput" placeholder="Enter 17-digit VIN..." maxlength="17">
-  <button onclick="handleVIN()">DECODE VIN</button>
-  <div id="vin-response" class="vin-response">Enter a VIN above to decode vehicle information.</div>
-</div>
-
-<div class="camera-permission-modal" id="cameraPermissionModal">
-  <div class="permission-content">
-    <h3>📸 Camera Access</h3>
-    <p>This app needs camera access to scan your vehicle's VIN sticker. Your photos are processed locally and never stored or uploaded.</p>
-    <div class="permission-buttons">
-      <button class="permission-accept" onclick="acceptCameraPermission()">Allow Camera</button>
-      <button class="permission-deny" onclick="denyCameraPermission()">Cancel</button>
+<!-- Store Modal -->
+<div id="storeModal" class="store-modal-overlay">
+  <div class="store-modal">
+    <button class="store-close-btn" onclick="closeStoreModal()">✕</button>
+    
+    <div class="store-header">
+      <!-- Cool DETAILGUY317 Branding Section matching Racing Modal -->
+      <div style="text-align: center; margin: 12px 0; padding: 10px 0; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, #ff6600, transparent); transform: translateY(-50%);"></div>
+        <div style="position: relative; display: inline-block; background: #1a1a1a; padding: 8px 50px;">
+          <div style="font-size: 2.4em; font-weight: 800; letter-spacing: 10px; background: linear-gradient(90deg, #ff3b00, #ff6600, #ff7f2a, #ffe6cc, #ff7f2a, #ff6600, #ff3b00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 3s ease-in-out infinite; background-size: 200% 100%;">
+            DETAILGUY317
+          </div>
+          <div style="font-size: 0.9em; color: #ffe6cc; letter-spacing: 5px; margin-top: 3px; text-shadow: 0 0 10px rgba(255,102,0,0.6);">
+            ⚡ BOOKS, MERCH, AND MORE ⚡
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="store-tabs">
+      <button class="store-tab-btn active" onclick="switchStoreTab(event, 'merch')">
+        🎨 MERCH
+      </button>
+      <button class="store-tab-btn" onclick="switchStoreTab(event, 'books')">
+        📚 BOOKS
+      </button>
+    </div>
+    
+    <div class="store-content">
+      <!-- Books Section -->
+      <div id="booksSection" class="store-section">
+        <div class="store-item">
+          <div class="store-item-grid">
+            <div class="store-item-image">
+              <img src="" alt="Book Cover" onerror="this.parentElement.innerHTML='📖<br>Book Cover<br>Coming Soon!'" />
+            </div>
+            <div class="store-item-info">
+              <h3>My Automotive Journey</h3>
+              <p>Discover the secrets of professional detailing and automotive care in this comprehensive guide. Learn techniques used by the pros to keep your vehicle looking showroom-new.</p>
+              <button class="store-item-btn" disabled>Coming Soon to Amazon</button>
+              <p style="font-size:14px;color:#888;margin-top:10px;">
+                📝 Currently writing! Sign up for updates when the book launches on Amazon.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="store-empty">
+          <h3>📚 More Books Coming Soon!</h3>
+          <p>Stay tuned for upcoming releases covering detailing techniques, car maintenance, and automotive restoration.</p>
+        </div>
+      </div>
+      
+      <!-- Merch Section -->
+      <div id="merchSection" class="store-section active">
+        <div class="store-item">
+          <div class="store-item-grid">
+            <div class="store-item-image" onclick="window.open('https://www.etsy.com/listing/4407578015/clutch-af-dg317-official-hoody','_blank')">
+              <img src="https://i.etsystatic.com/63020783/r/il/f268e8/7460767323/il_600x600.7460767323_aaao.jpg" alt="Hoodie" onerror="this.parentElement.innerHTML='🧥<br>Product Image<br>Coming Soon!'" />
+            </div>
+            <div class="store-item-info">
+              <h3>Official DG317 Clutch Hoodie</h3>
+              <p>Relax in style with our comfy line of hoodies-currently at 1! Check out our stitch work on those cuffs tho!</p>
+              <button class="store-item-btn" onclick="window.open('https://www.etsy.com/listing/4407578015/clutch-af-dg317-official-hoody','_blank')">
+                View on Etsy
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="store-item">
+          <div class="store-item-grid">
+            <div class="store-item-image" onclick="window.open('https://www.etsy.com/listing/4410485513/dont-get-toque-mods','_blank')">
+              <img src="https://i.etsystatic.com/63020783/r/il/e74231/7430739512/il_794xN.7430739512_lshq.jpg" alt="Don't Get Toque Mods Beanie" onerror="this.parentElement.innerHTML='🧢<br>Product Image<br>Coming Soon!'" />
+            </div>
+            <div class="store-item-info">
+              <h3>M.O.D.S.-Don't Get Toque!</h3>
+              <p>Dont get toque(n) by another winter!! Get yours today before they're gone!!</p>
+              <button class="store-item-btn" onclick="window.open('https://www.etsy.com/listing/4410485513/dont-get-toque-mods','_blank')">
+                View on Etsy
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="store-item">
+          <div class="store-item-grid">
+            <div class="store-item-image" onclick="window.open('https://www.etsy.com/listing/4408959441/dg317shaker-glass','_blank')">
+              <img src="https://i.etsystatic.com/63020783/r/il/656f1d/7469277671/il_794xN.7469277671_e524.jpg" alt="DG317 Shaker Glass" onerror="this.parentElement.innerHTML='🥃<br>Product Image<br>Coming Soon!'" />
+            </div>
+            <div class="store-item-info">
+              <h3>DG317 coolguy glasses</h3>
+              <p>CHEERS! Relax and Refresh with DG317 stylish glasses y'all!! Pretty much guaranteed not to leak unless tipped over!!!</p>
+              <button class="store-item-btn" onclick="window.open('https://www.etsy.com/listing/4408959441/dg317shaker-glass','_blank')">
+                View on Etsy
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="store-empty">
+          <h3>🎨 More Merch Coming Soon!</h3>
+          <p>Check back regularly for new items including stickers, keychains, posters, and more!</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <script>
-// STOCK DATA
-const stockData = {
-  tech: [
-    {symbol: 'AAPL', name: 'Apple'},
-    {symbol: 'MSFT', name: 'Microsoft'},
-    {symbol: 'GOOGL', name: 'Google'},
-    {symbol: 'META', name: 'Meta'},
-    {symbol: 'AMZN', name: 'Amazon'},
-    {symbol: 'NVDA', name: 'NVIDIA'},
-    {symbol: 'NFLX', name: 'Netflix'},
-    {symbol: 'TSLA', name: 'Tesla'}
-  ],
-  ev: [
-    {symbol: 'TSLA', name: 'Tesla'},
-    {symbol: 'RIVN', name: 'Rivian'},
-    {symbol: 'LCID', name: 'Lucid'},
-    {symbol: 'F', name: 'Ford'},
-    {symbol: 'GM', name: 'General Motors'},
-    {symbol: 'NIO', name: 'NIO'}
-  ],
-  finance: [
-    {symbol: 'JPM', name: 'JPMorgan'},
-    {symbol: 'BAC', name: 'Bank of America'},
-    {symbol: 'WFC', name: 'Wells Fargo'},
-    {symbol: 'GS', name: 'Goldman Sachs'},
-    {symbol: 'MS', name: 'Morgan Stanley'},
-    {symbol: 'V', name: 'Visa'},
-    {symbol: 'MA', name: 'Mastercard'},
-    {symbol: 'PYPL', name: 'PayPal'}
-  ],
-  crypto: [
-    {symbol: 'BTCUSD', name: 'Bitcoin'},
-    {symbol: 'ETHUSD', name: 'Ethereum'},
-    {symbol: 'COINBASE:SOLUSD', name: 'Solana'},
-    {symbol: 'COINBASE:ADAUSD', name: 'Cardano'}
-  ]
-};
+function toggleStockModal(){
+  document.getElementById('stockModal').classList.toggle('show');
+}
 
-let allStocks = [];
-Object.values(stockData).forEach(category => {
-  category.forEach(stock => {
-    if(!allStocks.find(s => s.symbol === stock.symbol)){
-      allStocks.push(stock);
+// STORE MODAL FUNCTIONS
+function openStoreModal(){
+  document.getElementById('storeModal').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+
+function closeStoreModal(){
+  document.getElementById('storeModal').classList.remove('show');
+  document.body.style.overflow='auto';
+}
+
+function switchStoreTab(event, tabName){
+  // Remove active class from all tabs and sections
+  document.querySelectorAll('.store-tab-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  document.querySelectorAll('.store-section').forEach(section => {
+    section.classList.remove('active');
+  });
+  
+  // Add active class to selected tab and section
+  event.target.classList.add('active');
+  
+  if(tabName === 'books'){
+    document.getElementById('booksSection').classList.add('active');
+  } else if(tabName === 'merch'){
+    document.getElementById('merchSection').classList.add('active');
+  }
+}
+
+// Close modal when clicking outside
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('storeModal').addEventListener('click', function(e){
+    if(e.target === this){
+      closeStoreModal();
     }
   });
 });
 
-let selectedStocks = [];
-let leftChartSlots = [null, null];
-
-// STOCK MODAL FUNCTIONS
-function toggleStockModal(){
-  const overlay = document.getElementById('stockModalOverlay');
-  const modal = document.getElementById('stockModal');
+function toggleRacingModal(){
+  const modal = document.getElementById('racingModal');
+  const isOpening = !modal.classList.contains('show');
   
-  if(modal.classList.contains('active')){
-    closeStockModal();
-  } else {
-    overlay.classList.add('active');
-    modal.classList.add('active');
-    showCategory('all');
+  if(isOpening){
+    // Load video sources when opening modal
+    loadRacingVideos();
+  }
+  
+  modal.classList.toggle('show');
+}
+
+function loadRacingVideos(){
+  // Set video sources when modal opens to ensure all load together
+  const video1 = document.getElementById('racingVideo1');
+  const video2 = document.getElementById('racingVideo2');
+  const video3 = document.getElementById('racingVideo3');
+  
+  // Load from data-src attribute
+  if(video1 && video1.dataset.src && video1.src !== video1.dataset.src){
+    video1.src = video1.dataset.src;
+  }
+  if(video2 && video2.dataset.src && video2.src !== video2.dataset.src){
+    video2.src = video2.dataset.src;
+  }
+  if(video3 && video3.dataset.src && video3.src !== video3.dataset.src){
+    video3.src = video3.dataset.src;
   }
 }
 
-function closeStockModal(){
-  const overlay = document.getElementById('stockModalOverlay');
-  const modal = document.getElementById('stockModal');
-  overlay.classList.remove('active');
-  modal.classList.remove('active');
+function closeRacingModal(){
+  // Stop all YouTube videos by resetting their src
+  stopAllRacingVideos();
+  document.getElementById('racingModal').classList.remove('show');
 }
 
-function showCategory(category){
-  const container = document.getElementById('stockListContainer');
-  const stocks = category === 'all' ? allStocks : (stockData[category] || []);
-  
-  let html = '<div class="stock-list">';
-  stocks.forEach(stock => {
-    const isSelected = selectedStocks.includes(stock.symbol);
-    html += `
-      <div class="stock-item ${isSelected ? 'selected' : ''}" onclick="selectStock('${stock.symbol}', '${stock.name}')">
-        <div class="stock-symbol">${stock.symbol}</div>
-        <div class="stock-name">${stock.name}</div>
-      </div>
-    `;
-  });
-  html += '</div>';
-  
-  container.innerHTML = html;
+function closeRacingOnBackground(event){
+  // Only close if clicking on the background (not the modal content)
+  if(event.target === event.currentTarget){
+    closeRacingModal();
+  }
 }
 
-function filterStocks(){
-  const searchTerm = document.getElementById('stockSearchInput').value.toLowerCase();
-  const container = document.getElementById('stockListContainer');
+function stopAllRacingVideos(){
+  // Stop videos by temporarily removing and re-adding src
+  const video1 = document.getElementById('racingVideo1');
+  const video2 = document.getElementById('racingVideo2');
+  const video3 = document.getElementById('racingVideo3');
   
-  const filtered = allStocks.filter(stock => 
-    stock.symbol.toLowerCase().includes(searchTerm) || 
-    stock.name.toLowerCase().includes(searchTerm)
+  if(video1){
+    const src1 = video1.src;
+    video1.src = '';
+    video1.src = src1;
+  }
+  if(video2){
+    const src2 = video2.src;
+    video2.src = '';
+    video2.src = src2;
+  }
+  if(video3){
+    const src3 = video3.src;
+    video3.src = '';
+    video3.src = src3;
+  }
+}
+
+function popOutRacingWindow(){
+  // Get current video URLs from the main page
+  const video1 = document.getElementById('racingVideo1');
+  const video2 = document.getElementById('racingVideo2');
+  const video3 = document.getElementById('racingVideo3');
+  
+  const vid1Url = video1.dataset.src || video1.src;
+  const vid2Url = video2.dataset.src || video2.src;
+  const vid3Url = video3.dataset.src || video3.src;
+  
+  // Open racing page in a new draggable window with video URLs as parameters
+  const width = 950;
+  const height = 900;
+  const left = (screen.width - width) / 2;
+  const top = (screen.height - height) / 2;
+  
+  const popOutUrl = `racing.html?v1=${encodeURIComponent(vid1Url)}&v2=${encodeURIComponent(vid2Url)}&v3=${encodeURIComponent(vid3Url)}`;
+  
+  window.open(
+    popOutUrl,
+    'RacingHQ',
+    `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no`
   );
   
-  let html = '<div class="stock-list">';
-  filtered.forEach(stock => {
-    const isSelected = selectedStocks.includes(stock.symbol);
-    html += `
-      <div class="stock-item ${isSelected ? 'selected' : ''}" onclick="selectStock('${stock.symbol}', '${stock.name}')">
-        <div class="stock-symbol">${stock.symbol}</div>
-        <div class="stock-name">${stock.name}</div>
-      </div>
-    `;
-  });
-  html += '</div>';
-  
-  container.innerHTML = html;
+  // Close the overlay modal
+  closeRacingModal();
 }
 
-function selectStock(symbol, name){
-  // Find next available left chart slot
-  let slotIndex = leftChartSlots.indexOf(null);
-  
-  if(slotIndex === -1){
-    alert('Maximum 2 charts displayed. Close a chart to add another.');
-    return;
+function toggleAutoInfoModal(){
+  document.getElementById('autoInfoModal').classList.toggle('show');
+}
+
+function closeAutoInfoModal(){
+  document.getElementById('autoInfoModal').classList.remove('show');
+}
+
+function closeAutoInfoOnBackground(event){
+  if(event.target === event.currentTarget){
+    closeAutoInfoModal();
   }
-  
-  leftChartSlots[slotIndex] = symbol;
-  
-  // Show the chart
-  const chartBox = document.getElementById(`leftChart${slotIndex + 1}`);
-  const titleEl = document.getElementById(`leftChart${slotIndex + 1}Title`);
-  const widgetEl = document.getElementById(`leftChart${slotIndex + 1}Widget`);
-  
-  chartBox.classList.add('active');
-  titleEl.textContent = `${symbol} - ${name}`;
-  
-  // Create TradingView widget
-  loadTradingViewChart(widgetEl, symbol);
-  
-  // Add to selected stocks
-  if(!selectedStocks.includes(symbol)){
-    selectedStocks.push(symbol);
-  }
-  
-  // Update UI
-  showCategory('all');
 }
 
-function closeLeftChart(chartNum){
-  const chartBox = document.getElementById(`leftChart${chartNum}`);
-  const widgetEl = document.getElementById(`leftChart${chartNum}Widget`);
-  
-  chartBox.classList.remove('active');
-  widgetEl.innerHTML = '';
-  
-  const symbol = leftChartSlots[chartNum - 1];
-  leftChartSlots[chartNum - 1] = null;
-  
-  // Remove from selected stocks if not in other slot
-  if(!leftChartSlots.includes(symbol)){
-    const index = selectedStocks.indexOf(symbol);
-    if(index > -1){
-      selectedStocks.splice(index, 1);
-    }
-  }
-  
-  showCategory('all');
+function openLink(url){
+  window.open(url,'_blank');
 }
 
-function loadSearchChart(symbol, name){
-  const container = document.getElementById('searchChartContainer');
-  const title = document.getElementById('searchChartTitle');
-  const widget = document.getElementById('searchChartWidget');
-  
-  container.classList.add('active');
-  title.textContent = `${symbol} - ${name}`;
-  
-  loadTradingViewChart(widget, symbol);
-}
-
-function closeSearchChart(){
-  const container = document.getElementById('searchChartContainer');
-  const widget = document.getElementById('searchChartWidget');
-  
-  container.classList.remove('active');
-  widget.innerHTML = '';
-}
-
-function loadTradingViewChart(container, symbol){
-  container.innerHTML = '';
-  
-  // Determine the exchange prefix if needed
-  let chartSymbol = symbol;
-  if(symbol === 'BTCUSD' || symbol === 'ETHUSD'){
-    chartSymbol = 'COINBASE:' + symbol;
-  } else if(symbol.includes(':')){
-    chartSymbol = symbol;
-  } else {
-    chartSymbol = 'NASDAQ:' + symbol;
-  }
-  
-  const script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = 'https://s3.tradingview.com/tv.js';
-  script.async = true;
-  script.onload = function(){
-    new TradingView.widget({
-      "autosize": true,
-      "symbol": chartSymbol,
-      "interval": "D",
-      "timezone": "Etc/UTC",
-      "theme": "dark",
-      "style": "1",
-      "locale": "en",
-      "toolbar_bg": "#1a1a1a",
-      "enable_publishing": false,
-      "hide_side_toolbar": false,
-      "allow_symbol_change": true,
-      "details": true,
-      "hotlist": true,
-      "calendar": true,
-      "studies": [
-        "STD;SMA"
-      ],
-      "container_id": container.id || container.parentElement.id
-    });
-  };
-  document.head.appendChild(script);
-}
-
-// Allow clicking background to close modal but keep charts
-document.getElementById('background').addEventListener('click', function(){
-  closeStockModal();
+// Load news ticker on page load with same delay as TradingView widget
+window.addEventListener('load', function(){
+  setTimeout(loadAutoNews, 10000); // 10 second delay to match ticker fade-in
 });
 
-// FAQ SEARCH
+function loadAutoNews(){
+  // Curated Ford and Auto Industry news headlines
+  const fordNews = [
+    "🔵 FORD: New Mustang GTD Settting Production Car Lap Records",
+    "🔵 FORD: F-150 Lightning Performance is Electrifying",
+    "🔵 FORD: Bronco Raptor Named Best Off-Road SUV by Everybody"
+  ];
+  
+  const autoNews = [
+    "🚗 RACING: 58TH ANNUAL BF GOODRICH/SCORE-INTERNATIONAL BAJA 1000!!!",
+    "🚗 AUTO: NHTSA Announces New Safety Standards for Autonomous Vehicles Mandating Robotic Arm Gestures When Turning or Stopping Completly Ruining All Aerodynamic Gains by not Having Them",
+    "🚗 AUTO: Global Chip Shortage Easing, Production Ramping Up"
+  ];
+  
+  // Combine stories
+  const allNews = [...fordNews, ...autoNews];
+  const singlePass = allNews.join('  •  ') + '  •  ';
+  
+  // Duplicate the content multiple times for seamless infinite scroll
+  const newsText = singlePass + singlePass + singlePass + singlePass;
+  
+  document.getElementById('autoTickerInner').textContent = newsText;
+}
+
 function handleSearch(){
-  const query=document.getElementById('queryInput').value.trim().toUpperCase();
+  const query=document.getElementById('queryInput').value.trim();
   const response=document.getElementById('faq-response');
-  
   if(!query){
-    response.textContent="Please enter a question or stock symbol!";
+    response.textContent="Please enter a question or code!";
     return;
   }
-  
-  // Check if it's a stock symbol
-  const stock = allStocks.find(s => s.symbol.toUpperCase() === query);
-  
-  if(stock){
-    response.textContent=`Loading chart for ${stock.name} (${stock.symbol})...`;
-    loadSearchChart(stock.symbol, stock.name);
-  } else {
-    response.textContent="You asked: "+query+" (Demo response — AI integration coming soon)";
-  }
+  response.textContent="You asked: "+query+" (Demo response — AI integration coming soon)";
 }
-
-// Allow Enter key in search
-document.getElementById('queryInput').addEventListener('keypress', function(e){
-  if(e.key === 'Enter'){
-    handleSearch();
-  }
-});
 
 // VIN SCANNING FUNCTIONS
 function triggerVINScan(){
+  // Show permission modal first
   document.getElementById('cameraPermissionModal').classList.add('show');
 }
 
 function acceptCameraPermission(){
   document.getElementById('cameraPermissionModal').classList.remove('show');
+  // Trigger the hidden file input which opens camera
   document.getElementById('cameraInput').click();
 }
 
@@ -1108,6 +2282,7 @@ function processVINImage(event){
   scanStatus.textContent = '📸 Processing image...';
   scanStatus.style.color = '#4ade80';
   
+  // Use Tesseract.js to extract text from image
   Tesseract.recognize(
     file,
     'eng',
@@ -1119,6 +2294,7 @@ function processVINImage(event){
       }
     }
   ).then(({ data: { text } }) => {
+    // Extract potential VIN from text (17 alphanumeric characters)
     const vinMatch = text.match(/[A-HJ-NPR-Z0-9]{17}/);
     
     if(vinMatch){
@@ -1127,6 +2303,7 @@ function processVINImage(event){
       scanStatus.textContent = '✅ VIN detected: ' + detectedVIN;
       scanStatus.style.color = '#4ade80';
       
+      // Auto-hide status after 3 seconds
       setTimeout(() => {
         scanStatus.style.display = 'none';
       }, 3000);
@@ -1146,6 +2323,7 @@ function processVINImage(event){
     }, 5000);
   });
   
+  // Reset file input so same image can be scanned again if needed
   event.target.value = '';
 }
 
@@ -1329,27 +2507,6 @@ function goToCarfax(vin){
 
 function goToNHTSA(vin){
   window.open('https://www.nhtsa.gov/recalls?vin='+vin,'_blank');
-}
-
-// NEWS TICKER AUTO-LOAD
-fetch('https://api.rss2json.com/v1/api.json?rss_url=https://feeds.bloomberg.com/markets/news.rss')
-  .then(res => res.json())
-  .then(data => {
-    if(data.items && data.items.length > 0){
-      const newsItems = data.items.slice(0, 15).map(item => 
-        `📰 ${item.title}`
-      ).join('  •  ');
-      document.getElementById('autoTickerInner').textContent = newsItems + '  •  ' + newsItems;
-    }
-  })
-  .catch(() => {
-    document.getElementById('autoTickerInner').textContent = 
-      '📰 Market news temporarily unavailable  •  Stay tuned for updates';
-  });
-
-// CAMERA DETECTION
-if('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices){
-  document.getElementById('scanVINBtn').style.display = 'block';
 }
 </script>
 
