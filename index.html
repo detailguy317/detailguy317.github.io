@@ -2356,13 +2356,26 @@ function popOutRacingWindow(){
   const vid2Url = video2.dataset.src || video2.src;
   const vid3Url = video3.dataset.src || video3.src;
   
-  // Open racing page in a new draggable window with video URLs as parameters
+  // Get button info - find the main race button and extract its text and link
+  const mainBtnElement = document.querySelector('#racingModal .modal-content button[onclick*="daytonainternationalspeedway"], #racingModal .modal-content button[onclick*="score-international"]');
+  const btnText = mainBtnElement ? mainBtnElement.textContent.trim() : 'RACE INFO';
+  const btnOnclick = mainBtnElement ? mainBtnElement.getAttribute('onclick') : '';
+  const btnLinkMatch = btnOnclick.match(/openLink\('([^']+)'\)/);
+  const btnLink = btnLinkMatch ? btnLinkMatch[1] : '#';
+  
+  // Get tracking button link
+  const trackingBtnElement = document.querySelector('#racingModal .modal-content button[onclick*="imsa.com/scoring"], #racingModal .modal-content button[onclick*="trackleaders"]');
+  const trackingOnclick = trackingBtnElement ? trackingBtnElement.getAttribute('onclick') : '';
+  const trackingLinkMatch = trackingOnclick.match(/openLink\('([^']+)'\)/);
+  const trackingLink = trackingLinkMatch ? trackingLinkMatch[1] : '#';
+  
+  // Open racing page in a new draggable window with all info as parameters
   const width = 950;
   const height = 900;
   const left = (screen.width - width) / 2;
   const top = (screen.height - height) / 2;
   
-  const popOutUrl = `racing.html?v1=${encodeURIComponent(vid1Url)}&v2=${encodeURIComponent(vid2Url)}&v3=${encodeURIComponent(vid3Url)}`;
+  const popOutUrl = `racing.html?v1=${encodeURIComponent(vid1Url)}&v2=${encodeURIComponent(vid2Url)}&v3=${encodeURIComponent(vid3Url)}&btnText=${encodeURIComponent(btnText)}&btnLink=${encodeURIComponent(btnLink)}&trackingLink=${encodeURIComponent(trackingLink)}`;
   
   window.open(
     popOutUrl,
