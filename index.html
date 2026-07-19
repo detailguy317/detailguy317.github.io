@@ -181,20 +181,20 @@ body{
 }
 
 .search-bar{
-  position:fixed;right:40px;top:520px;
-  width:340px;
+  position:fixed;right:40px;bottom:40px;
+  width:320px;
   background:rgba(20,20,20,0.95);
-  color:#fff;border:2px solid #ff6600;
+  color:#fff;border:1px solid #ff6600;
   border-radius:14px;padding:14px 18px;
   box-shadow:0 0 25px rgba(255,102,0,0.3);
   z-index:4;
 }
 
 .vin-box{
-  position:fixed;right:40px;top:120px;
-  width:340px;
+  position:fixed;left:40px;bottom:40px;
+  width:360px;
   background:rgba(20,20,20,0.95);
-  color:#fff;border:2px solid #ff6600;
+  color:#fff;border:1px solid #ff6600;
   border-radius:14px;padding:14px 18px;
   box-shadow:0 0 25px rgba(255,102,0,0.3);
   z-index:4;
@@ -223,7 +223,6 @@ body{
   border:none;background:#ff6600;color:#fff;
   cursor:pointer;font-size:1.05em;font-weight:600;
   transition:.3s;
-  margin-bottom:6px;
 }
 .search-bar button:hover, .vin-box button:hover{
   background:#ff7f2a;
@@ -544,8 +543,8 @@ footer{
   
   .vin-box {
     position: relative;
-    right: auto;
-    top: auto;
+    left: auto;
+    bottom: auto;
     width: calc(100% - 20px);
     margin: 20px 10px;
     max-width: 100%;
@@ -554,7 +553,7 @@ footer{
   .search-bar {
     position: relative;
     right: auto;
-    top: auto;
+    bottom: auto;
     width: calc(100% - 20px);
     margin: 20px 10px 40px 10px;
     max-width: 100%;
@@ -1243,10 +1242,10 @@ footer{
 
   <div id="popupBackdrop" class="popup-backdrop" onclick="closeAllPopups()"></div>
   <div class="icon-row">
-    <div class="icon" id="estore" onclick="openStoreModal()">E-Store</div>
-    <div class="icon" id="racing" onclick="toggleRacingModal()">Racing</div>
-    <div class="icon" id="auto" onclick="toggleAutoInfoModal()">Auto Info</div>
-    <div class="icon" id="newsletter" onclick="openNewsletterSignup()">📧 Newsletter</div>
+    <div class="icon" id="estore" onclick="openStoreModal()">🛒Merch</div>
+    <div class="icon" id="racing" onclick="toggleRacingModal()">🏁Racing</div>
+    <div class="icon" id="auto" onclick="toggleAutoInfoModal()">🚗CarStuff</div>
+    <div class="icon" id="newsletter" onclick="openNewsletterSignup()">📧Market Mechanics Newsletter</div>
   </div>
   <div class="vin-box">
     <label>Enter VIN for Vehicle Info</label>
@@ -1255,7 +1254,6 @@ footer{
     <div class="scan-status" id="scanStatus"></div>
     <input type="text" placeholder="Enter 17-digit VIN..." id="vinInput" maxlength="17" />
     <button onclick="handleVIN()">Check Vehicle</button>
-    <button onclick="clearVINInput()" style="background:#666;margin-top:6px;font-size:0.9em;">Clear VIN</button>
     <div class="vin-response" id="vin-response"></div>
   </div>
   <div class="search-bar">
@@ -2552,7 +2550,6 @@ function handleVIN(){
 
 function displayResults(vin, vehicleInfo){
   const response=document.getElementById('vin-response');
-  const vinInput=document.getElementById('vinInput');
   const wmi=vin.substring(0,3);
   
   let recallUrl='';
@@ -2673,24 +2670,11 @@ function displayResults(vin, vehicleInfo){
       response.classList.remove('collapsed');
     }
   };
-  
-  // KEEP VIN IN INPUT FOR EASY RE-CHECKING
-  // Don't clear it, so they can check again quickly
-  // But auto-collapse the results
-  setTimeout(function(){
-    response.classList.add('collapsed');
-  }, 500);
 }
 
 function toggleVINResults(){
   const response = document.getElementById('vin-response');
   response.classList.add('collapsed');
-}
-
-function clearVINInput(){
-  document.getElementById('vinInput').value = '';
-  document.getElementById('vin-response').innerHTML = '';
-  document.getElementById('vinInput').focus();
 }
 
 function copyVIN(vin){
