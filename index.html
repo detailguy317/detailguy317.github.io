@@ -1245,7 +1245,7 @@ footer{
     <div class="icon" id="estore" onclick="openStoreModal()">E-Store</div>
     <div class="icon" id="racing" onclick="toggleRacingModal()">Racing</div>
     <div class="icon" id="auto" onclick="toggleAutoInfoModal()">Auto Info</div>
-    <div class="icon" id="extra">TBD</div>
+    <div class="icon" id="newsletter" onclick="openNewsletterSignup()">📧 Newsletter</div>
   </div>
   <div class="vin-box">
     <label>Enter VIN for Vehicle Info</label>
@@ -2721,6 +2721,14 @@ function restoreAllCharts() {
   document.getElementById('chartMinimizer').classList.remove('active');
   
   console.log('Charts restored from memory');
+}
+
+// ======================
+// NEWSLETTER SIGNUP
+// ======================
+function openNewsletterSignup(){
+  // Market Mechanics Newsletter signup page
+  window.open('https://themarketmechanics.beehiiv.com/', '_blank');
 }
 </script>
 
