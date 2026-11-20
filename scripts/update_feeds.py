@@ -104,7 +104,7 @@ def racing():
     open(os.path.join(ROOT, "data", "racing-auto.js"), "w", encoding="utf-8").write(js)
 
 # Past World Champions never change, so they live here (the free F1 API can't list all seasons at once).
-# Add one line each December when a new champion is crowned.
+# Nothing to do each year: f1() below looks up any finished season after the last one listed and adds it itself.
 CHAMPS = [(1950,"Giuseppe Farina","Alfa Romeo"),(1951,"Juan Manuel Fangio","Alfa Romeo"),(1952,"Alberto Ascari","Ferrari"),
  (1953,"Alberto Ascari","Ferrari"),(1954,"Juan Manuel Fangio","Mercedes"),(1955,"Juan Manuel Fangio","Mercedes"),
  (1956,"Juan Manuel Fangio","Ferrari"),(1957,"Juan Manuel Fangio","Maserati"),(1958,"Mike Hawthorn","Ferrari"),
@@ -140,6 +140,13 @@ def f1():
     except Exception as e:
         print(f"skip F1: {e}"); return
     champs = [{"y": y, "name": n, "team": t} for y, n, t in CHAMPS]
+    for y in range(CHAMPS[-1][0] + 1, now.year):          # finished seasons not in the list yet (e.g. 2026, starting Jan 2027)
+        try:
+            d = json.loads(get(base + f"{y}/driverStandings.json"))["MRData"]["StandingsTable"]["StandingsLists"][0]["DriverStandings"][0]
+            champs.append({"y": y, "name": d["Driver"]["givenName"] + " " + d["Driver"]["familyName"],
+                           "team": (d.get("Constructors") or [{}])[0].get("name", "")})
+        except Exception as e:
+            print(f"note: couldn't add {y} champion yet: {e}")
     out = {"updated": now.isoformat(), "f1": {"season": cur["season"], "round": cur["round"], "standings": rows, "champions": champs}}
     open(os.path.join(ROOT, "data", "series-auto.js"), "w", encoding="utf-8").write(
         "/* Written automatically by scripts/update_feeds.py - don't edit by hand. */\nwindow.DG_SERIES_AUTO = " + json.dumps(out, ensure_ascii=False) + ";\n")
