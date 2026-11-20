@@ -55,12 +55,12 @@ a{color:inherit}
 .ticker-btn:hover{background:#ff7f2a;box-shadow:0 0 20px rgba(255,102,0,0.7);transform:scale(1.05)}
 
 .auto-news-ticker{position:fixed;top:60px;left:0;right:0;width:100%;background:rgba(10,10,10,0.95);border-bottom:2px solid #ff6600;font-size:16px;font-weight:600;color:#ffe6cc;height:38px;display:flex;align-items:center;overflow:hidden;z-index:100009;opacity:0;animation:fadeInTicker 2s ease-in-out 10s forwards}
-.auto-ticker-inner{white-space:nowrap;will-change:transform;animation:autoNewsScroll 160s linear infinite;display:inline-block;padding-left:100%}
+.auto-ticker-inner{white-space:nowrap;will-change:transform;animation:autoNewsScroll 300s linear infinite;display:inline-block}
 .auto-news-ticker:hover .auto-ticker-inner{animation-play-state:paused}
 .auto-ticker-inner a{text-decoration:none}
 .auto-ticker-inner a:hover{color:#ff7f2a;text-decoration:underline}
 .auto-ticker-inner .src{color:#ff7f2a;font-size:.8em;font-weight:500}
-@keyframes autoNewsScroll{0%{transform:translateX(0)}100%{transform:translateX(-75%)}}
+@keyframes autoNewsScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 #background{position:fixed;inset:0;
   background:url("./webback.jpg") center/cover no-repeat,
@@ -1123,6 +1123,8 @@ const DG_CONFIG = {
   // FREE visitor stats: Cloudflare Web Analytics token (dash.cloudflare.com -> Analytics & Logs -> Web Analytics -> Add a site).
   // Paste just the token from the snippet it shows you. No cookies, no tracking banners needed.
   cfAnalyticsToken: "",
+  // News reader-board speed in pixels per second. Lower = slower (40 slow, 60 normal, 90 fast).
+  tickerSpeed: 60,
   newsletterUrl: "https://themarketmechanics.beehiiv.com/",
 
   // FREE MODE: true = no prices or memberships anywhere; the guides below are free downloads.
@@ -1311,7 +1313,11 @@ function loadAutoNews(){
   while(h<humor.length) parts.push(`<span>${esc(humor[h++])}</span>`);
   if(!parts.length) parts.push('<span>🚗 DG317: news loading - check back soon!</span>');
   const one=parts.join('  •  ')+'  •  ';
-  document.getElementById('autoTickerInner').innerHTML=one+one+one+one;
+  const box=document.getElementById('autoTickerInner');
+  box.innerHTML=one+one;   // two copies -> seamless loop
+  // steady reading speed no matter how many headlines the robot finds
+  const setSpeed=()=>{ const w=box.scrollWidth/2; if(w>0) box.style.animationDuration=(w/(DG_CONFIG.tickerSpeed||60))+'s'; };
+  requestAnimationFrame(setSpeed); setTimeout(setSpeed,3000);
 }
 loadAutoNews();
 
