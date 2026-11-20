@@ -1,6 +1,6 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-20T23:01:26.045896+00:00",
+ "updated": "2026-11-20T23:13:55.940626+00:00",
  "items": [
   {
    "tag": "RACING",
@@ -179,6 +179,13 @@ window.DG_NEWS = {
   },
   {
    "tag": "AUTO",
+   "title": "The Sanrivatti One Has A Judd V10 And The Most Unusual Driving Position",
+   "source": "Carscoops",
+   "url": "https://www.carscoops.com/2317867/sanrivatti-one-dutch-supercar/",
+   "date": "2026-11-20"
+  },
+  {
+   "tag": "AUTO",
    "title": "This Tiny EV Could Preview BYD's Answer To The Smart #2",
    "source": "Carscoops",
    "url": "https://www.carscoops.com/2319133/byd-microcar-patent-filing/",
@@ -203,13 +210,6 @@ window.DG_NEWS = {
    "title": "Why Philippine Authorities Still Can't Sell A Seized McLaren Senna And LaFerrari After Two Years",
    "source": "Carscoops",
    "url": "https://www.carscoops.com/2323132/seized-mclaren-senna-laferrari-unsold-phillipines/",
-   "date": "2026-11-20"
-  },
-  {
-   "tag": "AUTO",
-   "title": "VW Revives Golf GTI Rabbit Edition In The U.S.",
-   "source": "Carscoops",
-   "url": "https://www.carscoops.com/2322685/vw-golf-gti-rabbit-edition-us/",
    "date": "2026-11-20"
   }
  ]
