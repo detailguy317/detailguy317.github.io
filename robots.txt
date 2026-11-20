@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin.html
+Disallow: /scripts/
+Disallow: /worker/
+
+Sitemap: https://detailguy317.com/sitemap.xml

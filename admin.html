@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>DG317 Racing Picker</title>
+<script src="data/live-content.js"></script>
+<script src="data/racing-auto.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial;background:#0a0a0a;color:#f3f6fb;padding:16px}
+.wrap{max-width:1200px;margin:0 auto;background:#1a1a1a;border:2px solid #ff6600;border-radius:15px;padding:clamp(12px,3vw,26px);box-shadow:0 0 40px rgba(255,102,0,.35)}
+h1{color:#ff6a00;text-align:center;font-size:clamp(22px,4vw,34px);text-shadow:0 0 20px rgba(255,106,0,.8)}
+.sub{text-align:center;color:#ffe6cc;margin:4px 0 16px;font-size:14px}
+h2{color:#ff7f2a;font-size:18px;margin:22px 0 8px;border-bottom:1px solid #333;padding-bottom:4px}
+input,textarea,select{width:100%;padding:10px;border-radius:8px;background:#111;color:#fff;border:1px solid #555;font-size:15px;font-family:inherit}
+input:focus,textarea:focus{border-color:#ff6600;outline:none}
+textarea{min-height:120px;font-size:13px;line-height:1.5}
+button{padding:10px 16px;background:#ff6600;border:none;border-radius:8px;color:#000;font-weight:700;cursor:pointer;font-size:14px}
+button:hover{background:#ff7f2a}
+button.ghost{background:#222;color:#ffe6cc;border:1px solid #ff6600}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.row>*{flex:1 1 200px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.card{background:#111;border:1px solid #333;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.card:hover{border-color:#ff6600}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.card .b{padding:8px;font-size:13px;flex:1}
+.card .b b{display:block;color:#fff;margin-bottom:4px}
+.card .meta{color:#999;font-size:11px}
+.badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:800;margin-right:4px}
+.live{background:#e11;color:#fff}.up{background:#fbbf24;color:#000}.rec{background:#333;color:#ccc}
+.card .row{padding:0 8px 8px;gap:4px}.card .row button{flex:1;padding:6px 0;font-size:12px}
+.slots{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}
+.slot{background:#111;border:1px solid #ff6600;border-radius:10px;padding:8px}
+.slot .v{aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden;margin-bottom:6px;display:flex;align-items:center;justify-content:center;color:#666;font-size:12px}
+.slot iframe{width:100%;height:100%;border:0}
+.slot small{color:#ff7f2a;font-weight:700}
+.note{color:#999;font-size:12.5px;line-height:1.5;margin:6px 0}
+.ok{color:#4ade80}.err{color:#fca5a5}
+pre{background:#000;border:1px solid #333;border-radius:8px;padding:10px;max-height:320px;overflow:auto;font-size:12px;white-space:pre-wrap}
+@media(max-width:760px){.slots{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🏁 DG317 Racing Picker</h1>
+  <div class="sub">Find this weekend's racing on YouTube, pick 3 videos, copy one file to GitHub. No code edits.</div>
+
+  <h2>1 · YouTube key (one time)</h2>
+  <div class="row">
+    <input id="key" type="password" placeholder="Paste your free YouTube Data API key">
+    <button class="ghost" onclick="saveKey()">Save on this computer</button>
+  </div>
+  <div class="note">Free key: console.cloud.google.com → new project → enable "YouTube Data API v3" → Credentials → API key. It's saved only in this browser, never in your website files. A full search uses about 3,000 of your 10,000 free daily units.</div>
+
+  <h2>2 · Find racing</h2>
+  <div class="row">
+    <button onclick="robotFinds()">🤖 Show what the robot found (free - no key needed)</button>
+    <button class="ghost" onclick="findWeekend()">🔎 Search my channels now</button>
+    <input id="q" placeholder="…or search anything: NHRA Pomona finals, Baja 1000 highlights" onkeydown="if(event.key==='Enter')search()">
+    <button class="ghost" onclick="search()">Search</button>
+  </div>
+  <div class="note">Channels searched (edit in step 4): <span id="chList"></span></div>
+  <div id="status" class="note"></div>
+  <div class="grid" id="results"></div>
+
+  <h2>3 · Your 3 racing boxes</h2>
+  <div class="slots" id="slots"></div>
+  <div class="row" style="margin-top:8px">
+    <label class="note" style="flex:0 0 auto"><input type="checkbox" id="manual" style="width:auto"> Use MY picks (unchecked = let the weekly robot pick)</label>
+  </div>
+
+  <h2>4 · Buttons, weekend list, live channels, jokes</h2>
+  <div class="row"><input id="b1l" placeholder="Big button text"><input id="b1u" placeholder="Big button link"></div>
+  <div class="row" style="margin-top:6px"><input id="b2l" placeholder="Live scoring button text"><input id="b2u" placeholder="Live scoring / tracking link"></div>
+  <div class="note">This weekend - one race per line:  Day | Series | Event | Time ET | Where to watch | Link</div>
+  <textarea id="weekend"></textarea>
+  <div class="note">Live-now channel buttons - YouTube @handles, one per line</div>
+  <textarea id="channels" style="min-height:80px"></textarea>
+  <div class="note">Reader-board jokes - one per line</div>
+  <textarea id="humor"></textarea>
+  <div class="note">📺 Kids Garage TV - YouTube links, one per line (optional: link | title). Pick gentle, kid-safe videos.</div>
+  <textarea id="kids" style="min-height:80px"></textarea>
+  <div class="note">🎁 Giveaways - one per line:  Name | Prize | Ends | Link to rules/entry</div>
+  <textarea id="giveaways" style="min-height:70px"></textarea>
+
+  <h2>5 · Publish</h2>
+  <div class="row">
+    <button onclick="copyOut()">📋 Copy live-content.js</button>
+    <button class="ghost" onclick="downloadOut()">⬇ Download live-content.js</button>
+  </div>
+  <div class="note">On GitHub: open <b>data/live-content.js</b> → pencil ✏️ → select all → paste → <b>Commit changes</b>. The site updates in about a minute.</div>
+  <div id="pubMsg" class="note"></div>
+  <pre id="out"></pre>
+</div>
+
+<script>
+{
+const L = window.DG_LIVE || {slots:[],buttons:[],weekend:[],channels:[],humor:[]};
+const API='https://www.googleapis.com/youtube/v3/';
+let slots=[0,1,2].map(i=>Object.assign({type:'',id:'',title:''},(L.slots||[])[i]||{}));
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+try{ $('key').value=localStorage.getItem('dg_yt_key')||''; }catch(e){}
+window.saveKey=()=>{ try{localStorage.setItem('dg_yt_key',$('key').value.trim()); $('status').innerHTML='<span class="ok">Key saved in this browser.</span>';}catch(e){} };
+
+// prefill
+const btn=(L.buttons||[]); $('b1l').value=(btn[0]||{}).label||''; $('b1u').value=(btn[0]||{}).url||''; $('b2l').value=(btn[1]||{}).label||''; $('b2u').value=(btn[1]||{}).url||'';
+$('weekend').value=(L.weekend||[]).map(w=>[w.day,w.series,w.event,w.time,w.watch,w.url].join(' | ')).join('\n');
+$('channels').value=(L.channels||[]).join('\n');
+$('humor').value=(L.humor||[]).join('\n');
+$('kids').value=(L.kids||[]).map(k=>'https://youtu.be/'+k.id+(k.title?' | '+k.title:'')).join('\n');
+$('giveaways').value=(L.giveaways||[]).map(g=>[g.name,g.prize,g.ends,g.url].join(' | ')).join('\n');
+$('manual').checked=L.mode==='manual';
+const chans=()=>$('channels').value.split('\n').map(s=>s.trim()).filter(Boolean);
+$('chList').textContent=chans().join(', ');
+$('channels').oninput=()=>{$('chList').textContent=chans().join(', ');render();};
+
+async function yt(path,params){
+  const key=$('key').value.trim(); if(!key) throw new Error('Paste your YouTube API key in step 1 first.');
+  const u=API+path+'?'+new URLSearchParams(Object.assign({key},params));
+  const r=await fetch(u); const j=await r.json();
+  if(j.error) throw new Error(j.error.message); return j;
+}
+const idCache={};
+async function channelId(handle){
+  if(idCache[handle]) return idCache[handle];
+  const j=await yt('channels',{part:'id',forHandle:handle}); const id=(j.items||[])[0]?.id;
+  if(id) idCache[handle]=id; return id;
+}
+let found=[];
+function addItems(items,kind){
+  (items||[]).forEach(it=>{
+    const vid=it.id?.videoId; if(!vid||found.some(f=>f.id===vid)) return;
+    const s=it.snippet||{};
+    found.push({id:vid,title:s.title,channel:s.channelTitle,channelId:s.channelId,date:s.publishedAt,thumb:(s.thumbnails?.medium||s.thumbnails?.default||{}).url,kind:s.liveBroadcastContent==='live'?'live':(s.liveBroadcastContent==='upcoming'?'up':kind)});
+  });
+}
+window.findWeekend=async()=>{
+  found=[]; $('results').innerHTML=''; const week=new Date(Date.now()-7*864e5).toISOString();
+  const list=chans(); let n=0;
+  for(const h of list){
+    $('status').textContent=`Searching ${h} (${++n}/${list.length})...`;
+    try{
+      const cid=await channelId(h); if(!cid) continue;
+      for(const ev of ['live','upcoming']){ const j=await yt('search',{part:'snippet',channelId:cid,eventType:ev,type:'video',maxResults:3}); addItems(j.items,ev==='live'?'live':'up'); }
+      const j=await yt('search',{part:'snippet',channelId:cid,type:'video',order:'date',publishedAfter:week,maxResults:4}); addItems(j.items,'rec');
+    }catch(e){ $('status').innerHTML='<span class="err">'+esc(e.message)+'</span>'; return; }
+  }
+  $('status').innerHTML=`<span class="ok">Found ${found.length} videos.</span> Live first, then upcoming, then newest.`; render();
+};
+window.robotFinds=()=>{
+  const A=window.DG_RACING_AUTO||{}; found=[];
+  (A.found||[]).forEach(f=>found.push({id:f.id,title:(f.trusted?'':'⚠️ not on your channel list - ')+f.title,channel:f.channel,date:f.date,thumb:f.thumb||('https://i.ytimg.com/vi/'+f.id+'/mqdefault.jpg'),kind:f.kind==='live'?'live':f.kind==='upcoming'?'up':'rec'}));
+  $('status').innerHTML=A.updated?`<span class="ok">Robot checked ${new Date(A.updated).toLocaleString()} - ${found.length} videos (${(A.live||[]).length} live now).</span> It runs every 30 minutes on GitHub.`:'<span class="err">The robot hasn\'t run yet - it starts once the site is on GitHub with the YOUTUBE_API_KEY secret.</span>';
+  render();
+};
+window.search=async()=>{
+  const q=$('q').value.trim(); if(!q) return; found=[];
+  try{ const j=await yt('search',{part:'snippet',q,type:'video',order:'relevance',maxResults:18,publishedAfter:new Date(Date.now()-21*864e5).toISOString()}); addItems(j.items,'rec');
+       $('status').innerHTML=`<span class="ok">${found.length} results for "${esc(q)}"</span>`; render(); }
+  catch(e){ $('status').innerHTML='<span class="err">'+esc(e.message)+'</span>'; }
+};
+function render(){
+  const rank={live:0,up:1,rec:2}; found.sort((a,b)=>rank[a.kind]-rank[b.kind]||(b.date||'').localeCompare(a.date||''));
+  $('results').innerHTML=found.map((f,i)=>`<div class="card"><img src="${esc(f.thumb)}" alt="" loading="lazy"><div class="b"><span class="badge ${f.kind}">${f.kind==='live'?'LIVE NOW':f.kind==='up'?'UPCOMING':'RECENT'}</span><b>${esc(f.title)}</b><div class="meta">${esc(f.channel)} · ${new Date(f.date).toLocaleString()}</div></div>
+   <div class="row"><button onclick="pick(${i},0)">→ Big</button><button onclick="pick(${i},1)">→ Box 2</button><button onclick="pick(${i},2)">→ Box 3</button></div></div>`).join('');
+  $('slots').innerHTML=slots.map((s,i)=>`<div class="slot"><div class="v">${s.id?`<iframe src="${s.type==='live'?'https://www.youtube.com/embed/live_stream?channel='+esc(s.id):'https://www.youtube.com/embed/'+esc(s.id)}" allowfullscreen></iframe>`:'empty'}</div><small>${i===0?'BIG PLAYER':'BOX '+(i+1)}</small><div style="font-size:12px">${esc(s.title||'-')}</div>
+   <div class="row" style="margin-top:4px"><input placeholder="or paste a YouTube link" onchange="pasteLink(${i},this.value)"><button class="ghost" onclick="clearSlot(${i})">Clear</button></div></div>`).join('');
+  build();
+}
+window.pick=(i,slot)=>{ const f=found[i]; slots[slot]={type:'video',id:f.id,title:f.title}; $('manual').checked=true; render(); };
+window.clearSlot=i=>{ slots[i]={type:'',id:'',title:''}; render(); };
+window.pasteLink=(i,v)=>{ const m=v.match(/(?:v=|youtu\.be\/|embed\/|live\/|shorts\/)([\w-]{11})/); if(m){ slots[i]={type:'video',id:m[1],title:'Picked video'}; $('manual').checked=true; render(); } };
+function build(){
+  const weekend=$('weekend').value.split('\n').map(l=>l.split('|').map(s=>s.trim())).filter(a=>a[1]).map(a=>({day:a[0]||'',series:a[1]||'',event:a[2]||'',time:a[3]||'',watch:a[4]||'',url:a[5]||''}));
+  const obj={updated:new Date().toISOString().slice(0,10),mode:$('manual').checked?'manual':'auto',slots,
+    buttons:[{label:$('b1l').value,url:$('b1u').value,style:'main'},{label:$('b2l').value,url:$('b2u').value,style:'tracking'}].filter(b=>b.label),
+    weekend,channels:chans(),humor:$('humor').value.split('\n').map(s=>s.trim()).filter(Boolean),
+    kids:$('kids').value.split('\n').map(l=>{const [u,t]=l.split('|').map(x=>x.trim()); const m=(u||'').match(/(?:v=|youtu\.be\/|embed\/|live\/|shorts\/)([\w-]{11})/); return m?{id:m[1],title:t||''}:null;}).filter(Boolean),
+    giveaways:$('giveaways').value.split('\n').map(l=>l.split('|').map(x=>x.trim())).filter(a=>a[0]).map(a=>({name:a[0],prize:a[1]||'',ends:a[2]||'',url:a[3]||''}))};
+  $('out').textContent='/* DG317 LIVE CONTENT - made with admin.html on '+new Date().toLocaleString()+' */\nwindow.DG_LIVE = '+JSON.stringify(obj,null,2)+';\n';
+}
+['b1l','b1u','b2l','b2u','weekend','humor','manual','kids','giveaways'].forEach(id=>$(id).addEventListener('input',build));
+$('manual').addEventListener('change',build);
+window.copyOut=()=>{ build(); navigator.clipboard.writeText($('out').textContent).then(()=>$('pubMsg').innerHTML='<span class="ok">Copied! Now paste it into data/live-content.js on GitHub.</span>',()=>$('pubMsg').innerHTML='<span class="err">Copy blocked - select the text below and copy it by hand.</span>'); };
+window.downloadOut=()=>{ build(); const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([$('out').textContent],{type:'text/javascript'})); a.download='live-content.js'; a.click(); };
+render();
+}
+</script>
+</body>
+</html>
