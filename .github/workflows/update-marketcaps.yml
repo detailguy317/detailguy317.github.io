@@ -1,0 +1,25 @@
+# DG317 market-cap robot: re-ranks all auto stocks about every 10 minutes while US markets are open.
+# GitHub sometimes runs scheduled jobs late on busy days - normal, the page just shows the last update time.
+name: update-marketcaps
+on:
+  schedule:
+    - cron: "*/10 13-21 * * 1-5"   # Mon-Fri 13:00-21:59 UTC = 6am-2:59pm Mountain in winter (market 9:30-4 Eastern + a final close update)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency: { group: marketcaps, cancel-in-progress: true }
+jobs:
+  caps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python scripts/update_marketcaps.py
+      - name: Commit if changed
+        run: |
+          git config user.name "dg317-robot"
+          git config user.email "dg317-robot@users.noreply.github.com"
+          git add data/marketcaps.js
+          git diff --cached --quiet || git commit -m "robot: market caps"
+          git pull --rebase -q && git push
