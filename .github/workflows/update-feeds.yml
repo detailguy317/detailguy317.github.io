@@ -1,0 +1,31 @@
+# DG317 robot: headlines + F1 + This Day in History every 2 hours. (Race videos: update-videos.yml)
+# Setup: Settings -> Actions -> General -> Workflow permissions -> "Read and write".
+#   name: YOUTUBE_API_KEY   value: your free YouTube Data API key
+# Also: Settings -> Actions -> General -> Workflow permissions -> "Read and write".
+# Times are UTC. Mountain = UTC-7 in winter, UTC-6 in summer.
+name: update-feeds
+on:
+  schedule:
+    - cron: "7 */2 * * *"                # every 2 hours: headlines + F1 standings
+  workflow_dispatch: {}                  # "Run workflow" button = refresh everything now
+permissions:
+  contents: write
+concurrency: { group: dg317-data, cancel-in-progress: false }
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Headlines + F1
+        run: python scripts/update_feeds.py
+      - name: This Day in Automotive History
+        run: python scripts/update_history.py || true
+      - name: Commit if anything changed
+        run: |
+          git config user.name "dg317-robot"
+          git config user.email "dg317-robot@users.noreply.github.com"
+          git add data/news.js data/series-auto.js data/onthisday.js
+          git diff --cached --quiet || git commit -m "robot: refresh news"
+          git pull --rebase -q && git push
