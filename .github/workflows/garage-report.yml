@@ -1,0 +1,28 @@
+# DG317 Garage Report - your to-do list as a GitHub Issue (GitHub emails it to you).
+# Make sure you get the email: on the repo page click "Watch" -> "All Activity".
+# Times are UTC (Mountain = UTC-7 in winter).
+name: garage-report
+on:
+  schedule:
+    - cron: "3 15 * * 0"   # Sunday ~8am Mountain: full weekly report
+    - cron: "3 1 * * *"    # every evening ~6pm Mountain: only posts if a robot looks broken
+  workflow_dispatch: {}     # "Run workflow" = full report right now
+permissions:
+  contents: read
+  issues: write
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Check for dead links (Sunday report only)
+        if: github.event.schedule != '3 1 * * *'
+        run: python scripts/check_links.py || true
+      - name: Build + post the report
+        run: |
+          if [ "${{ github.event.schedule }}" = "3 1 * * *" ]; then python scripts/garage_report.py --daily
+          else python scripts/garage_report.py; fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
