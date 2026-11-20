@@ -1,6 +1,6 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-20T23:13:55.940626+00:00",
+ "updated": "2026-11-20T23:20:21.225834+00:00",
  "items": [
   {
    "tag": "RACING",
