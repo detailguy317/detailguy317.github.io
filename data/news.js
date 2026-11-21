@@ -1,6 +1,6 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-21T16:05:39.988043+00:00",
+ "updated": "2026-11-21T21:37:05.214270+00:00",
  "items": [
   {
    "tag": "RACING",
@@ -11,16 +11,9 @@ window.DG_NEWS = {
   },
   {
    "tag": "RACING",
-   "title": "Dustin Williams takes top award as automotive creator community is celebrated at RACER Creator Awards",
+   "title": "All options open for Penske as it works to secure its sports car racing future",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/21/dustin-williams-takes-top-award-as-automotive-creator-community-is-celebrated-at-racer-creator-awards",
-   "date": "2026-11-21"
-  },
-  {
-   "tag": "RACING",
-   "title": "Antonelli struts his stuff again, but Verstappen takes Las Vegas GP pole via penalty",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/21/antonelli-struts-his-stuff-again-but-verstappen-takes-las-vegas-gp-pole-via-penalty",
+   "url": "https://racer.com/2026/11/21/penske-working-to-maintain-a-long-term-presence-in-imsa",
    "date": "2026-11-21"
   },
   {
@@ -32,44 +25,51 @@ window.DG_NEWS = {
   },
   {
    "tag": "RACING",
-   "title": "Holtger, Krajicek, Minder post top qualifying times for CORR Firebird Desert Open",
+   "title": "RLL’s Indy 500 downsizing for 2027 comes with a twist",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/21/holtger-krajicek-minder-post-top-qualifying-times-for-corr-firebird-desert-open",
+   "url": "https://racer.com/2026/11/21/rll-s-indy-500-downsizing-for-2027-comes-with-a-twist",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "Isack Hadjar: “We looked stupid” in Las Vegas as I don’t like slipstreaming",
-   "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/isack-hadjar-we-looked-stupid-in-las-vegas-as-i-dont-like-slipstreaming/10876445/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "title": "After a breakthrough season, Ty Gibbs feels poised to take another step forward",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/21/after-a-breakthrough-season-ty-gibbs-feels-poised-to-take-another-step-forward",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "Marco Bezzecchi hails end to sprint \"torture\" as he completes part one of \"miracle\" needed for MotoGP title",
+   "title": "MotoGP Portuguese GP: Full starting grid",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/marco-bezzecchi-hails-end-to-sprint-torture-as-he-completes-part-one-of-miracle-needed-for-motogp-t/10876563/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/motogp-portuguese-gp-full-starting-grid/10876529/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "MotoGP Portuguese GP: Marc Marquez crashes with title in sight; Marco Bezzecchi wins sprint",
+   "title": "Jack Miller furious over MotoGP sprint race schedule change: “We don’t race in the rain anymore”",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/motogp-portuguese-gp-marco-marquez-crashes-with-title-in-sight-marco-bezzecchi-wins-sprint/10876548/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/jack-miller-furious-over-motogp-sprint-race-schedule-change-we-dont-race-in-the-rain-anymore/10876611/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "MotoGP to move race start time in 2027, avoid F1 clashes",
+   "title": "Oscar Piastri questions \"strange\" pace deficit to other Mercedes-powered cars in Las Vegas",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/motogp-to-move-race-start-time-in-2027-avoid-f1-clashes/10876478/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/piastri-questions-strange-pace-deficit-to-other-mercedes-powered-cars-in-las-vegas/10876516/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "MotoGP Portuguese Grand Prix: Marco Bezzecchi on pole, Marc Marquez second",
+   "title": "Max Verstappen takes Las Vegas pole despite “weird issues” since Brazil",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/motogp-portuguese-grand-prix-marco-bezzecchi-on-pole-marc-marquez-second/10876485/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/max-verstappen-takes-las-vegas-pole-despite-weird-issues-since-brazil/10876373/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "date": "2026-11-21"
+  },
+  {
+   "tag": "RACING",
+   "title": "Diogo Moreira admits he is “lucky” after frightening Portimao MotoGP highside",
+   "source": "Motorsport.com",
+   "url": "https://www.motorsport.com/motogp/news/diogo-moreira-admits-he-is-lucky-after-frightening-portimao-motogp-highside/10876607/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-21"
   },
   {
@@ -179,37 +179,37 @@ window.DG_NEWS = {
   },
   {
    "tag": "AUTO",
-   "title": "Why Those Massive Concrete Walls Line So Many Highways",
+   "title": "Is The Ford Maverick A Reliable Truck? Here's What Consumer Reports Data Shows",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2318563/what-highway-walls-are-for/",
+   "url": "https://www.carscoops.com/2320691/consumer-reports-says-ford-maverick-reliable/",
    "date": "2026-11-21"
   },
   {
    "tag": "AUTO",
-   "title": "Is Windex Safe For Car Windows And Windshields?",
+   "title": "If Your Smart Key Dies, Here's How You Can Still Start Your Car",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2317584/is-windex-safe-for-car-window-windshield/",
+   "url": "https://www.carscoops.com/2320715/how-start-car-when-smart-key-fob-dies/",
    "date": "2026-11-21"
   },
   {
    "tag": "AUTO",
-   "title": "The Sanrivatti One Has A Judd V10 And The Most Unusual Driving Position",
+   "title": "Does Hitting The Redline Hurt Your Engine? Here's What Really Happens",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2317867/sanrivatti-one-dutch-supercar/",
+   "url": "https://www.carscoops.com/2320711/does-redlining-hurt-your-engine/",
    "date": "2026-11-21"
   },
   {
    "tag": "AUTO",
-   "title": "This Tiny EV Could Preview BYD's Answer To The Smart #2",
+   "title": "Which Ford EcoBoost Engines Have A Wet Timing Belt?",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2319133/byd-microcar-patent-filing/",
+   "url": "https://www.carscoops.com/2318808/ford-ecoboost-engines-with-wet-timing-belts/",
    "date": "2026-11-21"
   },
   {
    "tag": "AUTO",
-   "title": "This Blacked-Out Bentley Torcal Is Limited To Just 20 Units",
+   "title": "Toyota Sells A $7,500 Hatchback With A Predator Face",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2323595/bentley-torcal-fgrmt-edition/",
+   "url": "https://www.carscoops.com/2320709/toyota-sells-7500-hatchback-with-predator-face/",
    "date": "2026-11-21"
   }
  ]
