@@ -1,145 +1,159 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-21T06:55:26.423561+00:00",
+ "updated": "2026-11-21T16:05:39.988043+00:00",
  "items": [
   {
    "tag": "RACING",
-   "title": "Antonelli struts his stuff again but Verstappen takes Las Vegas GP pole via penalty",
+   "title": "Mercedes misses the cues but heads the queue in Vegas",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/21/mercedes-misses-the-cues-but-heads-the-queue-in-vegas",
+   "date": "2026-11-21"
+  },
+  {
+   "tag": "RACING",
+   "title": "Dustin Williams takes top award as automotive creator community is celebrated at RACER Creator Awards",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/21/dustin-williams-takes-top-award-as-automotive-creator-community-is-celebrated-at-racer-creator-awards",
+   "date": "2026-11-21"
+  },
+  {
+   "tag": "RACING",
+   "title": "Antonelli struts his stuff again, but Verstappen takes Las Vegas GP pole via penalty",
    "source": "RACER",
    "url": "https://racer.com/2026/11/21/antonelli-struts-his-stuff-again-but-verstappen-takes-las-vegas-gp-pole-via-penalty",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "Unanimous agreement reached on 2.1L turbo V8s for F1 in 2030",
+   "title": "Russell defends FP3 run-in with Verstappen: ‘Somebody has got to stand up to that guy’",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/20/unanimous-agreement-reached-on-2-1l-turbo-v8s-for-f1-in-2030",
+   "url": "https://racer.com/2026/11/20/russell-defends-fp3-run-in-with-verstappen-somebody-has-got-to-stand-up-to-that-guy-",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "O’Ward, Power test at Kansas Speedway",
+   "title": "Holtger, Krajicek, Minder post top qualifying times for CORR Firebird Desert Open",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/20/o-ward-power-test-at-kansas-speedway",
+   "url": "https://racer.com/2026/11/21/holtger-krajicek-minder-post-top-qualifying-times-for-corr-firebird-desert-open",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "IndyCar’s race to 33 is on for 2027 Indy 500",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/20/indycar-s-race-to-33-is-on-for-2027-indy-500",
-   "date": "2026-11-21"
-  },
-  {
-   "tag": "RACING",
-   "title": "Russell dominates final Vegas GP practice",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/20/russell-dominates-final-vegas-gp-practice",
-   "date": "2026-11-21"
-  },
-  {
-   "tag": "RACING",
-   "title": "Lewis Hamilton reveals Ferrari F1 car damage after Las Vegas Q2 exit",
+   "title": "Isack Hadjar: “We looked stupid” in Las Vegas as I don’t like slipstreaming",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/floor-damage-deployment-down-to-hamiltons-las-vegas-q2-exit/10876295/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/isack-hadjar-we-looked-stupid-in-las-vegas-as-i-dont-like-slipstreaming/10876445/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "Isack Hadjar: Red Bull \"looked a bit stupid\" in Vegas qualifying tow game",
+   "title": "Marco Bezzecchi hails end to sprint \"torture\" as he completes part one of \"miracle\" needed for MotoGP title",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/isack-hadjar-red-bull-looked-a-bit-stupid-in-vegas-qualifying-tow-game/10876319/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/marco-bezzecchi-hails-end-to-sprint-torture-as-he-completes-part-one-of-miracle-needed-for-motogp-t/10876563/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "George Russell: Las Vegas qualifying tow was \"too difficult to orchestrate\"",
+   "title": "MotoGP Portuguese GP: Marc Marquez crashes with title in sight; Marco Bezzecchi wins sprint",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/george-russell-las-vegas-qualifying-tow-was-too-difficult-to-orchestrate/10876314/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/motogp-portuguese-gp-marco-marquez-crashes-with-title-in-sight-marco-bezzecchi-wins-sprint/10876548/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "George Russell slams Max Verstappen after Las Vegas clash: ‘He walks around like he’s bigger and better than everyone’",
+   "title": "MotoGP to move race start time in 2027, avoid F1 clashes",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/george-russell-slams-max-verstappen-after-las-vegas-clash-he-walks-around-like-hes-bigger-and-bette/10876300/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/motogp-to-move-race-start-time-in-2027-avoid-f1-clashes/10876478/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "George Russell challenges Max Verstappen following Las Vegas practice clash",
+   "title": "MotoGP Portuguese Grand Prix: Marco Bezzecchi on pole, Marc Marquez second",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/george-russell-slams-verstappen-over-las-vegas-clash-somebodys-got-to-stand-up-to-that-guy/10876278/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/motogp-portuguese-grand-prix-marco-bezzecchi-on-pole-marc-marquez-second/10876485/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "Floor damage, deployment down to Hamilton's Las Vegas GP Q2 exit",
+   "title": "MotoGP Portuguese GP: Marquez crashes with title in sight; Bezzecchi wins sprint",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/floor-damage-deployment-down-to-lewis-hamiltons-las-vegas-q2-exit/10876316/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/motogp/news/motogp-portuguese-gp-marquez-crashes-with-title-in-sight-bezzecchi-wins-sprint/10876554/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "Russell slams Verstappen after Las Vegas GP practice clash: ‘He walks around like he’s bigger and better than everyone’",
+   "title": "MotoGP Portuguese Grand Prix: Bezzecchi on pole, Marquez second",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/george-russell-slams-max-verstappen-after-las-vegas-clash-he-walks-around-like-hes-bigger-and-bette/10876309/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/motogp/news/motogp-portuguese-grand-prix-marco-bezzecchi-on-pole-marc-marquez-second/10876489/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "F1 Las Vegas GP: Antonelli tops qualifying but Verstappen gets pole",
+   "title": "Antonelli and Russell set for Mercedes talks over Las Vegas GP qualifying mix-up",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/f1-las-vegas-gp-antonelli-tops-qualifying-but-verstappen-gets-pole/10876233/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/f1/news/kimi-antonelli-and-george-russell-set-for-mercedes-talks-over-las-vegas-gp-qualifying-woes/10876456/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "F1 Las Vegas GP: Russell fastest in final practice after Verstappen collision",
+   "title": "Macau GP: Al Dhaheri defeats Colnaghi to take qualification race win",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/f1-las-vegas-gp-russell-fastest-in-final-practice-after-verstappen-collision/10876189/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/openwheel/news/macau-gp-al-dhaheri-defeats-colnaghi-to-take-qualification-race-win/10876413/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-21"
   },
   {
    "tag": "RACING",
-   "title": "F1 set for V8 return from 2030",
+   "title": "Verstappen reveals mysterious Red Bull F1 car issue that cannot be fixed in Las Vegas",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/f1-set-for-v8-return-from-2030/10875119/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/f1/news/verstappen-reveals-mysterious-red-bull-f1-car-issue-that-cannot-be-fixed-in-las-vegas/10876404/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-21"
   },
   {
    "tag": "FORD",
-   "title": "Ford Racing Sets Stage For Hypercar And Team Reveal: Video",
+   "title": "1996 Ford Mustang SVT Cobra With Less Than 100 Miles Up For Auction",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-racing-sets-stage-for-hypercar-and-team-reveal-video/",
+   "url": "https://fordauthority.com/2026/11/1996-ford-mustang-svt-cobra-with-less-than-100-miles-up-for-auction/",
    "date": "2026-11-21"
   },
   {
    "tag": "FORD",
-   "title": "Ford Mustang GT3 Team Signs Third-Generation Racer For 2027",
+   "title": "Congress Moving Closer To Comprehensive Chinese Vehicle Ban",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-mustang-gt3-team-signs-third-generation-racer-for-2027/",
+   "url": "https://fordauthority.com/2026/11/congress-moving-closer-to-comprehensive-chinese-vehicle-ban/",
    "date": "2026-11-21"
   },
   {
    "tag": "FORD",
-   "title": "Here's How Ford Stock Performed During Week Of November 16th, 2026 - November 20th, 2026",
+   "title": "Second Ford Ranger Crosspower Trademark Filing Suggests New Hybrid Incoming",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-stock-value-analysis-performance-november-16-november-20-2026/",
+   "url": "https://fordauthority.com/2026/11/second-ford-ranger-crosspower-trademark-filing-suggests-new-hybrid-incoming/",
    "date": "2026-11-21"
   },
   {
    "tag": "FORD",
-   "title": "Ford Still Has Significant Manufacturing Capability In Australia",
+   "title": "NASCAR Ford Champion Gets Behind Wheel Of Historic Ford Cars",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-still-has-significant-manufacturing-capability-in-australia/",
+   "url": "https://fordauthority.com/2026/11/nascar-ford-champion-gets-behind-wheel-of-historic-ford-cars/",
    "date": "2026-11-21"
   },
   {
    "tag": "FORD",
-   "title": "Future Ford EVs Could Get Coupler Inspection System",
+   "title": "Rod Hall's 1969 Ford Bronco Racer Finds It Way To Blue Oval Vault",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/future-ford-evs-could-get-coupler-inspection-system/",
+   "url": "https://fordauthority.com/2026/11/rod-halls-1969-ford-bronco-racer-finds-it-way-to-blue-oval-vault/",
+   "date": "2026-11-21"
+  },
+  {
+   "tag": "AUTO",
+   "title": "This Chevy Engine's Timing Belt Should Last 150,000 Miles. A Teardown Says Otherwise",
+   "source": "Motor1",
+   "url": "https://www.motor1.com/news/816219/chevy-trailblazer-12-lih-failure/",
+   "date": "2026-11-21"
+  },
+  {
+   "tag": "AUTO",
+   "title": "BYD's Boxy SUV Banned In The EU After Land Rover Defender Copycat Ruling",
+   "source": "Motor1",
+   "url": "https://www.motor1.com/news/816327/byd-ti7-banned-eu-defender-design-copy/",
    "date": "2026-11-21"
   },
   {
@@ -165,16 +179,16 @@ window.DG_NEWS = {
   },
   {
    "tag": "AUTO",
-   "title": "Hyundai's Supercar Dream Is (Probably) Dead",
-   "source": "Motor1",
-   "url": "https://www.motor1.com/news/816270/hyundai-n-vision-74-canceled/",
+   "title": "Why Those Massive Concrete Walls Line So Many Highways",
+   "source": "Carscoops",
+   "url": "https://www.carscoops.com/2318563/what-highway-walls-are-for/",
    "date": "2026-11-21"
   },
   {
    "tag": "AUTO",
-   "title": "Koenigsegg Is Now Worth $1.4 Billion After New Investment",
-   "source": "Motor1",
-   "url": "https://www.motor1.com/news/816137/koenigsegg-new-investment-deal/",
+   "title": "Is Windex Safe For Car Windows And Windshields?",
+   "source": "Carscoops",
+   "url": "https://www.carscoops.com/2317584/is-windex-safe-for-car-window-windshield/",
    "date": "2026-11-21"
   },
   {
@@ -196,20 +210,6 @@ window.DG_NEWS = {
    "title": "This Blacked-Out Bentley Torcal Is Limited To Just 20 Units",
    "source": "Carscoops",
    "url": "https://www.carscoops.com/2323595/bentley-torcal-fgrmt-edition/",
-   "date": "2026-11-21"
-  },
-  {
-   "tag": "AUTO",
-   "title": "Ferrari 12Cilindri Goes Large With Novitec's N-Largo Widebody Kit",
-   "source": "Carscoops",
-   "url": "https://www.carscoops.com/2317685/ferrari-12cilindri-novitec-n-largo-tuning/",
-   "date": "2026-11-21"
-  },
-  {
-   "tag": "AUTO",
-   "title": "Why Philippine Authorities Still Can't Sell A Seized McLaren Senna And LaFerrari After Two Years",
-   "source": "Carscoops",
-   "url": "https://www.carscoops.com/2323132/seized-mclaren-senna-laferrari-unsold-phillipines/",
    "date": "2026-11-21"
   }
  ]
