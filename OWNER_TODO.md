@@ -10,18 +10,18 @@ The Sunday **Garage Report** (emailed to you) always shows the next unchecked it
 ## 🚀 TONIGHT - go live (about 1-1.5 hours)
 
 ### A. Stay anonymous (15 min) - do these first
-- [ ] Make one new email used ONLY for DG317 (Proton Mail or Gmail). Every signup below uses it.
-- [ ] GitHub → Settings → Emails → turn ON "Keep my email addresses private" and "Block command line pushes that expose my email".
-- [ ] GitHub → your Profile → no real name, town or employer in Name / Bio / Location.
+- [x ] Make one new email used ONLY for DG317 (Proton Mail or Gmail). Every signup below uses it.
+- [x ] GitHub → Settings → Emails → turn ON "Keep my email addresses private" and "Block command line pushes that expose my email".
+- [x ] GitHub → your Profile → no real name, town or employer in Name / Bio / Location.
 
 ### B. Put the new site up (30 min)
-- [ ] Back up the current site: repo page → green **Code** button → **Download ZIP**. Save it.
-- [ ] Unzip DG317-site-v2.zip. On the repo page: **Add file → Upload files** → drag in EVERYTHING (folders too) → **Commit changes**. Keep your `webback.jpg`, `moonimage.png` and `CNAME` (if you have one) - don't delete anything that isn't being replaced.
+- [x ] Back up the current site: repo page → green **Code** button → **Download ZIP**. Save it.
+- [x ] Unzip DG317-site-v2.zip. On the repo page: **Add file → Upload files** → drag in EVERYTHING (folders too) → **Commit changes**. Keep your `webback.jpg`, `moonimage.png` and `CNAME` (if you have one) - don't delete anything that isn't being replaced.
   - Tip: the `.github` folder is hidden on Mac/Windows. Turn on "show hidden files" before dragging, or the robots won't come along.
-- [ ] Settings → Actions → General → **Workflow permissions → Read and write** → Save.
-- [ ] Actions tab → if it asks, click **"I understand my workflows, go ahead and enable them."**
-- [ ] Actions → run each one: **update-feeds**, **update-series**, **update-marketcaps**, **garage-report** (select it → **Run workflow**). Wait for green ✅. (update-videos waits for the YouTube key below.)
-- [ ] Open detailguy317.com on your phone AND computer. Check the footer's **Privacy & disclaimer** link opens. Hard-refresh (Ctrl+Shift+R / pull down on phone). Tap every bubble once.
+- [x ] Settings → Actions → General → **Workflow permissions → Read and write** → Save.
+- [x ] Actions tab → if it asks, click **"I understand my workflows, go ahead and enable them."**
+- [x ] Actions → run each one: **update-feeds**, **update-series**, **update-marketcaps**, **garage-report** (select it → **Run workflow**). Wait for green ✅. (update-videos waits for the YouTube key below.)
+- [x ] Open detailguy317.com on your phone AND computer. Check the footer's **Privacy & disclaimer** link opens. Hard-refresh (Ctrl+Shift+R / pull down on phone). Tap every bubble once.
 
 ### C. See who's visiting - free analytics (10 min)
 - [ ] dash.cloudflare.com → sign up with the DG317 email (free plan).
