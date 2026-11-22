@@ -1,2 +1,571 @@
-/* Written automatically by the weekly robot (.github/workflows/update-feeds.yml). Don't edit by hand. */
-window.DG_RACING_AUTO = { updated: "", slots: [], found: [] };
+/* Written automatically by scripts/update_videos.py - don't edit by hand. */
+window.DG_RACING_AUTO = {
+ "updated": "2026-11-22T03:04+00:00",
+ "slots": [
+  {
+   "type": "video",
+   "id": "C6lUkh_2_eU",
+   "title": "Collect 200, Natasha Bedingfield and Sean Paul LIVE Performance | T-Mobile Stage: 2026 Las Vegas GP",
+   "channel": "FORMULA 1",
+   "kind": "live",
+   "date": "2026-11-21T23:00:05Z",
+   "viewers": "2715",
+   "thumb": "https://i.ytimg.com/vi/C6lUkh_2_eU/mqdefault.jpg?v=6afc30c2",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "XpEDnppzG3Y",
+   "title": "LIVE: Snowball Derby Preview at 5 Flags Speedway",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-21T23:48:45Z",
+   "viewers": "191",
+   "thumb": "https://i.ytimg.com/vi/XpEDnppzG3Y/mqdefault.jpg?v=6afa6e5f",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "YA1ruaeoZZY",
+   "title": "LIVE NOW: FloRacing 24/7",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2025-10-14T14:49:37Z",
+   "viewers": "37",
+   "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true
+  }
+ ],
+ "live": [
+  {
+   "type": "video",
+   "id": "C6lUkh_2_eU",
+   "title": "Collect 200, Natasha Bedingfield and Sean Paul LIVE Performance | T-Mobile Stage: 2026 Las Vegas GP",
+   "channel": "FORMULA 1",
+   "kind": "live",
+   "date": "2026-11-21T23:00:05Z",
+   "viewers": "2715",
+   "thumb": "https://i.ytimg.com/vi/C6lUkh_2_eU/mqdefault.jpg?v=6afc30c2",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "XpEDnppzG3Y",
+   "title": "LIVE: Snowball Derby Preview at 5 Flags Speedway",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-21T23:48:45Z",
+   "viewers": "191",
+   "thumb": "https://i.ytimg.com/vi/XpEDnppzG3Y/mqdefault.jpg?v=6afa6e5f",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "YA1ruaeoZZY",
+   "title": "LIVE NOW: FloRacing 24/7",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2025-10-14T14:49:37Z",
+   "viewers": "37",
+   "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "vnmeqxvVWhc",
+   "title": "Truck Fest 5 at Xtreme Raceway Park",
+   "channel": "Antwon Maurice",
+   "kind": "live",
+   "date": "2026-11-21T22:47:05Z",
+   "viewers": "375",
+   "thumb": "https://i.ytimg.com/vi/vnmeqxvVWhc/mqdefault.jpg?v=6b021f19",
+   "trusted": false
+  },
+  {
+   "type": "video",
+   "id": "LHnFg-Q3vZc",
+   "title": "Drag racing at Toronto Motorsports Park LIVE 24/7",
+   "channel": "Toronto Motorsports Park",
+   "kind": "live",
+   "date": "2026-11-16T12:00:42Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
+   "trusted": false
+  },
+  {
+   "type": "video",
+   "id": "eesYd1DlpvE",
+   "title": "Drag Racing — Muscle Cars, Imports & Exotics | Drag Strips",
+   "channel": "Mopar Bro",
+   "kind": "live",
+   "date": "2026-11-15T23:36:50Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
+   "trusted": false
+  },
+  {
+   "type": "video",
+   "id": "ANbro7RcpkE",
+   "title": "Drag Racing – Hellcats, HEMI Builds, Street Cars & Full Quarter Mile Runs",
+   "channel": "CJR PERFORMANCE",
+   "kind": "live",
+   "date": "2026-11-12T11:32:46Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/ANbro7RcpkE/mqdefault.jpg?v=6af5a3c7",
+   "trusted": false
+  },
+  {
+   "type": "video",
+   "id": "R7h630vGhP0",
+   "title": "The Drag Racing Channel – 24/7 back-to-back CarExpert drag races",
+   "channel": "CarExpert",
+   "kind": "live",
+   "date": "2026-08-12T06:53:17Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/R7h630vGhP0/mqdefault.jpg?v=6a7c1833",
+   "trusted": false
+  }
+ ],
+ "found": [
+  {
+   "type": "video",
+   "id": "C6lUkh_2_eU",
+   "title": "Collect 200, Natasha Bedingfield and Sean Paul LIVE Performance | T-Mobile Stage: 2026 Las Vegas GP",
+   "channel": "FORMULA 1",
+   "kind": "live",
+   "date": "2026-11-21T23:00:05Z",
+   "viewers": "2715",
+   "thumb": "https://i.ytimg.com/vi/C6lUkh_2_eU/mqdefault.jpg?v=6afc30c2",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "XpEDnppzG3Y",
+   "title": "LIVE: Snowball Derby Preview at 5 Flags Speedway",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-21T23:48:45Z",
+   "viewers": "191",
+   "thumb": "https://i.ytimg.com/vi/XpEDnppzG3Y/mqdefault.jpg?v=6afa6e5f",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "YA1ruaeoZZY",
+   "title": "LIVE NOW: FloRacing 24/7",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2025-10-14T14:49:37Z",
+   "viewers": "37",
+   "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "vnmeqxvVWhc",
+   "title": "Truck Fest 5 at Xtreme Raceway Park",
+   "channel": "Antwon Maurice",
+   "kind": "live",
+   "date": "2026-11-21T22:47:05Z",
+   "viewers": "375",
+   "thumb": "https://i.ytimg.com/vi/vnmeqxvVWhc/mqdefault.jpg?v=6b021f19",
+   "trusted": false
+  },
+  {
+   "type": "video",
+   "id": "LHnFg-Q3vZc",
+   "title": "Drag racing at Toronto Motorsports Park LIVE 24/7",
+   "channel": "Toronto Motorsports Park",
+   "kind": "live",
+   "date": "2026-11-16T12:00:42Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
+   "trusted": false
+  },
+  {
+   "type": "video",
+   "id": "eesYd1DlpvE",
+   "title": "Drag Racing — Muscle Cars, Imports & Exotics | Drag Strips",
+   "channel": "Mopar Bro",
+   "kind": "live",
+   "date": "2026-11-15T23:36:50Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
+   "trusted": false
+  },
+  {
+   "type": "video",
+   "id": "ANbro7RcpkE",
+   "title": "Drag Racing – Hellcats, HEMI Builds, Street Cars & Full Quarter Mile Runs",
+   "channel": "CJR PERFORMANCE",
+   "kind": "live",
+   "date": "2026-11-12T11:32:46Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/ANbro7RcpkE/mqdefault.jpg?v=6af5a3c7",
+   "trusted": false
+  },
+  {
+   "type": "video",
+   "id": "R7h630vGhP0",
+   "title": "The Drag Racing Channel – 24/7 back-to-back CarExpert drag races",
+   "channel": "CarExpert",
+   "kind": "live",
+   "date": "2026-08-12T06:53:17Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/R7h630vGhP0/mqdefault.jpg?v=6a7c1833",
+   "trusted": false
+  },
+  {
+   "type": "video",
+   "id": "XawJHpDkuPE",
+   "title": "LIVE: Las Vegas Grand Prix Build-Up, Drivers' Parade & LEGO Race",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-22T01:58:01Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/XawJHpDkuPE/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "4rztLek0Dw0",
+   "title": "M. Marquez crashes from P3 one and a half laps before he could clinch the title🤯| 2026 Portuguese GP",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-21T19:30:05Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/4rztLek0Dw0/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "Tga14263-Cs",
+   "title": "Dodge NHRA Great Lakes Nationals presented by MOPAR Full Broadcast",
+   "channel": "NHRA",
+   "kind": "recent",
+   "date": "2026-11-21T18:00:07Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/Tga14263-Cs/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "hOqxNuV9DX4",
+   "title": "“If you ain’t first, you’re last.” - R̶i̶c̶k̶y̶  ̶B̶o̶b̶b̶y̶ Marcus Armstrong #indycar",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "recent",
+   "date": "2026-11-21T17:37:22Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/hOqxNuV9DX4/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "4tfZlm-WLrs",
+   "title": "The rain played a dirty trick on Marc Marquez and ruined his title plans 💥",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-21T17:30:30Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/4tfZlm-WLrs/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "qxs24HREvOc",
+   "title": "Top 3 Tissot Sprint Moments ⚔️ | 2026 Portuguese GP",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-21T17:28:44Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/qxs24HREvOc/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "-BjjlEVxQ3M",
+   "title": "Marco makes his statement! A Sprint win to keep his championship fight alive 💪🔥",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-21T16:30:23Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/-BjjlEVxQ3M/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "Evm5BACCmJc",
+   "title": "Marc Marquez tumbles out of Sprint with title at his fingertips 😱😱😱",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-21T15:25:20Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/Evm5BACCmJc/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "jZjObZaRzXQ",
+   "title": "Tissot Sprint Build Up | 2026 Portuguese GP",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-21T14:00:31Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/jZjObZaRzXQ/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "8ZgAD0a9GCE",
+   "title": "Qualifying action at the rollercoaster 😮‍💨",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-21T13:59:13Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/8ZgAD0a9GCE/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "3QgJip5ljEk",
+   "title": "Drivers React To Qualifying | 2026 Las Vegas Grand Prix",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-21T08:00:15Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/3QgJip5ljEk/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "WILHYHpbOy4",
+   "title": "Kimi Antonelli Sets The Fastest Qualifying Time In Las Vegas | Pirelli",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-21T07:00:24Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/WILHYHpbOy4/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "jiBlTDJ-mFw",
+   "title": "Qualifying Highlights | 2026 Las Vegas Grand Prix",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-21T05:51:41Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/jiBlTDJ-mFw/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "18rDg7VRUnk",
+   "title": "Verstappen & Russell Make Contact In Free Practice 😱",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-21T02:37:10Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/18rDg7VRUnk/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "tlr72TUMQxc",
+   "title": "FP3 Highlights | 2026 Las Vegas Grand Prix",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-21T02:32:26Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/tlr72TUMQxc/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "Ae_-NJvwdVI",
+   "title": "🏃‍♂️ Sprinting to Sportscenter!",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-21T01:00:11Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/Ae_-NJvwdVI/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "s2voH4V-STU",
+   "title": "Behind the scenes at the In-N-Out Burger NHRA Finals",
+   "channel": "NHRA",
+   "kind": "recent",
+   "date": "2026-11-20T23:34:14Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/s2voH4V-STU/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "ip1u5QV-tsk",
+   "title": "Former #GatewayDirt winner Tyler Erb says the race offers everything you could ever want in a race.",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-20T23:00:35Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/ip1u5QV-tsk/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "aNh-ziSMMCU",
+   "title": "May the best Swedish meatballs win 🇸🇪 #INDYCAR",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "recent",
+   "date": "2026-11-20T22:16:44Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/aNh-ziSMMCU/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "ZYfHVmwfRFA",
+   "title": "🤵‍♂️ 𝙃𝙪𝙨𝙗𝙖𝙣𝙙 𝙒𝙞𝙛𝙚 𝙏𝙚𝙖𝙢 👰‍♀️ Behind the scenes with Cody and Emma Sommer at Gateway Dirt Nationals.",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-20T20:00:38Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/ZYfHVmwfRFA/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "iVT2hFEBE-Y",
+   "title": "10 BRILLIANT Overtakes from Monza 2026! 🔥 | 6 Hours of Monza 2026 | FIA WEC",
+   "channel": "FIA World Endurance Championship",
+   "kind": "recent",
+   "date": "2026-11-20T17:00:24Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/iVT2hFEBE-Y/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "YLAAQ7CWrW4",
+   "title": "Indy 500 Winners Put Their Cooking Skills to the Test",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "recent",
+   "date": "2026-11-20T16:00:23Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/YLAAQ7CWrW4/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "vluJkHjDtss",
+   "title": "The Best Rookie Moments in Formula E History",
+   "channel": "Formula E",
+   "kind": "recent",
+   "date": "2026-11-20T14:01:41Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/vluJkHjDtss/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "JXqIhCescEw",
+   "title": "What Does Driving a Rally1 Car Feel Like? 👀",
+   "channel": "FIA World Rally Championship",
+   "kind": "recent",
+   "date": "2026-11-20T14:00:14Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/JXqIhCescEw/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "F6oawamTWeA",
+   "title": "Push Play ▶️ Cody Sommer watches the first Friday of Gateway Dirt Nationals history.",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-19T20:00:19Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/F6oawamTWeA/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "wUNn-56BHhA",
+   "title": "Lucas Oil Drag Racing Series Highlights from the In-N-Out Burger NHRA Finals",
+   "channel": "NHRA",
+   "kind": "recent",
+   "date": "2026-11-19T19:00:04Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/wUNn-56BHhA/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "YZxp7l2-v2I",
+   "title": "FULL RACE: Peach State Classic Finale | FloRacing Night in America at Senoia Raceway 11/14/2026",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-19T00:00:07Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/YZxp7l2-v2I/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "aD6_EKwFZ9s",
+   "title": "In-N-Out Burger NHRA Finals Weekend Rewind",
+   "channel": "NHRA",
+   "kind": "recent",
+   "date": "2026-11-18T17:56:39Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/aD6_EKwFZ9s/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "h4xwiCPufq4",
+   "title": "NASCAR Champion Puts 5 Iconic Fords to the Test",
+   "channel": "NASCAR",
+   "kind": "recent",
+   "date": "2026-11-18T17:00:13Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/h4xwiCPufq4/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "ujnrbz4qz_k",
+   "title": "Formula E Has Come A Long Way!",
+   "channel": "Formula E",
+   "kind": "recent",
+   "date": "2026-11-18T11:14:35Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/ujnrbz4qz_k/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "ovSM-4hRj0g",
+   "title": "Sometimes, the tweet staying in the archive is for the best 🤣 #indycar #racing #funny #twitter",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "recent",
+   "date": "2026-11-17T21:00:41Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/ovSM-4hRj0g/mqdefault.jpg",
+   "trusted": true
+  },
+  {
+   "type": "video",
+   "id": "wDPQ26zDtoI",
+   "title": "Traffic Causes Absolute MAYHEM at Monza! 😱 | 6 Hours of Monza 2026 | FIA WEC",
+   "channel": "FIA World Endurance Championship",
+   "kind": "recent",
+   "date": "2026-11-17T17:00:12Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/wDPQ26zDtoI/mqdefault.jpg",
+   "trusted": true
+  }
+ ]
+};
