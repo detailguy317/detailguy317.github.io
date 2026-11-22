@@ -1,18 +1,7 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-22T03:04+00:00",
+ "updated": "2026-11-22T03:19+00:00",
  "slots": [
-  {
-   "type": "video",
-   "id": "C6lUkh_2_eU",
-   "title": "Collect 200, Natasha Bedingfield and Sean Paul LIVE Performance | T-Mobile Stage: 2026 Las Vegas GP",
-   "channel": "FORMULA 1",
-   "kind": "live",
-   "date": "2026-11-21T23:00:05Z",
-   "viewers": "2715",
-   "thumb": "https://i.ytimg.com/vi/C6lUkh_2_eU/mqdefault.jpg?v=6afc30c2",
-   "trusted": true
-  },
   {
    "type": "video",
    "id": "XpEDnppzG3Y",
@@ -20,9 +9,10 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2026-11-21T23:48:45Z",
-   "viewers": "191",
+   "viewers": "168",
    "thumb": "https://i.ytimg.com/vi/XpEDnppzG3Y/mqdefault.jpg?v=6afa6e5f",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -31,33 +21,36 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "37",
+   "viewers": "28",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
-   "trusted": true
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "niNdotZi1mg",
+   "title": "Chase Johnson Classic | USAC Midgets at Merced Speedway 11/21/26 | Highlights",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-22T03:13:47Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/niNdotZi1mg/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
   }
  ],
  "live": [
   {
    "type": "video",
-   "id": "C6lUkh_2_eU",
-   "title": "Collect 200, Natasha Bedingfield and Sean Paul LIVE Performance | T-Mobile Stage: 2026 Las Vegas GP",
-   "channel": "FORMULA 1",
-   "kind": "live",
-   "date": "2026-11-21T23:00:05Z",
-   "viewers": "2715",
-   "thumb": "https://i.ytimg.com/vi/C6lUkh_2_eU/mqdefault.jpg?v=6afc30c2",
-   "trusted": true
-  },
-  {
-   "type": "video",
    "id": "XpEDnppzG3Y",
    "title": "LIVE: Snowball Derby Preview at 5 Flags Speedway",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2026-11-21T23:48:45Z",
-   "viewers": "191",
+   "viewers": "168",
    "thumb": "https://i.ytimg.com/vi/XpEDnppzG3Y/mqdefault.jpg?v=6afa6e5f",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -66,9 +59,10 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "37",
+   "viewers": "28",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -77,9 +71,22 @@ window.DG_RACING_AUTO = {
    "channel": "Antwon Maurice",
    "kind": "live",
    "date": "2026-11-21T22:47:05Z",
-   "viewers": "375",
+   "viewers": "376",
    "thumb": "https://i.ytimg.com/vi/vnmeqxvVWhc/mqdefault.jpg?v=6b021f19",
-   "trusted": false
+   "trusted": false,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "8Hwokph5ll0",
+   "title": "AC Rally | Jumpy Drag Racing - Checking Out 0.7!",
+   "channel": "Doc's GearHead Gaming",
+   "kind": "live",
+   "date": "2026-11-22T03:08:32Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/8Hwokph5ll0/mqdefault.jpg?v=6b025ca5",
+   "trusted": false,
+   "embed": true
   },
   {
    "type": "video",
@@ -90,7 +97,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-16T12:00:42Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
-   "trusted": false
+   "trusted": false,
+   "embed": true
   },
   {
    "type": "video",
@@ -101,7 +109,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-15T23:36:50Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
-   "trusted": false
+   "trusted": false,
+   "embed": true
   },
   {
    "type": "video",
@@ -112,7 +121,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-12T11:32:46Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/ANbro7RcpkE/mqdefault.jpg?v=6af5a3c7",
-   "trusted": false
+   "trusted": false,
+   "embed": true
   },
   {
    "type": "video",
@@ -123,31 +133,22 @@ window.DG_RACING_AUTO = {
    "date": "2026-08-12T06:53:17Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/R7h630vGhP0/mqdefault.jpg?v=6a7c1833",
-   "trusted": false
+   "trusted": false,
+   "embed": true
   }
  ],
  "found": [
   {
    "type": "video",
-   "id": "C6lUkh_2_eU",
-   "title": "Collect 200, Natasha Bedingfield and Sean Paul LIVE Performance | T-Mobile Stage: 2026 Las Vegas GP",
-   "channel": "FORMULA 1",
-   "kind": "live",
-   "date": "2026-11-21T23:00:05Z",
-   "viewers": "2715",
-   "thumb": "https://i.ytimg.com/vi/C6lUkh_2_eU/mqdefault.jpg?v=6afc30c2",
-   "trusted": true
-  },
-  {
-   "type": "video",
    "id": "XpEDnppzG3Y",
    "title": "LIVE: Snowball Derby Preview at 5 Flags Speedway",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2026-11-21T23:48:45Z",
-   "viewers": "191",
+   "viewers": "168",
    "thumb": "https://i.ytimg.com/vi/XpEDnppzG3Y/mqdefault.jpg?v=6afa6e5f",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -156,9 +157,10 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "37",
+   "viewers": "28",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -167,9 +169,22 @@ window.DG_RACING_AUTO = {
    "channel": "Antwon Maurice",
    "kind": "live",
    "date": "2026-11-21T22:47:05Z",
-   "viewers": "375",
+   "viewers": "376",
    "thumb": "https://i.ytimg.com/vi/vnmeqxvVWhc/mqdefault.jpg?v=6b021f19",
-   "trusted": false
+   "trusted": false,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "8Hwokph5ll0",
+   "title": "AC Rally | Jumpy Drag Racing - Checking Out 0.7!",
+   "channel": "Doc's GearHead Gaming",
+   "kind": "live",
+   "date": "2026-11-22T03:08:32Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/8Hwokph5ll0/mqdefault.jpg?v=6b025ca5",
+   "trusted": false,
+   "embed": true
   },
   {
    "type": "video",
@@ -180,7 +195,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-16T12:00:42Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
-   "trusted": false
+   "trusted": false,
+   "embed": true
   },
   {
    "type": "video",
@@ -191,7 +207,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-15T23:36:50Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
-   "trusted": false
+   "trusted": false,
+   "embed": true
   },
   {
    "type": "video",
@@ -202,7 +219,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-12T11:32:46Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/ANbro7RcpkE/mqdefault.jpg?v=6af5a3c7",
-   "trusted": false
+   "trusted": false,
+   "embed": true
   },
   {
    "type": "video",
@@ -213,7 +231,20 @@ window.DG_RACING_AUTO = {
    "date": "2026-08-12T06:53:17Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/R7h630vGhP0/mqdefault.jpg?v=6a7c1833",
-   "trusted": false
+   "trusted": false,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "niNdotZi1mg",
+   "title": "Chase Johnson Classic | USAC Midgets at Merced Speedway 11/21/26 | Highlights",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-22T03:13:47Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/niNdotZi1mg/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -224,7 +255,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-22T01:58:01Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/XawJHpDkuPE/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": false
   },
   {
    "type": "video",
@@ -235,7 +267,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T19:30:05Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/4rztLek0Dw0/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -246,7 +279,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T18:00:07Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/Tga14263-Cs/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -257,7 +291,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T17:37:22Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/hOqxNuV9DX4/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -268,7 +303,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T17:30:30Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/4tfZlm-WLrs/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -279,7 +315,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T17:28:44Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/qxs24HREvOc/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -290,7 +327,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T16:30:23Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/-BjjlEVxQ3M/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -301,7 +339,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T15:25:20Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/Evm5BACCmJc/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -312,7 +351,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T14:00:31Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/jZjObZaRzXQ/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -323,7 +363,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T13:59:13Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/8ZgAD0a9GCE/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -334,7 +375,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T08:00:15Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/3QgJip5ljEk/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": false
   },
   {
    "type": "video",
@@ -345,7 +387,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T07:00:24Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/WILHYHpbOy4/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": false
   },
   {
    "type": "video",
@@ -356,7 +399,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T05:51:41Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/jiBlTDJ-mFw/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": false
   },
   {
    "type": "video",
@@ -367,7 +411,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T02:37:10Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/18rDg7VRUnk/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": false
   },
   {
    "type": "video",
@@ -378,7 +423,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T02:32:26Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/tlr72TUMQxc/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": false
   },
   {
    "type": "video",
@@ -389,7 +435,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-21T01:00:11Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/Ae_-NJvwdVI/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -400,7 +447,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T23:34:14Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/s2voH4V-STU/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -411,7 +459,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T23:00:35Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/ip1u5QV-tsk/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -422,7 +471,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T22:16:44Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/aNh-ziSMMCU/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -433,7 +483,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T20:00:38Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/ZYfHVmwfRFA/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -444,7 +495,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T17:00:24Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/iVT2hFEBE-Y/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -455,7 +507,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T16:00:23Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/YLAAQ7CWrW4/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -466,7 +519,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T14:01:41Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/vluJkHjDtss/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -477,7 +531,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T14:00:14Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/JXqIhCescEw/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -488,7 +543,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-19T20:00:19Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/F6oawamTWeA/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -499,7 +555,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-19T19:00:04Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/wUNn-56BHhA/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -510,7 +567,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-19T00:00:07Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/YZxp7l2-v2I/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -521,7 +579,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-18T17:56:39Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/aD6_EKwFZ9s/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -532,7 +591,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-18T17:00:13Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/h4xwiCPufq4/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -543,7 +603,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-18T11:14:35Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/ujnrbz4qz_k/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -554,18 +615,8 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-17T21:00:41Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/ovSM-4hRj0g/mqdefault.jpg",
-   "trusted": true
-  },
-  {
-   "type": "video",
-   "id": "wDPQ26zDtoI",
-   "title": "Traffic Causes Absolute MAYHEM at Monza! 😱 | 6 Hours of Monza 2026 | FIA WEC",
-   "channel": "FIA World Endurance Championship",
-   "kind": "recent",
-   "date": "2026-11-17T17:00:12Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/wDPQ26zDtoI/mqdefault.jpg",
-   "trusted": true
+   "trusted": true,
+   "embed": true
   }
  ]
 };
