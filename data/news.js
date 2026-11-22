@@ -1,7 +1,14 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-22T17:45:45.232725+00:00",
+ "updated": "2026-11-22T23:33:06.678398+00:00",
  "items": [
+  {
+   "tag": "RACING",
+   "title": "F1 dials up Indy 500 mode in Las Vegas",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/22/f1-dials-up-indy-500-mode-in-las-vegas",
+   "date": "2026-11-22"
+  },
   {
    "tag": "RACING",
    "title": "Verstappen calls Russell’s late-race crash ‘karma,’ says Mercedes driver is ‘so far below my level’",
@@ -18,13 +25,6 @@ window.DG_NEWS = {
   },
   {
    "tag": "RACING",
-   "title": "Verstappen wins F1 race for the ages in Las Vegas",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/22/verstappen-wins-f1-race-for-the-ages-in-las-vegas",
-   "date": "2026-11-22"
-  },
-  {
-   "tag": "RACING",
    "title": "Fuming Vasseur points finger at Leclerc after Hamilton collision",
    "source": "RACER",
    "url": "https://racer.com/2026/11/22/fuming-vasseur-points-finger-at-leclerc-after-hamilton-collision",
@@ -32,9 +32,37 @@ window.DG_NEWS = {
   },
   {
    "tag": "RACING",
-   "title": "Foyt team plans 50th anniversary ‘salute car’ for Ferrucci at Indy 500",
+   "title": "Camara confirmed at Haas for remainder of 2026 F1 season",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/22/ferrucci-for-foyt-50th-anniversary-salute-car-at-indy-500-",
+   "url": "https://racer.com/2026/11/22/camara-confirmed-at-haas-for-remainder-of-2026-f1-season",
+   "date": "2026-11-22"
+  },
+  {
+   "tag": "RACING",
+   "title": "F1 set to reduce customer teams as key 2030 details emerge",
+   "source": "Motorsport.com",
+   "url": "https://www.motorsport.com/f1/news/f1-set-to-reduce-customer-teams-as-key-2030-details-emerge/10877055/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "date": "2026-11-22"
+  },
+  {
+   "tag": "RACING",
+   "title": "Haas keeps Rafael Camara in F1, ending his 2026 F2 title bid",
+   "source": "Motorsport.com",
+   "url": "https://www.motorsport.com/f1/news/rafael-camara-gives-up-f2-title-chance-to-finish-2026-f1-season-with-haas/10877028/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "date": "2026-11-22"
+  },
+  {
+   "tag": "RACING",
+   "title": "Laurin Heinrich \"deeply disappointed but not surprised\" by Raffaele Marciello after Macau clash",
+   "source": "Motorsport.com",
+   "url": "https://www.motorsport.com/gt/news/macau-gt-laurin-heinrich-raffaele-marciello-crash/10877023/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "date": "2026-11-22"
+  },
+  {
+   "tag": "RACING",
+   "title": "\"I actually liked it\" – McLaren boss defends Piastri's four-letter outburst in Las Vegas GP",
+   "source": "Motorsport.com",
+   "url": "https://www.motorsport.com/f1/news/i-actually-liked-it-mclaren-boss-defends-piastris-four-letter-outburst-in-las-vegas-gp/10876928/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
@@ -46,30 +74,23 @@ window.DG_NEWS = {
   },
   {
    "tag": "RACING",
-   "title": "Fabio Quartararo says Marc Marquez is the greatest MotoGP rider ever after 10th world title",
-   "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/fabio-quartararo-says-marc-marquez-is-the-greatest-motogp-rider-ever-after-10th-world-title/10877009/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "title": "F1 plans two-team engine supply limit under 2030 V8 rules",
+   "source": "Autosport",
+   "url": "https://www.autosport.com/f1/news/f1-set-to-reduce-customer-teams-as-key-2030-details-emerge/10877058/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Marc Marquez on sealing title with lowly eighth: 'The race could f*** off today'",
-   "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/marc-marquez-on-sealing-title-with-lowly-eighth-the-race-could-f-off-today/10877003/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
-   "date": "2026-11-22"
-  },
-  {
-   "tag": "RACING",
-   "title": "How Marc Marquez’s title celebrations were planned to end the GOAT debate in MotoGP",
-   "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/marc-marquez-2026-title-celebrations-goat-debate/10876881/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "title": "Camara to finish F1 season with Haas, ending F2 title bid",
+   "source": "Autosport",
+   "url": "https://www.autosport.com/f1/news/haas-keeps-rafael-camara-in-f1-ending-his-2026-f2-title-bid/10877044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
    "title": "Marc Marquez overtakes Valentino Rossi - now only Angel Nieto and Giacomo Agostini have more titles",
-   "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/marc-marquez-overtakes-valentino-rossi-and-now-only-has-nieto-and-agostini-ahead-of-him/10876983/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "source": "Autosport",
+   "url": "https://www.autosport.com/motogp/news/marc-marquez-overtakes-valentino-rossi-now-only-angel-nieto-and-giacomo-agostini-have-more-titles/10877016/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-22"
   },
   {
@@ -87,17 +108,17 @@ window.DG_NEWS = {
    "date": "2026-11-22"
   },
   {
-   "tag": "RACING",
-   "title": "Macau GP: Nakamura-Berta takes win after Deligny crashes out",
-   "source": "Autosport",
-   "url": "https://www.autosport.com/openwheel/news/macau-gp-kean-nakamura-berta-takes-win-after-enzo-deligny-crashes-out/10876849/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "tag": "FORD",
+   "title": "Red Bull Ford Strikes Gold At 2026 Las Vegas Grand Prix",
+   "source": "Ford Authority",
+   "url": "https://fordauthority.com/2026/11/red-bull-ford-strikes-gold-at-2026-las-vegas-grand-prix/",
    "date": "2026-11-22"
   },
   {
-   "tag": "RACING",
-   "title": "Vasseur furious with \"unprofessional\" Ferrari clash and demands fresh talks after Las Vegas GP",
-   "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/vasseur-furious-with-unprofessional-ferrari-clash-and-demands-fresh-talks-after-las-vegas-gp/10876847/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "tag": "FORD",
+   "title": "Why The Ford F1 Team Couldn't Afford To Lose Liam Lawson",
+   "source": "Ford Authority",
+   "url": "https://fordauthority.com/2026/11/why-the-ford-f1-team-couldnt-afford-to-lose-liam-lawson/",
    "date": "2026-11-22"
   },
   {
@@ -122,17 +143,10 @@ window.DG_NEWS = {
    "date": "2026-11-22"
   },
   {
-   "tag": "FORD",
-   "title": "Poll: Has Red Bull Ford Made You More Interested In F1?",
-   "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/poll-has-red-bull-ford-made-you-more-interested-in-f1/",
-   "date": "2026-11-22"
-  },
-  {
-   "tag": "FORD",
-   "title": "'Big Oly' Ford Bronco Singlehandedly Changed Off-Road Racing",
-   "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/big-oly-ford-bronco-singlehandedly-changed-off-road-racing/",
+   "tag": "AUTO",
+   "title": "Arizona Police Caught A BMW M2 Doing 170 MPH. The Driver Had A Terrible Excuse",
+   "source": "Motor1",
+   "url": "https://www.motor1.com/news/816310/bmw-m2-driver-caught-hitting-170-mph-arizona/",
    "date": "2026-11-22"
   },
   {
@@ -165,51 +179,37 @@ window.DG_NEWS = {
   },
   {
    "tag": "AUTO",
-   "title": "Hyundai Sonata Dead In Australia, But America Still Wants Sedans",
-   "source": "Motor1",
-   "url": "https://www.motor1.com/news/816266/hyundai-sonata-dead-australia/",
-   "date": "2026-11-22"
-  },
-  {
-   "tag": "AUTO",
-   "title": "Nissan Slapped Its Rugged Rock Creek Badge On A $13,500 Kei Van",
+   "title": "Ford Is Returning To Japan, But Regular Folks Can't Buy Them",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2321742/nissan-roox-rock-creek-edition/",
+   "url": "https://www.carscoops.com/2321858/ford-selling-trucks-in-japan/",
    "date": "2026-11-22"
   },
   {
    "tag": "AUTO",
-   "title": "Owners Frequently Report These Problems With Stellantis' Hurricane 3.0-Liter Engine",
+   "title": "Should Your Engine Be Hot Or Cold For An Oil Change?",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2321582/owners-reports-common-problems-stellantis-hurricane-six-cylinder-engine/",
+   "url": "https://www.carscoops.com/2320728/should-an-engine-be-hot-or-cold-for-oil-change/",
    "date": "2026-11-22"
   },
   {
    "tag": "AUTO",
-   "title": "These US States Don't Require Vehicles To Have Front License Plates",
+   "title": "How Long Can You Expect Synthetic Oil To Last?",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2321174/us-states-that-dont-require-front-license-plate/",
+   "url": "https://www.carscoops.com/2322403/how-long-synthetic-oil-lasts/",
    "date": "2026-11-22"
   },
   {
    "tag": "AUTO",
-   "title": "Ferrari Revives Challenge Stradale Name For A Hardcore, Non-Hybrid 296",
+   "title": "Were Pontiac Firebird Hood Scoops Ever Functional?",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2324268/ferrari-296-challenge-stradale/",
+   "url": "https://www.carscoops.com/2321686/pontiac-firebird-hood-scoops-functional/",
    "date": "2026-11-22"
   },
   {
    "tag": "AUTO",
-   "title": "Never Spray WD-40 On Squeaking Engine Belts: Here's Why",
+   "title": "Cleaning This Sensor Could Make A Noticeable Difference In How Your Car Runs",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2319200/why-not-spray-wd-40-squeaking-engine-belts/",
-   "date": "2026-11-22"
-  },
-  {
-   "tag": "AUTO",
-   "title": "Every Car Brand Has To Install Seat Belts, But Wearing Them Still Isn't Universally Mandated",
-   "source": "Jalopnik",
-   "url": "https://www.jalopnik.com/2318179/every-car-brand-installs-seatbelts-new-hampshire-not-required-adults/",
+   "url": "https://www.carscoops.com/2319647/how-to-clean-mass-airflow-sensor-guide/",
    "date": "2026-11-22"
   }
  ]
