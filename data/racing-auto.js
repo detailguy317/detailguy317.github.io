@@ -1,19 +1,7 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-22T03:19+00:00",
+ "updated": "2026-11-22T05:48+00:00",
  "slots": [
-  {
-   "type": "video",
-   "id": "XpEDnppzG3Y",
-   "title": "LIVE: Snowball Derby Preview at 5 Flags Speedway",
-   "channel": "FloRacing",
-   "kind": "live",
-   "date": "2026-11-21T23:48:45Z",
-   "viewers": "168",
-   "thumb": "https://i.ytimg.com/vi/XpEDnppzG3Y/mqdefault.jpg?v=6afa6e5f",
-   "trusted": true,
-   "embed": true
-  },
   {
    "type": "video",
    "id": "YA1ruaeoZZY",
@@ -21,8 +9,20 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "28",
+   "viewers": "36",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "9MEoApabWwY",
+   "title": "360 Sprints/Chase Johnson Classic at Merced Speedway 11/21/26 | Highlights",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-22T04:02:04Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/9MEoApabWwY/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -42,24 +42,12 @@ window.DG_RACING_AUTO = {
  "live": [
   {
    "type": "video",
-   "id": "XpEDnppzG3Y",
-   "title": "LIVE: Snowball Derby Preview at 5 Flags Speedway",
-   "channel": "FloRacing",
-   "kind": "live",
-   "date": "2026-11-21T23:48:45Z",
-   "viewers": "168",
-   "thumb": "https://i.ytimg.com/vi/XpEDnppzG3Y/mqdefault.jpg?v=6afa6e5f",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "28",
+   "viewers": "36",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -71,20 +59,8 @@ window.DG_RACING_AUTO = {
    "channel": "Antwon Maurice",
    "kind": "live",
    "date": "2026-11-21T22:47:05Z",
-   "viewers": "376",
+   "viewers": "219",
    "thumb": "https://i.ytimg.com/vi/vnmeqxvVWhc/mqdefault.jpg?v=6b021f19",
-   "trusted": false,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "8Hwokph5ll0",
-   "title": "AC Rally | Jumpy Drag Racing - Checking Out 0.7!",
-   "channel": "Doc's GearHead Gaming",
-   "kind": "live",
-   "date": "2026-11-22T03:08:32Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/8Hwokph5ll0/mqdefault.jpg?v=6b025ca5",
    "trusted": false,
    "embed": true
   },
@@ -140,24 +116,12 @@ window.DG_RACING_AUTO = {
  "found": [
   {
    "type": "video",
-   "id": "XpEDnppzG3Y",
-   "title": "LIVE: Snowball Derby Preview at 5 Flags Speedway",
-   "channel": "FloRacing",
-   "kind": "live",
-   "date": "2026-11-21T23:48:45Z",
-   "viewers": "168",
-   "thumb": "https://i.ytimg.com/vi/XpEDnppzG3Y/mqdefault.jpg?v=6afa6e5f",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "28",
+   "viewers": "36",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -169,20 +133,8 @@ window.DG_RACING_AUTO = {
    "channel": "Antwon Maurice",
    "kind": "live",
    "date": "2026-11-21T22:47:05Z",
-   "viewers": "376",
+   "viewers": "219",
    "thumb": "https://i.ytimg.com/vi/vnmeqxvVWhc/mqdefault.jpg?v=6b021f19",
-   "trusted": false,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "8Hwokph5ll0",
-   "title": "AC Rally | Jumpy Drag Racing - Checking Out 0.7!",
-   "channel": "Doc's GearHead Gaming",
-   "kind": "live",
-   "date": "2026-11-22T03:08:32Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/8Hwokph5ll0/mqdefault.jpg?v=6b025ca5",
    "trusted": false,
    "embed": true
   },
@@ -236,6 +188,18 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
+   "id": "9MEoApabWwY",
+   "title": "360 Sprints/Chase Johnson Classic at Merced Speedway 11/21/26 | Highlights",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-22T04:02:04Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/9MEoApabWwY/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "niNdotZi1mg",
    "title": "Chase Johnson Classic | USAC Midgets at Merced Speedway 11/21/26 | Highlights",
    "channel": "FloRacing",
@@ -245,6 +209,18 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/niNdotZi1mg/mqdefault.jpg",
    "trusted": true,
    "embed": true
+  },
+  {
+   "type": "video",
+   "id": "DInmDXk_O3c",
+   "title": "Lewis & Charles Give LISA Racing Tips! 💪",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-22T03:12:37Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/DInmDXk_O3c/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
   },
   {
    "type": "video",
@@ -560,18 +536,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "YZxp7l2-v2I",
-   "title": "FULL RACE: Peach State Classic Finale | FloRacing Night in America at Senoia Raceway 11/14/2026",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-19T00:00:07Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/YZxp7l2-v2I/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "aD6_EKwFZ9s",
    "title": "In-N-Out Burger NHRA Finals Weekend Rewind",
    "channel": "NHRA",
@@ -615,6 +579,18 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-17T21:00:41Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/ovSM-4hRj0g/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "wDPQ26zDtoI",
+   "title": "Traffic Causes Absolute MAYHEM at Monza! 😱 | 6 Hours of Monza 2026 | FIA WEC",
+   "channel": "FIA World Endurance Championship",
+   "kind": "recent",
+   "date": "2026-11-17T17:00:12Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/wDPQ26zDtoI/mqdefault.jpg",
    "trusted": true,
    "embed": true
   }
