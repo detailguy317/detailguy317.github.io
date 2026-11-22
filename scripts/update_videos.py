@@ -71,7 +71,7 @@ def describe(ids):
     for i in range(0, len(ids), 50):
         chunk = [x for x in ids[i:i + 50] if x]
         if not chunk: continue
-        for v in yt("videos", part="snippet,liveStreamingDetails", id=",".join(chunk), maxResults=50).get("items", []):
+        for v in yt("videos", part="snippet,liveStreamingDetails,status", id=",".join(chunk), maxResults=50).get("items", []):
             out[v["id"]] = v
     return out
 
@@ -91,12 +91,19 @@ def classify(v):
     if (NOW - pub).days <= 4 and RACE.search(s.get("title", "")): return "recent", 2
     return None, 9
 
+# Channels whose owners block their videos from playing on other websites (YouTube shows "Video unavailable").
+# Their live streams still show in LIVE NOW, but open on YouTube instead of in the site's player.
+NO_EMBED = re.compile(r"^(formula ?1|f1)$", re.I)
+
+def can_embed(v):
+    return bool((v.get("status") or {}).get("embeddable", True)) and not NO_EMBED.match(v["snippet"].get("channelTitle", "").strip())
+
 def row(v, kind, trusted):
     s, L = v["snippet"], v.get("liveStreamingDetails") or {}
     th = (s.get("thumbnails") or {}).get("medium") or (s.get("thumbnails") or {}).get("default") or {}
     return {"type": "video", "id": v["id"], "title": s.get("title", "")[:140], "channel": s.get("channelTitle", ""),
             "kind": kind, "date": L.get("actualStartTime") or L.get("scheduledStartTime") or s.get("publishedAt"),
-            "viewers": L.get("concurrentViewers"), "thumb": th.get("url", ""), "trusted": trusted}
+            "viewers": L.get("concurrentViewers"), "thumb": th.get("url", ""), "trusted": trusted, "embed": can_embed(v)}
 
 def main():
     if not KEY:
@@ -130,7 +137,7 @@ def main():
         rows.append((rank, 0 if trusted else 1, -(int((v.get("liveStreamingDetails") or {}).get("concurrentViewers") or 0)), row(v, kind, trusted)))
     rows.sort(key=lambda x: (x[0], x[1], x[2], -(ts(x[3]["date"] or "") or NOW).timestamp()))
     allrows = [r[3] for r in rows]
-    slots = [r for r in allrows if r["trusted"]][:3]
+    slots = [r for r in allrows if r["trusted"] and r.get("embed", True)][:3]   # only videos that actually play on the site
     live_now = [r for r in allrows if r["kind"] == "live"]
 
     old = load_js(OUT, "window.DG_RACING_AUTO")
