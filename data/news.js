@@ -1,12 +1,12 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-22T02:06:14.350791+00:00",
+ "updated": "2026-11-22T09:41:56.543291+00:00",
  "items": [
   {
    "tag": "RACING",
-   "title": "Mercedes misses the cues but heads the queue in Vegas",
+   "title": "Gibbs, Bernloehr, Barry, Krajicek big winners in CORR opener at Firebird",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/21/mercedes-misses-the-cues-but-heads-the-queue-in-vegas",
+   "url": "https://racer.com/2026/11/21/gibbs-bernloehr-barry-krajicek-big-winners-in-corr-opener-at-firebird",
    "date": "2026-11-22"
   },
   {
@@ -18,16 +18,16 @@ window.DG_NEWS = {
   },
   {
    "tag": "RACING",
-   "title": "Russell defends FP3 run-in with Verstappen: ‘Somebody has got to stand up to that guy’",
+   "title": "RLL’s Indy 500 downsizing for 2027 comes with a twist",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/20/russell-defends-fp3-run-in-with-verstappen-somebody-has-got-to-stand-up-to-that-guy-",
+   "url": "https://racer.com/2026/11/21/rll-s-indy-500-downsizing-for-2027-comes-with-a-twist",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "RLL’s Indy 500 downsizing for 2027 comes with a twist",
+   "title": "Mercedes misses the cues but heads the queue in Vegas",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/21/rll-s-indy-500-downsizing-for-2027-comes-with-a-twist",
+   "url": "https://racer.com/2026/11/21/mercedes-misses-the-cues-but-heads-the-queue-in-vegas",
    "date": "2026-11-22"
   },
   {
@@ -39,107 +39,107 @@ window.DG_NEWS = {
   },
   {
    "tag": "RACING",
-   "title": "MotoGP Portuguese GP: Full starting grid",
+   "title": "Isack Hadjar gets penalty after backing up George Russell in Las Vegas GP",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/motogp-portuguese-gp-full-starting-grid/10876529/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/isack-hadjar-gets-penalty-after-backing-up-george-russell-in-las-vegas-gp/10876855/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Jack Miller furious over MotoGP sprint race schedule change: “We don’t race in the rain anymore”",
+   "title": "Macau GP: Kean Nakamura-Berta takes win after Enzo Deligny crashes out",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/jack-miller-furious-over-motogp-sprint-race-schedule-change-we-dont-race-in-the-rain-anymore/10876611/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/openwheel/news/macau-gp-kean-nakamura-berta-takes-win-after-enzo-deligny-crashes-out/10876845/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Oscar Piastri questions \"strange\" pace deficit to other Mercedes-powered cars in Las Vegas",
+   "title": "Fred Vasseur furious with latest \"unprofessional\" Ferrari clash: \"It's the same speech as Mexico\"",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/piastri-questions-strange-pace-deficit-to-other-mercedes-powered-cars-in-las-vegas/10876516/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/fred-vasseur-furious-with-latest-unprofessional-ferrari-spat-its-the-same-speech-as-mexico/10876841/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Max Verstappen takes Las Vegas pole despite “weird issues” since Brazil",
+   "title": "Lewis Hamilton: With No. 1 driver backing, we could have beaten Kimi Antonelli to F1 title",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/max-verstappen-takes-las-vegas-pole-despite-weird-issues-since-brazil/10876373/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/lewis-hamilton-with-no-1-driver-backing-we-could-have-beaten-kimi-antonelli-to-f1-title/10876826/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Diogo Moreira admits he is “lucky” after frightening Portimao MotoGP highside",
+   "title": "Sheldon van der Linde survives 250km/h wall strike to win chaotic FIA GT World Cup in Macau",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/diogo-moreira-admits-he-is-lucky-after-frightening-portimao-motogp-highside/10876607/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/intercontinental-gt-challenge/news/fia-gt-weltcup-macau-2026-kvdl-setzt-sich-in-chaotischem-rennen-durch/10876808/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "MotoGP Portuguese GP: Marquez crashes with title in sight; Bezzecchi wins sprint",
+   "title": "Hadjar penalised after backing up Russell in Las Vegas GP, Perez given grid drop for Qatar GP",
    "source": "Autosport",
-   "url": "https://www.autosport.com/motogp/news/motogp-portuguese-gp-marquez-crashes-with-title-in-sight-bezzecchi-wins-sprint/10876554/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/f1/news/hadjar-penalised-after-backing-up-russell-in-las-vegas-gp-perez-given-grid-drop-for-qatar-gp/10876867/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "MotoGP Portuguese Grand Prix: Bezzecchi on pole, Marquez second",
+   "title": "Macau GP: Nakamura-Berta takes win after Deligny crashes out",
    "source": "Autosport",
-   "url": "https://www.autosport.com/motogp/news/motogp-portuguese-grand-prix-marco-bezzecchi-on-pole-marc-marquez-second/10876489/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/openwheel/news/macau-gp-kean-nakamura-berta-takes-win-after-enzo-deligny-crashes-out/10876849/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Antonelli and Russell set for Mercedes talks over Las Vegas GP qualifying mix-up",
+   "title": "Vasseur furious with \"unprofessional\" Ferrari clash and demands fresh talks after Las Vegas GP",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/kimi-antonelli-and-george-russell-set-for-mercedes-talks-over-las-vegas-gp-qualifying-woes/10876456/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/f1/news/vasseur-furious-with-unprofessional-ferrari-clash-and-demands-fresh-talks-after-las-vegas-gp/10876847/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Macau GP: Al Dhaheri defeats Colnaghi to take qualification race win",
+   "title": "Verstappen hits back after Russell criticism: “He’s so far below my level”",
    "source": "Autosport",
-   "url": "https://www.autosport.com/openwheel/news/macau-gp-al-dhaheri-defeats-colnaghi-to-take-qualification-race-win/10876413/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/f1/news/max-verstappens-snarky-revenge-on-george-russell-karma-is-a-bitch/10876811/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Verstappen reveals mysterious Red Bull F1 car issue that cannot be fixed in Las Vegas",
+   "title": "“My mistake was to lift” – Why Antonelli lost power in Las Vegas GP victory battle",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/verstappen-reveals-mysterious-red-bull-f1-car-issue-that-cannot-be-fixed-in-las-vegas/10876404/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/f1/news/my-mistake-was-to-lift-why-antonelli-lost-power-in-las-vegas-gp-victory-battle/10876786/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-22"
   },
   {
    "tag": "FORD",
-   "title": "1996 Ford Mustang SVT Cobra With Less Than 100 Miles Up For Auction",
+   "title": "Ford Racing Announces Reserve Driver For Hypercar Program",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/1996-ford-mustang-svt-cobra-with-less-than-100-miles-up-for-auction/",
+   "url": "https://fordauthority.com/2026/11/ford-racing-announces-reserve-driver-for-hypercar-program/",
    "date": "2026-11-22"
   },
   {
    "tag": "FORD",
-   "title": "Congress Moving Closer To Comprehensive Chinese Vehicle Ban",
+   "title": "Ford Maverick Discount, Lease, Finance Deals For November 2026",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/congress-moving-closer-to-comprehensive-chinese-vehicle-ban/",
+   "url": "https://fordauthority.com/2026/11/ford-maverick-discount-lease-finance-deals-incentives-offers-november-2026/",
    "date": "2026-11-22"
   },
   {
    "tag": "FORD",
-   "title": "Second Ford Ranger Crosspower Trademark Filing Suggests New Hybrid Incoming",
+   "title": "NASCAR Ford Driver Could Upend Cadillac F1 Team Buyout",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/second-ford-ranger-crosspower-trademark-filing-suggests-new-hybrid-incoming/",
+   "url": "https://fordauthority.com/2026/11/nascar-ford-driver-could-upend-cadillac-f1-team-buyout/",
    "date": "2026-11-22"
   },
   {
    "tag": "FORD",
-   "title": "NASCAR Ford Champion Gets Behind Wheel Of Historic Ford Cars",
+   "title": "Chinese Automakers Could Soon Rival Ford F1 Team On The Grid",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/nascar-ford-champion-gets-behind-wheel-of-historic-ford-cars/",
+   "url": "https://fordauthority.com/2026/11/chinese-automakers-could-soon-rival-ford-f1-team-on-the-grid/",
    "date": "2026-11-22"
   },
   {
    "tag": "FORD",
-   "title": "Rod Hall's 1969 Ford Bronco Racer Finds It Way To Blue Oval Vault",
+   "title": "Max Verstappen's Style Makes Things Tough For Ford F1 Teammates",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/rod-halls-1969-ford-bronco-racer-finds-it-way-to-blue-oval-vault/",
+   "url": "https://fordauthority.com/2026/11/max-verstappens-style-makes-things-tough-for-ford-f1-teammates/",
    "date": "2026-11-22"
   },
   {
