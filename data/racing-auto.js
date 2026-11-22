@@ -1,7 +1,19 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-22T14:18+00:00",
+ "updated": "2026-11-22T20:47+00:00",
  "slots": [
+  {
+   "type": "video",
+   "id": "VTIjdHYNS0E",
+   "title": "LIVE PREVIEW: Thor Mini O's at Gatorback Cycle Park - Sunday",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-22T18:01:31Z",
+   "viewers": "824",
+   "thumb": "https://i.ytimg.com/vi/VTIjdHYNS0E/mqdefault.jpg?v=6afb4bfa",
+   "trusted": true,
+   "embed": true
+  },
   {
    "type": "video",
    "id": "YA1ruaeoZZY",
@@ -9,32 +21,20 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "21",
+   "viewers": "47",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
   },
   {
    "type": "video",
-   "id": "7_ghR8fbToo",
-   "title": "MARC MARQUEZ IS YOUR 2026 MotoGP World Champion! 👑",
+   "id": "2W0eNMY5U18",
+   "title": "Marc Marquez celebrates emotional 8th MotoGP title | 2026 Portuguese GP",
    "channel": "MotoGP",
    "kind": "recent",
-   "date": "2026-11-22T14:03:16Z",
+   "date": "2026-11-22T20:00:31Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/7_ghR8fbToo/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "YMumj0ReSGE",
-   "title": "Marc Marquez is your 2026 MotoGP WORLD CHAMPION 🏆",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-22T13:52:41Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/YMumj0ReSGE/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/2W0eNMY5U18/mqdefault.jpg",
    "trusted": true,
    "embed": true
   }
@@ -42,12 +42,24 @@ window.DG_RACING_AUTO = {
  "live": [
   {
    "type": "video",
+   "id": "VTIjdHYNS0E",
+   "title": "LIVE PREVIEW: Thor Mini O's at Gatorback Cycle Park - Sunday",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-22T18:01:31Z",
+   "viewers": "824",
+   "thumb": "https://i.ytimg.com/vi/VTIjdHYNS0E/mqdefault.jpg?v=6afb4bfa",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "21",
+   "viewers": "47",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -104,12 +116,24 @@ window.DG_RACING_AUTO = {
  "found": [
   {
    "type": "video",
+   "id": "VTIjdHYNS0E",
+   "title": "LIVE PREVIEW: Thor Mini O's at Gatorback Cycle Park - Sunday",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-22T18:01:31Z",
+   "viewers": "824",
+   "thumb": "https://i.ytimg.com/vi/VTIjdHYNS0E/mqdefault.jpg?v=6afb4bfa",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "21",
+   "viewers": "47",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -164,63 +188,51 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "7_ghR8fbToo",
-   "title": "MARC MARQUEZ IS YOUR 2026 MotoGP World Champion! 👑",
+   "id": "2W0eNMY5U18",
+   "title": "Marc Marquez celebrates emotional 8th MotoGP title | 2026 Portuguese GP",
    "channel": "MotoGP",
    "kind": "recent",
-   "date": "2026-11-22T14:03:16Z",
+   "date": "2026-11-22T20:00:31Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/7_ghR8fbToo/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/2W0eNMY5U18/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
   {
    "type": "video",
-   "id": "YMumj0ReSGE",
-   "title": "Marc Marquez is your 2026 MotoGP WORLD CHAMPION 🏆",
+   "id": "NPiiMVtqaUg",
+   "title": "Best MotoGP Moments 👑 | 2026 Portuguese GP",
    "channel": "MotoGP",
    "kind": "recent",
-   "date": "2026-11-22T13:52:41Z",
+   "date": "2026-11-22T17:18:06Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/YMumj0ReSGE/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/NPiiMVtqaUg/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
   {
    "type": "video",
-   "id": "Y5P0ElAIWHU",
-   "title": "MotoGP Grand Prix Build Up | 2026 Portuguese GP",
+   "id": "mqqw38_uwzs",
+   "title": "The podium trio & Aprilia congratulate Marc Marquez on 8th MotoGP title 🫂🏆",
    "channel": "MotoGP",
    "kind": "recent",
-   "date": "2026-11-22T12:18:41Z",
+   "date": "2026-11-22T17:09:30Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/Y5P0ElAIWHU/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/mqqw38_uwzs/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
   {
    "type": "video",
-   "id": "JpqYcDktJHQ",
-   "title": "The massive Moto2 incident that red-flagged the race and left Gonzalez out of the GP 💥🚩",
-   "channel": "MotoGP",
+   "id": "eKgjER6mhys",
+   "title": "The Las Vegas LEGO Race!",
+   "channel": "FORMULA 1",
    "kind": "recent",
-   "date": "2026-11-22T12:07:54Z",
+   "date": "2026-11-22T15:00:32Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/JpqYcDktJHQ/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/eKgjER6mhys/mqdefault.jpg",
    "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "GvTocsDO224",
-   "title": "Pre-Race Talk Show | 2026 Portuguese GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-22T09:19:20Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/GvTocsDO224/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
+   "embed": false
   },
   {
    "type": "video",
@@ -245,18 +257,6 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/Vyk_6bNm7lo/mqdefault.jpg",
    "trusted": true,
    "embed": false
-  },
-  {
-   "type": "video",
-   "id": "4jd3dIbIA4E",
-   "title": "All-time lap record gets broken in the last 5 minutes of MotoGP Q2 ⏱️| 2026 Portuguese GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-22T06:30:16Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/4jd3dIbIA4E/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
   },
   {
    "type": "video",
@@ -341,18 +341,6 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/hOqxNuV9DX4/mqdefault.jpg",
    "trusted": true,
    "embed": true
-  },
-  {
-   "type": "video",
-   "id": "3QgJip5ljEk",
-   "title": "Drivers React To Qualifying | 2026 Las Vegas Grand Prix",
-   "channel": "FORMULA 1",
-   "kind": "recent",
-   "date": "2026-11-21T08:00:15Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/3QgJip5ljEk/mqdefault.jpg",
-   "trusted": true,
-   "embed": false
   },
   {
    "type": "video",
@@ -464,18 +452,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "F6oawamTWeA",
-   "title": "Push Play ▶️ Cody Sommer watches the first Friday of Gateway Dirt Nationals history.",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-19T20:00:19Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/F6oawamTWeA/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "wUNn-56BHhA",
    "title": "Lucas Oil Drag Racing Series Highlights from the In-N-Out Burger NHRA Finals",
    "channel": "NHRA",
@@ -531,18 +507,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-17T21:00:41Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/ovSM-4hRj0g/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "wDPQ26zDtoI",
-   "title": "Traffic Causes Absolute MAYHEM at Monza! 😱 | 6 Hours of Monza 2026 | FIA WEC",
-   "channel": "FIA World Endurance Championship",
-   "kind": "recent",
-   "date": "2026-11-17T17:00:12Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/wDPQ26zDtoI/mqdefault.jpg",
    "trusted": true,
    "embed": true
   }
