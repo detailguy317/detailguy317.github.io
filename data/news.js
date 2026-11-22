@@ -1,75 +1,82 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-22T09:41:56.543291+00:00",
+ "updated": "2026-11-22T17:45:45.232725+00:00",
  "items": [
   {
    "tag": "RACING",
-   "title": "Gibbs, Bernloehr, Barry, Krajicek big winners in CORR opener at Firebird",
+   "title": "Verstappen calls Russell’s late-race crash ‘karma,’ says Mercedes driver is ‘so far below my level’",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/21/gibbs-bernloehr-barry-krajicek-big-winners-in-corr-opener-at-firebird",
+   "url": "https://racer.com/2026/11/22/verstappen-calls-russell-s-late-race-crash-karma-says-mercedes-driver-is-so-far-below-my-level-",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "All options open for Penske as it works to secure its sports car racing future",
+   "title": "Ganassi team evaluating prospects for a return to IMSA",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/21/penske-working-to-maintain-a-long-term-presence-in-imsa",
+   "url": "https://racer.com/2026/11/22/ganassi-team-evaluating-prospects-for-a-return-to-imsa",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "RLL’s Indy 500 downsizing for 2027 comes with a twist",
+   "title": "Verstappen wins F1 race for the ages in Las Vegas",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/21/rll-s-indy-500-downsizing-for-2027-comes-with-a-twist",
+   "url": "https://racer.com/2026/11/22/verstappen-wins-f1-race-for-the-ages-in-las-vegas",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Mercedes misses the cues but heads the queue in Vegas",
+   "title": "Fuming Vasseur points finger at Leclerc after Hamilton collision",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/21/mercedes-misses-the-cues-but-heads-the-queue-in-vegas",
+   "url": "https://racer.com/2026/11/22/fuming-vasseur-points-finger-at-leclerc-after-hamilton-collision",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Zurlinden to become new global director of Ford Racing",
+   "title": "Foyt team plans 50th anniversary ‘salute car’ for Ferrucci at Indy 500",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/21/zurlinden-to-become-new-global-director-of-ford-racing",
+   "url": "https://racer.com/2026/11/22/ferrucci-for-foyt-50th-anniversary-salute-car-at-indy-500-",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Isack Hadjar gets penalty after backing up George Russell in Las Vegas GP",
+   "title": "'I will put my name on MotoGP trophy again,' vows Jorge Martin after ceding 2026 title to Marc Marquez",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/isack-hadjar-gets-penalty-after-backing-up-george-russell-in-las-vegas-gp/10876855/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/i-will-put-my-name-on-motogp-trophy-again-vows-jorge-martin-after-ceding-2026-title-to-marc-marquez/10877017/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Macau GP: Kean Nakamura-Berta takes win after Enzo Deligny crashes out",
+   "title": "Fabio Quartararo says Marc Marquez is the greatest MotoGP rider ever after 10th world title",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/openwheel/news/macau-gp-kean-nakamura-berta-takes-win-after-enzo-deligny-crashes-out/10876845/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/fabio-quartararo-says-marc-marquez-is-the-greatest-motogp-rider-ever-after-10th-world-title/10877009/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Fred Vasseur furious with latest \"unprofessional\" Ferrari clash: \"It's the same speech as Mexico\"",
+   "title": "Marc Marquez on sealing title with lowly eighth: 'The race could f*** off today'",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/fred-vasseur-furious-with-latest-unprofessional-ferrari-spat-its-the-same-speech-as-mexico/10876841/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/marc-marquez-on-sealing-title-with-lowly-eighth-the-race-could-f-off-today/10877003/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Lewis Hamilton: With No. 1 driver backing, we could have beaten Kimi Antonelli to F1 title",
+   "title": "How Marc Marquez’s title celebrations were planned to end the GOAT debate in MotoGP",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/lewis-hamilton-with-no-1-driver-backing-we-could-have-beaten-kimi-antonelli-to-f1-title/10876826/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/marc-marquez-2026-title-celebrations-goat-debate/10876881/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-22"
   },
   {
    "tag": "RACING",
-   "title": "Sheldon van der Linde survives 250km/h wall strike to win chaotic FIA GT World Cup in Macau",
+   "title": "Marc Marquez overtakes Valentino Rossi - now only Angel Nieto and Giacomo Agostini have more titles",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/intercontinental-gt-challenge/news/fia-gt-weltcup-macau-2026-kvdl-setzt-sich-in-chaotischem-rennen-durch/10876808/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/marc-marquez-overtakes-valentino-rossi-and-now-only-has-nieto-and-agostini-ahead-of-him/10876983/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "date": "2026-11-22"
+  },
+  {
+   "tag": "RACING",
+   "title": "MotoGP Portuguese GP: Marquez crowned 2026 champion as Bezzecchi wins tense race",
+   "source": "Autosport",
+   "url": "https://www.autosport.com/motogp/news/motogp-portuguese-gp-marquez-crowned-2026-champion-as-bezzecchi-wins-tense-race/10876968/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-22"
   },
   {
@@ -94,52 +101,38 @@ window.DG_NEWS = {
    "date": "2026-11-22"
   },
   {
-   "tag": "RACING",
-   "title": "Verstappen hits back after Russell criticism: “He’s so far below my level”",
-   "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/max-verstappens-snarky-revenge-on-george-russell-karma-is-a-bitch/10876811/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
-   "date": "2026-11-22"
-  },
-  {
-   "tag": "RACING",
-   "title": "“My mistake was to lift” – Why Antonelli lost power in Las Vegas GP victory battle",
-   "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/my-mistake-was-to-lift-why-antonelli-lost-power-in-las-vegas-gp-victory-battle/10876786/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "tag": "FORD",
+   "title": "2023 Ford F-350 Super Duty 'Bronczilla' Resurfaces After Two Years",
+   "source": "Ford Authority",
+   "url": "https://fordauthority.com/2026/11/2023-ford-f-350-super-duty-bronczilla-resurfaces-after-two-years/",
    "date": "2026-11-22"
   },
   {
    "tag": "FORD",
-   "title": "Ford Racing Announces Reserve Driver For Hypercar Program",
+   "title": "Ford Mustang Dark Horse SC Races Chevy Corvette Grand Sport: Video",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-racing-announces-reserve-driver-for-hypercar-program/",
+   "url": "https://fordauthority.com/2026/11/ford-mustang-dark-horse-sc-races-chevy-corvette-grand-sport-video/",
    "date": "2026-11-22"
   },
   {
    "tag": "FORD",
-   "title": "Ford Maverick Discount, Lease, Finance Deals For November 2026",
+   "title": "Supercars Ford Team Ditched GM Over Lack Of Road Cars",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-maverick-discount-lease-finance-deals-incentives-offers-november-2026/",
+   "url": "https://fordauthority.com/2026/11/supercars-ford-team-ditched-gm-over-lack-of-road-cars/",
    "date": "2026-11-22"
   },
   {
    "tag": "FORD",
-   "title": "NASCAR Ford Driver Could Upend Cadillac F1 Team Buyout",
+   "title": "Poll: Has Red Bull Ford Made You More Interested In F1?",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/nascar-ford-driver-could-upend-cadillac-f1-team-buyout/",
+   "url": "https://fordauthority.com/2026/11/poll-has-red-bull-ford-made-you-more-interested-in-f1/",
    "date": "2026-11-22"
   },
   {
    "tag": "FORD",
-   "title": "Chinese Automakers Could Soon Rival Ford F1 Team On The Grid",
+   "title": "'Big Oly' Ford Bronco Singlehandedly Changed Off-Road Racing",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/chinese-automakers-could-soon-rival-ford-f1-team-on-the-grid/",
-   "date": "2026-11-22"
-  },
-  {
-   "tag": "FORD",
-   "title": "Max Verstappen's Style Makes Things Tough For Ford F1 Teammates",
-   "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/max-verstappens-style-makes-things-tough-for-ford-f1-teammates/",
+   "url": "https://fordauthority.com/2026/11/big-oly-ford-bronco-singlehandedly-changed-off-road-racing/",
    "date": "2026-11-22"
   },
   {
@@ -179,37 +172,44 @@ window.DG_NEWS = {
   },
   {
    "tag": "AUTO",
-   "title": "Next-Gen Nissan GT-R Circles Back To The 1970s With This Retro Detail: Report",
+   "title": "Nissan Slapped Its Rugged Rock Creek Badge On A $13,500 Kei Van",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2320934/r36-nissan-gt-r-round-headlights/",
+   "url": "https://www.carscoops.com/2321742/nissan-roox-rock-creek-edition/",
    "date": "2026-11-22"
   },
   {
    "tag": "AUTO",
-   "title": "Is The Ford Maverick A Reliable Truck? Here's What Consumer Reports Data Shows",
+   "title": "Owners Frequently Report These Problems With Stellantis' Hurricane 3.0-Liter Engine",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2320691/consumer-reports-says-ford-maverick-reliable/",
+   "url": "https://www.carscoops.com/2321582/owners-reports-common-problems-stellantis-hurricane-six-cylinder-engine/",
    "date": "2026-11-22"
   },
   {
    "tag": "AUTO",
-   "title": "If Your Smart Key Dies, Here's How You Can Still Start Your Car",
+   "title": "These US States Don't Require Vehicles To Have Front License Plates",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2320715/how-start-car-when-smart-key-fob-dies/",
+   "url": "https://www.carscoops.com/2321174/us-states-that-dont-require-front-license-plate/",
    "date": "2026-11-22"
   },
   {
    "tag": "AUTO",
-   "title": "Does Hitting The Redline Hurt Your Engine? Here's What Really Happens",
+   "title": "Ferrari Revives Challenge Stradale Name For A Hardcore, Non-Hybrid 296",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2320711/does-redlining-hurt-your-engine/",
+   "url": "https://www.carscoops.com/2324268/ferrari-296-challenge-stradale/",
    "date": "2026-11-22"
   },
   {
    "tag": "AUTO",
-   "title": "Which Ford EcoBoost Engines Have A Wet Timing Belt?",
+   "title": "Never Spray WD-40 On Squeaking Engine Belts: Here's Why",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2318808/ford-ecoboost-engines-with-wet-timing-belts/",
+   "url": "https://www.carscoops.com/2319200/why-not-spray-wd-40-squeaking-engine-belts/",
+   "date": "2026-11-22"
+  },
+  {
+   "tag": "AUTO",
+   "title": "Every Car Brand Has To Install Seat Belts, But Wearing Them Still Isn't Universally Mandated",
+   "source": "Jalopnik",
+   "url": "https://www.jalopnik.com/2318179/every-car-brand-installs-seatbelts-new-hampshire-not-required-adults/",
    "date": "2026-11-22"
   }
  ]
