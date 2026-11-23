@@ -1,6 +1,6 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-23T01:28+00:00",
+ "updated": "2026-11-23T09:42+00:00",
  "slots": [
   {
    "type": "video",
@@ -9,8 +9,20 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "65",
+   "viewers": "35",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "8APkwESfa0Q",
+   "title": "LIVE: Gateway Dirt Nationals Track Build - November 24th",
+   "channel": "FloRacing",
+   "kind": "upcoming",
+   "date": "2026-11-24T14:00:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg?v=6b037e32",
    "trusted": true,
    "embed": true
   },
@@ -25,18 +37,6 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/bLY42DYzW-o/mqdefault.jpg",
    "trusted": true,
    "embed": true
-  },
-  {
-   "type": "video",
-   "id": "2W0eNMY5U18",
-   "title": "Marc Marquez celebrates emotional 8th MotoGP title | 2026 Portuguese GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-22T20:00:31Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/2W0eNMY5U18/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
   }
  ],
  "live": [
@@ -47,21 +47,9 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "65",
+   "viewers": "35",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "S4zlZq5Wt8A",
-   "title": "We are back!!!!!!! Chill GT7 Drag Racing Stream",
-   "channel": "OblivionRider_-_",
-   "kind": "live",
-   "date": "2026-11-22T23:55:32Z",
-   "viewers": "2",
-   "thumb": "https://i.ytimg.com/vi/S4zlZq5Wt8A/mqdefault.jpg?v=12",
-   "trusted": false,
    "embed": true
   },
   {
@@ -121,21 +109,9 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "65",
+   "viewers": "35",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "S4zlZq5Wt8A",
-   "title": "We are back!!!!!!! Chill GT7 Drag Racing Stream",
-   "channel": "OblivionRider_-_",
-   "kind": "live",
-   "date": "2026-11-22T23:55:32Z",
-   "viewers": "2",
-   "thumb": "https://i.ytimg.com/vi/S4zlZq5Wt8A/mqdefault.jpg?v=12",
-   "trusted": false,
    "embed": true
   },
   {
@@ -184,6 +160,18 @@ window.DG_RACING_AUTO = {
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/R7h630vGhP0/mqdefault.jpg?v=6a7c1833",
    "trusted": false,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "8APkwESfa0Q",
+   "title": "LIVE: Gateway Dirt Nationals Track Build - November 24th",
+   "channel": "FloRacing",
+   "kind": "upcoming",
+   "date": "2026-11-24T14:00:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg?v=6b037e32",
+   "trusted": true,
    "embed": true
   },
   {
