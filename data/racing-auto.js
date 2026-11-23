@@ -1,6 +1,6 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-23T09:42+00:00",
+ "updated": "2026-11-23T21:56+00:00",
  "slots": [
   {
    "type": "video",
@@ -9,8 +9,20 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "35",
+   "viewers": "37",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "0goQS_Pw_r0",
+   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
+   "channel": "FloRacing",
+   "kind": "upcoming",
+   "date": "2026-11-25T01:00:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg?v=6b035d17",
    "trusted": true,
    "embed": true
   },
@@ -25,18 +37,6 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg?v=6b037e32",
    "trusted": true,
    "embed": true
-  },
-  {
-   "type": "video",
-   "id": "bLY42DYzW-o",
-   "title": "😂 A reminder from Tyler Carpenter about the mindset to bring into this year’s Gateway Dirt Nationals",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-23T01:00:00Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/bLY42DYzW-o/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
   }
  ],
  "live": [
@@ -47,7 +47,7 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "35",
+   "viewers": "37",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -109,7 +109,7 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "35",
+   "viewers": "37",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -164,6 +164,18 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
+   "id": "0goQS_Pw_r0",
+   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
+   "channel": "FloRacing",
+   "kind": "upcoming",
+   "date": "2026-11-25T01:00:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg?v=6b035d17",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "8APkwESfa0Q",
    "title": "LIVE: Gateway Dirt Nationals Track Build - November 24th",
    "channel": "FloRacing",
@@ -176,6 +188,90 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
+   "id": "zA8t1NZwkfo",
+   "title": "DRIVEN: 10 Years of Gateway Dirt Nationals - Stars in the Making (Episode 2)",
+   "channel": "FloRacing",
+   "kind": "upcoming",
+   "date": "2026-11-24T00:00:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/zA8t1NZwkfo/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "zUYxUAMmtn4",
+   "title": "Breaking Down The 2027 Interstate Batteries High Limit Racing Sprint Car Schedule",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-23T20:34:35Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/zUYxUAMmtn4/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "fP9kssSV10w",
+   "title": "POV: You've just become the 2026 MotoGP World Champion 🏆",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-23T20:00:28Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/fP9kssSV10w/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "z1S6WWWIP3w",
+   "title": "All 35 Times There Was A New Leader | 2026 Las Vegas Grand Prix",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-23T19:00:30Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/z1S6WWWIP3w/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "GoKZhwio29w",
+   "title": "Biggest Moments of the 2026 WEC Season! 😱 (Part 1)",
+   "channel": "FIA World Endurance Championship",
+   "kind": "recent",
+   "date": "2026-11-23T17:00:05Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/GoKZhwio29w/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "eRZpErDPLa4",
+   "title": "Radio Rewind | 2026 Las Vegas Grand Prix | Lenovo",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-23T15:06:56Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/eRZpErDPLa4/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "3H3aDwP8I9g",
+   "title": "𝐂𝐎𝐌𝐈𝐍𝐆 𝐒𝐎𝐎𝐍 🎬 A superstar was born. An event was changed forever. #DRIVEN #GatewayDirt",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-23T15:00:12Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/3H3aDwP8I9g/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "bLY42DYzW-o",
    "title": "😂 A reminder from Tyler Carpenter about the mindset to bring into this year’s Gateway Dirt Nationals",
    "channel": "FloRacing",
@@ -183,42 +279,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-23T01:00:00Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/bLY42DYzW-o/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "2W0eNMY5U18",
-   "title": "Marc Marquez celebrates emotional 8th MotoGP title | 2026 Portuguese GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-22T20:00:31Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/2W0eNMY5U18/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "NPiiMVtqaUg",
-   "title": "Best MotoGP Moments 👑 | 2026 Portuguese GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-22T17:18:06Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/NPiiMVtqaUg/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "mqqw38_uwzs",
-   "title": "The podium trio & Aprilia congratulate Marc Marquez on 8th MotoGP title 🫂🏆",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-22T17:09:30Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/mqqw38_uwzs/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -272,30 +332,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "9MEoApabWwY",
-   "title": "360 Sprints/Chase Johnson Classic at Merced Speedway 11/21/26 | Highlights",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-22T04:02:04Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/9MEoApabWwY/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "niNdotZi1mg",
-   "title": "Chase Johnson Classic | USAC Midgets at Merced Speedway 11/21/26 | Highlights",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-22T03:13:47Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/niNdotZi1mg/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "DInmDXk_O3c",
    "title": "Lewis & Charles Give LISA Racing Tips! 💪",
    "channel": "FORMULA 1",
@@ -303,18 +339,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-22T03:12:37Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/DInmDXk_O3c/mqdefault.jpg",
-   "trusted": true,
-   "embed": false
-  },
-  {
-   "type": "video",
-   "id": "XawJHpDkuPE",
-   "title": "LIVE: Las Vegas Grand Prix Build-Up, Drivers' Parade & LEGO Race",
-   "channel": "FORMULA 1",
-   "kind": "recent",
-   "date": "2026-11-22T01:58:01Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/XawJHpDkuPE/mqdefault.jpg",
    "trusted": true,
    "embed": false
   },
@@ -423,42 +447,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-19T19:00:04Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/wUNn-56BHhA/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "aD6_EKwFZ9s",
-   "title": "In-N-Out Burger NHRA Finals Weekend Rewind",
-   "channel": "NHRA",
-   "kind": "recent",
-   "date": "2026-11-18T17:56:39Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/aD6_EKwFZ9s/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "h4xwiCPufq4",
-   "title": "NASCAR Champion Puts 5 Iconic Fords to the Test",
-   "channel": "NASCAR",
-   "kind": "recent",
-   "date": "2026-11-18T17:00:13Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/h4xwiCPufq4/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "ujnrbz4qz_k",
-   "title": "Formula E Has Come A Long Way!",
-   "channel": "Formula E",
-   "kind": "recent",
-   "date": "2026-11-18T11:14:35Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/ujnrbz4qz_k/mqdefault.jpg",
    "trusted": true,
    "embed": true
   }
