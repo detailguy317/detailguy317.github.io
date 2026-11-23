@@ -1,215 +1,215 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-23T07:23:01.663233+00:00",
+ "updated": "2026-11-23T20:05:03.567187+00:00",
  "items": [
   {
    "tag": "RACING",
-   "title": "F1 dials up Indy 500 mode in Las Vegas",
+   "title": "Stellantis confirms closure of WEC, Formula E programs",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/22/f1-dials-up-indy-500-mode-in-las-vegas",
+   "url": "https://racer.com/2026/11/23/stellantis-confirms-closure-of-wec-formula-e-programs",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "Verstappen calls Russell’s late-race crash ‘karma,’ says Mercedes driver is ‘so far below my level’",
+   "title": "NASCAR's 2026 season by the numbers",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/22/verstappen-calls-russell-s-late-race-crash-karma-says-mercedes-driver-is-so-far-below-my-level-",
+   "url": "https://racer.com/2026/11/23/nascar-s-2026-season-by-the-numbers",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "Ganassi team evaluating prospects for a return to IMSA",
+   "title": "Tsunami RT announces Michelin Endurance Cup program for 2027",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/22/ganassi-team-evaluating-prospects-for-a-return-to-imsa",
+   "url": "https://racer.com/2026/11/23/tsunami-rt-announces-michelin-endurance-cup-program-for-2027",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "Holtger, Renezeder, Barry and Bernloehr score big victories as CORR wraps opener at Firebird",
+   "title": "No Indy-only entry on the radar for Chip Ganassi Racing",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/22/holtger-renezeder-barry-and-bernloehr-score-big-victories-as-corr-wraps-opener-at-firebird",
+   "url": "https://racer.com/2026/11/23/no-indy-only-entry-on-the-radar-for-chip-ganassi-racing",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "Camara confirmed at Haas for remainder of 2026 F1 season",
+   "title": "Herta’s F2 season ends early as he exits Hitech",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/22/camara-confirmed-at-haas-for-remainder-of-2026-f1-season",
+   "url": "https://racer.com/2026/11/23/herta-s-f2-season-ends-early-as-he-exits-hitech",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "F1 set to reduce customer teams as key 2030 details emerge",
+   "title": "Max Verstappen jokes last time he won a race like F1 Las Vegas GP it was \"Mario Kart\"",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/f1-set-to-reduce-customer-teams-as-key-2030-details-emerge/10877055/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/max-verstappen-the-last-time-i-won-a-race-like-las-vegas-was-on-mario-kart/10877295/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "Haas keeps Rafael Camara in F1, ending his 2026 F2 title bid",
+   "title": "Laurent Mekies: Keeping his emotions in check is giving Isack Hadjar “lap time”",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/rafael-camara-gives-up-f2-title-chance-to-finish-2026-f1-season-with-haas/10877028/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/laurent-mekies-keeping-his-emotions-in-check-is-giving-isack-hadjar-lap-time/10877211/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "Laurin Heinrich \"deeply disappointed but not surprised\" by Raffaele Marciello after Macau clash",
+   "title": "Guenther Steiner expects Ferrari board to react after Lewis Hamilton-Charles Leclerc clash",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/gt/news/macau-gt-laurin-heinrich-raffaele-marciello-crash/10877023/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/guenther-steiner-expects-ferrari-board-to-react-after-lewis-hamilton-charles-leclerc-clash/10877259/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "\"I actually liked it\" – McLaren boss defends Piastri's four-letter outburst in Las Vegas GP",
+   "title": "Toto Wolff: Las Vegas was “Indy 500, NASCAR and Formula 1 mixed”",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/i-actually-liked-it-mclaren-boss-defends-piastris-four-letter-outburst-in-las-vegas-gp/10876928/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/toto-wolff-las-vegas-was-indy-500-and-nascar-and-formula-1-mixed/10877232/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "'I will put my name on MotoGP trophy again,' vows Jorge Martin after ceding 2026 title to Marc Marquez",
+   "title": "Max Verstappen’s deadpan reaction to winning F1’s Overtake of the Month award",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/motogp/news/i-will-put-my-name-on-motogp-trophy-again-vows-jorge-martin-after-ceding-2026-title-to-marc-marquez/10877017/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/max-verstappens-deadpan-reaction-to-winning-f1s-overtake-of-the-month-award/10877217/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "F1 plans two-team engine supply limit under 2030 V8 rules",
+   "title": "Max Verstappen considering 2027 Daytona 24 Hours entry",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/f1-set-to-reduce-customer-teams-as-key-2030-details-emerge/10877058/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/f1/news/max-verstappen-reveals-he-is-considering-2027-daytona-24-hours-entry/10877159/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "Camara to finish F1 season with Haas, ending F2 title bid",
+   "title": "F1 2027 grid: Who will be racing and where?",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/haas-keeps-rafael-camara-in-f1-ending-his-2026-f2-title-bid/10877044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/f1/news/f1-2027-grid-who-will-be-racing-and-where/10847600/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "Marc Marquez overtakes Valentino Rossi - now only Angel Nieto and Giacomo Agostini have more titles",
+   "title": "Autosport Business Awards open nominations to recognise excellence across global motorsport industry",
    "source": "Autosport",
-   "url": "https://www.autosport.com/motogp/news/marc-marquez-overtakes-valentino-rossi-now-only-angel-nieto-and-giacomo-agostini-have-more-titles/10877016/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/autosport-awards/news/autosport-business-awards-open-nominations-to-recognise-excellence-across-global-motorsport-industry/10877252/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "MotoGP Portuguese GP: Marquez crowned 2026 champion as Bezzecchi wins tense race",
+   "title": "Peugeot quits WEC, Citroen and Opel to wind down Formula E programmes",
    "source": "Autosport",
-   "url": "https://www.autosport.com/motogp/news/motogp-portuguese-gp-marquez-crowned-2026-champion-as-bezzecchi-wins-tense-race/10876968/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/wec/news/peugeot-quits-wec-citroen-and-opel-to-wind-down-formula-e-programmes/10877231/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-23"
   },
   {
    "tag": "RACING",
-   "title": "Hadjar penalised after backing up Russell in Las Vegas GP, Perez given grid drop for Qatar GP",
+   "title": "Cataclean acquires former Plato Mercedes team assets",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/hadjar-penalised-after-backing-up-russell-in-las-vegas-gp-perez-given-grid-drop-for-qatar-gp/10876867/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/btcc/news/cataclean-acquires-mercedes-team-assets/10877240/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-23"
   },
   {
    "tag": "FORD",
-   "title": "Red Bull Ford Strikes Gold At 2026 Las Vegas Grand Prix",
+   "title": "Ford Shoots For The Stars With Spacecraft Manufacturer Investment",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/red-bull-ford-strikes-gold-at-2026-las-vegas-grand-prix/",
+   "url": "https://fordauthority.com/2026/11/ford-shoots-for-the-stars-with-spacecraft-manufacturer-investment/",
    "date": "2026-11-23"
   },
   {
    "tag": "FORD",
-   "title": "Why The Ford F1 Team Couldn't Afford To Lose Liam Lawson",
+   "title": "Ford Super Duty Plant Gets $500 Million Investment From Canada",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/why-the-ford-f1-team-couldnt-afford-to-lose-liam-lawson/",
+   "url": "https://fordauthority.com/2026/11/ford-super-duty-plant-gets-500-million-investment-from-canada/",
    "date": "2026-11-23"
   },
   {
    "tag": "FORD",
-   "title": "2023 Ford F-350 Super Duty 'Bronczilla' Resurfaces After Two Years",
+   "title": "Ford CFO Says Wealthy Buyers Helping Keeping Automaker Afloat",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/2023-ford-f-350-super-duty-bronczilla-resurfaces-after-two-years/",
+   "url": "https://fordauthority.com/2026/11/ford-cfo-says-wealthy-buyers-helping-keeping-automaker-afloat/",
    "date": "2026-11-23"
   },
   {
    "tag": "FORD",
-   "title": "Ford Mustang Dark Horse SC Races Chevy Corvette Grand Sport: Video",
+   "title": "2001 Ford Escort ZX2 With 53K Miles Up For Auction",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-mustang-dark-horse-sc-races-chevy-corvette-grand-sport-video/",
+   "url": "https://fordauthority.com/2026/11/2001-ford-escort-zx2-with-53k-miles-up-for-auction/",
    "date": "2026-11-23"
   },
   {
    "tag": "FORD",
-   "title": "Supercars Ford Team Ditched GM Over Lack Of Road Cars",
+   "title": "NHTSA Says Traffic Fatalities Dropped In H1 2026",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/supercars-ford-team-ditched-gm-over-lack-of-road-cars/",
+   "url": "https://fordauthority.com/2026/11/nhtsa-says-traffic-fatalities-dropped-in-h1-2026/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "BYD Puts A Folding Steering Wheel Into Production",
+   "title": "Infiniti's New Manual Sports Sedan Could Bring Back A Beloved Name",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816379/byd-fang-cheng-bao-tai9/",
+   "url": "https://www.motor1.com/news/816511/infiniti-considering-g37-name-new-sedan/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "BYD Better Watch Out: Koenigsegg Is Still Chasing A 330-MPH Jesko Run",
+   "title": "Hyundai Isn't Giving Up On Sedans",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816377/koenigsegg-still-chasing-330-mph/",
+   "url": "https://www.motor1.com/news/816489/hyundai-sedans-still-matter/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "Arizona Police Caught A BMW M2 Doing 170 MPH. The Driver Had A Terrible Excuse",
+   "title": "This Corvette Sat Abandoned For 25 Years. Then It Got Its First Deep Clean",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816310/bmw-m2-driver-caught-hitting-170-mph-arizona/",
+   "url": "https://www.motor1.com/news/816317/chevrolet-corvette-abandoned-wash/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "Ferrari's New 296 Challenge Stradale Is A 670-HP Race Car You Can Drive Home",
+   "title": "Subaru's American-Built Ascent Is Heading To Japan",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816314/ferrari-296-challenge-stradale-first-look-debut/",
+   "url": "https://www.motor1.com/news/816461/subaru-ascent-japan-launch/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "This Chevy Engine's Timing Belt Should Last 150,000 Miles. A Teardown Says Otherwise",
+   "title": "Rare Ferrari 499P Modificata Rear-Ends Schumacher-Era F1 Car",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816219/chevy-trailblazer-12-lih-failure/",
+   "url": "https://www.motor1.com/news/816459/ferrari-499p-modificata-f2004-crash/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "Stellantis Might Be About To Kill All Its Motorsport Programs: Report",
+   "title": "Mercedes Is Selling A Legendary C 111 Worth Over $27 Million",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2324538/stellantis-axing-motorsport-program/",
+   "url": "https://www.carscoops.com/2322776/mercedes-c111-auction/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "Ford Is Returning To Japan, But Regular Folks Can't Buy Them",
+   "title": "Nissan Made A Hood From Pineapple Leaves",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2321858/ford-selling-trucks-in-japan/",
+   "url": "https://www.carscoops.com/2320181/nissan-made-hood-from-pineapple-leaves/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "Should Your Engine Be Hot Or Cold For An Oil Change?",
+   "title": "A Chinese Brand Just Drove Its Car Off A Cliff To Prove How Safe It Is",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2320728/should-an-engine-be-hot-or-cold-for-oil-change/",
+   "url": "https://www.carscoops.com/2325168/lynk-and-co-07-gt-crash-test/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "How Long Can You Expect Synthetic Oil To Last?",
+   "title": "Hyundai Has Axed Plans To Produce The N Vision 74: Report",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2322403/how-long-synthetic-oil-lasts/",
+   "url": "https://www.carscoops.com/2325074/hyundai-n-vision-74-axed/",
    "date": "2026-11-23"
   },
   {
    "tag": "AUTO",
-   "title": "Were Pontiac Firebird Hood Scoops Ever Functional?",
+   "title": "BYD Banned From Selling Ti7 Defender Clone In Europe",
    "source": "Carscoops",
-   "url": "https://www.carscoops.com/2321686/pontiac-firebird-hood-scoops-functional/",
+   "url": "https://www.carscoops.com/2324974/byd-ti7-defender-clone-sales-banned/",
    "date": "2026-11-23"
   }
  ]
