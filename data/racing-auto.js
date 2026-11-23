@@ -1,19 +1,7 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-22T20:47+00:00",
+ "updated": "2026-11-23T01:28+00:00",
  "slots": [
-  {
-   "type": "video",
-   "id": "VTIjdHYNS0E",
-   "title": "LIVE PREVIEW: Thor Mini O's at Gatorback Cycle Park - Sunday",
-   "channel": "FloRacing",
-   "kind": "live",
-   "date": "2026-11-22T18:01:31Z",
-   "viewers": "824",
-   "thumb": "https://i.ytimg.com/vi/VTIjdHYNS0E/mqdefault.jpg?v=6afb4bfa",
-   "trusted": true,
-   "embed": true
-  },
   {
    "type": "video",
    "id": "YA1ruaeoZZY",
@@ -21,8 +9,20 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "47",
+   "viewers": "65",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "bLY42DYzW-o",
+   "title": "😂 A reminder from Tyler Carpenter about the mindset to bring into this year’s Gateway Dirt Nationals",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-23T01:00:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/bLY42DYzW-o/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -42,26 +42,26 @@ window.DG_RACING_AUTO = {
  "live": [
   {
    "type": "video",
-   "id": "VTIjdHYNS0E",
-   "title": "LIVE PREVIEW: Thor Mini O's at Gatorback Cycle Park - Sunday",
-   "channel": "FloRacing",
-   "kind": "live",
-   "date": "2026-11-22T18:01:31Z",
-   "viewers": "824",
-   "thumb": "https://i.ytimg.com/vi/VTIjdHYNS0E/mqdefault.jpg?v=6afb4bfa",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "47",
+   "viewers": "65",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "S4zlZq5Wt8A",
+   "title": "We are back!!!!!!! Chill GT7 Drag Racing Stream",
+   "channel": "OblivionRider_-_",
+   "kind": "live",
+   "date": "2026-11-22T23:55:32Z",
+   "viewers": "2",
+   "thumb": "https://i.ytimg.com/vi/S4zlZq5Wt8A/mqdefault.jpg?v=12",
+   "trusted": false,
    "embed": true
   },
   {
@@ -71,7 +71,7 @@ window.DG_RACING_AUTO = {
    "channel": "Toronto Motorsports Park",
    "kind": "live",
    "date": "2026-11-16T12:00:42Z",
-   "viewers": "1",
+   "viewers": null,
    "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
    "trusted": false,
    "embed": true
@@ -116,26 +116,26 @@ window.DG_RACING_AUTO = {
  "found": [
   {
    "type": "video",
-   "id": "VTIjdHYNS0E",
-   "title": "LIVE PREVIEW: Thor Mini O's at Gatorback Cycle Park - Sunday",
-   "channel": "FloRacing",
-   "kind": "live",
-   "date": "2026-11-22T18:01:31Z",
-   "viewers": "824",
-   "thumb": "https://i.ytimg.com/vi/VTIjdHYNS0E/mqdefault.jpg?v=6afb4bfa",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "47",
+   "viewers": "65",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "S4zlZq5Wt8A",
+   "title": "We are back!!!!!!! Chill GT7 Drag Racing Stream",
+   "channel": "OblivionRider_-_",
+   "kind": "live",
+   "date": "2026-11-22T23:55:32Z",
+   "viewers": "2",
+   "thumb": "https://i.ytimg.com/vi/S4zlZq5Wt8A/mqdefault.jpg?v=12",
+   "trusted": false,
    "embed": true
   },
   {
@@ -145,7 +145,7 @@ window.DG_RACING_AUTO = {
    "channel": "Toronto Motorsports Park",
    "kind": "live",
    "date": "2026-11-16T12:00:42Z",
-   "viewers": "1",
+   "viewers": null,
    "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
    "trusted": false,
    "embed": true
@@ -184,6 +184,18 @@ window.DG_RACING_AUTO = {
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/R7h630vGhP0/mqdefault.jpg?v=6a7c1833",
    "trusted": false,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "bLY42DYzW-o",
+   "title": "😂 A reminder from Tyler Carpenter about the mindset to bring into this year’s Gateway Dirt Nationals",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-23T01:00:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/bLY42DYzW-o/mqdefault.jpg",
+   "trusted": true,
    "embed": true
   },
   {
@@ -344,18 +356,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "Ae_-NJvwdVI",
-   "title": "🏃‍♂️ Sprinting to Sportscenter!",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-21T01:00:11Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/Ae_-NJvwdVI/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "s2voH4V-STU",
    "title": "Behind the scenes at the In-N-Out Burger NHRA Finals",
    "channel": "NHRA",
@@ -368,18 +368,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "ip1u5QV-tsk",
-   "title": "Former #GatewayDirt winner Tyler Erb says the race offers everything you could ever want in a race.",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-20T23:00:35Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/ip1u5QV-tsk/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "aNh-ziSMMCU",
    "title": "May the best Swedish meatballs win 🇸🇪 #INDYCAR",
    "channel": "NTT INDYCAR SERIES",
@@ -387,18 +375,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T22:16:44Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/aNh-ziSMMCU/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "ZYfHVmwfRFA",
-   "title": "🤵‍♂️ 𝙃𝙪𝙨𝙗𝙖𝙣𝙙 𝙒𝙞𝙛𝙚 𝙏𝙚𝙖𝙢 👰‍♀️ Behind the scenes with Cody and Emma Sommer at Gateway Dirt Nationals.",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-20T20:00:38Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/ZYfHVmwfRFA/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -495,18 +471,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-18T11:14:35Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/ujnrbz4qz_k/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "ovSM-4hRj0g",
-   "title": "Sometimes, the tweet staying in the archive is for the best 🤣 #indycar #racing #funny #twitter",
-   "channel": "NTT INDYCAR SERIES",
-   "kind": "recent",
-   "date": "2026-11-17T21:00:41Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/ovSM-4hRj0g/mqdefault.jpg",
    "trusted": true,
    "embed": true
   }
