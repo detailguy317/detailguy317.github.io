@@ -1186,7 +1186,7 @@ const DG_CONFIG = {
   aiEndpoint: "",
   // FREE visitor stats: Cloudflare Web Analytics token (dash.cloudflare.com -> Analytics & Logs -> Web Analytics -> Add a site).
   // Paste just the token from the snippet it shows you. No cookies, no tracking banners needed.
-  cfAnalyticsToken: "2f31f1b841f6437f83a41ddd5b537e63",
+  cfAnalyticsToken: "",
   // News reader-board speed in pixels per second. Lower = slower (40 slow, 60 normal, 90 fast).
   tickerSpeed: 60,
   newsletterUrl: "https://themarketmechanics.beehiiv.com/",
@@ -1206,25 +1206,24 @@ const DG_CONFIG = {
   // Memberships / paid help. Prices are SUGGESTIONS - change them. Links = Stripe Payment Links, Ko-fi or Buy Me a Coffee membership links.
   tiers: [
     {name:"Free", price:"$0", per:"", perks:["Instant trouble-code lookup","DG317 answers car questions 24/7","VIN decode + recall check","Racing HQ, stock scanner, history, Junior Mechanics","7 free PDF guides + free newsletter"], link:"#ask", cta:"Ask DG317"},
-    {name:"Garage Member", price:"$4.20", per:"/month", perks:["Every in-depth guide included - plus each new one","Members-only posts + Market Mechanics extras","First in line when Stump the Master Tech opens","Keeps the free stuff free for everybody","Cancel anytime on Ko-fi - no trial traps, no surprise renewals"], link:"", cta:"Join the garage"},
+    {name:"Garage Member", price:"$4.20", per:"/month", perks:["Every in-depth guide included - plus each new one","Members-only posts + Market Mechanics extras","First in line when Stump the Master Tech opens","Keeps the free stuff free for everybody","Cancel anytime on Ko-fi - no trial traps, no surprise renewals"], link:"https://ko-fi.com/dg317garage/tiers", cta:"Join the garage"},
     {name:"Stump the Master Tech", soon:true, price:"", per:"", perks:["Send your weird one in","Best stumpers answered in the newsletter / on YouTube (no names)"], link:"", cta:""},
     {name:"Repair Quote 2nd Opinion", soon:true, price:"", per:"", perks:["Send your shop's estimate","Line-by-line: needed, can wait, or overpriced"], link:"", cta:""},
     {name:"Remote Diag Session", soon:true, price:"", per:"", perks:["Live chat with a Master Tech","Bring your scan data + freeze frame","A game plan you or your shop can follow"], link:"", cta:""}
   ],
   support: [
-    {name:"☕ Buy Me a Coffee", url:""},
-    {name:"💚 Ko-fi", url:""},
-    {name:"💳 One-time tip (Stripe)", url:""},
+    {name:"☕ Buy DG317 a Coffee", url:"https://ko-fi.com/dg317garage"},
+    // Tips + memberships + guides all run through Ko-fi now. Add PayPal here later only if you want a separate button.
     {name:"🅿️ PayPal", url:""}
   ],
   // PAID guides - sold in your Ko-fi Shop as "Pay what you want" with the minimum shown here (Ko-fi emails the PDF).
   // Paste each product's Ko-fi link into link:"". Discount / free codes: Ko-fi Shop -> ... -> Create a discount.
   // NEVER put the paid PDF files in this website folder - anyone could download them free.
   premium: [
-    {icon:"🎙️", name:"Tell Your Car to Start! - Voice Start Guide", price:"$1.99+", file:"guides/DG317-Voice-Start-Guide.pdf", desc:"Siri, Google + Alexa setup for Ford, plus Tesla, Hyundai, GM, Toyota and more", link:""},
-    {icon:"🔍", name:"DIY Diagnostics Toolkit", price:"$1.99+", file:"guides/DG317-DIY-Diagnostics-Toolkit.pdf", desc:"Free code scans, which scanner to buy, FORScan, AlfaOBD, Tesla Toolbox + a pro diag routine", link:""},
-    {icon:"🔋", name:"AGM Battery & Battery Sensor Guide", price:"$1.99+", file:"guides/DG317-AGM-Battery-and-Sensor-Guide.pdf", desc:"AGM chargers, where to clamp (and why the negative post kills batteries), hardwiring a maintainer, and the reset/relearn for every major brand", link:""},
-    {icon:"📦", name:"Bundle - all 3 in-depth guides", price:"$2.99+", desc:"Voice Start + DIY Diagnostics + AGM Battery in one download", link:""}
+    {icon:"🎙️", name:"Tell Your Car to Start! - Voice Start Guide", price:"$1.99+", file:"guides/DG317-Voice-Start-Guide.pdf", desc:"Siri, Google + Alexa setup for Ford, plus Tesla, Hyundai, GM, Toyota and more", link:"https://ko-fi.com/s/2bfce6e228"},
+    {icon:"🔍", name:"DIY Diagnostics Toolkit", price:"$1.99+", file:"guides/DG317-DIY-Diagnostics-Toolkit.pdf", desc:"Free code scans, which scanner to buy, FORScan, AlfaOBD, Tesla Toolbox + a pro diag routine", link:"https://ko-fi.com/s/0872a038d9"},
+    {icon:"🔋", name:"AGM Battery & Battery Sensor Guide", price:"$1.99+", file:"guides/DG317-AGM-Battery-and-Sensor-Guide.pdf", desc:"AGM chargers, where to clamp (and why the negative post kills batteries), hardwiring a maintainer, and the reset/relearn for every major brand", link:"https://ko-fi.com/s/3a81c7a3cb"},
+    {icon:"📦", name:"Bundle - all 3 in-depth guides", price:"$2.99+", desc:"Voice Start + DIY Diagnostics + AGM Battery in one download", link:"https://ko-fi.com/s/47cebbb79a"}
   ],
   // Social accounts - make them under DG317 / DetailGuy317 names only. Blank ones show as "soon".
   socials: {YouTube:"", TikTok:"", Instagram:"", Facebook:"", X:"", Threads:"", Bluesky:"", Reddit:"", Discord:"", Pinterest:"", Twitch:"", Rumble:""},
@@ -1622,7 +1621,7 @@ function buildMembers(){
    ${t.link==='#ask'?`<button onclick="closeModal('memberModal');openModal('askModal')">${esc(t.cta)}</button>`:(t.link?`<button onclick="openLink('${esc(t.link)}')">${esc(t.cta)}</button>`:`<button disabled>Coming soon</button>`)}</div>`).join('');
   const anySupport=DG_CONFIG.support.some(x=>x.url);
   document.querySelectorAll('.supportBlock').forEach(e=>e.style.display=(DG_CONFIG.freeMode&&!anySupport)?'none':'');
-  document.getElementById('supportGrid').innerHTML=DG_CONFIG.support.map(s=>s.url?`<button onclick="openLink('${esc(s.url)}')">${esc(s.name)}</button>`:`<button disabled>${esc(s.name)} - soon</button>`).join('');
+  document.getElementById('supportGrid').innerHTML=DG_CONFIG.support.filter(s=>s.url).map(s=>`<button onclick="openLink('${esc(s.url)}')">${esc(s.name)}</button>`).join('');   // blank ones stay hidden
 }
 function buildSocials(){
   const h=Object.entries(DG_CONFIG.socials).map(([n,u])=>u?`<a href="${esc(u)}" target="_blank" rel="noopener me">${n}</a>`:`<span title="coming soon">${n}</span>`).join('');
@@ -1652,7 +1651,7 @@ function openNewsletterSignup(){ openLink(DG_CONFIG.newsletterUrl); }
 
 /* ======================= RACING (no more code edits) ======================= */
 function raceSlots(){
-  const L=window.DG_LIVE||{}, A=window.DG_RACING_AUTO||{};
+  const L=window.DG_LIVE||{}, A0=window.DG_RACING_AUTO||{}, A={...A0, slots:(A0.slots||[]).filter(x=>x.embed!==false)};
   const manual=(L.slots||[]).filter(s=>s.id);
   return (L.mode==='manual'&&manual.length)?L.slots:((A.slots&&A.slots.length)?A.slots:(L.slots||[]));
 }
@@ -1674,10 +1673,11 @@ function buildRacing(){
   const A=window.DG_RACING_AUTO||{};
   document.getElementById('raceUpdated').textContent=`Lineup updated ${L.updated||'-'}${A.updated?' · video robot checked '+new Date(A.updated).toLocaleString():''}`;
   const lv=(A.live||[]).filter(v=>v.trusted);
-  document.getElementById('liveNow').innerHTML=lv.length?`<div class="lnHead">🔴 LIVE NOW</div>`+lv.map((v,i)=>`<button class="lnChip" onclick="playLive(${i})">▶ ${esc(v.title)}<small>${esc(v.channel)}${v.viewers?' · '+Number(v.viewers).toLocaleString()+' watching':''}</small></button>`).join(''):'';
+  document.getElementById('liveNow').innerHTML=lv.length?`<div class="lnHead">🔴 LIVE NOW</div>`+lv.map((v,i)=>`<button class="lnChip" onclick="playLive(${i})">${v.embed===false?'↗':'▶'} ${esc(v.title)}<small>${esc(v.channel)}${v.viewers?' · '+Number(v.viewers).toLocaleString()+' watching':''}${v.embed===false?' · opens on YouTube':''}</small></button>`).join(''):'';
 }
 function playLive(i){
   const v=((window.DG_RACING_AUTO||{}).live||[]).filter(x=>x.trusted)[i]; if(!v) return;
+  if(v.embed===false){ window.open('https://www.youtube.com/watch?v='+encodeURIComponent(v.id),'_blank','noopener'); return; }   // owner blocks playing on other sites
   const el=document.getElementById('raceSlot0'); const url=`https://www.youtube.com/embed/${encodeURIComponent(v.id)}?autoplay=1&rel=0`;
   if(IS_PREVIEW){ el.innerHTML=`<div class="vid-empty"><b>▶ ${esc(v.title)}</b>Plays on the live site</div>`; return; }
   el.dataset.u=url; el.innerHTML=`<iframe src="${url}" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`;
