@@ -1,7 +1,19 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-24T05:51+00:00",
+ "updated": "2026-11-24T17:13+00:00",
  "slots": [
+  {
+   "type": "video",
+   "id": "8APkwESfa0Q",
+   "title": "LIVE: 2026 Eibach Gateway Dirt Nationals Track Build - November 24th",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-24T12:52:38Z",
+   "viewers": "260",
+   "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg?v=6b037e32",
+   "trusted": true,
+   "embed": true
+  },
   {
    "type": "video",
    "id": "YA1ruaeoZZY",
@@ -9,32 +21,20 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "36",
+   "viewers": "24",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
   },
   {
    "type": "video",
-   "id": "sPkRSOU93U4",
-   "title": "USAC Midgets at Plaza Park Raceway 11/23/26 | Highlights",
+   "id": "CJEr7dIpFdg",
+   "title": "LIVE: USAC Practice from Ocala Speedway",
    "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-24T05:22:00Z",
+   "kind": "upcoming",
+   "date": "2026-11-24T15:17:52Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/sPkRSOU93U4/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "UV7DqVT5R10",
-   "title": "LIVE FULL RACE: USAC NOS Energy Drink Midgets at Plaza Park Raceway",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-24T01:47:30Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/UV7DqVT5R10/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/CJEr7dIpFdg/mqdefault.jpg?v=6b05aaa0",
    "trusted": true,
    "embed": true
   }
@@ -42,12 +42,24 @@ window.DG_RACING_AUTO = {
  "live": [
   {
    "type": "video",
+   "id": "8APkwESfa0Q",
+   "title": "LIVE: 2026 Eibach Gateway Dirt Nationals Track Build - November 24th",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-24T12:52:38Z",
+   "viewers": "260",
+   "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg?v=6b037e32",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "36",
+   "viewers": "24",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -104,12 +116,24 @@ window.DG_RACING_AUTO = {
  "found": [
   {
    "type": "video",
+   "id": "8APkwESfa0Q",
+   "title": "LIVE: 2026 Eibach Gateway Dirt Nationals Track Build - November 24th",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-24T12:52:38Z",
+   "viewers": "260",
+   "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg?v=6b037e32",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "36",
+   "viewers": "24",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -160,6 +184,78 @@ window.DG_RACING_AUTO = {
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/R7h630vGhP0/mqdefault.jpg?v=6a7c1833",
    "trusted": false,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "CJEr7dIpFdg",
+   "title": "LIVE: USAC Practice from Ocala Speedway",
+   "channel": "FloRacing",
+   "kind": "upcoming",
+   "date": "2026-11-24T15:17:52Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/CJEr7dIpFdg/mqdefault.jpg?v=6b05aaa0",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "tdZ1xiJBLKQ",
+   "title": "POV: You're the Champion 🏆 | 2026 Portuguese GP",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-24T17:00:20Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/tdZ1xiJBLKQ/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "9DdIG85cBaQ",
+   "title": "Race-Leading Porsche Goes Airborne in Huge Crash | 6 Hours of Silverstone 2016 | FIA WEC",
+   "channel": "FIA World Endurance Championship",
+   "kind": "recent",
+   "date": "2026-11-24T17:00:02Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/9DdIG85cBaQ/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "AEPr1TWEKhw",
+   "title": "Top 10 Onboards | 2026 Las Vegas Grand Prix | Qatar Airways",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-24T13:00:08Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/AEPr1TWEKhw/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "4AGemKdtLzk",
+   "title": "Max & George Reignite Rivalry & What Next For Ferrari? | Las Vegas GP Review | F1 Nation Podcast",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-24T11:00:16Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/4AGemKdtLzk/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "5oRSfcg6fE0",
+   "title": "Marco Bezzecchi wins Best Overtake at the 2026 Portuguese GP ⚔️",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-24T10:34:18Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/5oRSfcg6fE0/mqdefault.jpg",
+   "trusted": true,
    "embed": true
   },
   {
@@ -236,18 +332,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "z1S6WWWIP3w",
-   "title": "All 35 Times There Was A New Leader | 2026 Las Vegas Grand Prix",
-   "channel": "FORMULA 1",
-   "kind": "recent",
-   "date": "2026-11-23T19:00:30Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/z1S6WWWIP3w/mqdefault.jpg",
-   "trusted": true,
-   "embed": false
-  },
-  {
-   "type": "video",
    "id": "GoKZhwio29w",
    "title": "Biggest Moments of the 2026 WEC Season! 😱 (Part 1)",
    "channel": "FIA World Endurance Championship",
@@ -269,30 +353,6 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/eRZpErDPLa4/mqdefault.jpg",
    "trusted": true,
    "embed": false
-  },
-  {
-   "type": "video",
-   "id": "3H3aDwP8I9g",
-   "title": "𝐂𝐎𝐌𝐈𝐍𝐆 𝐒𝐎𝐎𝐍 🎬 A superstar was born. An event was changed forever. #DRIVEN #GatewayDirt",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-23T15:00:12Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/3H3aDwP8I9g/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "bLY42DYzW-o",
-   "title": "😂 A reminder from Tyler Carpenter about the mindset to bring into this year’s Gateway Dirt Nationals",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-23T01:00:00Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/bLY42DYzW-o/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
   },
   {
    "type": "video",
@@ -339,18 +399,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-22T06:06:50Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/Q017RPSWImU/mqdefault.jpg",
-   "trusted": true,
-   "embed": false
-  },
-  {
-   "type": "video",
-   "id": "DInmDXk_O3c",
-   "title": "Lewis & Charles Give LISA Racing Tips! 💪",
-   "channel": "FORMULA 1",
-   "kind": "recent",
-   "date": "2026-11-22T03:12:37Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/DInmDXk_O3c/mqdefault.jpg",
    "trusted": true,
    "embed": false
   },
