@@ -10,29 +10,29 @@ The Sunday **Garage Report** (emailed to you) always shows the next unchecked it
 ## 🚀 TONIGHT - go live (about 1-1.5 hours)
 
 ### A. Stay anonymous (15 min) - do these first
-- [x ] Make one new email used ONLY for DG317 (Proton Mail or Gmail). Every signup below uses it.
-- [x ] GitHub → Settings → Emails → turn ON "Keep my email addresses private" and "Block command line pushes that expose my email".
-- [x ] GitHub → your Profile → no real name, town or employer in Name / Bio / Location.
+- [x] Make one new email used ONLY for DG317 (Proton Mail or Gmail). Every signup below uses it.
+- [x] GitHub → Settings → Emails → turn ON "Keep my email addresses private" and "Block command line pushes that expose my email".
+- [x] GitHub → your Profile → no real name, town or employer in Name / Bio / Location.
 
 ### B. Put the new site up (30 min)
-- [x ] Back up the current site: repo page → green **Code** button → **Download ZIP**. Save it.
-- [x ] Unzip DG317-site-v2.zip. On the repo page: **Add file → Upload files** → drag in EVERYTHING (folders too) → **Commit changes**. Keep your `webback.jpg`, `moonimage.png` and `CNAME` (if you have one) - don't delete anything that isn't being replaced.
+- [x] Back up the current site: repo page → green **Code** button → **Download ZIP**. Save it.
+- [x] Unzip DG317-site-v2.zip. On the repo page: **Add file → Upload files** → drag in EVERYTHING (folders too) → **Commit changes**. Keep your `webback.jpg`, `moonimage.png` and `CNAME` (if you have one) - don't delete anything that isn't being replaced.
   - Tip: the `.github` folder is hidden on Mac/Windows. Turn on "show hidden files" before dragging, or the robots won't come along.
-- [x ] Settings → Actions → General → **Workflow permissions → Read and write** → Save.
-- [x ] Actions tab → if it asks, click **"I understand my workflows, go ahead and enable them."**
-- [x ] Actions → run each one: **update-feeds**, **update-series**, **update-marketcaps**, **garage-report** (select it → **Run workflow**). Wait for green ✅. (update-videos waits for the YouTube key below.)
-- [x ] Open detailguy317.com on your phone AND computer. Check the footer's **Privacy & disclaimer** link opens. Hard-refresh (Ctrl+Shift+R / pull down on phone). Tap every bubble once.
+- [x] Settings → Actions → General → **Workflow permissions → Read and write** → Save.
+- [x] Actions tab → if it asks, click **"I understand my workflows, go ahead and enable them."**
+- [x] Actions → run each one: **update-feeds**, **update-series**, **update-marketcaps**, **garage-report** (select it → **Run workflow**). Wait for green ✅. (update-videos waits for the YouTube key below.)
+- [x] Open detailguy317.com on your phone AND computer. Check the footer's **Privacy & disclaimer** link opens. Hard-refresh (Ctrl+Shift+R / pull down on phone). Tap every bubble once.
 
 ### C. See who's visiting - free analytics (10 min)
-- [ ] dash.cloudflare.com → sign up with the DG317 email (free plan).
-- [ ] Left menu: **Analytics & Logs → Web Analytics → Add a site** → type detailguy317.com → choose the **JavaScript snippet** option (no DNS change needed).
-- [ ] Copy just the **token** from the snippet (the long code after `"token": "`) → paste it into `cfAnalyticsToken: ""` in index.html (edit on GitHub with the pencil) → Commit.
-- [ ] Visitors, top pages, countries and phone vs computer show up in Cloudflare within a few minutes. No cookie banner needed.
+- [x] dash.cloudflare.com → sign up with the DG317 email (free plan).
+- [x] Left menu: **Analytics & Logs → Web Analytics → Add a site** → type detailguy317.com → choose the **JavaScript snippet** option (no DNS change needed).
+- [x] Copy just the **token** from the snippet (the long code after `"token": "`) → paste it into `cfAnalyticsToken: ""` in index.html (edit on GitHub with the pencil) → Commit.
+- [x] Visitors, top pages, countries and phone vs computer show up in Cloudflare within a few minutes. No cookie banner needed.
 
 ### D. Get the Garage Report email (5 min)
 - [ ] Repo page → **Watch → All Activity**.
-- [ ] GitHub → Settings → Notifications → **Custom routing** → this repo → your DG317 email.
-- [ ] After garage-report runs: **Issues** tab → open "📌 DG317 Garage Report" → right side **Pin issue**. Bookmark it on your phone.
+- [x] GitHub → Settings → Notifications → default email = your DG317 (Proton) email. (Done - custom routing not needed.)
+- [x] After garage-report runs: **Issues** tab → open "📌 DG317 Garage Report" → right side **Pin issue**. Bookmark it on your phone.
 
 **🎉 That's live.** Everything below makes it better, but the site works without it.
 
@@ -41,14 +41,29 @@ The Sunday **Garage Report** (emailed to you) always shows the next unchecked it
 ## 📅 THIS WEEK
 
 ### E. Turn on the money - Ko-fi does all of it on the free plan (30 min)
+- [x] Ko-fi account made (DG317 Garage, Proton email, tips + memberships + shop turned on).
+- [x] **Finish Stripe (started Nov 21 - saved, just pick up where you left off).** Gather first (packed-up desktop PC): **LLC EIN**, **registered agent / SOS business address** (check the agent allows it as a business address - if not, get a PO Box or virtual mailbox), and a business phone (used a free **Google Voice** number - Telnyx was never fully set up).
+  - Business details: M.O.D.S. LLC (single-member LLC) · EIN · DBA DetailGuy317 · business address
+  - Public details: statement descriptor `DETAILGUY317` · shortened `DG317` · support phone = **Google Voice number** (NOT personal cell) · support address = business address (NOT home)
+  - Add bank (LLC business account if you have one) → Review and submit
+  - If ID check fails because of the recent move: upload a driver's license photo / recent bill
+  - Back in Ko-fi → Settings → Payment → Stripe should say **Connected**
+- [ ] Ko-fi Settings → Payment: confirm location (US) · tip mode Coffee ($3) or Simple (min $2) · wording **Tip** · thank-you message
 - [ ] ko-fi.com → sign up with the DG317 email → page name **DG317 Garage** → connect **Stripe** and/or **PayPal** (Settings → Payments). Payment apps need your real name for taxes, which is normal and private. Set every PUBLIC name to "DG317 Garage".
-- [ ] **Shop → Add product** (Digital) for each paid guide. The PDFs are in your separate `premium` folder, NOT the website:
+- [x] **PICK UP HERE (Nov 22):** Shop setup page is filled out. Finish adding the 4 products - each needs: name, description, **price** (watch it - it defaults to $0), Pay what you want ON, the PDF, the **cover image** (Claude made 4: DG317-cover-*.png - download to your computer first, then click the Preview images box and pick the file), the rights checkbox → Save and publish. Descriptions are in the chat (matched to what's in each PDF).
+- [ ] Members get guides free: Shop → **Discounts** → make a **100% off** code for all 4 products → put the code in the Garage Member **welcome message** (Memberships → Edit tier).
+- [x] **Shop → Add product** (Digital) for each paid guide. The PDFs are in your separate `premium` folder, NOT the website:
   - Voice Start Guide - **$1.99** minimum, turn ON **Pay what you want**
   - DIY Diagnostics Toolkit - **$1.99**, Pay what you want
   - AGM Battery & Sensor Guide - **$1.99**, Pay what you want
   - Bundle (all 3 in one zip) - **$2.99**, Pay what you want
-- [ ] **Memberships → Garage Member, $4.20/month.** Benefit: ALL guides included - post the 3 guides as members-only posts, and add each new guide there too. (Single guides stay $1.99 each in the Shop.)
-- [ ] Copy each Ko-fi link into index.html (DG_CONFIG): the guides' `link:""`, the Garage Member `link:""`, and your Ko-fi page URL in `support` (the ☕ button). Commit. The "Coming soon" buttons switch on by themselves.
+- [x] **Memberships → Garage Member, $4.20/month.** Benefit: ALL guides included - post the 3 guides as members-only posts, and add each new guide there too. (Single guides stay $1.99 each in the Shop.)
+- [ ] Later: edit the Garage Member **benefits** from the generic labels to custom text (remove each with ×, then + Add benefit → type in the top box):
+  - All DG317 guides included: Voice Start, DIY Diagnostics, AGM Battery & Sensor
+  - Every new guide free for members as it's released
+  - Members-only how-tos & Market Mechanics extras
+- [ ] Later (optional): add a 2:1 tier image / banner for Garage Member (ask Claude to make one).
+- [x] Copy each Ko-fi link into index.html (DG_CONFIG): the guides' `link:""`, the Garage Member `link:""`, and your Ko-fi page URL in `support` (the ☕ button). Commit. The "Coming soon" buttons switch on by themselves.
 - [ ] **Special codes for people you like:** Ko-fi → Shop → ••• on a product → **Create a discount**. 100% off = a free download. You can make one per person.
 - [ ] Optional: PayPal business account → ask PayPal for **micropayments pricing** (cheaper on $1-3 sales).
 
@@ -86,6 +101,11 @@ NHTSA updates its recall file every day. Keeping copies builds the data for the 
   - By year/make/model: `https://api.nhtsa.gov/recalls/recallsByVehicle?make=ford&model=f-150&modelYear=2016`
   - By recall (campaign) number: `https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=12V176000`
 - [ ] Tip: when we build the Recall Center, a robot can download this file for you every night automatically - then this step goes away.
+
+### N. Race videos - hand-pick one, or add a channel for the robot to watch
+- [ ] **One race right now:** open `detailguy317.com/admin.html` (paste the YouTube key once) → paste the race's YouTube link into **Big / Box 1** (or click one in the robot-finds list) → check **"Use MY picks"** → **Copy** → GitHub → `data/live-content.js` → pencil → Ctrl+A, paste → Commit. When the race is over: uncheck "Use MY picks" → Copy → paste → Commit (hands it back to the robot).
+- [ ] **A channel you always want covered:** in admin.html add its handle (like `@SRXracing`) to **Live Now Channels** → Copy → paste into `data/live-content.js` → Commit. The robot checks it every 30 minutes from then on.
+- Heads-up: a video only plays on the site if its channel allows sharing (F1's doesn't - those open on YouTube instead). Only use official/licensed channels - no "free stream" sites (copyright takedowns, malware ads, and affiliates/Ko-fi ban them).
 
 ---
 
