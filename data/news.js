@@ -1,180 +1,194 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-24T04:43:52.632001+00:00",
+ "updated": "2026-11-24T17:30:26.641152+00:00",
  "items": [
   {
    "tag": "RACING",
-   "title": "NASCAR's return to the Chase was the right call",
+   "title": "Wickens to run full IMSA GTD season with HMI",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/23/nascar-s-return-to-the-chase-was-the-right-call",
+   "url": "https://racer.com/2026/11/24/wickens-to-run-full-imsa-gtd-season-with-hmi",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Herta’s F2 season ends early as he exits Hitech",
+   "title": "‘I’ve never asked to be number one’ - Hamilton",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/23/herta-s-f2-season-ends-early-as-he-exits-hitech",
+   "url": "https://racer.com/2026/11/24/-i-ve-never-asked-to-be-number-one---hamilton",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Stellantis confirms closure of WEC, Formula E programs",
+   "title": "Spire rejects Gibbs check to resolve counterclaim issues",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/23/stellantis-confirms-closure-of-wec-formula-e-programs",
+   "url": "https://racer.com/2026/11/24/spire-rejects-gibbs-check-to-resolve-counterclaim-issues",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "No Indy-only entry on the radar for Chip Ganassi Racing",
+   "title": "Why I Race: Scott Dixon",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/23/no-indy-only-entry-on-the-radar-for-chip-ganassi-racing",
+   "url": "https://racer.com/2026/11/23/why-i-race-scott-dixon",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Herbst continues to heal wrist, forearm injuries as he starts a new chapter with Legacy Motor Club",
+   "title": "GRIDLIFE confirms final 2027 rounds with long-awaited VIR debut and fan-demanded Road America return",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/23/herbst-continues-to-heal-wrist-forearm-injuries-as-he-starts-a-new-chapter-with-legacy-motor-club",
+   "url": "https://racer.com/2026/11/24/gridlife-confirms-final-2027-rounds-with-long-awaited-vir-debut-and-fan-demanded-road-america-return",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Dodge’s NASCAR Cup car unveil will include celebrity exhibition race during Snowball Derby",
+   "title": "Kalle Rovanpera: New 2027 WRC cars will see \"everybody start from zero\"",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/nascar-cup/news/dodges-nascar-cup-car-unveil-will-include-celebrity-exhibition-race-during-snowball-derby/10877320/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/wrc/news/kalle-rovanpera-new-2027-wrc-cars-will-see-everybody-start-from-zero/10877523/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Nikita Johnson targets Alex Palou’s rookie benchmark with Coyne ahead of 2027 IndyCar debut",
+   "title": "Charles Leclerc’s Ferrari SUV is up for sale with scars from his viral Monaco crash",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/indycar/news/nikita-johnson-targets-alex-palous-rookie-benchmark-with-coyne-ahead-of-2027-indycar-debut/10877312/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/culture/news/charles-leclercs-daily-driven-ferrari-purosangue-is-up-for-sale-complete-with-scars-from-his-viral-/10877490/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Max Verstappen jokes last time he won a race like F1 Las Vegas GP it was \"Mario Kart\"",
+   "title": "Gigi Dall'Igna: ‘Marc Marquez is the best rider in history, no doubt about that’",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/max-verstappen-the-last-time-i-won-a-race-like-las-vegas-was-on-mario-kart/10877295/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/motogp/news/gigi-dalligna-marc-marquez-is-the-best-rider-in-history-no-doubt-about-that/10877521/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Laurent Mekies: Keeping his emotions in check is giving Isack Hadjar “lap time”",
+   "title": "Robert Wickens set for first full-season IMSA WeatherTech Campaign in 2027 with Hanley Motorsports",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/laurent-mekies-keeping-his-emotions-in-check-is-giving-isack-hadjar-lap-time/10877211/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/imsa/news/robert-wickens-set-for-first-full-season-imsa-weathertech-campaign-in-2027-with-hanley-motorsports/10877508/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Guenther Steiner expects Ferrari board to react after Lewis Hamilton-Charles Leclerc clash",
+   "title": "The issue that cost Pierre Gasly a potential \"win\" at F1's Las Vegas GP",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/guenther-steiner-expects-ferrari-board-to-react-after-lewis-hamilton-charles-leclerc-clash/10877259/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/the-issue-that-cost-pierre-gasly-a-potential-podium-at-f1s-las-vegas-gp/10877501/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Max Verstappen considering 2027 Daytona 24 Hours entry",
+   "title": "Rovanpera: New 2027 WRC cars will see \"everybody start from zero\"",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/max-verstappen-reveals-he-is-considering-2027-daytona-24-hours-entry/10877159/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/wrc/news/rovanpera-new-2027-wrc-cars-will-see-everybody-start-from-zero/10877526/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "F1 2027 grid: Who will be racing and where?",
+   "title": "Richards set to step down as Motorsport UK chairman",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/f1-2027-grid-who-will-be-racing-and-where/10847600/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/general/news/richards-set-to-step-down-as-motorsport-uk-chairman/10877268/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Autosport Business Awards open nominations to recognise excellence across global motorsport industry",
+   "title": "Slater to replace Camara for rest of F2 season as Tsolov becomes title favourite",
    "source": "Autosport",
-   "url": "https://www.autosport.com/autosport-awards/news/autosport-business-awards-open-nominations-to-recognise-excellence-across-global-motorsport-industry/10877252/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/formula2/news/slater-replaces-camara-in-f2/10877445/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Peugeot quits WEC, Citroen and Opel to wind down Formula E programmes",
+   "title": "New Super Formula champion eyes dream IndyCar move to \"demonstrate\" Japan's quality",
    "source": "Autosport",
-   "url": "https://www.autosport.com/wec/news/peugeot-quits-wec-citroen-and-opel-to-wind-down-formula-e-programmes/10877231/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/super-formula/news/super-formula-champion-eyes-indycar-move/10877424/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-24"
   },
   {
    "tag": "RACING",
-   "title": "Cataclean acquires former Plato Mercedes team assets",
+   "title": "The reasons behind Peugeot's WEC Hypercar exit",
    "source": "Autosport",
-   "url": "https://www.autosport.com/btcc/news/cataclean-acquires-mercedes-team-assets/10877240/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/wec/news/the-reasons-behind-peugeots-wec-hypercar-exit/10877384/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-24"
   },
   {
    "tag": "FORD",
-   "title": "Fresh Angle Of Ford Racing Container Provides Clues About Contents",
+   "title": "Canadian Ford Engine Plants Will Also Likely Benefit From Cash Infusion",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/fresh-angle-of-ford-racing-container-provides-clues-about-contents/",
+   "url": "https://fordauthority.com/2026/11/canadian-ford-engine-plants-will-also-likely-benefit-from-cash-infusion/",
    "date": "2026-11-24"
   },
   {
    "tag": "FORD",
-   "title": "Lincoln Aviator Discount, Lease, Finance Deals For November 2026",
+   "title": "Ford Racing Container Heads To Ford Field Ahead Of Thanksgiving Reveal",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/lincoln-aviator-discount-lease-finance-deals-for-november-2026/",
+   "url": "https://fordauthority.com/2026/11/ford-racing-container-heads-to-ford-field-ahead-of-thanksgiving-reveal/",
    "date": "2026-11-24"
   },
   {
    "tag": "FORD",
-   "title": "Ford Bronco Dahaidao Edition Debuts For China",
+   "title": "Ford Hypercar Hits New Milestone Ahead Of Thanksgiving Reveal",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-bronco-dahaidao-edition-debuts-for-china/",
+   "url": "https://fordauthority.com/2026/11/ford-hypercar-hits-new-milestone-ahead-of-thanksgiving-reveal/",
    "date": "2026-11-24"
   },
   {
    "tag": "FORD",
-   "title": "Ford Shoots For The Stars With Spacecraft Manufacturer Investment",
+   "title": "Multi-Energy Ford Super Duty Pickups Will Be Assembled In Canada",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-shoots-for-the-stars-with-spacecraft-manufacturer-investment/",
+   "url": "https://fordauthority.com/2026/11/multi-energy-ford-super-duty-pickups-will-be-assembled-in-canada/",
    "date": "2026-11-24"
   },
   {
    "tag": "FORD",
-   "title": "Ford Super Duty Plant Gets $500 Million Investment From Canada",
+   "title": "Ford Australia Wants More Specialty Models For Local Blue Oval Buyers",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-super-duty-plant-gets-500-million-investment-from-canada/",
+   "url": "https://fordauthority.com/2026/11/ford-australia-wants-more-specialty-models-for-local-blue-oval-buyers/",
    "date": "2026-11-24"
   },
   {
    "tag": "AUTO",
-   "title": "I Designed My Dream Ferrari 296 Challenge Stradale. It's Ridiculous",
+   "title": "Toyota's Baby Land Cruiser Goes Full Off-Road Mode",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816524/ferrari-296-challenge-stradale-configurator/",
+   "url": "https://www.motor1.com/news/816641/toyota-fj-cruiser-kuhl-racing-off-road-upgrade/",
    "date": "2026-11-24"
   },
   {
    "tag": "AUTO",
-   "title": "Infiniti's New Manual Sports Sedan Could Bring Back A Beloved Name",
+   "title": "The Next VW Golf R Could Have Two Types Of Boost",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816511/infiniti-considering-g37-name-new-sedan/",
+   "url": "https://www.motor1.com/news/816636/vw-golf-r-hybrid-engine/",
    "date": "2026-11-24"
   },
   {
    "tag": "AUTO",
-   "title": "Hyundai Isn't Giving Up On Sedans",
+   "title": "Chrysler Recalls 82,843 Ram 1500 Trucks Over Brake Software Bug That Could Disable Safety Features",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816489/hyundai-sedans-still-matter/",
+   "url": "https://www.motor1.com/news/816607/ram-1500-classic-abs-recall/",
    "date": "2026-11-24"
   },
   {
    "tag": "AUTO",
-   "title": "This Corvette Sat Abandoned For 25 Years. Then It Got Its First Deep Clean",
+   "title": "Carroll Shelby-Driven Ford GT40 Returns To Auction After Previous Sale Attempt",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816317/chevrolet-corvette-abandoned-wash/",
+   "url": "https://www.motor1.com/news/816605/carroll-shelby-1965-ford-gt40/",
    "date": "2026-11-24"
   },
   {
    "tag": "AUTO",
-   "title": "Subaru's American-Built Ascent Is Heading To Japan",
+   "title": "Toyota Isn't Even Halfway Done Developing Its Mid-Engined Coupe",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816461/subaru-ascent-japan-launch/",
+   "url": "https://www.motor1.com/news/816599/toyota-mid-engined-coupe-development/",
+   "date": "2026-11-24"
+  },
+  {
+   "tag": "AUTO",
+   "title": "This Korean SUV Combines A Jeep Face With A Range Rover Tail",
+   "source": "Carscoops",
+   "url": "https://www.carscoops.com/2326239/kgm-rexton-combines-jeep-face-range-rover-tail/",
+   "date": "2026-11-24"
+  },
+  {
+   "tag": "AUTO",
+   "title": "This Acura Integra GS-R For Sale Is The 2 Fast 2 Furious Car Of Your Dreams",
+   "source": "Carscoops",
+   "url": "https://www.carscoops.com/2326234/2-fast-2-furious-acura-gs-r-auction/",
    "date": "2026-11-24"
   },
   {
@@ -196,20 +210,6 @@ window.DG_NEWS = {
    "title": "Dodge's New NASCAR Stock Car To Debut At Sno-Brawl, Which Doesn't Take Place In The Snow",
    "source": "Carscoops",
    "url": "https://www.carscoops.com/2325982/dodge-nascar-stock-car-debut-snowball-derby/",
-   "date": "2026-11-24"
-  },
-  {
-   "tag": "AUTO",
-   "title": "Renault Announces 2,000 New Factory Jobs And 1,000 Office Job Cuts",
-   "source": "Carscoops",
-   "url": "https://www.carscoops.com/2321969/renault-new-jobs-job-cuts/",
-   "date": "2026-11-24"
-  },
-  {
-   "tag": "AUTO",
-   "title": "Nissan Made A Hood From Pineapple Leaves",
-   "source": "Carscoops",
-   "url": "https://www.carscoops.com/2320181/nissan-made-hood-from-pineapple-leaves/",
    "date": "2026-11-24"
   }
  ]
