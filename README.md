@@ -1,62 +1,69 @@
-# DETAILGUY317 Garage - v2 upgrade (built 2026-11-14)
+# DETAILGUY317 Garage (detailguy317.com)
 
-Same look. New guts. Everything you edit week-to-week lives in `data/` - no more digging in index.html.
+Racing · Repairs · Automotive News · Information. A free car-help site that runs itself with robots on GitHub, with paid extras through Ko-fi.
+
+**Your checklist is in `OWNER_TODO.md`.** The pinned **Garage Report** issue (emailed every Sunday) shows your next unchecked items, along with anything that broke.
+
+---
 
 ## What's in here
+
 | File | What it does |
 |---|---|
-| `index.html` | The site. Same layout/colors; now scales evenly on any screen. |
-| `racing.html` | Racing pop-out window (now resizes properly). |
-| `admin.html` | **Your racing picker.** Find this weekend's YouTube race videos, pick 3, copy one file to GitHub. Not linked anywhere on the site. |
-| `data/live-content.js` | The 3 race videos, race buttons, "This weekend" list, live channels, **your joke headlines**. |
-| `data/news.js` | Real headlines - rewritten every morning by the robot. |
-| `data/racing-auto.js` | Race videos the robot picked (used when live-content says `"mode": "auto"`). |
-| `stocks-data.js` | 173 verified auto stocks for the scanner. |
-| `data/marketcaps.js` | Market-cap rankings - rewritten ~every 10 min in market hours by `update-marketcaps` robot. |
-| `data/series.js` | Racing HQ: series status lines, history links, celeb racers, car shows & auctions - edit anytime. |
-| `data/series-auto.js` | F1 standings + every F1 champion since 1950 - robot updates every 2 hours. |
-| `data/series-live.js` | Top-5 standings (from each season's Wikipedia page) + latest headlines (Google News) for every Racing HQ series - `update-series` robot, every 2-3 hours. |
-| `OWNER_TODO.md` | **Your setup checklist.** The Sunday Garage Report shows the next unchecked items. |
-| `scripts/garage_report.py` + `garage-report.yml` | Sunday Garage Report (GitHub Issue → emailed to you) + a 6pm heads-up only if a robot breaks. |
-| `scripts/check_links.py` | Finds dead links every Sunday; they're listed in the Garage Report. |
-| `sitemap.xml`, `robots.txt` | For Google / Bing. admin.html is hidden from search engines. |
-| `guides/` | Free PDF guides (used car checklist, dash lights, quote red flags, winter kit, kids coloring page). |
-| `dtc-data.js` | Trouble codes, first-check tips, common symptom answers for Ask A Mechanic. |
-| `scripts/update_feeds.py` + `.github/workflows/update-feeds.yml` | The robot (GitHub Actions, free). |
-| `worker/ask-dg317-worker.js` | DG317 AI answers (Cloudflare Worker + Claude Haiku, ~30 cents per 1,000 questions). Recommended. |
+| `index.html` | The whole site: homepage, Racing HQ, stocks, CarStuff, Jr Mechanics, Ask DG317, memberships. All settings live at the top in **`DG_CONFIG`**. |
+| `privacy.html` | Privacy & disclaimer page (Cloudflare + Google Analytics, Ko-fi/Stripe, affiliates, car-advice disclaimer). |
+| `admin.html` | Your private race-video picker. It isn't linked anywhere on the site. |
+| `racing.html` | Racing pop-out window. |
+| `dtc-data.js` | DG317's free brain: 149 trouble codes, first-check tips and 44 common symptoms. |
+| `stocks-data.js` | The auto stocks in the scanner. |
+| `data/live-content.js` | Race-video picks, "This Weekend" list, live channel buttons, joke headlines. Edit it through admin.html. |
+| `data/series.js` | Racing HQ: 52 series, status lines, history links, celeb racers, car shows. Edit any time. |
+| `data/sales.js` | Worldwide car-sales leaderboard (Sales Race tab). Refresh it monthly. |
+| `data/*.js` (others) | Written by the robots. Don't edit by hand. |
+| `guides/` | The 7 **free** PDF guides. **Never put the paid PDFs here**, because anyone could download them. The paid ones live only in the Ko-fi Shop. |
+| `scripts/` + `.github/workflows/` | The robots (free on a public repo). |
+| `worker/ask-dg317-worker.js` | Optional AI answers (Cloudflare Worker + Claude Haiku, about 30¢ per 1,000 questions, with a $5/month cap). |
+| `sitemap.xml`, `robots.txt` | For Google and Bing. admin.html is hidden from search. |
+| `CNAME`, `webback.jpg`, `moonimage.png` | **Keep these.** They hold your domain name and your background pictures. |
 
-## Install (once)
-1. Back up your current repo (Code -> Download ZIP).
-2. Upload everything in this folder to the repo root. **Keep your `webback.jpg` and `moonimage.png`** - the new page uses them exactly like before.
-3. Repo **Settings -> Actions -> General -> Workflow permissions -> Read and write** -> Save.
-4. (For auto race videos) get a free YouTube Data API key, then **Settings -> Secrets and variables -> Actions -> New secret**: `YOUTUBE_API_KEY`.
-5. **Actions tab -> Run workflow** on **update-feeds**, **update-videos**, **update-series**, **update-marketcaps** and **garage-report** to fill everything right away.
-6. Repo main page -> **Watch -> All Activity** so the Garage Report reaches your (DG317) email.
+## The robots (all automatic)
 
-## Robot schedule (all automatic, all free on a public repo)
-| Robot | When | What |
+| Robot | When | What it does |
 |---|---|---|
-| update-feeds | every 2 hrs | headlines, F1, This Day in Automotive History |
-| update-videos | every 30 min, every day | catches LIVE racing on YouTube (channel RSS + one wide search, ~5,000 of 10,000 free units/day). Trusted channels fill the boxes; others show in admin.html for you to approve |
-| update-series | every 3 hrs Mon-Thu, every 2 hrs Fri-Sun | standings + news for all 48 Racing HQ series |
-| update-marketcaps | every 10 min, market hours Mon-Fri | market-cap ranks + pie chart |
-| garage-report | Sunday ~8am MT (full) + 6pm daily (only if broken) | your to-do list, racing/market recap, dead links |
+| update-feeds | every 2 hrs | News headlines, F1 standings (adds each new champion by itself every January), This Day in Automotive History |
+| update-series | every 2-3 hrs | Top-5 standings + headlines for all 52 Racing HQ series |
+| update-videos | every 30 min | Finds live/recent racing on YouTube (needs the `YOUTUBE_API_KEY` secret). Skips videos whose owners block them from playing on other sites (like F1), and opens those on YouTube instead. |
+| update-marketcaps | every 10 min, market hours | Market-cap ranks + pie chart |
+| garage-report | Sunday ~8am MT + a 6pm heads-up only if something broke | Your to-do list, racing/market recap, dead-link check |
 
-The full step-by-step setup list is in **OWNER_TODO.md**.
+If a robot turns red ❌ in the Actions tab, open the run and read its last lines, or send a screenshot to Claude.
 
-## Turn on the money / contact stuff (top of the script in index.html, `DG_CONFIG`)
-- `formspreeId` - free at formspree.io. Questions land in your inbox; your email is never on the site.
-- `tiers[].link` - Stripe Payment Links (or Ko-fi / Buy Me a Coffee memberships). Prices are suggestions - change them.
-- `support[]` - tip/donate links. `socials{}` - only filled-in accounts show on the home box.
-- `affiliates[]` - swap in your Summit / ALLDATA affiliate links when approved.
-- `aiEndpoint` - optional, after deploying `worker/ask-dg317-worker.js`.
+## Money (all through Ko-fi: ko-fi.com/dg317garage)
 
-## Weekly racing routine (2 minutes, or zero if you let the robot do it)
-Open `yoursite/admin.html` -> Find racing -> click "-> Big / Box 2 / Box 3" -> fix the buttons/weekend list -> **Copy** ->
-GitHub -> `data/live-content.js` -> pencil -> paste -> Commit. Uncheck "Use MY picks" to hand it back to the robot.
+- **Tips:** "☕ Buy DG317 a Coffee" at $3 each
+- **Garage Member:** $4.20/month. Members get every guide free automatically (100% member discount on all shop items).
+- **Shop:** 3 guides at $1.99+ and the bundle at $2.99+ (pay what you want)
+- Payouts go through Stripe to the business account. Buyers only see **DETAILGUY317** on their card statements.
+- Every link lives in `DG_CONFIG` in index.html (`tiers[].link`, `premium[].link`, `support[]`). Blank ones stay hidden.
+
+## Switches in `DG_CONFIG`
+
+- `freeMode`: true = no prices anywhere
+- `askMode`: `"bot"` (launch setting, nothing lands on you), `"stumper"` or `"personal"`
+- `soon: true` on a tier shows it as "Coming soon"
+- `aiEndpoint`: paste the Cloudflare Worker URL to turn on AI answers
+- `cfAnalyticsToken`: Cloudflare Web Analytics (already set)
+- `tickerSpeed`: news reader-board speed (60 is normal)
+- `socials`: paste your DG317 social links. Blank ones stay hidden.
+
+## Visitor stats & search
+
+- **Cloudflare Web Analytics:** dash.cloudflare.com → Observability → Analytics → Web analytics
+- **Google Analytics:** analytics.google.com. **Don't remove the gtag code**, because it's also what keeps Google Search Console verified.
+- **Google Search Console + Bing Webmaster Tools:** both verified, sitemap submitted.
 
 ## Staying anonymous
-- Nothing personal is in these files. Make every social/payment account under DG317 / DetailGuy317.
-- Use a separate email for Formspree, Stripe, YouTube, etc. Stripe/PayPal need your ID privately for payouts but don't show it to customers - set the public "business name" to DG317.
-- Your GitHub username is public on the repo - make sure it isn't your real name.
-- Robot commits are signed "dg317-robot", not you.
+
+- Nothing on the public site shows a real name, town or employer. Keep it that way, including in photos (no plates, shop signs or uniforms, and turn camera location off).
+- Sign-ups use the Proton email. GitHub's email is private, and the robots commit as "dg317-robot".
+- Stripe/Ko-fi have your real info privately for payouts only. The public name is DG317 Garage, and the support phone is a Google Voice number.
