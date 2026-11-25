@@ -1,12 +1,19 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-25T02:17:35.340316+00:00",
+ "updated": "2026-11-25T14:10:40.716181+00:00",
  "items": [
   {
    "tag": "RACING",
-   "title": "What's next for Colton Herta?",
+   "title": "What’s next for Colton Herta?",
    "source": "RACER",
    "url": "https://racer.com/2026/11/24/what-s-next-for-colton-herta-",
+   "date": "2026-11-25"
+  },
+  {
+   "tag": "RACING",
+   "title": "The RACER Mailbag, November 25",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/24/the-racer-mailbag-november-25",
    "date": "2026-11-25"
   },
   {
@@ -25,86 +32,86 @@ window.DG_NEWS = {
   },
   {
    "tag": "RACING",
-   "title": "Pirelli sets its sights on a safer, smarter future for America's streets with new state-of-the-art Cyber Tyre",
+   "title": "Missed podium opportunity still stinging Lindblad",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/24/pirelli-sets-its-sights-on-a-safer-smarter-future-for-america-s-streets-with-new-state-of-the-art-cyber-tyre",
+   "url": "https://racer.com/2026/11/25/missed-podium-opportunity-still-stinging-lindblad",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "Spire rejects Gibbs check to resolve counterclaim issues",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/24/spire-rejects-gibbs-check-to-resolve-counterclaim-issues",
-   "date": "2026-11-25"
-  },
-  {
-   "tag": "RACING",
-   "title": "Lando Norris expects 2030 F1 racing to surpass Las Vegas GP spectacle",
+   "title": "Zak Brown rules out McLaren engine programme for F1 2030",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/lando-norris-admits-some-of-the-overtakes-werent-overtakes-in-vegas-thriller-and-explains-why-2030-/10877443/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/f1/news/zak-brown-rules-out-mclaren-engine-programme-for-f1-2030/10877436/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "Joe Gibbs Racing constructs timeline of Chris Gabehart's alleged theft",
+   "title": "Lennix Busch tests kart for the first time, okay after \"pretty big\" crash",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/nascar-cup/news/joe-gibbs-racing-constructs-timeline-of-chris-gabeharts-alleged-theft/10877570/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/nascar-cup/news/lennix-busch-tests-race-car-for-first-time-all-smiles-despite-crash/10877574/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "Unaired Las Vegas radio reveals Red Bull considered giving up Max Verstappen's lead",
+   "title": "Luke Browning reveals hardest aspect of maiden Super Formula season",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/unaired-radio-reveals-red-bull-told-max-verstappen-to-consider-giving-antonelli-the-lead-before-las/10877450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/super-formula/news/luke-browning-reveals-hardest-aspect-of-maiden-super-formula-season/10877640/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "Jolyon Palmer: No rival could match Max Verstappen's fight against George Russell in Las Vegas",
+   "title": "Opel, Citroen exit is not a betrayal of Formula E, but a major blow at the worst possible time",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/jolyon-palmer-hails-max-verstappens-unbelievable-racecraft-in-george-russell-duel/10877407/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/formula-e/news/opel-and-citroens-exit-is-not-a-betrayal-of-formula-e-but-a-major-blow-at-the-worst-possible-time/10877638/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "IndyCar adds Kansas Speedway to 2027 schedule in joint NASCAR weekend",
+   "title": "Marco Wittmann protégé triumphs: Who are the 2026 Road to DTM winners?",
    "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/indycar/news/indycar-adds-kansas-speedway-to-2027-schedule-in-joint-nascar-weekend-/10877534/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "url": "https://www.motorsport.com/dtm/news/marco-wittmann-protege-triumphs-who-are-the-2026-road-to-dtm-winners/10877481/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "What's next for Herta after F1 2027 snub?",
+   "title": "Skoda considers WRC Rally1 update kit for 2027",
    "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/whats-next-for-herta-after-f1-2027-snub/10877533/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/wrc/news/skoda-considers-wrc-rally1-update-kit-for-2027/10877650/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "Rovanpera: New 2027 WRC cars will see \"everybody start from zero\"",
+   "title": "Opel and Citroen exit is not a betrayal of Formula E, but a major blow at the worst possible time",
    "source": "Autosport",
-   "url": "https://www.autosport.com/wrc/news/rovanpera-new-2027-wrc-cars-will-see-everybody-start-from-zero/10877526/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/formula-e/news/opel-and-citroen-exit-is-not-a-betrayal-of-formula-e-but-a-major-blow-at-the-worst-possible-time/10877649/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "Richards set to step down as Motorsport UK chairman",
+   "title": "Browning reveals hardest aspect of maiden Super Formula season",
    "source": "Autosport",
-   "url": "https://www.autosport.com/general/news/richards-set-to-step-down-as-motorsport-uk-chairman/10877268/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/super-formula/news/luke-browning-reveals-hardest-aspect-of-maiden-super-formula-season/10877643/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "Slater to replace Camara for rest of F2 season as Tsolov becomes title favourite",
+   "title": "Six ways Marquez outgunned Aprilia to the 2026 MotoGP title",
    "source": "Autosport",
-   "url": "https://www.autosport.com/formula2/news/slater-replaces-camara-in-f2/10877445/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/motogp/news/six-ways-marc-marquez-outgunned-aprilia-to-the-2026-motogp-title/10877609/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
    "date": "2026-11-25"
   },
   {
    "tag": "RACING",
-   "title": "New Super Formula champion eyes dream IndyCar move to \"demonstrate\" Japan's quality",
+   "title": "Alonso: “We can't be competitive with the power unit we have”",
    "source": "Autosport",
-   "url": "https://www.autosport.com/super-formula/news/super-formula-champion-eyes-indycar-move/10877424/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "url": "https://www.autosport.com/f1/news/fernando-alonso-we-cant-be-competitive-with-the-power-unit-we-have/10877607/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "date": "2026-11-25"
+  },
+  {
+   "tag": "FORD",
+   "title": "Lynx GT LM Will Pack Supercharged Ford 5.2L V8 Power",
+   "source": "Ford Authority",
+   "url": "https://fordauthority.com/2026/11/lynx-gt-lm-will-pack-supercharged-ford-5-2l-v8-power/",
    "date": "2026-11-25"
   },
   {
@@ -136,45 +143,52 @@ window.DG_NEWS = {
    "date": "2026-11-25"
   },
   {
-   "tag": "FORD",
-   "title": "Ford CFO Doesn't Think Data Center Pullbacks Will Impact Battery Storage Unit",
-   "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-cfo-doesnt-think-data-center-pullbacks-will-impact-battery-storage-unit/",
+   "tag": "AUTO",
+   "title": "Hyundai's New Tucson Finally Gets A Hybrid Off-Road Trim",
+   "source": "Motor1",
+   "url": "https://www.motor1.com/news/816754/2027-hyundai-tucson-hybrid-xrt/",
    "date": "2026-11-25"
   },
   {
    "tag": "AUTO",
-   "title": "Ineos Will Build Its Rugged Off-Roader In America Starting In 2028",
+   "title": "Volkswagen Adds Sporty R-Line Treatment To ID. Cross",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816667/ineos-moving-production-to-us/",
+   "url": "https://www.motor1.com/news/816752/volkswagen-id-cross-r-line/",
    "date": "2026-11-25"
   },
   {
    "tag": "AUTO",
-   "title": "Toyota's Baby Land Cruiser Goes Full Off-Road Mode",
+   "title": "The New Suzuki Ignis Is Another Cheap EV For Europe That America Isn't Getting",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816641/toyota-fj-cruiser-kuhl-racing-off-road-upgrade/",
+   "url": "https://www.motor1.com/news/816735/2027-suzuki-ignis-specs-photos/",
    "date": "2026-11-25"
   },
   {
    "tag": "AUTO",
-   "title": "The Next VW Golf R Could Have Two Types Of Boost",
+   "title": "Genesis GV90 Uses Two Different Infotainment Systems At Once",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816636/vw-golf-r-hybrid-engine/",
+   "url": "https://www.motor1.com/news/816723/genesis-gv90-dual-os-infotainment/",
    "date": "2026-11-25"
   },
   {
    "tag": "AUTO",
-   "title": "Chrysler Recalls 82,843 Ram 1500 Trucks Over Brake Software Bug That Could Disable Safety Features",
+   "title": "Toyota's Wild Hilux One-Off Is A Pickup That Forgot To Be A Truck",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816607/ram-1500-classic-abs-recall/",
+   "url": "https://www.motor1.com/news/816716/toyota-hilux-hyper-z-revealed/",
    "date": "2026-11-25"
   },
   {
    "tag": "AUTO",
-   "title": "Carroll Shelby-Driven Ford GT40 Returns To Auction After Previous Sale Attempt",
-   "source": "Motor1",
-   "url": "https://www.motor1.com/news/816605/carroll-shelby-1965-ford-gt40/",
+   "title": "Audi Is Bringing Back The RS6 Sedan To Fight The BMW M5",
+   "source": "Carscoops",
+   "url": "https://www.carscoops.com/2327706/audi-rs6-sedan-scoop/",
+   "date": "2026-11-25"
+  },
+  {
+   "tag": "AUTO",
+   "title": "Toyota Turned The New Hilux Into A Slammed Widebody Street Fighter",
+   "source": "Carscoops",
+   "url": "https://www.carscoops.com/2327691/toyota-new-hilux-slammed-widebody/",
    "date": "2026-11-25"
   },
   {
@@ -196,20 +210,6 @@ window.DG_NEWS = {
    "title": "Stellantis To Leave WEC And Formula E, But It's WRC2 Program Is Safe",
    "source": "Carscoops",
    "url": "https://www.carscoops.com/2326269/stellantis-exits-wec-formula-e/",
-   "date": "2026-11-25"
-  },
-  {
-   "tag": "AUTO",
-   "title": "This Is The Entire Production Run Of The Most Extreme Alfa Romeo Giulia Quadrifoglio",
-   "source": "Carscoops",
-   "url": "https://www.carscoops.com/2322855/alfa-romeo-giulia-quadrifoglio-luna-rossa/",
-   "date": "2026-11-25"
-  },
-  {
-   "tag": "AUTO",
-   "title": "Ineos To Build The Grenadier In The US",
-   "source": "Carscoops",
-   "url": "https://www.carscoops.com/2327239/ineos-grenadier-usa-production-confirmed/",
    "date": "2026-11-25"
   }
  ]
