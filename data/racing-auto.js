@@ -1,19 +1,7 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-25T01:30+00:00",
+ "updated": "2026-11-25T10:59+00:00",
  "slots": [
-  {
-   "type": "video",
-   "id": "0goQS_Pw_r0",
-   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
-   "channel": "FloRacing",
-   "kind": "live",
-   "date": "2026-11-25T00:46:02Z",
-   "viewers": "888",
-   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg?v=6b035d17",
-   "trusted": true,
-   "embed": true
-  },
   {
    "type": "video",
    "id": "YA1ruaeoZZY",
@@ -21,8 +9,20 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "30",
+   "viewers": "19",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "hlKB1kxKEgs",
+   "title": "🚨 LIVE: INDYCAR at Kansas Speedway | Full Race Marathon",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "upcoming",
+   "date": "2026-11-25T17:00:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
    "trusted": true,
    "embed": true
   },
@@ -42,24 +42,12 @@ window.DG_RACING_AUTO = {
  "live": [
   {
    "type": "video",
-   "id": "0goQS_Pw_r0",
-   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
-   "channel": "FloRacing",
-   "kind": "live",
-   "date": "2026-11-25T00:46:02Z",
-   "viewers": "888",
-   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg?v=6b035d17",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "30",
+   "viewers": "19",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -71,7 +59,7 @@ window.DG_RACING_AUTO = {
    "channel": "Toronto Motorsports Park",
    "kind": "live",
    "date": "2026-11-16T12:00:42Z",
-   "viewers": "1",
+   "viewers": null,
    "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
    "trusted": false,
    "embed": true
@@ -83,7 +71,7 @@ window.DG_RACING_AUTO = {
    "channel": "Mopar Bro",
    "kind": "live",
    "date": "2026-11-15T23:36:50Z",
-   "viewers": "1",
+   "viewers": null,
    "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
    "trusted": false,
    "embed": true
@@ -116,24 +104,12 @@ window.DG_RACING_AUTO = {
  "found": [
   {
    "type": "video",
-   "id": "0goQS_Pw_r0",
-   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
-   "channel": "FloRacing",
-   "kind": "live",
-   "date": "2026-11-25T00:46:02Z",
-   "viewers": "888",
-   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg?v=6b035d17",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "30",
+   "viewers": "19",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -145,7 +121,7 @@ window.DG_RACING_AUTO = {
    "channel": "Toronto Motorsports Park",
    "kind": "live",
    "date": "2026-11-16T12:00:42Z",
-   "viewers": "1",
+   "viewers": null,
    "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
    "trusted": false,
    "embed": true
@@ -157,7 +133,7 @@ window.DG_RACING_AUTO = {
    "channel": "Mopar Bro",
    "kind": "live",
    "date": "2026-11-15T23:36:50Z",
-   "viewers": "1",
+   "viewers": null,
    "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
    "trusted": false,
    "embed": true
@@ -188,6 +164,18 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
+   "id": "hlKB1kxKEgs",
+   "title": "🚨 LIVE: INDYCAR at Kansas Speedway | Full Race Marathon",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "upcoming",
+   "date": "2026-11-25T17:00:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "CJEr7dIpFdg",
    "title": "LIVE: USAC Practice from Ocala Speedway",
    "channel": "FloRacing",
@@ -195,6 +183,30 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-24T15:17:52Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/CJEr7dIpFdg/mqdefault.jpg?v=6b05aaa0",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "GUNyBlUPxDI",
+   "title": "Jason Leffler Memorial | USAC Midgets at Kern Raceway 11/24/26 | Highlights",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-25T03:44:50Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/GUNyBlUPxDI/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "0goQS_Pw_r0",
+   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-25T00:46:02Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -213,7 +225,7 @@ window.DG_RACING_AUTO = {
   {
    "type": "video",
    "id": "PqxL1xWI_Fg",
-   "title": "250 A Main | Thor Mini O's at Gatorback Cycle Park 11/23/26 | Full Race",
+   "title": "250 A Main | Thor Mini O's at Gatorback Cycle Park 11/24/26 | Full Race",
    "channel": "FloRacing",
    "kind": "recent",
    "date": "2026-11-24T21:30:43Z",
@@ -351,18 +363,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-24T01:47:30Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/UV7DqVT5R10/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "zA8t1NZwkfo",
-   "title": "DRIVEN: 10 Years of Gateway Dirt Nationals - Stars in the Making (Episode 2)",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-24T00:00:07Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/zA8t1NZwkfo/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
