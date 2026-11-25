@@ -1,16 +1,16 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-24T17:13+00:00",
+ "updated": "2026-11-25T01:30+00:00",
  "slots": [
   {
    "type": "video",
-   "id": "8APkwESfa0Q",
-   "title": "LIVE: 2026 Eibach Gateway Dirt Nationals Track Build - November 24th",
+   "id": "0goQS_Pw_r0",
+   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
    "channel": "FloRacing",
    "kind": "live",
-   "date": "2026-11-24T12:52:38Z",
-   "viewers": "260",
-   "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg?v=6b037e32",
+   "date": "2026-11-25T00:46:02Z",
+   "viewers": "888",
+   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg?v=6b035d17",
    "trusted": true,
    "embed": true
   },
@@ -21,7 +21,7 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "24",
+   "viewers": "30",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -42,13 +42,13 @@ window.DG_RACING_AUTO = {
  "live": [
   {
    "type": "video",
-   "id": "8APkwESfa0Q",
-   "title": "LIVE: 2026 Eibach Gateway Dirt Nationals Track Build - November 24th",
+   "id": "0goQS_Pw_r0",
+   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
    "channel": "FloRacing",
    "kind": "live",
-   "date": "2026-11-24T12:52:38Z",
-   "viewers": "260",
-   "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg?v=6b037e32",
+   "date": "2026-11-25T00:46:02Z",
+   "viewers": "888",
+   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg?v=6b035d17",
    "trusted": true,
    "embed": true
   },
@@ -59,7 +59,7 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "24",
+   "viewers": "30",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -71,7 +71,7 @@ window.DG_RACING_AUTO = {
    "channel": "Toronto Motorsports Park",
    "kind": "live",
    "date": "2026-11-16T12:00:42Z",
-   "viewers": null,
+   "viewers": "1",
    "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
    "trusted": false,
    "embed": true
@@ -83,7 +83,7 @@ window.DG_RACING_AUTO = {
    "channel": "Mopar Bro",
    "kind": "live",
    "date": "2026-11-15T23:36:50Z",
-   "viewers": null,
+   "viewers": "1",
    "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
    "trusted": false,
    "embed": true
@@ -116,13 +116,13 @@ window.DG_RACING_AUTO = {
  "found": [
   {
    "type": "video",
-   "id": "8APkwESfa0Q",
-   "title": "LIVE: 2026 Eibach Gateway Dirt Nationals Track Build - November 24th",
+   "id": "0goQS_Pw_r0",
+   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
    "channel": "FloRacing",
    "kind": "live",
-   "date": "2026-11-24T12:52:38Z",
-   "viewers": "260",
-   "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg?v=6b037e32",
+   "date": "2026-11-25T00:46:02Z",
+   "viewers": "888",
+   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg?v=6b035d17",
    "trusted": true,
    "embed": true
   },
@@ -133,7 +133,7 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "live",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "24",
+   "viewers": "30",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
@@ -145,7 +145,7 @@ window.DG_RACING_AUTO = {
    "channel": "Toronto Motorsports Park",
    "kind": "live",
    "date": "2026-11-16T12:00:42Z",
-   "viewers": null,
+   "viewers": "1",
    "thumb": "https://i.ytimg.com/vi/LHnFg-Q3vZc/mqdefault.jpg?v=6afaef57",
    "trusted": false,
    "embed": true
@@ -157,7 +157,7 @@ window.DG_RACING_AUTO = {
    "channel": "Mopar Bro",
    "kind": "live",
    "date": "2026-11-15T23:36:50Z",
-   "viewers": null,
+   "viewers": "1",
    "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
    "trusted": false,
    "embed": true
@@ -200,6 +200,54 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
+   "id": "V2feRJBmAXo",
+   "title": "Can INDYCAR Drivers Guess the Face?",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "recent",
+   "date": "2026-11-24T23:00:14Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/V2feRJBmAXo/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "PqxL1xWI_Fg",
+   "title": "250 A Main | Thor Mini O's at Gatorback Cycle Park 11/23/26 | Full Race",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-24T21:30:43Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/PqxL1xWI_Fg/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "llLO5hoShFs",
+   "title": "How Max Won An Incredibly Complicated Race & More In Las Vegas | Jolyon Palmer's F1 TV Analysis",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-24T18:03:52Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/llLO5hoShFs/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "BZ7v4jhlFx0",
+   "title": "Aprilia Won Everything, Marc Won It All 💪 | 2026 Portuguese GP",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-24T18:00:03Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/BZ7v4jhlFx0/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "tdZ1xiJBLKQ",
    "title": "POV: You're the Champion 🏆 | 2026 Portuguese GP",
    "channel": "MotoGP",
@@ -224,6 +272,18 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
+   "id": "XBpAA9AxB48",
+   "title": "A POV you didn't know you needed 😌 #indycar #racing #POV #celebration",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "recent",
+   "date": "2026-11-24T15:00:33Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/XBpAA9AxB48/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "AEPr1TWEKhw",
    "title": "Top 10 Onboards | 2026 Las Vegas Grand Prix | Qatar Airways",
    "channel": "FORMULA 1",
@@ -233,6 +293,18 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/AEPr1TWEKhw/mqdefault.jpg",
    "trusted": true,
    "embed": false
+  },
+  {
+   "type": "video",
+   "id": "8APkwESfa0Q",
+   "title": "LIVE: 2026 Eibach Gateway Dirt Nationals Track Build - November 24th",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-24T12:52:38Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/8APkwESfa0Q/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
   },
   {
    "type": "video",
@@ -291,30 +363,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-24T00:00:07Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/zA8t1NZwkfo/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "XXT9R4XGrt4",
-   "title": "250 Pro Sport | Thor Mini O's at Gatorback Cycle Park 11/23/26 | Full Race",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-23T23:55:31Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/XXT9R4XGrt4/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "zUYxUAMmtn4",
-   "title": "Breaking Down The 2027 Interstate Batteries High Limit Racing Sprint Car Schedule",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-23T20:34:35Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/zUYxUAMmtn4/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -387,18 +435,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-22T07:03:23Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/Vyk_6bNm7lo/mqdefault.jpg",
-   "trusted": true,
-   "embed": false
-  },
-  {
-   "type": "video",
-   "id": "Q017RPSWImU",
-   "title": "LIVE: Las Vegas Grand Prix Post-Race Show",
-   "channel": "FORMULA 1",
-   "kind": "recent",
-   "date": "2026-11-22T06:06:50Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/Q017RPSWImU/mqdefault.jpg",
    "trusted": true,
    "embed": false
   },
@@ -495,18 +531,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-20T14:00:14Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/JXqIhCescEw/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "wUNn-56BHhA",
-   "title": "Lucas Oil Drag Racing Series Highlights from the In-N-Out Burger NHRA Finals",
-   "channel": "NHRA",
-   "kind": "recent",
-   "date": "2026-11-19T19:00:04Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/wUNn-56BHhA/mqdefault.jpg",
    "trusted": true,
    "embed": true
   }
