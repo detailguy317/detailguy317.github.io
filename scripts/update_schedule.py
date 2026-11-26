@@ -88,21 +88,25 @@ def parse_dates(txt, year):
         return a, b
     return None
 
-DATE_COL = re.compile(r"^(date|dates|date\(s\)|race date|event date)$", re.I)
+DATE_COL = re.compile(r"^\W*(race |event )?dates?(\s*\(s\))?\W*$", re.I)
 NAME_COLS = [re.compile(r"^(race name|grand prix|event|event name|race|rally|e-prix|name|round name)$", re.I),
              re.compile(r"^(circuit|track|venue|location|circuit name)$", re.I)]
-BAD_TABLE = re.compile(r"result|standing|entr|team|driver|rider|point|summary|change", re.I)
+STAND_HDR = re.compile(r"^(pos\.?|pts\.?|points|driver|drivers|rider|team|no\.)$", re.I)   # standings / entry tables, not calendars
 
 def calendar_from_html(page_html, year, split=False):
     p = Tables(); p.feed(page_html)
-    best = []
+    best, seen_hdrs = [], []
     for t in p.tables:
-        if "wikitable" not in t["cls"] or BAD_TABLE.search(t["heading"] or ""): continue
+        if "wikitable" not in t["cls"]: continue
         g = grid(t["rows"])
         if len(g) < 3: continue
-        hdr = g[0]
+        hi = next((k for k, row in enumerate(g[:3]) if any(DATE_COL.match(v.strip()) for v in row)), None)   # header may be row 1-3
+        if hi is None:
+            if len(seen_hdrs) < 4: seen_hdrs.append(" | ".join(v.strip()[:18] for v in g[0][:7]))
+            continue
+        hdr = g[hi]; g = g[hi:]
+        if sum(1 for v in hdr if STAND_HDR.match(v.strip())) >= 2: continue
         di = next((i for i, v in enumerate(hdr) if DATE_COL.match(v.strip())), None)
-        if di is None: continue
         ni = None
         for rx in NAME_COLS:                               # first name-ish column whose cells aren't just numbers
             for i, v in enumerate(hdr):
@@ -121,6 +125,7 @@ def calendar_from_html(page_html, year, split=False):
             if not name or (name, d) in seen: continue
             seen.add((name, d)); rows.append((d[0], d[1], name[:80]))
         if len(rows) > len(best): best = rows
+    calendar_from_html.debug = seen_hdrs
     return best
 
 def wiki_page(title):
@@ -138,21 +143,23 @@ def titles(pats, year):
         out.append(s)
     return out
 
+WHY = {}
 def wiki_series(sid, name, pats):
     rows = []
     for year in (TODAY.year, TODAY.year + 1):              # next year too: in the off-season that's what's coming up
         for title in titles(pats, year):
             try:
                 page = wiki_page(title)
-                if not page: continue
+                if not page: WHY.setdefault(sid, []).append(f"{title}: no page"); continue
                 cal = calendar_from_html(page, year, split="–" in title)
+                if not cal: WHY.setdefault(sid, []).append(f"{title}: no calendar table; first table headers: {getattr(calendar_from_html, 'debug', [])}")
                 if cal:
                     src = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
                     rows += [{"sid": sid, "series": name, "event": n, "start": a.isoformat(), "end": b.isoformat(),
                               "exact": False, "src": src} for a, b, n in cal]
                     break
             except Exception as e:
-                print(f"   wiki {title}: {e}")
+                print(f"   wiki {title}: {e}"); WHY.setdefault(sid, []).append(f"{title}: {e}")
             time.sleep(0.4)
     return rows
 
@@ -224,7 +231,7 @@ def main():
     for sid, (name, pats) in WIKI.items():
         rows = wiki_series(sid, name, pats)
         if rows: groups[sid] = rows; stats["ok"].append(sid); print(f"ok   {sid}: {len(rows)} dates")
-        else: print(f"miss {sid}")
+        else: print(f"miss {sid}: {WHY.get(sid)}")
     for sid, rows in old_by.items():                        # a source failed this run -> keep its last good copy
         if sid not in groups: groups[sid] = rows; stats["kept_old"].append(sid)
     lo, hi = TODAY - dt.timedelta(days=KEEP_PAST_DAYS), TODAY + dt.timedelta(days=AHEAD_DAYS)
@@ -239,7 +246,7 @@ def main():
         print("nothing new - keeping the old schedule"); return
     open(OUT, "w", encoding="utf-8").write(
         "/* Written automatically by scripts/update_schedule.py - don't edit by hand. Add your own rows in admin.html instead. */\n"
-        "window.DG_SCHEDULE = " + json.dumps({"updated": NOW.isoformat(timespec="minutes"), "rows": out, "stats": stats}, ensure_ascii=False) + ";\n")
+        "window.DG_SCHEDULE = " + json.dumps({"updated": NOW.isoformat(timespec="minutes"), "rows": out, "stats": stats, "why_missed": WHY}, ensure_ascii=False) + ";\n")
     print(f"schedule: {len(out)} upcoming dates from {len(groups)} series")
 
 if __name__ == "__main__":
