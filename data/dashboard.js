@@ -2,14 +2,14 @@
 window.DG_DASH = {
  "fuel": {
   "wti": {
-   "v": 84.13,
-   "chg": 0.54
+   "v": 83.72,
+   "chg": 0.05
   },
   "brent": {
-   "v": 90.89,
-   "chg": 0.28
+   "v": 90.23,
+   "chg": -0.45
   },
-  "crude_at": "2026-11-26T06:22Z"
+  "crude_at": "2026-11-26T10:45Z"
  },
  "newsletter": {
   "url": "https://themarketmechanics.beehiiv.com/p/let-s-give-thanks-diesel-finally-under-6-even-if-the-dow-is-under-50k",
@@ -19,5 +19,5 @@ window.DG_DASH = {
   "date": "2026-11-21",
   "issue": 37
  },
- "updated": "2026-11-26T06:22+00:00"
+ "updated": "2026-11-26T10:45+00:00"
 };
