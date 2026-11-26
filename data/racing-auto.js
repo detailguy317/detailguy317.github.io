@@ -1,6 +1,6 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-26T12:14+00:00",
+ "updated": "2026-11-26T21:50+00:00",
  "slots": [
   {
    "type": "video",
@@ -10,7 +10,7 @@ window.DG_RACING_AUTO = {
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
    "viewers": "12",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=f2",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=169",
    "trusted": true,
    "embed": true
   },
@@ -33,7 +33,7 @@ window.DG_RACING_AUTO = {
    "channel": "MotorWeek",
    "kind": "loop",
    "date": "2026-11-25T12:52:49Z",
-   "viewers": "440",
+   "viewers": "318",
    "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
    "trusted": true,
    "embed": true
@@ -48,7 +48,7 @@ window.DG_RACING_AUTO = {
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
    "viewers": "12",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=f2",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=169",
    "trusted": true,
    "embed": true
   },
@@ -86,7 +86,7 @@ window.DG_RACING_AUTO = {
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
    "viewers": "12",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=f2",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=169",
    "trusted": true,
    "embed": true
   },
@@ -133,7 +133,7 @@ window.DG_RACING_AUTO = {
    "channel": "MotorWeek",
    "kind": "loop",
    "date": "2026-11-25T12:52:49Z",
-   "viewers": "440",
+   "viewers": "318",
    "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
    "trusted": true,
    "embed": true
@@ -145,7 +145,7 @@ window.DG_RACING_AUTO = {
    "channel": "NTT INDYCAR SERIES",
    "kind": "loop",
    "date": "2026-11-25T17:00:19Z",
-   "viewers": "41",
+   "viewers": "120",
    "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
    "trusted": true,
    "embed": true
@@ -157,8 +157,116 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "loop",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "12",
+   "viewers": "28",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "NVsNdu1x8Is",
+   "title": "Drivers Look Ahead To Race Weekend | 2026 Qatar Grand Prix",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-26T20:45:30Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/NVsNdu1x8Is/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "_qugJO9lRNM",
+   "title": "Weekend Warm-Up | 2026 Qatar Grand Prix",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-26T19:30:07Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/_qugJO9lRNM/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "q6DU1qL5rD8",
+   "title": "Jim Dunn Racing is FIRED up 🔥 #NHRA",
+   "channel": "NHRA",
+   "kind": "recent",
+   "date": "2026-11-26T19:00:25Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/q6DU1qL5rD8/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "v-qvfanikG4",
+   "title": "Pedro, Jorge & Fabio face 1000cc era quiz 🧠 | 2026 Valencia GP",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-26T18:36:51Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/v-qvfanikG4/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "r1RGm7rg1UQ",
+   "title": "TJ comin' through ⚫️🟡 #NHRA",
+   "channel": "NHRA",
+   "kind": "recent",
+   "date": "2026-11-26T17:00:22Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/r1RGm7rg1UQ/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "H-OQt5YacLE",
+   "title": "\"I'm a racer, so I want to win.\" Buddy Kofoid has one goal for his #SnowballDerby debut.",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-26T17:00:22Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/H-OQt5YacLE/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "gc6UHs9jByg",
+   "title": "Biggest Moments of the 2026 WEC Season! 🤯 (Part 3)",
+   "channel": "FIA World Endurance Championship",
+   "kind": "recent",
+   "date": "2026-11-26T17:00:17Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/gc6UHs9jByg/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "DfdEIngZPDo",
+   "title": "The Preview of the 2026 Valencia GP",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-26T14:30:17Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/DfdEIngZPDo/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "Ru3GsvIm88Q",
+   "title": "Swag talk between two MotoGP World Champions ✨",
+   "channel": "MotoGP",
+   "kind": "recent",
+   "date": "2026-11-26T13:07:57Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/Ru3GsvIm88Q/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -284,18 +392,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "LTHfIqgKaDI",
-   "title": "Dani Holgado: \"My dream is to be a MotoGP World Champion\" 💭 | Helmets Off",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-25T21:00:10Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/LTHfIqgKaDI/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "krhLRwWVUCk",
    "title": "2027 Slate Truck Prototype | First Drive",
    "channel": "MotorWeek",
@@ -332,18 +428,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "01DM4Zn_Td0",
-   "title": "How the World Heard It: Marc Marquez makes history 👏 | 2026 Portuguese GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-25T18:47:41Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/01DM4Zn_Td0/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "xh2tKEsGYuE",
    "title": "At least one of these stumped them 🤨#INDYCAR",
    "channel": "NTT INDYCAR SERIES",
@@ -363,18 +447,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-25T17:00:42Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/Y9yPPKEe4bg/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "JjG-vmfy4Xs",
-   "title": "A lot of memories, plenty of milestones and one incredible #MotoGP journey 🫶",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-25T17:00:10Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/JjG-vmfy4Xs/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -404,18 +476,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "58PgxRJwc5U",
-   "title": "🚜 The Gateway Dirt Nationals track build rolls into Day 3 at The Dome at America’s Center!",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-25T16:17:09Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/58PgxRJwc5U/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "VCF5ebm0v4M",
    "title": "LIVE: 2026 Eibach Gateway Dirt Nationals Track Build - November 25th",
    "channel": "FloRacing",
@@ -437,18 +497,6 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/AKj988BzavM/mqdefault.jpg",
    "trusted": true,
    "embed": false
-  },
-  {
-   "type": "video",
-   "id": "h6Swlihpk24",
-   "title": "The most VIRAL moments from the Valencia GP 📱🤯",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-25T12:00:28Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/h6Swlihpk24/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
   },
   {
    "type": "video",
@@ -488,18 +536,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "GUNyBlUPxDI",
-   "title": "Jason Leffler Memorial | USAC Midgets at Kern Raceway 11/24/26 | Highlights",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-25T03:44:50Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/GUNyBlUPxDI/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "mMtjPVOrAyI",
    "title": "🏍️澳門格蘭披治電單車-第五十八屆大賽精華   🏁 Highlights of the Macau Motorcycle Grand Prix - 58th Edition",
    "channel": "Macau Grand Prix channel",
@@ -512,18 +548,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "0goQS_Pw_r0",
-   "title": "LIVE Preview: USAC Jason Leffler Memorial at Bakersfield Speedway at Kern Raceway",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-25T00:46:02Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/0goQS_Pw_r0/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "V2feRJBmAXo",
    "title": "Can INDYCAR Drivers Guess the Face?",
    "channel": "NTT INDYCAR SERIES",
@@ -531,30 +555,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-24T23:00:14Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/V2feRJBmAXo/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "llLO5hoShFs",
-   "title": "How Max Won An Incredibly Complicated Race & More In Las Vegas | Jolyon Palmer's F1 TV Analysis",
-   "channel": "FORMULA 1",
-   "kind": "recent",
-   "date": "2026-11-24T18:03:52Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/llLO5hoShFs/mqdefault.jpg",
-   "trusted": true,
-   "embed": false
-  },
-  {
-   "type": "video",
-   "id": "BZ7v4jhlFx0",
-   "title": "Aprilia Won Everything, Marc Won It All 💪 | 2026 Portuguese GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-24T18:00:03Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/BZ7v4jhlFx0/mqdefault.jpg",
    "trusted": true,
    "embed": true
   }
@@ -571,7 +571,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/ZPOh8z-Nflc/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 568578
+   "views": 569883
   },
   {
    "type": "video",
@@ -584,7 +584,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/1bIXJGSuciI/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 498652
+   "views": 499010
   },
   {
    "type": "video",
@@ -597,7 +597,20 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/BVoDMAELzhU/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 385166
+   "views": 385821
+  },
+  {
+   "type": "video",
+   "id": "HscuA474c4g",
+   "title": "【FULL RACE】2026 AUTOBACS SUPER GT Round8 MOTEGI GT 250km RACE GRAND FINAL",
+   "channel": "SUPER GT Official Channel",
+   "kind": "reel",
+   "date": "2026-11-13T09:00:32Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/HscuA474c4g/mqdefault.jpg",
+   "trusted": true,
+   "embed": true,
+   "views": 247935
   },
   {
    "type": "video",
@@ -610,7 +623,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/JNjZQQVoNtY/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 172325
+   "views": 172574
   },
   {
    "type": "video",
@@ -623,7 +636,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/X0NUtYff9Xc/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 118645
+   "views": 120300
   },
   {
    "type": "video",
@@ -636,7 +649,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/wK7DsUfFZ34/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 79711
+   "views": 80140
   },
   {
    "type": "video",
@@ -649,7 +662,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/W7VE6CyayRc/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 70603
+   "views": 70621
   },
   {
    "type": "video",
@@ -662,7 +675,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/FCyTL00q_no/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 13481
+   "views": 13498
   },
   {
    "type": "video",
@@ -675,7 +688,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/z6frFDPwnGo/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 217730
+   "views": 220250
   },
   {
    "type": "video",
@@ -688,7 +701,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/WsIlcxfpzAM/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 443421
+   "views": 445136
   },
   {
    "type": "video",
@@ -701,7 +714,20 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/YTaXWh9o9Eg/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 237863
+   "views": 239819
+  },
+  {
+   "type": "video",
+   "id": "4gDVze29_6A",
+   "title": "【FULL RACE】2026 AUTOBACS SUPER GT Round3 MOTEGI GT 250km RACE",
+   "channel": "SUPER GT Official Channel",
+   "kind": "reel",
+   "date": "2026-11-13T09:00:06Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/4gDVze29_6A/mqdefault.jpg",
+   "trusted": true,
+   "embed": true,
+   "views": 142145
   },
   {
    "type": "video",
@@ -714,7 +740,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/mBcf13A6UVQ/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 93760
+   "views": 95209
   },
   {
    "type": "video",
@@ -727,7 +753,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/bCNnpkqhJVM/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 44381
+   "views": 44411
   },
   {
    "type": "video",
@@ -740,7 +766,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/uzA35UfOyxY/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 58133
+   "views": 58153
   },
   {
    "type": "video",
@@ -753,7 +779,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/_TyV-Fpg2Ho/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 339375
+   "views": 339570
   },
   {
    "type": "video",
@@ -766,7 +792,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/P2EWghU00PQ/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 74534
+   "views": 74547
   },
   {
    "type": "video",
@@ -779,7 +805,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/qNWZuzeHNDs/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 77752
+   "views": 77826
   },
   {
    "type": "video",
@@ -792,8 +818,8 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/95ySI94255k/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 51366
+   "views": 51385
   }
  ],
- "reel_at": "2026-11-26T00:57+00:00"
+ "reel_at": "2026-11-26T21:50+00:00"
 };
