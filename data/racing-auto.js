@@ -1,19 +1,7 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-26T00:57+00:00",
+ "updated": "2026-11-26T03:00+00:00",
  "slots": [
-  {
-   "type": "video",
-   "id": "hlKB1kxKEgs",
-   "title": "🚨 LIVE: INDYCAR at Kansas Speedway | Full Race Marathon",
-   "channel": "NTT INDYCAR SERIES",
-   "kind": "live",
-   "date": "2026-11-25T17:00:19Z",
-   "viewers": "100",
-   "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
-   "trusted": true,
-   "embed": true
-  },
   {
    "type": "video",
    "id": "1vaOnc8XbQU",
@@ -21,8 +9,8 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "11",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=6c",
+   "viewers": "13",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=84",
    "trusted": true,
    "embed": true
   },
@@ -37,21 +25,21 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/hWFwQ6TmHXs/mqdefault.jpg",
    "trusted": true,
    "embed": true
+  },
+  {
+   "type": "video",
+   "id": "rwNGvHZIF5Q",
+   "title": "MotorWeek Thanksgiving Retro Marathon | Seasons 1-22 (1981-2003)",
+   "channel": "MotorWeek",
+   "kind": "loop",
+   "date": "2026-11-25T12:52:49Z",
+   "viewers": "360",
+   "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
+   "trusted": true,
+   "embed": true
   }
  ],
  "live": [
-  {
-   "type": "video",
-   "id": "hlKB1kxKEgs",
-   "title": "🚨 LIVE: INDYCAR at Kansas Speedway | Full Race Marathon",
-   "channel": "NTT INDYCAR SERIES",
-   "kind": "live",
-   "date": "2026-11-25T17:00:19Z",
-   "viewers": "100",
-   "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
-   "trusted": true,
-   "embed": true
-  },
   {
    "type": "video",
    "id": "1vaOnc8XbQU",
@@ -59,8 +47,8 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "11",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=6c",
+   "viewers": "13",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=84",
    "trusted": true,
    "embed": true
   },
@@ -71,7 +59,7 @@ window.DG_RACING_AUTO = {
    "channel": "Mopar Bro",
    "kind": "live",
    "date": "2026-11-15T23:36:50Z",
-   "viewers": "1",
+   "viewers": null,
    "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
    "trusted": false,
    "embed": true
@@ -92,25 +80,13 @@ window.DG_RACING_AUTO = {
  "found": [
   {
    "type": "video",
-   "id": "hlKB1kxKEgs",
-   "title": "🚨 LIVE: INDYCAR at Kansas Speedway | Full Race Marathon",
-   "channel": "NTT INDYCAR SERIES",
-   "kind": "live",
-   "date": "2026-11-25T17:00:19Z",
-   "viewers": "100",
-   "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "1vaOnc8XbQU",
    "title": "More Than Machine Seasons 1 and 2",
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "11",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=6c",
+   "viewers": "13",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=84",
    "trusted": true,
    "embed": true
   },
@@ -121,7 +97,7 @@ window.DG_RACING_AUTO = {
    "channel": "Mopar Bro",
    "kind": "live",
    "date": "2026-11-15T23:36:50Z",
-   "viewers": "1",
+   "viewers": null,
    "thumb": "https://i.ytimg.com/vi/eesYd1DlpvE/mqdefault.jpg?v=6afa41bc",
    "trusted": false,
    "embed": true
@@ -152,13 +128,49 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
+   "id": "rwNGvHZIF5Q",
+   "title": "MotorWeek Thanksgiving Retro Marathon | Seasons 1-22 (1981-2003)",
+   "channel": "MotorWeek",
+   "kind": "loop",
+   "date": "2026-11-25T12:52:49Z",
+   "viewers": "360",
+   "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "hlKB1kxKEgs",
+   "title": "🚨 LIVE: INDYCAR at Kansas Speedway | Full Race Marathon",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "loop",
+   "date": "2026-11-25T17:00:19Z",
+   "viewers": "91",
+   "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "YA1ruaeoZZY",
    "title": "LIVE NOW: FloRacing 24/7",
    "channel": "FloRacing",
    "kind": "loop",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "38",
+   "viewers": "36",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "KUUWrtnW7-I",
+   "title": "Get your tickets to the Adelaide Grand Final today!",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-26T02:00:44Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/KUUWrtnW7-I/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -207,6 +219,18 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-25T21:00:10Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/LTHfIqgKaDI/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "krhLRwWVUCk",
+   "title": "2027 Slate Truck Prototype | First Drive",
+   "channel": "MotorWeek",
+   "kind": "recent",
+   "date": "2026-11-25T19:30:38Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/krhLRwWVUCk/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -326,7 +350,7 @@ window.DG_RACING_AUTO = {
    "kind": "recent",
    "date": "2026-11-25T13:48:30Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/VCF5ebm0v4M/mqdefault.jpg?v=6b037ec8",
+   "thumb": "https://i.ytimg.com/vi/VCF5ebm0v4M/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -363,6 +387,18 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-25T09:40:12Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/UfO8kpOu14g/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "dHM1v8_8sbU",
+   "title": "【R.R.D.】2026 Rd.7 AUTOPOLIS GT 3Hours RACE",
+   "channel": "SUPER GT Official Channel",
+   "kind": "recent",
+   "date": "2026-11-25T09:00:07Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/dHM1v8_8sbU/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -521,54 +557,6 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/4AGemKdtLzk/mqdefault.jpg",
    "trusted": true,
    "embed": false
-  },
-  {
-   "type": "video",
-   "id": "5oRSfcg6fE0",
-   "title": "Marco Bezzecchi wins Best Overtake at the 2026 Portuguese GP ⚔️",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-24T10:34:18Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/5oRSfcg6fE0/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "XBveId8o70s",
-   "title": "FULL RACE: RACE 24 | 2024 Adelaide 500 | Supercars Throwback",
-   "channel": "Supercars",
-   "kind": "recent",
-   "date": "2026-11-24T07:00:01Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/XBveId8o70s/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "fP9kssSV10w",
-   "title": "POV: You've just become the 2026 MotoGP World Champion 🏆",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-23T20:00:28Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/fP9kssSV10w/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "GoKZhwio29w",
-   "title": "Biggest Moments of the 2026 WEC Season! 😱 (Part 1)",
-   "channel": "FIA World Endurance Championship",
-   "kind": "recent",
-   "date": "2026-11-23T17:00:05Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/GoKZhwio29w/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
   }
  ],
  "reel": [
