@@ -7,6 +7,27 @@ The Sunday **Garage Report** (emailed to you) always shows the next unchecked it
 
 ---
 
+## 🆕 NOV 26 - New homepage + DG317 Dashboard (about 20 min)
+
+### Q. Upload the homepage + Dashboard (10 min)
+- [ ] Unzip **DG317-dashboard-build.zip**. On GitHub: **Add file → Upload files** → drag in everything EXCEPT the `.github` folder → **Commit changes**.
+  (Files: index.html, OWNER_TODO.md, dg317-face.png, dg317-face-left.png, dg317-face-lens.png, data/dashboard.js, data/events.js, data/sales.js, data/mm-cover.jpg, scripts/update_dashboard.py)
+- [ ] Workflow file (the uploader skips the .github folder): open `.github/workflows/update-feeds.yml` on GitHub → pencil ✏️ → select all → paste the one from the zip → **Commit changes**.
+- [ ] **Actions → update-feeds → Run workflow** once. In a minute or two the Dashboard's gas, diesel, crude and newest issue fill in.
+
+### R. Make the email box sign people up automatically (5 min)
+- [ ] beehiiv → **Grow → Subscribe forms → New** → pick **Embedded**. Keep it to just the email box + button (no title). Colors: background black/transparent, button #FF6600. **Publish**.
+- [ ] Click **Get embed code**. Copy only the web address inside `src="...."` (it starts with https://).
+- [ ] GitHub → index.html → pencil ✏️ → find `newsletterForm: ""` → paste it between the quotes → **Commit changes**. Until then the box opens your sign-up page with their email filled in.
+
+### S. Little extras (optional, any time)
+- [ ] **Follow DG317 buttons:** in index.html find `socials:` and paste your YouTube and X links (DG317 accounts only). Blank ones show as grey "soon".
+- [ ] **Sharper gas/diesel numbers:** free key at eia.gov/opendata/register.php → GitHub **Settings → Secrets and variables → Actions → New repository secret** → name `EIA_API_KEY`, paste the key. (Without it the robot reads EIA's public feed, which can run a week or more behind - the Dashboard shows "week of" so you can tell.)
+- [ ] **EV charger finder:** works now on the shared DEMO_KEY. If it gets busy, get a free key at developer.nrel.gov/signup and paste it into `nrelKey:` in index.html.
+- [ ] **Quarterly:** after automakers report (early Jan/Apr/Jul/Oct), update the units in `data/sales.js` → `share:` (the pie works out the %). **When new dates come out:** add them in `data/events.js` (old ones drop off by themselves).
+
+---
+
 ## 🆕 NOV 25 UPGRADE - Race Center + CarStuff + GO LIVE (about 30 min, + 15 min for GO LIVE)
 
 ### O. Upload the new files (10 min)
