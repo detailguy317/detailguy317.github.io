@@ -1,15 +1,176 @@
 /* Written automatically by scripts/update_feeds.py - don't edit by hand. */
 window.DG_NEWS = {
- "updated": "2026-11-26T10:45:25.581731+00:00",
+ "updated": "2026-11-26T21:24:46.414051+00:00",
  "items": [
+  {
+   "tag": "AUTO",
+   "cat": "FORD",
+   "title": "Meet Ford's New Le Mans Fighter: The GT41",
+   "source": "Motor1",
+   "url": "https://www.motor1.com/news/816800/ford-gt41-le-mans-hypercar-debut-bts/",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 8.9,
+   "why": "3 outlets covering it · Ford news",
+   "b": [
+    "ford",
+    "racing"
+   ]
+  },
+  {
+   "tag": "AUTO",
+   "cat": "VW GROUP",
+   "title": "Porsche Unveils One-Off 911 GT3 Tribute To Its Iconic GT1 Race Car",
+   "source": "Motor1",
+   "url": "https://www.motor1.com/news/816889/porsche-911-gt3-tribute-gt1/",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 8.1,
+   "why": "3 outlets covering it · New model",
+   "b": [
+    "vw"
+   ]
+  },
   {
    "tag": "RACING",
    "cat": "RACING",
-   "title": "Oliver Bearman locks in Haas F1 seat as 2027 grid officially set",
-   "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/f1/news/oliver-bearman-locks-in-haas-f1-seat-as-2027-grid-officially-set/10877802/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "title": "Ford GT41 Hypercar gets big-ticket launch in Detroit",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/25/ford-gt41-hypercar-gets-big-ticket-launch-in-detroit",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 7.2,
+   "why": "2 outlets covering it · Ford news",
+   "b": [
+    "ford",
+    "racing"
+   ]
+  },
+  {
+   "tag": "FORD",
+   "cat": "FORD",
+   "title": "Ford GT41 Officially Debuts As Blue Oval's All-New Hypercar",
+   "source": "Ford Authority",
+   "url": "https://fordauthority.com/2026/11/ford-gt41-officially-debuts-as-blue-ovals-all-new-hypercar/",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 7.4,
+   "why": "2 outlets covering it · Ford news",
+   "b": [
+    "ford"
+   ]
+  },
+  {
+   "tag": "AUTO",
+   "cat": "FORD",
+   "title": "Ford Returns To The 24 Hours Of Le Mans With The 2027 GT41",
+   "source": "Jalopnik",
+   "url": "https://www.jalopnik.com/2328777/2027-ford-gt41-24-hours-le-mans-race-car-reveal/",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 7.1,
+   "why": "2 outlets covering it · Ford news",
+   "b": [
+    "ford",
+    "racing"
+   ]
+  },
+  {
+   "tag": "RACING",
+   "cat": "RACING",
+   "title": "Ford pays tribute to its legendary GT40 with WEC 2027 hypercar",
+   "source": "Autosport",
+   "url": "https://www.autosport.com/wec/news/ford-pays-tribute-to-gt40-with-wec-2027-car/10877998/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 7.0,
+   "why": "2 outlets covering it · Ford news",
+   "b": [
+    "ford",
+    "racing"
+   ]
+  },
+  {
+   "tag": "FORD",
+   "cat": "FORD",
+   "title": "Ford GT41 Hypercar Goes Blue-On-Blue In New Livery",
+   "source": "Ford Authority",
+   "url": "https://fordauthority.com/2026/11/ford-gt41-hypercar-goes-blue-on-blue-in-new-livery/",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 7.0,
+   "why": "2 outlets covering it · Ford news",
+   "b": [
+    "ford"
+   ]
+  },
+  {
+   "tag": "FORD",
+   "cat": "FORD",
+   "title": "Lincoln Nautilus Discount, Lease, Finance Deals For November 2026",
+   "source": "Ford Authority",
+   "url": "https://fordauthority.com/2026/11/lincoln-nautilus-discount-lease-finance-deals-incentives-offers-november-2026/",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 7.0,
+   "why": "2 outlets covering it · Ford news",
+   "b": [
+    "ford",
+    "deals"
+   ]
+  },
+  {
+   "tag": "RACING",
+   "cat": "RACING",
+   "title": "Russell shrugs off ‘amusing’ Verstappen comments",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/26/russell-shrugs-off-amusing-verstappen-comments",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 6.6,
+   "why": "2 outlets covering it",
+   "b": [
+    "racing"
+   ]
+  },
+  {
+   "tag": "RACING",
+   "cat": "RACING",
+   "title": "Hyundai calls on Thierry Neuville, Adrien Fourmaux and Kris Meeke for latest Rally2 test",
+   "source": "Motorsport.com",
+   "url": "https://www.motorsport.com/wrc/news/hyundai-calls-on-neuville-fourmaux-and-meeke-for-latest-rally2-test/10878007/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 6.4,
+   "why": "2 outlets covering it",
+   "b": [
+    "hyundai",
+    "racing"
+   ]
+  },
+  {
+   "tag": "RACING",
+   "cat": "RACING",
+   "title": "Neuville, Fourmaux and Meeke in latest Rally2 test for Hyundai",
+   "source": "Autosport",
+   "url": "https://www.autosport.com/wrc/news/neuville-in-latest-rally-2-test-for-hyundai/10878010/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 6.4,
+   "why": "2 outlets covering it",
+   "b": [
+    "hyundai",
+    "racing"
+   ]
+  },
+  {
+   "tag": "RACING",
+   "cat": "RACING",
+   "title": "Russell stands by Verstappen comments at Las Vegas GP - despite \"amusing\" reaction",
+   "source": "Autosport",
+   "url": "https://www.autosport.com/f1/news/russell-defends-las-vegas-f1-comments/10877940/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 6.4,
    "why": "2 outlets covering it",
    "b": [
@@ -18,74 +179,33 @@ window.DG_NEWS = {
   },
   {
    "tag": "AUTO",
-   "cat": "EV",
-   "title": "Ionna Slashes EV Charging Prices For Thanksgiving",
-   "source": "InsideEVs",
-   "url": "https://insideevs.com/news/816844/ionna-charging-price-discount-thanksgiving-2026/",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 6.4,
-   "why": "2 outlets covering it · Money / prices",
-   "b": [
-    "ev",
-    "industry"
-   ]
-  },
-  {
-   "tag": "AUTO",
    "cat": "GM",
-   "title": "2027 Silverado ZR2, Sierra AT4X: GM Revised The DSSV Dampers … Here’s Why",
+   "title": "GMC Sierra EV Discount, Lease, Finance Deals For November 2026",
    "source": "GM Authority",
-   "url": "https://gmauthority.com/blog/2026/11/2027-silverado-zr2-sierra-at4x-gm-revised-the-dssv-dampers-heres-why/",
+   "url": "https://gmauthority.com/blog/2026/11/gmc-sierra-ev-discount-lease-finance-deals-incentives-offers-november-2026/",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 6.2,
    "why": "2 outlets covering it",
    "b": [
     "gm",
-    "trucks"
-   ]
-  },
-  {
-   "tag": "RACING",
-   "cat": "RACING",
-   "title": "Haas finally announces Bearman for F1 2027",
-   "source": "Autosport",
-   "url": "https://www.autosport.com/f1/news/haas-announce-bearman-f1-2027/10877815/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 6.4,
-   "why": "2 outlets covering it",
-   "b": [
-    "racing"
+    "ev",
+    "deals"
    ]
   },
   {
    "tag": "AUTO",
    "cat": "GM",
-   "title": "Here Is 2027 Chevy Silverado 3500 HD Pricing With Options And Packages",
+   "title": "Cadillac CT5 Discount, Lease, Finance Deals For November 2026",
    "source": "GM Authority",
-   "url": "https://gmauthority.com/blog/2026/11/here-is-2027-chevy-silverado-3500-hd-pricing-with-options-and-packages/",
+   "url": "https://gmauthority.com/blog/2026/11/cadillac-ct5-discount-lease-finance-deals-incentives-offers-november-2026/",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 6.2,
    "why": "2 outlets covering it",
    "b": [
-    "gm"
-   ]
-  },
-  {
-   "tag": "AUTO",
-   "cat": "GM",
-   "title": "GM Explains New 2027 Chevy Silverado 1500 Tech Features: Video",
-   "source": "GM Authority",
-   "url": "https://gmauthority.com/blog/2026/11/gm-explains-new-2027-chevy-silverado-1500-tech-features-video/",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 6.2,
-   "why": "2 outlets covering it",
-   "b": [
-    "gm"
+    "gm",
+    "deals"
    ]
   },
   {
@@ -95,7 +215,7 @@ window.DG_NEWS = {
    "source": "Motor1",
    "url": "https://www.motor1.com/news/816873/tesla-cybertruck-used-truck-ranking/",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 6.1,
    "why": "2 outlets covering it",
    "b": [
@@ -104,70 +224,28 @@ window.DG_NEWS = {
    ]
   },
   {
-   "tag": "AUTO",
-   "cat": "CHINA",
-   "title": "BYD Could Swoop In And Buy The Ineos Plant In France",
-   "source": "Carscoops",
-   "url": "https://www.carscoops.com/2328732/byd-buying-ineos-factory-france/",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 6.0,
-   "why": "2 outlets covering it",
-   "b": [
-    "china",
-    "industry"
-   ]
-  },
-  {
-   "tag": "AUTO",
-   "cat": "EV",
-   "title": "ChargePoint and PistenBully have a charging plan for ski resorts",
-   "source": "Electrek",
-   "url": "https://electrek.co/2026/11/25/chargepoint-and-pistenbully-have-a-charging-plan-for-ski-resorts/",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.9,
-   "why": "2 outlets covering it",
-   "b": [
-    "ev"
-   ]
-  },
-  {
    "tag": "RACING",
    "cat": "RACING",
-   "title": "AF Corse confirms full-time IMSA GTD program",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/25/af-corse-confirms-full-time-imsa-gtd-pro-program",
+   "title": "Ford reveals name for 2027 WEC LMDh challenger",
+   "source": "Motorsport.com",
+   "url": "https://www.motorsport.com/wec/news/ford-reveals-name-for-2027-wec-lmdh-challenger/10877687/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.6,
-   "why": "Big U.S. racing",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 5.4,
+   "why": "Ford news",
    "b": [
-    "racing"
-   ]
-  },
-  {
-   "tag": "RACING",
-   "cat": "RACING",
-   "title": "AO Racing confirms 2027 IMSA LMP2 and GTD Pro line-ups",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/25/ao-racing-confirms-2027-lmp2-and-gtd-pro-line-ups",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.6,
-   "why": "Big U.S. racing",
-   "b": [
+    "ford",
     "racing"
    ]
   },
   {
    "tag": "FORD",
    "cat": "FORD",
-   "title": "Ford Racing Hypercar Passes First 30-Hour Endurance Test",
+   "title": "Ford GT41 Ad Campaign Directed By Zack Synder, With Matt Damon Voiceover: Video",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-racing-hypercar-passes-first-30-hour-endurance-test/",
+   "url": "https://fordauthority.com/2026/11/ford-gt41-ad-campaign-directed-by-zack-synder-with-matt-damon-voiceover-video/",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 5.4,
    "why": "Ford news",
    "b": [
@@ -177,57 +255,11 @@ window.DG_NEWS = {
   {
    "tag": "FORD",
    "cat": "FORD",
-   "title": "Ford CEO Jim Farley Shares New Container Pics Ahead Of Tomorrow's Reveal",
+   "title": "Coyote V8 Powered Ford Maverick Pickup's Bed Fills With Smoke After Burnout: Video",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-ceo-jim-farley-shares-new-container-pics-ahead-of-tomorrows-reveal/",
+   "url": "https://fordauthority.com/2026/11/coyote-v8-powered-ford-maverick-pickups-bed-fills-with-smoke-after-burnout-video/",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.4,
-   "why": "Ford news",
-   "b": [
-    "ford",
-    "industry"
-   ]
-  },
-  {
-   "tag": "FORD",
-   "cat": "FORD",
-   "title": "Future Ford Vehicles Could Get Aftermarket Radio Integration System",
-   "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/future-ford-vehicles-could-get-aftermarket-radio-integration-system/",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.4,
-   "why": "Ford news",
-   "b": [
-    "ford",
-    "honda",
-    "industry"
-   ]
-  },
-  {
-   "tag": "FORD",
-   "cat": "FORD",
-   "title": "2002 Ford Thunderbird With Less Than 30 Miles Up For Auction",
-   "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/2002-ford-thunderbird-with-less-than-30-miles-up-for-auction/",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.4,
-   "why": "Ford news",
-   "b": [
-    "ford",
-    "classics"
-   ]
-  },
-  {
-   "tag": "FORD",
-   "cat": "FORD",
-   "title": "Shelter Green Ford Bronco Raptor Looks Great With Desert Sand Hard Top",
-   "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/shelter-green-ford-bronco-raptor-looks-great-with-desert-sand-hard-top/",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 5.4,
    "why": "Ford news",
    "b": [
@@ -238,11 +270,11 @@ window.DG_NEWS = {
   {
    "tag": "FORD",
    "cat": "FORD",
-   "title": "Ford Won't Be Impacted By Second Auto Emergency Braking Rule Delay",
+   "title": "Lincoln Aviator EX8 Will Launch Amid Brand's Waning Influence In China",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-wont-be-impacted-by-second-auto-emergency-braking-rule-delay/",
+   "url": "https://fordauthority.com/2026/11/lincoln-aviator-ex8-will-launch-amid-brands-waning-influence-in-china/",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 5.4,
    "why": "Ford news",
    "b": [
@@ -252,97 +284,58 @@ window.DG_NEWS = {
   {
    "tag": "FORD",
    "cat": "FORD",
-   "title": "2026 Ford Mustang Dark Horse SC Track Pack Special Edition Overview: Video",
+   "title": "Ford Fathom Pickup Expected To Have Lower Operating Costs Than Hybrids",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/2026-ford-mustang-dark-horse-sc-track-pack-special-edition-overview-video/",
+   "url": "https://fordauthority.com/2026/11/ford-fathom-pickup-expected-to-have-lower-operating-costs-than-hybrids/",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 5.4,
    "why": "Ford news",
    "b": [
-    "ford"
+    "ford",
+    "ev",
+    "trucks"
    ]
   },
   {
    "tag": "FORD",
    "cat": "FORD",
-   "title": "Ford Confirms Talks With Pentagon To Supply Vehicles To U.S. Military",
+   "title": "Ford EVs Assembled In Turkey Likely To Be Left Out Of 'Made In Europe'",
    "source": "Ford Authority",
-   "url": "https://fordauthority.com/2026/11/ford-confirms-talks-with-pentagon-to-supply-vehicles-to-u-s-military/",
+   "url": "https://fordauthority.com/2026/11/ford-evs-assembled-in-turkey-likely-to-be-left-out-of-made-in-europe/",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 5.4,
    "why": "Ford news",
    "b": [
-    "ford"
-   ]
-  },
-  {
-   "tag": "RACING",
-   "cat": "RACING",
-   "title": "Nearly $3 million on ten wrists: inside the wild luxury watch Flex at the 2026 Las Vegas Grand Prix",
-   "source": "Motorsport.com",
-   "url": "https://www.motorsport.com/culture/news/nearly-3-million-on-ten-wrists-inside-the-wild-luxury-watch-flex-at-the-2026-las-vegas-grand-prix/10877653/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.3,
-   "why": "Money / prices",
-   "b": [
-    "racing",
-    "industry"
-   ]
-  },
-  {
-   "tag": "AUTO",
-   "cat": "FORD",
-   "title": "Ford’s Black Friday Sale Takes up to 25% off Bronco and F-150 Accessories With These Codes",
-   "source": "The Drive",
-   "url": "https://www.thedrive.com/news/fords-black-friday-sale-takes-up-to-25-off-bronco-and-f-150-accessories-with-these-codes",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.2,
-   "why": "Ford news",
-   "b": [
-    "ford"
+    "ford",
+    "ev"
    ]
   },
   {
    "tag": "AUTO",
    "cat": "AUTO",
-   "title": "Turo’s Black Friday Deal: $50 Off Your Holiday Road Trip",
+   "title": "This 3K-Mile 1968 Pontiac Le Mans Stored for 50 Years Could Be the Black Friday Deal for You",
    "source": "The Drive",
-   "url": "https://www.thedrive.com/news/turos-black-friday-deal-50-off-your-holiday-road-trip",
+   "url": "https://www.thedrive.com/news/this-3k-mile-1968-pontiac-le-mans-stored-for-50-years-could-be-the-black-friday-deal-for-you",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.1,
-   "why": "Money / prices",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 5.2,
+   "why": "Big U.S. racing",
    "b": [
-    "deals"
-   ]
-  },
-  {
-   "tag": "AUTO",
-   "cat": "GM",
-   "title": "2027 GMC Acadia Gets Second Price Increase In A Month",
-   "source": "GM Authority",
-   "url": "https://gmauthority.com/blog/2026/11/2027-gmc-acadia-gets-second-price-increase-in-a-month/",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.1,
-   "why": "Money / prices",
-   "b": [
-    "gm",
-    "industry"
+    "racing",
+    "deals",
+    "classics"
    ]
   },
   {
    "tag": "RACING",
    "cat": "RACING",
-   "title": "Court finds that Gibbs hasn’t proven Spire has stolen trade secrets",
+   "title": "Best/Worst: Sebastien Bourdais",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/25/court-finds-that-gibbs-hasn-t-proven-spire-has-stolen-trade-secrets",
+   "url": "https://racer.com/2026/11/25/best-worst-sebastien-bourdais",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 5.0,
    "why": "Fresh",
    "b": [
@@ -352,11 +345,54 @@ window.DG_NEWS = {
   {
    "tag": "RACING",
    "cat": "RACING",
-   "title": "The RACER Mailbag, November 25",
+   "title": "‘No guarantees,’ but Qatar comfortable about going ahead with F1",
    "source": "RACER",
-   "url": "https://racer.com/2026/11/24/the-racer-mailbag-november-25",
+   "url": "https://racer.com/2026/11/26/-no-guarantees-but-qatar-comfortable-about-going-ahead-with-f1",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 5.0,
+   "why": "Fresh",
+   "b": [
+    "racing"
+   ]
+  },
+  {
+   "tag": "RACING",
+   "cat": "RACING",
+   "title": "Bearman finally gets 2027 Haas deal confirmed",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/26/bearman-finally-gets-2027-haas-deal-confirmed",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 5.0,
+   "why": "Fresh",
+   "b": [
+    "deals",
+    "racing"
+   ]
+  },
+  {
+   "tag": "RACING",
+   "cat": "RACING",
+   "title": "What’s next for Caio Collet?",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/25/what-s-next-for-caio-collet-",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 5.0,
+   "why": "Fresh",
+   "b": [
+    "racing"
+   ]
+  },
+  {
+   "tag": "RACING",
+   "cat": "RACING",
+   "title": "Court finds that Gibbs hasn’t proven Spire has stolen trade secrets",
+   "source": "RACER",
+   "url": "https://racer.com/2026/11/25/court-finds-that-gibbs-hasn-t-proven-spire-has-stolen-trade-secrets",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 5.0,
    "why": "Fresh",
    "b": [
@@ -370,49 +406,7 @@ window.DG_NEWS = {
    "source": "RACER",
    "url": "https://racer.com/2026/11/25/williams-loses-aero-testing-time-after-f1-cost-cap-breach",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.0,
-   "why": "Fresh",
-   "b": [
-    "racing"
-   ]
-  },
-  {
-   "tag": "RACING",
-   "cat": "RACING",
-   "title": "Best/Worst: Sebastien Bourdais",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/25/best-worst-sebastien-bourdais",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.0,
-   "why": "Fresh",
-   "b": [
-    "racing"
-   ]
-  },
-  {
-   "tag": "RACING",
-   "cat": "RACING",
-   "title": "Racing on TV, November 27-29",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/25/racing-on-tv-november-27-29",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
-   "score": 5.0,
-   "why": "Fresh",
-   "b": [
-    "racing"
-   ]
-  },
-  {
-   "tag": "RACING",
-   "cat": "RACING",
-   "title": "Putting racing on pause, Harvey shifts to special advisor role",
-   "source": "RACER",
-   "url": "https://racer.com/2026/11/25/putting-racing-on-pause-harvey-shifts-to-special-advisor-role",
-   "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 5.0,
    "why": "Fresh",
    "b": [
@@ -421,17 +415,31 @@ window.DG_NEWS = {
   },
   {
    "tag": "AUTO",
-   "cat": "GM",
-   "title": "This $41,000 Chevy Corvette C1 Lookalike Is Really A Supersized Miata",
+   "cat": "TOYOTA",
+   "title": "2027 Toyota 4Runner Finally Adds Heated Seats, Then Crosses $45,000",
    "source": "Motor1",
-   "url": "https://www.motor1.com/news/816837/mitsuoka-la1-price-details-photos/",
+   "url": "https://www.motor1.com/news/816890/2027-toyota-4runner-price-updates/",
    "date": "2026-11-26",
-   "ts": "2026-11-26T10:45+00:00",
+   "ts": "2026-11-26T21:24+00:00",
    "score": 5.0,
    "why": "Money / prices",
    "b": [
-    "gm",
-    "subaru"
+    "toyota"
+   ]
+  },
+  {
+   "tag": "AUTO",
+   "cat": "FORD",
+   "title": "This New Ford Mustang Wants To Be A Classic Eleanor",
+   "source": "Carscoops",
+   "url": "https://www.carscoops.com/2323430/elanor-mustang-vintage-modern/",
+   "date": "2026-11-26",
+   "ts": "2026-11-26T21:24+00:00",
+   "score": 5.0,
+   "why": "Ford news",
+   "b": [
+    "ford",
+    "classics"
    ]
   }
  ],
@@ -441,13 +449,160 @@ window.DG_NEWS = {
    "group": "make",
    "items": [
     {
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "Meet Ford's New Le Mans Fighter: The GT41",
+     "source": "Motor1",
+     "url": "https://www.motor1.com/news/816800/ford-gt41-le-mans-hypercar-debut-bts/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 8.9,
+     "why": "3 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "AUTO",
+     "title": "Hypercar",
+     "source": "Ford Racing",
+     "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9VTG5kd3N0azYxcGhDSGRKVEV5ZExNM3NrWVJaal9HVkg3Y05jRWJIR2YwejFOOU1NY2hWLUdERVBwLXlmaEU5R2ZNRQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 8.8,
+     "why": "4 outlets covering it",
+     "b": [
+      "ford"
+     ]
+    },
+    {
      "tag": "FORD",
      "cat": "FORD",
-     "title": "Ford Racing Hypercar Passes First 30-Hour Endurance Test",
+     "title": "Ford GT41 Officially Debuts As Blue Oval's All-New Hypercar",
      "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/ford-racing-hypercar-passes-first-30-hour-endurance-test/",
+     "url": "https://fordauthority.com/2026/11/ford-gt41-officially-debuts-as-blue-ovals-all-new-hypercar/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.4,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Ford GT41 Hypercar gets big-ticket launch in Detroit",
+     "source": "RACER",
+     "url": "https://racer.com/2026/11/25/ford-gt41-hypercar-gets-big-ticket-launch-in-detroit",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.2,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "Ford’s New GT41 Le Mans Prototype Debuts at Detroit Lions Game",
+     "source": "Autoweek",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMVpwX1hnSjBmZm9PdTBsZnNLRFQtc3hPWnRiS0JoVkl5cFd6Y2lzcTZxSFZlQmJENjJPSmdEQktPNFNIcGpsNFZJeUp6eGxNYjNzd19qRnhWZ09xZzFCYTNOMDNLUko0WWp3Q2JRMkVOVEJ2QnNPRndoekRPc2ktS0ZhUUZXaHI0djRfYXAydElPZjA?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.2,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "Ford Returns To The 24 Hours Of Le Mans With The 2027 GT41",
+     "source": "Jalopnik",
+     "url": "https://www.jalopnik.com/2328777/2027-ford-gt41-24-hours-le-mans-race-car-reveal/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.1,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Ford pays tribute to its legendary GT40 with WEC 2027 hypercar",
+     "source": "Autosport",
+     "url": "https://www.autosport.com/wec/news/ford-pays-tribute-to-gt40-with-wec-2027-car/10877998/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.0,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "FORD",
+     "cat": "FORD",
+     "title": "Ford GT41 Hypercar Goes Blue-On-Blue In New Livery",
+     "source": "Ford Authority",
+     "url": "https://fordauthority.com/2026/11/ford-gt41-hypercar-goes-blue-on-blue-in-new-livery/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.0,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford"
+     ]
+    },
+    {
+     "tag": "FORD",
+     "cat": "FORD",
+     "title": "Lincoln Nautilus Discount, Lease, Finance Deals For November 2026",
+     "source": "Ford Authority",
+     "url": "https://fordauthority.com/2026/11/lincoln-nautilus-discount-lease-finance-deals-incentives-offers-november-2026/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.0,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "deals"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Ford reveals name for 2027 WEC LMDh challenger",
+     "source": "Motorsport.com",
+     "url": "https://www.motorsport.com/wec/news/ford-reveals-name-for-2027-wec-lmdh-challenger/10877687/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.4,
+     "why": "Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "FORD",
+     "cat": "FORD",
+     "title": "Ford GT41 Ad Campaign Directed By Zack Synder, With Matt Damon Voiceover: Video",
+     "source": "Ford Authority",
+     "url": "https://fordauthority.com/2026/11/ford-gt41-ad-campaign-directed-by-zack-synder-with-matt-damon-voiceover-video/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Ford news",
      "b": [
@@ -457,163 +612,16 @@ window.DG_NEWS = {
     {
      "tag": "FORD",
      "cat": "FORD",
-     "title": "Ford CEO Jim Farley Shares New Container Pics Ahead Of Tomorrow's Reveal",
+     "title": "Coyote V8 Powered Ford Maverick Pickup's Bed Fills With Smoke After Burnout: Video",
      "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/ford-ceo-jim-farley-shares-new-container-pics-ahead-of-tomorrows-reveal/",
+     "url": "https://fordauthority.com/2026/11/coyote-v8-powered-ford-maverick-pickups-bed-fills-with-smoke-after-burnout-video/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford",
-      "industry"
-     ]
-    },
-    {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "Future Ford Vehicles Could Get Aftermarket Radio Integration System",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/future-ford-vehicles-could-get-aftermarket-radio-integration-system/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford",
-      "honda",
-      "industry"
-     ]
-    },
-    {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "2002 Ford Thunderbird With Less Than 30 Miles Up For Auction",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/2002-ford-thunderbird-with-less-than-30-miles-up-for-auction/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford",
-      "classics"
-     ]
-    },
-    {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "Shelter Green Ford Bronco Raptor Looks Great With Desert Sand Hard Top",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/shelter-green-ford-bronco-raptor-looks-great-with-desert-sand-hard-top/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Ford news",
      "b": [
       "ford",
       "trucks"
-     ]
-    },
-    {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "Ford Won't Be Impacted By Second Auto Emergency Braking Rule Delay",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/ford-wont-be-impacted-by-second-auto-emergency-braking-rule-delay/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford"
-     ]
-    },
-    {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "2026 Ford Mustang Dark Horse SC Track Pack Special Edition Overview: Video",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/2026-ford-mustang-dark-horse-sc-track-pack-special-edition-overview-video/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford"
-     ]
-    },
-    {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "Ford Confirms Talks With Pentagon To Supply Vehicles To U.S. Military",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/ford-confirms-talks-with-pentagon-to-supply-vehicles-to-u-s-military/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "FORD",
-     "title": "Ford’s Black Friday Sale Takes up to 25% off Bronco and F-150 Accessories With These Codes",
-     "source": "The Drive",
-     "url": "https://www.thedrive.com/news/fords-black-friday-sale-takes-up-to-25-off-bronco-and-f-150-accessories-with-these-codes",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.2,
-     "why": "Ford news",
-     "b": [
-      "ford"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "FORD",
-     "title": "When Disney Helped Launch the Ford Mustang to the World",
-     "source": "Hagerty",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbTlTcl9tdV9YTjZwTFlCYWstazM1TkpCZmdnTGdlVkVWWnNKcFpEZW9WMmQ1UXFTQ1VnX3N3bVI2UTZLUnVsS3ZxOWNkNHo1OGhYaUU0NWpDQUVDeVhBS3hUZ2JGZFBMZThZekIyWFNCbmFnWWxKbHZTQkZwYTNoc2xaaklUSVV1YVF4ZHN4UlFiVnFXZ281SmVTS3BwT0RuOFhsZGtmbjg?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.1,
-     "why": "Ford news",
-     "b": [
-      "ford"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "FORD",
-     "title": "I Really Like The Ford F-150 Lobo. Just Not For The Price",
-     "source": "Motor1.com",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0zZUpadnVBTk9Wa1ZIdFRUaVVnSndwbndKQ1FiY0JzaWkwSVJ3Z1M3STktRm1pa2x2Uk5XWFBFaGxKVnhGUU90Tm1QWmNXMGwzeU4xSEd3OXJaMkdXTUJYZngyejdPSUl2ZFBVS0pn?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.1,
-     "why": "Ford news · Money / prices",
-     "b": [
-      "ford",
-      "industry"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "FORD",
-     "title": "2026 Ford Mustang Dark Horse SC Tested: Shelby Spirit at a Porsche Price",
-     "source": "Edmunds",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMy1MTlNmcEhieTQ4SnhHRm9ocURtR1JQTGRRYVJBRVRhbEdrbGFtUC1BUWw5cERiQmF0cnNQaVJjaXdqdEptRlJRY0FhVHMxRUlQUGRfZ2FVdjFqdXF3ZFlsdlBfWEwyWUxFcDZIWkJWd1hCZDZqNHF0M1FzSW9fdHRFc3BIU0tjdEdWN05MNmZrczRVV01tUE9CZ2RGVjQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.1,
-     "why": "Ford news · Money / prices",
-     "b": [
-      "ford",
-      "vw",
-      "industry"
      ]
     }
    ]
@@ -625,119 +633,78 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "GM",
-     "title": "2027 Silverado ZR2, Sierra AT4X: GM Revised The DSSV Dampers … Here’s Why",
+     "title": "GMC Sierra EV Discount, Lease, Finance Deals For November 2026",
      "source": "GM Authority",
-     "url": "https://gmauthority.com/blog/2026/11/2027-silverado-zr2-sierra-at4x-gm-revised-the-dssv-dampers-heres-why/",
+     "url": "https://gmauthority.com/blog/2026/11/gmc-sierra-ev-discount-lease-finance-deals-incentives-offers-november-2026/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 6.2,
      "why": "2 outlets covering it",
      "b": [
       "gm",
-      "trucks"
+      "ev",
+      "deals"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "GM",
-     "title": "Here Is 2027 Chevy Silverado 3500 HD Pricing With Options And Packages",
+     "title": "Cadillac CT5 Discount, Lease, Finance Deals For November 2026",
      "source": "GM Authority",
-     "url": "https://gmauthority.com/blog/2026/11/here-is-2027-chevy-silverado-3500-hd-pricing-with-options-and-packages/",
+     "url": "https://gmauthority.com/blog/2026/11/cadillac-ct5-discount-lease-finance-deals-incentives-offers-november-2026/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 6.2,
      "why": "2 outlets covering it",
      "b": [
-      "gm"
+      "gm",
+      "deals"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "GM",
-     "title": "GM Explains New 2027 Chevy Silverado 1500 Tech Features: Video",
-     "source": "GM Authority",
-     "url": "https://gmauthority.com/blog/2026/11/gm-explains-new-2027-chevy-silverado-1500-tech-features-video/",
+     "title": "At $17,000, Would You Say The Price Is Right For This 1973 V8 Chevy Vega?",
+     "source": "Jalopnik",
+     "url": "https://www.jalopnik.com/2328350/1973-chevrolet-vega-for-sale-17000/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.2,
-     "why": "2 outlets covering it",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.8,
+     "why": "Money / prices",
      "b": [
-      "gm"
+      "gm",
+      "industry",
+      "classics"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "GM",
-     "title": "2027 Chevrolet Silverado HD",
-     "source": "Yahoo Autos",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQWM3ejVtYzBPX3Y1aWdjYWc0NWhyMnNOdGlXckZtY0k3MmNhMm11Mnd1cmtNNGo4TjRaNk1nODREZ25pNERUZGdGX013M1lYa1lISEktcGZfQTlUelRTeGNTOTZ0QzRuSFl2UjgtTTB0S0w4bDlsX1FKYmR6ZC1FZUhxNXFYbDZFNXE4bmVxaFM2WXVkWllVUnY3RkltRmVCMXc?oc=5",
+     "title": "View Photos of the 1979 Buick Century Turbo Coupe",
+     "source": "Car and Driver",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZmFoY2FuRFRxWUNDNDYxUGdLVWlVQ0N0WTBvbkVCcU5KNVVNRFpab3lmcUsxVGJvRjlZZ1NJR1MyQ0NYQkV5TkNYcVlXR2J4aU9feldIT05Kb0p2SnN2SVFBNmZfWjlRdmlrM2wxRDVYak9OMDNGVVhjNUVLVWVtX3J2eDVldDFUMVpwSXdTN3VnOUltU1c3czVaSTh0bVU?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.6,
-     "why": "2 outlets covering it",
-     "b": [
-      "gm"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "GM",
-     "title": "Stellantis sues Unifor over Brampton plant; Bowman Chevrolet’s Katie Bowman Coleman",
-     "source": "Automotive News",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORE1rMEFxR2EwWFpwR3hUMmtESzF1NVRoMExqbUdfVUhLQlE1ZTJ2Qi1uSzJpY0tfc1c1ZDJZQ0Q1a3plUEFUSEtIVXVvUzNLdkpSQnU4bmtnWHlOemctZ0JVSlFNMllUV0NBT3E5ekdBdmtWeTRKd2lWYWZmV2tKSkFNSkFZcGxmT25OYzVlNC1taDE4VkdNQkhVTEI2Y05MdHFjam9udDNQRFRHRkE?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.2,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.7,
      "why": "Fresh",
      "b": [
       "gm",
-      "stellantis",
-      "industry"
+      "classics"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "GM",
-     "title": "2027 GMC Acadia Gets Second Price Increase In A Month",
+     "title": "Cadillac Escalade-V, CT5 Stolen Straight Out Of Driveway With Truck In California: Video",
      "source": "GM Authority",
-     "url": "https://gmauthority.com/blog/2026/11/2027-gmc-acadia-gets-second-price-increase-in-a-month/",
+     "url": "https://gmauthority.com/blog/2026/11/cadillac-escalade-v-ct5-stolen-straight-out-of-driveway-with-truck-in-california-video/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.1,
-     "why": "Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.6,
+     "why": "Fresh",
      "b": [
       "gm",
-      "industry"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "GM",
-     "title": "This $41,000 Chevy Corvette C1 Lookalike Is Really A Supersized Miata",
-     "source": "Motor1",
-     "url": "https://www.motor1.com/news/816837/mitsuoka-la1-price-details-photos/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.0,
-     "why": "Money / prices",
-     "b": [
-      "gm",
-      "subaru"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "FORD",
-     "title": "Uncle Sam Wants GM And Ford To Build Drones",
-     "source": "Carscoops",
-     "url": "https://www.carscoops.com/2328641/pentagon-drone-production-gm-ford/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.0,
-     "why": "Ford news",
-     "b": [
-      "ford",
-      "gm"
+      "trucks"
      ]
     },
     {
@@ -747,7 +714,7 @@ window.DG_NEWS = {
      "source": "GM Authority",
      "url": "https://gmauthority.com/blog/2026/11/cadillac-brand-to-officially-introduce-in-colombia-next-year/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
@@ -761,7 +728,7 @@ window.DG_NEWS = {
      "source": "GM Authority",
      "url": "https://gmauthority.com/blog/2026/11/chevy-tahoe-driver-escapes-tow-truck-smashes-parked-car-in-getaway-video/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
@@ -772,30 +739,75 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "GM",
-     "title": "Cadillac CT5 Discount, Lease, Finance Deals For November 2026",
+     "title": "2027 Silverado ZR2, Sierra AT4X: GM Revised The DSSV Dampers … Here’s Why",
      "source": "GM Authority",
-     "url": "https://gmauthority.com/blog/2026/11/cadillac-ct5-discount-lease-finance-deals-incentives-offers-november-2026/",
+     "url": "https://gmauthority.com/blog/2026/11/2027-silverado-zr2-sierra-at4x-gm-revised-the-dssv-dampers-heres-why/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
       "gm",
-      "deals"
+      "trucks"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "GM",
-     "title": "How Tremec Figured Out a Manual Transmission for the C8 Corvette When GM Wouldn't Do It",
-     "source": "The Drive",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVWl0a25GZ3habkRJUG82VzhnREdKX25MVnBROFlVYnBrRWpPbUhHQVBBWVBvRUozd3I4RjRXbl9xbVBQemVqd0ppSXd5anhHLXdjYzg2NndVdmt0N2pqYk1aTGZDTElfZV9yWHRjNDlRMDA4NERsODRESWhFeGhGeVU4STE3cWl6Y3V2TnNXaDdoR2hKQ1VXS3BRbmVPTDVrUTFXQnlRTUdpUFV0ZmZMY1RzQU1Obmdf?oc=5",
+     "title": "Here Is 2027 Chevy Silverado 3500 HD Pricing With Options And Packages",
+     "source": "GM Authority",
+     "url": "https://gmauthority.com/blog/2026/11/here-is-2027-chevy-silverado-3500-hd-pricing-with-options-and-packages/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
       "gm"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "GM",
+     "title": "The 2027 Cadillac Escalade IQ Gets A NACS Port And Faster Home Charging",
+     "source": "InsideEVs",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOVhyd0M2d0RHVGFmdGJsQjF3XzZEU0ZSQ1ZrdEJ0QjBrYnVSUmliTDdOVGtoNV9oZnVCUzYxVzlhRWJWZW1weFdfeVFSYXVYc2xPd2taeWZOUWdTdXQ2dGEtamNzUl91bkpaYks2UHotVGxhT3VtcFdESFVyVUYzWGY0WTdGRzJsUmcxVQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.3,
+     "why": "Fresh",
+     "b": [
+      "gm",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "GM",
+     "title": "Inspired by My Late Grandpa, I Bought a 1950 Buick Special",
+     "source": "The ClassicCars.com Journal",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQkFnMmFNVUgzUDZaOTJmSHljOEtYSk1LWnVpclJBSEd1YW9SSEdpbW5abmJESTctSTdyUG42Mm5OOTlKVzQxeG9zV195SEh6d011Nk0yMVRRMUpwbTlnQ0J3eWl2aC1Bb1hQWEw1c2pyZmFxLWNGaDgyODRSMXJnU3pVbkc0SEFWS0lMTEpOdENqbjZjTTZSX0tscmdRcnpxX2hEUENtWS1LNFExUHdKa3R5ZkxMUE0?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "gm",
+      "classics"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "GM",
+     "title": "Truck crashes into wall, fire hydrant near Silverado Ranch, Bermuda",
+     "source": "FOX5 Vegas",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUFdaTDh2QkduMDNyenFFUTNvWVd4eTIydE5qeWtIS2NlTzMtY3lyZWpfd0k3T18xM1BhMnFWai1EOV9CMlFJdVJncHFWSUU5UUZxM1NGWVFYMjB3REsteEZCMXc4S1phTk5IakRTRGJpaWdhN29nR0M0RkwydDUtTjNlZU9hRHNwU2xTalpsSUhkMWRxUjdKNEZCZmppTkJtT05BTkhB?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "gm",
+      "trucks"
      ]
     }
    ]
@@ -806,146 +818,121 @@ window.DG_NEWS = {
    "items": [
     {
      "tag": "AUTO",
-     "cat": "GM",
-     "title": "Stellantis sues Unifor over Brampton plant; Bowman Chevrolet’s Katie Bowman Coleman",
+     "cat": "STELLANTIS",
+     "title": "Stellantis pledges €5 billion for Italy R&D while warning on costs",
      "source": "Automotive News",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORE1rMEFxR2EwWFpwR3hUMmtESzF1NVRoMExqbUdfVUhLQlE1ZTJ2Qi1uSzJpY0tfc1c1ZDJZQ0Q1a3plUEFUSEtIVXVvUzNLdkpSQnU4bmtnWHlOemctZ0JVSlFNMllUV0NBT3E5ekdBdmtWeTRKd2lWYWZmV2tKSkFNSkFZcGxmT25OYzVlNC1taDE4VkdNQkhVTEI2Y05MdHFjam9udDNQRFRHRkE?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZ2pxd2RJa3dCY19PenhqMVZQMHZTWDFHc05NWHdMS21xMmlGRGVVREJIdkZfOS0xY2N4c2lZSWdNMWlUWUo5MFBvdVFjai1tSWRoZ2dCZVNtZFR4STh1ZS04R2djVDk4bXZYRFRleFo5UE5WU1Fqa0w1UlVmZldiUTRYYw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.2,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.7,
+     "why": "Money / prices",
      "b": [
-      "gm",
       "stellantis",
       "industry"
      ]
     },
     {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "What Peugeot had planned for its abandoned 2027 WEC Hypercar",
-     "source": "Autosport",
-     "url": "https://www.autosport.com/wec/news/what-peugeot-had-planned-for-its-abandoned-2027-wec-hypercar-/10877678/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+     "tag": "AUTO",
+     "cat": "STELLANTIS",
+     "title": "Stellantis says keeping production in Italy a 'daily challenge' amid rising costs",
+     "source": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdkxzSkFGMTNsNWZ3U2xYNEpheEMyYmNNNldISTl5SW1lMWdUWTFEZEdUOGpDWlN4OEtBZl93RDQ4S084dHJ5MTNMZmtqOGd5OFVLZ1hXckRsRjJyNDRfX3gwVk5oYmhiRXQ2U3lGeDIta3pqSW9tcHhPNFRNUDkzcmxFUXExUGo2MTFjN203U1JfcXdyS2JYV050cDBGWVd1elV6UVJWTDdGaVhEWjRoYUFPTnB5cm9sR3M1dk9kS0s5QVlMMFB1SzdTVm1IYU51QVBaZjNfUQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.8,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.2,
      "why": "Fresh",
      "b": [
       "stellantis",
-      "racing"
+      "industry"
      ]
     },
     {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Opel and Citroen exit is not a betrayal of Formula E, but a major blow at the worst possible time",
-     "source": "Autosport",
-     "url": "https://www.autosport.com/formula-e/news/opel-and-citroen-exit-is-not-a-betrayal-of-formula-e-but-a-major-blow-at-the-worst-possible-time/10877649/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "The Jeep Gladiator Has a 26.7% Rollover Risk, NHTSA Says. The F-150’s Is 19.1%",
+     "source": "MotorBiscuit",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQm5udHBTZ2UwdXhzRE10QUQxR3NhOWdFX0hvUEhLVEFSUG1ISmp4V0lKUHF0TTdweGNCMzBoOTZrWFdpSV83Z0NRenBLaDhMbXlJWEo1bDlLZ2xtNUR3TTM3azhkLTVBSVFHaXFOZWtVQ3lxZldaY3NMSEJQY0F4cFU2T01pWkpoT096cnBRSzVmUUFfeUo3d1lqT2k5ODVPMlo2eS1n?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.8,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.6,
+     "why": "Ford news",
      "b": [
+      "ford",
       "stellantis",
-      "racing"
+      "recalls"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "STELLANTIS",
-     "title": "At $7,999, Is This 2017 Alfa Romeo Giulia A Beautiful Bargain?",
-     "source": "Jalopnik",
-     "url": "https://www.jalopnik.com/2326777/2017-alfa-romeo-giulia-for-sale-7999/",
+     "title": "Stellantis (BIT:STLAM) Stock Looks Undervalued With Sales Priced Very Low",
+     "source": "Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYUdiMlA3UVBLenFER3c5SjNmMllicDFIQWJEWjlHOS1Zdmk5dXhFRW10NjJpczJVYnNBWEtTTGVpVS1Rd0hFcG9xMVF5bUE3NXJuUXVyMURMdTBiNWN3bk9pNy02dkRiRFBPcHNobHQ5d2lkS1pVdlJwbFFVdHVxZWtnazc0UTBHT0pyV3RIWDZQODBEOVFwNlo2N2lqQQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.8,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
      "why": "Money / prices",
      "b": [
-      "stellantis"
+      "stellantis",
+      "industry"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "STELLANTIS",
-     "title": "Stellantis Exiting the WEC and Formula E to Focus on New Hi-Po Cars",
-     "source": "Car and Driver",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTmtMUFBnbUYzNy1ZWDBiemg4TklXb1NHUkRCRFRtVFVmY1RZQ0JfTmVHSkdQWXViRVdkcHVBM3V6T2xyclJMcmhvMHNJZFJ5dFlMVWRkaTUyWUJOV2piOEpEZTRQaDBkUVJjdGNQbmo1ZlZtWHlLaEJ3SmNRVWY0OWw3b3UwMlZLT1E?oc=5",
+     "title": "Hyundai Motor Group unveils single slow charger design for global markets",
+     "source": "EV Infrastructure News",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbGxhbzJYazRJMHFJZmIxdFllNlJhV0psZnAxN2J0c1dQU0gxT2pzSzVhUVB1cWZlOTZKb0V3eThWakJHaFZJNlRSeGV0WDk5V3BvQ05DZ3RuRkllZm4yUlNIMGxacWlRRWZ3dE9iTkp4Y19Ba1N0d0lTMVdqMTZxdmFmSFBNUldxLTRNOVY5ZjZYaFhVVHBablE5YW1rWVN1R01GNWZMREJ3dlVWX0tDcjB1dklEcGVMa3ZiQXpGdy1tUQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.7,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.4,
+     "why": "New model",
      "b": [
       "stellantis",
-      "racing"
+      "hyundai",
+      "ev",
+      "industry"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "STELLANTIS",
-     "title": "This Jeep Wrangler With a Lamborghini Body Kit Is Like a Real-Life Hot Wheels Car",
-     "source": "The Drive",
-     "url": "https://www.thedrive.com/news/this-jeep-wrangler-with-a-lamborghini-body-kit-is-like-a-real-life-hot-wheels-car",
+     "title": "1965 Plymouth Belvedere 1 Shows 81,000 Miles, Conceals 588 Cubic-Inch Hemi Routed Through Stout Torqueflite Automatic",
+     "source": "Jalopnik",
+     "url": "https://www.jalopnik.com/2328298/1965-plymouth-belvedere-81000-miles-588-hemi-torqueflite-automatic/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
-     "why": "Fresh",
-     "b": [
-      "stellantis",
-      "vw"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "After fight with cancer, auto exec opens up about return to work",
-     "source": "Detroit Free Press",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUHlMcy1XdEZTNnpFWVFHQ1lsTUtJZlR1a21ac3VLamI5TlZzV19pR2t4NnMzbkhydlVpbFZBTTk1RjdjaHljdU9zeVQ1Q1NBWDVZNkZPYllBbWs1VDRxSWRmZC1Ib0J4WlVYS2lqM2FOV3hsamExemNBX2dyYS1LbmcyLWZiSFA1V2pXdWpMaDlOQnVydFZjSTllX3RobGVJeThVUU1VZ2V3el9PUTRwMjEzOVQzWlhzQzJZcXlmMlA3ZGEz?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
-     "why": "Fresh",
-     "b": [
-      "stellantis"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "STELLANTIS",
-     "title": "NASCAR Raises Horsepower to 750, Brings Back Dodge and Reshuffles the 2027 Chase",
-     "source": "Yahoo Sports",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWWp1M0dKUWc1Tjc0aEZwdWV0R0ttOVQwYXpfYzVNYVpfc042NXdmbDctbHlCa1RkSnJEVEZUb1ZId1hKVWZuRkNkNHUyV2hUWmNXQklsYjlqMHZWaUNVeEJDeFRzV0hEMTJRaXlMN3AyOG13YjIxUDQ3SGVmanFVWUJzWExxN012MzRMbWNldzc0cVRoelE?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
-     "why": "Big U.S. racing",
-     "b": [
-      "stellantis",
-      "racing"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "STELLANTIS",
-     "title": "ChargePoint's DC Fast Chargers Are Hitting The Ski Slopes",
-     "source": "InsideEVs",
-     "url": "https://insideevs.com/news/816728/chargepoint-kassbohrer-chargers-ski-resorts/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
       "stellantis",
+      "classics"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "STELLANTIS",
+     "title": "Tesla deploys 29 mobile Supercharger stalls for Thanksgiving travel rush",
+     "source": "Electrek",
+     "url": "https://electrek.co/2026/11/26/tesla-deploys-mobile-superchargers-thanksgiving-travel/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.3,
+     "why": "Fresh",
+     "b": [
+      "stellantis",
+      "tesla",
       "ev"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "STELLANTIS",
-     "title": "After stepping away from Jeep for treatment, Broderdorf returned to Stellantis cancer-free and took on a new role leading Dodge. See link below ⬇️ 📸 Photo provi",
-     "source": "Facebook",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMDBNbGg0azFJQkNvbVQtb2dDQmlpZG1FZjFSdlR4Q3hnbmhiMlBCZXZ1anJ1T1E4UHBIQ3RBZ2tMWXJVY3I1NFRlU2hBdTQzaGtJTnhHdUQzdHVJMEJRV1VoZVpWYndLUWlMMEdJWExNN1NGZWo0VE1xbkFyNkotM1NlZGFuZ0RqUHZzYS1UTFZBSllUZWhxZkdmRkRNcUZFci1lNl9FaHBxdWJNYXB4aElzeThRa09qVUhrN21VWmoydEFwcGhIT0p0VXN4SlNiVm1pNnFyWGZfTHc0dDlJ?oc=5",
+     "title": "Fire Breaks Out at Dodge County Turkey Farm, Vacant Buildings Destroyed",
+     "source": "KROC-AM",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8tUzdkRVo2ZUI0VHlrT1Q4b0lzWGhtWDkxZWhCeDVDLWpXMEsyWEJ6bFBfTUo0bmJ6MGoxX2VmcDN1Sm53MTRZdXA0VGoyNXdqeEVJSlRSeHZVaXRDWEVPUA?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -955,11 +942,42 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "STELLANTIS",
-     "title": "Mayor Dodge honors outgoing chamber president Dan McMillan with proclamation",
-     "source": "Southwest Regional Publishing",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNT1B3ZzRlRVFoRkdLQkJYZnNDUVBZX3ZLX2VlUUx1cHJiNEw1ZDI1eGRwYURrYUloVUg1OUo5bmU3ZjNPellZLUVqc3VQSmo5WngwN19BX1BEdFJJQkhsVlVaZG9IY0duWmhJQUg1VnZKcktqYmFZSTRKZkNZV0h2eGU3eWRwSWs3WnZUR1hFZmlfYW4wOWt1bExMbzEwSEk1NTZTSEtyenZJYWJlcDBBNFJxSEZld3NUWFZiNk1felRBNE0xdUtV?oc=5",
+     "title": "Stellantis to Pause More Europe Plants as Chinese Rivals Advance",
+     "source": "Bloomberg.com",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZXpldGE3b3JQUDlmb0RYNnMtYnpHZDVpZDBvZlR1VVNvNTVXb1I5YkY5NmFqY2p6UUdwRWhDWFBwM1h6ckFEN1c5cFFvZkEyc3d2NEtrOTZsZm1PZ0g5M1IxcF9zcG9iUFJVWURZUi1ZZGc2OEY5RHdkLTM1aDlTeEhLQUxQQVRXUEE2MS10MDRRbTQtUk93ZzVIX2piZFBDNEt0dUJVdTJPNEY2UnhUR2EtRWh1dw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "stellantis",
+      "industry"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "STELLANTIS",
+     "title": "Rivian R2 vs. Jeep Recon: Which Electric Adventure SUV Wins?",
+     "source": "GreenCars",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUF9WcXNmSXdEQk1VQk5oYmNySVhybE1NcTdCSzdoWUU2QWVsa3psRGE3TWhiTFNxVC05QlJHclliV2VNVERlOEhXTFNfcURfMmJVYW9DN2xZWUJDb3hlNUpxNmYyNEVONjFaNXBCR19TWUlmVkRYcmJjaEQ3SlhHd2lzVnd1X1VZRVdWS3BMV3VBTzZRbGdrSUpQVHVhLTR0?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "stellantis",
+      "evnew",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "STELLANTIS",
+     "title": "Steedman man crashes Jeep into Auxvasse Creek, is seriously injured",
+     "source": "ABC17NEWS",
+     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMUo5ZzZqQkV2VUhNaW5mOU9CUlh4NmtMU3NpcjJZdEFsVktaVHNZY2ZURE0yQ0Y0Ynh5MGR4d0pVc05uZ2lWaGtVZVg5NnpUTEFsY1lSSXVhUGpGNGsxRzBocXpqTDNOc0MtVGdkMDlYLUdwRWhNWUFGbF9qcWV4NGRhM0UzcklpTUdEbzRxbUVTay1sbEtwU0s3Vl9tRFd0bm1CZk9oU09BeWNrZzE0SE15RW1vbTBHQk84SmZWRGZTeUtNMjVSSEdkNVRPNFFCaEE?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -969,11 +987,11 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "STELLANTIS",
-     "title": "Giants dodge major bullet in Mike McCarthy drama with Aaron Rodgers",
-     "source": "amNewYork",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lTjAtMG5XMG1mQTk0YWlnZzJGRnlrQno3SnVSd3U3Qi1WNkVjczQwZlRnYlpOZWZXTkFZNWwtWi04a3BpTTh3RXVXSFozS0dxbTVXNlhqdkh6TDVILUIwZHYxMXhudkUwUzNkVXZxNHVlbnRjT21ybQ?oc=5",
+     "title": "Elimination Round: Ido Hagag overcomes El Salvador's wildcard to dodge elimination at La Bocana",
+     "source": "World Surf League",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQRm4yZG5tamJMLTRDNXpSTVV2SzBtTmRLVUJ6U2NrbG9aeEw3UzJhcXNXTFM2VGlpazJxa19qWnlsbHRkOHFRNV9INi1ycTZleGN0WFpsY2VTM25ubkNPcTNoNmVQUTMzZTRoby1DYnc5ZW5DT0FjUlZCZHpMRUpDUlRZcXJXTjV2V3dDbm5oWG1yaHZLOG15OUI4NGJPbDBIS2dZUDhOOW1aNXlSZTBqMnZZR1cwdGF1OGRIa3o4MUt3VUptbFFrQXR1Q1F4V1JUdl9lY0xYc0FsQWZPM2hDd1FDQTcxZnRxRkFBR3FvM2E?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -989,31 +1007,15 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "TOYOTA",
-     "title": "Takata Strikes Again: Toyota, Lexus Recalls 314K for Airbags",
-     "source": "Pickup Truck +SUV Talk",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdE5fa3BkNmpidlB4aFBRd1hfNlEtckRNMDhOSlJVcFZNeF9jWFVjNjdlN3gxYWladkNnQm9NTGlDNlhCMGpIbVBIdG1ONUNvVXN3MU5vM3R2Z2c2UFV5OUxlaExUeTdZbXhZaW55RE0tY1dSVU9pUTdrQTNJRVZrMHZRUW03X2NHcll5MG84TU9yekdtNmI0Z3Vn?oc=5",
+     "title": "After Four Tundra Engine Recalls, Toyota's Engineer Says Dealers Are \"Working Through\" Inspections",
+     "source": "MotorBiscuit",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxON1p1cTBwNzRzUlhIeW9kaGFUSV9PdnJpTUNNbUExeUZSYktBcTJNM2pZaTJBVWhJekowQ3BkSHNCV1V0dldoT3Q5X2txVEFRWTFoMzRieUh6MXdma25RWlRNb3ZLdTd6RzZrRDBuNEl5Ry1IUUtucWtzMl9vMWRCbEl4NG5hWHdxOGdvSlVOblhlUTd5STc3bEZsUEZ2ZENIeTJIbm5aLXJJN05WZWFmVmh5X3Nodm9ncWNIU21lTnVzdw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Safety / recall",
      "b": [
       "toyota",
-      "recalls"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "TOYOTA",
-     "title": "Recall Watch List: Magnetic robot toys and 1.6 million Honda, Toyota vehicles recalled",
-     "source": "41NBC News",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9DZF8ta3BERmFVRlRvVDh2Sjg4emFOMHdDVFlBNjZSWXlVVjhEcEUzd2dtWE9LY0ZfXy1RRTVUU1Y3RkgwNVc1S2VEZjhOdGRzblZCaWxNSGdFZ1BzNG91LWhvVGtxZ2NFdmlSdzN2LVBIZk1VOVRIeA?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Safety / recall",
-     "b": [
-      "toyota",
-      "honda",
       "industry",
       "recalls"
      ]
@@ -1021,12 +1023,27 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "TOYOTA",
-     "title": "The Base 2027 Toyota 4Runner Now Has Heated Seats, but It’ll Start over $45,000 for the First Time",
-     "source": "Car and Driver",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNalpoT3ktS2dtelpnbVpRYmNIOG1sUGJmNmJ1TUtkSG1ab2JySkNJWEUwTzNtTFFkVlJzZ0J0MFNNdFl5UTZEczd0cUdsM2x5dmtFNzBQclNWREktQ2RsempUWVRvRnNldmZOX250R2ZSYjlCVThZS0dxYjJaNnl5dg?oc=5",
+     "title": "2022-2023, 2025-2026 Toyota Tundra Recall: 62K Cracks in Camshaft May Cause Engine Stall",
+     "source": "Pickup Truck +SUV Talk",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRFc4TXFIU3JWZDJoblIwQVNQMXFicEhBUmtmd3doYUJFQmc5Ti1zZ09fSk5LOFUwWGpCSC1FQWp1a0NRYzhEN1ZSbTI2dVZHOVNCQndvQ3dzSWxWcGJFcGh6alhwSHR3N1ZVRkxEUVRFQU9iVzdwY05hU21MUkdwY05vNktVeXFrVGZ5ZWVEZzltUjBLR0h4bVgtZ3ItdFExN01BTzRyLWstR2Z1WGlXeWRMOW1sS3RaZk9zc3dfZ04?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.2,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.4,
+     "why": "Safety / recall",
+     "b": [
+      "toyota",
+      "recalls"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "2027 Toyota 4Runner Finally Adds Heated Seats, Then Crosses $45,000",
+     "source": "Motor1",
+     "url": "https://www.motor1.com/news/816890/2027-toyota-4runner-price-updates/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.0,
      "why": "Money / prices",
      "b": [
       "toyota"
@@ -1035,16 +1052,16 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "TOYOTA",
-     "title": "Toyota is about to unveil its first extended-range EV, and it looks like the Highlander",
-     "source": "Electrek",
-     "url": "https://electrek.co/2026/11/25/toyota-reveal-first-erev-looks-like-highlander/",
+     "title": "Toyota’s Hyper Z Prototype Is So Extreme, It Has Aerodynamic Wings Instead of a Bed",
+     "source": "Car and Driver",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVXVBdmJDaWlsR0pwSk1Nam1FUkNucDNCYXA0ZGRFaml4T2VlNnk3T0l1UVVWNGU5cXpuSXB4cU5fVXlQTV9JeTNPVHhfcTFlUTVPMXVvV2NQV3dReGlFZjliTEZkR04xRTdGLUw0S2x0aWZkNVpYa1dJM2ZnYjM4UDNrdklpbzFYRlk0?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.7,
-     "why": "New model",
+     "why": "Fresh",
      "b": [
       "toyota",
-      "ev"
+      "trucks"
      ]
     },
     {
@@ -1054,7 +1071,7 @@ window.DG_NEWS = {
      "source": "MotorTrend",
      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9wVXVlZWRlczlLU3lGYzlZcUFhRVR6Z1hLamRtdGNoaE1IM2t1MFVxTy1sem1NV3NudXVmdWMxSGpsWVZHUkZfZlh5R1ZmR21IbXIwanFXbzdMOU9vVjhZRkliaXRKRHgxLTdfdGJKLThxOEZrYW5CSjVac3VFQQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.7,
      "why": "Fresh",
      "b": [
@@ -1063,57 +1080,13 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "FORD",
-     "title": "Toyota Finally Has A Ford Maverick Rival, But American Drivers Won't Be Happy",
-     "source": "SlashGear",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYWpfcF81R3FBeV81RUVHZ081OU4xeUpCR2FCRzVfU1NCY1ZaeHl3TWhFbl9QX3VVd01NeWZJeG00NzJDbmZnUnRxTVIyWjVXYnRjTXVVUkFiNW10VkgzR2VxTWhvUlV4ampGa2hBbTZfaGs2Y3lYS00tZVpRUG9xLXhvbTZRdHI1MmZ5dVQzYkVrLTZZOXdz?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
-     "why": "Ford news",
-     "b": [
-      "ford",
-      "toyota"
-     ]
-    },
-    {
-     "tag": "AUTO",
      "cat": "TOYOTA",
-     "title": "Toyota to launch new US-made Camry in Japan",
-     "source": "Yahoo Autos",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSnNXVkJXOV94ZjFkYW5xanVMaTZodGRSNkNvOXRzVG4td3BVV2t3andNZ2d1QW9HZFFWWHloZ2h4UUJVaEZtNUJySDlVTV81TkFjT2RhamxoMU55bk8xNDJkcTBGN1g5TmNaMWJSX1pMX3ZyRll5dWpndERtVTNUeDkwQmZ6Qzd0Mng3R0J0VlUzSGlQWDRRb1pMVzhlajk3bXc?oc=5",
+     "title": "Toyota's First Range-Extended EV Is Coming, And It Looks Like A Highlander",
+     "source": "Motor1",
+     "url": "https://www.motor1.com/news/816884/toyota-highlander-erev-china/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "toyota"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "TOYOTA",
-     "title": "BASF takes a mass-balance approach to Toyota’s truck bed",
-     "source": "Automotive Manufacturing Solutions",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcE5EbG1XdHNPUEZ6bkdtWnNHX0RVVUZpaXk0TGpmak02aDZ4VkNIdWVEVm9rd2p2M3lBMUR5UTRXSG93RFA4YjBqR2VVVUlFWUZ6RmhRYXVnVnhyV3Q3RmE1NXRNZEJtSWJ1cUF3REJwMDhkcFd4OG90YnMwbUo3VUkxMzZtR1g2Skl3azBrN1hyeUdxdDRpMDNGUV9QZmlZVFNndVdsYUZtZ21NaFBzS1ltSlFCOXl4R0FXUDFhSjloOVJxdWc?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "toyota",
-      "trucks"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "TOYOTA",
-     "title": "Toyota Warns Water Under a RAV4 Hybrid's Hood Can Start a Fire, But the Cleaning Job That Protects Your Battery Is Under the Rear Seat",
-     "source": "Torque News",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUXBCOEZwd3EtWGVVWjUyakdocVFodlVFMEptNjAwR1czTml5cW1jQzFjU3RHZEswOE1qbFNQclBBem5uTHVDd1NDTm1FNUE2aXZRTHlFMVlwYWRMRjUxbENrTkVOcXBjUUo4eWprQTF2SDVJV0lUYktMNHFXeF9TOGxhcFVkR1d6ZmJVb3poZ09Nam1JbEpzREg0MmlUYVpoeFpiR0p4OFlIenRLM2N6T2ZNVndPUGM?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
      "why": "Fresh",
      "b": [
       "toyota",
@@ -1123,27 +1096,12 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "TOYOTA",
-     "title": "These Toyota Dealership Ads From The Garlic Capital Of The World Are Nice And Bonkers",
-     "source": "The Autopian",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWENiSExrTVZod2w1MEFxd01BSDRKVGVrMTVqMjNQQXVwbjNRY1JMNk43SklaR3hQVWhiS2RFeVhoTDFuOWtvc3J4eWMyRVh1Tk52VVdNOVphQnhOVlpwV3l4bklvQ19QaDloX3QzRTZLRklfUkpQellDRmpERmJ1TkRLY190Zmw5bWVlYkRlQjhSbFhycVJ2Vjh3dGYyZDdZZm13c0VBWEJqMzVfc0VlTEt2QkY?oc=5",
+     "title": "Toyota Hilux Hyper Z Concept Is A Maniacal Truck-Supercar Mashup",
+     "source": "Hagerty",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbEZoaG9JdGxRUGxGNm1OOGJYM2dTd2xMMzYwTDhBckhacGtfV084SFUtOS1mbjA1eExIUjkzMUNxV2pFbnVudkhzMU4tT1FHc0dfdklvV2hEQ0VzdXAwT0U4aDRCYXkzdWJGVTZfakI3NmQtUTlneUdRWUt2N296ajl3?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "toyota",
-      "industry"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "TOYOTA",
-     "title": "Toyota Hilux Travo Hyper Z Is the Truck We'd All Love To Have",
-     "source": "autoevolution",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVE1ZdUlSeThVWEwyNkZoQ2NZRlBNMDZrOUZDWHRMcHZhdHNNRkJJem9yUjYtZXBYbGtsYlFkdXNxRnN6VVJjUGFYX0RMbU5HalE2WVpYNHl2YUZsQ1J2TThEdUlmVjNGbmR0WWo4aXZwX1hTRTJwSEJfSWlNRUEteF9iankyLUVjUjh4SE50OWU4VnM4MG9MZDd2MmVHQ1puUU9pRnFDRGc5N2hs?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
      "why": "Fresh",
      "b": [
       "toyota",
@@ -1153,16 +1111,77 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "TOYOTA",
-     "title": "The Toyota Sienna Is Now More Fuel Efficient Than A Base Honda Civic",
-     "source": "The Autopian",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOVFWS0J5RlNYTHFGcXBVdkhPLWN2MTNzVkJTRWxITjB0WFl3WlN4RDdyNnhvTVdJVTJnMTJ6UHRUcWhIMFFzcDNSVjBLV0ZoUHJNMFBHdndzclhHdjBYeTAxYnZpdEVDc3M3MHJ0WW82N0NJMk53S1BBTG5hSWgzejdsQjJ3bzZrMTgybDNybXl2Q1pBX1Q5OV9RcVl1dw?oc=5",
+     "title": "Here's what you need to know about the Toyota and Lexus hybrid cable defect class action settlement.",
+     "source": "Claim Depot",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kWnVVUlR3UEMwTG5QbnFhUTc1REkwRktnWGZPVnlvMHYyZTF2dzQtYXRkN0tZMV9xdmlJUnpPdzA1NmVwU2MyYTNiNGdaNTA3WXoxZ1hQTXJxQ2tEalROUWZobk5VLTJnaUZlV2NKTWVhckF2?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Money / prices",
+     "b": [
+      "toyota",
+      "ev",
+      "industry",
+      "recalls"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "Toyota Gave Its Smallest SUV A Powerful Edition With Zero Extra Horses",
+     "source": "Carscoops",
+     "url": "https://www.carscoops.com/2323407/toyota-powerful-edition/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.4,
+     "why": "Fresh",
+     "b": [
+      "toyota"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "New Nissan Terrano Is A Rugged Land Cruiser Rival America Won't Get",
+     "source": "Carscoops",
+     "url": "https://www.carscoops.com/2329009/nissan-terrano-miit/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.4,
      "why": "Fresh",
      "b": [
       "toyota",
-      "honda"
+      "nissan"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "GM",
+     "title": "Compare 2027 Toyota RAV4 Plug-In Hybrid vs. 2026 Chevrolet Trax",
+     "source": "U.S. News & World Report",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPcnU1SHViQUlyUC13MW4tU0tod0dKVzY2ZVFjZlhJRWV0TGtrcjREU2lEWWpjUjg0UlRWMlVhV2g4b1dfTFFLOE83T2c2dDVKandHZXlzNFhxa1FYdktjM19wZThMakpuWGkwT09hck5ndWVwb2dhTjVyLVZpN3pFdA?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "gm",
+      "toyota",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "Toyota Mid-Engine Sports Car's Development Hasn’t Even Reached Halftime Yet",
+     "source": "CarBuzz",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9OeTZvc1VON2pYM1dBd3ZsX1pZaTlacE5QY0c2cW5OeFB0bkw0UmJhQkRZR3JZSXIxTGNSM19ERkxXVlVZSnlEUlNzTW4zMkJNNEZDTHhMa0VrQ2FxTnNzYjNGbS11NVVaMU1YYThHMkFsZjYyOWV2UG1n?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "toyota"
      ]
     }
    ]
@@ -1174,15 +1193,16 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "HONDA",
-     "title": "Recall alert: More than 810,000 Honda vehicles recalled over airbag issue",
-     "source": "Peak of Ohio",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWWNKUjdhelRpdzZXck5ScDlXVlQzSWdoakhnTDVzRlVsWTBmWlFzbURDSUxodFg2TFhUQ08yMGlNZWVFWVFpLWhGVjJhZ3VEa3ZtaDh2VXhaR00tMy1QYnpZdF9YYjhfOHR5NVF0WE40VktnUGtFWWtiaU0tMmo1VFl5eDNYdXIyaXBVTHd1TjZnZXRKWnlfSGdkY2lybVJDUEsxb05IVjJDeGlxRGpN?oc=5",
+     "title": "Honda Motor (TSE:7267) Recalls 810,592 US Vehicles And Unveils Avancier Hybrid SUV",
+     "source": "Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTFRoUGw2T3R4Wkp1VHZXQ19nQmNyRHhXb1ExcExfQ1pSUVgzbkdwaHJWeE0wQ1JDN0wxanNEdG5VQ2Nyb1ZtSFNYVHFKTWMtSkFnUmdhM3VER1dGLXZzN3BtNk13bkl0UmdqMXlvWnJWbVZMYXNIU3FSNF9iUXJvWVowTlgzc01PalVzM1k1SzYwNHNRVFdtbg?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 8.6,
-     "why": "3 outlets covering it · Safety / recall",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.8,
+     "why": "Safety / recall · New model",
      "b": [
       "honda",
+      "ev",
       "recalls"
      ]
     },
@@ -1193,89 +1213,12 @@ window.DG_NEWS = {
      "source": "ABC7 New York",
      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFAxM0xicGRVZldxRmpmZWMyaW5idFFzLVkwZkUzczl4LVdNbEFzZkxUeENIM3VyXzJ4ZUFTVTZtRTg1Zw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 7.0,
-     "why": "2 outlets covering it · Safety / recall",
-     "b": [
-      "honda",
-      "recalls"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "HONDA",
-     "title": "Airbag recall hits 800,000+ Honda and Acura vehicles",
-     "source": "11Alive.com",
-     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQb0kwajlCcjliVmY3alJEWThtNklldHBhU1JGT0RLdVU2Z19OWm9MNWpMWmRvMWl1X1FTcWswVnlsYlRhY3h1TTVmTWFOX3FTa0tXWVp0d3NNLXlwajE5Q2ViTzV4WklOZXdMaTBxQTBYeG1tWFhBRjhMOFBhSmJSS0ticmtxd1NydXVaS2RKYlJHYW9kd1NJWkZsLVFNcEdBYVFhZm8zb0ptdzFCM0xrRVQtU0VIOXJkZkM3cTlsMmNndHhrSVpaSl9YTG5pM1d1aEVPaTRhNWc0ekYySU5taWtRWE8?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 7.0,
-     "why": "2 outlets covering it · Safety / recall",
-     "b": [
-      "honda",
-      "recalls"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "3 Black Friday car lease deals I'd actually consider",
-     "source": "USA Today",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdTdwRGdRbmI5TDdwRGdHYndpNHRxVGpLQnFFVnFmQTZuSER5S1ZWdkRrX3p5SmQ0OWw4TGZVTWRnZFJqT1dVZXM2WHh3STBjU0pvcGltc0pHMmFrcUNMVUxpRHJzdURGZ1cyUGZaOEJsNTVtOXZ4SURtRzd0WWw1YzdLU1d2OGs5cjdnZU05QnRvUVM2VlFzZWxRcDExQQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.6,
-     "why": "2 outlets covering it",
-     "b": [
-      "deals",
-      "honda"
-     ]
-    },
-    {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "Future Ford Vehicles Could Get Aftermarket Radio Integration System",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/future-ford-vehicles-could-get-aftermarket-radio-integration-system/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford",
-      "honda",
-      "industry"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "TOYOTA",
-     "title": "Recall Watch List: Magnetic robot toys and 1.6 million Honda, Toyota vehicles recalled",
-     "source": "41NBC News",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9DZF8ta3BERmFVRlRvVDh2Sjg4emFOMHdDVFlBNjZSWXlVVjhEcEUzd2dtWE9LY0ZfXy1RRTVUU1Y3RkgwNVc1S2VEZjhOdGRzblZCaWxNSGdFZ1BzNG91LWhvVGtxZ2NFdmlSdzN2LVBIZk1VOVRIeA?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Safety / recall",
      "b": [
-      "toyota",
       "honda",
-      "industry",
       "recalls"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "HONDA",
-     "title": "Honda's New Avancier Is Cool, But Its Forgotten Wagon Ancestor Was Way Cooler",
-     "source": "Carscoops",
-     "url": "https://www.carscoops.com/2325258/honda-avancier-forgotten-wagon-ancestor/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.8,
-     "why": "New model",
-     "b": [
-      "honda"
      ]
     },
     {
@@ -1285,7 +1228,7 @@ window.DG_NEWS = {
      "source": "Car and Driver",
      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONXBJaUt2NFN3VVZYTnB6dzBZcnFpNzUxZlVjTFJWNmZuSlhsYkVRaTM2b0hmQ19jTnBlS0IwaXY3M2dIQlgxRlRUZy1BN1N2UkZWdWwzbnU3SEZwUS1UdUlJcjNKdjV1VEVacGpIVVg4N05rNnRCdjg2X09sWEFiaXl4cjJrN3ZmcjE0ZDZObENXeEt3ZzVhOQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.7,
      "why": "Fresh",
      "b": [
@@ -1294,26 +1237,27 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "HONDA",
-     "title": "Acura Is Coming to Japan For the 1st Time, and It’s Starting Strong With the Integra Type S",
-     "source": "Road & Track",
-     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQU0lZWW96Wkx1b2JmSEQ2S2lneTVSWmlSbUJ0UXoyWHdjSW5TeG55QjdERTRsQlZ3b0toX1Z2LXhhMExDQmtnSFhJZ3YtSHU3SjVONFFHWGdZY2NSVUtOWmlvRzdvS1RvdWdNbDJkMXpTMER4RGZ4cEZUaWgtUlpDeGs0VDI3QQ?oc=5",
+     "cat": "FORD",
+     "title": "The Ford Mustang RTR and Acura Integra Type S Go Head-to-Head in Edmunds U-Drags",
+     "source": "Edmunds",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLVg1cFpFdnhNcWxJRlRjSGpMUG9leGZLOWpoZkVpV2k5VUtsb3M4V1dPZ1NIZXRhb2xVQi1xNWxUVWo5N2dMbzNQY3pMb2U0alk4cGRVMTRNRXpiV0YwcjV5NGRLWVlmb3h4UW50N20xWWZQLTZDRjRmUF8xUGVJakpZb1FkZmRqWlVaWGNfN2NmRXc?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
-     "why": "Fresh",
+     "why": "Ford news",
      "b": [
+      "ford",
       "honda"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "HONDA",
-     "title": "America-Built Acura Integra Type S Is Heading To Japan, And There's A Twist",
+     "title": "2027 Honda Accord Gets Split Headlights With Squinty Eyes, But Only In China",
      "source": "Motor1",
-     "url": "https://www.motor1.com/news/816825/acura-integra-type-s-japan/",
+     "url": "https://www.motor1.com/news/816864/2027-honda-accord-china/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.5,
      "why": "Fresh",
      "b": [
@@ -1323,32 +1267,108 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "HONDA",
-     "title": "Hyundai Elantra N Vs.Civic Type R: Can Honda's Iconic Hot Hatch Justify The $12,000 Price Gap?",
-     "source": "CarBuzz",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqNzVsdWw5aGhxcWN2d3Q2WGtkcnFjQTZJd1gwbVJEeFhrVHkzVHdXMzdHM1NzOFQ0T1dHUHhMVXBBU1hMOWNTV0YySWZzMS1XRWpCYWVoeDRBaXhKZDV4a2NHYnZlM2RrbFh5N1gyNmVmZXRicXVyNUlR?oc=5",
+     "title": "2026 Acura ADX A-Spec vs. Integra A-Spec: I Drove Both To See If You Really Need The SUV",
+     "source": "Autoblog",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE01aDVYODJQZWpOQVUwR3d1MkpWNVRnQllvTVp4Z1Rwd09iaC1hWk1kS2FpZlNjTVlqbTFfQk5rckpqV2VDVGRPTnVGRWstWTRuOE8wel9UREJYM18yOVVGa3lnMFB6dGZtY2VxSy1UT3RQWkRYNWd2Q1l4dHk?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.5,
-     "why": "Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.3,
+     "why": "Fresh",
+     "b": [
+      "honda"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "HONDA",
+     "title": "Is Our Acura Integra Type S Worth the Upgrade Over a Honda Civic Type R?",
+     "source": "Edmunds",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWUJtaXJaMEFJNnNwTDZQcGJXQnZNMFpiNlMzLS0wT0dpenl6d1dQVmhORURjdFdEcVRaN0Jka0ozSVZWNTcwSjhhRTE1SjVGUUxwMUdlR1lfaUFxRFNabHdqTVQ2TEZMUkFhcWZjS3Rwdy1fM09fSm12SllrTW43RjZodFFfSDktZnc?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "honda"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "HONDA",
+     "title": "No Turbo, No Mild-Hybrid System, No Hassles: Why Honda’s Boring V6 Beats Mazda’s Inline-6 Long-Term",
+     "source": "CarBuzz",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOWttYWh0b0pLYVV2dzlzcGNrU3hLVU1Vemx5SHE3SlNSUmdCQklNQVZwMmlDVFQycmJHYWl5bGFPR1JXeHpKSDA4dE0yQ2UzdnNGOUtCWE9PbU1kbEU5Wjl3QkZtOG1VYXE4SEF5b3VYNk9rbk1BUXpSNVRSdkhnNm9TRk5CRk9BVFlPUDloTWh2Q2Zs?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
      "b": [
       "honda",
-      "hyundai",
+      "subaru",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "HONDA",
+     "title": "Honda's Affordable Sports Car That Beat Porsche At Its Own Game",
+     "source": "HotCars",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWlFaR000NHdBSEl3NDBvcFAyeGlBdnRRSmZEdGM3UlRNTjUyQlFQQnNCZU5DM1BGUER4TGJmV3BwQUE3RTBiN3BmOU94QTExeFRsSzF1MGxHbE9ESGVmZ19HQ0QyaDdVRDNWcEQ1Rm5lcGpjWkpuNnVzWGdUaW1QYlMxVU9HQQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "honda",
+      "vw",
+      "deals"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "HONDA",
+     "title": "Woman Goes To Honda Dealership. 90 Minutes Later, She Catches The Workers At An Ice Cream Truck",
+     "source": "Motor1.com",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5VeEZDRjNUQlVDRFZhSGk1TVhQRlhmRV92M2s5STE1RGNDbk9ucU14TE1GZFlfYmZqWmNTRjZwY1Q5Y1NnUDZrQ2EySXJPTHJjYzhESHF4WXRiSEVSR0dWanpNWGU4M3hadVBUT1Z3aTY?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "honda",
+      "trucks",
       "industry"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "HONDA",
-     "title": "2026 Nissan Pathfinder vs. Honda Pilot: $5,000 Holiday Cash Value vs. Stronger Third-Row Space and Resale",
-     "source": "Road Ethos",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNM2o2ZGhSQ202SlBub0tjM2UxQm5XRmpzU181NThNeUVxYlQwVFdXdWF6d1pLUjNNVEJnbXZGLU01czQyeGtZWnpGdk1pUXNPQ2NVZHk5LTZ0ajE1NEJORXdHUXJXeUFtUERxaHh4azl1S1VuSlRvODNvOUtDcGhPcmo3YUMxcm5pNl8yc1NXSlUwSHhpdThneG9XMDNFVmdCWTRHTE1MQnZlOUFHcHJoeVo0WFhvRTdIcl9Ld1g1YXYxWWkyM0Y2Q2lTUjlJZw?oc=5",
+     "title": "US-Built Car Of The Year Acura Integra Type S Now Being Exported To Japan",
+     "source": "American Cars And Racing",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTG9tUktmdUFnZkNtd0owNFhpUEtqY3dvSk5Vc2ZRelBRY0t4WjRZZ1UxbW01ZnExX0tYSU5JaXpLM29RRURfbjVlQjJGSEc2a05BM09IRjQzeWxTWllZWW83NGFuazhDR3ptbTkxeW5ydkw3Um5wR2ppQ0JvWkxBS1UwNm1xLWpXVThV?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.5,
-     "why": "Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
      "b": [
       "honda",
-      "nissan"
+      "industry"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "STELLANTIS",
+     "title": "Turbo Honda Civic Drags a Dodge Charger SRT Hellcat, and Someone Gets Thrashed After a Little Nap",
+     "source": "autoevolution",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPajhkRGktSENkVkhSeVlYZU1iVzFwYV9yLWNuUFJfRUVnVFFldC1RZ0h4QVYxc04tOF9yd1VpeFJMbjBzQlF2bnhlbW55LWpSTGlKYmw4VE1LT0IyM0tEMWE4eUw0MkI5QlRjeWNFcENZakZaY0Q5bzVadXAxQU9nWEpfZ2ZHaURSVTdOdlBlMGp6djNMelU5anFwRlBvTU84cVZfOTJJTkZqZ1pqVm1JZzRLR1d2bjVsS09VVzh5M0I1cTVsNTQ5UjFmX1RuVUhnVl9sNWNWVTNQYms?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "stellantis",
+      "honda",
+      "ev"
      ]
     }
    ]
@@ -1358,13 +1378,43 @@ window.DG_NEWS = {
    "group": "make",
    "items": [
     {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Hyundai calls on Thierry Neuville, Adrien Fourmaux and Kris Meeke for latest Rally2 test",
+     "source": "Motorsport.com",
+     "url": "https://www.motorsport.com/wrc/news/hyundai-calls-on-neuville-fourmaux-and-meeke-for-latest-rally2-test/10878007/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 6.4,
+     "why": "2 outlets covering it",
+     "b": [
+      "hyundai",
+      "racing"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Neuville, Fourmaux and Meeke in latest Rally2 test for Hyundai",
+     "source": "Autosport",
+     "url": "https://www.autosport.com/wrc/news/neuville-in-latest-rally-2-test-for-hyundai/10878010/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 6.4,
+     "why": "2 outlets covering it",
+     "b": [
+      "hyundai",
+      "racing"
+     ]
+    },
+    {
      "tag": "AUTO",
      "cat": "HYUNDAI·KIA",
      "title": "Kia, Lucid, and Volkswagen are slashing EV prices by $10,000+ for Black Friday",
      "source": "Electrek",
      "url": "https://electrek.co/2026/11/25/kia-lucid-vw-slash-ev-prices-by-10000-black-friday/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.8,
      "why": "Money / prices",
      "b": [
@@ -1378,25 +1428,26 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "HYUNDAI·KIA",
-     "title": "Take a Closer Look at the 2027 Genesis GV70 (Photo Gallery)",
-     "source": "Car and Driver",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSVFBb1o4RWs2Ym1VVjM2WjRPSFh1NjNyNWp6UG81Wk43Sk5nQVMyQWF0OTk2bE0xZG4taDIyRHdGNGRMRjlwLXUxSjVsa3hHN2VXNDFBRUtmT0dMVjBzN2lqeFhGZzhLS29tMEU1eE44cHh1b3IzajFBZmZKUFdMc2VLSQ?oc=5",
+     "title": "Tested: Remember When Good EVs Were Too Expensive? The 2027 Kia EV3 Is Helping to Change That",
+     "source": "MotorTrend",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB6b2xySjBiMTFUbDVMb2FoYWVoWno0bGlFT1pZWVpEWVA3YlE1bjh2OUJIcU5WMTdLd1J4OC1ka213cW5WVXVjWkpLOXhTZHY3Q250aHdhbEZRWTZSV3dfN1Z6cjdfVXFDQ1h1dDM1Mm5SV3VfOVE?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.7,
      "why": "Fresh",
      "b": [
-      "hyundai"
+      "hyundai",
+      "ev"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "HYUNDAI·KIA",
-     "title": "Genesis, Act II: Luxury Brand Has Big Plans as It Enters Its Second Decade",
-     "source": "MotorTrend",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOX3R5em1NNjVLWjhFTG5JNUlUNzZxT0tadzE1ODhTcGduSzdkRkhObTk5ZzRXUGFXQUtfZ3dhYzZNYTRSWlA1aEtpdjhyT2hqc0p2MDlJZG5nVnlpQW1Zd3Yxam5sOEdHVlFzZ0Z6bzU0WnVwVHQ1ODMzdFlOSEN2aWFB?oc=5",
+     "title": "Take a Closer Look at the 2027 Genesis GV70 (Photo Gallery)",
+     "source": "Car and Driver",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSVFBb1o4RWs2Ym1VVjM2WjRPSFh1NjNyNWp6UG81Wk43Sk5nQVMyQWF0OTk2bE0xZG4taDIyRHdGNGRMRjlwLXUxSjVsa3hHN2VXNDFBRUtmT0dMVjBzN2lqeFhGZzhLS29tMEU1eE44cHh1b3IzajFBZmZKUFdMc2VLSQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.7,
      "why": "Fresh",
      "b": [
@@ -1410,7 +1461,7 @@ window.DG_NEWS = {
      "source": "Car and Driver",
      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNGx0WHV6TXZBVTRVNTRyYkZIVGxGUEd0bHh1VWxTLWtBVmlld1ZEWlhXX0g4S0syRTJhTDBhemJnREVtcTFucXotUngxZ0RsRXdhSlg5ajJJR2VHa2FhXzE0RjVvRlNUTHBQY1B4REZ5SXZQRzFUYnozcjhYcVVjWU1XcnZfbHhTWXVQa0REb3hLbk9MWW12ZU9uVWE0VXJreFllclpyZHA4NVpIMWFqS0lzWmdoWjl4WE9wRGx2S2MzNXUzeFVicXN5N0ZlbS03eDJ4ZFFpUTBUSDQ2?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.7,
      "why": "Fresh",
      "b": [
@@ -1422,12 +1473,12 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "HYUNDAI·KIA",
-     "title": "The Kia Telluride’s Only Fault Is Its Awful Climate Controls",
-     "source": "The Drive",
-     "url": "https://www.thedrive.com/news/the-kia-tellurides-only-fault-is-its-awful-climate-controls",
+     "title": "Here's Why You Still Can't Buy The Genesis GV60 Magma Everywhere",
+     "source": "Carscoops",
+     "url": "https://www.carscoops.com/2328450/genesis-gv60-magma-limited-availability-explained/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.4,
      "why": "Fresh",
      "b": [
       "hyundai"
@@ -1435,43 +1486,29 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "HYUNDAI·KIA",
-     "title": "Payne: Charging around town in the Kia EV3 bot",
-     "source": "The Detroit News",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOUc4VlJqNDcyakU0SEZSS1U2b0JkVEhPWV9oZ1FkUzFTR1U4YjJYZE5BOUlXT0FMM21ZWjB6T2lOSGpNRlM1UTlfMzdTaE9oY3VCRHZpUHJ3b083bTd1S09DdExLelRsNkJKeVpSRmdvZnFYZ1cwSnJuXy02WVZrc0NSTUF3UlR1UzhSaDhYNkNrTkZieWZiZzBmLTJsZkszdEhRMVVfekI1QVJtcjRXbA?oc=5",
+     "cat": "STELLANTIS",
+     "title": "Hyundai Motor Group unveils single slow charger design for global markets",
+     "source": "EV Infrastructure News",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbGxhbzJYazRJMHFJZmIxdFllNlJhV0psZnAxN2J0c1dQU0gxT2pzSzVhUVB1cWZlOTZKb0V3eThWakJHaFZJNlRSeGV0WDk5V3BvQ05DZ3RuRkllZm4yUlNIMGxacWlRRWZ3dE9iTkp4Y19Ba1N0d0lTMVdqMTZxdmFmSFBNUldxLTRNOVY5ZjZYaFhVVHBablE5YW1rWVN1R01GNWZMREJ3dlVWX0tDcjB1dklEcGVMa3ZiQXpGdy1tUQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.4,
+     "why": "New model",
      "b": [
+      "stellantis",
       "hyundai",
-      "ev"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "HONDA",
-     "title": "Hyundai Elantra N Vs.Civic Type R: Can Honda's Iconic Hot Hatch Justify The $12,000 Price Gap?",
-     "source": "CarBuzz",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqNzVsdWw5aGhxcWN2d3Q2WGtkcnFjQTZJd1gwbVJEeFhrVHkzVHdXMzdHM1NzOFQ0T1dHUHhMVXBBU1hMOWNTV0YySWZzMS1XRWpCYWVoeDRBaXhKZDV4a2NHYnZlM2RrbFh5N1gyNmVmZXRicXVyNUlR?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.5,
-     "why": "Money / prices",
-     "b": [
-      "honda",
-      "hyundai",
+      "ev",
       "industry"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "HYUNDAI·KIA",
-     "title": "Hyundai IONIQ 3 spotted on US roads: Is the affordable EV coming to the US? [update]",
-     "source": "Electrek",
-     "url": "https://electrek.co/2026/11/25/hyundai-ioniq-3-spotted-us-affordable-ev-update/",
+     "title": "Kia Expects The Affordable EV3 To Be Its Best-Selling EV In The U.S.",
+     "source": "InsideEVs",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUkl1WEdUOEZsNXZGRjZjVkxPQzN4NXJDSVd1YUZJTDMzMkFIOXZIdkhYVkwwSXZzVGgxVEFpWDVXQ1lNWVRuTTVra2J1NjRNdzRWMXgxZWlIV29xRnYtVFFwRU9VckVKS3ZQS253WnA5SGNUSXhWMFJzRjlFRjBhS3otdEtyLVFhNVE?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
@@ -1483,26 +1520,11 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "HYUNDAI·KIA",
-     "title": "I Love EVs, But Kia and Hyundai Are Making That Harder",
-     "source": "InsideEVs",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ1lkRWN0M2x5UkJoWExRcG8ycW1DWmJlcGVoVWZkdkhBSHp0dUxHandKSjlWVUtUcTh2VzhFbzVzVWE4SDFNWms2bm9LMXhwNTZ2NnZ2SDlxMC1fNW9udnRmVFRUeHdHSTFhWWhYSUNCTUg4SUtXODVfUHlQRVdzdQ?oc=5",
+     "title": "2027 Kia Seltos: Better looks, same performance",
+     "source": "Inquirer.com",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaVZRV0s3a2JvRHN3XzNQT2oxWHF2SzlSNGRISFpnVGNZTHNzM0JoS1VIMUVBSUhnSVdqUXhBdlVhU0VJbV9VSDJ6Z1B2TnRUeENUdXcxXzg1M3lfcDhLWlZmZ0djS3pheHZLbUdvR2V3ZWU5VDdyZlJiOWwtVjhIdG5KZWV5UlFrQUFwRmpla1MtZUNadWRGM1ZxMk5fZHYzc1I4UGtWMA?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.3,
-     "why": "Fresh",
-     "b": [
-      "hyundai",
-      "ev"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "Amazon Autos Plans to Launch Services in U.K. in Early 2027",
-     "source": "WSJ",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOM2pVMDVTbmVZOHkwaGZ0d1dHVEVObExKaTJMaVFIb1dfdGZHQ0N5WWotVzNreXhoMWs4SWphNHlYT29zU3RIbHdnZF91SGswdTdlcUtUN20yRW1OZFk3Z2swZGgxYlF5eEwxVmEwbVVsRHVIV1lHdWt3ZzU5VjlXMkFFNW43MXVPcHRpVnJ1eldNUi00Y2wyZU14STQwQ2JsU0pRYg?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -1512,29 +1534,29 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "HYUNDAI·KIA",
-     "title": "Hallmark Hyundai to Give Away a Car During Black Friday Event",
-     "source": "WLBT",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSkhuck5WSzhjZVNvaDl2R0g3M3dqSXdNaENCUmkxYW5yMHZsUkN6YXZGb2VRMnVVM1NqTHNlUkVyVjZHUFVnQXBHMHp1Y0lnNkhzQWVVZUhLWUxNWmNYbk9samc3MkZpUGM5OGZIeFpxWnA1THJja0F6QzNncUJZeDBWRlFxYy1hNGJyaVRLbGw1d1XSAacBQVVfeXFMT1hrT2RXRTVrTllTWnhtUGw4QzFXbUtEdUxUd25mY0FieWNzLVI3cUJ4YVdWQzNFWTFHbnVhOE9XMnpjZUZhbWxqTlVHVzBtWmpBaVZEbHY0Z2NoRWo1Q0hadXBtOWtEaUU1bHJLUWppWUQ3Z0NEN0RIY3lEVUZ1R3RJWUtZTXphcjBPRlZLNnF1LVdoQkIxLVhIWmlEQVJwR1pja2J5X1E?oc=5",
+     "title": "Genesis Is Switching From EVs To Hybrids, And There's A Good Reason For It",
+     "source": "CarBuzz",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfVGRJNWJsWHljOUxoUUJlTDFNeVJ0Y1BuSHllMEZMc094cV9Pcy0wVHgxMHpGRUNQV3FGLXBPNFQtN0F0dHJGNXBrMmxZcGROV1QtQzNRU05TT0hQeEpJZl9obENjaGhiNXc?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
-      "hyundai"
+      "hyundai",
+      "ev"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "HONDA",
-     "title": "Telluride vs Atlas: A Dominant Winner, According To Our Test Drives",
-     "source": "CarBuzz",
-     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0yYV9DSVhieVdJNkJPVUZhYmxrTVprRThVRDVCWFRtMmJhc0RhZzJpdTBjc293TE1XTzJFbUI2QWw3Qjdrc3lOcVNSRmU1ZXNpVUNGVjJONkMxOE0yemRzeERHMlpWV0hyNGU4?oc=5",
+     "cat": "HYUNDAI·KIA",
+     "title": "Fourmaux to stay at Hyundai in 2027",
+     "source": "DirtFish",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9WNFAxNGs1b1VrbnFkWHRmelNTeExYd1B2WldERlVBcDhLM1VURlNEb3dwSl8tR0dfUlB6am84eXFuNEVGdkgxRzQ3cF9yNjU2RWtoVldreGhzaURVNWI3anBJOUt0S1JaVlZFdFhfc1VReGxieXc?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
-      "honda",
       "hyundai"
      ]
     }
@@ -1547,11 +1569,40 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "NISSAN",
+     "title": "Nissan Canada partners with eBay to make sourcing parts, accessories easier",
+     "source": "Automotive News",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYXBtdkh3dzVPX0hSMDNuNHJXU19uM0tvZkRRSkJyaUFYUWhyazlUZFVaUXpudDFFUjFqTndISC1sNUNpSUk1NExJWVQ5Z2lHT1dwUlRGVVk1VVYxek0xeWozOEl3amtBOVVLOXZKQk12ZFExVVVpZ3FzeE1PLXJEd0NYeVlTVnp6LUJOeHNXVzNIcXM3aFE?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.2,
+     "why": "Fresh",
+     "b": [
+      "nissan"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "Ford (The Car Company) Wants To Expand Its Horizons To The Final Frontier",
+     "source": "Carscoops",
+     "url": "https://www.carscoops.com/2328676/ford-invests-satellite-company/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.0,
+     "why": "Ford news",
+     "b": [
+      "ford",
+      "nissan"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "NISSAN",
      "title": "Leaked Nissan Terrano Reveals A Boxy Off-Roader With Three Powertrain Options",
      "source": "Motor1",
      "url": "https://www.motor1.com/news/816869/nissan-terrano-phev-china-filing/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.5,
      "why": "Fresh",
      "b": [
@@ -1561,16 +1612,31 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "HONDA",
-     "title": "2026 Nissan Pathfinder vs. Honda Pilot: $5,000 Holiday Cash Value vs. Stronger Third-Row Space and Resale",
-     "source": "Road Ethos",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNM2o2ZGhSQ202SlBub0tjM2UxQm5XRmpzU181NThNeUVxYlQwVFdXdWF6d1pLUjNNVEJnbXZGLU01czQyeGtZWnpGdk1pUXNPQ2NVZHk5LTZ0ajE1NEJORXdHUXJXeUFtUERxaHh4azl1S1VuSlRvODNvOUtDcGhPcmo3YUMxcm5pNl8yc1NXSlUwSHhpdThneG9XMDNFVmdCWTRHTE1MQnZlOUFHcHJoeVo0WFhvRTdIcl9Ld1g1YXYxWWkyM0Y2Q2lTUjlJZw?oc=5",
+     "cat": "INDUSTRY",
+     "title": "Car dealership offers $10,000 reward after burglary",
+     "source": "KFDM",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONjZKTW9SNE9LckNLazNiOVFrX2NNeW41SXJGUGtSN2wtc2wyaWNHQ0h6M3BUYXZvSEFTdFdsZlA4R3VabGxYcGZsXzhQQzhNV0pEd0VwMzRNMFZkNUV1Znl0UHp0RjNPcUJQZ2hhaF9xRVlBeFZoM3IwQ1lFNVRiaWtvaFZRN24yczdPRVpR?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.5,
      "why": "Money / prices",
      "b": [
-      "honda",
+      "industry",
+      "nissan"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "New Nissan Terrano Is A Rugged Land Cruiser Rival America Won't Get",
+     "source": "Carscoops",
+     "url": "https://www.carscoops.com/2329009/nissan-terrano-miit/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.4,
+     "why": "Fresh",
+     "b": [
+      "toyota",
       "nissan"
      ]
     },
@@ -1581,7 +1647,7 @@ window.DG_NEWS = {
      "source": "Autoblog",
      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSERJWExacWEtOGtPcTktcndLN0FRS3d0aU1Qdk01OThMR0xnajNEcWlqbFNza3ZJUG9iT0E2R29vV2hYVTE0Y0JUWXdaZTZvdjdsZmlWdE1ZakFVYl85NXRJN0szTW1BaGNsZS1scDFkNjdFQXZMNlM4ZHcwbWpyYjIzcFY2OE1yZnQ4RkJSR1E?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
@@ -1591,16 +1657,59 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "EV",
-     "title": "Mitsubishi's New EV Looks Awfully Familiar",
+     "cat": "NISSAN",
+     "title": "I Drove A Nissan Rogue Hybrid Prototype. It's A Big Step Forward",
      "source": "Motor1.com",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMWVYYWhPc3pNTEdrM1oyMFFMMHdXd3VRYV9iUl91bGkxcDVvdEwzcDJSMnNwb0cydzJERGZRSENhQ08zb1B0MnAtV0dQQ29GS2RPc1pDVzhzU2tfU1pWOERLaUNQN0xqSHVaQnpZaHRmemExZHdEbDBIS2EwWDJzWlgtQnJ3Zy1kZl85M0N4cmVmUQ?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNS2ZaRFVEdzhMaXptcXFkOEMzSkVIQkNJdjh5MDE3R2p6dlM2WEt1Q2RjNlpCdkVOb2E5d0FMZ3BFdF81OGRuVTFiMlVseWlHN0xSaVdoYVUyUmlxUmFISHR4NGxlMUppT29yUV85TUNWZTVJRW5rM1ZkaFA4TFNfUXRSOA?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
-      "ev",
+      "nissan",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "NISSAN",
+     "title": "The Nissan Terrano Is Making a Comeback in China, but This Is What America Is Getting",
+     "source": "autoevolution",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQmgwSUdfcHEtV0xEUFY3V3Q3dlhTZ3V4eWZMZlBwYUFuS2RZZ0RsOTZ5R0hSaVhSdElOQllRS3d3MnVEaGdma3Byc0tVVlFrbUpfUDYzcUJ6Y1NWYlVLMlhyaU5HbFBLS3RXNmpOanZuYThtbDRSei10N3RWUzhwYWlDakZZUzk3a0lEeE91Q3V1dmFzY25PWXlJX1dybS1HejVYbVNfMTY1N2Q5SUtKYjliMDA4SkpRWkNLWWFaYUJRNGxwWlE?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "nissan"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "NISSAN",
+     "title": "Nissan reportedly plans China-built plug-in hybrids for Japan, its first PHEVs at home",
+     "source": "GlobalChinaEV",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdTQyZU1VZEtSVHA2UWlrQlNEMEdkYXZXOXBHNndRVDFodnktaWp3N1RVYnBGNXk0RC1UY20tZFlCVnYySTl1aXZyMFFIUW0xMGd2UXVKZjh6YjJ2QWtyVHhIZzZFWG5US19WZnE1Z3ZNcmJsMjF6dzg3OHVjeWtfM01ncTFRY01Qc016eW52ZDZrVi14VFRON3NkU2RaakJUZ29sRF84eWFvUS1NcTFzZXBaaGNxR3RrRGZ5cw?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "nissan",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "NISSAN",
+     "title": "Why I'm Really Going to Miss the Nissan Z",
+     "source": "The Progress",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUnZJLUpIWlRWSzMzUXptSkFOYnJ1NlNlZjN0bEllQkxva3czYWZCbEY0MS1abUZ4Y1NBbGNTR1hmbUlIOEU5RzRzQ1ZjN09SbG1pcW9HcUZFeTE4eEFPbkRPeklqc2pRZmYtUnhpWWJJR1FQeU93RVZwaGVvM2EteW9EX1EzTVdGQXVaQi1la0V1U3NxWjNHUEJLMjc1N09PanNRckN2QndlZWt5UjFfRWEtRFhHbEpQRFlKTWY1Mk9KQmhu?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
       "nissan"
      ]
     },
@@ -1611,7 +1720,7 @@ window.DG_NEWS = {
      "source": "Le Guide de l'auto",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbGZLUkFFUjBoQW03Q1VCa2RrS2VUZy1MWWRHelJiM1JyU2VSREljNHFBTmY4NlNkRnBxdmNadzhVMnREWlJvMUFobkdlRjVZTHZYVktzUVBSeE1vaC1aSHB1RnRVZFdPdmhkdFgzYjZqMHFJTF8zekJ1M2p5OXBuY1UwVzlJS2VoNnFxaktB?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -1625,68 +1734,10 @@ window.DG_NEWS = {
      "source": "Sportscar365",
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTzMzOVoyT0FaVzRxMkdoMEhPTkFOLVZXM1NWRUJscHI2MTdfdy1pdDloc0VseVlmUUItX01jZkx4QjVFQWxwOEZUeF9SLU9acC1hZkVUV3hNbGlxeVBYRmxyNTdDTjVBN1lzZ1F5bnFDS0tOYm42MEc3XzZBTkdVS1RfNHo2bkt6d0Flbzk1WmFWRlZzcWJoVmhHYw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
-      "nissan"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "NISSAN",
-     "title": "Future Cars: Everything We Know About The 2028 Nissan Xterra",
-     "source": "CarBuzz",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LTUZ0dnN5V29SNEhaRFVxTGR4bFRObGdtM2psVWhSdmE4dE1yaVRMQ245MGJiakNJZ0VuZXlKT0U3SXByaENsY3JOYmMycExKa1lFeU5MZjBCSVZmckgxRFVnZl9FN2JkRWZqcEVsSUQ4eXB2YTZTMFRR?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "nissan"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "NISSAN",
-     "title": "I've driven a Nissan Pathfinder for years. Would I buy the new one?",
-     "source": "USA Today",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSjFLUU1LWlgzUER0bUVCejVjTGpkUk5zVTlRd21NdU1kdTJua2JiWVZzUW1TRXBlTWlWTzdiVk1RMUltdVJ4X2NqcG5XcVZ1UlRhdTd1bjR6WFh1ampkcHBLaGJZY253S1dralAzT2k5RlhwV1RzaDg4Wm12X0o4TmxqZUt2U1RRVm1wTTJhTGxGQUVERnZ1dGRtektLMHJ3WHRfeXp4UGRNUQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "nissan"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "NISSAN",
-     "title": "China releases data on Nissan Terrano SUV with three powertrains — Motor1",
-     "source": "UA.NEWS",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWmwwVjlUNW42YmFXenRSRlp2OGo0MlRTemZySWRIMUxvblJNWUpRX2piTnptVXRNZF9xaFhpelFZOVhuTnRVWWhsZ0I5VXB2SlFPNFZydHp3cFVOd2hBZW9NT05ZbEtBSkVJc0E1NTZGSEN6VlcxMDBUNk45WmpEQ3BBMVFXLWMyV2lfN3g4bTNqelNSd1JpM2ZkcmtBclg2bXFxOExULTlBZWJpNTRNaExWS3U5UzVxUHRiM1ZTZUlvT1Q1RGhtX19B?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "nissan",
-      "deals"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "INDUSTRY",
-     "title": "Africa’s most industrialised country secures another foothold in North America’s car industry as Chinese auto parts giant picks Moroccan factory to manufacture ",
-     "source": "Business Insider Africa",
-     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcUt1YUM3eDdSNFBSdk1ZSHBPaHF6bEU5VG5jeVp1WEw1MWlxZ3p2dllQT0w1aVhGWThUTFUwV0lldXFob0RSNzIyQ19ldmk1TGsyTjVrdUF4UHVzYjJ1OUdKdzRFdWVCQ09sUndtOHV5WUR3UVJReGNBWGUyTmRETXRTcXB6a2x2My1Yc1Q1N2ROS2kydWRxVU9SQ2tqUjF6MU5ua2hWUEhlaXpOZlZqcXZRQlBhekFGYjNTLW9FcVhGbHNJV2I4TUNDMzJfekJSZm9xM0dB?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "industry",
       "nissan"
      ]
     }
@@ -1698,56 +1749,28 @@ window.DG_NEWS = {
    "items": [
     {
      "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "Best Black Friday 2026 Car Deals Ending Nov. 30: Effective Lease Costs and 0% APR Offers Checked",
-     "source": "Road Ethos",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbkx6R3ZzdlM4RXhpN3VxSThhR0tiZS1DekRodWNfV09yUGFPbjd1NjFqOUtwdjF6YUsxSHZyWDVreHhPM20xdmxUQnNOblYzbUpHQ3lydFFDTVZNQXJZcG5fUHRrREo1TkNhYmtjb1g0cFdQT0M3eVRrZ0kweks1Z0p2QmgtandkaTZCd1VhNTRYenhTXzNWTU5Qa1J3Mk1KUzkyalFGUERQVkd2bGpLMUZRaVduQ0x4VnBEVkw2VUF2SUxG?oc=5",
+     "cat": "SUBARU·MAZDA",
+     "title": "New Subaru E-Outback price, range and specs",
+     "source": "Electrifying.com",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb0ZEVU9JOU4zYU1zMDlpZ2tZSFRVZDJsdkZBdWNaQUl1bnhnSndxVEhQRFV2RG1VWFgyenZhdmtKaUVSNFBONUpfclZSbmJvWGhfc1oyWW9GTXN6OWJoMG5vSjVfY04tRTJEQjJtZnpwSmY3Vnd4UHl3dFo3WFdvU1F3?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.6,
-     "why": "2 outlets covering it",
-     "b": [
-      "deals",
-      "subaru"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "GM",
-     "title": "This $41,000 Chevy Corvette C1 Lookalike Is Really A Supersized Miata",
-     "source": "Motor1",
-     "url": "https://www.motor1.com/news/816837/mitsuoka-la1-price-details-photos/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.0,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
      "why": "Money / prices",
      "b": [
-      "gm",
-      "subaru"
+      "subaru",
+      "ev",
+      "industry"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "SUBARU·MAZDA",
-     "title": "Mazda Exec Claims The Company's Identity No Longer Depends On The Miata",
-     "source": "Motor1",
-     "url": "https://www.motor1.com/news/816827/mazda-identity-no-longer-depends-miata/",
+     "title": "Mazda CX-90 Gets a Sportier Setup Designed to Preserve Comfort",
+     "source": "Autoblog",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSllkaW9oTzFWb1BlWG1DaHNDaDM4OHBIMF9LOVAtWGVkemRvNERtY3dmV0hKbk9BWFBxcy1qUU4tZHVhbTVDTmxYVmZvMlRHM3lzUHhoZGI1UXA3V0N6c3JXR3YxaENNRjdEQmtzSFd3aU5SVXByaUVGS184Rnk5cWcxMDNNejFsZElHLVl6LTQ4dFhfMFNr?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.5,
-     "why": "Fresh",
-     "b": [
-      "subaru"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "These Are The Real Cars You Wish Were In 'Grand Theft Auto 6'",
-     "source": "Jalopnik",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNUplY1Myd1o0X0tpNmp4aklYcV91MmJxbG1nVVRMY3pWOHBpT0ZmaTc1MVMyV2hhdWJGYXZnalBaeXNTQjJ5bjdEZlRRT0tya0ZOUXlFQWhqWDI0c2JCTU8wTzdjTTdLMUVsMFJhUHdKU01vVGsxQmNrdW1JSUFocHVXMHFyR1ByYVctWEN4cTZBajZLeTRj?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
@@ -1757,11 +1780,55 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "SUBARU·MAZDA",
-     "title": "Mazda's Goal For The Next Miata: 'Preserve The Car's DNA'",
-     "source": "Motor1.com",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOclhOeVJVMTZBWFl6WTJKcTBWajBVeW85cFNxUFhWc0duQzg5aTVOT1dtZDNqN2lxNU9vcDJCems0cTFnS3VGUF9fTFNVdC11SUpoaVF5aDdPQXpUTEQ2NUNfZXFLdXVoeXo2c3did1B4ci1LVGhocE00M0hMMXNueWc4V3E?oc=5",
+     "title": "The Mazda CX-6e Is Easy To Like, But Hard To Take On A Road Trip",
+     "source": "InsideEVs",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5icTFrWWRCZWhfalQ2a3FoeU5GbDJZbTJ4VFhnYXd2RjZTUV9BNlBDSGJWN2lEUE5DdzNYTUdOclhGQmYwTjI3RTM3RlVNU0UyMU5iR25rbEhqMmJxSjhodksyempkcF9lOGo0U0V1NDNYcEtiMXlQZQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.3,
+     "why": "Fresh",
+     "b": [
+      "subaru"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "HONDA",
+     "title": "No Turbo, No Mild-Hybrid System, No Hassles: Why Honda’s Boring V6 Beats Mazda’s Inline-6 Long-Term",
+     "source": "CarBuzz",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOWttYWh0b0pLYVV2dzlzcGNrU3hLVU1Vemx5SHE3SlNSUmdCQklNQVZwMmlDVFQycmJHYWl5bGFPR1JXeHpKSDA4dE0yQ2UzdnNGOUtCWE9PbU1kbEU5Wjl3QkZtOG1VYXE4SEF5b3VYNk9rbk1BUXpSNVRSdkhnNm9TRk5CRk9BVFlPUDloTWh2Q2Zs?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "honda",
+      "subaru",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "SUBARU·MAZDA",
+     "title": "More Than a Car: Annapolis Subaru Turns Share the Love Into Support for Local Children",
+     "source": "Eye On Annapolis",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORW5pN01fcC1vUkFPMFo5RGhNWTE4WDNFUm5FamRQc2I2bVVKeWRGdXJLVjdBbWlGV042cGZ3S3g1UjMxY1J3RzY1LXJ1d1dTWlRTZGczME1wWG9TU3V0UllPdWNkZzI3M25zUk5kZlBtdjYwQUkybmFXYzdQMzVQbFVCV2ZiWlJUdUxvVkRzZTJvZUl5bXJMMXRDMDE2WXBXOWJTQTlRc1ZLVGFlY3VGQjhkSEFsOVA3bWZkTEoxeGRBa0E?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "subaru"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "SUBARU·MAZDA",
+     "title": "Subaru's New Manual WRX Is Already Insanely Popular In Japan",
+     "source": "Motor1.com",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE16SlN4anVQalNqSXZVdlZHUzVnSTBKTmJOTTYtWTEwaXBsVTJSV0lJMDJIMlpCSzIwRExwVk11ZjZraElWUTJRa05VUHhNTUVDTWtnTUVvOEpyWi1STGMxLUZscldqcU1LZmVRYk94UEFhb3FWcHc?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -1775,7 +1842,35 @@ window.DG_NEWS = {
      "source": "CarBuzz",
      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONXZEVDAtTzdTakRuZjVjazU0OWZJZFVNVTR4SW9LV0xiTjJzWFVPY05lNzVKUXlTOUc1dno0TFNxQUVuMW9xREdscXV5WmJHWmJJSXN3LWgwM0t1YnRmMnlLVnlram9wWWItS0w2a0ltbi1lUFR0eFlUNFRmVzdKOXJoQVJxQQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "subaru"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "SUBARU·MAZDA",
+     "title": "Mazda UK Bosses Claim the Brand Could Survive Without the MX-5 Miata",
+     "source": "autoevolution",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMWlYUmFEdEhPZVlCQUx1UWVTWDZnQXpuYWZ5NHZBQTNPQVR0c21IN2tGLWswTWpySmh2TG1Ib0dQY2JRMk1GQkxLbi0xSVBvNzUxSFlmNDlHak10SV8wWVhJZGU4S3JhWGZHWFlyZUdQZmZxZkg5NmRpYjB3emJmdWd2TkZzNHREQzc1U3l3aEoxZW9qUXJhcER5aC1TUk1qTGRRNXhBcjYtM3Rrd21WbkV2eW1oUQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "subaru"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "SUBARU·MAZDA",
+     "title": "Subaru E-Outback to launch in UK from £49,995",
+     "source": "electrive.com",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeXVkMm1xWU5OcnZuRHdBTk5ZbXZYTXNrQkppbWh2YUNjUHZwdUpocEtYQ2tzLS1reFlEUldCaGdOZnlkRmxDbVg1M19JRzJQdHhhZTJUTlZFQjY2YkxHZVRpYWtvQ0RiWGpwWXdHa0Q2ZlpyNGYyQ3M0Ty1mMzI4YjlIVE1Jak4t?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -1789,7 +1884,7 @@ window.DG_NEWS = {
      "source": "Mashable",
      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBsVGJZM1Q4RS1YQm1SMXRBVFN3R01hanN1OGxHRFhyckxRMWxJUzJhR0pUZE5Vb3FTUWZueWxHWFoxazhiUmdCNkRuTVhWRW1GaTlJekVR?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -1804,70 +1899,11 @@ window.DG_NEWS = {
      "source": "The Supercar Blog",
      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORGRGRXdROS1rUkljODQ3Zm1zUlY3VVlsYkZVakdtSmZRajJWdGZ3bzlQMENBTGZpNi1NODhSUEo0MUJFX3RUVmpMdGtXZGNNdFVLT2k2VUFlQzdzQTNmWUFFN0ktZ09OaENOVGRJNERhSzN0dXhXNkp3UXdBRElWeWxTWDREOU85UGRaaWNOTXlfaXNFQWVVU24tSGxyb2Q5NEtnbkpB?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
       "subaru"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "SUBARU·MAZDA",
-     "title": "Subaru's New Manual WRX Is Already Insanely Popular In Japan",
-     "source": "Motor1.com",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE16SlN4anVQalNqSXZVdlZHUzVnSTBKTmJOTTYtWTEwaXBsVTJSV0lJMDJIMlpCSzIwRExwVk11ZjZraElWUTJRa05VUHhNTUVDTWtnTUVvOEpyWi1STGMxLUZscldqcU1LZmVRYk94UEFhb3FWcHc?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "subaru"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "SUBARU·MAZDA",
-     "title": "Subaru’s Quickest American Car Lands Anew with a More Compelling Badge",
-     "source": "Gear Patrol",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5RaHpOTWRkY1FFbGlrSTVyQXAwR0FaVXBFWHBacEhOcUNOSFVoWEFqLVNEVUUxa2dFbS1ZWVctWFpNR09XLXF5aHJzd0pkWEktR3ctY21GTzl2cjR2VE5JcFU3VUdaSzNodWc5bHNnRXdtQQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "subaru"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "SUBARU·MAZDA",
-     "title": "Has Mazda finally cracked electric cars? We drive Japan's iX3 rival",
-     "source": "Autocar",
-     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9HWXJQRlNvVmkxMXNWVzZVMW5nbXlyR1ROdEppZ2c4bUV2UUxxeWNYbW8zNEw0a2YtSVFIYkN5ZlVKaTZwNzdjUVNYNnB1cVlqeDBCOXpfNU9yMExF?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "subaru",
-      "ev"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "SUBARU·MAZDA",
-     "title": "Edison’s Diesel-Electric Pickup Can Tow a Semi and Keep Up With a Subaru WRX",
-     "source": "MotorBiscuit",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNd3BRbkdpZkFhZmFDN2hoWndCSzlTczM5bkVfNUwyMlFONHBJWGJScFVndnJIZEpQbEpzamNWSnZoaHhyTExDdF9mTC1LYkh2ZVkyVEpaRllLMmh0OHBkdTJGaEZ5dHRWcWdaWm9TaG5YXzhRbVlvX3J2QTJJMFVJZm9xLTIwdGtWTnVUNl9PZ2Z2M2R5UEZVZzFvX2RKcF9FZUJnMGxQTU4?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "subaru",
-      "ev",
-      "trucks"
      ]
     }
    ]
@@ -1878,48 +1914,59 @@ window.DG_NEWS = {
    "items": [
     {
      "tag": "AUTO",
-     "cat": "FORD",
-     "title": "2026 Ford Mustang Dark Horse SC Tested: Shelby Spirit at a Porsche Price",
-     "source": "Edmunds",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMy1MTlNmcEhieTQ4SnhHRm9ocURtR1JQTGRRYVJBRVRhbEdrbGFtUC1BUWw5cERiQmF0cnNQaVJjaXdqdEptRlJRY0FhVHMxRUlQUGRfZ2FVdjFqdXF3ZFlsdlBfWEwyWUxFcDZIWkJWd1hCZDZqNHF0M1FzSW9fdHRFc3BIU0tjdEdWN05MNmZrczRVV01tUE9CZ2RGVjQ?oc=5",
+     "cat": "VW GROUP",
+     "title": "Porsche Unveils One-Off 911 GT3 Tribute To Its Iconic GT1 Race Car",
+     "source": "Motor1",
+     "url": "https://www.motor1.com/news/816889/porsche-911-gt3-tribute-gt1/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.1,
-     "why": "Ford news · Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 8.1,
+     "why": "3 outlets covering it · New model",
      "b": [
-      "ford",
-      "vw",
-      "industry"
+      "vw"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "VW GROUP",
-     "title": "Why This Guards Red 2004 Porsche Carrera GT Could Fetch $6.5 Million",
-     "source": "Carscoops",
-     "url": "https://www.carscoops.com/2323314/2004-porsche-carrera-gt-auction-guards-red/",
+     "title": "Porsche 911 GT3 Tribute to 911 GT1 celebrates a racing icon",
+     "source": "Porsche Newsroom",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUmhzbXJhV2Z6ZURKbFBzX004UWlZdURGZV8xeVBsUXljVGl6cHBlYml5UFFneHVhblVnaEtWUHhQdHI1b2YyN2c0TEdyeWRoX3RhRk9LWWstSGJRQnZ2amE4WUFuVVhnbS1QTGREZ3M3emhjQWl4WjRpbHJycXVSdkdONmY2Y0I3VG4weFNfNHlsWXdOOGN1dDVzNU1LTC1ab1NmUHd5WQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.9,
-     "why": "Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
      "b": [
-      "vw",
-      "industry"
+      "vw"
      ]
     },
     {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Skoda considers WRC Rally1 update kit for 2027",
-     "source": "Autosport",
-     "url": "https://www.autosport.com/wrc/news/skoda-considers-wrc-rally1-update-kit-for-2027/10877650/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+     "tag": "AUTO",
+     "cat": "VW GROUP",
+     "title": "Porsche 911 GT3 one-off revives the GT1 that won Zhuhai in 1996",
+     "source": "AutoNext.co",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tQ3h3NjlWbV9iejc1bUZrQzUwcXRWbndNS1V0b1p1S1AwMFpnbXZZRzBITTgtcXpTMGhoVjVlWXNhaFdfaURCRFBLLWRaY19TYVFGZHFIOUlTMElOWXZqWGlOLXVhSldILTdGT1B4N20?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.8,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
      "b": [
       "vw",
-      "racing"
+      "classics"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "VW GROUP",
+     "title": "Audi turns the car into a mobile office with Teams-ready AI agent",
+     "source": "Automotive News",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSThWdFpDbW1PWndFVThEeExhem1MSFNteVNnZmRDcTlPZ01XMFBFNWhGd0RDQnlJTXVyclU1VG81elIySGlEbk5NN1Z4b0ZWVFJRYTlUS2J5WUhoVUh3bGZtSURGNG55VWdmWkt3VGtOWFVWMV9qX0Vhd0xSTXhzWjQyaS1vQ25oSGlRX3hHZ1o?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.2,
+     "why": "Fresh",
+     "b": [
+      "vw"
      ]
     },
     {
@@ -1929,7 +1976,7 @@ window.DG_NEWS = {
      "source": "Electrek",
      "url": "https://electrek.co/2026/11/25/kia-lucid-vw-slash-ev-prices-by-10000-black-friday/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.8,
      "why": "Money / prices",
      "b": [
@@ -1947,7 +1994,7 @@ window.DG_NEWS = {
      "source": "Car and Driver",
      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNGx0WHV6TXZBVTRVNTRyYkZIVGxGUEd0bHh1VWxTLWtBVmlld1ZEWlhXX0g4S0syRTJhTDBhemJnREVtcTFucXotUngxZ0RsRXdhSlg5ajJJR2VHa2FhXzE0RjVvRlNUTHBQY1B4REZ5SXZQRzFUYnozcjhYcVVjWU1XcnZfbHhTWXVQa0REb3hLbk9MWW12ZU9uVWE0VXJreFllclpyZHA4NVpIMWFqS0lzWmdoWjl4WE9wRGx2S2MzNXUzeFVicXN5N0ZlbS03eDJ4ZFFpUTBUSDQ2?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.7,
      "why": "Fresh",
      "b": [
@@ -1958,31 +2005,74 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "STELLANTIS",
-     "title": "This Jeep Wrangler With a Lamborghini Body Kit Is Like a Real-Life Hot Wheels Car",
+     "cat": "VW GROUP",
+     "title": "Someone Chucked a Porsche Panamera Off a Cliff and Disappeared",
      "source": "The Drive",
-     "url": "https://www.thedrive.com/news/this-jeep-wrangler-with-a-lamborghini-body-kit-is-like-a-real-life-hot-wheels-car",
+     "url": "https://www.thedrive.com/news/someone-chucked-a-porsche-panamera-off-a-cliff-and-disappeared",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
-      "stellantis",
       "vw"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "VW GROUP",
-     "title": "Bentley Torcal Reveals Stunning Illuminated Grille With 76 Crystal Diamonds",
-     "source": "Motor1",
-     "url": "https://www.motor1.com/news/816846/bentley-torcal-led-grille-headlights/",
+     "title": "2026 Audi RS6 Avant Performance Review: The Car I’m Thankful for",
+     "source": "The Drive",
+     "url": "https://www.thedrive.com/car-reviews/2026-audi-rs6-avant-performance-review-the-car-im-thankful-for",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.5,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.6,
      "why": "Fresh",
      "b": [
       "vw"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "VW GROUP",
+     "title": "Tested: 2027 Audi SQ7 Is the Punchier 3-Row SUV",
+     "source": "Road & Track",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBhOWhBYkxHa3NJajJ6Y21XU3pUS05VMVVzMGhFd05OMzk4RG5fcmFreUdsV19oaHRzWFM5RWNiSnU1a2VvTG56czQxcEJETmtxcDdqRHdWZlNSMU1sV0xHZHd0djVweE9GMHhfX0VqQnFscWRWbG1z?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.6,
+     "why": "Fresh",
+     "b": [
+      "vw"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "VW GROUP",
+     "title": "Audi Is Putting A Gas Engine In Its Chinese AUDI Electric SUV",
+     "source": "Motor1",
+     "url": "https://www.motor1.com/news/816887/audi-e7x-range-extending-ev/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Fresh",
+     "b": [
+      "vw",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "VW GROUP",
+     "title": "Audi A7 resembling Chery Arrizo 9 revealed as the brand’s flagship sedan",
+     "source": "CarNewsChina.com",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWWhFeW80SURienVPOVNZUDF3VWJTRGw3alh1a2FaNzhLdGZFbnFNX0hfOU5JYUt0dkVPSFJNS0dHRDlkRDNGOTdVdDgyeDNLYkhXbVhxSzVRZmx0UGZnN0cwVEtZd0tsWWRLSU94U0wwbVBVU3hyRHJIUlJqRm5Ob1lqSkZTemUzY3pQalR6UEVUT29jdzRpMXVtdm1BNDA3LWJrRHJPSy1FdlJO?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.4,
+     "why": "New model",
+     "b": [
+      "vw",
+      "china"
      ]
     },
     {
@@ -1992,70 +2082,11 @@ window.DG_NEWS = {
      "source": "Jalopnik",
      "url": "https://www.jalopnik.com/2328700/audi-bringing-back-rs6-sedan-spy-photos-nurburgring/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
       "vw"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "VW GROUP",
-     "title": "Audi Wants To Make Buttons That Deploy From Behind The Touch Screen",
-     "source": "InsideEVs",
-     "url": "https://insideevs.com/news/816806/audi-patent-touchscreen-physical-buttons/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.3,
-     "why": "Fresh",
-     "b": [
-      "vw"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "VW GROUP",
-     "title": "Electric Porsche Boxster Prototype Reviews Are Out. Here's What Critics Think",
-     "source": "InsideEVs",
-     "url": "https://insideevs.com/news/816654/electric-porsche-boxster-review-roundup/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.3,
-     "why": "Fresh",
-     "b": [
-      "vw",
-      "ev"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "VW GROUP",
-     "title": "VW Will Pay German Drivers To Plug In Their EVs. Even If The Grid Never Uses Their Power",
-     "source": "InsideEVs",
-     "url": "https://insideevs.com/news/816775/vw-elli-plugged-in-paid/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.3,
-     "why": "Fresh",
-     "b": [
-      "vw",
-      "ev"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "VW GROUP",
-     "title": "I Drove The 2026 Porsche Taycan 4. It Proves EVs Don't Need 1,000 Horsepower To Be A Blast",
-     "source": "InsideEVs",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5hWFNHem9MZ1NIUmM0MWx6elRKZzlCSTV2U0tScGYtYUpDc0ZuaVBaaHhubjFfUUFPZG14R2F0cHZxb1NDNHJoeWlmaGlyYXNvUEVQNzF4ZVNhUHdqUER5Ry1LaGdVZUloeGNxQTBlRHNPdTNP?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.3,
-     "why": "Fresh",
-     "b": [
-      "vw",
-      "ev"
      ]
     }
    ]
@@ -2067,16 +2098,31 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "BMW·MERCEDES",
-     "title": "Electric BMW M3 Reportedly Targets CES 2027 Debut With 838 HP",
-     "source": "Motor1",
-     "url": "https://www.motor1.com/news/816843/electric-bmw-m3-ces-debut/",
+     "title": "BMW software update adds 24 functions to 16 million cars",
+     "source": "Automotive World",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVzhmX0E0czRRTXkzc2J5d2VNWDk3d0NuMFdkN1E3UnZvSXdKR0l5N3Q2NkZYRXc3Ym5yanlfazZnNHVxWVgzWFJHZ3dPQnpNTWJXQUpEcGFhalAxYzNWTGdIRkVhdnI2UWJTcFFvOVozRXpuV1dZYXc4NVpzd2VJLWdmTUlRU3AwREl3X2FYRndSZzZOTm9GNkRn?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.9,
-     "why": "New model",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
      "b": [
       "bmw",
-      "ev"
+      "industry"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "BMW·MERCEDES",
+     "title": "BMW to Add up to 24 Features to 16 Million Cars in 88 Countries via December Software Update",
+     "source": "ACKO Drive",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMlhCY0xVTlhJR3BFWWNTc3RLYTdRLUNjalRqY0luU2xYeEFjbllvb1JEcGRIN1NhVks1WTRHNndkQ3RtNUs5b3Z1UDNKSnJHNENpUEpOdHRiaEQ2T1M4X1lkNmQ3Q01mN1NLbmJDY0R5X2J5cDdRUEhQa1NHY1hwTmpLVktuQkI0S1hBWWpNbXhKNld1ZGdNVmVZUE9ScEM5b2I3Z0daT2FxVkdWdzNqM21zWFc?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
+     "b": [
+      "bmw",
+      "industry"
      ]
     },
     {
@@ -2086,7 +2132,7 @@ window.DG_NEWS = {
      "source": "Car and Driver",
      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNGx0WHV6TXZBVTRVNTRyYkZIVGxGUEd0bHh1VWxTLWtBVmlld1ZEWlhXX0g4S0syRTJhTDBhemJnREVtcTFucXotUngxZ0RsRXdhSlg5ajJJR2VHa2FhXzE0RjVvRlNUTHBQY1B4REZ5SXZQRzFUYnozcjhYcVVjWU1XcnZfbHhTWXVQa0REb3hLbk9MWW12ZU9uVWE0VXJreFllclpyZHA4NVpIMWFqS0lzWmdoWjl4WE9wRGx2S2MzNXUzeFVicXN5N0ZlbS03eDJ4ZFFpUTBUSDQ2?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.7,
      "why": "Fresh",
      "b": [
@@ -2102,9 +2148,24 @@ window.DG_NEWS = {
      "source": "The Drive",
      "url": "https://www.thedrive.com/news/mercedes-mystery-electric-chassis-spy-shots",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
+     "b": [
+      "bmw",
+      "industry"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "BMW·MERCEDES",
+     "title": "This 'powerful' Dyson mini vacuum makes cleaning your car, boat or cottage a breeze — it's usually $330, but Amazon just slashed the price to $200 for Black Fri",
+     "source": "Yahoo Lifestyle Canada",
+     "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQQnZpa3dfUEczZDdkMDNvdW9mVmwzMGhnV2Z1YlYzYkJ0Zk93dnJsc21Ra1pQT2pGQ0VQMF95clZTNE9wTEd2bFBKQVNubzdma0h5RVFaRUZScEtlUVV3ajMzZV9tYzFnVElNNlVodHJjQzNUeGk3clJhcFRQS2RaemFiMEFPTkprQ1otekRtYmRyRzZXNDdDakhqTTRDZkZ1ZEJkVUxkNXBSWVRaaTVYdWdkMkdyS1d2ek9BU2NFV1NtQ1EzSV9lc0o1OUtvZHZtLXY1Y1RGQlQ5ZjJ4NGdjamVRVmY5VjBPT3RzN3BwcWVhY240UHU3RWpTQlFvUGJ2TkdwVTZuMTFQcXlENVJpQlplemZyb3J3bGJRTGxXVklQZTA?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Money / prices",
      "b": [
       "bmw",
       "industry"
@@ -2117,7 +2178,7 @@ window.DG_NEWS = {
      "source": "Carscoops",
      "url": "https://www.carscoops.com/2329011/bmw-e30-m3-single-owner-auction/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.4,
      "why": "Fresh",
      "b": [
@@ -2131,7 +2192,7 @@ window.DG_NEWS = {
      "source": "InsideEVs",
      "url": "https://insideevs.com/news/816798/suzuki-ignis-ev-unveiled-europe/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
@@ -2146,7 +2207,7 @@ window.DG_NEWS = {
      "source": "InsideEVs",
      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbm83bmx2S1dzaTlkWFN2QXBJT2dKLUtWMHVqeHFOSHo2dkx2TjY3cE9rQ3NDSThaVW5ocEFtaWZrREJuMzdRMTAyRmxxRDlyUFVNOVpCWUJpcW56dmNHUzVCYjJXc1NGT3l0dkNPa0E0OGdBUV9RelFRYVpsdVlhaVM1MDBpam5SaDRDWV9tT1dEcVI0UjBv?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
@@ -2156,11 +2217,11 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "BMW·MERCEDES",
-     "title": "I Drove The BMW M4 CS On The Track—And Came Away Conflicted",
-     "source": "Motor1.com",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE15NXFiWEFzQnpTeXBkVWM3Y1QzMkxpLVhwbzNRZGFjV3Z1X0FTZWU5OUtSYjZSTW9RMVVzbWJVZFBqVkVrd3B1RG8yYXVyQ2tvYmdud3UzSWR4WTZMNk5peWxscWlrcm4tcFg4bDNB?oc=5",
+     "title": "BMW Has Sold Nearly 100,000 More Cars Than Mercedes In Europe So Far This Year",
+     "source": "bmwblog",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbTdFM3R6OWdqRmthd3VLYkgwaXBQY0hDVGpRYkZkTjU0ZHc1eE5TeENVZ0ExQTFtamFfXzFVRlFsbjM4Vk9XenAxUmZxeEVHZXhGMEdRSkpzbThHNlpDLW1HajFlNlY5N3lDR0RMd0U5YkEyWGk0eURKTzBOYkMxdUpBZkZvM2t0blJIa003M05oSGM0?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -2170,26 +2231,26 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "BMW·MERCEDES",
-     "title": "BMW software update adds 24 functions to 16 million cars",
-     "source": "Automotive World",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVzhmX0E0czRRTXkzc2J5d2VNWDk3d0NuMFdkN1E3UnZvSXdKR0l5N3Q2NkZYRXc3Ym5yanlfazZnNHVxWVgzWFJHZ3dPQnpNTWJXQUpEcGFhalAxYzNWTGdIRkVhdnI2UWJTcFFvOVozRXpuV1dZYXc4NVpzd2VJLWdmTUlRU3AwREl3X2FYRndSZzZOTm9GNkRn?oc=5",
+     "title": "Mercedes-Benz GLA test drive: compact SUV with 800-volt architecture and two-tonne towing capacity",
+     "source": "electrive.com",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZHQ4N0x6ODJkanNpNzR0Tmt4ODVlcG9xZ3g0M1NGSEdYS0hQeF95dkRHYTQyQ29RYXlXZmR2Q294cTZFOXIyMGFZc1hJb09zUmVUWTBIMEozLWNfYmU0c25lX3UzSkZqZTNLbVh3cXZqM3k4LUNVOHFXdkVsQVc2YlpQSFdtTEJad2RSR2xjS3ctdEdtYWVVRXA5WFMzTktEVHlxUHlKWDc2M29oSm1yQ0JkbnlDb1Y2TFJPeThTLXpoTl9jZGp4RnFabjZQX1NP?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
       "bmw",
-      "industry"
+      "trucks"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "Car Thefts In Germany Fell 14 Percent In 2025, But Four BMWs Still Made The Top 50 Most Stolen Cars",
-     "source": "bmwblog",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAwQVRFb2EtQTYzeHJocFlxeGVOOE9NQUlPWTBsTXBlb09oQkRicUtFeDg5aXNrSjNKTW56SHZfN01kYlZldzJyZ2FPNmhkZFAxbzJ5cFVSWE8xLTYwODFsVE8wSEFkMktCY0pwR3RmT0pBOThpU19HSw?oc=5",
+     "cat": "BMW·MERCEDES",
+     "title": "The M2 CS Will Go Down As One Of BMW's Greatest M Cars: Driven",
+     "source": "Motor1.com",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5JZmJIbjhtWkVpLXVmNEV3ODBvbTNyTTYxSExGdEdDblZUc2VSMl9pVm50X2VEYWIyX2lXYmlEb1Z2OTVkdkhPcG1MaHhpOEgyclZxM3YtZjNWQVZoRG4zVHFGYVRkMlh3XzBIWg?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -2203,40 +2264,11 @@ window.DG_NEWS = {
      "source": "U.S. News & World Report",
      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtNUxCeE1yUnRaakdBU2ZaMUEzY0R6ZXVRbzJLUWFodWtvcTRUMzhOaU5LTEFVZ2JyWlRFSWlONjRqT2RnWGxISG5nQnhVdU5OZEt6RVV1a3BIbkhuRlF4MmVMNm5VZFVqaDhFMlE2UzE2ZTBNaGc?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
       "bmw"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "BMW·MERCEDES",
-     "title": "BMW's Red-Light Stop-And-Go Hits U.S. Cars in December",
-     "source": "thetruthaboutcars.com",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOekNmb0RDTk9IQ2RtYlB1M3hCT3N4aWRsSzQ4LWNMM3ppZjZGODhsWFk2aWk2ZzJieURhNnBwYllEZEN3ajJVeldUa2tIY3FiSzIyalhqZHRUd0JrREhaUVBITUlOTmV3RUU3ZGdfX1pYY2t2cVpPdG8yajUxWUs2THN0ZGlzNml3VjZ5RldIQ2NYa3FXNVBudGxrekJ0Z01ET1FBWk8xeVJWRHN4a2FmNg?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "bmw"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "BMW·MERCEDES",
-     "title": "Mercedes-Benz Offers a C 111 for Sale for the First Time Through RM Sotheby's | THE SHOP",
-     "source": "THE SHOP",
-     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSFRmZFplWlR2b292OFZpTnlPNnBFUTlFNVB1YXhXeEhSOVNmcFgwTUNPYzVTOGpUZ1hPRTZzN0QxdEtQZ1YxaTlSVmEzQXI2Y18zRGJzRWtjUUNIZm80eEtJWklqSS1DemxHTWpjSlctQ2lvNldIT081eGl0SkJlYWR6UF9nZ9IBjgFBVV95cUxPMlNFeGVLX1h5SmVUOV9mM3lEVlF5b093SDZPT2FELVExVUdRMmxjYTNQd2NPNVVTeFNOV3Rmc2pKNG9hQXVTR0htUDJHYmY5RHB1WVVUVVRwYWgzQXB4eWRJQWpOVGU4cFdtX2FuT2xpT1RadWZtN3VlcTRLUEZSZWxXQWdoYkxCV1VLOWNn?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "bmw",
-      "classics"
      ]
     }
    ]
@@ -2252,7 +2284,7 @@ window.DG_NEWS = {
      "source": "Motor1",
      "url": "https://www.motor1.com/news/816873/tesla-cybertruck-used-truck-ranking/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 6.1,
      "why": "2 outlets covering it",
      "b": [
@@ -2263,26 +2295,11 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "TESLA",
-     "title": "Waymo says recall prompted by 11 new incidents of robotaxis entering closed freeway lanes",
-     "source": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTWNEMGNteHFqMnNPa2tBYUVlNE13VHhobUpPYUZiUnp3RjlMLWt4OU5rVHVCZ3JwTnJjQmRMUE02a2FuR241cmQycW1nWjh3YkgxR012OGRNcWdGSlFPSTN5RkxOTndMSGRtMTJtNHJNQnNmWlRkTi0tYkRFOVN5Sk51MU5DMlpfbDhGa0Y3NjMwVzZ4NXU0bGNJR1Y1MU5nYjZF0gGoAUFVX3lxTE4tQjBTMUZILTBqRGg3M0tOeTlmSm1LbDQzSE5yUElwbU0zaXJPZG1veHZzWTRjcjlBVjFGNDRtMmp2YnU0NU1BaXpTS09ISG1GaDBScnZaaUM1RzhsZmcyT21HdzJBUjFDc3ZDQW5XbXlRNDNzZUxmd2NpREI5UjlMRThRTHZwQ2czQzlUb2FiU2tCNFQyOVBMbGpnSlNFajR4Y1U1S1FBSQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.0,
-     "why": "Safety / recall",
-     "b": [
-      "tesla",
-      "recalls"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "TESLA",
      "title": "The canceled Tesla Cybertruck is the fastest-selling used truck in America",
      "source": "TechCrunch",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMWw4X0ZydmpuNTUyMGJPVGMzQllSd3ByUG1US3RLYUR4R0lMdVRpNHpfRzlmUjhodjl3WG1lZnI0SUh0Uy1PSV9wNUJveWk5NEhOVml4bXpWMUZxbExONGdmRE85bTQtaFhUM2pobGxXSTRNemtUOTZjVHppXzctaFZlR29wS01xTkRCRFl6cTNCaHZGbFdkM0ZIcGlRWlBBZWFMQUFwRm91cFk2dFE?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.6,
      "why": "2 outlets covering it",
      "b": [
@@ -2297,10 +2314,25 @@ window.DG_NEWS = {
      "source": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPY2Y4eUpOVTVYVmhONGo0aGJyUF8yYXlZb3hCR3E4UGxUMk4xT08yTjlRSThYaEROejVsaVRhdjlFOEZpNmNYbVhUa1puUGxRLVIyT2NkejFuWjF5emVLeVY3V0EtQV9lVTRXZ3MzOEE4WndGdDBfcXhmcGwtRlI2bEUzR2pPNnBkUnJMTjNwMXFsYTRJNGRPWXU1LVJLSjc5ZDR6M3RlNFJwZVBzaGc0RnVha2FCREVZMTdtMEpMRQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.2,
      "why": "Fresh",
      "b": [
+      "tesla"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "A Used Cybertruck Is Selling A Month Faster Than A Ford F-150",
+     "source": "InsideEVs",
+     "url": "https://insideevs.com/news/816892/tesla-fastest-selling-used-october/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.9,
+     "why": "Ford news",
+     "b": [
+      "ford",
       "tesla"
      ]
     },
@@ -2311,7 +2343,7 @@ window.DG_NEWS = {
      "source": "Jalopnik",
      "url": "https://www.jalopnik.com/2326596/tesla-safety-lawsuits-never-reach-court/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.8,
      "why": "Money / prices",
      "b": [
@@ -2322,26 +2354,41 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "TESLA",
-     "title": "Tesla Cybertruck Gets $5,000 More Expensive After the Latest Price Hike, and It Makes No Sense",
-     "source": "autoevolution",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZ1p1aXEzaHVFQ05zWVI0VEloaE5mUHM0bmV0U1REaElIdjB1aHF1VWp6b2xYUnhKMlBJLVZJMnM0UVlGZ3dwY05oYmt3NXE3c2N6Q3dLNmxFSHdxQkJXQUJ2VG9KVkdLeGtSQUg1bm0xZ1ZXS01Zand4cWRHQVczUUZsT2Z2SkN1djBKVnQtX2JqOTUzc0lpSm8yVXpmV0V2TFBOdWpOQlUweFZoMjJzM21PU1JnUDF4cVBTQXlxNUJFeF9hWFRnNVVnTG1PbTNheEdyNw?oc=5",
+     "title": "A Tesla Cybertruck Owner Says He’s Getting Offers to Sell His 3-Year-Old Cybertruck for More Than It Cost Brand-New. One Owner Says, “A Guy Offered Me $110,000 ",
+     "source": "Torque News",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObXlGQ2xTX1pnVGZrazFxVUY3MU55aGNxME5GY1RMNlVLWmpJUHgtVzZPeVZVZTc2RG51Tmkwdm9vU21oUnlTV3BtYXRZMzdaZ05wVGViQzVxVzR0WHdpTFJvM2tuR29UVE8tRnFyYnBTSWVjT1RrbkZwejFSUGVKUDBrMmFVLTVGbHAxZm55Y1JBYmswZlB3VVNQc0h3QUIxS2dwNnlPMTZGRDdJNWxnQ1J0d0FQWkpjcnI1QXh6ajdkQQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.5,
      "why": "Money / prices",
      "b": [
+      "tesla"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "STELLANTIS",
+     "title": "Tesla deploys 29 mobile Supercharger stalls for Thanksgiving travel rush",
+     "source": "Electrek",
+     "url": "https://electrek.co/2026/11/26/tesla-deploys-mobile-superchargers-thanksgiving-travel/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.3,
+     "why": "Fresh",
+     "b": [
+      "stellantis",
       "tesla",
-      "industry"
+      "ev"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "TESLA",
-     "title": "Tesla quietly sets up a company at German machine maker EMAG’s HQ",
+     "title": "Denver man traps Waymo robotaxis with cones, eggs them at least 30 times",
      "source": "Electrek",
-     "url": "https://electrek.co/2026/11/25/tesla-emag-germany-machining-company-optimus/",
+     "url": "https://electrek.co/2026/11/26/denver-man-cones-eggs-waymo-robotaxis/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
@@ -2355,7 +2402,7 @@ window.DG_NEWS = {
      "source": "InsideEVs",
      "url": "https://insideevs.com/news/816753/ev-winter-range-loss-2026-ranking/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
@@ -2366,11 +2413,26 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "TESLA",
-     "title": "Tesla’s FSD Version 15 Is an Improvement. How That Helps the Stock.",
-     "source": "Barron's",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UU1UtSWRicDJWa2RlR0RIQkxoa2xJUElVaTdaYTRsWFgyeVFPczVZTXhZdzVvdVp6X0JEa0xJRFRnT29vUWpEa21weElaaHVsRTJ5S3c1V2FQLUZseW5NWUpHeG5mVzJQZ1FyUFFiS2g?oc=5",
+     "title": "Tesla’s U.S. Sales Tanked In Q1. It Still Gained Market Share",
+     "source": "InsideEVs",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qaUZ1ZVpCRTAxRkZCZ3BiNG1pRFN3UFAwOGhPZEh1N1M3d1R2U21FRlpfemlHazFsMzJUQUlIODMwblhWT3h6RDRNbFlabkc5S25iTGxReGhxRXdmVjlBNUE3b1QxenJwZFpmUg?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.3,
+     "why": "Fresh",
+     "b": [
+      "tesla",
+      "industry"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TESLA",
+     "title": "EU delays Tesla FSD vote again, now 15 December",
+     "source": "Automotive World",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVEFLekxudHAtMERLSXRvM1JycTNBd0U2anNqQ2pjY1ZKMjJ3aEY1TXhYbi1QT2Z6c0VzWmNwQ0dFZG5ZRVdhcV80cV95NFRVUld1SlgwVEJWTDlURjJYTlRuemRRTjZfRUxNUUNDejA2elAxdGNiRjh0NkN1QWR4QUlGYUt5WDRXTndzZg?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -2380,39 +2442,11 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "TESLA",
-     "title": "Tesla removed the most annoying part of Full Self-Driving",
-     "source": "Teslarati",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRlhyX2dkbGhzNFNqRzJnVW1NbEViRDBka2lpa0NlMk0xV1MteUdQeURtSFp2bU5ZWGNlSlZBUV9PVXl4cmRKV3JwcE1nUW1XODFTZk1iUzdLZkdndXZlanNOblBGYzdhVzA5dTNiYUJsSGR4U2RpaVhobnJZLU5JcVFFRQ?oc=5",
+     "title": "Elon Musk once again promises Tesla’s new autonomous driving is better than humans",
+     "source": "Fast Company Middle East",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeWYwQUVwbFZoYWhKdVZMb0tXc1l3YW5QN19GejRZVTJSZXBteW41N3JaRkpqbUl3a3lIVm1XUjAtS1pfU0JXUHpZNmdsWkV6VE5Gb0J6UlNKR0pHdWpXYmN1MFc0UnBtMjlnWXhPSEpYSkRESzZTejJhM3ZXQVBTWk1TS1I5QU1LNXlCN1hES0YwcHZxdlNmM3RVZlBCWG5sY1NldmhnZlNNZ1JyYWQ0NFBvZDdVQW1ZM21V?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "tesla"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "TESLA",
-     "title": "Car Enthusiasts Poke Fun at Tesla Cybertruck Driver After They Run a Red Light and Crash",
-     "source": "Yahoo Autos",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRl9sRlBlTzJrSGRsT0NlWWdEM2tvTkllbjM3cDVLMk5KY29Oa0ZYOWh0WFRaTjRsUmpHWkRJNHJ4UWFuUE5SLW5DUkV1Nkp5TUowX2ZDemFDMEdpRGpnZ3JLTUJSVE93Ymh1amlyME5NcmxSZm0tTTVIeTdVaGt3ei0tVXBBeXFYbnZKWk9VeGc1b2JpUGRIdUVUcC1NUQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "tesla"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "TESLA",
-     "title": "Tesla's Robotaxi fleet just pulled AHEAD of Waymo in Texas. And it's adding Cybercabs by the HUNDREDS. The numbers? 1,507 vehicles registered for Tesla vs. 1,39",
-     "source": "X",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsZGhad2N2Z3NmSi1Mcnloa1labzhTX29iWjJId2NGNE1PTG1yQ2x6N2VXb1dIZG5fRWx1NXRmMzhjR1JUVUw5dmJjT2Y5c2VCTXRqRXJQOW1VUloybFhyb2hJUzNreTRPd1EtSQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -2432,7 +2466,7 @@ window.DG_NEWS = {
      "source": "TradingView",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeTR4NWdkVFVsdW40ZTV4Q05MLXdwUEw2Zml2VGVwR0JhTldacEZNdTBOckwzdTBfcm1JNWNabFVMYVRBb2tYTmtFMVJmSXZMQm5kN0IxbEZXdjNYVlJyUnB4aERkRmRITTZJU203dDJLZ3llblp5ZEljQzFWTjY4YnJnVXg2OUJLcWdsdlZJT3BnSE5kSnI4V1JtcGtKdlZiMzVnV3l5ZEhOSXJhWDR2bklsVEQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Safety / recall",
      "b": [
@@ -2447,7 +2481,7 @@ window.DG_NEWS = {
      "source": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNODhLdnpPa3k1TktmRU5Zbi04Q05KbUU4U1l0ZjEtbWhkSGJ0SndKT3QtOHJLNG1uN1BvV2FJbEFNUlhObktuR3hKN1BZZFJ4Q2N1LVlSX0pnVGQyQ0h5bkpHcnRGTDN5T3lSaUVrNWIwcmh0eGRWell2bENpY2ZJZFhfMFctaEREVmpRaE9OTl9WWjJyS0hic1V2TFZXckdfWXdmR29ZMWp0akY2MndOLU4zS3ZPaW10dTNwMFVXQnJabnlydEpFVVhsSFNlZw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.2,
      "why": "Fresh",
      "b": [
@@ -2462,7 +2496,7 @@ window.DG_NEWS = {
      "source": "Electrek",
      "url": "https://electrek.co/2026/11/25/kia-lucid-vw-slash-ev-prices-by-10000-black-friday/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.8,
      "why": "Money / prices",
      "b": [
@@ -2476,11 +2510,11 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "EV STARTUPS",
-     "title": "Polestar Q3 loss widens on price pressure and restructuring",
-     "source": "Just Auto",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5sQmhybUdDdkhZd2V4RDZkUHVxYzJCNmZ5c1ZEM3JTN1hYVVk1LUd2RmlqNERzcFRtendqWWFYdnZoQXdzY1B5ZWVkbWg0T2dOUjNxRno2WXRjUFpQWjgtSXByb3BaUQ?oc=5",
+     "title": "Polestar's Gorgeous Convertible Is Nearly Ready—But There's A Problem: Tariffs",
+     "source": "Motor1.com",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9HZTViUHZyU2xGM1NIMmNHa2phS2xfbXpBeDhJcU5JX2VTQlIxUzlNcGNGQTU1TWczR0RtWFFKcG1vOVdMTWdjeWNjZWdFX0w1YlBaMXR1dlJXSjBTaHNXdS1SNld0NzhjcTlvZkVJeXRaMVpVTV95X0FB?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.5,
      "why": "Money / prices",
      "b": [
@@ -2491,16 +2525,31 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "EV STARTUPS",
-     "title": "VinFast Auto Ltd. (VFS) stock price, news, quote and history",
-     "source": "Yahoo Finance UK",
-     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtMFVQUmh6eVB0RUJTc004QjNjNV9JNXRwcE15ck5ucVVDNHp0a1FNeWt6clM3OTFldDdSU3I1TXNYSlhId3ZLYmFjUWNzSFpN?oc=5",
+     "title": "Rivian Is Down 41% This Year. Can RIVN Stock Get Back to $20 in 2027?",
+     "source": "24/7 Wall St.",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOd0dnZEhiLUZEQWRDbkNOTEhUSVFpT3N5TFlMak1LWm9tUEJjRGpOU095NXNrSXdoV00tX0ZQeDB4ekR2NDQwcEFBWThIZ1ZoLU9wOGhYUXppT0pnX29IVnNCaFFtUWJDd3BQWXg3MXphbGlCc09Vc3IxRUZKVTB2ZGNiazk2YlB2eE45UG1obEpoUUNoTVd5QWszWVRSbmlRVzh4MXJzeEd3Q0hHUFE?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Money / prices",
+     "b": [
+      "evnew"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "EV STARTUPS",
+     "title": "Slate And REO Are In A Super Cheap Pickup Battle: $24,950 EV Blank Canvas Vs. $21,500 Gas Ladder-Frame",
+     "source": "CarBuzz",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UZHRIRjJOMXNTbTBieVExVnAwRVZMQ2JmWllsUzRwR2dLbl9KR0RfclVNdTRhYUJYRFRsYVVmVVFqOXg1NG9xQ1UyZ2pydk5zYXhjTFA5bFpIZ1VUTlRTWDE1VndYaWVxOXBwYQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.5,
      "why": "Money / prices",
      "b": [
       "evnew",
-      "industry"
+      "ev",
+      "trucks"
      ]
     },
     {
@@ -2510,7 +2559,7 @@ window.DG_NEWS = {
      "source": "InsideEVs",
      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQRDFhLUlnMlQwR1R5NGl1ZWd0NEptWUI3Q21MMS1GT1ZIQ1RIWjN1Wkh2ZTQtZ2x0dU1VZUdxQ1BxOS0wUnlTdjFrdC1US2N4YS05TDRkSGIwajFIRFVzOGlJZFpENmdUZDRtMGdJWEVyUmQ5?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
@@ -2520,12 +2569,12 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "EV STARTUPS",
-     "title": "Rivian Is Already Planning More Versions Of The R2",
-     "source": "Motor1.com",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE83eWlmbkVMTFpMajFkYm5pb3FDeXBGWW1JOFEwaVFRTFo1RFpQazZvdW92QUJvcFhuNXQ5cTdvQ3lUTXpwSDJlNlRyVFBEaXhRazIxZDZ6a2hjUjZrb0tEdWdscmxsR3E3aEJjeVhn?oc=5",
+     "title": "Rivian’s ‘Boring’ Commercial Van Is Turning Into A Secret Weapon",
+     "source": "InsideEVs",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbHlUQzg4cVlsQ2VrSmZNU0p2VE1veUxyajNFOTBDR0tYSjdqY2ZuMWJKNHFvTWpMb1lmVnlDQ2tKY3RoMWFLV1Q3LUpZbUR3ZzFVejR2Zl9UclVPMExkRlZrVjZEckZpTEdha3pQN3lNUGVLZHlacWcxalFoalZzYlFmU2tuX3dYWFlsTHFLaUxaQQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.3,
      "why": "Fresh",
      "b": [
       "evnew"
@@ -2533,60 +2582,61 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "EV STARTUPS",
-     "title": "Why Lucid Stock Is Moving in Reverse Today",
-     "source": "The Motley Fool",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYmVPWG43d0pibWVjQ3ZLeHcta1JSR0hieE1WY0xwbmJVc2RKdkJYUy1ERkFodUk1M1A0OUZqb0VqNGN1eWk4bUVQTnBYM3M5UkoyUGpobmFqY29Dak1hWWxuemt3REhCZmR0akY2bHlsR2MwcVlBRVVZMUVCd2p6dlZ3ZlJyZXhZc2pSdVlB?oc=5",
+     "cat": "STELLANTIS",
+     "title": "Rivian R2 vs. Jeep Recon: Which Electric Adventure SUV Wins?",
+     "source": "GreenCars",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUF9WcXNmSXdEQk1VQk5oYmNySVhybE1NcTdCSzdoWUU2QWVsa3psRGE3TWhiTFNxVC05QlJHclliV2VNVERlOEhXTFNfcURfMmJVYW9DN2xZWUJDb3hlNUpxNmYyNEVONjFaNXBCR19TWUlmVkRYcmJjaEQ3SlhHd2lzVnd1X1VZRVdWS3BMV3VBTzZRbGdrSUpQVHVhLTR0?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
-      "evnew"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "EV STARTUPS",
-     "title": "Polestar's Market Position Is Deteriorating (NASDAQ:PSNY)",
-     "source": "Seeking Alpha",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWnVDN1RsaF9vZFZsMlZTS0wxbGFnNFczWm15MWZSZ1NHZzNkZERlUWdMeHB3TGJVXzRVekx1bThkeWtnMEk5UkxZcU1hSXItWUNUanc1X2VfQ01aV25iMWlqbmNTNWNaZFJWQnVldUFMUmhkUGpSdy1NaF95d3VKQThibDFLY3RGclE?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "evnew",
-      "industry"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "EV STARTUPS",
-     "title": "Lucid Coffee is the third space you’re looking for",
-     "source": "I Love the Burg",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Zb0tjSDFRa3FTallEcVYzREtTU3B0cmxEOUxETUZGcC1jRmx6eE1pUmx0d2ZJX1dBRXUzREtfeHlfWlBLY1BOcXAxcVVKcXRndVNJX25MeEdSNDJ3NEZwalVLRVEyR2M?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "evnew"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "EV STARTUPS",
-     "title": "Slate Auto Believes It's 205 Range Is More Than Enough For Most Buyers",
-     "source": "AutoSpies",
-     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BUHczT0RXSjhpODhJZWJqWHk3Zm9XQ245bnZFUmV0ZHR5anl6WUdGV1hDQjR6WHZwVUJ1MzlzS2h2clBFTngteVFpRENMRFVFSXR4Z3JkR3lBUENhUm9YYXRUNlAteURVWDUzRExB?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
+      "stellantis",
       "evnew",
       "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "EV STARTUPS",
+     "title": "Rivian R2 Owner Says Cabin Flooded Twice After Windshield Repair",
+     "source": "Electric Vehicles",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSzFwQXQ2dHFIUm5yQ0VJRldEeTBSeE5STVl3Y1hQZGZCZUNQdEJ2SUplQWVLVjNWZjl6d0xzbXlvb0pBOHA3cnozckVDN1REclVwaHZjN2hQQkJsZFk3bWlyU09pVURZV1ZFbU1TcWFXZHppUDBJcm85eHNLdG9EMjFuQW9XaklLbzZnaTRCaER4dUNXMXdRTzR1dW8wRDZpdlhr?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "evnew"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "EV STARTUPS",
+     "title": "VinFast Auto (VFS) Climbed Today, What Is Behind The Latest Attention?",
+     "source": "Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWXpIY2VYc1h6TVpWRzUwZm5sckpBb3Uwdy1iVklwaDl0cHhEWHJ4eVRPVEl4ektmMHExbnNUc0s0V2dsNXFDRHRyc19iOWNQUzZsWGwzeEhEZE9nZzVHMkdEUkxxZjhmZy1HT3k5b3NjbHNYRXBNNHdfQ3JIS0IzdDJxckx3R2ZzcU9Ka0owNWpTZHh6TUxuMEdndw?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "evnew"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "EV STARTUPS",
+     "title": "Rivian Gear Shop Black Friday Deals: What’s on Sale and What’s Worth Buying",
+     "source": "RivianTrackr",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5MTFpXUkoxVjh4V3JscWZzWjJockFBN01pMzdiN0VpVXBtemFzMC1HZktwMFJBTTZqRFllXzN6ejFnMmlmOWNoYWFueEQ2ZFo1c0JkSFZxMmwtVjdhS1VGVFZJa1NPRHdVNEZ0RGhLZFY2RUlCdmZGRUVDWQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "evnew",
+      "deals"
      ]
     }
    ]
@@ -2598,41 +2648,11 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "CHINA",
-     "title": "BYD Could Swoop In And Buy The Ineos Plant In France",
-     "source": "Carscoops",
-     "url": "https://www.carscoops.com/2328732/byd-buying-ineos-factory-france/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.0,
-     "why": "2 outlets covering it",
-     "b": [
-      "china",
-      "industry"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "CHINA",
-     "title": "BYD in exclusive talks to buy Ineos car plant in France",
-     "source": "Evertiq",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTXZ5X0xpcjMyLVlBX25CSHlESFltNTAtS2kweHVkWVBMU0tFOEdMWVYwQ2dyNjdOTnlfakt5cF94b0FtWEozNC1qZUg4OFdSa1VxX2ZUd3lhY2NRd1FidFVsYlFpYXNTT1dEc2IyS3VWVzMwODFJV2VadUlibVQybHBmUTgwNll6aUo5VVpfOW0tTlRtR2c?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.6,
-     "why": "2 outlets covering it",
-     "b": [
-      "china",
-      "industry"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "CHINA",
      "title": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
      "source": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc1BINks3MVZUQ1BqeGk5azVmcm9QaFpCY001LVlOVVpvRW1SdG9xNlBENG5hLXFRamhpS0o0anNBZWU5ZzJaR2k5b0JFc2FRQ3djY3A2LTlaOW5sSFhWdGEzdHRyQzg0S2h2aVJMNWlzZE40UUp4RV9yTzN0RmdoaFpQVnJBRHZDOVNLadIBkgFBVV95cUxObzFMRk80QVkxUUIxdDFGSXdab01lX2xZTjhab0pRUXpzbTA3XzNJQXhYVjdJZVhIQU01a3lJNjdVeFcwTko1MC1Cak43aEtZakI3bVpOVjB5Q2JqTXVQRGo4NmtYX3QzVGNDczJHT09lRC16R0dOTTNUUDRWUGl2LVhZeHNtVHppemJlNjJuWVd6UQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
@@ -2643,13 +2663,13 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "CHINA",
-     "title": "Xiaomi Auto loses RMB 3.4 billion in Q3 - and why that’s a good thing",
-     "source": "ArenaEV",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcTFaa1dLUzRGZmpfdzI4UWFLdlB2SGpQQjRFSWZUeE1ZNkhSaFVKekljVTVxTzB2RlRybFFsUjdGd2I5Y1czY2ktU1VtdWhlRFc1cUVPQzItV0Q5RlhMNl9wanlCc191c0R0WEkxV05JcktYSmxpRVUxQVRBMTc1dG5kcmw2TnBlR3F1aVdmQW1iTjZVMGVYWXlpSnNucC1jUktmX2ZkOA?oc=5",
+     "title": "BYD Could Swoop In And Buy The Ineos Plant In France",
+     "source": "Carscoops",
+     "url": "https://www.carscoops.com/2328732/byd-buying-ineos-factory-france/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.5,
-     "why": "Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.4,
+     "why": "Fresh",
      "b": [
       "china",
       "industry"
@@ -2662,7 +2682,7 @@ window.DG_NEWS = {
      "source": "Carscoops",
      "url": "https://www.carscoops.com/2329005/xiaomi-su7-ultra-2027/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.4,
      "why": "Fresh",
      "b": [
@@ -2671,12 +2691,98 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "CHINA",
-     "title": "Geely enters Cyprus market via KKS Pilakoutas with three models",
-     "source": "Just Auto",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE51aDhrWmRBSnVxOHBzTlFabEo1c21ZN1lLMzNDUkJRdWZyM0ltMHpTS1V1c25NeFY1XzF1RzZRUFp3RVFyWnJFMFpkRFpxMjZoaWdsemRhSjc0VUxxYm5QQjJxUGxtVTA0SUtPVkFoVVVvcmVNQVFNQnNHcnpzdw?oc=5",
+     "cat": "VW GROUP",
+     "title": "Audi A7 resembling Chery Arrizo 9 revealed as the brand’s flagship sedan",
+     "source": "CarNewsChina.com",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWWhFeW80SURienVPOVNZUDF3VWJTRGw3alh1a2FaNzhLdGZFbnFNX0hfOU5JYUt0dkVPSFJNS0dHRDlkRDNGOTdVdDgyeDNLYkhXbVhxSzVRZmx0UGZnN0cwVEtZd0tsWWRLSU94U0wwbVBVU3hyRHJIUlJqRm5Ob1lqSkZTemUzY3pQalR6UEVUT29jdzRpMXVtdm1BNDA3LWJrRHJPSy1FdlJO?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.4,
+     "why": "New model",
+     "b": [
+      "vw",
+      "china"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "CHINA",
+     "title": "Xiaomi Smart Band 10 Review",
+     "source": "TechGearLab",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNzlvSjhlaDFCS1c0Zm9tbFR1Y01fMGxKM0tqVkg5YUdLa0lsdjMxbGI4dExpbHhkSmNfRUVZdlVSUDZCN0FKc1RnZnBxNFhaV0FZNWpoUHNiZXd1VHNKT0ptZHBPaGs5RUx1aTBvMzZOOThLaldYbTQyemVWVmU5MklhVS0wTkVWTklXN2duSmI?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "china"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "CHINA",
+     "title": "Xiaomi SU7 Ultra gets a two-seater, Trofeo tyres and a moving wing",
+     "source": "AutoNext.co",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwYWJ0M1I2SjVHU29FMlNndE03aDJoT05WdzA3NEM5VmF1TFdVR2kyVHJfZmctRFV5R0ZlbHRFZDJWazRGel8teXNJREkxa2RKa3N4N0tMbnVHSUVaQS14TjFjdG9JSGdnT2RDZ0RlT19MTVNrVXU1LUFJV3U2TFk?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "china"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TESLA",
+     "title": "Charlie Munger Said BYD Was ‘So Much Ahead Of Tesla, It’s Almost Ridiculous’ in 2023. BYD Then Outsold Tesla, But Berkshire Sold Every Share.",
+     "source": "Barchart.com",
+     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPOWNDTjhmLVlxc2VBc1NUOWMzUnVkelJrUGdMVlpQMS1kWG9lVFJWbGxhS1pEZHZYaWdoRmxXVzhxdWVQY3dJUmszN2JpTGRYLThiT0hhaXlyNWZ4UlZPUTJjekx6bHV1aGpLbmcxTkJ0MV9IYVpHSFV1aE1qWFYxbUk3WXhCQ214Rk5WTm44Nm5lUWFURVhDRU9wanFQWGlEOF93dVR2bFZpTDFkZVFtaEwzMHhvWjZDbHF6YWFCR3htMXdSWlpFMHJoeWZncFBYaWJ2SXZ3TWZDTldRdnVHMmRqZE5TY05PM0NZVWJWZ1k2aUJxV2s5SWw5N1V4RUM1MmplWWtIZzF0dw?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "tesla",
+      "china"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "CHINA",
+     "title": "Why Is Xiaomi (SEHK:1810) Cutting Budget Phones As Revenue Contracts Again?",
+     "source": "Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWEtuVUkwNTMxaENyZlBudDlZaHQ0blRWNG5BT2ctRjRsa0hZVmI3SWozYlNpaWVOMS01dE9KaW9DSFBXcFpzeG5IRjFIVXBlUkFDOEJDWVhWcUFUT0JQVWFpQ0YxRUQxbmJDbXVVeUxfQ0VCVzQzU1Y5VE1BcGVuc1N4cHhXS0FOZU9hUGtxMTc0QkQ0YldNbQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "china"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "CHINA",
+     "title": "2027 Xiaomi SU7 Ultra gets more wing, grip and madness - ArenaEV",
+     "source": "ArenaEV",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPOWdRdnNsSmN4aFNqMFpiNTVxcXFlVVFjNXN1a1FVMHJ3MlFCNDhyOExFZjdpX0lpR1lORXU5TlFnTkhseUdJclJGNmtOWXdpZ0h6ZUJnMTdfRkFmRzdDbWxONUlDMGxfTzRtamNGZkNFNERzdXRJVGxXdmdlV1BiSFc3cXlfNDNMTkNHNTRNX2dsQdIBkgFBVV95cUxPOWdRdnNsSmN4aFNqMFpiNTVxcXFlVVFjNXN1a1FVMHJ3MlFCNDhyOExFZjdpX0lpR1lORXU5TlFnTkhseUdJclJGNmtOWXdpZ0h6ZUJnMTdfRkFmRzdDbWxONUlDMGxfTzRtamNGZkNFNERzdXRJVGxXdmdlV1BiSFc3cXlfNDNMTkNHNTRNX2dsQQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "china"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "CHINA",
+     "title": "Xiaomi prepares for EU market launch with test drives across Europe",
+     "source": "electrive.com",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORGQ5QWxDTXlHY2RkRG5Jdl8xRTl0d29zb1lxc1FZdHBLdjZVUEJtZFJocGhOejZTUHN0cnM2WDFoTnBSVjVLVkV0WDlnOE15dDFxZWxtMGg0MXluSXRaQmExQ0U4V0ZmcjZOM0h3ZEhVSDh4c0oxNmtIOThaODBOMm90Yjl3eW1JTWVhYjBfdUdac1ozQkdSZGFXZ0NIQXFrYnMwSk5GMjE?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
@@ -2687,87 +2793,31 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "CHINA",
-     "title": "Xiaomi 18 Pro Max Review: Genuinely Innovative",
-     "source": "Mark Ellis Reviews",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE94ZFFQZ0luelVMaHFDNGNYN2NsRmhTVHZldDMtd3V1YW90Q3FXa01CdUdYMmFrMjV0RjFrR2JyanRfbi0zV0htV2NRV0U0cFVMWHNxRG9zOW9ra0Q1c3VWRGwydVZtNHMycjd1Z0ktMA?oc=5",
+     "title": "Xiaomi to Enter UK EV Market in 2028 with German Expansion",
+     "source": "Fuel Cells Works",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeEtrNTRwZUZzT2VpbE1ub2dKSmJ0QkhpVEE3WjhCelZBZzQ1YmhrdnhQQVFkdTgtelNnTnlMaFlVc2tsODE1RU9MMmdvbXdDTWM5ZHlacFNjelhaVS1VTXU4M2MxYmRPZ1I3Z201THFoaGZmUVUxbElQck5CMUJGaTBGQ01FREFpd1k0Smh3MjJFd2paczR4VXlncTdwY3BsMEQ2akhBQURSWFNoN21WUzNyLTl3QkZBNmxsU1FkYV85T0ViekxEV0VES0JuYjVmYWVv?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "china"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "CHINA",
-     "title": "Xiaomi Internet Launches Global Commercial Brand UMIADS: Make Global Growth Truly Visible",
-     "source": "Yahoo! Finance Canada",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQM2l5bVdQYzJkUjh0aG5pUndZOWk4ZlVwcU1TQzE0b2pOdkF5dmtlLXU4ZDQxeXN2U1BBTXRyQU4zS3g1YTd4cUk0TzlPeXd3VGNmZ0xtX19KakpwbEp2ajYxR0ZuSFRYV2prUW12Zk5wSzVmSTNJOHIzU3Y3ZHd5VUtRa3hoZy1OUUhIbm9GeTRfR1J4LUE?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "china"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "CHINA",
-     "title": "Xiaomi Built a 4K Monitor With an M Mode for Mac Owners",
-     "source": "The Gadgeteer",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tNThoVmNWQUxXSGxfa2FYS3RCZC1Fam5oMXBRMFU0VFpRSlVuVDQ3bFhVeUZJMzRuNmhUZUgxWDZwWERCaVhKbWdya0xnOVRrUy1MV1NCMHV2aHo2bFJTRklWTTc1RXJOZTZhb3V0X3kxSHpRdkE?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "china"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "CHINA",
-     "title": "JLR wins EU ban on BYD’s alleged copycat Land Rover Defender",
-     "source": "Wards Auto",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNXhRalNxR203dmg5YjY3Z1dkaFFxQXdJOVpWWnZLN0RJYW5OTE9heUtfVUtyTmtyblZSLTVJSmhZNVYtdGQyelVtS3A3VUNOLWNVN2xycFRtTWY5X3FUX3MzbktFekZrb0lWTmdnWmpoeTBfMnkxS3JNSHRTeGVoX3d5YzNGNFRad0xGall0bXBMSGthSWRUU2ViN1pEY1E?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "china"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "CHINA",
-     "title": "Xiaomi shipments plunge 29% as Samsung holds lead amid memory crunch",
-     "source": "The Korea Herald",
-     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1GTGlWNU44azhfTmZTMEpZTXZsa2ozc1FwZmJlVzZ4MzBEYWcyVzhuOGJXZkhUa0VqREtZNHpJcXBWMUxrRWJmZ3Y1TW1QZW4zSVlhMEtSaw?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "china"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "CHINA",
-     "title": "Xiaomi Electric Vehicle Overseas Expansion Scheduled for Q3 2027: Can the Overseas Market Become Its Second Growth Driver Amid Rising Performance Pressure?",
-     "source": "36Kr",
-     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQQlBmMnRLaG5CUWtXY2xzVS1Ga2VSbEEwRzVzMlJIRVN0UVJ0NHNybmtfMDZqZVEzMmhLYTFEY1ZYMFFheXRjRUZIWnQzc3FGLURr?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
       "china",
       "ev",
       "industry"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "CHINA",
+     "title": "Global Xiaomi 17 Ultra starts receiving HyperOS 4 - GSMArena.com news",
+     "source": "GSMArena.com",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdktBLTREdWs5eG5Ka3hRajc3LXhNNk5qb1BIMV9zUTlrTGt4aDV2dlZRMVlrYzhDcDNSdWF6UE9qYzQwbnBMSVI0d1Y2S0R0VnZhR0M4cFlUQjcwLTlpQlVQc2JNaDliMGZsenJldDlER1dlRWJMeG9mbmtrZUdrTDY0N2E5ZzI1X2JCMWtfU0NzNE3SAY8BQVVfeXFMTzRZN1RjMk5ac1ExTTF0YjB6eE9RRmt2R3FwN0JyaF9PcE1jd2NJZlhUUUpfQmNLUi1hM0Nta2N2YXFrcHMzd0p3eHIyY2k4bzE2Y1RKd1pVMGJLZmNDWmVISHhVdTI4TUJIZjRNWUdjUjF0TkJKQVBZUXl6dmctcmdhTUc3TVdOdThhNVU1dDg?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.0,
+     "why": "Fresh",
+     "b": [
+      "china"
      ]
     }
    ]
@@ -2778,90 +2828,65 @@ window.DG_NEWS = {
    "items": [
     {
      "tag": "AUTO",
-     "cat": "EV",
-     "title": "Ionna Slashes EV Charging Prices For Thanksgiving",
-     "source": "InsideEVs",
-     "url": "https://insideevs.com/news/816844/ionna-charging-price-discount-thanksgiving-2026/",
+     "cat": "GM",
+     "title": "GMC Sierra EV Discount, Lease, Finance Deals For November 2026",
+     "source": "GM Authority",
+     "url": "https://gmauthority.com/blog/2026/11/gmc-sierra-ev-discount-lease-finance-deals-incentives-offers-november-2026/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.4,
-     "why": "2 outlets covering it · Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 6.2,
+     "why": "2 outlets covering it",
      "b": [
+      "gm",
       "ev",
-      "industry"
+      "deals"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "EV",
-     "title": "IONNA Thanksgiving Charging: $0.20/kWh Nov. 25-29",
-     "source": "shattered.io",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQWptYjBpN1hxNGs3c1VDWDBMbnBtTlJIVFh5TjRHcWJRTG1rZ1dScmM4YXV2Qy1GSEJXNWQ1VWUzcjNiYTJBRC1UWUJ4emJkUmRSSDFGZS15NVRoUGVNSHprTmpQVzNPYU5yOVRRY0daX1JlSm1QOE9ZeldOU3p6Q0dJZERzd05iX0JB?oc=5",
+     "cat": "HONDA",
+     "title": "Honda Motor (TSE:7267) Recalls 810,592 US Vehicles And Unveils Avancier Hybrid SUV",
+     "source": "Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTFRoUGw2T3R4Wkp1VHZXQ19nQmNyRHhXb1ExcExfQ1pSUVgzbkdwaHJWeE0wQ1JDN0wxanNEdG5VQ2Nyb1ZtSFNYVHFKTWMtSkFnUmdhM3VER1dGLXZzN3BtNk13bkl0UmdqMXlvWnJWbVZMYXNIU3FSNF9iUXJvWVowTlgzc01PalVzM1k1SzYwNHNRVFdtbg?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.1,
-     "why": "2 outlets covering it · Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.8,
+     "why": "Safety / recall · New model",
      "b": [
-      "ev"
+      "honda",
+      "ev",
+      "recalls"
      ]
     },
     {
-     "tag": "AUTO",
-     "cat": "EV",
-     "title": "ChargePoint and PistenBully have a charging plan for ski resorts",
-     "source": "Electrek",
-     "url": "https://electrek.co/2026/11/25/chargepoint-and-pistenbully-have-a-charging-plan-for-ski-resorts/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.9,
-     "why": "2 outlets covering it",
-     "b": [
-      "ev"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "EV",
-     "title": "ChargePoint and Kässbohrer plan EV charging for ski resorts",
-     "source": "Mezha.net",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNX19peUd6MF9fQVgyM3VSVkdIRURMZUs1MEpfZmN3b1JodXJmYS1fbFJaX0NEZzJvOVl0UVh4cUFiSC1TTTRvcnFkSHhmLXFBTG1MRUI5YVRPUlVBd0tNY09xS0U3TzZkX2tsYkFZNDRDQ2ZIbkwtOVZpLXlsY1UweVQ0WVctaTBGUklqVVpn?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.6,
-     "why": "2 outlets covering it",
-     "b": [
-      "ev"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "BMW·MERCEDES",
-     "title": "Electric BMW M3 Reportedly Targets CES 2027 Debut With 838 HP",
-     "source": "Motor1",
-     "url": "https://www.motor1.com/news/816843/electric-bmw-m3-ces-debut/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.9,
-     "why": "New model",
-     "b": [
-      "bmw",
-      "ev"
-     ]
-    },
-    {
-     "tag": "AUTO",
+     "tag": "FORD",
      "cat": "FORD",
-     "title": "Electric Trucks Have Failed Spectacularly In America. Here's Why Ford Is Trying Again",
-     "source": "InsideEVs",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWHhTTVdOempDQllUNkk2Z3JlVHVxMThrbGRtMjN0UjdXN3dyeHEtaXo0YjcyYmRDN2xaUnpEbkdsUUNmYUNBRHhBa1RhdU1UZ2haOVMyZ3hra1ZjN0YtbHltYUdiZUtIRmJiQW9XOTU1bk5sdTlDWldHNzVkcF9HcC1BdjgwWVNsWWc?oc=5",
+     "title": "Ford Fathom Pickup Expected To Have Lower Operating Costs Than Hybrids",
+     "source": "Ford Authority",
+     "url": "https://fordauthority.com/2026/11/ford-fathom-pickup-expected-to-have-lower-operating-costs-than-hybrids/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.9,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.4,
      "why": "Ford news",
      "b": [
       "ford",
       "ev",
       "trucks"
+     ]
+    },
+    {
+     "tag": "FORD",
+     "cat": "FORD",
+     "title": "Ford EVs Assembled In Turkey Likely To Be Left Out Of 'Made In Europe'",
+     "source": "Ford Authority",
+     "url": "https://fordauthority.com/2026/11/ford-evs-assembled-in-turkey-likely-to-be-left-out-of-made-in-europe/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.4,
+     "why": "Ford news",
+     "b": [
+      "ford",
+      "ev"
      ]
     },
     {
@@ -2871,7 +2896,7 @@ window.DG_NEWS = {
      "source": "Electrek",
      "url": "https://electrek.co/2026/11/25/kia-lucid-vw-slash-ev-prices-by-10000-black-friday/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.8,
      "why": "Money / prices",
      "b": [
@@ -2885,29 +2910,30 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "EV",
-     "title": "Worx 40V 20-inch cordless snow blower + 2x batteries $350 low, Anker SOLIX E10 system exclusive new lows from $3,609, more",
-     "source": "Electrek",
-     "url": "https://electrek.co/2026/11/25/worx-40v-20-inch-cordless-snow-blower-anker-solix-e10-system-more/",
+     "title": "Ionna Slashes EV Charging Prices For Thanksgiving",
+     "source": "InsideEVs",
+     "url": "https://insideevs.com/news/816844/ionna-charging-price-discount-thanksgiving-2026/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.8,
      "why": "Money / prices",
      "b": [
-      "ev"
+      "ev",
+      "industry"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "TOYOTA",
-     "title": "Toyota is about to unveil its first extended-range EV, and it looks like the Highlander",
-     "source": "Electrek",
-     "url": "https://electrek.co/2026/11/25/toyota-reveal-first-erev-looks-like-highlander/",
+     "cat": "HYUNDAI·KIA",
+     "title": "Tested: Remember When Good EVs Were Too Expensive? The 2027 Kia EV3 Is Helping to Change That",
+     "source": "MotorTrend",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB6b2xySjBiMTFUbDVMb2FoYWVoWno0bGlFT1pZWVpEWVA3YlE1bjh2OUJIcU5WMTdLd1J4OC1ka213cW5WVXVjWkpLOXhTZHY3Q250aHdhbEZRWTZSV3dfN1Z6cjdfVXFDQ1h1dDM1Mm5SV3VfOVE?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.7,
-     "why": "New model",
+     "why": "Fresh",
      "b": [
-      "toyota",
+      "hyundai",
       "ev"
      ]
     },
@@ -2918,25 +2944,10 @@ window.DG_NEWS = {
      "source": "The Drive",
      "url": "https://www.thedrive.com/news/how-to-get-free-tools-and-batteries-at-the-home-depot-this-black-friday",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
-      "ev"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "HYUNDAI·KIA",
-     "title": "Payne: Charging around town in the Kia EV3 bot",
-     "source": "The Detroit News",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOUc4VlJqNDcyakU0SEZSS1U2b0JkVEhPWV9oZ1FkUzFTR1U4YjJYZE5BOUlXT0FMM21ZWjB6T2lOSGpNRlM1UTlfMzdTaE9oY3VCRHZpUHJ3b083bTd1S09DdExLelRsNkJKeVpSRmdvZnFYZ1cwSnJuXy02WVZrc0NSTUF3UlR1UzhSaDhYNkNrTkZieWZiZzBmLTJsZkszdEhRMVVfekI1QVJtcjRXbA?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
-     "why": "Fresh",
-     "b": [
-      "hyundai",
       "ev"
      ]
     },
@@ -2947,12 +2958,59 @@ window.DG_NEWS = {
      "source": "CNBC",
      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc1BINks3MVZUQ1BqeGk5azVmcm9QaFpCY001LVlOVVpvRW1SdG9xNlBENG5hLXFRamhpS0o0anNBZWU5ZzJaR2k5b0JFc2FRQ3djY3A2LTlaOW5sSFhWdGEzdHRyQzg0S2h2aVJMNWlzZE40UUp4RV9yTzN0RmdoaFpQVnJBRHZDOVNLadIBkgFBVV95cUxObzFMRk80QVkxUUIxdDFGSXdab01lX2xZTjhab0pRUXpzbTA3XzNJQXhYVjdJZVhIQU01a3lJNjdVeFcwTko1MC1Cak43aEtZakI3bVpOVjB5Q2JqTXVQRGo4NmtYX3QzVGNDczJHT09lRC16R0dOTTNUUDRWUGl2LVhZeHNtVHppemJlNjJuWVd6UQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
       "china",
       "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "VW GROUP",
+     "title": "Audi Is Putting A Gas Engine In Its Chinese AUDI Electric SUV",
+     "source": "Motor1",
+     "url": "https://www.motor1.com/news/816887/audi-e7x-range-extending-ev/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Fresh",
+     "b": [
+      "vw",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "Toyota's First Range-Extended EV Is Coming, And It Looks Like A Highlander",
+     "source": "Motor1",
+     "url": "https://www.motor1.com/news/816884/toyota-highlander-erev-china/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Fresh",
+     "b": [
+      "toyota",
+      "ev"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "Here's what you need to know about the Toyota and Lexus hybrid cable defect class action settlement.",
+     "source": "Claim Depot",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kWnVVUlR3UEMwTG5QbnFhUTc1REkwRktnWGZPVnlvMHYyZTF2dzQtYXRkN0tZMV9xdmlJUnpPdzA1NmVwU2MyYTNiNGdaNTA3WXoxZ1hQTXJxQ2tEalROUWZobk5VLTJnaUZlV2NKTWVhckF2?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Money / prices",
+     "b": [
+      "toyota",
+      "ev",
+      "industry",
+      "recalls"
      ]
     }
    ]
@@ -2963,27 +3021,12 @@ window.DG_NEWS = {
    "items": [
     {
      "tag": "AUTO",
-     "cat": "GM",
-     "title": "2027 Silverado ZR2, Sierra AT4X: GM Revised The DSSV Dampers … Here’s Why",
-     "source": "GM Authority",
-     "url": "https://gmauthority.com/blog/2026/11/2027-silverado-zr2-sierra-at4x-gm-revised-the-dssv-dampers-heres-why/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.2,
-     "why": "2 outlets covering it",
-     "b": [
-      "gm",
-      "trucks"
-     ]
-    },
-    {
-     "tag": "AUTO",
      "cat": "TESLA",
      "title": "Canceled Or Not, The Cybertruck Is America's Fastest Selling Used Truck",
      "source": "Motor1",
      "url": "https://www.motor1.com/news/816873/tesla-cybertruck-used-truck-ranking/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 6.1,
      "why": "2 outlets covering it",
      "b": [
@@ -2998,7 +3041,7 @@ window.DG_NEWS = {
      "source": "TechCrunch",
      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMWw4X0ZydmpuNTUyMGJPVGMzQllSd3ByUG1US3RLYUR4R0lMdVRpNHpfRzlmUjhodjl3WG1lZnI0SUh0Uy1PSV9wNUJveWk5NEhOVml4bXpWMUZxbExONGdmRE85bTQtaFhUM2pobGxXSTRNemtUOTZjVHppXzctaFZlR29wS01xTkRCRFl6cTNCaHZGbFdkM0ZIcGlRWlBBZWFMQUFwRm91cFk2dFE?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.6,
      "why": "2 outlets covering it",
      "b": [
@@ -3009,11 +3052,11 @@ window.DG_NEWS = {
     {
      "tag": "FORD",
      "cat": "FORD",
-     "title": "Shelter Green Ford Bronco Raptor Looks Great With Desert Sand Hard Top",
+     "title": "Coyote V8 Powered Ford Maverick Pickup's Bed Fills With Smoke After Burnout: Video",
      "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/shelter-green-ford-bronco-raptor-looks-great-with-desert-sand-hard-top/",
+     "url": "https://fordauthority.com/2026/11/coyote-v8-powered-ford-maverick-pickups-bed-fills-with-smoke-after-burnout-video/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Ford news",
      "b": [
@@ -3022,18 +3065,48 @@ window.DG_NEWS = {
      ]
     },
     {
-     "tag": "AUTO",
+     "tag": "FORD",
      "cat": "FORD",
-     "title": "Electric Trucks Have Failed Spectacularly In America. Here's Why Ford Is Trying Again",
-     "source": "InsideEVs",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWHhTTVdOempDQllUNkk2Z3JlVHVxMThrbGRtMjN0UjdXN3dyeHEtaXo0YjcyYmRDN2xaUnpEbkdsUUNmYUNBRHhBa1RhdU1UZ2haOVMyZ3hra1ZjN0YtbHltYUdiZUtIRmJiQW9XOTU1bk5sdTlDWldHNzVkcF9HcC1BdjgwWVNsWWc?oc=5",
+     "title": "Ford Fathom Pickup Expected To Have Lower Operating Costs Than Hybrids",
+     "source": "Ford Authority",
+     "url": "https://fordauthority.com/2026/11/ford-fathom-pickup-expected-to-have-lower-operating-costs-than-hybrids/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.9,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.4,
      "why": "Ford news",
      "b": [
       "ford",
       "ev",
+      "trucks"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "Toyota’s Hyper Z Prototype Is So Extreme, It Has Aerodynamic Wings Instead of a Bed",
+     "source": "Car and Driver",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVXVBdmJDaWlsR0pwSk1Nam1FUkNucDNCYXA0ZGRFaml4T2VlNnk3T0l1UVVWNGU5cXpuSXB4cU5fVXlQTV9JeTNPVHhfcTFlUTVPMXVvV2NQV3dReGlFZjliTEZkR04xRTdGLUw0S2x0aWZkNVpYa1dJM2ZnYjM4UDNrdklpbzFYRlk0?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.7,
+     "why": "Fresh",
+     "b": [
+      "toyota",
+      "trucks"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "GM",
+     "title": "Cadillac Escalade-V, CT5 Stolen Straight Out Of Driveway With Truck In California: Video",
+     "source": "GM Authority",
+     "url": "https://gmauthority.com/blog/2026/11/cadillac-escalade-v-ct5-stolen-straight-out-of-driveway-with-truck-in-california-video/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.6,
+     "why": "Fresh",
+     "b": [
+      "gm",
       "trucks"
      ]
     },
@@ -3044,11 +3117,41 @@ window.DG_NEWS = {
      "source": "GM Authority",
      "url": "https://gmauthority.com/blog/2026/11/chevy-tahoe-driver-escapes-tow-truck-smashes-parked-car-in-getaway-video/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
       "gm",
+      "trucks"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "GM",
+     "title": "2027 Silverado ZR2, Sierra AT4X: GM Revised The DSSV Dampers … Here’s Why",
+     "source": "GM Authority",
+     "url": "https://gmauthority.com/blog/2026/11/2027-silverado-zr2-sierra-at4x-gm-revised-the-dssv-dampers-heres-why/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.6,
+     "why": "Fresh",
+     "b": [
+      "gm",
+      "trucks"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "Ford F-150 Lightning Owner Wanted to Cook a Thanksgiving Turkey From His Truck, Exposing a 175-Watt Frunk Limit Catch",
+     "source": "Torque News",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdGoydHNkTzhtVmQzaDk5T0FRVE1OZXpOSmlXQnBkbzBfU3lWczlHZTZkSHIxVmcwN3Q5OUcyZW0wemFKbzFNVUVzWDBTZUwxN1AxTl9GZjRieFRvRVlXY2FGN3BSWGhrMWVldmc0QlBlRDdka0VEWlE0eW5MaGdpR2tFVDZneW5NVmRydlpidGd0anFxbDBBZThhTDlGMDFVQVh2aE1GUkJHYUN3dWVOUHhxZFNBSFNJU3k4d1dBNENhWEU?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.6,
+     "why": "Ford news",
+     "b": [
+      "ford",
       "trucks"
      ]
     },
@@ -3059,7 +3162,7 @@ window.DG_NEWS = {
      "source": "Motor1",
      "url": "https://www.motor1.com/news/816869/nissan-terrano-phev-china-filing/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.5,
      "why": "Fresh",
      "b": [
@@ -3069,43 +3172,13 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "NISSAN",
-     "title": "LEAKED: Nissan Terrano Off-Road SUV Comes in Three Flavors",
-     "source": "Autoblog",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSERJWExacWEtOGtPcTktcndLN0FRS3d0aU1Qdk01OThMR0xnajNEcWlqbFNza3ZJUG9iT0E2R29vV2hYVTE0Y0JUWXdaZTZvdjdsZmlWdE1ZakFVYl85NXRJN0szTW1BaGNsZS1scDFkNjdFQXZMNlM4ZHcwbWpyYjIzcFY2OE1yZnQ4RkJSR1E?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.3,
-     "why": "Fresh",
-     "b": [
-      "nissan",
-      "trucks"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "GM",
-     "title": "2026 GMC Sierra Denali is the ‘Ultimate’ half-ton pickup truck",
-     "source": "Boston Herald",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQm9RWGpXLUR5bGRPS3pyR3NrZTNaTVZUMHg5a2pxcnYtVHRxZW1KdUZuY1VDNDd4RldvOXFEUG9wcmJ3SG0xZWNjR2RuVmN4dmFtNkc4WHhHVzdGVjY5MHNGNnRNdjhVSF8xT0ZfV2F2a2d0amp1Nm94TDZ2Tlk1X3BhdllWTmdjU1hiRkEzVGRUUVhXQjM0Vm4xZmx4SFVJMUo2MA?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "gm",
-      "trucks"
-     ]
-    },
-    {
-     "tag": "AUTO",
      "cat": "TOYOTA",
-     "title": "BASF takes a mass-balance approach to Toyota’s truck bed",
-     "source": "Automotive Manufacturing Solutions",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcE5EbG1XdHNPUEZ6bkdtWnNHX0RVVUZpaXk0TGpmak02aDZ4VkNIdWVEVm9rd2p2M3lBMUR5UTRXSG93RFA4YjBqR2VVVUlFWUZ6RmhRYXVnVnhyV3Q3RmE1NXRNZEJtSWJ1cUF3REJwMDhkcFd4OG90YnMwbUo3VUkxMzZtR1g2Skl3azBrN1hyeUdxdDRpMDNGUV9QZmlZVFNndVdsYUZtZ21NaFBzS1ltSlFCOXl4R0FXUDFhSjloOVJxdWc?oc=5",
+     "title": "Toyota Hilux Hyper Z Concept Is A Maniacal Truck-Supercar Mashup",
+     "source": "Hagerty",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbEZoaG9JdGxRUGxGNm1OOGJYM2dTd2xMMzYwTDhBckhacGtfV084SFUtOS1mbjA1eExIUjkzMUNxV2pFbnVudkhzMU4tT1FHc0dfdklvV2hEQ0VzdXAwT0U4aDRCYXkzdWJGVTZfakI3NmQtUTlneUdRWUt2N296ajl3?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
      "why": "Fresh",
      "b": [
       "toyota",
@@ -3114,31 +3187,16 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "TOYOTA",
-     "title": "Toyota Hilux Travo Hyper Z Is the Truck We'd All Love To Have",
-     "source": "autoevolution",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVE1ZdUlSeThVWEwyNkZoQ2NZRlBNMDZrOUZDWHRMcHZhdHNNRkJJem9yUjYtZXBYbGtsYlFkdXNxRnN6VVJjUGFYX0RMbU5HalE2WVpYNHl2YUZsQ1J2TThEdUlmVjNGbmR0WWo4aXZwX1hTRTJwSEJfSWlNRUEteF9iankyLUVjUjh4SE50OWU4VnM4MG9MZDd2MmVHQ1puUU9pRnFDRGc5N2hs?oc=5",
+     "cat": "EV STARTUPS",
+     "title": "Slate And REO Are In A Super Cheap Pickup Battle: $24,950 EV Blank Canvas Vs. $21,500 Gas Ladder-Frame",
+     "source": "CarBuzz",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UZHRIRjJOMXNTbTBieVExVnAwRVZMQ2JmWllsUzRwR2dLbl9KR0RfclVNdTRhYUJYRFRsYVVmVVFqOXg1NG9xQ1UyZ2pydk5zYXhjTFA5bFpIZ1VUTlRTWDE1VndYaWVxOXBwYQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Money / prices",
      "b": [
-      "toyota",
-      "trucks"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "SUBARU·MAZDA",
-     "title": "Edison’s Diesel-Electric Pickup Can Tow a Semi and Keep Up With a Subaru WRX",
-     "source": "MotorBiscuit",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNd3BRbkdpZkFhZmFDN2hoWndCSzlTczM5bkVfNUwyMlFONHBJWGJScFVndnJIZEpQbEpzamNWSnZoaHhyTExDdF9mTC1LYkh2ZVkyVEpaRllLMmh0OHBkdTJGaEZ5dHRWcWdaWm9TaG5YXzhRbVlvX3J2QTJJMFVJZm9xLTIwdGtWTnVUNl9PZ2Z2M2R5UEZVZzFvX2RKcF9FZUJnMGxQTU4?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "subaru",
+      "evnew",
       "ev",
       "trucks"
      ]
@@ -3150,27 +3208,132 @@ window.DG_NEWS = {
    "group": "topic",
    "items": [
     {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Oliver Bearman locks in Haas F1 seat as 2027 grid officially set",
-     "source": "Motorsport.com",
-     "url": "https://www.motorsport.com/f1/news/oliver-bearman-locks-in-haas-f1-seat-as-2027-grid-officially-set/10877802/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "Meet Ford's New Le Mans Fighter: The GT41",
+     "source": "Motor1",
+     "url": "https://www.motor1.com/news/816800/ford-gt41-le-mans-hypercar-debut-bts/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.4,
-     "why": "2 outlets covering it",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 8.9,
+     "why": "3 outlets covering it · Ford news",
      "b": [
+      "ford",
       "racing"
      ]
     },
     {
      "tag": "RACING",
      "cat": "RACING",
-     "title": "Haas finally announces Bearman for F1 2027",
+     "title": "Ford GT41 Hypercar gets big-ticket launch in Detroit",
+     "source": "RACER",
+     "url": "https://racer.com/2026/11/25/ford-gt41-hypercar-gets-big-ticket-launch-in-detroit",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.2,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "Ford’s New GT41 Le Mans Prototype Debuts at Detroit Lions Game",
+     "source": "Autoweek",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMVpwX1hnSjBmZm9PdTBsZnNLRFQtc3hPWnRiS0JoVkl5cFd6Y2lzcTZxSFZlQmJENjJPSmdEQktPNFNIcGpsNFZJeUp6eGxNYjNzd19qRnhWZ09xZzFCYTNOMDNLUko0WWp3Q2JRMkVOVEJ2QnNPRndoekRPc2ktS0ZhUUZXaHI0djRfYXAydElPZjA?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.2,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "Ford Returns To The 24 Hours Of Le Mans With The 2027 GT41",
+     "source": "Jalopnik",
+     "url": "https://www.jalopnik.com/2328777/2027-ford-gt41-24-hours-le-mans-race-car-reveal/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.1,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Ford pays tribute to its legendary GT40 with WEC 2027 hypercar",
      "source": "Autosport",
-     "url": "https://www.autosport.com/f1/news/haas-announce-bearman-f1-2027/10877815/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+     "url": "https://www.autosport.com/wec/news/ford-pays-tribute-to-gt40-with-wec-2027-car/10877998/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.0,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Russell shrugs off ‘amusing’ Verstappen comments",
+     "source": "RACER",
+     "url": "https://racer.com/2026/11/26/russell-shrugs-off-amusing-verstappen-comments",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 6.6,
+     "why": "2 outlets covering it",
+     "b": [
+      "racing"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Hyundai calls on Thierry Neuville, Adrien Fourmaux and Kris Meeke for latest Rally2 test",
+     "source": "Motorsport.com",
+     "url": "https://www.motorsport.com/wrc/news/hyundai-calls-on-neuville-fourmaux-and-meeke-for-latest-rally2-test/10878007/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 6.4,
+     "why": "2 outlets covering it",
+     "b": [
+      "hyundai",
+      "racing"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Neuville, Fourmaux and Meeke in latest Rally2 test for Hyundai",
+     "source": "Autosport",
+     "url": "https://www.autosport.com/wrc/news/neuville-in-latest-rally-2-test-for-hyundai/10878010/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 6.4,
+     "why": "2 outlets covering it",
+     "b": [
+      "hyundai",
+      "racing"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Russell stands by Verstappen comments at Las Vegas GP - despite \"amusing\" reaction",
+     "source": "Autosport",
+     "url": "https://www.autosport.com/f1/news/russell-defends-las-vegas-f1-comments/10877940/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=uk",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 6.4,
      "why": "2 outlets covering it",
      "b": [
@@ -3180,86 +3343,32 @@ window.DG_NEWS = {
     {
      "tag": "RACING",
      "cat": "RACING",
-     "title": "AF Corse confirms full-time IMSA GTD program",
-     "source": "RACER",
-     "url": "https://racer.com/2026/11/25/af-corse-confirms-full-time-imsa-gtd-pro-program",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.6,
-     "why": "Big U.S. racing",
-     "b": [
-      "racing"
-     ]
-    },
-    {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "AO Racing confirms 2027 IMSA LMP2 and GTD Pro line-ups",
-     "source": "RACER",
-     "url": "https://racer.com/2026/11/25/ao-racing-confirms-2027-lmp2-and-gtd-pro-line-ups",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.6,
-     "why": "Big U.S. racing",
-     "b": [
-      "racing"
-     ]
-    },
-    {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Nearly $3 million on ten wrists: inside the wild luxury watch Flex at the 2026 Las Vegas Grand Prix",
+     "title": "Ford reveals name for 2027 WEC LMDh challenger",
      "source": "Motorsport.com",
-     "url": "https://www.motorsport.com/culture/news/nearly-3-million-on-ten-wrists-inside-the-wild-luxury-watch-flex-at-the-2026-las-vegas-grand-prix/10877653/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+     "url": "https://www.motorsport.com/wec/news/ford-reveals-name-for-2027-wec-lmdh-challenger/10877687/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.3,
-     "why": "Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.4,
+     "why": "Ford news",
+     "b": [
+      "ford",
+      "racing"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "AUTO",
+     "title": "This 3K-Mile 1968 Pontiac Le Mans Stored for 50 Years Could Be the Black Friday Deal for You",
+     "source": "The Drive",
+     "url": "https://www.thedrive.com/news/this-3k-mile-1968-pontiac-le-mans-stored-for-50-years-could-be-the-black-friday-deal-for-you",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.2,
+     "why": "Big U.S. racing",
      "b": [
       "racing",
-      "industry"
-     ]
-    },
-    {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Court finds that Gibbs hasn’t proven Spire has stolen trade secrets",
-     "source": "RACER",
-     "url": "https://racer.com/2026/11/25/court-finds-that-gibbs-hasn-t-proven-spire-has-stolen-trade-secrets",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.0,
-     "why": "Fresh",
-     "b": [
-      "racing"
-     ]
-    },
-    {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "The RACER Mailbag, November 25",
-     "source": "RACER",
-     "url": "https://racer.com/2026/11/24/the-racer-mailbag-november-25",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.0,
-     "why": "Fresh",
-     "b": [
-      "racing"
-     ]
-    },
-    {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Williams loses aero testing time after F1 cost cap breach",
-     "source": "RACER",
-     "url": "https://racer.com/2026/11/25/williams-loses-aero-testing-time-after-f1-cost-cap-breach",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.0,
-     "why": "Fresh",
-     "b": [
-      "racing"
+      "deals",
+      "classics"
      ]
     },
     {
@@ -3269,50 +3378,8 @@ window.DG_NEWS = {
      "source": "RACER",
      "url": "https://racer.com/2026/11/25/best-worst-sebastien-bourdais",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.0,
-     "why": "Fresh",
-     "b": [
-      "racing"
-     ]
-    },
-    {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Racing on TV, November 27-29",
-     "source": "RACER",
-     "url": "https://racer.com/2026/11/25/racing-on-tv-november-27-29",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.0,
-     "why": "Fresh",
-     "b": [
-      "racing"
-     ]
-    },
-    {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Putting racing on pause, Harvey shifts to special advisor role",
-     "source": "RACER",
-     "url": "https://racer.com/2026/11/25/putting-racing-on-pause-harvey-shifts-to-special-advisor-role",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.0,
-     "why": "Fresh",
-     "b": [
-      "racing"
-     ]
-    },
-    {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Fernando Alonso: ‘I will quit F1 when I feel slow, not at a specific age’",
-     "source": "Motorsport.com",
-     "url": "https://www.motorsport.com/f1/news/fernando-alonso-i-will-quit-f1-when-i-feel-slow-not-at-a-specific-age/10877599/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.8,
      "why": "Fresh",
      "b": [
       "racing"
@@ -3326,16 +3393,15 @@ window.DG_NEWS = {
    "items": [
     {
      "tag": "AUTO",
-     "cat": "EV",
-     "title": "Ionna Slashes EV Charging Prices For Thanksgiving",
-     "source": "InsideEVs",
-     "url": "https://insideevs.com/news/816844/ionna-charging-price-discount-thanksgiving-2026/",
+     "cat": "INDUSTRY",
+     "title": "Trump prepares new round of tariffs on China, other U.S. trading partners",
+     "source": "Axios",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1zLTBLcVRHTWZCNy11bHI0NEl4S0FiYVoydFZHQVJ6VUxSNUNqR2hLQ0NoQ05ZSEJxX3I1ZjhQZFJ1R2VPcWF2eXlreU1wZWpmMFRiQjJpeTVRUVVfN3h4akhB?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.4,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 6.1,
      "why": "2 outlets covering it · Money / prices",
      "b": [
-      "ev",
       "industry"
      ]
     },
@@ -3346,7 +3412,7 @@ window.DG_NEWS = {
      "source": "The Washington Post",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRG9IZXZjbjBEQ2tzam5pT0FPZWNFc2hac3ZURjRUaTJITlQwQmt4RElZVGlnM0luQndHeXdRaGRwTUVVbHVqQlcyZC01OC1adzBLT3JWWlNadmw2N01zR3JZT1VwWG1mVVNaSkNUSWExNTlYRWtCejNRUE1KSXk0TFpjaUt5X0Z4LUFLMzB1c3QtRXNpUVc5UzNMeHY4d2paMjVEVGpveFlpM1BvZWRlZzFR?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 6.1,
      "why": "2 outlets covering it · Money / prices",
      "b": [
@@ -3355,30 +3421,16 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "INDUSTRY",
-     "title": "Trump admin proposes new tariffs on China, EU and 12 other trading partners - ABC News - Breaking News, Latest News and Videos",
-     "source": "ABC News - Breaking News, Latest News an",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPN3dSZHFTVnZVU1IxNk0ydWl4QjJTdUF3dTRuckhxSUNwMGI5enBLWEFyZHVGRGlILTN6OXNibmFnLVNWNGhBcFgtR2Vfd3hUX3Nmc0VjdnJvdEdERktyUnVKRW1tejhHLXVhY056YVFvbzR3Vy1wdGRPLWJYbm5EanBkdHJfdFRrQ2doTkh1SEkzTUVQMWZJ0gGcAUFVX3lxTE5NQ2dvX1lVT2Z3ZXUtUGgxcHdYMUE0VTZQZzNGd3V0amdGOEdMd2hWeEJYMl94dE9KUVRKY3pBQnJ2NzhNZTZQTXFPSjlqamtaenBiRE5FR1VvTEFCV2c1UXFoZk5YbHpsRzY0Z1Vmal9BZ3NxYjVOeXppMVJRd092STNQQjZZLUsxMmVDWWd4b2F4QkJ2ZTlPa1hJUw?oc=5",
+     "cat": "STELLANTIS",
+     "title": "Stellantis pledges €5 billion for Italy R&D while warning on costs",
+     "source": "Automotive News",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZ2pxd2RJa3dCY19PenhqMVZQMHZTWDFHc05NWHdMS21xMmlGRGVVREJIdkZfOS0xY2N4c2lZSWdNMWlUWUo5MFBvdVFjai1tSWRoZ2dCZVNtZFR4STh1ZS04R2djVDk4bXZYRFRleFo5UE5WU1Fqa0w1UlVmZldiUTRYYw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.1,
-     "why": "2 outlets covering it · Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.7,
+     "why": "Money / prices",
      "b": [
-      "industry"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "CHINA",
-     "title": "BYD Could Swoop In And Buy The Ineos Plant In France",
-     "source": "Carscoops",
-     "url": "https://www.carscoops.com/2328732/byd-buying-ineos-factory-france/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.0,
-     "why": "2 outlets covering it",
-     "b": [
-      "china",
+      "stellantis",
       "industry"
      ]
     },
@@ -3389,7 +3441,7 @@ window.DG_NEWS = {
      "source": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNazJTSjI3dk40ZnhoM2ZJR2N2eXp0NUFoaWUxNUI4NW9wV19YWEtpd24tS0t5YnFHV2YzSkRmSXdiTnR6cjRuMTROY1d1VlQ2NUR3UjNNMUJkeU5XQVBOeUQ1VnVTQmtQU3BVOUNndHdyeUhvWDcxdmRHMGtheVJCREs4UzdCWS1VVDQwcmdQYWtILXltMHRhN1UxeTVtdGhuMFhpemlOdDRkLTB5?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.7,
      "why": "Money / prices",
      "b": [
@@ -3398,109 +3450,123 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "CHINA",
-     "title": "BYD in exclusive talks to buy Ineos car plant in France",
-     "source": "Evertiq",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTXZ5X0xpcjMyLVlBX25CSHlESFltNTAtS2kweHVkWVBMU0tFOEdMWVYwQ2dyNjdOTnlfakt5cF94b0FtWEozNC1qZUg4OFdSa1VxX2ZUd3lhY2NRd1FidFVsYlFpYXNTT1dEc2IyS3VWVzMwODFJV2VadUlibVQybHBmUTgwNll6aUo5VVpfOW0tTlRtR2c?oc=5",
+     "cat": "BMW·MERCEDES",
+     "title": "BMW software update adds 24 functions to 16 million cars",
+     "source": "Automotive World",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVzhmX0E0czRRTXkzc2J5d2VNWDk3d0NuMFdkN1E3UnZvSXdKR0l5N3Q2NkZYRXc3Ym5yanlfazZnNHVxWVgzWFJHZ3dPQnpNTWJXQUpEcGFhalAxYzNWTGdIRkVhdnI2UWJTcFFvOVozRXpuV1dZYXc4NVpzd2VJLWdmTUlRU3AwREl3X2FYRndSZzZOTm9GNkRn?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.6,
      "why": "2 outlets covering it",
      "b": [
-      "china",
+      "bmw",
       "industry"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "INDUSTRY",
-     "title": "US to hike tariffs on China, EU, Brazil and others over subsidized factories",
-     "source": "AP News",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcWJ0MDE3ZEJzV2tVdThRbXdzcGxXN0phLUpNTHAyVWlEQV9JNzVUWlpsRXp6ZHFTNnY1dnpKMHJjNExkUnZxTlRXdzZNTUFOeXhkUTk5XzF0ZW55b1lZcnhJYTkyYUt5N1lvdm5TZ3QyZDh5UkNsVmtHMmhuNm5xcGc3VmVUcV9fellldEtWcTdaYWJpRUlBcm5R?oc=5",
+     "cat": "BMW·MERCEDES",
+     "title": "BMW to Add up to 24 Features to 16 Million Cars in 88 Countries via December Software Update",
+     "source": "ACKO Drive",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMlhCY0xVTlhJR3BFWWNTc3RLYTdRLUNjalRqY0luU2xYeEFjbllvb1JEcGRIN1NhVks1WTRHNndkQ3RtNUs5b3Z1UDNKSnJHNENpUEpOdHRiaEQ2T1M4X1lkNmQ3Q01mN1NLbmJDY0R5X2J5cDdRUEhQa1NHY1hwTmpLVktuQkI0S1hBWWpNbXhKNld1ZGdNVmVZUE9ScEM5b2I3Z0daT2FxVkdWdzNqM21zWFc?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.5,
-     "why": "Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
      "b": [
-      "industry"
-     ]
-    },
-    {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "Ford CEO Jim Farley Shares New Container Pics Ahead Of Tomorrow's Reveal",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/ford-ceo-jim-farley-shares-new-container-pics-ahead-of-tomorrows-reveal/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford",
-      "industry"
-     ]
-    },
-    {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "Future Ford Vehicles Could Get Aftermarket Radio Integration System",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/future-ford-vehicles-could-get-aftermarket-radio-integration-system/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford",
-      "honda",
+      "bmw",
       "industry"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "TOYOTA",
-     "title": "Recall Watch List: Magnetic robot toys and 1.6 million Honda, Toyota vehicles recalled",
-     "source": "41NBC News",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9DZF8ta3BERmFVRlRvVDh2Sjg4emFOMHdDVFlBNjZSWXlVVjhEcEUzd2dtWE9LY0ZfXy1RRTVUU1Y3RkgwNVc1S2VEZjhOdGRzblZCaWxNSGdFZ1BzNG91LWhvVGtxZ2NFdmlSdzN2LVBIZk1VOVRIeA?oc=5",
+     "title": "After Four Tundra Engine Recalls, Toyota's Engineer Says Dealers Are \"Working Through\" Inspections",
+     "source": "MotorBiscuit",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxON1p1cTBwNzRzUlhIeW9kaGFUSV9PdnJpTUNNbUExeUZSYktBcTJNM2pZaTJBVWhJekowQ3BkSHNCV1V0dldoT3Q5X2txVEFRWTFoMzRieUh6MXdma25RWlRNb3ZLdTd6RzZrRDBuNEl5Ry1IUUtucWtzMl9vMWRCbEl4NG5hWHdxOGdvSlVOblhlUTd5STc3bEZsUEZ2ZENIeTJIbm5aLXJJN05WZWFmVmh5X3Nodm9ncWNIU21lTnVzdw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Safety / recall",
      "b": [
       "toyota",
-      "honda",
       "industry",
       "recalls"
      ]
     },
     {
-     "tag": "RACING",
-     "cat": "RACING",
-     "title": "Nearly $3 million on ten wrists: inside the wild luxury watch Flex at the 2026 Las Vegas Grand Prix",
-     "source": "Motorsport.com",
-     "url": "https://www.motorsport.com/culture/news/nearly-3-million-on-ten-wrists-inside-the-wild-luxury-watch-flex-at-the-2026-las-vegas-grand-prix/10877653/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-ALL&utm_term=News&utm_content=www",
+     "tag": "AUTO",
+     "cat": "STELLANTIS",
+     "title": "Stellantis says keeping production in Italy a 'daily challenge' amid rising costs",
+     "source": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdkxzSkFGMTNsNWZ3U2xYNEpheEMyYmNNNldISTl5SW1lMWdUWTFEZEdUOGpDWlN4OEtBZl93RDQ4S084dHJ5MTNMZmtqOGd5OFVLZ1hXckRsRjJyNDRfX3gwVk5oYmhiRXQ2U3lGeDIta3pqSW9tcHhPNFRNUDkzcmxFUXExUGo2MTFjN203U1JfcXdyS2JYV050cDBGWVd1elV6UVJWTDdGaVhEWjRoYUFPTnB5cm9sR3M1dk9kS0s5QVlMMFB1SzdTVm1IYU51QVBaZjNfUQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.3,
-     "why": "Money / prices",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.2,
+     "why": "Fresh",
      "b": [
-      "racing",
+      "stellantis",
       "industry"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "GM",
-     "title": "Stellantis sues Unifor over Brampton plant; Bowman Chevrolet’s Katie Bowman Coleman",
-     "source": "Automotive News",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORE1rMEFxR2EwWFpwR3hUMmtESzF1NVRoMExqbUdfVUhLQlE1ZTJ2Qi1uSzJpY0tfc1c1ZDJZQ0Q1a3plUEFUSEtIVXVvUzNLdkpSQnU4bmtnWHlOemctZ0JVSlFNMllUV0NBT3E5ekdBdmtWeTRKd2lWYWZmV2tKSkFNSkFZcGxmT25OYzVlNC1taDE4VkdNQkhVTEI2Y05MdHFjam9udDNQRFRHRkE?oc=5",
+     "cat": "EV STARTUPS",
+     "title": "Polestar's quarterly loss widens as sales mix, pricing weigh",
+     "source": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNODhLdnpPa3k1TktmRU5Zbi04Q05KbUU4U1l0ZjEtbWhkSGJ0SndKT3QtOHJLNG1uN1BvV2FJbEFNUlhObktuR3hKN1BZZFJ4Q2N1LVlSX0pnVGQyQ0h5bkpHcnRGTDN5T3lSaUVrNWIwcmh0eGRWell2bENpY2ZJZFhfMFctaEREVmpRaE9OTl9WWjJyS0hic1V2TFZXckdfWXdmR29ZMWp0akY2MndOLU4zS3ZPaW10dTNwMFVXQnJabnlydEpFVVhsSFNlZw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.2,
      "why": "Fresh",
      "b": [
+      "evnew",
+      "industry"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "INDUSTRY",
+     "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+     "source": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBNbWY3Z2hNLWJsb3dsYmdKakJjZEVaU21VaTV3WEFZV196bldhMGJEeUlFMHJlSjV2UHU5eFhrTS1BQldGTTdKemhscThySFJfLW55ZE1PUGpFeHN0bUtjaDR5MzNHZ3RVODBhU0IxTnBuNmdySG400gF8QVVfeXFMTkRUVDZGZkdHZ1VDMWpGcWtvc01hVlJwd0lwdDJUYU9OZXV2NjdYRFNTUmprbFRuWEkxd1lrOFJfR1NVbXE3S0dMMXBLNk9qTGlsSFBDVEtqYWxuOXc4WTMzUHFZTENRQlFLeDM3cldOTHpxVlYzR2NNRC1BcQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.1,
+     "why": "Money / prices",
+     "b": [
+      "industry",
+      "deals"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "GM",
+     "title": "At $17,000, Would You Say The Price Is Right For This 1973 V8 Chevy Vega?",
+     "source": "Jalopnik",
+     "url": "https://www.jalopnik.com/2328350/1973-chevrolet-vega-for-sale-17000/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.8,
+     "why": "Money / prices",
+     "b": [
       "gm",
-      "stellantis",
+      "industry",
+      "classics"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TESLA",
+     "title": "Tesla's Safety Lawsuits Never Reach Courts Because Of The Fine Print At Purchase",
+     "source": "Jalopnik",
+     "url": "https://www.jalopnik.com/2326596/tesla-safety-lawsuits-never-reach-court/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.8,
+     "why": "Money / prices",
+     "b": [
+      "tesla",
       "industry"
      ]
     }
@@ -3513,71 +3579,71 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "HONDA",
-     "title": "Recall alert: More than 810,000 Honda vehicles recalled over airbag issue",
-     "source": "Peak of Ohio",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWWNKUjdhelRpdzZXck5ScDlXVlQzSWdoakhnTDVzRlVsWTBmWlFzbURDSUxodFg2TFhUQ08yMGlNZWVFWVFpLWhGVjJhZ3VEa3ZtaDh2VXhaR00tMy1QYnpZdF9YYjhfOHR5NVF0WE40VktnUGtFWWtiaU0tMmo1VFl5eDNYdXIyaXBVTHd1TjZnZXRKWnlfSGdkY2lybVJDUEsxb05IVjJDeGlxRGpN?oc=5",
+     "title": "Honda Motor (TSE:7267) Recalls 810,592 US Vehicles And Unveils Avancier Hybrid SUV",
+     "source": "Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTFRoUGw2T3R4Wkp1VHZXQ19nQmNyRHhXb1ExcExfQ1pSUVgzbkdwaHJWeE0wQ1JDN0wxanNEdG5VQ2Nyb1ZtSFNYVHFKTWMtSkFnUmdhM3VER1dGLXZzN3BtNk13bkl0UmdqMXlvWnJWbVZMYXNIU3FSNF9iUXJvWVowTlgzc01PalVzM1k1SzYwNHNRVFdtbg?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 8.6,
-     "why": "3 outlets covering it · Safety / recall",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.8,
+     "why": "Safety / recall · New model",
      "b": [
       "honda",
+      "ev",
       "recalls"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "HONDA",
-     "title": "Honda recalls more than 810K vehicles due to airbag inflator issue",
-     "source": "ABC7 New York",
-     "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFAxM0xicGRVZldxRmpmZWMyaW5idFFzLVkwZkUzczl4LVdNbEFzZkxUeENIM3VyXzJ4ZUFTVTZtRTg1Zw?oc=5",
+     "cat": "RECALL",
+     "title": "NHTSA proposes pushing its automatic emergency braking mandate to 2031",
+     "source": "MLQ.ai",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdGkyZmhVQjVGMWg3OHgyNEFuSDZtR2J5UG94bXh0WnBoQWVQWnhuSE1GMUt0bmhiazFNamtyQjVablpBY3ZVWVZ3amlERUVxamg5czBmREhwNHFQTF81ME5YRWNsSE5UU0tGekNTLVV1eTFoQll3Nnk5NWNtSW56YW9GZWFzcGNldUJEYmVLY2gwSl91Q0E?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 7.0,
-     "why": "2 outlets covering it · Safety / recall",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
      "b": [
-      "honda",
       "recalls"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "HONDA",
-     "title": "Airbag recall hits 800,000+ Honda and Acura vehicles",
-     "source": "11Alive.com",
-     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQb0kwajlCcjliVmY3alJEWThtNklldHBhU1JGT0RLdVU2Z19OWm9MNWpMWmRvMWl1X1FTcWswVnlsYlRhY3h1TTVmTWFOX3FTa0tXWVp0d3NNLXlwajE5Q2ViTzV4WklOZXdMaTBxQTBYeG1tWFhBRjhMOFBhSmJSS0ticmtxd1NydXVaS2RKYlJHYW9kd1NJWkZsLVFNcEdBYVFhZm8zb0ptdzFCM0xrRVQtU0VIOXJkZkM3cTlsMmNndHhrSVpaSl9YTG5pM1d1aEVPaTRhNWc0ekYySU5taWtRWE8?oc=5",
+     "cat": "RECALL",
+     "title": "Automatic Emergency Braking Deadline Could Slip to 2031 as NHTSA Cites Testing Gaps",
+     "source": "MotorBiscuit",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeGRwdUR1LTA5VjJJYjZ6bnpqRzR2dWM2T3g1OUpIMGlaeGowZnJiYlZPZ3Ytbkk5cndRVkp0UE5aYnMwWmcwVGlQV1JRcVpNZm1aNjhFdnRKZXRseGRkNHZEZ3l3cEs1SXVYZHJXdEVtZVFlNjg1b2xld3MxY255MFBJSVRLVlVfcVpSSUdnbXBDV21Zc05CRmU0cVYxb0RkV2tIWWRMd2Etc1V1NTdNZXN0bw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 7.0,
-     "why": "2 outlets covering it · Safety / recall",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
      "b": [
-      "honda",
-      "recalls"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "TESLA",
-     "title": "Waymo says recall prompted by 11 new incidents of robotaxis entering closed freeway lanes",
-     "source": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTWNEMGNteHFqMnNPa2tBYUVlNE13VHhobUpPYUZiUnp3RjlMLWt4OU5rVHVCZ3JwTnJjQmRMUE02a2FuR241cmQycW1nWjh3YkgxR012OGRNcWdGSlFPSTN5RkxOTndMSGRtMTJtNHJNQnNmWlRkTi0tYkRFOVN5Sk51MU5DMlpfbDhGa0Y3NjMwVzZ4NXU0bGNJR1Y1MU5nYjZF0gGoAUFVX3lxTE4tQjBTMUZILTBqRGg3M0tOeTlmSm1LbDQzSE5yUElwbU0zaXJPZG1veHZzWTRjcjlBVjFGNDRtMmp2YnU0NU1BaXpTS09ISG1GaDBScnZaaUM1RzhsZmcyT21HdzJBUjFDc3ZDQW5XbXlRNDNzZUxmd2NpREI5UjlMRThRTHZwQ2czQzlUb2FiU2tCNFQyOVBMbGpnSlNFajR4Y1U1S1FBSQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 6.0,
-     "why": "Safety / recall",
-     "b": [
-      "tesla",
       "recalls"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "TOYOTA",
-     "title": "Takata Strikes Again: Toyota, Lexus Recalls 314K for Airbags",
-     "source": "Pickup Truck +SUV Talk",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdE5fa3BkNmpidlB4aFBRd1hfNlEtckRNMDhOSlJVcFZNeF9jWFVjNjdlN3gxYWladkNnQm9NTGlDNlhCMGpIbVBIdG1ONUNvVXN3MU5vM3R2Z2c2UFV5OUxlaExUeTdZbXhZaW55RE0tY1dSVU9pUTdrQTNJRVZrMHZRUW03X2NHcll5MG84TU9yekdtNmI0Z3Vn?oc=5",
+     "title": "After Four Tundra Engine Recalls, Toyota's Engineer Says Dealers Are \"Working Through\" Inspections",
+     "source": "MotorBiscuit",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxON1p1cTBwNzRzUlhIeW9kaGFUSV9PdnJpTUNNbUExeUZSYktBcTJNM2pZaTJBVWhJekowQ3BkSHNCV1V0dldoT3Q5X2txVEFRWTFoMzRieUh6MXdma25RWlRNb3ZLdTd6RzZrRDBuNEl5Ry1IUUtucWtzMl9vMWRCbEl4NG5hWHdxOGdvSlVOblhlUTd5STc3bEZsUEZ2ZENIeTJIbm5aLXJJN05WZWFmVmh5X3Nodm9ncWNIU21lTnVzdw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.4,
+     "why": "Safety / recall",
+     "b": [
+      "toyota",
+      "industry",
+      "recalls"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "2022-2023, 2025-2026 Toyota Tundra Recall: 62K Cracks in Camshaft May Cause Engine Stall",
+     "source": "Pickup Truck +SUV Talk",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRFc4TXFIU3JWZDJoblIwQVNQMXFicEhBUmtmd3doYUJFQmc5Ti1zZ09fSk5LOFUwWGpCSC1FQWp1a0NRYzhEN1ZSbTI2dVZHOVNCQndvQ3dzSWxWcGJFcGh6alhwSHR3N1ZVRkxEUVRFQU9iVzdwY05hU21MUkdwY05vNktVeXFrVGZ5ZWVEZzltUjBLR0h4bVgtZ3ItdFExN01BTzRyLWstR2Z1WGlXeWRMOW1sS3RaZk9zc3dfZ04?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Safety / recall",
      "b": [
@@ -3592,10 +3658,25 @@ window.DG_NEWS = {
      "source": "Land Line Media",
      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN19PMVQ0RVI0MFZBamltWG1QanJ5dzlIRWdfYVZqaEJyYl9aQkVrNmpRdWhLWFlFZlgyQndtNWFaNTFJVlJKNUlVWWs4dXk1R0pwV0o0N3ZhM2VuZTFSX3BNaUVYZi1VQmg1QkxsMEN2S0ItQ2ViY2NZRHhOX2RmVkVtQkFPS0M0Q0JfNkMxMGp2UDJYMEE?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Safety / recall",
      "b": [
+      "recalls"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "HONDA",
+     "title": "Honda recalls more than 810K vehicles due to airbag inflator issue",
+     "source": "ABC7 New York",
+     "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFAxM0xicGRVZldxRmpmZWMyaW5idFFzLVkwZkUzczl4LVdNbEFzZkxUeENIM3VyXzJ4ZUFTVTZtRTg1Zw?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.4,
+     "why": "Safety / recall",
+     "b": [
+      "honda",
       "recalls"
      ]
     },
@@ -3606,7 +3687,7 @@ window.DG_NEWS = {
      "source": "NeoTeo",
      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOajFYRWlGcTZpSVVhbktXZWlWYWJwT0VIWnlxTGVOZDBrWExXNFA0elJyYzg2b1JKeGxmTUhHTzNOTWdSdUswYXdZZXY4WjhXNHlZWkg5N0NnS25YLTlyMWFjS3Eyamd1bk94QzM3ZUtNbVRLYTZ5LVB2Wm1UWFdydmdGdkVCVnRnN1N3NWZ1Y1o?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Safety / recall",
      "b": [
@@ -3620,7 +3701,7 @@ window.DG_NEWS = {
      "source": "TradingView",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeTR4NWdkVFVsdW40ZTV4Q05MLXdwUEw2Zml2VGVwR0JhTldacEZNdTBOckwzdTBfcm1JNWNabFVMYVRBb2tYTmtFMVJmSXZMQm5kN0IxbEZXdjNYVlJyUnB4aERkRmRITTZJU203dDJLZ3llblp5ZEljQzFWTjY4YnJnVXg2OUJLcWdsdlZJT3BnSE5kSnI4V1JtcGtKdlZiMzVnV3l5ZEhOSXJhWDR2bklsVEQ?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Safety / recall",
      "b": [
@@ -3630,32 +3711,48 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "TOYOTA",
-     "title": "Recall Watch List: Magnetic robot toys and 1.6 million Honda, Toyota vehicles recalled",
-     "source": "41NBC News",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9DZF8ta3BERmFVRlRvVDh2Sjg4emFOMHdDVFlBNjZSWXlVVjhEcEUzd2dtWE9LY0ZfXy1RRTVUU1Y3RkgwNVc1S2VEZjhOdGRzblZCaWxNSGdFZ1BzNG91LWhvVGtxZ2NFdmlSdzN2LVBIZk1VOVRIeA?oc=5",
+     "cat": "RECALL",
+     "title": "Waymo Recalls About 4,500 Vehicles in US Over 11 Incidents of Entering Closed Highway Lanes",
+     "source": "BigGo Finance",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5xQ0lxU3JKTm9DNFdUMjFTaUtJdzg1TEdaRTdkeFNyTDhYWjJjeFpQTUNBTjhrVC1BRDhfSkZuODR1X3ltMDdrVlNzcExCYXVDWFhyaDFDNm16MVVVRl9kOXd5d1JHdmhOVDBBUDB0MWZxNlhPQ1E?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 5.4,
      "why": "Safety / recall",
      "b": [
-      "toyota",
-      "honda",
-      "industry",
       "recalls"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "RECALL",
-     "title": "Automatic Emergency Braking Deadline Could Slip to 2031 as NHTSA Cites Testing Gaps",
+     "cat": "FORD",
+     "title": "The Jeep Gladiator Has a 26.7% Rollover Risk, NHTSA Says. The F-150’s Is 19.1%",
      "source": "MotorBiscuit",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeGRwdUR1LTA5VjJJYjZ6bnpqRzR2dWM2T3g1OUpIMGlaeGowZnJiYlZPZ3Ytbkk5cndRVkp0UE5aYnMwWmcwVGlQV1JRcVpNZm1aNjhFdnRKZXRseGRkNHZEZ3l3cEs1SXVYZHJXdEVtZVFlNjg1b2xld3MxY255MFBJSVRLVlVfcVpSSUdnbXBDV21Zc05CRmU0cVYxb0RkV2tIWWRMd2Etc1V1NTdNZXN0bw?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQm5udHBTZ2UwdXhzRE10QUQxR3NhOWdFX0hvUEhLVEFSUG1ISmp4V0lKUHF0TTdweGNCMzBoOTZrWFdpSV83Z0NRenBLaDhMbXlJWEo1bDlLZ2xtNUR3TTM3azhkLTVBSVFHaXFOZWtVQ3lxZldaY3NMSEJQY0F4cFU2T01pWkpoT096cnBRSzVmUUFfeUo3d1lqT2k5ODVPMlo2eS1n?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.6,
+     "why": "Ford news",
      "b": [
+      "ford",
+      "stellantis",
+      "recalls"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "TOYOTA",
+     "title": "Here's what you need to know about the Toyota and Lexus hybrid cable defect class action settlement.",
+     "source": "Claim Depot",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kWnVVUlR3UEMwTG5QbnFhUTc1REkwRktnWGZPVnlvMHYyZTF2dzQtYXRkN0tZMV9xdmlJUnpPdzA1NmVwU2MyYTNiNGdaNTA3WXoxZ1hQTXJxQ2tEalROUWZobk5VLTJnaUZlV2NKTWVhckF2?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Money / prices",
+     "b": [
+      "toyota",
+      "ev",
+      "industry",
       "recalls"
      ]
     }
@@ -3668,73 +3765,45 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "AUTO",
-     "title": "3 Black Friday car lease deals I'd actually consider",
-     "source": "USA Today",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdTdwRGdRbmI5TDdwRGdHYndpNHRxVGpLQnFFVnFmQTZuSER5S1ZWdkRrX3p5SmQ0OWw4TGZVTWRnZFJqT1dVZXM2WHh3STBjU0pvcGltc0pHMmFrcUNMVUxpRHJzdURGZ1cyUGZaOEJsNTVtOXZ4SURtRzd0WWw1YzdLU1d2OGs5cjdnZU05QnRvUVM2VlFzZWxRcDExQQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.6,
-     "why": "2 outlets covering it",
-     "b": [
-      "deals",
-      "honda"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "AUTO",
      "title": "Best Black Friday 2026 Car Deals Ending Nov. 30: Effective Lease Costs and 0% APR Offers Checked",
      "source": "Road Ethos",
      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbkx6R3ZzdlM4RXhpN3VxSThhR0tiZS1DekRodWNfV09yUGFPbjd1NjFqOUtwdjF6YUsxSHZyWDVreHhPM20xdmxUQnNOblYzbUpHQ3lydFFDTVZNQXJZcG5fUHRrREo1TkNhYmtjb1g0cFdQT0M3eVRrZ0kweks1Z0p2QmgtandkaTZCd1VhNTRYenhTXzNWTU5Qa1J3Mk1KUzkyalFGUERQVkd2bGpLMUZRaVduQ0x4VnBEVkw2VUF2SUxG?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.6,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.2,
+     "why": "3 outlets covering it",
+     "b": [
+      "deals"
+     ]
+    },
+    {
+     "tag": "FORD",
+     "cat": "FORD",
+     "title": "Lincoln Nautilus Discount, Lease, Finance Deals For November 2026",
+     "source": "Ford Authority",
+     "url": "https://fordauthority.com/2026/11/lincoln-nautilus-discount-lease-finance-deals-incentives-offers-november-2026/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 7.0,
+     "why": "2 outlets covering it · Ford news",
+     "b": [
+      "ford",
+      "deals"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "GM",
+     "title": "GMC Sierra EV Discount, Lease, Finance Deals For November 2026",
+     "source": "GM Authority",
+     "url": "https://gmauthority.com/blog/2026/11/gmc-sierra-ev-discount-lease-finance-deals-incentives-offers-november-2026/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 6.2,
      "why": "2 outlets covering it",
      "b": [
-      "deals",
-      "subaru"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "Turo’s Black Friday Deal: $50 Off Your Holiday Road Trip",
-     "source": "The Drive",
-     "url": "https://www.thedrive.com/news/turos-black-friday-deal-50-off-your-holiday-road-trip",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.1,
-     "why": "Money / prices",
-     "b": [
-      "deals"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "INDUSTRY",
-     "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
-     "source": "CNBC",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBNbWY3Z2hNLWJsb3dsYmdKakJjZEVaU21VaTV3WEFZV196bldhMGJEeUlFMHJlSjV2UHU5eFhrTS1BQldGTTdKemhscThySFJfLW55ZE1PUGpFeHN0bUtjaDR5MzNHZ3RVODBhU0IxTnBuNmdySG400gF8QVVfeXFMTkRUVDZGZkdHZ1VDMWpGcWtvc01hVlJwd0lwdDJUYU9OZXV2NjdYRFNTUmprbFRuWEkxd1lrOFJfR1NVbXE3S0dMMXBLNk9qTGlsSFBDVEtqYWxuOXc4WTMzUHFZTENRQlFLeDM3cldOTHpxVlYzR2NNRC1BcQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.1,
-     "why": "Money / prices",
-     "b": [
-      "industry",
-      "deals"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "Black Friday Tire Deals: Up to 43% off Goodyear and More Name Brands on Sale at Walmart",
-     "source": "The Drive",
-     "url": "https://www.thedrive.com/news/black-friday-tire-deals-up-to-43-off-goodyear-and-more-name-brands-on-sale-at-walmart",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
-     "why": "Fresh",
-     "b": [
+      "gm",
+      "ev",
       "deals"
      ]
     },
@@ -3745,9 +3814,9 @@ window.DG_NEWS = {
      "source": "GM Authority",
      "url": "https://gmauthority.com/blog/2026/11/cadillac-ct5-discount-lease-finance-deals-incentives-offers-november-2026/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 6.2,
+     "why": "2 outlets covering it",
      "b": [
       "gm",
       "deals"
@@ -3756,11 +3825,85 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "AUTO",
-     "title": "The best deals to be found on used cars over the Thanksgiving holiday",
-     "source": "Detroit Free Press",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNc294eGNSNW51SHNCRTYyN1BXMmp1NkFOZ2xaUTZaRFR0YjU5a0cyUWJNYmNfV013bWpEdnBpcHhkZVMzZEpvWHl0QWdqcFNDaXdSRmJLcHlnV1FYMVIyWHUxaFJuV1V1YmtHanMxWG51ODdBaXZYdEt2NnFadHkzZllDcnZ4TWZKalpuVmk0NG5yRkpsOVZ1dm9GTHB3MG5fZFhRdXhIeHVaajdOUnI5YU4yaFpSMnJKb0I5bDVleXlNbjVwNklj?oc=5",
+     "title": "3 Black Friday car lease deals I'd actually consider",
+     "source": "Sacramento Bee",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11N1FsZTY5R01ub3ZIcUNDUmkzQlZXcWV3bF9mbjBRTWZPRjVnZndfZ3NxOFByMXBNbDU1S2h5ZkdLR3VJSXppdlBvZVNncW1Wcnh4bGUtX2F4RURjSjFrVldiQUJ3N2xsTlNoeVhiMkp5c1pTM2VfTDkwOA?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
+     "b": [
+      "deals"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "AUTO",
+     "title": "The best new car PCP deals",
+     "source": "What Car?",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Ec0U3WFRHX3hRbk1RdXpEalE4VmhPRHotaVhIaDlPTUtwTjVkdDIwWU96NkdMWkRCZkpLU1N1TmZQYV8tWjRBd0FkbGJqLVVYVmdleDdVUmJmS1BmU3pRdTVERlB0al84MWlCeVFHTQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
+     "b": [
+      "deals"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "AUTO",
+     "title": "This 3K-Mile 1968 Pontiac Le Mans Stored for 50 Years Could Be the Black Friday Deal for You",
+     "source": "The Drive",
+     "url": "https://www.thedrive.com/news/this-3k-mile-1968-pontiac-le-mans-stored-for-50-years-could-be-the-black-friday-deal-for-you",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.2,
+     "why": "Big U.S. racing",
+     "b": [
+      "racing",
+      "deals",
+      "classics"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "INDUSTRY",
+     "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+     "source": "CNBC",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBNbWY3Z2hNLWJsb3dsYmdKakJjZEVaU21VaTV3WEFZV196bldhMGJEeUlFMHJlSjV2UHU5eFhrTS1BQldGTTdKemhscThySFJfLW55ZE1PUGpFeHN0bUtjaDR5MzNHZ3RVODBhU0IxTnBuNmdySG400gF8QVVfeXFMTkRUVDZGZkdHZ1VDMWpGcWtvc01hVlJwd0lwdDJUYU9OZXV2NjdYRFNTUmprbFRuWEkxd1lrOFJfR1NVbXE3S0dMMXBLNk9qTGlsSFBDVEtqYWxuOXc4WTMzUHFZTENRQlFLeDM3cldOTHpxVlYzR2NNRC1BcQ?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.1,
+     "why": "Money / prices",
+     "b": [
+      "industry",
+      "deals"
+     ]
+    },
+    {
+     "tag": "RACING",
+     "cat": "RACING",
+     "title": "Bearman finally gets 2027 Haas deal confirmed",
+     "source": "RACER",
+     "url": "https://racer.com/2026/11/26/bearman-finally-gets-2027-haas-deal-confirmed",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.0,
+     "why": "Fresh",
+     "b": [
+      "deals",
+      "racing"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "AUTO",
+     "title": "Black Friday Tire Deals: Up to 43% off Goodyear and More Name Brands on Sale at Walmart",
+     "source": "The Drive",
+     "url": "https://www.thedrive.com/news/black-friday-tire-deals-up-to-43-off-goodyear-and-more-name-brands-on-sale-at-walmart",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.6,
      "why": "Fresh",
      "b": [
@@ -3769,76 +3912,31 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "7 cars you can lease on Black Friday 2026 for less than $400 a month",
-     "source": "USA Today",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQU1pPSGxaMEhsSk1NUUlXNEp4Z0VDT2U4b3JzZDJCcVg5SmFLeUswc09xamkzM3Y4SlZKX0t5bkZyeWs0clNyS1k4TDBseVFkYXZrenlBQjZGYUFSUmk2dmdqSFViUHdJZjFnQjd6QzRxWE8zallzT09uMWYxaThqTkVGT3RjbHNWQWlBM01iLTFDd0lfOV9Yb1hkRmJkdjlkdVMxVHU0bFpTQQ?oc=5",
+     "cat": "INDUSTRY",
+     "title": "Are Trump’s tariffs aimed at securing US-friendly trade deals?",
+     "source": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdWVQTU9Bem1UcHdtT2s5T005dlJvaDZfMTZ3aTQ1UHpDVUNMbERrRTFpQ0pKNFI0alRqWWp6ODBNYTJuSVNIX2JBMEpDRFh2RmlvYkNISXByQlJrR0dvb1BvQ0hxZmlPSXhtY3FfZjB6eUl0S0dtb2hxcHJwZ2U3X3ZudWpyMFRodlVackNmbU5DOVJENVhmS0s5bzQ2Z3BSMEdyZNIBqgFBVV95cUxPc2NjTE95RV9JMXdFTy1CdVNSdm1mRUt3cGxydjdid21HVFAza2pLcGRiY2FzOEUxeHhKNHZRcjdFeHRxQ0h5ZjYzZHRFWWhMSTFqSnJmVU9BNnB5WnB4VGpYN2Z3RU5vT24wVlhQeXpqYURoWnlXLW5QbXNvWS1DSzd5VGVNM0dPcnkyQkE1NEJCRlROejRDaE0tSXR0aXFYakJyMVNQYkRyZw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.5,
      "why": "Money / prices",
      "b": [
-      "deals"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "HYUNDAI·KIA",
-     "title": "Hyundai IONIQ 3 spotted on US roads: Is the affordable EV coming to the US? [update]",
-     "source": "Electrek",
-     "url": "https://electrek.co/2026/11/25/hyundai-ioniq-3-spotted-us-affordable-ev-update/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.3,
-     "why": "Fresh",
-     "b": [
-      "hyundai",
-      "ev",
-      "deals"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "NISSAN",
-     "title": "China releases data on Nissan Terrano SUV with three powertrains — Motor1",
-     "source": "UA.NEWS",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWmwwVjlUNW42YmFXenRSRlp2OGo0MlRTemZySWRIMUxvblJNWUpRX2piTnptVXRNZF9xaFhpelFZOVhuTnRVWWhsZ0I5VXB2SlFPNFZydHp3cFVOd2hBZW9NT05ZbEtBSkVJc0E1NTZGSEN6VlcxMDBUNk45WmpEQ3BBMVFXLWMyV2lfN3g4bTNqelNSd1JpM2ZkcmtBclg2bXFxOExULTlBZWJpNTRNaExWS3U5UzVxUHRiM1ZTZUlvT1Q1RGhtX19B?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "nissan",
-      "deals"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "VW GROUP",
-     "title": "Audi Changchun Plant Reportedly Below 10%, €500M Loss",
-     "source": "shattered.io",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcWhmMGJSVTlPYjdoTmxTWklrOW56cEtkLTlqajR6QU41andTN0dxdWVDZVJ2eE91b0padExCdWRsNFNmQ2ZaaFBpZEJTWDJyWTBhVkpoZlZoUjE4VEcyS2RValdBeU1vbDdJUUZ6MEdFMld6SzhTcENEeVpUZlVXZl9hY0NrS2owU2l1c1k2MA?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "vw",
       "industry",
       "deals"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "Drivers Who Put Gas, Tolls and Repairs on One Card Are Getting a Rebate on the Cost of Owning a Car",
-     "source": "24/7 Wall St.",
-     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZGxVM3VUcm9kMFBCSVpaTW9aeHprbV92Rl9TZl93dU1UMVp5Z3Fna2RxNGFxTmQySHZGamx0NFR1Z2gyQ2w1X1ZUbVowdV9Wd003RWU3SjBEZ0lyTXpScFpON3hiZjcwbVRVLW5qYW9nUGQyWTFtUXV0NDBnZWMyV3YyQ21nY2hfTkV5NEJIQ0JFbjZyajVhSm5rZEpfVlBzV3k2aEF6VjRCcDRteEwzUUY4Unc5MXppRDBEdExnR2Nmd1F1b25tU3E0VDlQQkxFWXBWME1vX21kbGtISHJscEIyNA?oc=5",
+     "cat": "EV",
+     "title": "Thanksgiving 2026 Green Deals Hub: EVs, e-bikes, power stations, tools, appliances, more",
+     "source": "Electrek",
+     "url": "https://electrek.co/2026/11/26/thanksgiving-2026-green-deals-hub-evs-e-bikes-power-stations-tools-appliances-more/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.3,
      "why": "Fresh",
      "b": [
+      "ev",
       "deals"
      ]
     }
@@ -3849,58 +3947,45 @@ window.DG_NEWS = {
    "group": "topic",
    "items": [
     {
-     "tag": "FORD",
-     "cat": "FORD",
-     "title": "2002 Ford Thunderbird With Less Than 30 Miles Up For Auction",
-     "source": "Ford Authority",
-     "url": "https://fordauthority.com/2026/11/2002-ford-thunderbird-with-less-than-30-miles-up-for-auction/",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.4,
-     "why": "Ford news",
-     "b": [
-      "ford",
-      "classics"
-     ]
-    },
-    {
      "tag": "AUTO",
-     "cat": "INDUSTRY",
-     "title": "Amazon Autos’ Fan Jin talks faster dealer onboarding; Barrett-Jackson’s Craig Jackson",
-     "source": "Automotive News",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZ1IzRUNtRlpCYkhQTS1SRUNNSGlWMEZXUVBCM3pOTjYtUm9CTFRQMlNiZDhVUG83VEQxZjV3QUZRYm51UDNScDRFUm83bFpEQzZSMllfMGlLQ2dpUC1nd0dEcWx3MHE4ajdoR1NnY2JUSmVfaU1ob3VFOFhXejlUX2daYjl5bE9SSEdTZWVZNmVBMThUaEg0U05xaHhEVnlvWU1qcG0tWWM?oc=5",
+     "cat": "VW GROUP",
+     "title": "Porsche 911 GT3 one-off revives the GT1 that won Zhuhai in 1996",
+     "source": "AutoNext.co",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tQ3h3NjlWbV9iejc1bUZrQzUwcXRWbndNS1V0b1p1S1AwMFpnbXZZRzBITTgtcXpTMGhoVjVlWXNhaFdfaURCRFBLLWRaY19TYVFGZHFIOUlTMElOWXZqWGlOLXVhSldILTdGT1B4N20?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 5.2,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.6,
+     "why": "2 outlets covering it",
      "b": [
-      "industry",
+      "vw",
       "classics"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "AUTO",
-     "title": "R.E. Olds Transportation Museum Raffling 1991 Oldsmobile Toronado Troféo",
-     "source": "GM Authority",
-     "url": "https://gmauthority.com/blog/2026/11/r-e-olds-transportation-museum-raffling-1991-oldsmobile-toronado-trofeo/",
+     "title": "This 3K-Mile 1968 Pontiac Le Mans Stored for 50 Years Could Be the Black Friday Deal for You",
+     "source": "The Drive",
+     "url": "https://www.thedrive.com/news/this-3k-mile-1968-pontiac-le-mans-stored-for-50-years-could-be-the-black-friday-deal-for-you",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
-     "why": "Fresh",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.2,
+     "why": "Big U.S. racing",
      "b": [
+      "racing",
+      "deals",
       "classics"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "FORD",
-     "title": "Unrestored Mustang Needs a Home, It Doesn't Even Need a Complete Restoration",
-     "source": "autoevolution",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQN3UwYzVITHpfYVVJTkpPU3BrSTBTR0tWZUZDcWJyUHJMblNoZjNNb3dCY1BRNVdQUVVqVW95eWZXeE9VdmlsWnNUSzdKbjBsV0pQNEVjVGJXSmtTSDN4Yk1LalhfeTNRRlgtVlhXN1FIdTJZVl95UEhOUE1iMGlXS2VJWldjZDduNzR2djE1QkM0bUJybDZyUmI5eVN1c0FFcWVtWWh3em5remF0dXZuNDdTNTQ5Q2pndHdFVWRyWQ?oc=5",
+     "title": "This New Ford Mustang Wants To Be A Classic Eleanor",
+     "source": "Carscoops",
+     "url": "https://www.carscoops.com/2323430/elanor-mustang-vintage-modern/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.6,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 5.0,
      "why": "Ford news",
      "b": [
       "ford",
@@ -3910,12 +3995,12 @@ window.DG_NEWS = {
     {
      "tag": "AUTO",
      "cat": "GM",
-     "title": "Pick of the Day: 1969 Chevrolet Caprice Coupe",
-     "source": "The ClassicCars.com Journal",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOLXktclpVdWVoZHAtblo2U3pXNWJ5TTE2N1NNcjdqWGlseWk1bWJnSGxCajdVYkRGSl9TZUxXNWtEd3Y5S1lvTXRNSUpVdDVXZFJXUElzamMwdlZWdzRqWEY2Y25rYmVJWkc1UWVHLUpKQ3pyZEtnMjRBSl9YSUJ5UFFRNUt4MzY1QUN0VGtwazI5QQ?oc=5",
+     "title": "At $17,000, Would You Say The Price Is Right For This 1973 V8 Chevy Vega?",
+     "source": "Jalopnik",
+     "url": "https://www.jalopnik.com/2328350/1973-chevrolet-vega-for-sale-17000/",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.5,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.8,
      "why": "Money / prices",
      "b": [
       "gm",
@@ -3925,30 +4010,75 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "AUTO",
-     "title": "A Dusty, Barn-Find Bizzarrini Shines at Retromobile NY",
-     "source": "Hagerty",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaHBsZzNlSFlsSnZxNVVIeW83aG95eDk5eEF0RUhlZkZNcGJETjFPSG01ZFZqVExHVlk0eXJuQ0Z5R0hVMGpLdXN2ZHBOSFM4Y2dZU2V0VlI2R1pULUoyNzVZUExMZHJWNDJudjVKb1lNWGVJckFVYzFpTUVyZ3B4Q3FRdV9zbGVldEs3RmFoVnFHeFZaYzFYUlFRX01VZnVCZVJwVnRtUS1zLWl6RTdLMjVVbTM?oc=5",
+     "cat": "GM",
+     "title": "View Photos of the 1979 Buick Century Turbo Coupe",
+     "source": "Car and Driver",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZmFoY2FuRFRxWUNDNDYxUGdLVWlVQ0N0WTBvbkVCcU5KNVVNRFpab3lmcUsxVGJvRjlZZ1NJR1MyQ0NYQkV5TkNYcVlXR2J4aU9feldIT05Kb0p2SnN2SVFBNmZfWjlRdmlrM2wxRDVYak9OMDNGVVhjNUVLVWVtX3J2eDVldDFUMVpwSXdTN3VnOUltU1c3czVaSTh0bVU?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.5,
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.7,
      "why": "Fresh",
+     "b": [
+      "gm",
+      "classics"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "FORD",
+     "title": "Butchered Up Funny Car At Mecum Barn Finds May Actually Be A 1964 And A Half Mustang Used For Prototyping Before Production Even Started",
+     "source": "NewsBreak: Local News & Alerts",
+     "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQYnZoaEhaM1d3aFpTSm4zTk1TQWw2NVVtYnVjNnV2bkM3Q3I1ejhGaTdDME1wLVNSc3BTQWVfNDh0RGFVMU9vckdwV1Bhd1VvdUY0MFpLZUFYVGxWdHhTWXVYYWhXcmQtbFhOWVVDOWxvNXhSY194d3o2b3BYRGJOX2Z2U2xoLU9IUGRRUXFtUzI3YUFhUEhVTGJwcmFCRWtKcENRVENmdXktbkVLa3pWaUNWNWtBcVl1QlowYnFhZUNTZDNrX29Cai1ldUtJX2prMDR6UElWVk0wdy1fc3Q3bUJ4MzVURVpRVWxEV2x1Sl9hN0M2REg2SFE5cGZLcnRzMWFSVm1ScEdOWmYzRTVXNmdoNnRXZ2lFV1ZXekJtbXFZc3UzUUpNMU9ORmg?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.6,
+     "why": "Ford news",
+     "b": [
+      "ford",
+      "industry",
+      "classics"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "AUTO",
+     "title": "Ken Miles’s one-off 'Flip Top' Cobra could make more than $25m at 2027 Mecum Kissimmee sale",
+     "source": "Magneto magazine",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVDFWaEt0ZV9URVZYV1FCMjhONENCVFNZUDFrRHpOR3RCblJnOGlHOUgzaUZkcFM5cmk0TkRLSDhxaFZuUG8zVFNwY25KM1YxRzJ4ME15eXNBYTdlaHduX1djOGNoT2lHZWZUNnhLSTFmajRIN0o4dzdHSHJ6RFVaZU1UVzBuMElhQ1ZRWG5CRUk5VjBT?oc=5",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Money / prices",
      "b": [
       "classics"
      ]
     },
     {
      "tag": "AUTO",
-     "cat": "GM",
-     "title": "1971 Chevrolet El Camino With 47,000 Miles Shown Burns Rubber With 454 Big Block And 4-Speed Manual",
-     "source": "Jalopnik",
-     "url": "https://www.jalopnik.com/2328073/1971-chevrolet-el-camino-454-big-block-4-speed-manual-transmission-ute/",
+     "cat": "AUTO",
+     "title": "A Dusty Barn-Find Bizzarrini Sold for $687,000—Still Covered in Michigan Garage Dirt",
+     "source": "MotorBiscuit",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdGtQMXFEU185aE1JT2V4UmdpN2QtY1RKdUtRMUo2UzNubERXbVE1WkpTZ1VDc3Q2emdfV01OR0RpUFFZTWJxendpNGhwamphUmFyNTNZcnJEV1NDVmJRR3R6MF9fNVdiMklDQ1E2V3hTak9acHZ2d2x2c3pTTXVkdElGb1N5ZVRhNi1SR2VoX0t1aUJQT0RyRDhvSXU4Y3FuZXQ3RU1oTFphU0Z2c2c5NzZB?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
+     "score": 4.5,
+     "why": "Money / prices",
+     "b": [
+      "classics"
+     ]
+    },
+    {
+     "tag": "AUTO",
+     "cat": "STELLANTIS",
+     "title": "1965 Plymouth Belvedere 1 Shows 81,000 Miles, Conceals 588 Cubic-Inch Hemi Routed Through Stout Torqueflite Automatic",
+     "source": "Jalopnik",
+     "url": "https://www.jalopnik.com/2328298/1965-plymouth-belvedere-81000-miles-588-hemi-torqueflite-automatic/",
+     "date": "2026-11-26",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
-      "gm",
+      "stellantis",
       "classics"
      ]
     },
@@ -3959,7 +4089,7 @@ window.DG_NEWS = {
      "source": "Autoblog",
      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPM0lJa20yb3ZkR0VSZ29ObWxyYVY0UG1FSl9kX3djYWRwdVhEamJ0bkRoaU1URzdzVUQ5bFhzeUtfMUxDYWl6Z3QwSHFIUmlKaWIyNWhoeXpfUkJDRmthZVRaNzc3ZUswUE5hbHktdDZ2Q2NDV0kwWEdqTXluYkFXTl8zbHZWRVhhdDA0a3ZEeDJ0QW5Pa2hIYnhWRVUxUEdiVGJkZy1n?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.3,
      "why": "Fresh",
      "b": [
@@ -3968,60 +4098,31 @@ window.DG_NEWS = {
     },
     {
      "tag": "AUTO",
-     "cat": "BMW·MERCEDES",
-     "title": "Mercedes-Benz Offers a C 111 for Sale for the First Time Through RM Sotheby's | THE SHOP",
-     "source": "THE SHOP",
-     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSFRmZFplWlR2b292OFZpTnlPNnBFUTlFNVB1YXhXeEhSOVNmcFgwTUNPYzVTOGpUZ1hPRTZzN0QxdEtQZ1YxaTlSVmEzQXI2Y18zRGJzRWtjUUNIZm80eEtJWklqSS1DemxHTWpjSlctQ2lvNldIT081eGl0SkJlYWR6UF9nZ9IBjgFBVV95cUxPMlNFeGVLX1h5SmVUOV9mM3lEVlF5b093SDZPT2FELVExVUdRMmxjYTNQd2NPNVVTeFNOV3Rmc2pKNG9hQXVTR0htUDJHYmY5RHB1WVVUVVRwYWgzQXB4eWRJQWpOVGU4cFdtX2FuT2xpT1RadWZtN3VlcTRLUEZSZWxXQWdoYkxCV1VLOWNn?oc=5",
+     "cat": "GM",
+     "title": "Inspired by My Late Grandpa, I Bought a 1950 Buick Special",
+     "source": "The ClassicCars.com Journal",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQkFnMmFNVUgzUDZaOTJmSHljOEtYSk1LWnVpclJBSEd1YW9SSEdpbW5abmJESTctSTdyUG42Mm5OOTlKVzQxeG9zV195SEh6d011Nk0yMVRRMUpwbTlnQ0J3eWl2aC1Bb1hQWEw1c2pyZmFxLWNGaDgyODRSMXJnU3pVbkc0SEFWS0lMTEpOdENqbjZjTTZSX0tscmdRcnpxX2hEUENtWS1LNFExUHdKa3R5ZkxMUE0?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
-      "bmw",
+      "gm",
       "classics"
      ]
     },
     {
      "tag": "AUTO",
      "cat": "AUTO",
-     "title": "Mass. comedy legend gets classic-car law passed in California. It starts in January",
-     "source": "MassLive",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQkFqRmc2WHhBQTAya2RJaXVkZ3RrbV9kMjFWYnZnZ1FtanNMTFFYYTdHSjRObGQtVWI1WlRiT2ZJRXY3N0lSbzVaME9LV2xmYnBzY3ZwQjNlQ2ZSdktrQ2F0ZjFsck9US2VKRTF4QjFlanRXdFNsVzlFSTFUNEJxSW9lQjQxcm1fUXptRXZYUDBsSjZmX2ZtQkxMNHRERDhHTWNEaHI4QnNtUDQyckRlQnBNdWh6WFNXcjdkZkVUUlh5WjFp?oc=5",
+     "title": "Why a Classic Pickup Is the Ultimate Thanksgiving Hauler",
+     "source": "Motorious",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdWp4SU1iSUt0b1ZHVm91d0h2ZXBvak1sWjFUMFAxNXcyM3hCLXlCajhUMGttaEd4d1ZnSEdhTWczUVlWaXFQUXo3ekp4Y3VhSWlkd1hrdnN1bzMwRnF2TEd4cTFKYlY3OGw3dDFuUEQxaVdIQ2dfQkNUeFBOcG9lblpTaHhQSnJHQkNEMFZHZWw?oc=5",
      "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
+     "ts": "2026-11-26T21:24+00:00",
      "score": 4.0,
      "why": "Fresh",
      "b": [
-      "classics"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "VW GROUP",
-     "title": "The New King of the Classics – VW Golf (classic car blog article from 11/26/2026)",
-     "source": "Zwischengas",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWVNxblo0XzBndjczZlFJM3ppNjVDbDN1NEpiM1N2VTlMcDR0THVobW9pbkNkcDdidy14M2VTNVplLUtWeG0yX2twMjFwdllEUGN4N3BXd1hUbTB4UFUtVW9BVlNOXzJrTllUTDBRZnJYcGdGNVVTQWRZZHVEZVYydWtTM1BWcmVfbHVF?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "vw",
-      "classics"
-     ]
-    },
-    {
-     "tag": "AUTO",
-     "cat": "GM",
-     "title": "This 1956 Chevy Nomad brings back her childhood memories",
-     "source": "USA Today",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZ3pSb2NEV0xWUUNQX3dZY2pGWDRjUnNXTU9MWklLMlF1V3JCR3lFY1gyQ3ppc2NyNGlyaHVYNFR1Vno5REVtQUFvVXdobU96NTJ3cllOS2k3andLUmwwSlUxY1VtTjdXdDRjVHNlVktFdER1WnNhYjQyT1FqR2JFODBIMzlBb1ZoZmpFeWRwdWYtNEFJbGI2WVAwVEtBWG1CeUZUYVI5SnlaTTZYbi1iSmlaaUk4R1YzWnZDLUt2SmxObWFFenZDTDQtaU9XczVMY0RuaVdWRQ?oc=5",
-     "date": "2026-11-26",
-     "ts": "2026-11-26T10:45+00:00",
-     "score": 4.0,
-     "why": "Fresh",
-     "b": [
-      "gm",
+      "trucks",
       "classics"
      ]
     }
