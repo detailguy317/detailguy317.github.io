@@ -7,6 +7,42 @@ The Sunday **Garage Report** (emailed to you) always shows the next unchecked it
 
 ---
 
+## 🆕 NOV 25 UPGRADE - Race Center + CarStuff + GO LIVE (about 30 min, + 15 min for GO LIVE)
+
+### O. Upload the new files (10 min)
+- [ ] Back up first: repo page → green **Code** button → **Download ZIP**. Save it.
+- [ ] Unzip **DG317-nov25-upgrade.zip**. On the repo page: **Add file → Upload files** → drag in EVERYTHING inside it (folders too) → **Commit changes**. It only replaces the files listed in it - nothing else gets touched.
+  - Turn on "show hidden files" first so the `.github` folder comes along.
+- [ ] Actions → **update-feeds** → **Run workflow** → green ✅. This fills the new Top Stories, the maker/topic bubbles and starts the 7-day history.
+  - Open its log: `skip ...` lines are news sites that blocked the robot that run. That's normal - the bubbles still fill from Google News.
+- [ ] Actions → **update-series** → **Run workflow** → green ✅. This fills the race schedule and the race buttons.
+- [ ] Actions → **update-videos** → **Run workflow** → green ✅. This builds the Replay Theater list and looks up the new channels. In its log, any **MISS @handle** line = that channel handle doesn't exist. Fix it in admin.html → "Channels the robot watches".
+- [ ] Hard-refresh detailguy317.com (Ctrl+Shift+R / pull down on phone). Open **🏁 Racing** and **🚗 CarStuff** and tap around.
+
+### P. Turn on GO LIVE (15 min, one time) - feature a video without copy/paste
+- [ ] github.com → your profile picture → **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**
+  - Name: `dg317-golive` · Expiration: 1 year · Repository access: **Only select repositories → detailguy317.github.io**
+  - Permissions → Repository permissions → **Contents: Read and write** → Generate → copy the token (starts with `github_pat_`).
+- [ ] dash.cloudflare.com → **Workers & Pages → Create → Worker** → name it `dg317-golive` → Deploy → **Edit code** → paste ALL of `worker/go-live-worker.js` → Deploy.
+- [ ] Worker → **Settings → Variables and Secrets → Add**, type **Secret**, two times:
+  - `GITHUB_TOKEN` = the token you just copied
+  - `ADMIN_PASSWORD` = a long password you make up (write it down)
+  - Deploy.
+- [ ] Copy the worker's URL (like `https://dg317-golive.yourname.workers.dev`).
+- [ ] Open `detailguy317.com/admin.html` → **⚙️ GO LIVE settings** → paste the URL + your password → **Save**. Do this once on your computer and once on your phone. The badge turns green: **GO LIVE ready**.
+- [ ] Test it: Feature any video → **GO LIVE** → "✅ Saved to GitHub". Refresh the site in a minute. It's in the big player.
+- Safety: the helper can ONLY change `data/live-content.js`, only from your website, and only with your password. If the token ever leaks, delete it on GitHub and make a new one.
+
+### How to feature a video (after the upload)
+1. Open `detailguy317.com/admin.html` (bookmark it on your phone).
+2. **Drag** a YouTube link into the orange box (or paste it). Green check = plays on our site. Red = YouTube-only, so it shows as a "Watch on YouTube" card.
+3. Pick **Big player until** (it finishes / a time / you take it down) and **keep it as a card** (rest of today / 3 days / a week / no).
+4. **⭐ Feature now** (or **➕ Add to queue**) → **GO LIVE**. No GO LIVE yet? **Copy for GitHub** → GitHub → `data/live-content.js` → pencil → Ctrl+A → paste → Commit.
+- Everything you feature lands in **📚 My Library** for good. **Feature again** any time, even months later. **🎬 Replay favorite** adds it to the Replay Theater.
+- Your own clips: upload them to the DG317 YouTube channel (Public or Unlisted) first, then use that link. GitHub can't host or stream video.
+
+---
+
 ## 🚀 TONIGHT - go live (about 1-1.5 hours)
 
 ### A. Stay anonymous (15 min) - do these first
@@ -68,9 +104,9 @@ The Sunday **Garage Report** (emailed to you) always shows the next unchecked it
 - [ ] Optional: PayPal business account → ask PayPal for **micropayments pricing** (cheaper on $1-3 sales).
 
 ### F. YouTube key - turns on the live race-video robot (15 min)
-- [ ] console.cloud.google.com (DG317 Google account) → New project "DG317" → APIs & Services → Library → **YouTube Data API v3** → Enable → Credentials → **Create API key** → Restrict key → YouTube Data API v3.
-- [ ] GitHub repo → Settings → Secrets and variables → Actions → **New repository secret** → name `YOUTUBE_API_KEY` → paste.
-- [ ] Actions → **update-videos** → Run workflow → green ✅. From now on it checks for live racing every 30 minutes.
+- [x] console.cloud.google.com (DG317 Google account) → New project "DG317" → APIs & Services → Library → **YouTube Data API v3** → Enable → Credentials → **Create API key** → Restrict key → YouTube Data API v3.
+- [x] GitHub repo → Settings → Secrets and variables → Actions → **New repository secret** → name `YOUTUBE_API_KEY` → paste.
+- [x] Actions → **update-videos** → Run workflow → green ✅ (the robot has been posting race videos since Nov 25). From now on it checks for live racing every 30 minutes.
 - [ ] Also paste the key once into yoursite/admin.html (it stays only in that browser) so you can hand-pick videos.
 
 ### G. Make DG317 answer almost anything - AI (20 min, about 30¢ per 1,000 questions)
@@ -102,10 +138,14 @@ NHTSA updates its recall file every day. Keeping copies builds the data for the 
   - By recall (campaign) number: `https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=12V176000`
 - [ ] Tip: when we build the Recall Center, a robot can download this file for you every night automatically - then this step goes away.
 
-### N. Race videos - hand-pick one, or add a channel for the robot to watch
-- [ ] **One race right now:** open `detailguy317.com/admin.html` (paste the YouTube key once) → paste the race's YouTube link into **Big / Box 1** (or click one in the robot-finds list) → check **"Use MY picks"** → **Copy** → GitHub → `data/live-content.js` → pencil → Ctrl+A, paste → Commit. When the race is over: uncheck "Use MY picks" → Copy → paste → Commit (hands it back to the robot).
-- [ ] **A channel you always want covered:** in admin.html add its handle (like `@SRXracing`) to **Live Now Channels** → Copy → paste into `data/live-content.js` → Commit. The robot checks it every 30 minutes from then on.
-- Heads-up: a video only plays on the site if its channel allows sharing (F1's doesn't - those open on YouTube instead). Only use official/licensed channels - no "free stream" sites (copyright takedowns, malware ads, and affiliates/Ko-fi ban them).
+### N. Race videos - the robot does it, you can take over any time
+- The **Race Center** picks the big player by itself: your Feature This pick > real live races > races starting soon > 24/7 channels > newest. When nothing is live it flips to **🎬 REPLAY THEATER** (the most-watched replays + your favorites, playing one after another), and it flips back by itself when a race goes live.
+- [ ] **Feature a race:** see "How to feature a video" above (admin.html → Feature This → GO LIVE).
+- [ ] **A channel you always want covered:** admin.html → "Channels the robot watches" → add its @handle → GO LIVE / Copy. The robot checks it every 30 minutes.
+- Heads-up: a video only plays on the site if its channel allows sharing (F1's doesn't - those show as "Watch on YouTube" cards). Only use official/licensed channels - no "free stream" sites (copyright takedowns, malware ads, and affiliates/Ko-fi ban them).
+- **This Weekend & Coming Up list + race buttons fill themselves.** The schedule robot (runs with update-series every few hours) pulls F1 and NASCAR with exact times, plus IndyCar, IMSA, WEC, MotoGP, WSBK, WRC, Formula E, NHRA, Supercross, Pro Motocross, Supercars, BTCC, DTM, Super GT, F2, Indy NXT, GT World Challenge America and Dakar dates from their Wikipedia calendars (this year + next year, so the off-season shows next season's openers). Past races drop off by themselves. Leave the buttons and weekend list in admin.html blank. Only add a row for a race the robot misses (put the date in the Day box, like `Sat 11/28`, so it hides itself after).
+- [ ] After the upload: Actions → **update-series** → Run workflow → open the log. `ok supercars: N dates` = working. `miss ...` = that series' Wikipedia page had no calendar table yet (normal for some), so it's skipped.
+- Standings panel: shows the latest standings for the series in the big player (refreshed every few hours by the series robot) plus official timing/standings links. True lap-by-lap timing inside the page isn't available free from F1/NASCAR/IMSA/WEC.
 
 ---
 
@@ -143,3 +183,4 @@ NHTSA updates its recall file every day. Keeping copies builds the data for the 
 - Glance at Cloudflare analytics (visitors) and Ko-fi (sales, members, messages).
 - Race weekends: leave videos on auto, or hand-pick in admin.html (2 minutes).
 - Once a month: ask Claude to "refresh the DG317 sales race board, celeb notes, car show dates and series status lines". Dead links are checked automatically every Sunday.
+- Once a month: open `data/deals.js` links (CarStuff → Deals) and make sure they still go to each automaker's offers page; change `checked:` to the date.

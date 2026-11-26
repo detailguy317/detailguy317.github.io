@@ -4,7 +4,9 @@ How it stays inside YouTube's free quota (10,000 units/day):
   * Channel uploads come from each channel's public RSS feed            -> 0 units
   * One videos.list call checks up to 50 of those videos for LIVE/UPCOMING -> 1 unit
   * One wide "who's streaming racing right now" search per run             -> 100 units
-  Run every 30 min = ~48 x ~105 = ~5,000 units/day. Plenty of headroom.
+  Run every 30 min = ~48 x ~105 = ~5,000 units/day.
+  * Replay Theater list (most-watched highlights per trusted channel), once a day -> ~100 units per channel (~2,000)
+  Total ~7,000 of the free 10,000.
 
 Trusted channels (data/live-content.js "channels") can fill the 3 video slots automatically.
 Anything the wide search finds from OTHER channels goes on the admin.html list for you to pick -
@@ -71,7 +73,7 @@ def describe(ids):
     for i in range(0, len(ids), 50):
         chunk = [x for x in ids[i:i + 50] if x]
         if not chunk: continue
-        for v in yt("videos", part="snippet,liveStreamingDetails,status", id=",".join(chunk), maxResults=50).get("items", []):
+        for v in yt("videos", part="snippet,liveStreamingDetails,status,statistics,contentDetails", id=",".join(chunk), maxResults=50).get("items", []):
             out[v["id"]] = v
     return out
 
@@ -79,16 +81,18 @@ def ts(s):
     try: return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
     except Exception: return None
 
+LOOP = re.compile(r"24/7|24-7|24 ?hours? a day|nonstop|non-stop|around the clock|replay channel", re.I)
+
 def classify(v):
     s, L = v["snippet"], v.get("liveStreamingDetails") or {}
     state = s.get("liveBroadcastContent")
-    if state == "live": return "live", 0
+    if state == "live": return ("loop", 2) if LOOP.search(s.get("title", "")) else ("live", 0)
     if state == "upcoming":
         st = ts(L.get("scheduledStartTime", "")) or NOW
         hrs = (st - NOW).total_seconds() / 3600
         return ("upcoming", 1) if -2 < hrs < 36 else (None, 9)
     pub = ts(s.get("publishedAt", "")) or NOW
-    if (NOW - pub).days <= 4 and RACE.search(s.get("title", "")): return "recent", 2
+    if (NOW - pub).days <= 4 and RACE.search(s.get("title", "")): return "recent", 3
     return None, 9
 
 # Channels whose owners block their videos from playing on other websites (YouTube shows "Video unavailable").
@@ -104,6 +108,48 @@ def row(v, kind, trusted):
     return {"type": "video", "id": v["id"], "title": s.get("title", "")[:140], "channel": s.get("channelTitle", ""),
             "kind": kind, "date": L.get("actualStartTime") or L.get("scheduledStartTime") or s.get("publishedAt"),
             "viewers": L.get("concurrentViewers"), "thumb": th.get("url", ""), "trusted": trusted, "embed": can_embed(v)}
+
+REEL_WORDS = re.compile(r"highlights|full race|full broadcast|full replay|replay|extended|race recap|best moments|top \d+|onboard|last lap|finish", re.I)
+ISO_DUR = re.compile(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?")
+
+def minutes(v):
+    m = ISO_DUR.match((v.get("contentDetails") or {}).get("duration", "") or "")
+    return (int(m.group(1) or 0) * 60 + int(m.group(2) or 0) + int(m.group(3) or 0) / 60) if m else 0
+
+def reel(cids, old):
+    """Replay Theater list: the most-watched recent highlights + full races from trusted channels.
+    Refreshed about once a day (~100 units per channel). Dec-Feb it reaches back ~5 months (off-season)."""
+    if old.get("reel") and (NOW - (ts(old.get("reel_at", "")) or dt.datetime(2000, 1, 1, tzinfo=dt.timezone.utc))).total_seconds() < 20 * 3600:
+        return old["reel"], old["reel_at"]
+    back = 150 if NOW.month in (12, 1, 2) else 30
+    since = (NOW - dt.timedelta(days=back)).isoformat(timespec="seconds").replace("+00:00", "Z")
+    picks = {}
+    for h, cid in cids.items():
+        try:
+            r = yt("search", part="snippet", channelId=cid, type="video", order="viewCount", publishedAfter=since,
+                   q="highlights|full race|replay|extended|recap", maxResults=8)
+            picks[cid] = [it["id"]["videoId"] for it in r.get("items", []) if it.get("id", {}).get("videoId")]
+        except Exception as e:
+            print("reel skip", h, e)
+    info = describe([v for ids in picks.values() for v in ids])
+    per = {}
+    for cid, ids in picks.items():
+        rows = []
+        for vid in ids:
+            v = info.get(vid)
+            if not v or not can_embed(v): continue
+            t = v["snippet"].get("title", "")
+            if JUNK.search(t) or not REEL_WORDS.search(t) or minutes(v) < 3: continue   # no Shorts, no junk
+            row_ = row(v, "reel", True); row_["views"] = int((v.get("statistics") or {}).get("viewCount") or 0)
+            rows.append(row_)
+        per[cid] = sorted(rows, key=lambda x: -x["views"])[:3]
+    out, seen = [], set()                              # take turns between channels so it isn't 10 F1 clips in a row
+    for k in range(3):
+        for cid in sorted(per, key=lambda c: -(per[c][0]["views"] if per[c] else 0)):
+            if k < len(per[cid]) and per[cid][k]["id"] not in seen:
+                seen.add(per[cid][k]["id"]); out.append(per[cid][k])
+    print(f"reel: {len(out)} replays (looked back {back} days)")
+    return out[:30], NOW.isoformat(timespec="minutes")
 
 def main():
     if not KEY:
@@ -132,7 +178,7 @@ def main():
         kind, rank = classify(v)
         if not kind: continue
         trusted = v["snippet"].get("channelId") in trusted_ids
-        if not trusted and kind != "live": continue          # only show strangers' streams if live right now
+        if not trusted and kind != "live": continue          # only show strangers' streams if live right now (never their 24/7 loops)
         if JUNK.search(v["snippet"].get("title", "")): continue
         rows.append((rank, 0 if trusted else 1, -(int((v.get("liveStreamingDetails") or {}).get("concurrentViewers") or 0)), row(v, kind, trusted)))
     rows.sort(key=lambda x: (x[0], x[1], x[2], -(ts(x[3]["date"] or "") or NOW).timestamp()))
@@ -141,8 +187,11 @@ def main():
     live_now = [r for r in allrows if r["kind"] == "live"]
 
     old = load_js(OUT, "window.DG_RACING_AUTO")
-    new = {"updated": NOW.isoformat(timespec="minutes"), "slots": slots, "live": live_now[:12], "found": allrows[:40]}
-    same = {k: old.get(k) for k in ("slots", "live")} == {k: new[k] for k in ("slots", "live")}
+    try: reel_list, reel_at = reel(cids, old)
+    except Exception as e: print("reel failed:", e); reel_list, reel_at = old.get("reel", []), old.get("reel_at", "")
+    new = {"updated": NOW.isoformat(timespec="minutes"), "slots": slots, "live": live_now[:12], "found": allrows[:40],
+           "reel": reel_list, "reel_at": reel_at}
+    same = {k: old.get(k) for k in ("slots", "live", "reel")} == {k: new[k] for k in ("slots", "live", "reel")}
     if same and old.get("updated") and (NOW - (ts(old["updated"]) or NOW)).total_seconds() < 6 * 3600:
         print("no change - not rewriting"); return      # keeps the git history quiet
     with open(OUT, "w", encoding="utf-8") as f:

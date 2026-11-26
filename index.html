@@ -19,10 +19,13 @@
 <script src="data/live-content.js"></script>
 <script src="data/racing-auto.js"></script>
 <script src="data/news.js"></script>
+<script src="data/news-history.js"></script>
+<script src="data/deals.js"></script>
 <script src="dtc-data.js"></script>
 <script src="data/series.js"></script>
 <script src="data/series-auto.js"></script>
 <script src="data/series-live.js"></script>
+<script src="data/schedule-auto.js"></script>
 <script src="data/sales.js"></script>
 <script src="data/onthisday.js"></script>
 
@@ -398,6 +401,108 @@ footer{margin-top:.5em;font-size:.72em;color:#aaa;text-align:right}
 .store-empty{text-align:center;padding:50px 20px;color:#888}
 .store-empty h3{font-size:28px;margin-bottom:15px;color:#ff7f2a}
 @media (max-width:768px){.store-modal{width:98%}.store-tabs{flex-direction:column;align-items:center}.store-tab-btn{width:100%;max-width:300px}.store-item-grid{grid-template-columns:1fr}.store-item-image{height:250px}}
+
+/* ===== CarStuff v3: tabs, ranked stories, bubbles, week history, deals ===== */
+#autoInfoModal .modal-content{max-width:1100px}
+#autoInfoModal .csTabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;padding:6px;margin:6px 0 14px;border-radius:14px;background:#141414;border:1px solid #2a2a2a}
+#autoInfoModal .csTabs button{display:flex;flex-direction:column;align-items:center;gap:2px;margin:0;padding:11px 6px;border-radius:10px;background:#1c1c1c;border:1px solid #2e2e2e;color:#e6e6e6;text-align:center;transform:none}
+#autoInfoModal .csTabs button b{font-size:15px}#autoInfoModal .csTabs button small{font-size:11px;color:#aaa;font-weight:500}
+#autoInfoModal .csTabs button:hover{background:#2a1a0e;border-color:#ff6600;box-shadow:none;transform:none}
+#autoInfoModal .csTabs button.on{background:#2a1a0e;border-color:#ff6600;color:#ffe6cc;box-shadow:0 0 14px rgba(255,102,0,.35)}
+#autoInfoModal .csTabs button.on small{color:#ffb380}
+.csTop{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.csCard{display:flex;flex-direction:column;gap:9px;padding:15px;border-radius:12px;background:linear-gradient(160deg,#24150a,#161616);border:1px solid #ff6600;color:#f2f2f2;text-decoration:none;min-height:150px;transition:.25s}
+.csCard:hover{transform:translateY(-3px);box-shadow:0 0 22px rgba(255,102,0,.45)}
+.csCard .top{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.csCard .bolt{font-size:13px;font-weight:800;color:#ff7f2a;letter-spacing:1px}
+.csCard .t{font-size:16px;font-weight:700;line-height:1.35}
+.csCard .m{margin-top:auto;font-size:12px;color:#c4c4c4}
+.csCat{display:inline-block;padding:3px 8px;border-radius:5px;font-size:10.5px;font-weight:800;letter-spacing:.5px;background:#2a2a2a;color:#ffb380;white-space:nowrap}
+.csBubHead,.csListHead{color:#ff7f2a;font-weight:700;font-size:14px;margin:10px 0 8px}
+.csListHead small{color:#999;font-weight:500}
+.csBubs{display:flex;flex-direction:column;gap:6px;margin-bottom:6px}
+.csBubRow{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.csBubRow .lab{font-size:11px;color:#999;font-weight:700;letter-spacing:1px;min-width:56px}
+#autoInfoModal .csBub{display:inline-flex;align-items:center;gap:5px;width:auto;margin:0;padding:7px 12px;border-radius:999px;background:#161616;border:1px solid #3a3a3a;color:#e6e6e6;font-size:13px;font-weight:600;text-align:center;transform:none}
+#autoInfoModal .csBub:hover{border-color:#ff6600;background:#221408;box-shadow:none;transform:none}
+#autoInfoModal .csBub.on{background:#ff6600;border-color:#ff6600;color:#111}
+#autoInfoModal .csBub .n{font-size:11px;opacity:.75}
+.csList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.csItem{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:start;padding:10px 12px;border-radius:9px;background:#161616;border:1px solid #262626;color:#eee;text-decoration:none}
+.csItem:hover{border-color:#ff6600;color:#fff}
+.csItem .z{color:#ff7f2a;font-size:15px;line-height:1.3}
+.csItem .t{font-size:14px;font-weight:600;line-height:1.35}
+.csItem .m{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:4px;font-size:11.5px;color:#a8a8a8}
+.csEmpty{grid-column:1/-1;color:#999;padding:14px;text-align:center;border:1px dashed #333;border-radius:9px}
+.csDays{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-bottom:10px}
+#autoInfoModal .csDays button{display:flex;flex-direction:column;align-items:center;margin:0;padding:10px 4px;border-radius:10px;background:#161616;border:1px solid #2e2e2e;color:#ddd;text-align:center;transform:none}
+#autoInfoModal .csDays button b{font-size:14px}#autoInfoModal .csDays button small{font-size:11px;color:#999;font-weight:500}
+#autoInfoModal .csDays button.on,#autoInfoModal .csDays button:hover{background:#2a1a0e;border-color:#ff6600;color:#ffe6cc;box-shadow:none;transform:none}
+.csNote{color:#ccc;font-size:13.5px;background:#161616;border:1px solid #333;border-radius:10px;padding:10px 12px;margin-bottom:10px}
+.csNote span{color:#999;font-size:12px}
+.csBrands{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+#autoInfoModal .csBrands button{margin:0;padding:11px 6px;border-radius:8px;background:#161616;border:1px solid #333;color:#f2f2f2;text-align:center;font-size:13.5px;transform:none}
+#autoInfoModal .csBrands button small{display:block;font-size:10.5px;color:#ffb380;font-weight:500;margin-top:2px}
+#autoInfoModal .csBrands button:hover{border-color:#ff6600;background:#221408;box-shadow:none;transform:none}
+.csProgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.csProg{padding:13px;border-radius:10px;background:#161616;border:1px solid #2a2a2a;display:flex;flex-direction:column;gap:6px}
+.csProg b{font-size:15px;color:#ffe6cc}.csProg span{font-size:12.5px;color:#c4c4c4;line-height:1.45}
+.csProg a{margin-top:auto;font-size:12.5px;font-weight:600;color:#ff7f2a;text-decoration:none}
+.csProg i{margin-top:auto;font-size:12px;color:#999}
+@media (max-width:900px){.csTop{grid-template-columns:1fr}.csList{grid-template-columns:1fr}#autoInfoModal .csTabs{grid-template-columns:repeat(3,minmax(0,1fr))}.csDays{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:420px){#autoInfoModal .csTabs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ===== Race Center ===== */
+#racingModal .rcHead{position:relative}
+#racingModal .rcHead .brand{margin:0 0 6px}
+#racingModal .rcPop{position:absolute;right:34px;top:50%;transform:translateY(-50%);width:auto;margin:0;padding:8px 13px;border-radius:8px;background:#2a1a0e;border:1px solid #ff6600;color:#ffb380;font-weight:700;font-size:13px;text-align:center}
+#racingModal .rcPop:hover{background:#ff6600;color:#111;transform:translateY(-50%);box-shadow:none}
+.rcMode{text-align:center;color:#ddd;font-size:13.5px;margin:0 0 12px}
+.rcMode b{color:#ffe6cc}
+.rcB{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:800;letter-spacing:.5px;vertical-align:middle;white-space:nowrap}
+.rcB.live{background:#d32f2f;color:#fff;animation:lnPulse 1.6s infinite}.rcB.feat{background:#ff6600;color:#111}.rcB.rep{background:#333;color:#ffe6cc}
+.rcB.loop{background:#3a2a1a;color:#ffb380}.rcB.up{background:#fbbf24;color:#111}
+.rcGrid{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+.rcMain{flex:999 1 600px;min-width:0}
+.rcSide{flex:1 1 300px;min-width:0;max-width:100%}
+.rcBig{display:block;width:100%}
+.rcBig .vid iframe,.rcBig #rcYT{width:100%;height:100%;border:0;display:block}
+.rcNow{margin:8px 2px 2px;font-size:14px;color:#eee}.rcNow span{color:#aaa;font-size:12.5px}
+#racingModal .rcBtns{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;margin:8px 0 4px}
+#racingModal .rcBtns .brown-btn{margin:0;width:100%}
+.rcLab{color:#ffb380;font-size:12.5px;font-weight:700;letter-spacing:1px;margin:14px 0 8px}
+.rcCards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#racingModal .rcCard{display:flex;gap:9px;align-items:flex-start;margin:0;padding:8px;border-radius:9px;background:#161616;border:1px solid #2c2c2c;color:#f2f2f2;text-align:left;font-weight:500;transform:none}
+#racingModal .rcCard:hover{border-color:#ff6600;background:#1f140b;box-shadow:none;transform:none}
+.rcCard .th{position:relative;flex:0 0 96px;height:54px;border-radius:5px;background:#000;overflow:hidden}
+.rcCard .th img{width:100%;height:100%;object-fit:cover;display:block}
+.rcCard .th i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-style:normal;color:#fff;font-size:18px;text-shadow:0 0 6px #000}
+.rcCard .tx{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0}
+.rcCard .tx b{font-size:13px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rcCard .tx small{font-size:11px;color:#aaa}
+.rcSmalls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.rcSmall .race-frame.small{display:block;width:100%}
+#racingModal .rcBigBtn{margin:6px 0 0;padding:9px;border-radius:7px;background:#1a1a1a;border:1px solid #333;color:#ffb380;font-weight:700;font-size:13px;text-align:center;transform:none}
+#racingModal .rcBigBtn:hover{border-color:#ff6600;background:#2a1a0e;box-shadow:none;transform:none}
+#racingModal .rcThumb{position:absolute;inset:0;margin:0;padding:0;border:0;border-radius:0;background:#000;width:100%;height:100%;transform:none}
+#racingModal .rcThumb:hover{box-shadow:none;transform:none;background:#000}
+.rcThumb img{width:100%;height:100%;object-fit:cover;display:block;opacity:.8}
+.rcThumb .pl{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:rgba(255,102,0,.92);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px}
+.rcThumb .cap{position:absolute;left:0;right:0;bottom:0;padding:8px 10px;background:linear-gradient(0deg,rgba(0,0,0,.9),transparent);color:#fff;font-size:12.5px;font-weight:600;text-align:left}
+.rcTiming{background:#141414;border:1px solid #333;border-radius:10px;padding:12px;margin-bottom:10px}
+.rcTimHead{display:flex;justify-content:space-between;align-items:center;gap:6px;color:#ffe6cc;font-size:14px}
+.rcTimHead span{font-size:11px;color:#ffb380}
+.rcTabs{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0}
+#racingModal .rcTabs button{width:auto;margin:0;padding:6px 9px;border-radius:6px;background:#1a1a1a;border:1px solid #333;color:#ccc;font-size:12px;font-weight:600;text-align:center;transform:none}
+#racingModal .rcTabs button.on,#racingModal .rcTabs button:hover{background:#2a1a0e;border-color:#ff6600;color:#ffb380;box-shadow:none;transform:none}
+.rcTimTitle{background:#1a1a1a;border-radius:7px;padding:8px 10px;font-size:13.5px;font-weight:700;margin-bottom:6px}
+.rcTimTitle small{color:#999;font-weight:500}
+.rcRow{display:grid;grid-template-columns:26px 1fr auto;gap:8px;padding:6px 4px;border-bottom:1px solid #242424;font-size:13px}
+.rcRow .p{color:#ff7f2a;font-weight:800}.rcRow .n{font-weight:600}.rcRow .g{color:#ccc}
+.rcTimLinks{display:flex;flex-wrap:wrap;gap:10px;margin-top:9px}
+.rcTimLinks a{color:#ff7f2a;font-size:12.5px;font-weight:600;text-decoration:none}
+#racingModal .rcSide .hq-open{width:100%!important}
+@media (max-width:900px){.rcCards{grid-template-columns:1fr}.rcSmalls{grid-template-columns:1fr}#racingModal .rcPop{position:static;transform:none;display:block;margin:0 auto 8px}#racingModal .rcPop:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -662,6 +767,7 @@ function popOutDGScanner(){
 }
 window.addEventListener('load',function(){
   if(new URLSearchParams(location.search).get('autoOpenStocks')==='true') setTimeout(openDGStockModal,500);
+  if(new URLSearchParams(location.search).get('rc')==='1') setTimeout(()=>openModal('racingModal'),300);
 });
 
 /* ============ TRADINGVIEW HELPERS ============ */
@@ -932,29 +1038,49 @@ function closeAllPopups(){ closeStockChartPopup(); [1,2,3].forEach(closeLeftPopu
 <!-- ===================== END DG317 STOCK SCANNER v2 ===================== -->
 
 
-<!-- ======================= RACING ======================= -->
+<!-- ======================= RACING: RACE CENTER ======================= -->
 <div class="stock-modal" id="racingModal" onclick="bgClose(event,'racingModal')">
-  <div class="modal-content" style="max-width:1200px" onclick="event.stopPropagation()">
+  <div class="modal-content rc" style="max-width:1280px" onclick="event.stopPropagation()">
     <span class="close-btn" onclick="closeModal('racingModal')">✖</span>
-    <button class="hq-open" onclick="closeModal('racingModal');openModal('seriesModal')">🏆 RACING HQ - standings · history back to 1909 · celeb racers · car shows</button>
-    <div id="liveNow"></div>
-    <div style="text-align:center;margin:8px 0">
-      <div class="race-frame"><div class="vid" id="raceSlot0"></div></div>
-      <div id="raceButtons" style="margin-top:8px"></div>
-      <div><button class="brown-btn" onclick="popOutRacingWindow()">🖥️ POP OUT</button></div>
+    <div class="rcHead">
+      <div class="brand"><div class="rule"></div><div class="inner"><div class="word">DETAILGUY317</div><div class="tag">⚡ SEE YA AT THE FINISH LINE ⚡</div></div></div>
+      <button class="rcPop" onclick="popOutRacingWindow()" title="Open the racing page in its own tab">↗ Pop out</button>
     </div>
-    <div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap">
-      <div class="race-frame small"><div class="vid" id="raceSlot1"></div></div>
-      <div class="race-frame small"><div class="vid" id="raceSlot2"></div></div>
+    <div class="rcMode" id="rcMode"></div>
+
+    <div class="rcGrid">
+      <div class="rcMain">
+        <div class="race-frame rcBig"><div class="vid" id="raceSlot0"></div></div>
+        <div class="rcNow" id="rcNow"></div>
+        <div class="rcBtns" id="raceButtons"></div>
+
+        <div class="rcLab" id="rcCardsLab">ALSO ON NOW · TAP TO PUT IT IN THE BIG PLAYER</div>
+        <div class="rcCards" id="rcCards"></div>
+
+        <div class="rcLab">WATCH A SECOND RACE</div>
+        <div class="rcSmalls">
+          <div class="rcSmall"><div class="race-frame small"><div class="vid" id="raceSlot1"></div></div><button class="rcBigBtn" onclick="rcMakeBig(1)">Make it big ↑</button></div>
+          <div class="rcSmall"><div class="race-frame small"><div class="vid" id="raceSlot2"></div></div><button class="rcBigBtn" onclick="rcMakeBig(2)">Make it big ↑</button></div>
+        </div>
+      </div>
+
+      <aside class="rcSide">
+        <div class="rcTiming">
+          <div class="rcTimHead"><b>🏁 STANDINGS & TIMING</b><span id="rcTimFollow"></span></div>
+          <div class="rcTabs" id="rcTabs"></div>
+          <div class="rcTimTitle" id="rcTimTitle"></div>
+          <div id="rcTimRows"></div>
+          <div class="rcTimLinks" id="rcTimLinks"></div>
+        </div>
+        <button class="hq-open" onclick="closeModal('racingModal');openModal('seriesModal')">🏆 RACING HQ · history · celeb racers · car shows</button>
+      </aside>
     </div>
 
-    <h3>🏁 This Weekend</h3>
+    <h3 id="rcWeekend">🏁 This Weekend & Coming Up</h3>
     <table class="weekend" id="weekendTable"></table>
     <h3>📺 Live Now Channels <span style="font-size:.7em;color:#888">(opens whatever they're streaming right now)</span></h3>
     <div class="chips" id="liveChips"></div>
     <div class="small-note" id="raceUpdated"></div>
-
-    <div class="brand"><div class="rule"></div><div class="inner"><div class="word">DETAILGUY317</div><div class="tag">⚡ SEE YA AT THE FINISH LINE ⚡</div></div></div>
 
     <div style="margin:20px 0">
       <h3>Racing Links</h3>
@@ -980,18 +1106,51 @@ function closeAllPopups(){ closeStockChartPopup(); [1,2,3].forEach(closeLeftPopu
 <div class="stock-modal" id="autoInfoModal" onclick="bgClose(event,'autoInfoModal')">
   <div class="modal-content" onclick="event.stopPropagation()">
     <span class="close-btn" onclick="closeModal('autoInfoModal')">✖</span>
-    <h2>🔧 Automotive Information</h2>
+    <div class="brand"><div class="rule"></div><div class="inner"><div class="word">DETAILGUY317</div><div class="tag">🔧 AUTOMOTIVE INFORMATION 🔧</div></div></div>
 
-    <div class="otd" id="otdBox"></div>
+    <div class="csTabs" role="tablist" id="csTabs">
+      <button role="tab" data-p="top" onclick="csTab('top')"><b>📰 Top Stories</b><small>Best first</small></button>
+      <button role="tab" data-p="week" onclick="csTab('week')"><b>📅 This Week</b><small>Last 7 days</small></button>
+      <button role="tab" data-p="deals" onclick="csTab('deals')"><b>💲 Deals</b><small>Offers · X-Plan</small></button>
+      <button role="tab" data-p="guides" onclick="csTab('guides')"><b>📚 Guides</b><small>Free + Premium</small></button>
+      <button role="tab" data-p="links" onclick="csTab('links')"><b>🔗 Links & Tools</b><small>Insurance · parts · sites</small></button>
+    </div>
 
-    <h3>📰 Latest Headlines</h3>
-    <div class="news-list" id="newsList"></div>
-    <div class="small-note" id="newsUpdated"></div>
+    <div class="csPane" id="csPane-top">
+      <div class="csTop" id="csTop"></div>
+      <div class="csBubHead">⚡ Pick a maker or topic</div>
+      <div class="csBubs" id="csBubbles"></div>
+      <div class="csListHead" id="csListHead"></div>
+      <div class="csList" id="csList"></div>
+      <div class="small-note" id="newsUpdated"></div>
+      <div class="otd" id="otdBox"></div>
+    </div>
 
-    <h3 class="premHead">💎 Premium Guides</h3>
-    <div id="premCar"></div>
-    <h3>📚 Free Garage Guides</h3>
-    <div id="guidesCar"></div>
+    <div class="csPane" id="csPane-week" hidden>
+      <div class="csDays" id="csDays"></div>
+      <input type="text" id="csWeekQ" placeholder="🔎 Search the whole week: Mustang, recall, NASCAR, Bronco..." oninput="csWeekRender()">
+      <div class="csListHead" id="csWeekHead"></div>
+      <div class="csList" id="csWeekList"></div>
+    </div>
+
+    <div class="csPane" id="csPane-deals" hidden>
+      <div class="csNote">Offers change every month and by ZIP code, so these go straight to each automaker's own page. They'll ask for your ZIP to show local deals. <span id="csDealsChecked"></span></div>
+      <div class="csBrands" id="csBrands"></div>
+      <h3>🏷️ Special pricing programs: do you qualify?</h3>
+      <div class="csProgs" id="csPrograms"></div>
+      <h3>⚡ Deal news this week</h3>
+      <div class="csList" id="csDealNews"></div>
+      <div class="disclaimer">DG317 isn't a dealer and doesn't sell cars. Programs, rules and eligibility are set by each automaker and can change any time. Always confirm with the automaker or dealer before you sign.</div>
+    </div>
+
+    <div class="csPane" id="csPane-guides" hidden>
+      <h3 class="premHead">💎 Premium Guides</h3>
+      <div id="premCar"></div>
+      <h3>📚 Free Garage Guides</h3>
+      <div id="guidesCar"></div>
+    </div>
+
+    <div class="csPane" id="csPane-links" hidden>
     <h3>🏆 Racing HQ</h3>
     <button onclick="closeModal('autoInfoModal');openModal('seriesModal')">🏁 Standings, history, celeb racers, car shows & auctions</button>
     <h3>Favorite Auto News & Reviews</h3>
@@ -1023,6 +1182,7 @@ function closeAllPopups(){ closeStockChartPopup(); [1,2,3].forEach(closeLeftPopu
     <h3>🔧 Auto Enthusiast Sites</h3>
     <input type="text" id="enthQ" placeholder="Filter: Mustang, Mopar, LS, Tesla, Porsche..." oninput="enthRender()">
     <div id="enthBox"></div>
+    </div>
   </div>
 </div>
 
@@ -1642,59 +1802,304 @@ applyAskMode();
 if(DG_CONFIG.cfAnalyticsToken && !IS_PREVIEW){ const a=document.createElement('script'); a.defer=true; a.src='https://static.cloudflareinsights.com/beacon.min.js'; a.setAttribute('data-cf-beacon',JSON.stringify({token:DG_CONFIG.cfAnalyticsToken})); document.head.appendChild(a); }
 function buildCarStuff(){
   document.getElementById('guidesCar').innerHTML=guidesHTML(); document.getElementById('premCar').innerHTML=premiumHTML();
-  const n=(window.DG_NEWS||{}); const items=(n.items||[]).slice(0,20);
-  document.getElementById('newsList').innerHTML=items.length?items.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener"><small>${esc(x.tag)} · ${esc(x.source)} · ${esc(x.date)}</small><br>${esc(x.title)}</a>`).join(''):'<div style="color:#888">Headlines load after the daily updater runs.</div>';
-  document.getElementById('newsUpdated').textContent=n.updated?'Updated '+new Date(n.updated).toLocaleString():'';
   document.getElementById('affGrid').innerHTML=DG_CONFIG.affiliates.map(a=>`<button onclick="openLink('${esc(a.url)}')">${esc(a.name)}</button>`).join('');
+  const n=(window.DG_NEWS||{});
+  document.getElementById('newsUpdated').textContent=n.updated?'Ranked by the DG317 robot · updated '+new Date(n.updated).toLocaleString():'';
+  csTopRender(); csBubblesRender(); csListRender(); csDealsRender(); csDaysRender();
+  csTab(window._csTab||'top');
+}
+/* ---- CarStuff helpers ---- */
+let _csBub='all', _csDay=null;
+function csAgo(ts,date){
+  const t=ts?new Date(ts):(date?new Date(date+'T12:00:00'):null); if(!t||isNaN(t)) return '';
+  const m=Math.round((Date.now()-t)/6e4); if(m<60) return Math.max(1,m)+'m ago'; const h=Math.round(m/60); if(h<24) return h+'h ago';
+  const d=Math.round(h/24); return d===1?'yesterday':d+'d ago';
+}
+function csCat(x){ return x.cat||x.tag||'AUTO'; }
+function csItemHTML(x){
+  return `<a class="csItem" href="${esc(x.url)}" target="_blank" rel="noopener"><span class="z">⚡</span><span><span class="t">${esc(x.title)}</span>
+   <span class="m"><span class="csCat">${esc(csCat(x))}</span>${esc(x.source||'')}${csAgo(x.ts,x.date)?' · '+csAgo(x.ts,x.date):''}</span></span></a>`;
+}
+function csAllWeek(){ const D=((window.DG_NEWS_HISTORY||{}).days)||{}; return Object.keys(D).sort().reverse().flatMap(d=>D[d]||[]); }
+function csTab(p){
+  window._csTab=p;
+  document.querySelectorAll('#csTabs button').forEach(b=>{const on=b.dataset.p===p; b.classList.toggle('on',on); b.setAttribute('aria-selected',on);});
+  document.querySelectorAll('#autoInfoModal .csPane').forEach(el=>el.hidden=el.id!=='csPane-'+p);
+}
+function csTopRender(){
+  const items=((window.DG_NEWS||{}).items||[]).slice(0,3);
+  document.getElementById('csTop').innerHTML=items.length?items.map(x=>`<a class="csCard" href="${esc(x.url)}" target="_blank" rel="noopener">
+    <span class="top"><span class="bolt">⚡ TOP STORY</span><span class="csCat">${esc(csCat(x))}</span></span>
+    <span class="t">${esc(x.title)}</span><span class="m">${esc(x.source||'')}${x.why?' · '+esc(x.why):''}${csAgo(x.ts,x.date)?' · '+csAgo(x.ts,x.date):''}</span></a>`).join('')
+    :'<div class="csEmpty">Headlines loading - the news robot refreshes every 2 hours.</div>';
+}
+function csBubblesRender(){
+  const N=window.DG_NEWS||{}, B=N.bubbles||{}, order=N.order||Object.keys(B);
+  const btn=(id,label,count)=>`<button class="csBub${_csBub===id?' on':''}" onclick="csPick('${id}')">${esc(label)}${count?` <span class="n">${count}</span>`:''}</button>`;
+  const row=(lab,grp)=>{ const ids=order.filter(id=>B[id]&&B[id].group===grp); return ids.length?`<div class="csBubRow"><span class="lab">${lab}</span>${ids.map(id=>btn(id,B[id].label,(B[id].items||[]).length)).join('')}</div>`:''; };
+  document.getElementById('csBubbles').innerHTML=`<div class="csBubRow"><span class="lab">TODAY</span>${btn('all','⭐ All top stories',0)}</div>`+row('MAKERS','make')+row('TOPICS','topic');
+}
+function csPick(id){ _csBub=id; csBubblesRender(); csListRender(); }
+function csListRender(){
+  const N=window.DG_NEWS||{}, B=N.bubbles||{}; let list, head, note='';
+  if(_csBub==='all'){ list=(N.items||[]).slice(3,25); head='⚡ More top stories'; }
+  else{
+    const bb=B[_csBub]||{label:_csBub,items:[]}; list=(bb.items||[]).slice(0,14); head='⚡ '+bb.label;
+    if(list.length<4){                                   // quiet day: fill from this week's history
+      const seen=new Set(list.map(x=>x.title)); const more=csAllWeek().filter(x=>(x.b||[]).includes(_csBub)&&!seen.has(x.title)&&seen.add(x.title)).slice(0,10-list.length);
+      if(more.length){ list=list.concat(more); note=' <small>(quiet today - adding the best from this week)</small>'; }
+    }
+  }
+  document.getElementById('csListHead').innerHTML=esc(head)+note;
+  document.getElementById('csList').innerHTML=list.length?list.map(csItemHTML).join(''):'<div class="csEmpty">No big stories here in the last week. Check back after the next robot run.</div>';
+}
+function csDayLabel(d,i){
+  const dt=new Date(d+'T12:00:00'); const wd=dt.toLocaleDateString(undefined,{weekday:'short'}); const md=(dt.getMonth()+1)+'/'+dt.getDate();
+  return [i===0&&d===csToday()?'Today':(d===csYesterday()?'Yesterday':wd), md];
+}
+function csToday(){ return new Date().toLocaleDateString('en-CA',{timeZone:'America/Denver'}); }
+function csYesterday(){ return new Date(Date.now()-864e5).toLocaleDateString('en-CA',{timeZone:'America/Denver'}); }
+function csDaysRender(){
+  const D=((window.DG_NEWS_HISTORY||{}).days)||{}; const days=Object.keys(D).sort().reverse().slice(0,7);
+  if(_csDay===null||!D[_csDay]) _csDay=days[0]||null;
+  document.getElementById('csDays').innerHTML=days.length?days.map((d,i)=>{const [a,b]=csDayLabel(d,i); return `<button class="${d===_csDay?'on':''}" onclick="_csDay='${d}';csDaysRender()"><b>${a}</b><small>${b} · ${(D[d]||[]).length}</small></button>`;}).join('')
+    :'<div class="csEmpty" style="grid-column:1/-1">The week starts saving as soon as the news robot runs - check back tomorrow.</div>';
+  csWeekRender();
+}
+function csWeekRender(){
+  const D=((window.DG_NEWS_HISTORY||{}).days)||{}; const q=(document.getElementById('csWeekQ').value||'').trim().toLowerCase();
+  let list, head;
+  if(q){ const words=q.split(/\s+/); list=csAllWeek().filter(x=>words.every(w=>(x.title+' '+x.source+' '+csCat(x)).toLowerCase().includes(w))).slice(0,40); head=`⚡ ${list.length} stories this week matching "${q}"`; }
+  else if(_csDay){ list=(D[_csDay]||[]).slice(0,40); const [a,b]=csDayLabel(_csDay,_csDay===csToday()?0:1); head=`⚡ ${a} ${b} · ranked best first`; }
+  else { list=[]; head=''; }
+  document.getElementById('csWeekHead').textContent=head;
+  document.getElementById('csWeekList').innerHTML=list.length?list.map(csItemHTML).join(''):(head?'<div class="csEmpty">Nothing found.</div>':'');
+}
+function csDealsRender(){
+  const D=window.DG_DEALS||{brands:[],programs:[]};
+  document.getElementById('csDealsChecked').textContent=D.checked?'(links last checked '+D.checked+')':'';
+  document.getElementById('csBrands').innerHTML=(D.brands||[]).map(b=>`<button onclick="openLink('${esc(b[1])}')">${esc(b[0])}<small>${b[2]?'Current offers':'Official site'}</small></button>`).join('');
+  document.getElementById('csPrograms').innerHTML=(D.programs||[]).map(p=>`<div class="csProg"><b>${esc(p[0])}</b><span>${esc(p[1])}</span>${p[2]?`<a href="${esc(p[2])}" target="_blank" rel="noopener">Official program site →</a>`:'<i>Ask the dealer for it by name</i>'}</div>`).join('');
+  const dn=(((window.DG_NEWS||{}).bubbles||{}).deals||{}).items||[];
+  const wk=dn.length?dn:csAllWeek().filter(x=>(x.b||[]).includes('deals'));
+  document.getElementById('csDealNews').innerHTML=wk.length?wk.slice(0,8).map(csItemHTML).join(''):'<div class="csEmpty">No deal headlines yet this week.</div>';
 }
 function openNewsletterSignup(){ openLink(DG_CONFIG.newsletterUrl); }
 
-/* ======================= RACING (no more code edits) ======================= */
-function raceSlots(){
-  const L=window.DG_LIVE||{}, A0=window.DG_RACING_AUTO||{}, A={...A0, slots:(A0.slots||[]).filter(x=>x.embed!==false)};
-  const manual=(L.slots||[]).filter(s=>s.id);
-  return (L.mode==='manual'&&manual.length)?L.slots:((A.slots&&A.slots.length)?A.slots:(L.slots||[]));
-}
-function embedUrl(s){
-  if(!s||!s.id) return '';
-  return s.type==='live' ? `https://www.youtube.com/embed/live_stream?channel=${encodeURIComponent(s.id)}`
-                         : `https://www.youtube.com/embed/${encodeURIComponent(s.id)}?rel=0`;
-}
-function buildRacing(){
-  const L=window.DG_LIVE||{}, slots=raceSlots();
-  [0,1,2].forEach(i=>{
-    const el=document.getElementById('raceSlot'+i), s=slots[i]||{}, url=embedUrl(s);
-    if(url && !IS_PREVIEW){ if(!el.querySelector('iframe')||el.dataset.u!==url){ el.dataset.u=url; el.innerHTML=`<iframe src="${url}" title="${esc(s.title||'Race video')}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`; } }
-    else el.innerHTML=`<div class="vid-empty"><b>${url?'▶ '+esc(s.title||'Race video'):'🏁 Video slot '+(i+1)}</b>${url?'Plays on the live site':'The video robot fills this automatically - or pick videos in admin.html'}</div>`;
+/* ======================= RACING: RACE CENTER (no code edits - admin.html + robots fill it) =======================
+   Big player order: your Feature This pick > real live races (trusted channels) > races starting soon > 24/7 loops > recent.
+   Nothing live? It flips to REPLAY THEATER: the robot's best replays/highlights + your favorites, one after another. */
+const RC = { list: [], big: 0, timing: null, follow: true, ytReady: false, player: null, done: {} };
+function rcNowMs(){ return Date.now(); }
+function rcT(s){ const t=s?Date.parse(s):NaN; return isNaN(t)?null:t; }
+function rcIsLoop(v){ return v.kind==='loop' || /24\/7|24-7|nonstop|non-stop|around the clock/i.test(v.title||''); }
+function rcFeatured(){
+  const L=window.DG_LIVE||{}, now=rcNowMs(); let seen={};
+  try{ seen=JSON.parse(localStorage.getItem('dg_rc_done')||'{}'); }catch(e){}
+  const act=[], kept=[];
+  (L.featured||[]).forEach(f=>{
+    if(!f||!f.id) return;
+    const st=rcT(f.start)||0, en=f.end==='finish'?rcT(f.endBy):rcT(f.end), keep=rcT(f.keepUntil);
+    const it={type:f.type||'video',id:f.id,title:f.title||'Featured video',channel:f.channel||'DG317 pick',kind:'featured',embed:f.embed!==false,trusted:true,featured:f};
+    const over=(en&&now>en)||(f.end==='finish'&&(seen[f.id]>st||RC.done[f.id]));
+    if(now>=st&&!over) act.push(it); else if(over&&keep&&now<keep) kept.push(Object.assign({},it,{kind:'kept'}));
   });
-  document.getElementById('raceButtons').innerHTML=(L.buttons||[]).map(b=>`<button class="brown-btn" onclick="openLink('${esc(b.url)}')">${esc(b.label)}</button>`).join('');
-  document.getElementById('weekendTable').innerHTML=(L.weekend||[]).map(w=>`<tr><td>${esc(w.day)}</td><td><b>${esc(w.series)}</b><br><span style="color:#aaa">${esc(w.event)}</span></td><td class="t">${esc(w.time)}</td><td>${w.url?`<a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.watch)}</a>`:esc(w.watch)}</td></tr>`).join('')||'<tr><td>No races listed yet</td></tr>';
-  document.getElementById('liveChips').innerHTML=(L.channels||[]).map(h=>`<a class="chip" href="https://www.youtube.com/${esc(h)}/live" target="_blank" rel="noopener">🔴 ${esc(h.replace('@',''))}</a>`).join('');
-  const A=window.DG_RACING_AUTO||{};
-  document.getElementById('raceUpdated').textContent=`Lineup updated ${L.updated||'-'}${A.updated?' · video robot checked '+new Date(A.updated).toLocaleString():''}`;
-  const lv=(A.live||[]).filter(v=>v.trusted);
-  document.getElementById('liveNow').innerHTML=lv.length?`<div class="lnHead">🔴 LIVE NOW</div>`+lv.map((v,i)=>`<button class="lnChip" onclick="playLive(${i})">${v.embed===false?'↗':'▶'} ${esc(v.title)}<small>${esc(v.channel)}${v.viewers?' · '+Number(v.viewers).toLocaleString()+' watching':''}${v.embed===false?' · opens on YouTube':''}</small></button>`).join(''):'';
+  return {act,kept};
 }
-function playLive(i){
-  const v=((window.DG_RACING_AUTO||{}).live||[]).filter(x=>x.trusted)[i]; if(!v) return;
-  if(v.embed===false){ window.open('https://www.youtube.com/watch?v='+encodeURIComponent(v.id),'_blank','noopener'); return; }   // owner blocks playing on other sites
-  const el=document.getElementById('raceSlot0'); const url=`https://www.youtube.com/embed/${encodeURIComponent(v.id)}?autoplay=1&rel=0`;
+function rcBuildList(){
+  const L=window.DG_LIVE||{}, A=window.DG_RACING_AUTO||{};
+  const F=rcFeatured(), seen=new Set(), out=[];
+  const add=v=>{ if(!v||!v.id||seen.has(v.id)) return; seen.add(v.id); out.push(v); };
+  F.act.forEach(add);
+  const robot=(A.found||[]).concat(A.live||[]).filter(v=>v.trusted);
+  const live=robot.filter(v=>v.kind==='live'&&!rcIsLoop(v)).sort((a,b)=>(+b.viewers||0)-(+a.viewers||0));
+  live.forEach(add);
+  if(L.mode==='manual') (L.slots||[]).filter(x=>x.id).forEach(x=>add(Object.assign({kind:'pick',trusted:true,embed:true,channel:'DG317 pick'},x)));
+  const up=robot.filter(v=>v.kind==='upcoming').sort((a,b)=>(rcT(a.date)||0)-(rcT(b.date)||0));
+  const loops=robot.filter(v=>rcIsLoop(v)).map(v=>Object.assign({},v,{kind:'loop'}));
+  const reel=(A.reel||[]).concat((L.favorites||[]).map(f=>({type:'video',id:f.id,title:f.title||'DG317 favorite',channel:'DG317 favorite',kind:'reel',trusted:true,embed:true})));
+  const recent=robot.filter(v=>v.kind==='recent');
+  const liveMode=out.length>0;                                  // featured or a real live race
+  if(liveMode){ F.kept.forEach(add); up.forEach(add); loops.forEach(add); recent.forEach(add); reel.forEach(add); }
+  else { reel.forEach(add); recent.forEach(add); F.kept.forEach(add); loops.forEach(add); up.forEach(add); }
+  RC.mode=liveMode?'live':'replay'; RC.next=up[0]||null;
+  RC.list=out.filter(v=>v.kind!=='upcoming'||v.embed!==false);
+  return RC.list;
+}
+function rcPlayable(v){ return v && v.embed!==false && v.kind!=='upcoming'; }
+function rcOrder(){                                  // [big, card1, card2, card3, small1, small2]
+  const L=RC.list; const big=L[RC.big]&&rcPlayable(L[RC.big])?RC.big:Math.max(0,L.findIndex(rcPlayable));
+  RC.big=big; const rest=L.map((v,i)=>i).filter(i=>i!==big);
+  const smalls=rest.filter(i=>rcPlayable(L[i])&&L[i].kind!=='kept').slice(0,2);
+  const pri=v=>v.kind==='kept'?0:(v.kind==='live'||v.kind==='featured'?1:(rcPlayable(v)?2:3));   // featured-earlier first, YouTube-only last
+  const cards=rest.filter(i=>!smalls.includes(i)).sort((a,b)=>pri(L[a])-pri(L[b])||a-b).slice(0,3);
+  return {big, cards, smalls};
+}
+function rcEmbed(v,auto,mute){
+  if(!v||!v.id) return '';
+  const q=`rel=0&playsinline=1${auto?'&autoplay=1':''}${mute?'&mute=1':''}`;
+  return v.type==='live' ? `https://www.youtube.com/embed/live_stream?channel=${encodeURIComponent(v.id)}&${q}` : `https://www.youtube.com/embed/${encodeURIComponent(v.id)}?${q}`;
+}
+function rcThumb(v){ return v.thumb||(v.type==='live'?'':`https://i.ytimg.com/vi/${encodeURIComponent(v.id)}/mqdefault.jpg`); }
+function rcBadge(v){
+  return {live:'<span class="rcB live">● LIVE</span>',featured:'<span class="rcB feat">⭐ FEATURED</span>',kept:'<span class="rcB feat">⭐ FEATURED EARLIER</span>',
+    loop:'<span class="rcB loop">24/7</span>',upcoming:'<span class="rcB up">STARTS SOON</span>',reel:'<span class="rcB rep">REPLAY</span>',recent:'<span class="rcB rep">NEW</span>',pick:'<span class="rcB feat">DG317 PICK</span>'}[v.kind]||'';
+}
+function rcLoadYT(cb){
+  if(window.YT&&YT.Player){ cb(); return; }
+  (window._rcYTq=window._rcYTq||[]).push(cb);
+  if(window._rcYTload) return; window._rcYTload=1;
+  const prev=window.onYouTubeIframeAPIReady; window.onYouTubeIframeAPIReady=()=>{ prev&&prev(); (window._rcYTq||[]).forEach(f=>f()); window._rcYTq=[]; };
+  const sc=document.createElement('script'); sc.src='https://www.youtube.com/iframe_api'; document.head.appendChild(sc);
+}
+function rcPlayBig(v,auto){
+  const el=document.getElementById('raceSlot0');
+  if(!v){ el.innerHTML='<div class="vid-empty"><b>🏁 Nothing to play right now</b>The video robot checks for live racing every 30 minutes.</div>'; return; }
   if(IS_PREVIEW){ el.innerHTML=`<div class="vid-empty"><b>▶ ${esc(v.title)}</b>Plays on the live site</div>`; return; }
-  el.dataset.u=url; el.innerHTML=`<iframe src="${url}" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`;
-  el.scrollIntoView({behavior:'smooth',block:'center'});
+  if(el.dataset.u===v.id+'|'+v.type) return; el.dataset.u=v.id+'|'+v.type;
+  if(v.type==='live'){ el.innerHTML=`<iframe src="${rcEmbed(v,auto)}" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`; return; }
+  el.innerHTML='<div id="rcYT"></div>';
+  rcLoadYT(()=>{ try{ RC.player=new YT.Player('rcYT',{videoId:v.id,playerVars:{rel:0,playsinline:1,autoplay:auto?1:0},
+      events:{onStateChange:e=>{ if(e.data===0) rcEnded(v); }}}); }catch(e){ el.innerHTML=`<iframe src="${rcEmbed(v,auto)}" title="${esc(v.title)}" allowfullscreen></iframe>`; } });
 }
+function rcEnded(v){                                  // a video finished: featured "until it ends" hands off; replays move on
+  if(v.kind==='featured'&&v.featured&&v.featured.end==='finish'){ RC.done[v.id]=1; try{ const d=JSON.parse(localStorage.getItem('dg_rc_done')||'{}'); d[v.id]=Date.now(); localStorage.setItem('dg_rc_done',JSON.stringify(d)); }catch(e){} }
+  if(v.kind==='live') return;
+  const cur=RC.list[RC.big]&&RC.list[RC.big].id; rcBuildList();
+  const L=RC.list, i=L.findIndex(x=>x.id===cur);
+  let nx=-1; for(let k=1;k<=L.length;k++){ const j=((i<0?-1:i)+k)%L.length; if(rcPlayable(L[j])&&L[j].id!==cur){ nx=j; break; } }
+  if(nx>=0){ RC.big=nx; buildRacing(true); }
+}
+function rcSwap(i){
+  const v=RC.list[i]; if(!v) return;
+  if(v.embed===false||v.kind==='upcoming'){ openLink('https://www.youtube.com/watch?v='+encodeURIComponent(v.id)); return; }
+  RC.big=i; RC.follow=true; buildRacing(true);
+  document.getElementById('raceSlot0').scrollIntoView({behavior:'smooth',block:'center'});
+}
+function rcMakeBig(k){ const o=rcOrder(); if(o.smalls[k-1]!=null) rcSwap(o.smalls[k-1]); }
+function rcPlaySmall(k){
+  const o=rcOrder(), v=RC.list[o.smalls[k-1]], el=document.getElementById('raceSlot'+k); if(!v) return;
+  if(IS_PREVIEW){ el.innerHTML=`<div class="vid-empty"><b>▶ ${esc(v.title)}</b>Plays on the live site (muted)</div>`; return; }
+  el.dataset.u=v.id; el.innerHTML=`<iframe src="${rcEmbed(v,true,true)}" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`;
+}
+/* ---- standings panel: follows the race in the big player ---- */
+const RC_SERIES=[['f1',/formula ?1|\bf1\b|grand prix|\bgp\b/i,/formula1|^f1$/i],['nascar',/nascar|cup series|xfinity|truck series/i,/nascar/i],['indycar',/indycar|indy 500|indianapolis 500/i,/indycar/i],
+  ['imsa',/imsa|rolex 24|sebring|petit le mans/i,/imsa/i],['wec',/\bwec\b|le mans|endurance/i,/fiawec|wec/i],['nhra',/nhra|drag/i,/nhra/i],['motogp',/motogp|moto2|moto3/i,/motogp/i],
+  ['wrc',/\bwrc\b|rally/i,/wrc/i],['fe',/formula e|e-prix/i,/formula ?e/i],['supercars',/supercars|bathurst|adelaide/i,/supercars/i],['btcc',/btcc|touring car/i,/btcc/i],['dtm',/\bdtm\b/i,/dtm/i]];
+function rcSeriesFor(v){
+  if(!v) return null; const t=(v.title||'')+' '+(v.channel||'');
+  if(/macau/i.test(t)) return null;
+  for(const [id,rx,ch] of RC_SERIES){ if(ch.test(v.channel||'')||rx.test(t)) return id; }
+  return null;
+}
+function rcSeriesData(){
+  const out={}, SL=((window.DG_SERIES_LIVE||{}).s)||{}, SA=(window.DG_SERIES_AUTO||{}).f1, S=((window.DG_SERIES||{}).series)||[];
+  const meta=id=>S.find(x=>x.id===id)||{};
+  if(SA&&SA.standings&&SA.standings.length) out.f1={name:'Formula 1',title:`${SA.season} Formula 1 · after round ${SA.round}`,rows:SA.standings.slice(0,10).map(d=>[d.pos,d.name,d.pts]),at:(window.DG_SERIES_AUTO||{}).updated,meta:meta('f1')};
+  RC_SERIES.forEach(([id])=>{ if(out[id]) return; const d=SL[id]; if(d&&d.top&&d.top.length) out[id]={name:(meta(id).name||d.title||id),title:d.title||'',rows:d.top.slice(0,10),at:d.st_at,meta:meta(id)}; });
+  return out;
+}
+const RC_SHORT={f1:'F1',nascar:'NASCAR',indycar:'IndyCar',imsa:'IMSA',wec:'WEC',nhra:'NHRA',motogp:'MotoGP',wrc:'WRC',fe:'Formula E',supercars:'Supercars',btcc:'BTCC',dtm:'DTM'};
+const RC_LIVETIMING={f1:['F1 Live Timing','https://www.formula1.com/en/timing/f1-live']};
+function rcTimingRender(){
+  const D=rcSeriesData(), ids=Object.keys(D); const bigV=RC.list[RC.big];
+  const fol=rcSeriesFor(bigV);
+  if(RC.follow) RC.timing=(fol&&D[fol])?fol:(RC.timing&&D[RC.timing]?RC.timing:ids[0]);
+  const cur=RC.timing;
+  document.getElementById('rcTimFollow').textContent=(fol&&cur===fol)?'following the big player':'';
+  document.getElementById('rcTabs').innerHTML=ids.map(id=>`<button class="${id===cur?'on':''}" onclick="RC.follow=false;RC.timing='${id}';rcTimingRender()">${esc(RC_SHORT[id]||id)}</button>`).join('');
+  const d=D[cur];
+  if(!d){ document.getElementById('rcTimTitle').textContent='Standings load once the series robot runs.'; document.getElementById('rcTimRows').innerHTML=''; document.getElementById('rcTimLinks').innerHTML=''; return; }
+  document.getElementById('rcTimTitle').innerHTML=`${esc(d.title)}${d.at?` <small>· updated ${esc(csAgo(d.at))}</small>`:''}`;
+  document.getElementById('rcTimRows').innerHTML=d.rows.map(r=>`<div class="rcRow"><span class="p">${esc(r[0])}</span><span class="n">${esc(r[1])}</span><span class="g">${esc(r[2]??'')}</span></div>`).join('');
+  const lt=RC_LIVETIMING[cur], m=d.meta||{};
+  document.getElementById('rcTimLinks').innerHTML=(lt?`<a href="${esc(lt[1])}" target="_blank" rel="noopener">⏱ ${esc(lt[0])}</a>`:'')+(m.standings?`<a href="${esc(m.standings)}" target="_blank" rel="noopener">📋 Official standings</a>`:'')+(m.site?`<a href="${esc(m.site)}" target="_blank" rel="noopener">🏁 ${esc(RC_SHORT[cur]||'Series')} site</a>`:'');
+}
+function buildRacing(keepList){
+  const L=window.DG_LIVE||{}, A=window.DG_RACING_AUTO||{};
+  if(!keepList) rcBuildList();
+  const o=rcOrder(), V=RC.list, big=V[o.big];
+  // mode line
+  const nx=RC.next, nxt=nx?` · next live: <b>${esc(nx.title.slice(0,60))}</b>${rcT(nx.date)?' in '+rcIn(rcT(nx.date)):''}`:'';
+  document.getElementById('rcMode').innerHTML=RC.mode==='live'?(()=>{ const n=V.filter(v=>v.kind==='live').length, f=V.filter(v=>v.kind==='featured').length; return `<span class="rcB live">● LIVE NOW</span> ${n?n+(n===1?' live race':' live races'):''}${n&&f?' + ':''}${f?'⭐ DG317 featured pick':''}${nxt}`; })()
+    :`<span class="rcB rep">🎬 REPLAY THEATER</span> Nothing live right now - the best replays play one after another${nxt}`;
+  rcPlayBig(big,keepList===true);
+  document.getElementById('rcNow').innerHTML=big?`${rcBadge(big)} <b>${esc(big.title)}</b> <span>${esc(big.channel||'')}${big.viewers?' · '+Number(big.viewers).toLocaleString()+' watching':''}</span>`:'';
+  // cards
+  document.getElementById('rcCards').innerHTML=o.cards.length?o.cards.map(i=>{ const v=V[i], th=rcThumb(v), out=v.embed===false||v.kind==='upcoming';
+    return `<button class="rcCard" onclick="rcSwap(${i})"><span class="th">${th?`<img src="${esc(th)}" alt="" loading="lazy">`:''}<i>${out?'↗':'▶'}</i></span>
+      <span class="tx">${rcBadge(v)}<b>${esc(v.title)}</b><small>${esc(v.channel||'')}${v.kind==='upcoming'&&rcT(v.date)?' · in '+rcIn(rcT(v.date)):''}${out&&v.kind!=='upcoming'?' · opens on YouTube':''}</small></span></button>`; }).join('')
+    :'<div class="csEmpty">Nothing else on right now.</div>';
+  document.getElementById('rcCardsLab').textContent=RC.mode==='live'?'ALSO ON NOW · TAP TO PUT IT IN THE BIG PLAYER':'MORE REPLAYS · TAP TO PUT ONE IN THE BIG PLAYER';
+  // small players: thumbnail until tapped (keeps the page fast)
+  [1,2].forEach(k=>{ const el=document.getElementById('raceSlot'+k), v=V[o.smalls[k-1]];
+    if(!v){ el.dataset.u=''; el.innerHTML='<div class="vid-empty"><b>🏁 Box '+(k+1)+'</b>Fills itself when there\'s more to watch</div>'; return; }
+    if(el.dataset.u===v.id && el.querySelector('iframe')) return;
+    el.dataset.u=''; const th=rcThumb(v);
+    el.innerHTML=`<button class="rcThumb" onclick="rcPlaySmall(${k})" aria-label="Play ${esc(v.title)} here">${th?`<img src="${esc(th)}" alt="" loading="lazy">`:''}<span class="pl">▶</span><span class="cap">${rcBadge(v)} ${esc(v.title)}</span></button>`; });
+  // buttons, timing, lists
+  const tim=(L.buttons||[]).find(b=>b.style==='tracking');
+  document.getElementById('raceButtons').innerHTML=rcButtons().map(b=>`<button class="brown-btn" onclick="openLink('${esc(b.url)}')">${esc(b.label)}</button>`).join('')
+    +`<button class="brown-btn" onclick="document.getElementById('rcWeekend').scrollIntoView({behavior:'smooth'})">📅 SCHEDULE</button>`;
+  rcTimingRender();
+  document.getElementById('weekendTable').innerHTML=rcScheduleRows().map(w=>`<tr><td>${esc(w.day)}</td><td><b>${esc(w.series)}</b><br><span style="color:#aaa">${esc(w.event)}</span></td><td class="t">${esc(w.time)}</td><td>${w.url?`<a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.watch||'Info')}</a>`:esc(w.watch)}</td></tr>`).join('')||'<tr><td>No races on the calendar right now - the schedule robot checks every few hours.</td></tr>';
+  document.getElementById('liveChips').innerHTML=(L.channels||[]).map(h=>`<a class="chip" href="https://www.youtube.com/${esc(h)}/live" target="_blank" rel="noopener">🔴 ${esc(h.replace('@',''))}</a>`).join('');
+  document.getElementById('raceUpdated').textContent=`Lineup updated ${L.updated||'-'}${A.updated?' · video robot checked '+new Date(A.updated).toLocaleString():''}`;
+}
+/* hide schedule rows once their day is over (uses the LAST date in the Day box: "Sat 11/21", "Thu-Sun 11/26-29", "Sat-Sun 11/28-29") */
+function rcNotPast(w){
+  const ds=String(w.day||'')+' '+String(w.time||''); const all=[...ds.matchAll(/(\d{1,2})\/(\d{1,2})(?:\s*-\s*(\d{1,2})(?!\/))?/g)]; if(!all.length) return true;
+  const m=all[all.length-1], mo=+m[1], dy=+(m[3]||m[2]); if(!(mo>=1&&mo<=12&&dy>=1&&dy<=31)) return true;
+  const now=new Date(); let d=new Date(now.getFullYear(),mo-1,dy,23,59);
+  if(d-now>200*864e5) d.setFullYear(d.getFullYear()-1); else if(now-d>200*864e5) d.setFullYear(d.getFullYear()+1);
+  return d>=now;
+}
+/* your rows from admin.html first, then the schedule robot's (F1, NASCAR, + Wikipedia calendars), next ~10 days */
+function rcMT(d){ return new Date(d).toLocaleString([], {timeZone:'America/Denver',weekday:'short',hour:'numeric',minute:'2-digit'}).replace(':00','').replace(' AM','am').replace(' PM','pm'); }
+function rcScheduleRows(){
+  const L=window.DG_LIVE||{}, S=((window.DG_SCHEDULE||{}).rows)||[], meta=((window.DG_SERIES||{}).series)||[];
+  const mine=(L.weekend||[]).filter(rcNotPast);
+  const today=new Date().toLocaleDateString('en-CA',{timeZone:'America/Denver'});
+  const soon=new Date(Date.now()+10*864e5).toLocaleDateString('en-CA',{timeZone:'America/Denver'});
+  const taken=mine.map(w=>String(w.series||'').toLowerCase());
+  let auto=S.filter(r=>r.end>=today&&!taken.some(t=>t&&(t.includes(r.series.toLowerCase())||r.series.toLowerCase().includes(t))));
+  const near=auto.filter(r=>r.start<=soon); auto=near.length>=4?near:auto.slice(0,Math.max(6,near.length));
+  const md=d=>{ const [y,m,dd]=d.split('-'); return (+m)+'/'+(+dd); };
+  const wd=d=>new Date(d+'T12:00:00').toLocaleDateString([], {weekday:'short'});
+  return mine.concat(auto.map(r=>{ const m=meta.find(x=>x.id===r.sid)||{};
+    const day=r.start===r.end?`${wd(r.end)} ${md(r.end)}`:`${wd(r.start)}-${wd(r.end)} ${md(r.start)}-${r.start.slice(5,7)===r.end.slice(5,7)?(+r.end.slice(8)):md(r.end)}`;
+    const time=r.exact&&r.race_utc?`Race ${rcMT(r.race_utc)} MT${r.extra?' · '+r.extra:''}`:'Times on the series site';
+    return {day,series:r.series,event:r.event,time,watch:m.watch||'Series site',url:m.site||r.src||''}; }));
+}
+/* race buttons: yours from admin.html, or (if you leave them blank) made by the robot from the next race on the schedule */
+function rcButtons(){
+  const L=window.DG_LIVE||{}; const mine=(L.buttons||[]).filter(b=>b.label&&b.url); if(mine.length) return mine;
+  const S=((window.DG_SCHEDULE||{}).rows)||[], meta=((window.DG_SERIES||{}).series)||[], now=Date.now();
+  const today=new Date().toLocaleDateString('en-CA',{timeZone:'America/Denver'});
+  const nx=S.find(r=>r.exact&&r.race_utc&&Date.parse(r.race_utc)>now-3*3600e3)||S.find(r=>r.end>=today); if(!nx) return [];
+  const m=meta.find(x=>x.id===nx.sid)||{};
+  const out=[{label:`🏁 NEXT: ${nx.series} · ${nx.event.split(' · ')[0]}${nx.race_utc?' · '+rcMT(nx.race_utc)+' MT':''}`,url:m.site||nx.src||'#',style:'main'}];
+  const lt=RC_LIVETIMING[nx.sid]; if(lt) out.push({label:'⏱ '+lt[0].toUpperCase(),url:lt[1],style:'tracking'}); else if(m.standings) out.push({label:'📋 '+nx.series.toUpperCase()+' STANDINGS',url:m.standings,style:'tracking'});
+  return out;
+}
+function rcIn(t){ const m=Math.round((t-Date.now())/6e4); if(m<=0) return 'a few minutes'; if(m<60) return m+' min'; const h=Math.round(m/60); return h<36?h+'h':Math.round(h/24)+' days'; }
 /* while the racing window is open, re-check the robot's file every 5 minutes so new live streams appear without a refresh */
 let raceTimer=null;
 function raceAutoRefresh(on){
   clearInterval(raceTimer); if(!on||IS_PREVIEW) return;
-  raceTimer=setInterval(()=>{ const sc=document.createElement('script'); sc.src='data/racing-auto.js?t='+Date.now(); sc.onload=()=>{ buildRacing(); sc.remove(); }; document.body.appendChild(sc); },5*60*1000);
+  raceTimer=setInterval(()=>{ const sc=document.createElement('script'); sc.src='data/racing-auto.js?t='+Date.now(); sc.onload=()=>{
+      const cur=RC.list[RC.big]&&RC.list[RC.big].id; rcBuildList(); const i=RC.list.findIndex(v=>v.id===cur);
+      if(i>=0&&RC.list[0].kind!=='featured'&&!(RC.mode==='live'&&RC.list[i].kind!=='live')) RC.big=i; else RC.big=0;
+      buildRacing(true); sc.remove(); }; document.body.appendChild(sc); },5*60*1000);
 }
-function stopRacing(){ [0,1,2].forEach(i=>{const f=document.querySelector('#raceSlot'+i+' iframe'); if(f){const u=f.src; f.src='about:blank'; f.src=u;}}); }
+function stopRacing(){
+  try{ if(RC.player&&RC.player.stopVideo) RC.player.stopVideo(); }catch(e){}
+  [0,1,2].forEach(i=>{ const el=document.getElementById('raceSlot'+i); const f=el&&el.querySelector('iframe'); if(f){ el.innerHTML=''; el.dataset.u=''; } });
+  RC.player=null;
+}
+function playLive(i){ const v=((window.DG_RACING_AUTO||{}).live||[]).filter(x=>x.trusted)[i]; if(!v) return; const j=RC.list.findIndex(x=>x.id===v.id); if(j>=0) rcSwap(j); }
 function popOutRacingWindow(){
-  const slots=raceSlots(), L=window.DG_LIVE||{};
-  const main=(L.buttons||[]).find(b=>b.style==='main')||{}, trk=(L.buttons||[]).find(b=>b.style==='tracking')||{};
-  const q=new URLSearchParams({v1:embedUrl(slots[0]),v2:embedUrl(slots[1]),v3:embedUrl(slots[2]),btnText:main.label||'RACE INFO',btnLink:main.url||'#',trackingLink:trk.url||'#'});
-  const w=950,h=900; window.open('racing.html?'+q,'RacingHQ',`width=${w},height=${h},left=${(screen.width-w)/2},top=${(screen.height-h)/2},resizable=yes,scrollbars=yes`);
+  window.open(location.pathname+'?rc=1','DG317RaceCenter','noopener');
   closeModal('racingModal');
 }
 

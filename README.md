@@ -67,3 +67,14 @@ If a robot turns red ❌ in the Actions tab, open the run and read its last line
 - Nothing on the public site shows a real name, town or employer. Keep it that way, including in photos (no plates, shop signs or uniforms, and turn camera location off).
 - Sign-ups use the Proton email. GitHub's email is private, and the robots commit as "dg317-robot".
 - Stripe/Ko-fi have your real info privately for payouts only. The public name is DG317 Garage, and the support phone is a Google Voice number.
+
+## Nov 25 upgrade - Race Center, CarStuff v3, GO LIVE
+| File | What changed |
+|---|---|
+| `index.html` | Racing window is now the **Race Center** (logo on top, big player, "Also on now" cards, 2 small players, standings panel that follows the big player, automatic **Replay Theater** when nothing's live, Pop out = own tab). **CarStuff** has 5 tabs: Top Stories (ranked, ⚡ list, maker/topic bubbles), This Week (7 days), Deals, Guides, Links & Tools. |
+| `admin.html` | Steps box, drag-and-drop **Feature This**, keep-as-card timer, **My Library**, Replay favorites, **GO LIVE** button. |
+| `worker/go-live-worker.js` | Optional Cloudflare helper so GO LIVE saves to GitHub for you (OWNER_TODO step P). |
+| `scripts/update_feeds.py` | Ranks stories, tags each by maker/topic, fills every bubble from Google News, keeps 7 days in `data/news-history.js`. |
+| `scripts/update_videos.py` | Spots 24/7 loops (they never beat a real race) and builds the Replay Theater list once a day. |
+| `data/deals.js` | Hand-checked automaker offer links + special pricing programs. Re-check monthly. |
+| `data/live-content.js` | New: `featured`, `library`, `favorites`, plus 7 more channels (Macau GP, BTCC, Supercars, DTM, Super GT, ELMS, MotorTrend). |
