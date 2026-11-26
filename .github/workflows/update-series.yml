@@ -1,4 +1,4 @@
-# DG317 series robot: Racing HQ standings (Wikipedia) + headlines (Google News) for every series.
+# DG317 series robot: Racing HQ standings (Wikipedia) + headlines (Google News) for every series + the Race Center schedule.
 # No keys needed. Times are UTC.
 name: update-series
 on:
@@ -18,10 +18,12 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: python scripts/update_series.py
+      - name: Race schedule (F1, NASCAR, Wikipedia calendars)
+        run: python scripts/update_schedule.py || true
       - name: Commit if anything changed
         run: |
           git config user.name "dg317-robot"
           git config user.email "dg317-robot@users.noreply.github.com"
-          git add data/series-live.js
+          git add data/series-live.js data/schedule-auto.js
           git diff --cached --quiet || git commit -m "robot: refresh series standings + news"
           git pull --rebase -q && git push
