@@ -9,7 +9,7 @@ Sources (all free, no keys):
 Output: data/schedule-auto.js (window.DG_SCHEDULE). Anything that fails is skipped and the
 last good copy for that series is kept, so the list never goes blank. Standard library only.
 """
-import json, os, re, sys, time, html, urllib.request, urllib.parse, datetime as dt
+import json, os, re, sys, time, html, urllib.request, urllib.error, urllib.parse, datetime as dt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -17,7 +17,8 @@ from update_series import Tables, grid          # same tiny Wikipedia table read
 
 ROOT = os.path.dirname(HERE)
 OUT = os.path.join(ROOT, "data", "schedule-auto.js")
-UA = {"User-Agent": "DG317-Garage-robot/1.0 (fan site; github actions)"}
+UA = {"User-Agent": "DG317-Garage-schedule-robot/1.1 (https://detailguy317.com; racing fan site)"}
+WIKI_EVERY_HOURS = 20          # race calendars barely change - read Wikipedia about once a day, reuse the copy in between
 NOW = dt.datetime.now(dt.timezone.utc)
 try:
     from zoneinfo import ZoneInfo
@@ -63,8 +64,15 @@ DATE_RX = [  # (regex, how to read it) - order matters, ranges first
 ]
 
 def get(url, timeout=25):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
-        return r.read()
+    for wait in (0, 20, 60):                     # Wikipedia says "slow down" (429)? wait and try again
+        if wait: time.sleep(wait)
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 503) or wait == 60: raise
+            try: time.sleep(min(60, int(e.headers.get("Retry-After") or 0)))
+            except Exception: pass
 
 def mo(s): return MONTHS[s.lower()[:3]]
 
@@ -144,8 +152,11 @@ def titles(pats, year):
     return out
 
 WHY = {}
+BLOCKED = {"on": False}        # Wikipedia still says "too many requests" after waiting -> stop asking this run, keep old copies
 def wiki_series(sid, name, pats):
     rows = []
+    if BLOCKED["on"]:
+        WHY[sid] = ["skipped this run - Wikipedia asked us to slow down; using the last good copy"]; return rows
     for year in (TODAY.year, TODAY.year + 1):              # next year too: in the off-season that's what's coming up
         for title in titles(pats, year):
             try:
@@ -160,7 +171,8 @@ def wiki_series(sid, name, pats):
                     break
             except Exception as e:
                 print(f"   wiki {title}: {e}"); WHY.setdefault(sid, []).append(f"{title}: {e}")
-            time.sleep(0.4)
+                if "429" in str(e): BLOCKED["on"] = True; return rows
+            time.sleep(1.5)
     return rows
 
 def f1():
@@ -221,19 +233,26 @@ def load_old():
 
 def main():
     old = load_old(); old_by = {}
-    for r in old.get("rows", []): old_by.setdefault(r["sid"], []).append(r)
+    for r in old.get("all", old.get("rows", [])): old_by.setdefault(r["sid"], []).append(r)
     groups, stats = {}, {"ok": [], "kept_old": []}
     for sid, fn in (("f1", f1), ("nascar_all", nascar)):
         rows = fn()
         if rows:
             for r in rows: groups.setdefault(r["sid"], []).append(r)
             stats["ok"].append(sid)
+    wiki_at = dict(old.get("wiki_at", {}))
     for sid, (name, pats) in WIKI.items():
+        last = wiki_at.get(sid)
+        fresh = last and (NOW - dt.datetime.fromisoformat(last)).total_seconds() < WIKI_EVERY_HOURS * 3600
+        if fresh and old_by.get(sid):                    # read it recently - reuse, be nice to Wikipedia
+            groups[sid] = old_by[sid]; continue
         rows = wiki_series(sid, name, pats)
-        if rows: groups[sid] = rows; stats["ok"].append(sid); print(f"ok   {sid}: {len(rows)} dates")
+        if rows:
+            groups[sid] = rows; stats["ok"].append(sid); wiki_at[sid] = NOW.isoformat(timespec="minutes"); print(f"ok   {sid}: {len(rows)} dates")
         else: print(f"miss {sid}: {WHY.get(sid)}")
     for sid, rows in old_by.items():                        # a source failed this run -> keep its last good copy
         if sid not in groups: groups[sid] = rows; stats["kept_old"].append(sid)
+    keep_all = [r for rows in groups.values() for r in rows if dt.date.fromisoformat(r["end"]) >= TODAY - dt.timedelta(days=KEEP_PAST_DAYS)]
     lo, hi = TODAY - dt.timedelta(days=KEEP_PAST_DAYS), TODAY + dt.timedelta(days=AHEAD_DAYS)
     allrows = [r for rows in groups.values() for r in rows
                if dt.date.fromisoformat(r["end"]) >= lo and dt.date.fromisoformat(r["start"]) <= hi]
@@ -246,7 +265,7 @@ def main():
         print("nothing new - keeping the old schedule"); return
     open(OUT, "w", encoding="utf-8").write(
         "/* Written automatically by scripts/update_schedule.py - don't edit by hand. Add your own rows in admin.html instead. */\n"
-        "window.DG_SCHEDULE = " + json.dumps({"updated": NOW.isoformat(timespec="minutes"), "rows": out, "stats": stats, "why_missed": WHY}, ensure_ascii=False) + ";\n")
+        "window.DG_SCHEDULE = " + json.dumps({"updated": NOW.isoformat(timespec="minutes"), "rows": out, "stats": stats, "why_missed": WHY, "wiki_at": wiki_at, "all": keep_all}, ensure_ascii=False) + ";\n")
     print(f"schedule: {len(out)} upcoming dates from {len(groups)} series")
 
 if __name__ == "__main__":
