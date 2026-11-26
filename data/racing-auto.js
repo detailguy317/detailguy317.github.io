@@ -1,6 +1,6 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-26T03:00+00:00",
+ "updated": "2026-11-26T12:14+00:00",
  "slots": [
   {
    "type": "video",
@@ -9,8 +9,8 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "13",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=84",
+   "viewers": "12",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=f2",
    "trusted": true,
    "embed": true
   },
@@ -33,7 +33,7 @@ window.DG_RACING_AUTO = {
    "channel": "MotorWeek",
    "kind": "loop",
    "date": "2026-11-25T12:52:49Z",
-   "viewers": "360",
+   "viewers": "440",
    "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
    "trusted": true,
    "embed": true
@@ -47,8 +47,8 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "13",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=84",
+   "viewers": "12",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=f2",
    "trusted": true,
    "embed": true
   },
@@ -85,8 +85,8 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "13",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=84",
+   "viewers": "12",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=f2",
    "trusted": true,
    "embed": true
   },
@@ -133,7 +133,7 @@ window.DG_RACING_AUTO = {
    "channel": "MotorWeek",
    "kind": "loop",
    "date": "2026-11-25T12:52:49Z",
-   "viewers": "360",
+   "viewers": "440",
    "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
    "trusted": true,
    "embed": true
@@ -145,7 +145,7 @@ window.DG_RACING_AUTO = {
    "channel": "NTT INDYCAR SERIES",
    "kind": "loop",
    "date": "2026-11-25T17:00:19Z",
-   "viewers": "91",
+   "viewers": "41",
    "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
    "trusted": true,
    "embed": true
@@ -157,8 +157,80 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "loop",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "36",
+   "viewers": "12",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "fz5b6oGAByk",
+   "title": "Extended Highlights | 2023 Qatar Grand Prix",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-26T12:00:07Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/fz5b6oGAByk/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "7oKhMJpSyas",
+   "title": "澳門四級方程式大賽 - 國際汽聯四級方程式世界盃精華    Highlights of the Macau Formula 4 Race - FIA F4 World Cup",
+   "channel": "Macau Grand Prix channel",
+   "kind": "recent",
+   "date": "2026-11-26T09:52:42Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/7oKhMJpSyas/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "UPC-IuU8j7k",
+   "title": "Thursday Press Conference | 2026 bp Adelaide Grand Final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-26T06:51:10Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/UPC-IuU8j7k/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "NnpQ2yU-9b8",
+   "title": "Valvoline Highlights: Practice 1 | 2026 bp Adelaide Grand final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-26T05:43:06Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/NnpQ2yU-9b8/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "QX6PDsK_WNw",
+   "title": "Valvoline Highlights: Practice 2 | Dunlop Super2 | 2026 bp Adelaide Grand Final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-26T05:34:01Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/QX6PDsK_WNw/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "KRAA6RHUfig",
+   "title": "Teams Press Conference | 2026 bp Adelaide Grand Final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-26T04:17:59Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/KRAA6RHUfig/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -485,78 +557,6 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/BZ7v4jhlFx0/mqdefault.jpg",
    "trusted": true,
    "embed": true
-  },
-  {
-   "type": "video",
-   "id": "tdZ1xiJBLKQ",
-   "title": "POV: You're the Champion 🏆 | 2026 Portuguese GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-24T17:00:20Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/tdZ1xiJBLKQ/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "9DdIG85cBaQ",
-   "title": "Race-Leading Porsche Goes Airborne in Huge Crash | 6 Hours of Silverstone 2016 | FIA WEC",
-   "channel": "FIA World Endurance Championship",
-   "kind": "recent",
-   "date": "2026-11-24T17:00:02Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/9DdIG85cBaQ/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "XBpAA9AxB48",
-   "title": "A POV you didn't know you needed 😌 #indycar #racing #POV #celebration",
-   "channel": "NTT INDYCAR SERIES",
-   "kind": "recent",
-   "date": "2026-11-24T15:00:33Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/XBpAA9AxB48/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "VCtxjxInQQo",
-   "title": "DTM 2022 Portimão: Best of Race Action & Emotions | Weekend Highlights",
-   "channel": "DTM",
-   "kind": "recent",
-   "date": "2026-11-24T15:00:03Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/VCtxjxInQQo/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "AEPr1TWEKhw",
-   "title": "Top 10 Onboards | 2026 Las Vegas Grand Prix | Qatar Airways",
-   "channel": "FORMULA 1",
-   "kind": "recent",
-   "date": "2026-11-24T13:00:08Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/AEPr1TWEKhw/mqdefault.jpg",
-   "trusted": true,
-   "embed": false
-  },
-  {
-   "type": "video",
-   "id": "4AGemKdtLzk",
-   "title": "Max & George Reignite Rivalry & What Next For Ferrari? | Las Vegas GP Review | F1 Nation Podcast",
-   "channel": "FORMULA 1",
-   "kind": "recent",
-   "date": "2026-11-24T11:00:16Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/4AGemKdtLzk/mqdefault.jpg",
-   "trusted": true,
-   "embed": false
   }
  ],
  "reel": [
