@@ -81,7 +81,7 @@ def ts(s):
     try: return dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
     except Exception: return None
 
-LOOP = re.compile(r"24/7|24-7|24 ?hours? a day|nonstop|non-stop|around the clock|replay channel", re.I)
+LOOP = re.compile(r"24/7|24-7|24 ?hours? a day|nonstop|non-stop|around the clock|replay channel|marathon|retro review", re.I)
 
 def classify(v):
     s, L = v["snippet"], v.get("liveStreamingDetails") or {}
