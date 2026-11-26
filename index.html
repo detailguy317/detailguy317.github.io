@@ -3,7 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>DETAILGUY317 Garage</title>
+<title>DETAILGUY317's Garage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Racing+Sans+One&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 <meta name="description" content="DETAILGUY317 Garage - racing, automotive news, free VIN and recall check, trouble code lookup and Ask A Mechanic." />
 
 <!-- Google tag (gtag.js) -->
@@ -325,8 +328,10 @@ footer{margin-top:.5em;font-size:.72em;color:#aaa;text-align:right}
 /* ===== layout v4: arched title, tabs + boxes centered either side of the car ===== */
 .overlay h1{display:flex;flex-direction:column;align-items:center;line-height:1}
 .overlay h1 .arch{display:block;margin-top:calc(14 * var(--px));width:min(calc(600 * var(--px)),88vw,820px);height:auto;overflow:visible;filter:drop-shadow(0 0 calc(14 * var(--px)) rgba(255,106,0,.95))}
-.overlay h1 .arch text{font-family:inherit;font-weight:800;font-size:118px;fill:#ff6a00}
-.overlay h1 .garage-word{display:block;margin-top:calc(-10 * var(--px));font-size:min(calc(46 * var(--px)),62px);letter-spacing:calc(10 * var(--px))}
+.overlay h1 .arch text{font-family:'Racing Sans One',Poppins,system-ui,sans-serif;font-weight:400;font-size:118px;fill:#ff6a00}
+.overlay h1 .arch .olde{font-family:'UnifrakturCook','Old English Text MT',serif;font-weight:700}
+.overlay h1 .arch .olde.big{font-size:150px}
+.overlay h1 .garage-word{font-family:'Racing Sans One',Poppins,system-ui,sans-serif;font-weight:400;display:block;margin-top:calc(-10 * var(--px));font-size:min(calc(46 * var(--px)),62px);letter-spacing:calc(10 * var(--px))}
 .home-main{position:fixed;left:0;right:0;bottom:0;top:300px;display:flex;justify-content:space-between;align-items:center;padding:0 calc(36 * var(--px));z-index:4;pointer-events:none}
 .home-main>*{pointer-events:auto}
 .home-main .icon-row{position:static;transform:none;top:auto;left:auto;transform-origin:left center}
@@ -337,6 +342,8 @@ footer{margin-top:.5em;font-size:.72em;color:#aaa;text-align:right}
   .home-main .icon-row,.home-main .right-stack{transform:none!important}
   .home-main .right-stack{width:auto}
   .overlay h1 .arch{width:min(520px,84vw)}
+  .overlay h1 .arch{filter:drop-shadow(0 0 2px rgba(255,106,0,.6)) drop-shadow(0 1px 2px rgba(0,0,0,.95))}
+  .overlay h1,.overlay h1 .garage-word{text-shadow:0 0 5px rgba(255,106,0,.45),0 1px 2px #000}
   .overlay h1 .garage-word{font-size:clamp(26px,8vw,40px);letter-spacing:6px}
 }
 .overlay p{margin-top:calc(2 * var(--px))}
@@ -519,7 +526,7 @@ footer{margin-top:.5em;font-size:.72em;color:#aaa;text-align:right}
     <div class="auto-ticker-inner" id="autoTickerInner">Loading automotive news...</div>
   </div>
   <div class="overlay">
-    <h1 aria-label="DETAILGUY317 Garage"><svg class="arch" viewBox="0 28 1000 180" aria-hidden="true"><defs><path id="archPath" d="M 40 200 Q 500 30 960 200"/></defs><text><textPath href="#archPath" startOffset="50%" text-anchor="middle" textLength="900" lengthAdjust="spacingAndGlyphs">DETAILGUY317</textPath></text></svg><span class="garage-word">Garage</span></h1>
+    <h1 aria-label="DETAILGUY317's Garage"><svg class="arch" viewBox="0 28 1000 180" aria-hidden="true"><defs><path id="archPath" d="M 40 200 Q 500 30 960 200"/></defs><text><textPath href="#archPath" startOffset="50%" text-anchor="middle" textLength="900" lengthAdjust="spacingAndGlyphs"><tspan class="olde big">D</tspan>ETAILGUY<tspan class="olde">317&#39;</tspan>S</textPath></text></svg><span class="garage-word">Garage</span></h1>
     <p>Racing - Repairs - Automotive News - Information</p>
   </div>
 
