@@ -8,7 +8,7 @@
    mode "manual" + slots = old-style hand picks. kids = Kids Garage TV. giveaways = your contests.
    ===================================================================== */
 window.DG_LIVE = {
-  "updated": "2026-11-18",
+  "updated": "2026-11-25",
   "mode": "auto",
   "slots": [
     {
@@ -46,9 +46,10 @@ window.DG_LIVE = {
     "@OfficialBTCC",
     "@Supercars",
     "@DTM",
-    "@SUPERGT",
+    "@supergtofficialchannel",
     "@ELMS",
-    "@MotorTrend",
+    "@motortrendwatch",
+    "@MotorWeek",
     "@FIA"
   ],
   "humor": [
@@ -59,7 +60,19 @@ window.DG_LIVE = {
   ],
   "kids": [],
   "giveaways": [],
-  "featured": [],
+  "featured": [
+    {
+      "type": "live",
+      "id": "UC66lTpcL4h5wqxCWioKQOrg",
+      "title": "MotorWeek Thanksgiving Retro Marathon (1981-2003)",
+      "channel": "MotorWeek",
+      "start": "2026-11-26T01:10:00Z",
+      "end": "2026-11-27T06:59:00Z",
+      "endBy": null,
+      "keepUntil": "2026-11-30T15:00:00Z",
+      "embed": true
+    }
+  ],
   "library": [],
   "favorites": []
 };
