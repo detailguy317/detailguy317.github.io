@@ -1,7 +1,5 @@
-# DG317 robot: headlines + F1 + This Day in History every 2 hours. (Race videos: update-videos.yml)
+# DG317 robot: ranked headlines + CarStuff bubbles + 7-day story history + F1 + This Day in History every 2 hours. (Race videos: update-videos.yml)
 # Setup: Settings -> Actions -> General -> Workflow permissions -> "Read and write".
-#   name: YOUTUBE_API_KEY   value: your free YouTube Data API key
-# Also: Settings -> Actions -> General -> Workflow permissions -> "Read and write".
 # Times are UTC. Mountain = UTC-7 in winter, UTC-6 in summer.
 name: update-feeds
 on:
@@ -26,6 +24,6 @@ jobs:
         run: |
           git config user.name "dg317-robot"
           git config user.email "dg317-robot@users.noreply.github.com"
-          git add data/news.js data/series-auto.js data/onthisday.js
+          git add data/news.js data/news-history.js data/series-auto.js data/onthisday.js
           git diff --cached --quiet || git commit -m "robot: refresh news"
           git pull --rebase -q && git push
