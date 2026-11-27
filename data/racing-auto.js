@@ -1,6 +1,6 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-26T21:50+00:00",
+ "updated": "2026-11-27T03:58+00:00",
  "slots": [
   {
    "type": "video",
@@ -9,20 +9,8 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "12",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=169",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "hWFwQ6TmHXs",
-   "title": "Behind The Scenes With Kyle Busch For His Final Snowball Derby | Drive to the Derby",
-   "channel": "FloRacing",
-   "kind": "upcoming",
-   "date": "2026-11-27T00:00:00Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/hWFwQ6TmHXs/mqdefault.jpg",
+   "viewers": "9",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=1b3",
    "trusted": true,
    "embed": true
   },
@@ -33,8 +21,20 @@ window.DG_RACING_AUTO = {
    "channel": "MotorWeek",
    "kind": "loop",
    "date": "2026-11-25T12:52:49Z",
-   "viewers": "318",
+   "viewers": "330",
    "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "hlKB1kxKEgs",
+   "title": "🚨 LIVE: INDYCAR at Kansas Speedway | Full Race Marathon",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "loop",
+   "date": "2026-11-25T17:00:19Z",
+   "viewers": "128",
+   "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
    "trusted": true,
    "embed": true
   }
@@ -47,8 +47,8 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "12",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=169",
+   "viewers": "9",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=1b3",
    "trusted": true,
    "embed": true
   },
@@ -85,8 +85,8 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "12",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=169",
+   "viewers": "9",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=1b3",
    "trusted": true,
    "embed": true
   },
@@ -116,24 +116,12 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "hWFwQ6TmHXs",
-   "title": "Behind The Scenes With Kyle Busch For His Final Snowball Derby | Drive to the Derby",
-   "channel": "FloRacing",
-   "kind": "upcoming",
-   "date": "2026-11-27T00:00:00Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/hWFwQ6TmHXs/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "rwNGvHZIF5Q",
    "title": "MotorWeek Thanksgiving Retro Marathon | Seasons 1-22 (1981-2003)",
    "channel": "MotorWeek",
    "kind": "loop",
    "date": "2026-11-25T12:52:49Z",
-   "viewers": "318",
+   "viewers": "330",
    "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
    "trusted": true,
    "embed": true
@@ -145,7 +133,7 @@ window.DG_RACING_AUTO = {
    "channel": "NTT INDYCAR SERIES",
    "kind": "loop",
    "date": "2026-11-25T17:00:19Z",
-   "viewers": "120",
+   "viewers": "128",
    "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
    "trusted": true,
    "embed": true
@@ -157,8 +145,80 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "loop",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "28",
+   "viewers": "34",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "s5IEKYhcP2c",
+   "title": "Valvoline Highlights: Qualifying - Race 35 | 2026 bp Adelaide Grand Final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-27T03:38:46Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/s5IEKYhcP2c/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "fU5pNNuoku4",
+   "title": "🏁澳門GT盃 – 國際汽聯GT世界盃精華   Highlights of the Macau GT Cup – FIA GT World Cup",
+   "channel": "Macau Grand Prix channel",
+   "kind": "recent",
+   "date": "2026-11-27T03:20:00Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/fU5pNNuoku4/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "44RQYQvEM40",
+   "title": "フェネストラズ vs 牧野 チェッカーまで続く壮絶バトル!! DENSO KOBELCO SARD GR Supra vs STANLEY HRC PRELUDE GT",
+   "channel": "SUPER GT Official Channel",
+   "kind": "recent",
+   "date": "2026-11-27T03:00:01Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/44RQYQvEM40/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "OyTSpHBCXSk",
+   "title": "Valvoline Highlights: Qualifying - Race 1 | Dunlop Super2 | 2026 Adelaide Grand Final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-27T00:41:07Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/OyTSpHBCXSk/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "vMvohniWxZY",
+   "title": "Valvoline Highlights: Practice 2 | 2026 bp Adelaide Grand final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-27T00:16:25Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/vMvohniWxZY/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "hWFwQ6TmHXs",
+   "title": "Behind The Scenes With Kyle Busch For His Final Snowball Derby | Drive to the Derby",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-27T00:00:08Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/hWFwQ6TmHXs/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -332,30 +392,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "KRAA6RHUfig",
-   "title": "Teams Press Conference | 2026 bp Adelaide Grand Final",
-   "channel": "Supercars",
-   "kind": "recent",
-   "date": "2026-11-26T04:17:59Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/KRAA6RHUfig/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "KUUWrtnW7-I",
-   "title": "Get your tickets to the Adelaide Grand Final today!",
-   "channel": "Supercars",
-   "kind": "recent",
-   "date": "2026-11-26T02:00:44Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/KUUWrtnW7-I/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "Eo9j9GDYBIA",
    "title": "After 15 years of trying, Stephen Nasse finally claimed the #SnowballDerby win in 2025.",
    "channel": "FloRacing",
@@ -519,42 +555,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-25T09:00:07Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/dHM1v8_8sbU/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "BzNaXtBRi0w",
-   "title": "Pit Lane Preview, presented by Equip Super | 2026 bp Adelaide Grand Final",
-   "channel": "Supercars",
-   "kind": "recent",
-   "date": "2026-11-25T07:04:34Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/BzNaXtBRi0w/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "mMtjPVOrAyI",
-   "title": "🏍️澳門格蘭披治電單車-第五十八屆大賽精華   🏁 Highlights of the Macau Motorcycle Grand Prix - 58th Edition",
-   "channel": "Macau Grand Prix channel",
-   "kind": "recent",
-   "date": "2026-11-25T03:26:02Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/mMtjPVOrAyI/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "V2feRJBmAXo",
-   "title": "Can INDYCAR Drivers Guess the Face?",
-   "channel": "NTT INDYCAR SERIES",
-   "kind": "recent",
-   "date": "2026-11-24T23:00:14Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/V2feRJBmAXo/mqdefault.jpg",
    "trusted": true,
    "embed": true
   }
