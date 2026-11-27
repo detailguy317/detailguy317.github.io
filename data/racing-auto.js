@@ -1,6 +1,6 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-27T13:44+00:00",
+ "updated": "2026-11-27T22:33+00:00",
  "slots": [
   {
    "type": "video",
@@ -10,7 +10,7 @@ window.DG_RACING_AUTO = {
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
    "viewers": "11",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=229",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=293",
    "trusted": true,
    "embed": true
   },
@@ -33,7 +33,7 @@ window.DG_RACING_AUTO = {
    "channel": "MotorWeek",
    "kind": "loop",
    "date": "2026-11-25T12:52:49Z",
-   "viewers": "384",
+   "viewers": "327",
    "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
    "trusted": true,
    "embed": true
@@ -48,7 +48,7 @@ window.DG_RACING_AUTO = {
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
    "viewers": "11",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=229",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=293",
    "trusted": true,
    "embed": true
   },
@@ -86,7 +86,7 @@ window.DG_RACING_AUTO = {
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
    "viewers": "11",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=229",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=293",
    "trusted": true,
    "embed": true
   },
@@ -133,7 +133,7 @@ window.DG_RACING_AUTO = {
    "channel": "MotorWeek",
    "kind": "loop",
    "date": "2026-11-25T12:52:49Z",
-   "viewers": "384",
+   "viewers": "327",
    "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
    "trusted": true,
    "embed": true
@@ -145,7 +145,7 @@ window.DG_RACING_AUTO = {
    "channel": "NTT INDYCAR SERIES",
    "kind": "loop",
    "date": "2026-11-25T17:00:19Z",
-   "viewers": "104",
+   "viewers": "108",
    "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
    "trusted": true,
    "embed": true
@@ -157,56 +157,152 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "loop",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "21",
+   "viewers": "49",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
    "trusted": true,
    "embed": true
   },
   {
    "type": "video",
-   "id": "pYInX1NiP48",
-   "title": "The Ultimate Celebrity F1 LEGO Race in Vegas In Full!",
+   "id": "anlcXfpWliA",
+   "title": "The Biggest Upgrades & The 27 Lap Tyre Limit In Qatar | F1 TV Tech Talk",
    "channel": "FORMULA 1",
    "kind": "recent",
-   "date": "2026-11-27T13:00:32Z",
+   "date": "2026-11-27T21:15:26Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/pYInX1NiP48/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/anlcXfpWliA/mqdefault.jpg",
    "trusted": true,
    "embed": false
   },
   {
    "type": "video",
-   "id": "6OOMZ8dx9IY",
-   "title": "All MotoGP riders join Marc Marquez for a final pic at his retirement’s press conference 🥹🥹🥹",
+   "id": "dm-Utl0e23A",
+   "title": "Riders React to Marc's Retirement 🥺 | 2026 Valencia GP",
    "channel": "MotoGP",
    "kind": "recent",
-   "date": "2026-11-27T11:53:15Z",
+   "date": "2026-11-27T20:29:16Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/6OOMZ8dx9IY/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/dm-Utl0e23A/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
   {
    "type": "video",
-   "id": "_f6zmnF8jHQ",
-   "title": "Marc Marquez retires from MotoGP: Press Conference",
-   "channel": "MotoGP",
+   "id": "ZZ4ZgM25j1g",
+   "title": "FP2 Highlights | 2026 Qatar Grand Prix",
+   "channel": "FORMULA 1",
    "kind": "recent",
-   "date": "2026-11-27T11:15:06Z",
+   "date": "2026-11-27T20:25:39Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/_f6zmnF8jHQ/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/ZZ4ZgM25j1g/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "fuuhsHoQ6Ig",
+   "title": "Them Capco boys! 🔴⚫️ #NHRA",
+   "channel": "NHRA",
+   "kind": "recent",
+   "date": "2026-11-27T19:00:31Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/fuuhsHoQ6Ig/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
   {
    "type": "video",
-   "id": "m3usITpq-Os",
-   "title": "Marc Marquez announces his retirement before FP1 in Valencia 🔚🚨",
+   "id": "Zi0fYxbDrGE",
+   "title": "The Road America Clash: What REALLY Happened? | INDYCAR Film Room",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "recent",
+   "date": "2026-11-27T19:00:02Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/Zi0fYxbDrGE/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "SQS7o7ATuMA",
+   "title": "What We Learned on Friday 🤯 | 2026 Valencia GP",
    "channel": "MotoGP",
    "kind": "recent",
-   "date": "2026-11-27T10:51:47Z",
+   "date": "2026-11-27T18:27:10Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/m3usITpq-Os/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/SQS7o7ATuMA/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "ytgDXpvJ3-4",
+   "title": "450 Pro Sport Moto 1 | Thor Mini O's at Gatorback Cycle Park 11/27/26 | Full Race",
+   "channel": "FloRacing",
+   "kind": "recent",
+   "date": "2026-11-27T17:53:01Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/ytgDXpvJ3-4/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "dph5gaessbg",
+   "title": "Funny Cars are awesome! 😎 #NHRA",
+   "channel": "NHRA",
+   "kind": "recent",
+   "date": "2026-11-27T17:00:31Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/dph5gaessbg/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "_JnofhPJM_Q",
+   "title": "Biggest Moments of the Season | FIA WEC",
+   "channel": "FIA World Endurance Championship",
+   "kind": "recent",
+   "date": "2026-11-27T17:00:06Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/_JnofhPJM_Q/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "fHBZtHFSMUA",
+   "title": "FP1 Highlights | 2026 Qatar Grand Prix",
+   "channel": "FORMULA 1",
+   "kind": "recent",
+   "date": "2026-11-27T16:32:24Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/fHBZtHFSMUA/mqdefault.jpg",
+   "trusted": true,
+   "embed": false
+  },
+  {
+   "type": "video",
+   "id": "wx0SXykbS8s",
+   "title": "Are you ready? ⏰ #indycar",
+   "channel": "NTT INDYCAR SERIES",
+   "kind": "recent",
+   "date": "2026-11-27T15:04:23Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/wx0SXykbS8s/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "LLfDvVvbf7g",
+   "title": "A Toyota RAV4 Tuned by Gazoo Racing!",
+   "channel": "MotorWeek",
+   "kind": "recent",
+   "date": "2026-11-27T15:00:10Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/LLfDvVvbf7g/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -267,18 +363,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-27T06:21:00Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/GeB1tz61Fk8/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "7k0U6-h32Co",
-   "title": "Marc Marquez's UNSEEN World Champion celebrations 🎉 | 2026 Portuguese GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-27T05:00:18Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/7k0U6-h32Co/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -380,18 +464,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "v-qvfanikG4",
-   "title": "Pedro, Jorge & Fabio face 1000cc era quiz 🧠 | 2026 Valencia GP",
-   "channel": "MotoGP",
-   "kind": "recent",
-   "date": "2026-11-26T18:36:51Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/v-qvfanikG4/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "r1RGm7rg1UQ",
    "title": "TJ comin' through ⚫️🟡 #NHRA",
    "channel": "NHRA",
@@ -476,18 +548,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "kqSSVxuiVGE",
-   "title": "Drive To The Derby 🚗 From Sprint Cars To The Snowball Derby",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-25T22:00:30Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/kqSSVxuiVGE/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "krhLRwWVUCk",
    "title": "2027 Slate Truck Prototype | First Drive",
    "channel": "MotorWeek",
@@ -495,66 +555,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-25T19:30:38Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/krhLRwWVUCk/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "Wl9M2GPznug",
-   "title": "Chasing The Dream | Behind The Scenes F2 | 2026 Bonus Episode!",
-   "channel": "FORMULA 1",
-   "kind": "recent",
-   "date": "2026-11-25T19:00:16Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/Wl9M2GPznug/mqdefault.jpg",
-   "trusted": true,
-   "embed": false
-  },
-  {
-   "type": "video",
-   "id": "_aW7BCaoQu4",
-   "title": "Let it rip‼️ #NHRA",
-   "channel": "NHRA",
-   "kind": "recent",
-   "date": "2026-11-25T19:00:09Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/_aW7BCaoQu4/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "xh2tKEsGYuE",
-   "title": "At least one of these stumped them 🤨#INDYCAR",
-   "channel": "NTT INDYCAR SERIES",
-   "kind": "recent",
-   "date": "2026-11-25T18:41:12Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/xh2tKEsGYuE/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "Y9yPPKEe4bg",
-   "title": "Biggest Moments of the 2026 WEC Season! 🔥 (Part 2)",
-   "channel": "FIA World Endurance Championship",
-   "kind": "recent",
-   "date": "2026-11-25T17:00:42Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/Y9yPPKEe4bg/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "r1YCZffxasA",
-   "title": "What it Took to Become a NASCAR Driver",
-   "channel": "NASCAR",
-   "kind": "recent",
-   "date": "2026-11-25T16:56:22Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/r1YCZffxasA/mqdefault.jpg",
    "trusted": true,
    "embed": true
   }
@@ -571,7 +571,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/ZPOh8z-Nflc/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 569883
+   "views": 571296
   },
   {
    "type": "video",
@@ -584,7 +584,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/1bIXJGSuciI/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 499010
+   "views": 499447
   },
   {
    "type": "video",
@@ -597,7 +597,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/BVoDMAELzhU/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 385821
+   "views": 386727
   },
   {
    "type": "video",
@@ -610,7 +610,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/HscuA474c4g/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 247935
+   "views": 251796
   },
   {
    "type": "video",
@@ -623,7 +623,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/JNjZQQVoNtY/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 172574
+   "views": 172808
   },
   {
    "type": "video",
@@ -636,7 +636,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/X0NUtYff9Xc/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 120300
+   "views": 122362
   },
   {
    "type": "video",
@@ -649,7 +649,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/wK7DsUfFZ34/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 80140
+   "views": 80681
   },
   {
    "type": "video",
@@ -662,7 +662,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/W7VE6CyayRc/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 70621
+   "views": 70640
   },
   {
    "type": "video",
@@ -675,7 +675,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/FCyTL00q_no/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 13498
+   "views": 13515
   },
   {
    "type": "video",
@@ -688,7 +688,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/z6frFDPwnGo/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 220250
+   "views": 223080
   },
   {
    "type": "video",
@@ -701,7 +701,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/WsIlcxfpzAM/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 445136
+   "views": 447192
   },
   {
    "type": "video",
@@ -714,7 +714,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/YTaXWh9o9Eg/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 239819
+   "views": 242562
   },
   {
    "type": "video",
@@ -727,7 +727,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/4gDVze29_6A/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 142145
+   "views": 143977
   },
   {
    "type": "video",
@@ -740,7 +740,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/mBcf13A6UVQ/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 95209
+   "views": 96253
   },
   {
    "type": "video",
@@ -753,7 +753,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/bCNnpkqhJVM/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 44411
+   "views": 44474
   },
   {
    "type": "video",
@@ -766,7 +766,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/uzA35UfOyxY/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 58153
+   "views": 58191
   },
   {
    "type": "video",
@@ -779,20 +779,20 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/_TyV-Fpg2Ho/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 339570
+   "views": 339683
   },
   {
    "type": "video",
-   "id": "P2EWghU00PQ",
-   "title": "Top Ten Shootout Highlights: Race 33 | 2026 Penrite Oil Sandown 500",
+   "id": "31e7EOvEBU4",
+   "title": "Race Highlights: Race 35 | 2026 bp Adelaide Grand Final",
    "channel": "Supercars",
    "kind": "reel",
-   "date": "2026-11-07T02:12:06Z",
+   "date": "2026-11-27T08:28:31Z",
    "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/P2EWghU00PQ/mqdefault.jpg",
+   "thumb": "https://i.ytimg.com/vi/31e7EOvEBU4/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 74547
+   "views": 151319
   },
   {
    "type": "video",
@@ -805,7 +805,7 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/qNWZuzeHNDs/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 77826
+   "views": 77940
   },
   {
    "type": "video",
@@ -818,8 +818,8 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/95ySI94255k/mqdefault.jpg",
    "trusted": true,
    "embed": true,
-   "views": 51385
+   "views": 51409
   }
  ],
- "reel_at": "2026-11-26T21:50+00:00"
+ "reel_at": "2026-11-27T22:33+00:00"
 };
