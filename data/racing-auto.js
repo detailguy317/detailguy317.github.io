@@ -1,7 +1,19 @@
 /* Written automatically by scripts/update_videos.py - don't edit by hand. */
 window.DG_RACING_AUTO = {
- "updated": "2026-11-27T22:33+00:00",
+ "updated": "2026-11-28T04:36+00:00",
  "slots": [
+  {
+   "type": "video",
+   "id": "a8kAYRodHC4",
+   "title": "LIVE FULL RACE: USAC Turkey Night Grand Prix at Ventura Raceway - Night One",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-27T23:34:35Z",
+   "viewers": "2127",
+   "thumb": "https://i.ytimg.com/vi/a8kAYRodHC4/mqdefault.jpg?v=6b04cad9",
+   "trusted": true,
+   "embed": true
+  },
   {
    "type": "video",
    "id": "1vaOnc8XbQU",
@@ -9,8 +21,8 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "11",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=293",
+   "viewers": "12",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=2dc",
    "trusted": true,
    "embed": true
   },
@@ -25,21 +37,21 @@ window.DG_RACING_AUTO = {
    "thumb": "https://i.ytimg.com/vi/MHuJiq-4kP4/mqdefault.jpg",
    "trusted": true,
    "embed": true
-  },
-  {
-   "type": "video",
-   "id": "rwNGvHZIF5Q",
-   "title": "MotorWeek Thanksgiving Retro Marathon | Seasons 1-22 (1981-2003)",
-   "channel": "MotorWeek",
-   "kind": "loop",
-   "date": "2026-11-25T12:52:49Z",
-   "viewers": "327",
-   "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
-   "trusted": true,
-   "embed": true
   }
  ],
  "live": [
+  {
+   "type": "video",
+   "id": "a8kAYRodHC4",
+   "title": "LIVE FULL RACE: USAC Turkey Night Grand Prix at Ventura Raceway - Night One",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-27T23:34:35Z",
+   "viewers": "2127",
+   "thumb": "https://i.ytimg.com/vi/a8kAYRodHC4/mqdefault.jpg?v=6b04cad9",
+   "trusted": true,
+   "embed": true
+  },
   {
    "type": "video",
    "id": "1vaOnc8XbQU",
@@ -47,9 +59,21 @@ window.DG_RACING_AUTO = {
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "11",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=293",
+   "viewers": "12",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=2dc",
    "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "IjeeQt6L4_E",
+   "title": "Nfsu2 Rockport bridge drag racing online",
+   "channel": "Caffeine Headache ",
+   "kind": "live",
+   "date": "2026-11-28T00:00:09Z",
+   "viewers": "7",
+   "thumb": "https://i.ytimg.com/vi/IjeeQt6L4_E/mqdefault.jpg?v=38",
+   "trusted": false,
    "embed": true
   },
   {
@@ -80,14 +104,38 @@ window.DG_RACING_AUTO = {
  "found": [
   {
    "type": "video",
+   "id": "a8kAYRodHC4",
+   "title": "LIVE FULL RACE: USAC Turkey Night Grand Prix at Ventura Raceway - Night One",
+   "channel": "FloRacing",
+   "kind": "live",
+   "date": "2026-11-27T23:34:35Z",
+   "viewers": "2127",
+   "thumb": "https://i.ytimg.com/vi/a8kAYRodHC4/mqdefault.jpg?v=6b04cad9",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
    "id": "1vaOnc8XbQU",
    "title": "More Than Machine Seasons 1 and 2",
    "channel": "FIA World Rally Championship",
    "kind": "live",
    "date": "2026-11-25T15:56:55Z",
-   "viewers": "11",
-   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=293",
+   "viewers": "12",
+   "thumb": "https://i.ytimg.com/vi/1vaOnc8XbQU/mqdefault.jpg?v=2dc",
    "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "IjeeQt6L4_E",
+   "title": "Nfsu2 Rockport bridge drag racing online",
+   "channel": "Caffeine Headache ",
+   "kind": "live",
+   "date": "2026-11-28T00:00:09Z",
+   "viewers": "7",
+   "thumb": "https://i.ytimg.com/vi/IjeeQt6L4_E/mqdefault.jpg?v=38",
+   "trusted": false,
    "embed": true
   },
   {
@@ -133,7 +181,7 @@ window.DG_RACING_AUTO = {
    "channel": "MotorWeek",
    "kind": "loop",
    "date": "2026-11-25T12:52:49Z",
-   "viewers": "327",
+   "viewers": "457",
    "thumb": "https://i.ytimg.com/vi/rwNGvHZIF5Q/mqdefault.jpg?v=6af9b8f2",
    "trusted": true,
    "embed": true
@@ -145,7 +193,7 @@ window.DG_RACING_AUTO = {
    "channel": "NTT INDYCAR SERIES",
    "kind": "loop",
    "date": "2026-11-25T17:00:19Z",
-   "viewers": "108",
+   "viewers": "106",
    "thumb": "https://i.ytimg.com/vi/hlKB1kxKEgs/mqdefault.jpg?v=6b065286",
    "trusted": true,
    "embed": true
@@ -157,8 +205,56 @@ window.DG_RACING_AUTO = {
    "channel": "FloRacing",
    "kind": "loop",
    "date": "2025-10-14T14:49:37Z",
-   "viewers": "49",
+   "viewers": "47",
    "thumb": "https://i.ytimg.com/vi/YA1ruaeoZZY/mqdefault.jpg?v=68f261ce",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "SRvLP_rcD2U",
+   "title": "Valvoline Highlights: Qualifying - Race 36 | 2026 bp Adelaide Grand Final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-28T02:25:07Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/SRvLP_rcD2U/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "tToz0-Qgkk8",
+   "title": "Hino Hub: Is this holding back RedBull? | 2026 bp Adelaide Grand Final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-28T01:53:45Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/tToz0-Qgkk8/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "5xZOgY3M4cs",
+   "title": "Turn 8 strikes again! 💥  #RepcoSC #Supercars",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-28T01:43:14Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/5xZOgY3M4cs/mqdefault.jpg",
+   "trusted": true,
+   "embed": true
+  },
+  {
+   "type": "video",
+   "id": "uqj8rZpes0A",
+   "title": "Friday Press Conference | 2026 bp Adelaide Grand Final",
+   "channel": "Supercars",
+   "kind": "recent",
+   "date": "2026-11-28T00:33:17Z",
+   "viewers": null,
+   "thumb": "https://i.ytimg.com/vi/uqj8rZpes0A/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
@@ -344,54 +440,6 @@ window.DG_RACING_AUTO = {
   },
   {
    "type": "video",
-   "id": "1vz0Y_Jur9M",
-   "title": "The reigning Champ is out of this race 🫣",
-   "channel": "Supercars",
-   "kind": "recent",
-   "date": "2026-11-27T06:41:02Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/1vz0Y_Jur9M/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "GeB1tz61Fk8",
-   "title": "The most CHAOTIC race start!",
-   "channel": "Supercars",
-   "kind": "recent",
-   "date": "2026-11-27T06:21:00Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/GeB1tz61Fk8/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "SoapmEQ1jLg",
-   "title": "Valvoline Highlights: Qualifying - Race 2 | Dunlop Super2 | 2026 bp Adelaide Grand Final",
-   "channel": "Supercars",
-   "kind": "recent",
-   "date": "2026-11-27T04:56:45Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/SoapmEQ1jLg/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "s5IEKYhcP2c",
-   "title": "Valvoline Highlights: Qualifying - Race 35 | 2026 bp Adelaide Grand Final",
-   "channel": "Supercars",
-   "kind": "recent",
-   "date": "2026-11-27T03:38:46Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/s5IEKYhcP2c/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
    "id": "fU5pNNuoku4",
    "title": "🏁澳門GT盃 – 國際汽聯GT世界盃精華   Highlights of the Macau GT Cup – FIA GT World Cup",
    "channel": "Macau Grand Prix channel",
@@ -519,30 +567,6 @@ window.DG_RACING_AUTO = {
    "date": "2026-11-26T09:52:42Z",
    "viewers": null,
    "thumb": "https://i.ytimg.com/vi/7oKhMJpSyas/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "Eo9j9GDYBIA",
-   "title": "After 15 years of trying, Stephen Nasse finally claimed the #SnowballDerby win in 2025.",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-26T00:00:14Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/Eo9j9GDYBIA/mqdefault.jpg",
-   "trusted": true,
-   "embed": true
-  },
-  {
-   "type": "video",
-   "id": "QWwyiMwPE8s",
-   "title": "Cleetus McFarland Prepares For Gateway Dirt Nationals | Behind The Scenes",
-   "channel": "FloRacing",
-   "kind": "recent",
-   "date": "2026-11-25T23:00:31Z",
-   "viewers": null,
-   "thumb": "https://i.ytimg.com/vi/QWwyiMwPE8s/mqdefault.jpg",
    "trusted": true,
    "embed": true
   },
