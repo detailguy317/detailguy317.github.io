@@ -9,7 +9,7 @@ window.DG_DASH = {
    "v": 90.84,
    "chg": 0.22
   },
-  "crude_at": "2026-11-28T01:23Z"
+  "crude_at": "2026-11-28T10:14Z"
  },
  "newsletter": {
   "url": "https://themarketmechanics.beehiiv.com/p/let-s-give-thanks-diesel-finally-under-6-even-if-the-dow-is-under-50k",
@@ -19,5 +19,5 @@ window.DG_DASH = {
   "date": "2026-11-21",
   "issue": 37
  },
- "updated": "2026-11-28T01:23+00:00"
+ "updated": "2026-11-28T10:14+00:00"
 };
